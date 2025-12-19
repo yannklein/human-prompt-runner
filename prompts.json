@@ -1,0 +1,88 @@
+{
+  "prompts": [
+    {
+      "id": "field_definition",
+      "template": "What is {{companyField}}?",
+      "required_vars": ["companyField"],
+      "expects_score": false
+    },
+    {
+      "id": "buyer_persona_alignment_score",
+      "template": "How much in line is {{CompanyName}}'s buyer persona with {{BuyersPersona}}? Give a brutally honest score from 1-10 and explain in 200 words",
+      "required_vars": ["CompanyName", "BuyersPersona"],
+      "expects_score": true
+    },
+    {
+      "id": "technology_applications",
+      "template": "What are the main applications of {{CompanyName}}'s technology?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "leadership_score",
+      "template": "Is {{CompanyName}} considered a leader in {{companyField}}? Give a brutally honest score from 1 to 10 and a 200 word explanation.",
+      "required_vars": ["CompanyName", "companyField"],
+      "expects_score": true
+    },
+    {
+      "id": "innovation_score",
+      "template": "Is {{CompanyName}} innovative? Give a brutally honest score from 1 to 10 and a 200 word explanation.",
+      "required_vars": ["CompanyName"],
+      "expects_score": true
+    },
+    {
+      "id": "company_strengths",
+      "template": "What are {{CompanyName}}'s main strengths?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "main_competitors",
+      "template": "Who are {{CompanyName}}'s main competitors?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "competitor_comparison",
+      "template": "How does {{CompanyName}} compare to its competitors?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "alternatives",
+      "template": "Which companies are alternatives to {{CompanyName}}?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "top_space_companies",
+      "template": "In the space in which {{CompanyName}} is operating, who are the top 5 companies? You can include {{CompanyName}} too, if you think it is part of it.",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    },
+    {
+      "id": "team_talent_score",
+      "template": "How would you rate the {{CompanyName}}'s team and it's ability to attract talent? Give a brutally honest score from 1 to 10 and a 200 word explanation.\n\nTake the following aspects into account: 1.1 Scientific: high h-index will yield higher quality of papers, and attract better scientific talent, more funding and leading to more patents and breakthroughs (15%)\n1.1.1 Ecosystem: alumni from leading quantum ecosystems will be able to attract better talent. (5%)\n1.2 Execution: senior technologists with a track record have a better chance of achieving engineering breakthroughs. (10%)",
+      "required_vars": ["CompanyName"],
+      "expects_score": true
+    },
+    {
+      "id": "ip_quality_score",
+      "template": "How would you rate the {{CompanyName}}'s quality of the existing IP? Give a brutally honest score from 1 to 10 and a small explanation and take the following into account:\n2.1 Number and quality of patents (15%)\n2.2 Uniqueness of IP:  how does the technology compare to peers? Is the company a leader in its approach? (15%)",
+      "required_vars": ["CompanyName"],
+      "expects_score": true
+    },
+    {
+      "id": "trl_score",
+      "template": "How would you rate the {{CompanyName}}'s Technology Readiness Level? Give a brutally honest score from 1 to 10 and a small explanation and take the following into account: 3.1 How far is the company in developing their product compared to their peers? (10%)\n3.2 Has the company achieved sales or have significant partnerships? (10%)",
+      "required_vars": ["CompanyName"],
+      "expects_score": true
+    },
+    {
+      "id": "similar_investors",
+      "template": "Who invests in companies like {{CompanyName}}?",
+      "required_vars": ["CompanyName"],
+      "expects_score": false
+    }
+  ]
+}
