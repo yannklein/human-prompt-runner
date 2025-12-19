@@ -26,6 +26,7 @@ class PromptRunner:
         self.system_prompt = self._build_system_prompt()
         self.browser: Optional[Browser] = None
         self.page: Optional[Page] = None
+        self.response_count_before_prompt = 0  # Track responses before each prompt
 
     def _load_prompts(self) -> list[dict]:
         """Load prompts from JSON file."""
@@ -134,8 +135,15 @@ class PromptRunner:
         # Combine system prompt with user prompt
         full_prompt = f"[Context: {self.system_prompt}]\n\n{prompt}"
 
+        # Count existing responses BEFORE submitting
+        existing_responses = await self.page.query_selector_all(
+            '[data-message-author-role="assistant"]'
+        )
+        self.response_count_before_prompt = len(existing_responses)
+        print(f"Existing responses in chat: {self.response_count_before_prompt}")
+
         # Find and fill the textarea
-        textarea_selector = 'textarea[id="prompt-textarea"], div[id="prompt-textarea"]'
+        textarea_selector = 'textarea[id="prompt-textarea"], div[id="prompt-textarea"], #prompt-textarea'
         await self.page.wait_for_selector(textarea_selector, state="visible")
 
         # Clear any existing text and type the new prompt
@@ -216,14 +224,15 @@ class PromptRunner:
         if not response_containers:
             return ""
 
-        # Get the last (most recent) response
-        last_response = response_containers[-1]
+        # Check if we have a NEW response (more than before we submitted)
+        if len(response_containers) <= self.response_count_before_prompt:
+            return ""  # No new response yet
+
+        # Get only the NEW response (the one after our prompt)
+        new_response = response_containers[self.response_count_before_prompt]
 
         # Extract the HTML content to preserve formatting
-        html_content = await last_response.inner_html()
-
-        # Also get plain text for parsing
-        text_content = await last_response.inner_text()
+        html_content = await new_response.inner_html()
 
         # Convert HTML to markdown-style text
         markdown_response = self._html_to_markdown(html_content)
@@ -309,17 +318,30 @@ class PromptRunner:
         if not expects_score:
             return None
 
-        # Look for score patterns like "score: 7", "7/10", "Score: 7 out of 10"
+        # Look for score patterns - ordered by specificity (most specific first)
         patterns = [
-            r'(?:score|rating)[:\s]*(\d+)(?:\s*(?:out of|/)\s*10)?',
-            r'(\d+)\s*(?:out of|/)\s*10',
-            r'(?:give|assign|rate)[^.]*(\d+)(?:\s*(?:out of|/)\s*10)?',
-            r'\*\*(\d+)\*\*\s*(?:out of|/)\s*10',
-            r'(?:Score|Rating)[:\s]*\*\*(\d+)\*\*',
+            # "Score: **7**/10" or "**7/10**"
+            r'\*\*(\d+)\s*[/]\s*10\*\*',
+            r'\*\*(\d+)\*\*\s*[/]\s*10',
+            # "Score: 7/10" or "7/10"
+            r'(?:score|rating)[:\s]*(\d+)\s*[/]\s*10',
+            r'(\d+)\s*[/]\s*10',
+            # "Score: 7 out of 10"
+            r'(?:score|rating)[:\s]*(\d+)\s*(?:out of)\s*10',
+            r'(\d+)\s*(?:out of)\s*10',
+            # "**Score: 7**" or "Score: **7**"
+            r'\*\*(?:score|rating)[:\s]*(\d+)\*\*',
+            r'(?:score|rating)[:\s]*\*\*(\d+)\*\*',
+            # "I would rate this a 7" or "I give it a 7"
+            r'(?:rate|give|assign)[^.]{0,30}(?:a\s+)?(\d+)',
+            # Just "Score: 7" or "Rating: 7"
+            r'(?:score|rating)[:\s]*(\d+)',
+            # Bold number at start of response (common pattern)
+            r'^[*\s]*\*\*(\d+)\*\*',
         ]
 
         for pattern in patterns:
-            match = re.search(pattern, response, re.IGNORECASE)
+            match = re.search(pattern, response, re.IGNORECASE | re.MULTILINE)
             if match:
                 score = int(match.group(1))
                 if 1 <= score <= 10:
@@ -329,21 +351,39 @@ class PromptRunner:
 
     async def start_new_chat(self):
         """Start a new chat session."""
-        # Click on "New chat" button or navigate to base URL
-        try:
-            new_chat_btn = await self.page.query_selector(
-                'a[href="/"], button:has-text("New chat"), nav a[href="/"]'
-            )
-            if new_chat_btn:
-                await new_chat_btn.click()
-                await asyncio.sleep(2)
-            else:
-                # Navigate to base URL
-                await self.page.goto("https://chatgpt.com/", wait_until="networkidle")
-                await asyncio.sleep(2)
-        except Exception:
-            await self.page.goto("https://chatgpt.com/", wait_until="networkidle")
-            await asyncio.sleep(2)
+        print("Starting new chat...")
+
+        # Always navigate to base URL to ensure fresh chat
+        # Adding a cache-busting parameter to force fresh load
+        await self.page.goto("https://chatgpt.com/", wait_until="networkidle")
+        await asyncio.sleep(2)
+
+        # Wait for the textarea to be ready
+        textarea_selector = 'textarea[id="prompt-textarea"], div[id="prompt-textarea"], #prompt-textarea'
+        await self.page.wait_for_selector(textarea_selector, state="visible", timeout=30000)
+
+        # Verify no assistant messages exist (fresh chat)
+        response_containers = await self.page.query_selector_all(
+            '[data-message-author-role="assistant"]'
+        )
+
+        if len(response_containers) > 0:
+            print(f"Warning: Found {len(response_containers)} existing responses after new chat navigation")
+            # Try clicking the new chat button as backup
+            try:
+                new_chat_btn = await self.page.query_selector(
+                    'a[data-testid="create-new-chat-button"], nav a[href="/"], button:has-text("New chat")'
+                )
+                if new_chat_btn:
+                    await new_chat_btn.click()
+                    await asyncio.sleep(2)
+                    await self.page.wait_for_selector(textarea_selector, state="visible", timeout=30000)
+            except Exception as e:
+                print(f"Could not click new chat button: {e}")
+
+        # Reset counter for fresh chat
+        self.response_count_before_prompt = 0
+        print("New chat ready.")
 
 
 class ResultsManager:
@@ -365,7 +405,7 @@ class ResultsManager:
 
     def get_output_filename(self) -> str:
         """Generate output filename."""
-        date_str = datetime.now().strftime("%Y-%m-%d")
+        date_str = datetime.now().strftime("%Y-%m-%d_%H-%M")
         # Clean up names for filename
         field_clean = re.sub(r'[^\w\-]', '_', self.company_field)
         name_clean = re.sub(r'[^\w\-]', '_', self.company_name)
