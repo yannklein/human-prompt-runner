@@ -1,8 +1,16 @@
 [
   {
     "prompt": "What is biotech?",
-    "answer": "Biotech, short for biotechnology, is a field that uses living organisms, cells, or biological systems to develop products and technologies that improve human health, agriculture, and the environment. The industry applies knowledge from biology, chemistry, genetics, and molecular biology to solve problems, create new medicines, and enhance existing products. Biotech can span a wide range of applications, from drug development and diagnostics to agricultural innovations and environmental conservation.\n\nThere are several key areas within biotech:\n\nPharmaceuticals and Therapeutics: This is perhaps the most well-known area, where biotech is used to develop drugs and therapies. For example, the production of insulin for diabetes or monoclonal antibodies for cancer treatments. Biotech companies use living cells or organisms to produce these drugs in large quantities.\n\nGenetic Engineering and Gene Therapy: Involving the modification of an organism’s DNA to achieve a desired trait",
+    "answer": "Biotech, short for biotechnology, refers to the use of biological systems, organisms, or derivatives to develop products and technologies that improve the quality of life, human health, and the environment. It combines biology with technology to harness the power of living systems for practical applications in medicine, agriculture, energy, and environmental conservation. Biotech can involve anything from genetic engineering and gene editing to the development of new vaccines, therapies, and sustainable farming techniques.\n\n### Key Areas of Biotechnology:\n\nHealth & Medicine:\n\nPharmaceuticals: Developing new drugs or biologics to",
     "sources": [],
     "score": null
+  },
+  {
+    "prompt": "How much in line is Moderna's buyer persona with GP doctor? Give a brutally honest score from 1-10 and explain in 200 words",
+    "answer": "Brutally honest alignment score: 3/10\n\nAs a VC in biotech evaluating Moderna’s buyer persona vs. a GP doctor, the overlap is minimal.\n\nWhy such a low score? Moderna is predominantly a biotech/pharma manufacturer whose primary customers are governments, public health agencies, large healthcare systems, and institutional purchasers — not individual physicians. Historically, government entities (e.g., national governments, BARDA, EU tenders) have been the key purchasers of Moderna’s COVID-19 and other vaccine doses in bulk contracts. These buyers are negotiating large volume supply agreements, funding R&D, and setting distribution frameworks at a national level. [AI DCF Templates+1](https://dcfmodeling.com/products/mrna-business-model-canvas?utm_source=chatgpt.com)\n\nIn contrast, GP doctors are end-administrators, meaning they administer vaccines or recommend them to patients, but they rarely are the buyer in a commercial sense",
+    "sources": [
+      "https://dcfmodeling.com/products/mrna-business-model-canvas?utm_source=chatgpt.com"
+    ],
+    "score": 3
   }
 ]
