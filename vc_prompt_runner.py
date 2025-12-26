@@ -42,7 +42,7 @@ class PromptRunner:
     def _build_system_prompt(self) -> str:
         """Build system prompt with variable substitution."""
         company_field = self.variables.get("companyField", "technology")
-        return f"You are a VC in the {company_field} field. Add sources to your answer."
+        return f"You are an senior venture capitalist specialised in Quantum startups."
 
     def _substitute_variables(self, template: str) -> str:
         """Replace {{variable}} placeholders with actual values."""
