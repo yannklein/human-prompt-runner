@@ -48,15 +48,15 @@
 
     { "id": "P24", "template": "How much in line is {{CompanyName}}'s buyer persona with {{BuyersPersona}}? Give a brutally honest score from 1–10 and explain in 200 words", "required_vars": ["CompanyName", "BuyersPersona"], "expects_score": true },
 
-    { "id": "P25", "template": "What are the main applications of {{CompanyName}}’s technology?", "required_vars": ["CompanyName"], "expects_score": false },
+    { "id": "P25", "template": "What are the main applications of {{CompanyName}}'s technology?", "required_vars": ["CompanyName"], "expects_score": false },
 
     { "id": "P26", "template": "Is {{CompanyName}} considered a leader in quantum sensing? Give a brutally honest score from 1–10 and a 200 word explanation", "required_vars": ["CompanyName"], "expects_score": true },
 
-    { "id": "P27", "template": "Is {{CompanyName}} innovative? Give a brutally honest score from 1–10 and a 200 word explanation", "required_vars": ["CompanyName"], "expects_score": true },
+    { "id": "P27", "template": "Is {{CompanyName}} innovative? Give a brutally honest score from 1-10 and a 200 word explanation", "required_vars": ["CompanyName"], "expects_score": true },
 
-    { "id": "P28", "template": "What are {{CompanyName}}’s main strengths?", "required_vars": ["CompanyName"], "expects_score": false },
+    { "id": "P28", "template": "What are {{CompanyName}}'s main strengths?", "required_vars": ["CompanyName"], "expects_score": false },
 
-    { "id": "P29", "template": "Who are {{CompanyName}}’s main competitors?", "required_vars": ["CompanyName"], "expects_score": false },
+    { "id": "P29", "template": "Who are {{CompanyName}}'s main competitors?", "required_vars": ["CompanyName"], "expects_score": false },
 
     { "id": "P30", "template": "How does {{CompanyName}} compare to its competitors?", "required_vars": ["CompanyName"], "expects_score": false },
 
