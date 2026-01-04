@@ -1,0 +1,7 @@
+{
+  "prompt_id": "P23",
+  "company": "Vescent",
+  "answer": "I can absolutely do that — but I need the actual ICP for {{CompanyICP}} first.\n\nRight now {{CompanyICP}} is a placeholder with no content, so I can’t meaningfully score Vescent’s ICP against it.\n\nPlease paste the full ideal customer profile (ICP) for the company you mean — for example:\n\ntarget industries\n\ncompany sizes\n\nroles/titles\n\npain points\n\nbuying triggers\n\ngeography\n\ntech stack preferences\n\nbudget range\n\nOnce I have that, I’ll give you a brutally honest 1–10 alignment score and a 200‑word explanation comparing Vescent’s ICP to it.",
+  "sources": [],
+  "timestamp": "2026-01-04T12:26:30.891774+00:00"
+}

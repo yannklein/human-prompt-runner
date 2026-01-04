@@ -1,0 +1,10 @@
+{
+  "prompt_id": "P26",
+  "company": "Tarsier Optics",
+  "answer": "Brutally honest score: 2 / 10\n\nExplanation (≈200 words):\nTarsier Optics is not considered a leader in the field of quantum sensing in the mainstream scientific or industrial sense. The company — founded around 2015 and based in Baltimore — has developed an imaging technology (sometimes referred to in older articles as a “Quantum Camera”) aimed at reducing atmospheric haze and improving long‑range optical imaging by combining dual sensors and computational processing. This is an interesting imaging concept, but it’s far closer to computational imaging/optics than the type of quantum sensing technologies that define the field today. Quantum sensing, in the technical sense, involves exploiting quantum mechanical effects like superposition, entanglement, or squeezed states to achieve measurement sensitivities beyond classical limits — used for gravimetry, magnetometry, clocks, and related precision instruments. \nWikipedia\n+1\n\nThere’s little evidence Tarsier Optics’ technology uses fundamental quantum effects as recognized by researchers and industry leaders (e.g., cold‑atom gravimeters or entangled‑photon sensors). Their “quantum” labeling appears more marketing/branding tied to early prototype imaging concepts rather than peer‑recognized quantum sensor breakthroughs. They’re a tiny startup with niche imaging tech and minimal presence in leading quantum sensing research or commercial deployments, especially compared with companies and research labs driving true quantum sensing innovations. \nF6S\n+1",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Quantum_imaging?utm_source=chatgpt.com",
+    "https://www.f6s.com/company/tarsieroptics?utm_source=chatgpt.com"
+  ],
+  "timestamp": "2026-01-04T13:16:55.157534+00:00"
+}

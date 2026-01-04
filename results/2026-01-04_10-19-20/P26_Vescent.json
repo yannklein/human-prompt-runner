@@ -1,0 +1,10 @@
+{
+  "prompt_id": "P26",
+  "company": "Vescent",
+  "answer": "Score: 6.5 / 10\n\nVescent is an important and technically respected player in the quantum ecosystem, particularly as a supplier of enabling hardware like optical frequency combs, precision lasers, and control electronics that underpin quantum timing, sensing, computing, and networking systems. Their products are designed to be rugged and low‑SWaP (small, lightweight, low power), making them useful for real‑world deployments rather than purely lab demonstrations, and they claim hundreds of customers globally. \nBusiness Wire\n+1\n\nHowever, being a component‑level supplier is not the same as being a market leader in quantum sensing itself. The quantum sensing field is broad and includes companies developing complete sensor systems (e.g., atomic magnetometers, gravimeters, inertial navigation, etc.) and numerous startups with specialized, high‑impact technologies. Compared to those, Vescent’s role is more as an enabler of others’ sensing systems by providing key building blocks rather than owning flagship sensing products or dominating market share in core sensing categories. Independent industry directories list Vescent alongside many other mid‑tier hardware companies rather than at the very top of sensor innovators. \nquantum.org.uk\n\nIn short, Vescent scores well for technical contribution and ecosystem support, but not at the level of a dominant “leader” in quantum sensing systems themselves—hence a 6.5/10 rather than a higher tier.",
+  "sources": [
+    "https://quantum.org.uk/countries/usa/?utm_source=chatgpt.com",
+    "https://www.businesswire.com/news/home/20240307325244/en/Vescent-Announces-%245M-in-Series-Seed-Funding-Led-by-Corporate-Fuel?utm_source=chatgpt.com"
+  ],
+  "timestamp": "2026-01-04T13:47:10.191396+00:00"
+}
