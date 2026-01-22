@@ -1,0 +1,7 @@
+{
+  "prompt_id": "P22",
+  "company": "Vescent",
+  "answer": "I can do that — but I need the actual content of {{CompanyProblems}} first. Right now that placeholder doesn’t contain any real text, so I have nothing to score against what Vescent solves.\n\nPlease paste the list of problems/description that you want evaluated. Once you do, I’ll give you a brutally honest alignment score (1–10) and a 200‑word explanation of how well Vescent’s solutions match those problems.\n\nReply with your {{CompanyProblems}} text and I’ll take it from there.",
+  "sources": [],
+  "timestamp": "2026-01-06T12:28:15.012515+00:00"
+}

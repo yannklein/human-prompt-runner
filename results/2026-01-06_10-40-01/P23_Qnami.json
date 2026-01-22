@@ -1,0 +1,7 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "answer": "I can do that — but first I need your actual {{CompanyICP}} description.\n\nRight now your prompt says {{CompanyICP}} as a placeholder, and I don’t know what your Ideal Customer Profile actually is. To compare Qnami’s ICP with yours and give you a brutally honest score (1–10) with a ~200‑word explanation, I need:\n\n👉 Your Company’s ICP — e.g., the characteristics of your ideal customer (industry, company size, tech fit, budget, use cases, geographic focus, buying behavior, pain points, etc.).\n\nPlease paste your ICP here, and I’ll analyze how closely Qnami’s target customers align with it.",
+  "sources": [],
+  "timestamp": "2026-01-06T12:31:29.310138+00:00"
+}

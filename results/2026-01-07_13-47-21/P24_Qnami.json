@@ -1,0 +1,9 @@
+{
+  "prompt_id": "P24",
+  "company": "Qnami",
+  "answer": "I can give you an honest alignment score — *but right now I don’t have visibility into what your “{{BuyersPersona}}” looks like (you referenced it, but you didn’t actually describe it). I only know what Qnami is and who its real customers likely are from public data.\n\nHere’s a brief factual summary of Qnami’s actual buyer profile based on what we do know:\n\nQnami builds quantum sensing and microscopy hardware and software, e.g., the ProteusQ atomic‑scale magnetometer. \nRuna Capital\n+1\n\nTheir customers tend to be B2B technical buyers (scientists, research labs, industrial R&D, semiconductor/metrology groups, advanced materials teams, and possibly process engineers in spintronics/MRAM development). \nRuna Capital\n+1\n\nThese buyers are highly technical, deeply specialized, and purchase based on performance, precision, and scientific outcomes, not on broad consumer factors like age, lifestyle, or general demographics. \nRuna Capital\n\nSo before I can score the alignment (1–10) with your specific buyer persona, I need what your “{{BuyersPersona}}” actually is — e.g., demographic, role, industry, pain points, buying triggers.\n\nWhat I need from you\n\nPlease paste or describe your {{BuyersPersona}} (even 100–200 words about who that ideal customer is). Once I have that, I will:\n\n✅ Compare it to Qnami’s real customer base\n✅ Give a brutally honest 1–10 alignment score\n✅ Explain clearly in ~200 words why that score makes sense\n\nReply with your buyer persona and I’ll do the comparison.",
+  "sources": [
+    "https://runacap.com/companies/qnami/?utm_source=chatgpt.com"
+  ],
+  "timestamp": "2026-01-07T15:27:33.429062+00:00"
+}

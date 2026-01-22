@@ -2,9 +2,9 @@
   "prompts": [
     { "id": "P1", "template": "What is quantum sensing?", "required_vars": [], "expects_score": false },
 
-    { "id": "P2", "template": "What are the top 5 applications of quantum sensing? Give me only a title and a 50 word explanation per application", "required_vars": [], "expects_score": false },
+    { "id": "P2", "template": "What are the top 5 applications of quantum sensing? Give me only a title and a 50 word explanation per application and the rank. Choose from the following options: 1. Medical & Life Sciences 2. Navigation, Timing & Positioning 3. Environmental & Earth Monitoring 4. Materials Science & Fundamental Physics 5. Defense & Security 6. Industrial & Manufacturing 7. Energy & Natural Resources 8. Space & Astronomy 9. Scientific Instrumentation & Metrology", "required_vars": [], "expects_score": false },
 
-    { "id": "P3", "template": "What are the top 5 industries that benefit most from quantum sensing?", "required_vars": [], "expects_score": false },
+    { "id": "P3", "template": "What are the top 5 industries that benefit most from quantum sensing? Give me only an industry and a 50 word explanation and the rank. Choose from the following options: 1. Healthcare & Life Science 2. Defense, Intelligence & National Security 3. Aerospace & Space 4. Energy, Oil & Gas, and Natural Resources 5. Environmental Monitoring & Geoscience 6. Automative & Transportation 7. Manufacturing & Industrial Operations 8. Civil Engineering & Infrastructure 9. Telecommunications & Networking 10. Finance & Financial Infrastructure 11. Agriculture & Food Systems 12. Mining & Metals 13. Maritime & Ocean Industries 14. Logistics & Supply Chain 15. Consumer Electronics & Wearables 16. Scientific research & Acamedia 17. Government & Public Sector", "required_vars": [], "expects_score": false },
 
     { "id": "P4", "template": "What startups are active in quantum sensing today?", "required_vars": [], "expects_score": false },
 
