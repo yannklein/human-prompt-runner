@@ -1,0 +1,9 @@
+1. Medical & Life Sciences
+2. Navigation, Timing & Positioning
+3. Environmental & Earth Monitoring
+4. Materials Science & Fundamental Physics
+5. Defense & Security
+6. Industrial & Manufacturing
+7. Energy & Natural Resources
+8. Space & Astronomy
+9. Scientific Instrumentation & Metrology

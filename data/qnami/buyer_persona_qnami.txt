@@ -1,0 +1,11 @@
+Dr. Elena Vasquez, Lead Nanomagnetism Researcher at Quantix Labs (Zurich-based quantum materials startup with 120 employees and $15M Series A funding).
+
+Elena, 42, holds a PhD in Applied Physics from ETH Zurich. She manages a 10-person team developing spintronic memory devices, publishing 5+ papers yearly in Nature Nanotechnology. Her lab uses cryogenic setups and Python for data analysis but struggles with artifact-prone magnetic imaging from SQUIDs.
+
+Pain Points: Needs sub-10nm resolution for magnetic textures without sample damage; current tools slow IP development amid grant deadlines.
+
+Goals: Accelerate prototyping for VC pitches; integrate with existing AFM systems.
+
+Buying Triggers: Demo at APS March Meeting showing 3x faster scans; budget approval from CTO for $450K ProteusQ purchase.
+
+Engagement Profile: Active on LinkedIn/Quantum Computing Slack; attends MRS conferences; responds to case studies on NV magnetometry.

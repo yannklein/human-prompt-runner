@@ -1,0 +1,57 @@
+{
+  "prompts": [
+    { "id": "P1", "template": "What are the top 5 applications of {{Category}}? Give me only a title and a 50 word explanation per application and the rank. Choose from the following options: {{Categories}} ", "required_vars": ["Category", "Categories"], "expects_score": false },
+
+    { "id": "P2", "template": "Which are top 10 countries in {{Category}} innovation? and why? Give me 200 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P3", "template": "What are the top 5 most promising companies in {{Category}}? Give me 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P4", "template": "What are the top 5 {{Category}} companies with the best team? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P5", "template": "What are the top 5 leading labs or Universities on {{Cateogry}} research? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P6", "template": "Who are the top 10 key figures or founders in {{Category}}? Give me 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P7", "template": "What are the top 3 challenges to commercializing {{Category}}? Give me 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P8", "template": "What are the top 5 latest breakthroughs in {{Category}}? Give me 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P9", "template": "What 5 breakthroughs in {{Category}} are predicted to happen over 5 years? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "P10", "template": "What does {{CompanyName}} do? Summarise it in 200 words", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P11", "template": "How does {{CompanyName}} differ from direct competitors? Summarise it in max 300 words.", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P12", "template": "In your perception as AI Engine, is {{CompanyName}}'s ICP aligned with what the company claims: {{CompanyICP}}? Give a brutally honest score from 1–10 and explain in 200 words", "required_vars": ["CompanyName", "CompanyICP"], "expects_score": true },
+
+    { "id": "P13", "template": "In your perception as AI Engine, is {{CompanyName}}'s buyer persona aligned with what the company claims: {{BuyersPersona}}? Give a brutally honest score from 1–10 and explain in 200 words", "required_vars": ["CompanyName", "BuyersPersona"], "expects_score": true },
+
+    { "id": "P14", "template": "What are {{CompanyName}}'s main strengths? Give short bullet points", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P15", "template": "What are {{CompanyName}}'s main weaknesses? Give short bullet points", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P16", "template": "What are {{CompanyName}}'s main opportunities? Give short bullet points", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P17", "template": "What are {{CompanyName}}'s main threats? Give short bullet points", "required_vars": ["CompanyName"], "expects_score": false },
+
+    { "id": "P18", "template": "You are a senior Venture Capital analyst. How would you rate the academic strength of the team? Does the team of {{CompanyName}} have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P19", "template": "You are a senior Venture Capital analyst. How would you rate the {{CompanyName}}'s ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P20", "template": "You are a senior Venture Capital analyst. How would you rate the {{CompanyName}}'s execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P21", "template": "You are a senior Venture Capital analyst. How would you rate the {{CompanyName}}'s current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P22", "template": "You are a senior Venture Capital analyst. How would you rate the uniqueness of the {{CompanyName}}'s current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P23", "template": "You are a senior Venture Capital analyst. How would you rate how far the {{CompanyName}} is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P24", "template": "You are a senior Venture Capital analyst. How would you rate the sales performance of {{CompanyName}}? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P25", "template": "You are a senior Venture Capital analyst. How would you rate the quality of the VC funds on the cap table of {{CompanyName}}?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P26", "template": "You are a senior Venture Capital analyst. How would you rate your belief that {{CompanyName}} can go up by 10x?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true },
+
+    { "id": "P27", "template": "You are a senior Venture Capital analyst. How would you rate your belief that the other investors of {{CompanyName}} will reinvest in the following rounds and bridges, and/or that the company will find a lead investor for the following round?  Give a brutally honest score from 1–10 and a 200 word explanation.", "required_vars": ["CompanyName"], "expects_score": true }
+  ]
+}

@@ -11,8 +11,10 @@ from playwright.async_api import async_playwright, Page, BrowserContext
 
 class PromptRunner:
 
-    def __init__(self, prompts_file: str):
+    def __init__(self, prompts_file: str, icp_file: str, buyer_persona: str):
         self.prompts_file = prompts_file
+        self.icp_file = icp_file
+        self.buyer_persona = buyer_persona
         self.context: Optional[BrowserContext] = None
         self.page: Optional[Page] = None
         self.playwright = None
@@ -20,7 +22,28 @@ class PromptRunner:
     def load_prompts(self):
         with open(self.prompts_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            return data.get("prompts", [])
+            return data.get("prompts/prompts_quantum_companies", [])
+
+    def load_icp(self, filepath, company_name):
+        filename = f"icp_{company_name}.txt"
+        filepath = Path(self.icp_file) / filename if Path(self.icp_file).is_dir() else Path(filename)
+
+        if not filepath.exists():
+            raise FileNotFoundError(f"ICP file not found: {filepath}")
+
+        with filepath.open("r", encoding="utf-8") as f:
+            return f.read().strip()
+
+    def load_buyer_persona(self, company_name: str) -> str:
+        filename = f"buyer_persona_{company_name}.txt"
+        filepath = Path(self.buyer_persona) / filename if Path(self.buyer_persona).is_dir() else Path(filename)
+
+        if not filepath.exists():
+            raise FileNotFoundError(f"Buyer persona file not found: {filepath}")
+
+        with filepath.open("r", encoding="utf-8") as f:
+            return f.read().strip()
+
 
     def load_companies(self, filepath="companies.txt"):
         if not Path(filepath).exists(): return []
@@ -146,7 +169,7 @@ async def main():
     run_folder = results_root / datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
     run_folder.mkdir(parents=True, exist_ok=True)
 
-    runner = PromptRunner("prompts.json")
+    runner = PromptRunner("prompts/quantum/prompts_quantum_companies.json")
     prompts = runner.load_prompts()
     companies = runner.load_companies()
 
@@ -156,6 +179,10 @@ async def main():
 
         for company in targets:
             prompt_text = p["template"]
+
+                icp = runner.load_icp("data/icp_qnami.txt", qnami)
+    buyer_persona = runner.load_buyer_persona("data/buyer_persona_qnami.txt")
+
             if company:
                 prompt_text = prompt_text.replace("{{CompanyName}}", company)
 
