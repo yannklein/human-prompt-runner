@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Here are **five predicted breakthroughs in Quantum Sensing over the next five years**, ranked by expected impact:\n\n1. **Room-Temperature Quantum Sensors**: Advances in materials will enable quantum sensors to operate at room temperature, making them practical for widespread use.\n2. **Quantum Gravimeters for Geophysics**: Portable quantum gravimeters will revolutionize resource exploration and earthquake prediction.\n3. **Quantum-enhanced Medical Imaging**: Quantum sensors will dramatically improve MRI and brain imaging resolution.\n4. **Ultra-precise Navigation Systems**: Quantum gyroscopes and accelerometers will provide GPS-independent navigation, crucial for defense and autonomous vehicles.\n5. **Single-Molecule Detection**: Quantum sensors will achieve real-time, single-molecule detection for drug discovery and diagnostics.\n\nThese breakthroughs will transform industries from healthcare to navigation and earth sciences.",
+  "timestamp": "2026-01-23T14:41:57.731966+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "error": "'raw_response_id'"
+}

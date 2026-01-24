@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P27",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that the other investors of Qnami will reinvest in the following rounds and bridges, and/or that the company will find a lead investor for the following round?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s my brutally honest assessment as a senior VC analyst:\n\nScore: 4 out of 10\n\nExplanation (approx. 200 words):\n\nQnami’s most recent disclosed financing was a Series A round of CHF 4 million (~USD 4.4 million) in May 2021, led by Runa Capital and SIT Capital, with participation from seed investors Quantonation, Verve Ventures, Zürcher Kantonalbank, and High-Tech Gründerfonds ([thequantuminsider.com](https://thequantuminsider.com/2021/05/12/swiss-based-qnami-closes-4-million-chf-4-4-million-u-s-series-a-funding-round/?utm_source=openai)). Since then, there’s been no public announcement of follow-on rounds, bridge financings, or new lead investors. That multi-year silence suggests limited traction in securing additional capital, which is concerning.\n\nOn the positive side, Qnami has expanded its commercial footprint—signing distribution agreements in Japan and South Korea and launching the ProteusQ-LT product line in mid‑2025 ([thequantuminsider.com](https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/?utm_source=openai)). These moves indicate growing market adoption and product evolution, which could attract investor interest. However, without visible follow-on funding or strategic investor engagement, it’s hard to justify high confidence.\n\nGiven the lack of recent financing activity, combined with modest but real commercial progress, I rate the likelihood of existing investors reinvesting or a new lead emerging at a cautious 4/10. The company shows promise, but until there’s tangible funding momentum, investor conviction remains low.",
+  "timestamp": "2026-01-24T12:16:12.182254+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "response_id": "resp_0fad0eefdfb03c5e006974b80c679881958c5760f888925b2b"
+}

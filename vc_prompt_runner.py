@@ -5,213 +5,191 @@ import asyncio
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
 
-from playwright.async_api import async_playwright, Page, BrowserContext
+from openai import AsyncOpenAI
+
 
 class PromptRunner:
-
-    def __init__(self, prompts_file: str, icp_file: str, buyer_persona: str):
+    def __init__(
+        self,
+        prompts_file: str,
+        icp_file: str,
+        buyer_persona_file: str,
+        quantum_sensing_applications_file: str,
+        model: str = "gpt-4.1"
+    ):
         self.prompts_file = prompts_file
-        self.icp_file = icp_file
-        self.buyer_persona = buyer_persona
-        self.context: Optional[BrowserContext] = None
-        self.page: Optional[Page] = None
-        self.playwright = None
+        self.icp_file = Path(icp_file)
+        self.buyer_persona_file = Path(buyer_persona_file)
+        self.quantum_sensing_applications_file = Path(quantum_sensing_applications_file)
+        self.model = model
+        self.client = AsyncOpenAI()
 
-    def load_prompts(self):
+    # ---------- Loaders ----------
+
+    def load_prompts(self) -> List[dict]:
         with open(self.prompts_file, "r", encoding="utf-8") as f:
             data = json.load(f)
-            return data.get("prompts/prompts_quantum_companies", [])
+            return data.get("prompts", [])
 
-    def load_icp(self, filepath, company_name):
-        filename = f"icp_{company_name}.txt"
-        filepath = Path(self.icp_file) / filename if Path(self.icp_file).is_dir() else Path(filename)
+    def _load_text_file(self, path: Path, label: str) -> str:
+        if not path.exists():
+            raise FileNotFoundError(f"{label} file not found: {path}")
+        return path.read_text(encoding="utf-8").strip()
 
-        if not filepath.exists():
-            raise FileNotFoundError(f"ICP file not found: {filepath}")
+    def load_icp(self) -> str:
+        return self._load_text_file(self.icp_file, "ICP")
 
-        with filepath.open("r", encoding="utf-8") as f:
-            return f.read().strip()
-
-    def load_buyer_persona(self, company_name: str) -> str:
-        filename = f"buyer_persona_{company_name}.txt"
-        filepath = Path(self.buyer_persona) / filename if Path(self.buyer_persona).is_dir() else Path(filename)
-
-        if not filepath.exists():
-            raise FileNotFoundError(f"Buyer persona file not found: {filepath}")
-
-        with filepath.open("r", encoding="utf-8") as f:
-            return f.read().strip()
-
-
-    def load_companies(self, filepath="companies.txt"):
-        if not Path(filepath).exists(): return []
-        with open(filepath, "r", encoding="utf-8") as f:
-            return [line.strip() for line in f if line.strip()]
-
-    async def kill_blockers(self):
-        """Standard JS method to remove interference elements."""
-        await self.page.evaluate('''() => {
-            const selectors = [
-                'div[role="dialog"]',
-                '.fixed.inset-0',
-                '.absolute.right-4.top-4',
-                'div[id^="radix-"]',
-                'div#sodal-no-auth-rate-limit'
-            ];
-            selectors.forEach(s => {
-                try {
-                    document.querySelectorAll(s).forEach(el => el.remove());
-                } catch (e) {}
-            });
-
-            // Find and remove by text (Login/Stay logged out/Restore)
-            const elements = document.querySelectorAll('button, div, span, a');
-            elements.forEach(el => {
-                const txt = el.innerText || "";
-                if (txt.includes("Stay logged out") || txt.includes("Restore pages") || txt.includes("Log in or sign up")) {
-                    el.remove();
-                }
-            });
-
-            document.body.style.pointerEvents = 'auto';
-            document.body.style.overflow = 'auto';
-            document.documentElement.style.pointerEvents = 'auto';
-        }''')
-
-    async def open_browser(self, headless: bool):
-        self.playwright = await async_playwright().start()
-        self.context = await self.playwright.chromium.launch_persistent_context(
-            user_data_dir="./chatgpt_profile",
-            headless=headless,
-            viewport={"width": 1280, "height": 800},
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--disable-session-crashed-bubble",
-            ]
+    def load_applications(self) -> str:
+        return self._load_text_file(
+            self.quantum_sensing_applications_file, "Applications"
         )
-        self.page = self.context.pages[0] if self.context.pages else await self.context.new_page()
-        await self.page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => false})")
 
-        print("Navigating to ChatGPT...")
-        await self.page.goto("https://chatgpt.com/")
-        await asyncio.sleep(4)
-        await self.kill_blockers()
+    def load_buyer_persona(self) -> str:
+        return self._load_text_file(self.buyer_persona_file, "Buyer persona")
 
-        try:
-            await self.page.wait_for_selector("#prompt-textarea", timeout=20000)
-        except:
-            await self.kill_blockers()
-            await self.page.wait_for_selector("#prompt-textarea", timeout=10000)
+    def load_companies(self, filepath="companies.txt") -> List[str]:
+        path = Path(filepath)
+        if not path.exists():
+            return []
+        return [
+            l.strip()
+            for l in path.read_text(encoding="utf-8").splitlines()
+            if l.strip()
+        ]
 
-    async def close_browser(self):
-        if self.context: await self.context.close()
-        if self.playwright: await self.playwright.stop()
+    # ---------- API Call ----------
 
-    async def submit_prompt(self, prompt: str):
-        await self.kill_blockers()
-        textarea = await self.page.wait_for_selector("#prompt-textarea")
-        await textarea.fill(prompt)
-        await asyncio.sleep(1)
+    async def run_prompt(self, prompt: str) -> dict:
+        response = await self.client.responses.create(
+            model=self.model,
+            tools=[
+                {
+                    "type": "web_search",
+                    "search_context_size": "medium"
+                }
+            ],
+            input=prompt,
+            temperature=0.2,
+        )
 
-        send_btn = 'button[data-testid="send-button"]'
-        await self.page.evaluate('selector => { const b = document.querySelector(selector); if(b) b.click(); }', send_btn)
+        answer_chunks = []
+        sources = []
 
-        await asyncio.sleep(0.5)
-        await self.page.keyboard.press("Enter")
+        for item in response.output:
+            if item.type != "message":
+                continue
 
-        return await self.wait_for_response()
+            for block in item.content:
+                if block.type == "output_text":
+                    answer_chunks.append(block.text)
 
-    async def wait_for_response(self):
-        # 1. Wait for assistant to start
-        await self.page.wait_for_selector('[data-message-author-role="assistant"]', timeout=45000)
-        print("Assistant is responding...")
+                    # Collect every citation occurrence
+                    for ann in block.annotations or []:
+                        if ann.type == "web_citation":
+                            sources.append({
+                                "url": ann.url,
+                                "title": ann.title,
+                                "publisher": ann.publisher,
+                                "snippet": ann.snippet,
+                            })
 
-        # 2. Loop until done, killing blockers repeatedly
-        # This solves the problem of a modal appearing halfway through typing
-        finish_selectors = 'button[data-testid="send-button"]:not([disabled]), button[aria-label="Share chat"], button:has-text("Regenerate")'
+        return {
+            "answer": "\n".join(answer_chunks).strip(),
+            "sources": sources,  # duplicates preserved by design
+            "response_id": response.id,
+        }
 
-        for _ in range(36): # 3 minutes total (36 * 5s)
-            try:
-                # Check if we are done
-                done = await self.page.query_selector(finish_selectors)
-                if done and await done.is_visible():
-                    print("Generation complete.")
-                    break
-            except:
-                pass
 
-            # Not done yet? Kill any new modals that appeared
-            await self.kill_blockers()
-            await asyncio.sleep(5)
 
-        await asyncio.sleep(2)
-        messages = await self.page.query_selector_all('[data-message-author-role="assistant"]')
-        last_message = messages[-1]
-        text = await last_message.inner_text()
 
-        links = []
-        for a in await last_message.query_selector_all('a[href^="http"]'):
-            href = await a.get_attribute("href")
-            if href and "openai.com" not in href: links.append(href)
-
-        return text, list(set(links))
+# ====================== MAIN ======================
 
 async def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--headless", action="store_true")
+    parser.add_argument("--model", default="gpt-4.1")
+    parser.add_argument("--test", action="store_true", help="Run only the first prompt (and first company)")
     args = parser.parse_args()
+
+    runner = PromptRunner(
+        prompts_file="prompts/quantum/prompts_quantum_companies.json",
+        icp_file="data/qnami/icp_qnami.txt",
+        buyer_persona_file="data/qnami/buyer_persona_qnami.txt",
+        quantum_sensing_applications_file="data/quantum-generic/applications_quantum_sensing.txt",
+        model=args.model
+    )
+
+    prompts = runner.load_prompts()
+    companies = runner.load_companies()
+
+    if args.test:
+        prompts = prompts[:1]
+        companies = companies[:1]
+
+    CATEGORY = "Quantum Sensing"
+    APPLICATIONS = runner.load_applications()
+    icp_text = runner.load_icp()
+    buyer_persona_text = runner.load_buyer_persona()
 
     results_root = Path("results")
     results_root.mkdir(exist_ok=True)
     run_folder = results_root / datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
     run_folder.mkdir(parents=True, exist_ok=True)
 
-    runner = PromptRunner("prompts/quantum/prompts_quantum_companies.json")
-    prompts = runner.load_prompts()
-    companies = runner.load_companies()
-
     for p in prompts:
-        requires_company = "CompanyName" in p.get("required_vars", [])
-        targets = companies if (requires_company and companies) else [None]
+        requires_company = "CompanyName" in p["required_vars"]
+        targets = companies if requires_company else [None]
 
         for company in targets:
             prompt_text = p["template"]
 
-                icp = runner.load_icp("data/icp_qnami.txt", qnami)
-    buyer_persona = runner.load_buyer_persona("data/buyer_persona_qnami.txt")
+            if "Category" in p["required_vars"]:
+                prompt_text = prompt_text.replace("{{Category}}", CATEGORY)
+
+            if "Applications" in p["required_vars"]:
+                prompt_text = prompt_text.replace("{{Applications}}", APPLICATIONS)
 
             if company:
                 prompt_text = prompt_text.replace("{{CompanyName}}", company)
 
-            print(f"\n🚀 Fresh Session: {p['id']} ({company or 'General'})")
-            await runner.open_browser(args.headless)
+            if "CompanyICP" in p["required_vars"]:
+                prompt_text = prompt_text.replace("{{CompanyICP}}", icp_text)
+
+            if "BuyersPersona" in p["required_vars"]:
+                prompt_text = prompt_text.replace(
+                    "{{BuyersPersona}}", buyer_persona_text
+                )
 
             result = {
                 "prompt_id": p["id"],
                 "company": company,
+                "question": prompt_text,
                 "answer": "FAILED",
-                "sources": [],
-                "timestamp": datetime.now(timezone.utc).isoformat()
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "model": args.model,
+                "test_mode": args.test,
             }
 
             try:
-                text, sources = await runner.submit_prompt(prompt_text)
-                result["answer"] = text
-                result["sources"] = sources
-                print(f"✅ Success.")
-            except Exception as e:
-                print(f"❌ Error: {e}")
-                result["error"] = str(e)
-            finally:
-                safe_name = str(company or 'general').replace(" ", "_")
-                with open(run_folder / f"{p['id']}_{safe_name}.json", "w", encoding="utf-8") as f:
-                    json.dump(result, f, indent=2, ensure_ascii=False)
-                await runner.close_browser()
+                response = await runner.run_prompt(prompt_text)
+                result["answer"] = response["answer"]
+                result["sources"] = response["sources"]
+                result["response_id"] = response["response_id"]
 
-            await asyncio.sleep(2)
+            except Exception as e:
+                result["error"] = str(e)
+
+            name = (company or "category").replace(" ", "_")
+            output_path = run_folder / f"{p['id']}_{name}.json"
+
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+
+            if args.test:
+                return  # hard stop after first execution
+
+            await asyncio.sleep(0.5)
 
 if __name__ == "__main__":
     asyncio.run(main())

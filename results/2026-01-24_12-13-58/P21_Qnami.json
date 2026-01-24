@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a brutally honest assessment of Qnami’s current patent portfolio in its quantum sensing sector:\n\nScore: **3 out of 10**\n\nExplanation (approx. 200 words):\n\nQnami holds a modest portfolio of approximately 13 global patent filings, with only 3 granted and around 9 still active ([insights.greyb.com](https://insights.greyb.com/qnami-patents/?utm_source=openai)). In comparison to major players in quantum technologies—such as D‑Wave, IonQ, or Quantinuum—who each boast hundreds to over a thousand patent publications across numerous families and jurisdictions ([patentvest.com](https://www.patentvest.com/patentvest-pulse/quantum-computing-at-the-inflection-point-the-ip-battle-that-will-define-the-next-trillion-dollar-market/?utm_source=openai)), Qnami’s IP footprint is minimal. This limited scale suggests a narrow moat and low barrier to entry for competitors.\n\nThat said, the patents Qnami does hold appear highly focused and technically relevant. They cover core innovations in NV‑center diamond probes, nanoscale thermometry, and magnetization detection—key enablers for their ProteusQ quantum microscope ([insights.greyb.com](https://insights.greyb.com/qnami-patents/?utm_source=openai)). These are meaningful and strategically aligned with their product offering, but the depth and breadth remain shallow.\n\nIn summary, while Qnami’s patents are well-targeted and technically sound, the overall quantity and scope are insufficient to establish a robust IP advantage in the rapidly evolving quantum sensing landscape. A score of 3 reflects this imbalance: technically relevant but far too limited in scale.",
+  "timestamp": "2026-01-24T12:15:43.380387+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "response_id": "resp_0f3b2fc6a773ef7d006974b7ef97288197b9f641aa398d60b4"
+}
