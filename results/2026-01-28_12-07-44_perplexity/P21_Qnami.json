@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Score: 6.5/10 for Qnami’s patent number and quality in quantum NV sensing/instrumentation.\n\nQnami is still a relatively young company and publicly available analyses show a compact portfolio of about 13 patent families globally, with only a minority granted, though most are active. In a sector where large corporates and diamond suppliers (e.g., Element Six, Lockheed-related portfolios) hold broad foundational NV‑diamond and magnetometry materials patents, this is not a big estate by count. However, several filings are tightly aligned with Qnami’s product stack: methods for detecting magnetization in ultra‑scaled nanowires for spintronic devices, and high‑resolution sensing of local magnetic fields and temperature in RF current‑carrying ICs, i.e., semiconductor reliability and test.\ninsights.greyb+8\n\nThese are application‑level, use‑case‑proximate patents that can matter disproportionately for go‑to‑market in semicon and spintronics versus “generic” NV sensing claims. On the other hand, parts of the stack (e.g., NV materials, some probe concepts) rely on exclusive or non‑exclusive licenses to third‑party IP, such as Harvard/partners, rather than being fully owned. Net: solid, focused quality but sub‑scale volume and incomplete coverage compared with top‑tier incumbents in this space.\nventurelab+1",
+  "sources": [
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "insights.greyb+8",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology",
+      "title": "venturelab+1",
+      "publisher": "venturelab.swiss",
+      "snippet": ""
+    },
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "insights.greyb\nQnami Patents - Insights & Stats (Updated 2024)",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "insights.greyb\nQnami Patents - Insights & Stats (Updated 2024)",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology",
+      "title": "venturelab\nQnami raises CHF 4 million to advance its patented ...\nQnami raised CHF 4 million in a Series A financing round led by venture capital funds Runa Capital and SIT Capital, further supported by Seed-round investors Quantonation, Verve Ventures, ZKB Start-up Finance, and the High Tech Gründerfond. The funds will support the extension of Qnami’s patented quantum microscope technology into applications enabling the design and production of quantum computers and spintronics devices, plus scaling the launch of the Qnami ProteusQ™, the first commercial...",
+      "publisher": "venturelab.swiss",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:17:37.504729+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

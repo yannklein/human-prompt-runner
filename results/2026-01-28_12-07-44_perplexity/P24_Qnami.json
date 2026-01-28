@@ -1,0 +1,59 @@
+{
+  "prompt_id": "P24",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Qnami? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Qnami's sales performance remains underwhelming for a deep-tech firm now several years post-product launch. Score: 3/10.\n\nFunding History\n\nQnami, a Swiss quantum sensing startup founded in 2017, raised a CHF 2.6M seed round in 2019 and a CHF 4M Series A in 2021-2023, primarily to fund ProteusQ microscope market entry and quantum applications. No evidence of later rounds or revenue milestones appears in available data up to early 2026.\nhtgf+2\n\nSales Record\n\nBy 2023, Qnami reported over CHF 1M in cumulative sales, mainly from ProteusQ units to materials researchers—a modest feat for an early-stage player but stagnant since. No recent figures indicate scaling; in a quantum sensors market projected at $479M in 2026 (with Qnami as a minor player holding <5% share alongside giants like ID Quantique), this suggests annual revenue likely under $1M. Product-market fit exists in niche R&D, but commercial traction lags behind spintronics/quantum computing hype.\nverve+3\n\nPartnerships\n\nMinor collaborations include QAI Ventures (2024 VC guidance, not sales-driving) and imec for MRAM tech demos. No major OEM deals, semiconductor foundry adoptions, or hyperscaler partnerships (e.g., IBM, Intel) are documented—critical for deep-tech revenue ramps. Horiba sales support was noted but unproven in outcomes.\nlinkedin+1\n\nVC Verdict\n\nBrutally, Qnami exemplifies deep-tech promise unfulfilled: tech works, but sales crawl at pre-scale levels amid a booming $1B+ market by 2031. Without explosive growth signals by 2026, it's a watchlist candidate at best—high burn, low repeatability risks dilution or pivot. (198 words)\ngminsights\n​",
+  "sources": [
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf+2",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve+3",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6",
+      "title": "linkedin+1",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "gminsights",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6",
+      "title": "linkedin\nQnami partners with QAI Ventures for quantum sensing\nBenjamin DELSOL, thanks for the fantastic #QuantumTuesday post! We at Qnami truly appreciate your enthusiasm for #QuantumSensing and its potential to revolutionize various industries. VC firms like QAI Ventures play a crucial role in supporting our journey by providing not only essential funding but also valuable guidance on protecting innovations, secure partnerships, and ultimately bring transformative quantum sensing solutions like #ProteusQ to market. Their support fosters a healthy...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "gminsights\nQuantum Sensors Market Size, Share & Industry Report ...\nThe global quantum sensors market was valued at USD 414.6 million in 2025 with a volume of 1,90,491.3 units.",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:19:11.600337+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

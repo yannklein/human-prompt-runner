@@ -1,0 +1,118 @@
+{
+  "prompt_id": "P8",
+  "company": null,
+  "question": "What are the top 5 latest breakthroughs in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Quantum sensing has seen rapid advances leveraging quantum effects for ultra-precise measurements. Here are the top 5 latest breakthroughs as of early 2026, ranked by impact and recency, with ~100-word explanations each.\nlinkedin+2\n\nRank 1: Room-Temp Quantum MEG\n\nUniversity of Nottingham's wearable quantum magnetometers enable brain activity mapping at room temperature, ditching cryogenic needs. These optically pumped sensors detect neural magnetic fields with unprecedented sensitivity, fitting in helmets for mobile diagnostics. This \"new dawn\" boosts neuroscience, epilepsy detection, and cognitive studies by improving patient comfort and portability over bulky classical MEG systems.\npostquantum\n​\n\nRank 2: Quantum-Enhanced MRI\n\nAustralian researchers used diamond nitrogen-vacancy qubits as nanoscale MRI probes to image single-molecule atomic structures. By sensing spins from individual atoms, this achieves molecular-scale resolution impossible classically. Applications span drug discovery and protein folding analysis, revolutionizing biomedicine with atomic precision.\npostquantum\n​\n\nRank 3: Quantum Radar Prototypes\n\nEntangled photon pairs power quantum radars detecting stealth objects at low power, resisting jamming. 2025 demos showed superior target identification vs. classical systems. Defense applications include aircraft tracking and secure comms, with prototypes scaling for real-world deployment.\npostquantum\n​\n\nRank 4: GPS-Free Quantum Compass\n\nUK teams developed portable cold-atom accelerometers/gyroscopes for inertial navigation without GPS. Ultra-precise motion tracking enables dead-reckoning over long distances, vital for submarines, space, and jammed environments. 2025 portability advances make it field-ready.\npostquantum\n​\n\nRank 5: LIGO Squeezed-Light Upgrade\n\nQuantum squeezed light reduced LIGO's noise below the standard quantum limit, detecting 60% more gravitational waves. This 2025 enhancement quiets vacuum fluctuations, enabling fainter cosmic event observations like black hole mergers, advancing astrophysics.\npostquantum\n​",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin+2",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin\nTop 5 Quantum Breakthroughs of 2025 (And What's ...\nRemember when quantum computing sounded like sci-fi nonsense? 2025 killed that idea. Quantum went from “maybe someday” to “this is actually happening.",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum\nQuantum Sensing - Key Use Cases\nAt its core, quantum sensing goes beyond classical measurement limits. Traditional sensors – from thermometers to microphones – are ultimately...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum\nQuantum Sensing - Key Use Cases\nAt its core, quantum sensing goes beyond classical measurement limits. Traditional sensors – from thermometers to microphones – are ultimately...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum\nQuantum Sensing - Key Use Cases\nAt its core, quantum sensing goes beyond classical measurement limits. Traditional sensors – from thermometers to microphones – are ultimately...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum\nQuantum Sensing - Key Use Cases\nAt its core, quantum sensing goes beyond classical measurement limits. Traditional sensors – from thermometers to microphones – are ultimately...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "postquantum\nQuantum Sensing - Key Use Cases\nAt its core, quantum sensing goes beyond classical measurement limits. Traditional sensors – from thermometers to microphones – are ultimately...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/quantum-sensing/quantum-sensing-use-cases/",
+      "title": "",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:02:25.435936+00:00",
+  "model": "perplexity-web"
+}

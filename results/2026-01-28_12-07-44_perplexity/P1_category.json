@@ -1,0 +1,95 @@
+{
+  "prompt_id": "P1",
+  "company": null,
+  "question": "What are the top 5 applications of Quantum Sensing currently? Give me only a title and a 50 word explanation per application and the rank. Choose from the following options: 1. Medical & Life Sciences\n2. Navigation, Timing & Positioning\n3. Environmental & Earth Monitoring\n4. Materials Science & Fundamental Physics\n5. Defense & Security\n6. Industrial & Manufacturing\n7. Energy & Natural Resources\n8. Space & Astronomy\n9. Scientific Instrumentation & Metrology ",
+  "answer": "Rank 1: Medical & Life Sciences\nQuantum sensing enables ultra-precise brain imaging via OPM-MEG arrays and NV-diamond magnetometers for diagnostics, detecting subtle magnetic fields from neural activity. This advances non-invasive healthcare, accelerating clinical trials for brain disorders. (38 words)\nquantumcomputingreport+1\n\nRank 2: Navigation, Timing & Positioning\nQuantum gyroscopes, atomic clocks, and inertial sensors provide GPS-denied navigation for vehicles, submarines, and aerospace. They ensure precise positioning in jammed environments, vital for autonomous systems and PNT resilience. (42 words)\nidtechex+1\n\nRank 3: Defense & Security\nQuantum magnetometers and RF sensors detect submarines, surveillance threats, and electronic warfare signals with high sensitivity. Deployments enhance secure operations without GPS reliance, including classified underwater and anomaly monitoring. (40 words)\nthequantuminsider+1\n\nRank 4: Environmental & Earth Monitoring\nGravimeters and magnetometers map underground resources, track tectonics, glaciers, and climate changes. They support disaster preparedness, resource management, and subterranean mapping for geoscience applications. (36 words)\nscquantum+1\n\nRank 5: Energy & Natural Resources\nQuantum sensors aid mining exploration, gravity mapping for resources, and structural monitoring in energy infrastructure. They improve detection of vibrations and anomalies in oil, gas, and renewables. (39 words)\nthequantuminsider+1",
+  "sources": [
+    {
+      "url": "https://quantumcomputingreport.com/gqis-top-predictions-for-quantum-technology-in-2026/",
+      "title": "quantumcomputingreport+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.idtechex.com/en/research-article/quantum-sensors-enabling-navigation-medical-imaging-and-more/33673",
+      "title": "idtechex+1",
+      "publisher": "idtechex.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scquantum.org/news/what-are-quantum-sensors-and-who-uses-them",
+      "title": "scquantum+1",
+      "publisher": "scquantum.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/gqis-top-predictions-for-quantum-technology-in-2026/",
+      "title": "quantumcomputingreport\nGQI's Top Predictions for Quantum Technology in 2026\n2025 has been a year of truly significant progress in the quantum technology world, with continued advancements in hardware, software, and ecosystems bringing us closer to the goal of transformative quantum applications in computing, communications and sensing. In congratulating the world’s",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.idtechex.com/en/research-article/quantum-sensors-enabling-navigation-medical-imaging-and-more/33673",
+      "title": "idtechex\nQuantum Sensors Enabling Navigation, Medical Imaging, ...\nIDTechEx Research Article: Growing hype and synergistic development with quantum computing and communications are driving interest and investment into the quantum technology sector unlike ever before. Quantum sensors are anticipated to generate revenues of over US$1.9 billion by 2046, with an average CAGR of 9.0% over the next twenty years.",
+      "publisher": "idtechex.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.idtechex.com/en/research-article/quantum-sensors-enabling-navigation-medical-imaging-and-more/33673",
+      "title": "idtechex\nQuantum Sensors Enabling Navigation, Medical Imaging, ...\nIDTechEx Research Article: Growing hype and synergistic development with quantum computing and communications are driving interest and investment into the quantum technology sector unlike ever before. Quantum sensors are anticipated to generate revenues of over US$1.9 billion by 2046, with an average CAGR of 9.0% over the next twenty years.",
+      "publisher": "idtechex.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.idtechex.com/en/research-article/quantum-sensors-enabling-navigation-medical-imaging-and-more/33673",
+      "title": "idtechex\nQuantum Sensors Enabling Navigation, Medical Imaging, ...\nIDTechEx Research Article: Growing hype and synergistic development with quantum computing and communications are driving interest and investment into the quantum technology sector unlike ever before. Quantum sensors are anticipated to generate revenues of over US$1.9 billion by 2046, with an average CAGR of 9.0% over the next twenty years.",
+      "publisher": "idtechex.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scquantum.org/news/what-are-quantum-sensors-and-who-uses-them",
+      "title": "scquantum\nWhat Are Quantum Sensors and Who Uses Them?\nFor more than thirty years, quantum science has shaped how we measure time, light, motion, and gravity. From the earliest atomic clocks to new generations of magnetic and optical sensors, progress in this field has changed the way we navigate, communicate, and observe the world. Today, quantum sensing is one of the most advanced and accessible areas of quantum technology, moving steadily from research labs into real-world use.",
+      "publisher": "scquantum.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scquantum.org/news/what-are-quantum-sensors-and-who-uses-them",
+      "title": "scquantum\nWhat Are Quantum Sensors and Who Uses Them?\nFor more than thirty years, quantum science has shaped how we measure time, light, motion, and gravity. From the earliest atomic clocks to new generations of magnetic and optical sensors, progress in this field has changed the way we navigate, communicate, and observe the world. Today, quantum sensing is one of the most advanced and accessible areas of quantum technology, moving steadily from research labs into real-world use.",
+      "publisher": "scquantum.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:07:51.008738+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,59 @@
+{
+  "prompt_id": "P7",
+  "company": null,
+  "question": "What are the top 3 challenges to commercializing Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "The top three challenges to commercializing quantum sensing are ranked as follows: (1) Infrastructure limitations, (2) Supply chain vulnerabilities, and (3) Scalability and integration issues.\n\nRank 1: Infrastructure Limitations\nQuantum sensing requires specialized fabrication facilities for scaling production, but access is limited, especially for startups relying on costly university labs or multi-project wafers. High development costs hinder iterative design and mass production.\nised-isde.canada+1\n\nRank 2: Supply Chain Vulnerabilities\nSecuring raw materials like helium-3, high-purity silicon, and neon gas is critical, yet these are scarce, expensive, and geopolitically restricted, threatening reliable supply for quantum hardware.\nthequantuminsider+1\n\nRank 3: Scalability and Integration\nExtreme sensor sensitivity to noise, integration difficulties, and complex manufacturing limit standardization and market adoption, despite promising applications.\nbcg+1\n\n(98 words)",
+  "sources": [
+    {
+      "url": "https://ised-isde.canada.ca/site/national-quantum-strategy/en/national-quantum-strategy-roadmap-quantum-sensing",
+      "title": "ised-isde.canada+1",
+      "publisher": "ised-isde.canada.ca",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/10/26/the-four-main-challenges-facing-collaborations-in-quantum-and-how-to-mitigate-them/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.bcg.com/publications/2023/making-sense-of-quantum-sensing",
+      "title": "bcg+1",
+      "publisher": "bcg.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ised-isde.canada.ca/site/national-quantum-strategy/en/national-quantum-strategy-roadmap-quantum-sensing",
+      "title": "ised-isde.canada\nNational Quantum Strategy roadmap: Quantum sensing\nScaling up the production of quantum sensors may require access to special infrastructure such as fabrication facilities. Given the high costs of development and limited funds, it is imperative to start-ups and small and medium enterprises (SMEs) to have access to low-cost fabrication services, such as multi-project wafers, during the development cycle, and be able to produce high-quality sensors when the technology is ready for commercialization. There is currently a shortage of these...",
+      "publisher": "ised-isde.canada.ca",
+      "snippet": ""
+    },
+    {
+      "url": "https://ised-isde.canada.ca/site/national-quantum-strategy/en/national-quantum-strategy-roadmap-quantum-sensing",
+      "title": "ised-isde.canada\nNational Quantum Strategy roadmap: Quantum sensing\nScaling up the production of quantum sensors may require access to special infrastructure such as fabrication facilities. Given the high costs of development and limited funds, it is imperative to start-ups and small and medium enterprises (SMEs) to have access to low-cost fabrication services, such as multi-project wafers, during the development cycle, and be able to produce high-quality sensors when the technology is ready for commercialization. There is currently a shortage of these...",
+      "publisher": "ised-isde.canada.ca",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/10/26/the-four-main-challenges-facing-collaborations-in-quantum-and-how-to-mitigate-them/",
+      "title": "thequantuminsider\nThe Four Main Challenges Facing Collaborations in ...\nThe U.S. must strengthen quantum technology collaborations with industry and allies to maintain its lead, according to a CSIS article.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/10/26/the-four-main-challenges-facing-collaborations-in-quantum-and-how-to-mitigate-them/",
+      "title": "thequantuminsider\nThe Four Main Challenges Facing Collaborations in ...\nThe U.S. must strengthen quantum technology collaborations with industry and allies to maintain its lead, according to a CSIS article.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.bcg.com/publications/2023/making-sense-of-quantum-sensing",
+      "title": "bcg\nMaking Sense of Quantum Sensing\nCompanies and deep tech investors that are not already monitoring developments in quantum sensing should secure a place on the learning curve as soon as possible.",
+      "publisher": "bcg.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:11:06.938581+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

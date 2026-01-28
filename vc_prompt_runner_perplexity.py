@@ -31,7 +31,6 @@ class PromptRunner:
         self.headless = headless
 
         self._playwright = None
-        self._browser = None
         self._context = None
         self._page = None
 
@@ -39,8 +38,7 @@ class PromptRunner:
 
     def load_prompts(self) -> List[dict]:
         with open(self.prompts_file, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return data.get("prompts", [])
+            return json.load(f).get("prompts", [])
 
     def _load_text_file(self, path: Path, label: str) -> str:
         if not path.exists():
@@ -51,9 +49,7 @@ class PromptRunner:
         return self._load_text_file(self.icp_file, "ICP")
 
     def load_applications(self) -> str:
-        return self._load_text_file(
-            self.quantum_sensing_applications_file, "Applications"
-        )
+        return self._load_text_file(self.quantum_sensing_applications_file, "Applications")
 
     def load_buyer_persona(self) -> str:
         return self._load_text_file(self.buyer_persona_file, "Buyer persona")
@@ -62,24 +58,39 @@ class PromptRunner:
         path = Path(filepath)
         if not path.exists():
             return []
-        return [
-            l.strip()
-            for l in path.read_text(encoding="utf-8").splitlines()
-            if l.strip()
-        ]
+        return [l.strip() for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
 
-    # ---------- Browser Lifecycle ----------
+    # ---------- Browser ----------
 
     async def start_browser(self):
         self._playwright = await async_playwright().start()
         profile_path = str(Path(self.profile_dir).resolve())
+
         self._context = await self._playwright.chromium.launch_persistent_context(
             profile_path,
             headless=self.headless,
             viewport={"width": 1280, "height": 900},
             args=["--disable-blink-features=AutomationControlled"],
         )
+
+        # BLOCK ALL EXTERNAL NAVIGATION (context-level)
+        await self._context.route(
+            "**/*",
+            lambda route, request: (
+                route.continue_()
+                if not request.is_navigation_request()
+                or "perplexity.ai" in request.url
+                else route.abort()
+            )
+        )
+
+        # KILL ALL POPUPS / NEW TABS
+        self._context.on("page", lambda page: asyncio.create_task(page.close()))
+
         self._page = self._context.pages[0] if self._context.pages else await self._context.new_page()
+
+        # Disable window.open defensively
+        await self._page.add_init_script("window.open = () => null;")
 
     async def close_browser(self):
         if self._context:
@@ -87,338 +98,215 @@ class PromptRunner:
         if self._playwright:
             await self._playwright.stop()
 
-    async def _dismiss_modals(self):
-        """Dismiss cookie consent, sign-up prompts, or onboarding overlays for Perplexity."""
-        dismissed = False
+    # ---------- UI helpers ----------
 
+    async def _dismiss_modals(self):
         for selector in [
             'button:has-text("Accept")',
             'button:has-text("Got it")',
             'button:has-text("Dismiss")',
-            'button:has-text("Close")',
-            'button:has-text("Maybe later")',
-            'button:has-text("No thanks")',
             'button:has-text("Skip")',
             'button[aria-label="Close"]',
         ]:
             try:
                 el = self._page.locator(selector)
                 if await el.count() > 0 and await el.first.is_visible():
-                    print(f"Dismissing modal via: {selector}")
                     await el.first.click()
-                    await asyncio.sleep(2)
-                    dismissed = True
-                    break
+                    await asyncio.sleep(1)
+                    return
             except Exception:
-                continue
+                pass
+        try:
+            await self._page.keyboard.press("Escape")
+        except Exception:
+            pass
 
-        # Fallback: if a modal overlay is present, try pressing Escape
-        if not dismissed:
-            for overlay_sel in [
-                '[role="dialog"]',
-                '[role="alertdialog"]',
-            ]:
-                try:
-                    overlay = self._page.locator(overlay_sel)
-                    if await overlay.count() > 0 and await overlay.first.is_visible():
-                        print(f"Modal overlay detected ({overlay_sel}), pressing Escape...")
-                        await self._page.keyboard.press("Escape")
-                        await asyncio.sleep(1)
-                        dismissed = True
-                        break
-                except Exception:
-                    continue
-
-        return dismissed
-
-    async def _find_input_area(self):
-        """Locate Perplexity's input area (textarea or contenteditable)."""
+    async def _expand_and_load_all_sources(self):
         for selector in [
-            'textarea[placeholder*="Ask"]',
-            'textarea[placeholder*="ask"]',
-            'textarea[placeholder*="Search"]',
-            'textarea',
+            'button:has-text("Show more")',
+            'button:has-text("More")',
+            'button[aria-label*="expand"]',
+            '[class*="expand"] button',
         ]:
             try:
-                el = self._page.locator(selector)
-                if await el.count() > 0 and await el.first.is_visible():
-                    return el.first
+                buttons = self._page.locator(selector)
+                for i in range(await buttons.count()):
+                    btn = buttons.nth(i)
+                    if await btn.is_visible():
+                        await btn.click()
+                        await asyncio.sleep(0.3)
             except Exception:
-                continue
+                pass
+
+        last = 0
+        stable = 0
+        while stable < 3:
+            count = await self._page.locator('a[href]').count()
+            stable = stable + 1 if count == last else 0
+            last = count
+            await self._page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+            await asyncio.sleep(0.8)
+
+    async def _find_input_area(self):
+        for selector in [
+            '[contenteditable="true"][role="textbox"]',
+            '[contenteditable="true"]',
+            'textarea',
+        ]:
+            el = self._page.locator(selector)
+            if await el.count() > 0 and await el.first.is_visible():
+                return el.first
         return None
 
     async def ensure_logged_in(self):
-        await self._page.goto("https://www.perplexity.ai/", wait_until="domcontentloaded", timeout=60000)
+        await self._page.goto("https://www.perplexity.ai/", wait_until="domcontentloaded")
         await asyncio.sleep(3)
-
-        # Dismiss any blocking modals
         await self._dismiss_modals()
 
-        input_area = await self._find_input_area()
-        if input_area:
-            print("Perplexity session is active.")
-            return
-
-        print("Input area not found. Please log in to Perplexity in the browser window if needed.")
-        print("Waiting for input area (up to 120s)...")
-
-        elapsed = 0
-        while elapsed < 120:
-            await asyncio.sleep(3)
-            elapsed += 3
-            await self._dismiss_modals()
-            input_area = await self._find_input_area()
-            if input_area:
-                print("Input area detected. Continuing.")
+        for _ in range(40):
+            if await self._find_input_area():
                 return
+            await asyncio.sleep(2)
 
-        print("Timeout waiting for input area. Exiting.", file=sys.stderr)
-        await self.close_browser()
-        sys.exit(1)
+        raise RuntimeError("Perplexity input area not found.")
 
-    # ---------- Chat Interaction ----------
+    # ---------- Chat ----------
 
     async def _start_new_chat(self):
-        await self._page.goto("https://www.perplexity.ai/", wait_until="domcontentloaded", timeout=60000)
+        await self._page.goto("https://www.perplexity.ai/", wait_until="domcontentloaded")
         await asyncio.sleep(2)
         await self._dismiss_modals()
 
-        # Wait for input area
-        elapsed = 0
-        while elapsed < 30:
-            input_area = await self._find_input_area()
-            if input_area:
-                break
-            await asyncio.sleep(1)
-            elapsed += 1
-        else:
-            raise TimeoutError("Input area not found after navigating to Perplexity")
-
-        await asyncio.sleep(1)
-
     async def _submit_prompt_text(self, text: str):
-        # Dismiss any modal that may have appeared
-        await self._dismiss_modals()
-
         input_area = await self._find_input_area()
         if not input_area:
-            raise RuntimeError("Cannot find Perplexity input area")
+            raise RuntimeError("Input area missing")
 
         await input_area.click()
+        mod = "Meta" if sys.platform == "darwin" else "Control"
+        await self._page.keyboard.press(f"{mod}+a")
+        await self._page.keyboard.press("Backspace")
+        await self._page.evaluate("t => navigator.clipboard.writeText(t)", text)
+        await self._page.keyboard.press(f"{mod}+v")
         await asyncio.sleep(0.3)
+        await self._page.keyboard.press("Enter")
 
-        # Use clipboard to paste long prompts reliably
-        await self._page.evaluate(
-            "text => navigator.clipboard.writeText(text)", text
-        )
-        modifier = "Meta" if sys.platform == "darwin" else "Control"
-        await self._page.keyboard.press(f"{modifier}+v")
-        await asyncio.sleep(0.5)
-
-        # Click send button
-        send_btn = None
-        for selector in [
-            'button[aria-label="Submit"]',
-            'button[aria-label="Send"]',
-            'button[aria-label="Ask"]',
-            'button[class*="submit"]',
-            'button[class*="send"]',
-        ]:
-            try:
-                el = self._page.locator(selector)
-                if await el.count() > 0:
-                    send_btn = el.first
-                    break
-            except Exception:
-                continue
-
-        if send_btn:
-            await send_btn.wait_for(state="visible", timeout=10000)
-            await send_btn.click()
-        else:
-            # Fallback: press Enter to submit
-            await self._page.keyboard.press("Enter")
-
-    async def _wait_for_response_complete(self, timeout_s: int = 180):
-        poll_interval = 2
-        elapsed = 0
-        last_text = ""
-        stable_count = 0
-        required_stable = 3  # text must be stable for 3 consecutive polls
-
-        while elapsed < timeout_s:
-            await asyncio.sleep(poll_interval)
-            elapsed += poll_interval
-
-            # Check if stop button is still visible (response streaming)
-            stop_visible = False
-            for selector in [
-                'button[aria-label="Stop"]',
-                'button[aria-label="Stop generating"]',
-                'button[class*="stop"]',
-            ]:
-                try:
-                    stop_btn = self._page.locator(selector)
-                    if await stop_btn.count() > 0 and await stop_btn.first.is_visible():
-                        stop_visible = True
-                        break
-                except Exception:
-                    continue
-
-            # Get current response text
-            current_text = await self._get_last_response_text()
-
-            if current_text and current_text == last_text:
-                stable_count += 1
-            else:
-                stable_count = 0
-            last_text = current_text
-
-            # Done when stop button is gone AND text is stable
-            if not stop_visible and stable_count >= required_stable and current_text:
-                return
-
-        raise TimeoutError(f"Response did not complete within {timeout_s}s")
+    async def _get_last_answer_block(self):
+        for selector in ['[class*="prose"]', '[class*="markdown"]', '[class*="answer"]']:
+            els = self._page.locator(selector)
+            if await els.count():
+                return els.nth(await els.count() - 1)
+        return None
 
     async def _get_last_response_text(self) -> str:
-        for selector in [
-            '[class*="prose"]',
-            '[class*="answer"]',
-            '[class*="response"] .markdown',
-            '[class*="message"] .markdown',
-        ]:
-            try:
-                elements = self._page.locator(selector)
-                count = await elements.count()
-                if count > 0:
-                    return await elements.nth(count - 1).inner_text()
-            except Exception:
-                continue
-        return ""
+        block = await self._get_last_answer_block()
+        return await block.inner_text() if block else ""
 
-    async def _extract_response_text(self) -> str:
-        return await self._get_last_response_text()
+    async def _wait_for_response_complete(self, timeout=180):
+        last = 0
+        stable = 0
+        elapsed = 0
+        while elapsed < timeout:
+            await asyncio.sleep(2)
+            elapsed += 2
+            txt = await self._get_last_response_text()
+            if not txt:
+                continue
+            l = len(txt)
+            stable = stable + 1 if l == last else 0
+            last = l
+            if stable >= 3:
+                return
+        raise TimeoutError("Response did not stabilize")
+
+    # ---------- Sources ----------
+
+    async def _harvest_citation_popovers(self, sources):
+        triggers = self._page.locator('sup, button[class*="citation"], span[class*="citation"]')
+        for i in range(await triggers.count()):
+            t = triggers.nth(i)
+            if not await t.is_visible():
+                continue
+            try:
+                await t.click()
+                await asyncio.sleep(0.3)
+                pops = self._page.locator('[role="dialog"], [class*="popover"], [class*="tooltip"]')
+                for p in range(await pops.count()):
+                    links = pops.nth(p).locator('a[href]')
+                    for j in range(await links.count()):
+                        href = self._unwrap_perplexity_url(
+                            self._clean_url(await links.nth(j).get_attribute("href"))
+                        )
+                        title = (await links.nth(j).inner_text()).strip()
+                        if href and href.startswith("http"):
+                            sources.append(self._source_obj(href, title))
+                await self._page.keyboard.press("Escape")
+            except Exception:
+                await self._page.keyboard.press("Escape")
 
     async def _extract_sources(self) -> List[dict]:
+        await self._expand_and_load_all_sources()
         sources = []
-        seen_urls = set()
 
-        # Layer 1: Perplexity source cards (numbered citation links)
-        source_card_selectors = [
-            '[class*="source"]',
-            '[class*="citation"]',
-            '[class*="reference"]',
-            '[class*="SourceCard"]',
-        ]
-        for selector in source_card_selectors:
-            try:
-                cards = self._page.locator(selector)
-                card_count = await cards.count()
-                for i in range(card_count):
-                    card = cards.nth(i)
-                    card_links = card.locator("a[href]")
-                    cl_count = await card_links.count()
-                    for j in range(cl_count):
-                        href = await card_links.nth(j).get_attribute("href") or ""
-                        title = await card_links.nth(j).inner_text() or ""
-                        href = self._clean_url(href)
-                        if href and href not in seen_urls and href.startswith("http"):
-                            seen_urls.add(href)
-                            sources.append({
-                                "url": href,
-                                "title": title.strip(),
-                                "publisher": self._extract_domain(href),
-                                "snippet": "",
-                            })
-            except Exception:
-                continue
+        for selector in ['[class*="Source"]', '[class*="Citation"]', '[class*="reference"]']:
+            cards = self._page.locator(selector)
+            for i in range(await cards.count()):
+                links = cards.nth(i).locator('a[href]')
+                for j in range(await links.count()):
+                    href = self._unwrap_perplexity_url(
+                        self._clean_url(await links.nth(j).get_attribute("href"))
+                    )
+                    title = (await links.nth(j).inner_text()).strip()
+                    if href and href.startswith("http"):
+                        sources.append(self._source_obj(href, title))
 
-        # Layer 2: Extract <a href> links from the response prose
-        for selector in [
-            '[class*="prose"]',
-            '[class*="answer"]',
-            '[class*="response"] .markdown',
-        ]:
-            try:
-                elements = self._page.locator(selector)
-                count = await elements.count()
-                if count > 0:
-                    last_msg = elements.nth(count - 1)
-                    links = last_msg.locator("a[href]")
-                    link_count = await links.count()
-                    for i in range(link_count):
-                        link = links.nth(i)
-                        href = await link.get_attribute("href") or ""
-                        title = await link.inner_text() or ""
-                        href = self._clean_url(href)
-                        if href and href not in seen_urls and href.startswith("http"):
-                            seen_urls.add(href)
-                            sources.append({
-                                "url": href,
-                                "title": title.strip(),
-                                "publisher": self._extract_domain(href),
-                                "snippet": "",
-                            })
-                    if sources:
-                        break
-            except Exception:
-                continue
+        block = await self._get_last_answer_block()
+        if block:
+            links = block.locator('a[href]')
+            for i in range(await links.count()):
+                href = self._unwrap_perplexity_url(
+                    self._clean_url(await links.nth(i).get_attribute("href"))
+                )
+                title = (await links.nth(i).inner_text()).strip()
+                if href and href.startswith("http"):
+                    sources.append(self._source_obj(href, title))
 
-        # Layer 3: Fallback regex on answer text for markdown links [title](url)
-        if not sources:
-            answer_text = await self._extract_response_text()
-            md_links = re.findall(r'\[([^\]]+)\]\((https?://[^\)]+)\)', answer_text)
-            for title, url in md_links:
-                url = self._clean_url(url)
-                if url not in seen_urls:
-                    seen_urls.add(url)
-                    sources.append({
-                        "url": url,
-                        "title": title.strip(),
-                        "publisher": self._extract_domain(url),
-                        "snippet": "",
-                    })
-
+        await self._harvest_citation_popovers(sources)
         return sources
 
     @staticmethod
-    def _clean_url(url: str) -> str:
+    def _unwrap_perplexity_url(url: str) -> str:
         if not url:
-            return url
-        parsed = urlparse(url)
-        # Strip common tracking params
-        if parsed.query:
-            qs = parse_qs(parsed.query, keep_blank_values=True)
-            tracking_params = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"}
-            cleaned = {k: v for k, v in qs.items() if k not in tracking_params}
-            cleaned_query = urlencode(cleaned, doseq=True)
-            url = urlunparse(parsed._replace(query=cleaned_query))
+            return ""
+        p = urlparse(url)
+        if "perplexity.ai" in p.netloc and p.path.startswith("/out"):
+            return parse_qs(p.query).get("url", [""])[0]
         return url
 
     @staticmethod
-    def _extract_domain(url: str) -> str:
-        try:
-            host = urlparse(url).netloc
-            # Strip www. prefix
-            if host.startswith("www."):
-                host = host[4:]
-            return host
-        except Exception:
-            return ""
+    def _clean_url(url: str) -> str:
+        p = urlparse(url)
+        qs = {k: v for k, v in parse_qs(p.query).items() if not k.startswith("utm_")}
+        return urlunparse(p._replace(query=urlencode(qs, doseq=True)))
 
-    # ---------- High-level run_prompt ----------
+    @staticmethod
+    def _source_obj(url, title):
+        return {
+            "url": url,
+            "title": title,
+            "publisher": urlparse(url).netloc.replace("www.", ""),
+            "snippet": "",
+        }
+
+    # ---------- Public ----------
 
     async def run_prompt(self, prompt: str) -> dict:
         await self._start_new_chat()
         await self._submit_prompt_text(prompt)
         await self._wait_for_response_complete()
-
-        answer = await self._extract_response_text()
-        sources = await self._extract_sources()
-
         return {
-            "answer": answer,
-            "sources": sources,
+            "answer": await self._get_last_response_text(),
+            "sources": await self._extract_sources(),
             "response_id": "",
         }
 
@@ -427,10 +315,10 @@ class PromptRunner:
 
 async def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--headless", action="store_true", help="Run browser in headless mode")
-    parser.add_argument("--profile-dir", default="perplexity_profile", help="Browser profile directory for login persistence")
-    parser.add_argument("--delay", type=float, default=5.0, help="Seconds to wait between prompts")
-    parser.add_argument("--test", action="store_true", help="Run only the first prompt (and first company)")
+    parser.add_argument("--headless", action="store_true")
+    parser.add_argument("--profile-dir", default="perplexity_profile")
+    parser.add_argument("--delay", type=float, default=5.0)
+    parser.add_argument("--test", action="store_true")
     args = parser.parse_args()
 
     runner = PromptRunner(
@@ -454,9 +342,13 @@ async def main():
     icp_text = runner.load_icp()
     buyer_persona_text = runner.load_buyer_persona()
 
+    # ---------- RESULTS FOLDER ----------
     results_root = Path("results")
     results_root.mkdir(exist_ok=True)
-    run_folder = results_root / (datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S") + "_perplexity")
+
+    run_folder = results_root / (
+        datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S") + "_perplexity"
+    )
     run_folder.mkdir(parents=True, exist_ok=True)
 
     await runner.start_browser()
@@ -472,55 +364,32 @@ async def main():
 
                 if "Category" in p["required_vars"]:
                     prompt_text = prompt_text.replace("{{Category}}", CATEGORY)
-
                 if "Applications" in p["required_vars"]:
                     prompt_text = prompt_text.replace("{{Applications}}", APPLICATIONS)
-
                 if company:
                     prompt_text = prompt_text.replace("{{CompanyName}}", company)
-
                 if "CompanyICP" in p["required_vars"]:
                     prompt_text = prompt_text.replace("{{CompanyICP}}", icp_text)
-
                 if "BuyersPersona" in p["required_vars"]:
-                    prompt_text = prompt_text.replace(
-                        "{{BuyersPersona}}", buyer_persona_text
-                    )
+                    prompt_text = prompt_text.replace("{{BuyersPersona}}", buyer_persona_text)
 
                 result = {
                     "prompt_id": p["id"],
                     "company": company,
                     "question": prompt_text,
                     "answer": "FAILED",
+                    "sources": [],
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "model": "perplexity-web",
                     "test_mode": args.test,
                 }
 
-                max_retries = 2
-                for attempt in range(1 + max_retries):
-                    try:
-                        response = await runner.run_prompt(prompt_text)
-                        result["answer"] = response["answer"]
-                        result["sources"] = response["sources"]
-                        result["response_id"] = response["response_id"]
-                        break
-                    except Exception as e:
-                        err_str = str(e).lower()
-                        is_retryable = (
-                            "timeout" in err_str
-                            or "rate" in err_str
-                            or "session" in err_str
-                            or "expired" in err_str
-                        )
-                        if is_retryable and attempt < max_retries:
-                            wait = (attempt + 1) * 10
-                            print(f"Retryable error (attempt {attempt + 1}/{max_retries}): {e}")
-                            print(f"Waiting {wait}s before retry...")
-                            await asyncio.sleep(wait)
-                            continue
-                        result["error"] = str(e)
-                        break
+                try:
+                    response = await runner.run_prompt(prompt_text)
+                    result["answer"] = response["answer"]
+                    result["sources"] = response["sources"]
+                except Exception as e:
+                    result["error"] = str(e)
 
                 name = (company or "category").replace(" ", "_")
                 output_path = run_folder / f"{p['id']}_{name}.json"
@@ -531,7 +400,7 @@ async def main():
                 print(f"Saved: {output_path}")
 
                 if args.test:
-                    break  # use break instead of return so finally runs
+                    break
 
                 await asyncio.sleep(args.delay)
 
@@ -540,6 +409,8 @@ async def main():
 
     finally:
         await runner.close_browser()
+
+
 
 if __name__ == "__main__":
     asyncio.run(main())

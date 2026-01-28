@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P27",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that the other investors of Qnami will reinvest in the following rounds and bridges, and/or that the company will find a lead investor for the following round?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "I rate my belief at 3/10.\n\nQnami, a quantum microscopy startup out of Basel, last raised a $4.4M Series A in 2021, led by Runa Capital and SIT Capital, with seed backers like Quantonation, Verve Ventures (formerly Investiere), Zürcher Kantonalbank (ZKB), and High-Tech Gründerfonds joining in. No public evidence exists of further rounds, bridges, or updates since—over four years in a brutal VC climate for deep tech, where seed/Series A follow-ons demand proven traction like revenue or major customer wins, which Qnami's nanoscale magnetic analysis platform hasn't visibly delivered.\ni3connect+2\n\nExisting investors face dilution risk and portfolio pressure; early quantum bets like this often stall without explosive milestones, and absent pro-rata signals or board chatter, reinvestment feels unlikely—leads rarely bridge without FOMO catalysts. New lead hunters? Quantum's hot (think PsiQuantum's billions), but Qnami's silence screams \"zombie mode\": no fresh PR, partnerships, or hires signaling momentum. In January 2026's down market—reset valuations, longer seeds, AI sucking oxygen—finding a fresh lead for a quiet 2021 A-round player is a longshot without insider jet fuel. Brutally, they're likely coasting on runway or bootstrapping; odds of reinvest/lead are low absent unannounced wins. (198 words)\nlinkedin+2",
+  "sources": [
+    {
+      "url": "https://i3connect.com/company/qnami",
+      "title": "i3connect+2",
+      "publisher": "i3connect.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin",
+      "title": "linkedin+2",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://i3connect.com/company/qnami",
+      "title": "i3connect\nQnami: Investment rounds, top customers, partners and investors\nThis page provides investment and traction data on Qnami, a Provider of a platform to analyze magnetic materials at the nanoscale using a proprietary quantum technology",
+      "publisher": "i3connect.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://i3connect.com/company/qnami",
+      "title": "i3connect\nQnami: Investment rounds, top customers, partners and investors\nThis page provides investment and traction data on Qnami, a Provider of a platform to analyze magnetic materials at the nanoscale using a proprietary quantum technology",
+      "publisher": "i3connect.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin",
+      "title": "linkedin\nWhy It Matters Who Your “Lead” Investor Is\nQ : What does a lead investor do? If you are fortunate enough to be able to raise venture capital, it can seem like a good idea to raise it from a lot of investors. If I can get 1 great investor on the cap table, why not take 2? Or 4? Or 10? And there are advantages to having more investors, at leas",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:20:42.307140+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P25",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the quality of the VC funds on the cap table of Qnami?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Seed Supporters: Quantonation (quantum specialist, led seed), Verve Ventures, Zürcher Kantonalbank (ZKB, reliable Swiss bank), and High-Tech Gründerfonds (HTGF, Germany's prolific pre-seed engine). Quantonation adds credibility in quantum, HTGF has volume (thousands of deals) but modest IRRs (~1.5-2x net historically), while ZKB/Verve are steady local players without breakout power.\nhtgf+1",
+  "sources": [
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf+1",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/",
+      "title": "qnami\nQnami closes 4.0M CHF Series A round\nQnami secures Series A funding, led by Runa Capital and SIT Capital, to advance quantum microscopy technology for quantum computers and spintronics.",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve\nQnami raises CHF 4 million Series A\nQnami raised a 4.0M CHF Series A financing round led by Runa Capital and SIT Capital, further supported by Seed Round investors Quantonation, Verve Ventures, Zürcher Kantonalbank and the High Tech Gründerfond. The funds will support extension of Qnami’s patented quantum microscope technology into applications enabling the design and production of quantum computers and spintronics devices, plus scaling the launch of the Qnami ProteusQ™, the first commercial Quantum Microscope.",
+      "publisher": "verve.vc",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:19:45.544496+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

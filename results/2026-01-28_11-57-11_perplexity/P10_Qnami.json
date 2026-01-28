@@ -1,0 +1,82 @@
+{
+  "prompt_id": "P10",
+  "company": "Qnami",
+  "question": "What does Qnami do currently? Summarise it in 200 words",
+  "answer": "Qnami is a Swiss deep-tech company specializing in quantum sensing technologies. It develops and commercializes nanoscale precision instruments for measuring magnetic and electric fields.\nqnami+1\n\nCore Activities\n\nQnami leads in quantum sensing by producing diamond-based quantum chips and complete systems like the ProteusQ, the first commercial scanning NV magnetometer. This tool uses nitrogen-vacancy centers in synthetic diamonds to image magnetic fields at the nanoscale, enabling applications in nanotechnology, life sciences, semiconductors, and earth sciences. The company integrates nano-fabrication, system engineering, and analytics software built on open-source frameworks for user-friendly operation, from sample previews to custom protocols.\n36kr+2\n\nProducts and Markets\n\nIts flagship ProteusQ serves research labs and manufacturers for inspecting magnetic materials, spintronics, and quantum computing components. Qnami offers automated, upgradeable systems that require no quantum expertise, with quick probe swaps. It has expanded distribution to the US, Japan, and South Korea via partners like Quantum Design.\ndefencefinancemonitor+2\n\nStrategic Focus\n\nFounded in 2017 as a University of Basel spin-off, Qnami operates a Quantum Foundry for custom chip design and production. It collaborates with universities and industries, pursuing growth in navigation, geological surveys, and beyond through partnerships. Backed by venture funding, it emphasizes practical quantum solutions over classical limits.\nhtgf+2\n\n(Word count: 198)",
+  "sources": [
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://eu.36kr.com/en/p/3478991309838724",
+      "title": "36kr+2",
+      "publisher": "eu.36kr.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.defencefinancemonitor.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor+2",
+      "publisher": "defencefinancemonitor.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf+2",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami\nQnami: Quantum Sensing Leaders in Nanoscale Precision\nQnami is a global leader and pioneer in the development and commercialization of quantum sensing solutions. Read on to learn more!",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://eu.36kr.com/en/p/3478991309838724",
+      "title": "36kr\nSwiss Engineering & Technology Firm Qnami Develops ...\nDeveloped the world's first commercial NV (nitrogen - vacancy) magnetometer for enhanced scientific and industrial applications.",
+      "publisher": "eu.36kr.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.defencefinancemonitor.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor\nQnami – Strategic-Technological Company Analysis\nQnami AG is a Swiss deep-tech company at the forefront of quantum sensing.",
+      "publisher": "defencefinancemonitor.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://eu.36kr.com/en/p/3478991309838724",
+      "title": "",
+      "publisher": "eu.36kr.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.defencefinancemonitor.com/p/qnami-strategic-technological-company",
+      "title": "",
+      "publisher": "defencefinancemonitor.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "",
+      "publisher": "htgf.de",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:03:34.994246+00:00",
+  "model": "perplexity-web"
+}

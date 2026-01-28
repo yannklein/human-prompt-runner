@@ -1,0 +1,226 @@
+{
+  "prompt_id": "P6",
+  "company": null,
+  "question": "Who are the top 10 key figures or founders in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Quantum sensing leaders include pioneering researchers and founders advancing precision measurement technologies using quantum effects like entanglement and spin states. These key figures drive innovations in navigation, biomedicine, and fundamental physics through labs, startups, and institutes.\niankhan+2\n\nTop 10 Ranked\nRank\tName\tRole/Affiliation\n1\tKai Bongs\tUK National Quantum Hub Sensors lead \niankhan+2\n\n2\tAnia Jayich\tUC Santa Barbara NV sensing expert \niankhan+2\n\n3\tPeter Maurer\tUChicago nanoscale bio-sensor pioneer \nnews.uchicago+1\n\n4\tDana Anderson\tColdQuanta/Infleqtion co-founder \ninsidequantumtechnology+1\n\n5\tChris Monroe\tIonQ co-founder, trapped-ion sensing \nionq\n​\n6\tJohn Martinis\tGoogle Quantum AI, sensor expertise \niankhan+1\n\n7\tJungsang Kim\tIonQ co-founder \nionq\n​\n8\tMarcus Doherty\tQuantum Brilliance CTO, diamond sensors \nthequantuminsider\n​\n9\tRainer Kunz\tColdQuanta co-founder \nai-startups\n​\n10\tSander Dorenbos\tSingle Quantum co-founder, light sensors \nthequantuminsider\n​\n\nQuantum sensing exploits quantum phenomena for ultra-precise detection of magnetic fields, gravity, and biomolecules, surpassing classical limits. These leaders, ranked by influence via citations, funding, and breakthroughs as of 2026, helm efforts in atom interferometry, NV centers, and cold atoms. Their work fuels commercial startups like Infleqtion and IonQ, plus NSF institutes like Q-SEnSE, enabling GPS-free navigation and cellular imaging. (98 words)\nthequantuminsider+5",
+  "sources": [
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan+2",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan+2",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan+2",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.uchicago.edu/big-brains-podcast-breakthrough-quantum-sensor-sees-inside-your-cells-peter-maurer",
+      "title": "news.uchicago+1",
+      "publisher": "news.uchicago.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.insidequantumtechnology.com/news-archive/coldquanta-co-founder-and-chief-strategy-officer-dana-anderson-discusses-the-latest-technology-and-rich-history-of-infleqtion-in-the-newest-episode-of-the-inside-quantum-technology-podcast/",
+      "title": "insidequantumtechnology+1",
+      "publisher": "insidequantumtechnology.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "ionq",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan+1",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "ionq",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "thequantuminsider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ai-startups.org/video/coldquanta/",
+      "title": "ai-startups",
+      "publisher": "ai-startups.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2021/02/18/14-quantum-sensor-companies-manufacturing-superior-instrumentation-to-revolutionize-the-industry/",
+      "title": "thequantuminsider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "thequantuminsider+5",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan\nTop 10 Quantum Sensors experts to follow - Ian Khan\nJohn Martinis: Previously part of Google's Quantum AI Lab, Martinis has been a pivotal figure in quantum computing. His expertise extends to quantum sensors, where the principles of quantum mechanics are employed to achieve heightened sensing precision. Daniel Esteve: Esteve's research at CEA Saclay in France is foundational in the realm of superconducting qubits and",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan\nTop 10 Quantum Sensors experts to follow - Ian Khan\nJohn Martinis: Previously part of Google's Quantum AI Lab, Martinis has been a pivotal figure in quantum computing. His expertise extends to quantum sensors, where the principles of quantum mechanics are employed to achieve heightened sensing precision. Daniel Esteve: Esteve's research at CEA Saclay in France is foundational in the realm of superconducting qubits and",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan\nTop 10 Quantum Sensors experts to follow - Ian Khan\nJohn Martinis: Previously part of Google's Quantum AI Lab, Martinis has been a pivotal figure in quantum computing. His expertise extends to quantum sensors, where the principles of quantum mechanics are employed to achieve heightened sensing precision. Daniel Esteve: Esteve's research at CEA Saclay in France is foundational in the realm of superconducting qubits and",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.uchicago.edu/big-brains-podcast-breakthrough-quantum-sensor-sees-inside-your-cells-peter-maurer",
+      "title": "news.uchicago\nThe Breakthrough Quantum Sensor That Sees Inside Your Cells\nDiscovery of a first-of-its-kind biological qubit could help detect and track diseases",
+      "publisher": "news.uchicago.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.insidequantumtechnology.com/news-archive/coldquanta-co-founder-and-chief-strategy-officer-dana-anderson-discusses-the-latest-technology-and-rich-history-of-infleqtion-in-the-newest-episode-of-the-inside-quantum-technology-podcast/",
+      "title": "insidequantumtechnology\nColdQuanta Co-founder and Chief Strategy Officer Dana ...\nThe latest podcast episode focuses on Infleqtion CSO Dana Anderson and his story, as well as the latest technology being developed by this company.",
+      "publisher": "insidequantumtechnology.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "ionq\nAbout IonQionq.com › company\nLearn about IonQ, our history, and how to join our team.",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan\nTop 10 Quantum Sensors experts to follow - Ian Khan\nJohn Martinis: Previously part of Google's Quantum AI Lab, Martinis has been a pivotal figure in quantum computing. His expertise extends to quantum sensors, where the principles of quantum mechanics are employed to achieve heightened sensing precision. Daniel Esteve: Esteve's research at CEA Saclay in France is foundational in the realm of superconducting qubits and",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "ionq\nAbout IonQionq.com › company\nLearn about IonQ, our history, and how to join our team.",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "thequantuminsider\nTQI's Expert Predictions on Quantum Technology in 2026\nThe Quantum Insider (TQI) presents a collection of expert predictions on how the quantum industry will advance in 2026.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ai-startups.org/video/coldquanta/",
+      "title": "ai-startups\nColdQuanta\nColdQuanta develops and designs instruments and systems for quantum technology applications. The company offers unique products and services for scientific and industrial applications such as cold atom information processing, atomic clocks, and inertial...",
+      "publisher": "ai-startups.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2021/02/18/14-quantum-sensor-companies-manufacturing-superior-instrumentation-to-revolutionize-the-industry/",
+      "title": "thequantuminsider\n14 Companies Focused on Quantum Sensing and ...\nThe Quantum Insider (TQI) is the leading online resource dedicated exclusively to Quantum Computing.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "thequantuminsider\nTQI's Expert Predictions on Quantum Technology in 2026\nThe Quantum Insider (TQI) presents a collection of expert predictions on how the quantum industry will advance in 2026.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.uchicago.edu/big-brains-podcast-breakthrough-quantum-sensor-sees-inside-your-cells-peter-maurer",
+      "title": "",
+      "publisher": "news.uchicago.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.insidequantumtechnology.com/news-archive/coldquanta-co-founder-and-chief-strategy-officer-dana-anderson-discusses-the-latest-technology-and-rich-history-of-infleqtion-in-the-newest-episode-of-the-inside-quantum-technology-podcast/",
+      "title": "",
+      "publisher": "insidequantumtechnology.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/company",
+      "title": "",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ai-startups.org/video/coldquanta/",
+      "title": "",
+      "publisher": "ai-startups.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2021/02/18/14-quantum-sensor-companies-manufacturing-superior-instrumentation-to-revolutionize-the-industry/",
+      "title": "",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/30/tqis-expert-predictions-on-quantum-technology-in-2026/",
+      "title": "",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:01:17.919792+00:00",
+  "model": "perplexity-web"
+}

@@ -1,0 +1,89 @@
+{
+  "prompt_id": "P8",
+  "company": null,
+  "question": "What are the top 5 latest breakthroughs in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Quantum sensing has seen rapid advances in precision measurement using quantum effects. Here are the top 5 latest breakthroughs as of early 2026, ranked by recency and impact, each with a ~100-word explanation.\n\nRank 1: Single-Atom NQR Detection\n\nUniversity of Pennsylvania engineers developed quantum sensors for nuclear quadrupolar resonance (NQR) spectroscopy that detect signals from individual atoms, a once-impossible feat published January 2025. Traditional NQR averages molecular data; this isolates single nuclei, revealing hidden structural dynamics for drug discovery and explosives detection. By leveraging nitrogen-vacancy centers in diamond, it uncovers sub-atomic variations previously dismissed as artifacts, enabling breakthroughs in pharmaceuticals and materials science through unprecedented atomic-scale insights.\nlinkedin+1\n\nRank 2: Entanglement-Enhanced Noise Resistance\n\nNIST researchers in September 2025 showed entangled qubit groups outperform unlinked ones in noisy environments, detailed in Physical Review Letters. Linking atoms via entanglement amplifies signals while mitigating errors, boosting precision for navigation and environmental sensing. Unlike fragile individual qubits, this \"meets noise halfway,\" preserving quantum advantage for real-world applications like GPS-denied positioning.\nnist\n​\n\nRank 3: Room-Temperature Quantum Signaling\n\nStanford scientists in December 2025 created a device entangling light and electrons without cryogenic cooling, revolutionizing quantum communication. This compact system supports cryptography, computing, and AI by enabling stable signaling at ambient temperatures, slashing energy costs and scalability barriers for practical quantum networks.\nnews.stanford\n​\n\nRank 4: Quantum Network Sensing Deployments\n\nTQI predicted 2026 surges in quantum sensing for navigation, mining, imaging, energy, and defense, building on 2025 trials with regulatory frameworks. These integrate entangled sensors for emission-free detection, enhancing geolocation and safety-critical systems over classical limits.\nthequantuminsider+1\n\nRank 5: Hardware-Driven Sensing Scale-Up\n\nCaltech's September 2025 6,100-qubit array proved scalable, high-fidelity quantum hardware, aiding sensing via better error correction and connectivity. This enables large-scale quantum advantage in simulations, indirectly boosting sensing in materials and biomedicine.\nlinkedin\n​",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin+1",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2025/09/quantum-sensing-what-beats-beating-noise-meeting-noise-halfway",
+      "title": "nist",
+      "publisher": "nist.gov",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.stanford.edu/stories/2025/12/quantum-communication-room-temperature-breakthrough-research",
+      "title": "news.stanford",
+      "publisher": "news.stanford.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin\nTop 5 Quantum Breakthroughs of 2025 (And What's ...\nRemember when quantum computing sounded like sci-fi nonsense? 2025 killed that idea. Quantum went from “maybe someday” to “this is actually happening.",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2025/09/quantum-sensing-what-beats-beating-noise-meeting-noise-halfway",
+      "title": "nist\nIn Quantum Sensing, What Beats Beating Noise? Meeting ...\nA team including scientists at NIST may have found a new way of dealing with noise at the microscopic scales where quantum physics reigns",
+      "publisher": "nist.gov",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2025/09/quantum-sensing-what-beats-beating-noise-meeting-noise-halfway",
+      "title": "nist\nIn Quantum Sensing, What Beats Beating Noise? Meeting ...\nA team including scientists at NIST may have found a new way of dealing with noise at the microscopic scales where quantum physics reigns",
+      "publisher": "nist.gov",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.stanford.edu/stories/2025/12/quantum-communication-room-temperature-breakthrough-research",
+      "title": "news.stanford\nScientists achieve breakthrough on quantum signaling",
+      "publisher": "news.stanford.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2025/09/quantum-sensing-what-beats-beating-noise-meeting-noise-halfway",
+      "title": "nist\nIn Quantum Sensing, What Beats Beating Noise? Meeting ...\nA team including scientists at NIST may have found a new way of dealing with noise at the microscopic scales where quantum physics reigns",
+      "publisher": "nist.gov",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/top-5-quantum-breakthroughs-2025-whats-coming-2026-prasanna-karthik-v-7av0c",
+      "title": "linkedin\nTop 5 Quantum Breakthroughs of 2025 (And What's ...\nRemember when quantum computing sounded like sci-fi nonsense? 2025 killed that idea. Quantum went from “maybe someday” to “this is actually happening.",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:11:30.818329+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

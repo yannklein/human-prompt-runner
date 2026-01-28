@@ -1,0 +1,35 @@
+{
+  "prompt_id": "P19",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Qnami operates in a niche but underdeveloped quantum sensing ecosystem, primarily anchored in Switzerland's academic hubs like the University of Basel.\n\nScore: 5/10\n\nThis middling rating reflects a fragmented ecosystem hampered by limited scale and funding compared to quantum computing giants in the US (e.g., Silicon Valley) or UK (Oxford-Cambridge corridor). Switzerland excels in precision engineering and hosts strong research institutions—Qnami spun out from Basel with early VC backing from Quantonation and others, raising CHF 2.6M in 2019—but lacks the explosive startup density, serial entrepreneurs, and deep-pocketed follow-on investors needed for hypergrowth. Recent partnerships with Quantum Design for US, Japan, and Korea distribution show commercial traction, with ProteusQ adopted in 10+ universities, yet expansion feels opportunistic rather than ecosystem-driven.\nquantumzeitgeist+4\n\nTalent attraction suffers: Qnami has pulled international experts (Germany, US, Brazil), but co-founder Mathieu Munsch warns Switzerland risks lagging as quantum startups surge elsewhere, per a Swiss Science Council whitepaper. No major cluster effects—few spin-offs, co-working hubs, or mentorship networks rival Boston's or Berlin's. Leading ecosystems like Silicon Valley lure top PhDs with $200K+ packages, unicorn exits, and peer density; Qnami's scene offers stability but not magnetic pull. Brutally, it's competent for R&D but won't retain or draw elite scalers without bolder national investment. Quantum sensing's market grows (projected big by 2026), but Qnami's home base caps its orbit. To compete, it must lean global partnerships over local inertia. (198 words)\nverve+1",
+  "sources": [
+    {
+      "url": "https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/",
+      "title": "quantumzeitgeist+4",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/",
+      "title": "verve+1",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/",
+      "title": "quantumzeitgeist\nQnami Partners With Quantum Design To Expand ...\nQuantum technology company Qnami has announced a commercial partnership with Quantum Design Japan and Quantum Design Korea to expand its quantum sensing platform to East Asia. Qnami's technology uses the quantum properties of Nitrogen Vacancy centres in ultra-pure diamonds to function as sensors for magnetic fields, electrical currents, and temperature. The company's ProteusQ microscope, launched in 2020, uses these sensors for nanoscale mapping and is already in use in over 10 universities...",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/",
+      "title": "verve\n“We need to build a functioning quantum ecosystem” - verve.vc\nSince we participated in Qnami’s Seed round in 2019, the company found its product-market fit and has achieved sales above CHF 1 million. Co-founder Mathieu Munsch sees a lot more applications for quantum sensing but also warns that investments are needed to bolster the nascent quantum industry.",
+      "publisher": "verve.vc",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:16:39.608226+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

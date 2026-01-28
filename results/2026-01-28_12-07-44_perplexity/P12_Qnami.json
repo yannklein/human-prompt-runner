@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P12",
+  "company": "Qnami",
+  "question": "In your perception as AI Engine, is Qnami's current ICP aligned with what the company claims: 1. Company Firmographics\n\nIndustry:\nSemiconductor manufacturing, advanced materials, nanotechnology, quantum technology, and applied physics R&D\n\nSub-sectors:\n\nSemiconductor process development (logic, memory, power electronics)\n\nSpintronics and magnetic materials\n\nQuantum computing hardware\n\nAdvanced sensor development\n\nResearch instrumentation manufacturers\n\nCompany Size:\n\n200–5,000 employees\n\nAnnual revenue: USD 50M–2B\n\nGeography:\n\nPrimary: Europe (DACH, France, Nordics), United States\n\nSecondary: Japan, South Korea, Taiwan\n\nOrganizational Maturity:\n\nEstablished R&D organization with in-house physics or materials science teams\n\nActively transitioning discoveries from lab-scale research to industrial-scale validation? Give a brutally honest score from 1–10 and explain in 200 words",
+  "answer": "Qnami's claimed ICP targets large, established firms (200–5,000 employees, $50M–$2B revenue) in semiconductors, quantum hardware, spintronics, and related R&D, primarily in Europe/US with secondary Asia focus, emphasizing mature orgs scaling lab discoveries industrially.\nlinkedin+2\n\nScore: 4/10\n\nQnami, a small Swiss startup (11-50 employees, founded 2017, VC-backed with ~$6-7M raised), develops quantum sensing tools like the ProteusQ NV magnetometer for nanoscale magnetic imaging. This aligns thematically with claimed industries—e.g., applications in MRAM characterization (semiconductors), spintronics, superconductors, and quantum computing hardware R&D—but their reality mismatches firmographics brutally. Customers are mainly research labs, universities (e.g., Basel spin-off roots), and early adopters like scientific instrument makers, not the mid-large industrial giants specified. Geography fits (HQ in Muttenz, Switzerland; DACH/Europe focus, US mentions like Lockheed interest), but company size/revenue is orders of magnitude smaller, suggesting aspirational claims over current traction. They're still transitioning themselves from lab-scale to commercial scale, not serving orgs doing so en masse. Evidence shows R&D-heavy users, not production-scale semiconductor giants (e.g., TSMC/Intel scale). Partial thematic overlap earns a 4; full alignment would need proven sales to $50M+ firms. (198 words)\ncrustdata+6",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/company/qnami",
+      "title": "linkedin+2",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://crustdata.com/profiles/company/qnami",
+      "title": "crustdata+6",
+      "publisher": "crustdata.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/company/qnami",
+      "title": "linkedin\nQnami\nQnami 5,313 followers on LinkedIn. Unlocking quantum technology to enable a better world. At Qnami we develop fundamental new technology using quantum mechanics. The control and measurement of the state of a single electron enables us to measure what could never be measured before. We call this quantum sensing and we are enthusiastically developing this technique to improve people’s lives and the world.",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:13:29.017689+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

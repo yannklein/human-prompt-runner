@@ -1,0 +1,35 @@
+{
+  "prompt_id": "P15",
+  "company": "Qnami",
+  "question": "What are Qnami's current main weaknesses? Give short bullet points",
+  "answer": "Technical hurdles in achieving product-market fit and scaling quantum sensing for broader semiconductor and metrology applications.\nthequantuminsider\n​",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/05/17/navigating-the-quantum-frontier-qai-ventures-and-the-future-of-quantum-sensing/",
+      "title": "thequantuminsider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/17/navigating-the-quantum-frontier-qai-ventures-and-the-future-of-quantum-sensing/",
+      "title": "thequantuminsider\nQAI Ventures and the Future of Quantum Sensing\nThis exclusive article examines the role of QAI Ventures in supporting the growth of the quantum sensing sector.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/17/navigating-the-quantum-frontier-qai-ventures-and-the-future-of-quantum-sensing/",
+      "title": "thequantuminsider\nQAI Ventures and the Future of Quantum Sensing\nThis exclusive article examines the role of QAI Ventures in supporting the growth of the quantum sensing sector.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/17/navigating-the-quantum-frontier-qai-ventures-and-the-future-of-quantum-sensing/",
+      "title": "thequantuminsider\nQAI Ventures and the Future of Quantum Sensing\nThis exclusive article examines the role of QAI Ventures in supporting the growth of the quantum sensing sector.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:14:51.685609+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

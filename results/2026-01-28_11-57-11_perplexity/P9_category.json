@@ -1,0 +1,76 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Regulatory-approved safety systems: Standardized quantum sensors integrated into energy grids and medical devices for reliable, fault-tolerant monitoring.\nthequantuminsider\n​",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "mckinsey\nThe Year of Quantum: From concept to reality in 2025\nExplore the latest advancements in quantum computing, sensing, and communication with our comprehensive Quantum Technology Monitor 2025.",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-forward/quantum-sensing-poised-to-realize-immense-potential-in-many-sectors",
+      "title": "mckinsey\nQuantum sensing's immense potential for many sectors - McKinsey\nQuantum sensing is more mature than other quantum technologies and has far-reaching potential. Several use cases could soon enable gains in multiple sectors.",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ensun.io/search/quantum-sensor",
+      "title": "ensun\nTop 100 Quantum Sensor Companies in 2026\nDiscover all relevant Quantum Sensor Companies worldwide, including Single Quantum and Quantum",
+      "publisher": "ensun.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-forward/quantum-sensing-poised-to-realize-immense-potential-in-many-sectors",
+      "title": "",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ensun.io/search/quantum-sensor",
+      "title": "",
+      "publisher": "ensun.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:03:02.407570+00:00",
+  "model": "perplexity-web"
+}

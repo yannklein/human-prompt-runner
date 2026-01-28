@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P17",
+  "company": "Qnami",
+  "question": "What are Qnami's current main threats? Give short bullet points",
+  "answer": "Scalability issues with NV sensor integration into industrial workflows, alongside emerging AI-driven cyber threats that could exploit quantum hardware vulnerabilities.\nrapid7+1",
+  "sources": [
+    {
+      "url": "https://www.rapid7.com/blog/post/it-key-emerging-cybersecurity-threats-challenges-ai-ransomware-quantum/",
+      "title": "rapid7+1",
+      "publisher": "rapid7.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.defencefinancemonitor.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor\nQnami – Strategic-Technological Company Analysis\nQnami AG is a Swiss deep-tech company at the forefront of quantum sensing.",
+      "publisher": "defencefinancemonitor.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2026/01/12/cybersecurity-risks-2026-nordvpn/",
+      "title": "thequantuminsider\nNordVPN Outlines Major Quantum and Cyber Threats ...\nNordVPN experts outline five major cybersecurity risks expected to define 2026, including AI-driven attacks, misinformation, and quantum threats.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.defencefinancemonitor.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor\nQnami – Strategic-Technological Company Analysis\nQnami AG is a Swiss deep-tech company at the forefront of quantum sensing.",
+      "publisher": "defencefinancemonitor.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.rapid7.com/blog/post/it-key-emerging-cybersecurity-threats-challenges-ai-ransomware-quantum/",
+      "title": "rapid7\nKey Emerging Cybersecurity Threats and Challenges for ...\nThe global threat landscape is undergoing an unprecedented transformation. Dive into the cyber threats expected to emerge within the next 3 to 5 years in the latest Rapid7 blog.",
+      "publisher": "rapid7.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:15:43.504835+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

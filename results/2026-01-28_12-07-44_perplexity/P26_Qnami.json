@@ -1,0 +1,35 @@
+{
+  "prompt_id": "P26",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that Qnami can go up by 10x?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Score: 3/10\n\nQnami, a Swiss quantum sensing startup founded in 2017, develops nanoscale magnetometry tools like the ProteusQ for imaging magnetic materials in spintronics, MRAM, and research applications. While the quantum sensors market shows promise—with $1.25B in 2025 investments signaling growth—Qnami's trajectory raises red flags for 10x upside. They've raised just $7.3M total across seed ($2.6M in 2019), Series A ($4.4M in 2021), and grants, with no funding since then despite ~20 employees and modest traction like partnerships with HORIBA (2025 distribution deal) and expansions to Japan/Korea. No Series B, acquisitions, or revenue dominance suggests stagnation in a capital-intensive field where leaders like Qnops or IBM spinouts scale faster.\nhtgf+6\n\nBrutal reality: Deep tech unicorns need explosive product-market fit, which Qnami lacks—stuck in niche R&D sales amid economic caution post-2024 VC reset. At best, a quiet acquisition; 10x implies $70M+ valuation and hockey-stick growth, improbable without fresh capital or breakthroughs by 2026. Competition from incumbents (e.g., HORIBA) could commoditize them. I'd pass—high risk, low momentum. (198 words)\ncrustdata\n​",
+  "sources": [
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf+6",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://crustdata.com/profiles/company/qnami",
+      "title": "crustdata",
+      "publisher": "crustdata.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/",
+      "title": "htgf\nQnami Closes CHF 2.6M Seed Financing Round\nQnami announced today the closing of a CHF 2.6M seed round led by Venture Capital fund Quantonation and further supported by investiere, ZKB Start-up Finance and the High-Tech Gründerfonds.",
+      "publisher": "htgf.de",
+      "snippet": ""
+    },
+    {
+      "url": "https://crustdata.com/profiles/company/qnami",
+      "title": "crustdata\nQnami - Crustdata Company Profile, Funding and Growth\nQnami develops quantum sensing technologies designed for nanoscale imaging.",
+      "publisher": "crustdata.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:20:14.589358+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

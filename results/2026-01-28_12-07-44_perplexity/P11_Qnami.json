@@ -1,0 +1,65 @@
+{
+  "prompt_id": "P11",
+  "company": "Qnami",
+  "question": "How does Qnami differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Qnami stands out as a leader in quantum sensing, specializing in NV-center diamond-based microscopes for nanoscale magnetic imaging in nanotechnology, life sciences, and earth sciences.\ncraft+1\n\nKey Competitors\n\nDirect rivals include QZabre, DiaSense, SBQuantum, QuantumDiamonds, and AdamantQ, all leveraging diamond NV centers or quantum magnetometers for similar magnetic field sensing and microscopy. Indirect competitors like Herzan (vibration isolation) or Spectricity (spectral sensing) address related noise reduction or alternative detection needs.\ncbinsights+1\n\nDifferentiation Factors\n\nQnami excels in fully integrated, user-friendly systems like its ProteoxQ scanning NV magnetometer, emphasizing plug-and-play operation with advanced software for data analytics—unlike QZabre's focus on high-performance probes or SBQuantum's broader magnetometer applications. It prioritizes commercial scalability and collaborations with industries/universities, raising $7.2M in funding versus competitors like Spectricity ($16.6M).\nqnami+2\n\nAspect\tQnami\tQZabre/DiaSense\tHerzan/Spectricity\nCore Tech\tNV diamond microscopy\tNV probes/sensors\tVibration/spectral isolation\nFocus\tNanoscale imaging\tCustom sensing\tEnvironmental control\nFunding\t$7.2M\tVaries (e.g., $18M DiaSense est.)\tN/A or higher \ncraft+1\n\nQnami's edge lies in comprehensive solutions for research workflows, not just components. (198 words)",
+  "sources": [
+    {
+      "url": "https://craft.co/qnami/competitors",
+      "title": "craft+1",
+      "publisher": "craft.co",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/qnami/alternatives-competitors",
+      "title": "cbinsights+1",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami+2",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://craft.co/qnami/competitors",
+      "title": "craft+1",
+      "publisher": "craft.co",
+      "snippet": ""
+    },
+    {
+      "url": "https://craft.co/qnami/competitors",
+      "title": "craft\nTop Qnami Competitors and Alternatives\nQnami's main competitors include Jondetech, Herzan, Aryballe and Spectricity. Compare Qnami to its competitors by revenue, employee growth and other metrics at Craft.",
+      "publisher": "craft.co",
+      "snippet": ""
+    },
+    {
+      "url": "https://craft.co/qnami/competitors",
+      "title": "craft\nTop Qnami Competitors and Alternatives\nQnami's main competitors include Jondetech, Herzan, Aryballe and Spectricity. Compare Qnami to its competitors by revenue, employee growth and other metrics at Craft.",
+      "publisher": "craft.co",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/qnami/alternatives-competitors",
+      "title": "cbinsights\nTop QNAMI Alternatives, Competitors\nExplore QNAMI's alternatives and competitors.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami\nQnami: Quantum Sensing Leaders in Nanoscale Precision\nQnami is a global leader and pioneer in the development and commercialization of quantum sensing solutions. Read on to learn more!",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://craft.co/qnami/competitors",
+      "title": "craft\nTop Qnami Competitors and Alternatives\nQnami's main competitors include Jondetech, Herzan, Aryballe and Spectricity. Compare Qnami to its competitors by revenue, employee growth and other metrics at Craft.",
+      "publisher": "craft.co",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:13:01.773390+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

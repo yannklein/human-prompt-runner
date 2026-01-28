@@ -1,2 +1,51 @@
-2026/01/28-15:10:55.045 8ca4c2 Creating DB /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.perplexity.ai_0.indexeddb.leveldb since it was missing.
-2026/01/28-15:10:55.049 8ca4c2 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.perplexity.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/28-16:04:33.546 8f149e Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.perplexity.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/28-16:04:33.546 8f149e Recovering log #390
+2026/01/28-16:04:33.553 8f149e Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.perplexity.ai_0.indexeddb.leveldb/000390.log 
+2026/01/28-16:04:38.406 8f14a0 Compacting 1@0 + 1@1 files
+2026/01/28-16:04:38.411 8f14a0 Generated table #393@0: 632 keys, 37368 bytes
+2026/01/28-16:04:38.411 8f14a0 Compacted 1@0 + 1@1 files => 37368 bytes
+2026/01/28-16:04:38.415 8f14a0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/28-16:04:38.416 8f14a0 Delete type=2 #389
+2026/01/28-16:04:38.416 8f14a0 Delete type=2 #391
+2026/01/28-16:04:44.188 8f14ba Level-0 table #395: started
+2026/01/28-16:04:44.204 8f14ba Level-0 table #395: 1696736 bytes OK
+2026/01/28-16:04:44.206 8f14ba Delete type=0 #390
+2026/01/28-16:04:46.316 8f14ba Level-0 table #397: started
+2026/01/28-16:04:46.325 8f14ba Level-0 table #397: 1189486 bytes OK
+2026/01/28-16:04:46.326 8f14ba Delete type=0 #394
+2026/01/28-16:04:49.196 8f14ba Compacting 2@0 + 1@1 files
+2026/01/28-16:04:49.206 8f14ba Generated table #398@0: 4587 keys, 409199 bytes
+2026/01/28-16:04:49.206 8f14ba Compacted 2@0 + 1@1 files => 409199 bytes
+2026/01/28-16:04:49.208 8f14ba compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/28-16:04:49.208 8f14ba Delete type=2 #395
+2026/01/28-16:04:49.208 8f14ba Delete type=2 #397
+2026/01/28-16:04:49.208 8f14ba Delete type=2 #393
+2026/01/28-16:04:50.016 8f14ba Level-0 table #400: started
+2026/01/28-16:04:50.025 8f14ba Level-0 table #400: 3004911 bytes OK
+2026/01/28-16:04:50.028 8f14ba Delete type=0 #396
+2026/01/28-16:04:52.141 8f14ba Compacting 1@1 + 1@2 files
+2026/01/28-16:04:52.147 8f14ba Level-0 table #403: started
+2026/01/28-16:04:52.156 8f14ba Level-0 table #403: 4174937 bytes OK
+2026/01/28-16:04:52.157 8f14ba Delete type=0 #399
+2026/01/28-16:04:52.167 8f14ba Generated table #401@1: 945 keys, 2035084 bytes
+2026/01/28-16:04:52.167 8f14ba Compacted 1@1 + 1@2 files => 2035084 bytes
+2026/01/28-16:04:52.168 8f14ba compacted to: files[ 2 0 1 0 0 0 0 ]
+2026/01/28-16:04:52.169 8f14ba Delete type=2 #388
+2026/01/28-16:04:52.169 8f14ba Delete type=2 #398
+2026/01/28-16:04:54.107 8f14a0 Level-0 table #405: started
+2026/01/28-16:04:54.118 8f14a0 Level-0 table #405: 4178035 bytes OK
+2026/01/28-16:04:54.120 8f14a0 Delete type=0 #402
+2026/01/28-16:04:54.914 8f14ba Level-0 table #407: started
+2026/01/28-16:04:54.928 8f14ba Level-0 table #407: 4183458 bytes OK
+2026/01/28-16:04:54.930 8f14ba Delete type=0 #404
+2026/01/28-16:04:54.930 8f14ba Compacting 4@0 + 0@1 files
+2026/01/28-16:04:54.937 8f14ba Generated table #408@0: 1124 keys, 494011 bytes
+2026/01/28-16:04:54.937 8f14ba Compacted 4@0 + 0@1 files => 494011 bytes
+2026/01/28-16:04:54.939 8f14ba compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/28-16:04:54.939 8f14ba Delete type=2 #405
+2026/01/28-16:04:54.939 8f14ba Delete type=2 #407
+2026/01/28-16:04:54.939 8f14ba Delete type=2 #403
+2026/01/28-16:04:54.939 8f14ba Delete type=2 #400
+2026/01/28-16:04:55.747 8f149e Level-0 table #410: started
+2026/01/28-16:04:55.756 8f149e Level-0 table #410: 4191673 bytes OK
+2026/01/28-16:04:55.758 8f149e Delete type=0 #406

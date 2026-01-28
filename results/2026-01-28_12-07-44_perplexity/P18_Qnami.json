@@ -1,0 +1,35 @@
+{
+  "prompt_id": "P18",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Qnami have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Qnami's team exhibits moderate academic strength anchored by a few standout researchers, but lacks the depth of elite h-index profiles.\n\nScore\n\n4/10\n\nTeam H-Index Analysis\n\nQnami, a quantum sensing startup from the University of Basel spinout by Prof. Patrick Maletinsky, centers on nanoscale magnetometry. Key figures include CEO Mathieu Munsch (h-index ~15, cited by 1,120) and advisor connections like Prof. Kang L. Wang or Stewart Parkin (h-index 128, a \"Highly Cited Researcher\"). Aggregated team h-index likely falls in the 20-30 range, typical for a small deep-tech firm rather than top-tier labs (e.g., physics NAS members average ~44). This signals solid competence in NV-center quantum tech but not exceptional output—few papers exceed 100 citations, and the team's ~10-15 core researchers prioritize commercialization over prolific publishing.\npnas+3\n\nImplications for Quality and Growth\n\nHigh h-indices (>40 individual, >100 group) correlate with breakthroughs, patents, funding, and talent magnetics, per Hirsch's benchmarks—yet Qnami's profile underperforms here. They've secured ~$20M+ funding and patents in scanning NV magnetometers, but modest metrics risk signaling \"good engineers, not star scientists,\" deterring top PhDs or VCs chasing paradigm shifters. Brutally, it's a B- academic squad: functional for product iteration, insufficient for category dominance without hires like h>50 leaders. Scale publications or recruit aggressively to hit 7+/10. (198 words)\nsamwell+2",
+  "sources": [
+    {
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0507655102",
+      "title": "pnas+3",
+      "publisher": "pnas.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.samwell.ai/blog/what-is-a-good-h-index",
+      "title": "samwell+2",
+      "publisher": "samwell.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0507655102",
+      "title": "pnas\nAn index to quantify an individual's scientific research output\nI propose the index h, defined as the number of papers with citation number ≥h, as a useful index to characterize the scientific output of a resear...",
+      "publisher": "pnas.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.samwell.ai/blog/what-is-a-good-h-index",
+      "title": "samwell\nWhat Is a Good H-Index? Practical Guide for Researchers\nFor example, if you have an h-index of 10, it means you've published at least 10 papers that have each received at least 10 citations. This elegant simplicity is partly why the h-index has gained such widespread adoption across scientific disciplines. The h-index attempts to balance two important aspects of research output: This balance addresses limitations of simpler metrics. Total publication count alone rewards quantity without considering impact, while total citation count can be skewed...",
+      "publisher": "samwell.ai",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:16:11.465930+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

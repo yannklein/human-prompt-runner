@@ -1,0 +1,53 @@
+{
+  "prompt_id": "P20",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Qnami demonstrates solid execution capabilities for a deep-tech quantum sensing startup, particularly given its senior technical founders from Harvard and University of Basel.\ndefencefinancemonitor.substack+2\n\nScore: 8/10\n\nTechnical Foundations\n\nQnami's team, comprising quantum physics leaders, has executed a commercial breakthrough with ProteusQ, the first scanning NV magnetometer launched in 2019. They've achieved over CHF 1M in early sales, secured a CHF 4M Series A in 2023 from top VCs like Runa Capital and Quantonation, and expanded applications to quantum computing, spintronics, and cryogenics. Strong IP on Quantilever probes and diamond chips provides defensible moats, with top researchers praising ease-of-use, stability, and publication-quality data.\nverve+1\n\nMarket Traction\n\nCustomer testimonials highlight seamless integration into labs, enabling new experiments like antiferromagnetic imaging and magnon studies previously impossible. Partnerships with universities and industries worldwide position Qnami as a bridge to industrial scale-up, aligning with Europe's quantum sovereignty goals. Dual-use potential in defense adds strategic value.\nqnami+1\n\nKey Gaps\n\nExecution lags in recent public milestones—no 2025-2026 funding rounds, revenue figures, or product expansions visible, suggesting slower commercialization amid deep-tech scaling challenges. While founders' track record predicts breakthroughs, sales growth and team expansion need acceleration to hit $1.5B market potential. Still, for a 2017 spinout, this is impressive resilience.\ndefencefinancemonitor.substack+1\n\n(198 words)",
+  "sources": [
+    {
+      "url": "https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor.substack+2",
+      "publisher": "defencefinancemonitor.substack.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve+1",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor.substack+1",
+      "publisher": "defencefinancemonitor.substack.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company",
+      "title": "defencefinancemonitor.substack\nQnami – Strategic-Technological Company Analysis\nQnami AG is a Swiss deep-tech company at the forefront of quantum sensing.",
+      "publisher": "defencefinancemonitor.substack.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve\nQnami raises CHF 4 million Series A\nQnami raised a 4.0M CHF Series A financing round led by Runa Capital and SIT Capital, further supported by Seed Round investors Quantonation, Verve Ventures, Zürcher Kantonalbank and the High Tech Gründerfond. The funds will support extension of Qnami’s patented quantum microscope technology into applications enabling the design and production of quantum computers and spintronics devices, plus scaling the launch of the Qnami ProteusQ™, the first commercial Quantum Microscope.",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch",
+      "title": "qnami\nQnami: Quantum Sensing Leaders in Nanoscale Precision\nQnami is a global leader and pioneer in the development and commercialization of quantum sensing solutions. Read on to learn more!",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:17:07.846606+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

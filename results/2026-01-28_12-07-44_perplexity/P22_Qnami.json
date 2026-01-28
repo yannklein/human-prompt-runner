@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P22",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Qnami's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "8/10.\n\nQnami’s IP around NV-center diamond probes and the associated ProteusQ quantum microscope platform appears genuinely differentiated, particularly in integrated, end-to-end scanning NV systems rather than just components. They have protected core elements such as artificial-diamond nanoscale imaging probes and magnetometer systems, with the probe technology explicitly highlighted as a core patent, and have already commercialized these into Quantilever probes and ProteusQ systems used in advanced research and semiconductor environments.\nqnami+4\n\nOn “leadership in approach,” they are clearly among the early and visible movers in room‑temperature scanning NV quantum microscopy, and they are often described as being at the forefront of quantum sensing instrumentation. However, the competitive field is now fairly crowded with other NV-diamond quantum sensing startups (e.g., QZabre, QuantumDiamonds, Quantum Diamond Technologies, Nomad Atomics, AdamantQ), several of which also offer high‑performance microscopes, probes, or sensor platforms. This erodes any claim to being uniquely positioned or unassailable. I’d therefore rate uniqueness and leadership strong but not monopolistic: defensible IP and clear category leadership in scanning NV microscopes, but in a race with capable peers, not a one‑horse market.\ncosylab+4",
+  "sources": [
+    {
+      "url": "https://qnami.ch/quantilever-revolution/",
+      "title": "qnami+4",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf",
+      "title": "cosylab+4",
+      "publisher": "cosylab.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/quantilever-revolution/",
+      "title": "qnami\nThe Quantilever Revolution - Basel\nHow NV centres were turned into nanoscale sensors. From the proof of concept in 2008, to the first all-diamond probe in 2012, until commercialization of the Qnami Quantilevers.",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/quantilever-revolution/",
+      "title": "qnami\nThe Quantilever Revolution - Basel\nHow NV centres were turned into nanoscale sensors. From the proof of concept in 2008, to the first all-diamond probe in 2012, until commercialization of the Qnami Quantilevers.",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf",
+      "title": "cosylab\nBring a revolutionary quantum microscope to market in ...\nquantum microscope to market in only six months EXECUTIVE SUMMARY Qnami ProteusQ is the first complete Quantum Microscope system. It is a scanning NV (Nitrogen-Vacancy) microscope for room temperature analysis of magnetic materials at the atomic scale. To get Qnami ProteusQ ready for market in record time, Cosylab supported Qnami... magnetic spatial resolution previously achievable only at large accelerator facilities. An additional challenge was the time-to-market requirement: Qnami ProteusQ...",
+      "publisher": "cosylab.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:18:13.422197+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

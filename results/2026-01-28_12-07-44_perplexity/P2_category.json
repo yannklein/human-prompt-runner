@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P2",
+  "company": null,
+  "question": "Which are top 10 countries in Quantum Sensing innovation currently? and why? Give me 200 word explanation and the rank",
+  "answer": "The top 10 countries in quantum sensing innovation are led by the US and China, based on recent benchmarks in research output, patents, and investments.\necipe+1\n\nRankings\nRank\tCountry\n1\tUnited States\n2\tChina\n3\tGermany\n4\tJapan\n5\tUnited Kingdom\n6\tFrance\n7\tSouth Korea\n8\tCanada\n9\tNetherlands\n10\tAustralia\nKey Metrics\n\nQuantum sensing measures fields like magnetic or gravitational ones with atomic precision, driving advances in navigation, healthcare, and defense. The US and China tie closely at ~23-26% of global high-impact publications and lead investments ($12.1B and $8.25B total quantum funding), fueling breakthroughs from firms like Lockheed Martin and state labs.\nfinance.yahoo+1\n\nReasons for Leadership\n\nGermany excels with 7-8% of papers and over 60% of EU funding (€2B+), emphasizing industrial sensors via Bosch. Japan and Europe (UK, France) dominate patents through Toshiba and Thales. Others like South Korea and Canada advance via integrated strategies and software/hardware specialization. Growth stems from public-private synergies, with patents surging since 2019.\narapackelaw+3\n\n(Word count: 198)",
+  "sources": [
+    {
+      "url": "https://ecipe.org/publications/benchmarking-quantum-technology-performance/",
+      "title": "ecipe+1",
+      "publisher": "ecipe.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://finance.yahoo.com/news/public-private-investment-quantum-technologies-123600108.html",
+      "title": "finance.yahoo+1",
+      "publisher": "finance.yahoo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://arapackelaw.com/patents/quantum-computing-patents/",
+      "title": "arapackelaw+3",
+      "publisher": "arapackelaw.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecipe.org/publications/benchmarking-quantum-technology-performance/",
+      "title": "ecipe\nBenchmarking Quantum Technology Performance\nIn this study on the transformative potential of quantum technology in reshaping economies, we present results and evidence drawing on a unique and innovative quantum dataset compiled by ECIPE. This d",
+      "publisher": "ecipe.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://arapackelaw.com/patents/quantum-computing-patents/",
+      "title": "arapackelaw\nTop Quantum Computing Patents: Trends, Players, and ...\nThe landscape of quantum computing patents is experiencing explosive growth. According to MIT's Quantum Index Report 2025, global quantum technology patent",
+      "publisher": "arapackelaw.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:08:19.221108+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

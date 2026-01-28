@@ -1,0 +1,53 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Hybrid quantum-classical systems augment subterranean mapping and autonomous navigation.\nfinance.yahoo+1",
+  "sources": [
+    {
+      "url": "https://finance.yahoo.com/news/quantum-sensors-market-value-reach-150300786.html",
+      "title": "finance.yahoo+1",
+      "publisher": "finance.yahoo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/quantum-sensors-market",
+      "title": "mordorintelligence\nQuantum Sensors Market Size, Growth & Forecast - 2031\nThe quantum sensors market will expand from USD 0.86 billion in 2026 to USD 1.56 billion by 2031 at a 12.72% CAGR, supported by defense, telecom, space, and navigation use cases.",
+      "publisher": "mordorintelligence.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/quantum-sensors-market",
+      "title": "mordorintelligence\nQuantum Sensors Market Size, Growth & Forecast - 2031\nThe quantum sensors market will expand from USD 0.86 billion in 2026 to USD 1.56 billion by 2031 at a 12.72% CAGR, supported by defense, telecom, space, and navigation use cases.",
+      "publisher": "mordorintelligence.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/quantum-sensors-market",
+      "title": "mordorintelligence\nQuantum Sensors Market Size, Growth & Forecast - 2031\nThe quantum sensors market will expand from USD 0.86 billion in 2026 to USD 1.56 billion by 2031 at a 12.72% CAGR, supported by defense, telecom, space, and navigation use cases.",
+      "publisher": "mordorintelligence.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/31/tqis-predictions-for-the-quantum-industry-in-2026/",
+      "title": "thequantuminsider\nTQI's Predictions For The Quantum Industry in 2026\nIn 2026, we see that the headwinds -- and tailwinds -- of sharper competition, faster technical progress and a more sober understanding.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://finance.yahoo.com/news/quantum-sensors-market-value-reach-150300786.html",
+      "title": "finance.yahoo\nQuantum Sensors Market Value to Reach $1.5Bn by 2031 ...\nQuantum sensors market growth is being driven by defense modernization programs, space navigation needs, and high-precision measurement requirements in oil & gas and mining, led by North America.Hyderabad, Jan. 23, 2026 (GLOBE NEWSWIRE) -- According to the latest report published by Mordor Intelligence, the quantum sensors market size is estimated at USD 0.86 billion in 2026, up from USD 0.76 billion in 2025, and is projected to reach USD 1.56 billion by 2031, growing at a CAGR of 12.72% during",
+      "publisher": "finance.yahoo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputer.blog/quantum-sensors-market-to-reach-1-5b-2031/",
+      "title": "quantumcomputer\nGlobal Quantum Sensors Market Poised to Reach $1.5B by ...\nThe global quantum sensors market is expected to reach $1.5 billion by 2031 as industrial and defense use picks up speed.",
+      "publisher": "quantumcomputer.blog",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:12:07.039817+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

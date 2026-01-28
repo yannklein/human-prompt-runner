@@ -1,0 +1,71 @@
+{
+  "prompt_id": "P5",
+  "company": null,
+  "question": "What are the top 5 leading labs or Universities on Quantum Sensing research currently? Give me a 100 word explanation and the rank",
+  "answer": "University College London: Quantum Science and Technology Institute focuses on sensing for disease diagnostics.\nquantum+1",
+  "sources": [
+    {
+      "url": "https://quantum.gov.pk/top-universities-for-quantum-research-2025/",
+      "title": "quantum+1",
+      "publisher": "quantum.gov.pk",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/03/26/top-universities-for-quantum-research-2025/",
+      "title": "thequantuminsider\nTop Universities For Quantum Research -- 2025\nThe Quantum Insider (TQI) is the leading online resource dedicated exclusively to Quantum Computing.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/05/21/20-top-universities-for-quantum-computing-research/",
+      "title": "thequantuminsider\n20 Top Universities For Quantum Computing Research\nThis list is an attempt to spotlight the 20 top universities in the world for quantum computing and quantum information science research.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:09:54.149887+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,35 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Qnami is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Qnami Development Rating: 7/10\n\nQnami has made solid strides in quantum sensing, launching its flagship ProteusQ microscope around 2019-2021, which uses patented diamond NV-center probes for nanoscale magnetic imaging. By 2026, it's a commercial product with strong academic adoption—testimonials praise its ease of use, data quality, and integration into labs for materials like antiferromagnets and magnons. Recent advancements include cryogenic ProteusQ-LT via partnerships like Qinu, targeting quantum computing and spintronics. Sales exceeded CHF 1M early on, with TRI rated 8-9 for mature prototypes.\nverve+3\n\nCompetitive Landscape\nYet brutally, Qnami lags in market dominance and scale. Competitors like QLM Technology focus on gas sensing with $14M funding, while broader quantum sensor lists (e.g., Seedtable's top 17) show fragmented leadership—no clear Qnami monopoly. Established players in NV magnetometry (e.g., via Harvard/Basel IP rivals) erode first-mover edge, and industrial traction remains R&D-heavy, not mass-deployed. Funding stalled post-2021 Series A (~CHF 6.6M total), signaling slower iteration versus VC-fueled peers.\nseedtable+2\n\nA 7 reflects proven tech and revenue but middling progress toward category king—strong science, weak commercialization push. (198 words)",
+  "sources": [
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve+3",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.seedtable.com/best-quantum-sensor-startups",
+      "title": "seedtable+2",
+      "publisher": "seedtable.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/qnami-series-a/",
+      "title": "verve\nQnami raises CHF 4 million Series A\nQnami raised a 4.0M CHF Series A financing round led by Runa Capital and SIT Capital, further supported by Seed Round investors Quantonation, Verve Ventures, Zürcher Kantonalbank and the High Tech Gründerfond. The funds will support extension of Qnami’s patented quantum microscope technology into applications enabling the design and production of quantum computers and spintronics devices, plus scaling the launch of the Qnami ProteusQ™, the first commercial Quantum Microscope.",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.seedtable.com/best-quantum-sensor-startups",
+      "title": "seedtable\n17 Best Quantum Sensor Startups to Watch in 2026\nThe Definitive Seedtable Ranking of Quantum Sensor Startups",
+      "publisher": "seedtable.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-01-28T12:18:43.132595+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

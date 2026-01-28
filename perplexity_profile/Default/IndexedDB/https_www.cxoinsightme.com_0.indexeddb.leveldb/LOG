@@ -1,0 +1,6 @@
+2026/01/28-15:56:25.824 8e7b7c Creating DB /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.cxoinsightme.com_0.indexeddb.leveldb since it was missing.
+2026/01/28-15:56:25.828 8e7b7c Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.cxoinsightme.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/28-15:56:42.904 8e7b8c Level-0 table #5: started
+2026/01/28-15:56:42.912 8e7b8c Level-0 table #5: 595 bytes OK
+2026/01/28-15:56:42.914 8e7b8c Delete type=0 #3
+2026/01/28-15:56:42.914 8e7b8e Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
