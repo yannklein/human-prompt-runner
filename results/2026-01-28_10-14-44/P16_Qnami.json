@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P16",
+  "company": "Qnami",
+  "question": "What are Qnami's current main opportunities? Give short bullet points",
+  "answer": "Here are Qnami’s current main opportunities — short and bullet‑pointed:\n\n📈 Growth & Market Expansion\n\nExpand global distribution of its ProteusQ quantum microscope, including new East Asia partnerships (Japan & South Korea) to reach more research/industrial labs. \nThe Quantum Insider\n+1\n\nScale commercial adoption beyond academic labs into materials science, spintronics and semiconductor R&D markets. \nThe Quantum Insider\n\nLeverage collaborations with established instrument partners (e.g., HORIBA) to streamline global sales and support. \nhoriba.com\n\n🧪 Product & Technology Development\n\nExtend quantum sensing capabilities with ProteusQ‑LT (low temperature/cryogenic) tools for new scientific applications. \nQnami\n\nGrow the quantum sensor product portfolio (e.g., Quantilever probes, diamond sensors, AppLab services) to diversify revenue streams. \nQnami\n\n🤝 Strategic Collaborations & Research\n\nDeepen partnerships with leading research institutions and industry innovators to co‑develop new quantum metrology applications. \nQnami\n\nPosition quantum sensing as an essential tool in next‑gen tech sectors such as quantum computing materials and advanced memory technologies (e.g., MRAM). \nEU-Startups\n\n🧠 Quantum Tech Market Tailwinds\n\nCapitalize on growing demand in the broader quantum sensing market, where high‑precision measurement tools are increasingly required across science and industry. \nwiseguyreports.com\n\nIf you want these opportunities tailored to investment, tech trends, or specific industries, just let me know.",
+  "timestamp": "2026-01-28T10:20:28.260559+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "horiba.com",
+      "publisher": "horiba.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/products/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.eu-startups.com/2021/05/swiss-startup-qnami-raises-e3-6-million-to-scale-up-quantum-technology/",
+      "title": "EU-Startups",
+      "publisher": "eu-startups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.wiseguyreports.com/reports/quantum-sensor-market",
+      "title": "wiseguyreports.com",
+      "publisher": "wiseguyreports.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

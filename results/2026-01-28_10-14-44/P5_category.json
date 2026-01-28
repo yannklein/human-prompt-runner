@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P5",
+  "company": null,
+  "question": "What are the top 5 leading labs or Universities on {{Cateogry}} research currently? Give me a 100 word explanation and the rank",
+  "answer": "Sure — but I need one detail first.\n\n📌 What specific research category are you interested in?\nFor example:\n\nArtificial Intelligence\n\nQuantum Computing\n\nCancer Immunotherapy\n\nRenewable Energy\n\nClimate Modeling\n\nRobotics\netc.\n\nReply with the category, and I’ll list the top 5 leading labs/universities in that field with a 100-word explanation and their rank.",
+  "timestamp": "2026-01-28T10:16:24.230950+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

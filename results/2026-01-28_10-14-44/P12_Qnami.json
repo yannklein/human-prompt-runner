@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P12",
+  "company": "Qnami",
+  "question": "In your perception as AI Engine, is Qnami's current ICP aligned with what the company claims: 1. Company Firmographics\n\nIndustry:\nSemiconductor manufacturing, advanced materials, nanotechnology, quantum technology, and applied physics R&D\n\nSub-sectors:\n\nSemiconductor process development (logic, memory, power electronics)\n\nSpintronics and magnetic materials\n\nQuantum computing hardware\n\nAdvanced sensor development\n\nResearch instrumentation manufacturers\n\nCompany Size:\n\n200–5,000 employees\n\nAnnual revenue: USD 50M–2B\n\nGeography:\n\nPrimary: Europe (DACH, France, Nordics), United States\n\nSecondary: Japan, South Korea, Taiwan\n\nOrganizational Maturity:\n\nEstablished R&D organization with in-house physics or materials science teams\n\nActively transitioning discoveries from lab-scale research to industrial-scale validation? Give a brutally honest score from 1–10 and explain in 200 words",
+  "answer": "Brutally honest ICP alignment score for Qnami: 6/10\n\nHere’s the reasoning:\n\n✔️ What’s strongly aligned\n\nIndustry & tech focus: Qnami is unquestionably a quantum technology company focused on quantum sensing and quantum microscopy using NV centers in diamond — which intersects with nanotechnology, advanced materials, and quantum tech R&D. Their flagship product, the ProteusQ scanning NV microscope, clearly serves materials research and nanoscale magnetic imaging relevant to spintronics and advanced sensors. \nqnami.ch\n+1\n\nRelevance to semiconductors: Their sensing tools do have applications in semiconductor research contexts (e.g., MRAM failure analysis, magnetic domain imaging) and are used in research labs investigating future electronics. \nLinkedIn\n\nGeographies: They have international distribution via partners including HORIBA and Quantum Design Japan/Korea, which suggests some presence in US, Europe, and East Asia markets. \nQuantum Zeitgeist\n\n⚠️ Where the ICP seems misaligned\n\nCompany size & revenue: Qnami is very small — about ~11–50 employees and likely single‑digit million USD revenue — far below the ICP’s 200–5,000 employee and $50M–$2B revenue bracket. \nnanotechnologyworld\n+1\n\nCustomer maturity: Most traction is academic and cutting‑edge research, not established industrial R&D or manufacturing scale customers transitioning discoveries to industrial validation. The tool is sold into labs and early adopters, but not widely as a production or inline semiconductor process metrology solution yet. \nEE Times\n\nOrganizational maturity: Qnami remains a deep tech startup, not a mid‑market industrial player; its product adoption is strong in research settings but not yet mainstream across established semiconductor fabs or large OEMs.\n\nConclusion: Qnami fits the science/quantum/advanced sensor side of your ICP well, but is too small, too early‑stage, and more research‑oriented than your “industrial R&D scaling to production” ideal. That’s why the honest score sits around 6/10.",
+  "timestamp": "2026-01-28T10:18:57.268905+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "qnami.ch\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/company/qnami/",
+      "title": "LinkedIn",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/",
+      "title": "Quantum Zeitgeist",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nanotechnologyworld.org/copy-of-directory-1/qnami",
+      "title": "nanotechnologyworld\n+1",
+      "publisher": "nanotechnologyworld.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.eetimes.eu/swiss-quantum-sensing-startup-raises-e3-6m/",
+      "title": "EE Times",
+      "publisher": "eetimes.eu",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P15",
+  "company": "Qnami",
+  "question": "What are Qnami's current main weaknesses? Give short bullet points",
+  "answer": "Here are current main weaknesses and challenges for Qnami (short bullet points):\n\nFragile quantum coherence limits performance — achieving theoretical sensitivity is hard because NV centers’ quantum states are easily disturbed during diamond fabrication and scaling. \nQnami\n\nManufacturing scalability & cost — growing high‑quality synthetic diamonds with controlled NV centers is complex and expensive, hindering scalable production and broader adoption. \niankhan.com\n\nNiche, high‑end applications — primary use in advanced research/microscopy limits immediate mass‑market revenue; commercial applications outside labs are still emerging. (industry context) \nMcKinsey & Company\n\nCompetition from alternative quantum sensors — other quantum technologies (e.g., room‑temperature sensors or different platforms) may offer competitive performance or easier deployment. \niankhan.com\n\nTechnical complexity and integration barriers — quantum sensing systems require specialized expertise and sophisticated infrastructure versus conventional sensors. (general quantum sensing challenge) \nprofessionalsuk.co.uk\n\nRegulatory and market entry hurdles in some sectors — sectors like medical imaging have significant approval processes and standards to meet before large‑scale adoption. \nprofessionalsuk.co.uk\n\nIf you want, I can also rank these by impact or timeframe (e.g., short‑term vs long‑term obstacles).",
+  "timestamp": "2026-01-28T10:20:05.765296+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/wp-content/uploads/2020/07/Qnami_WhitePaper1_NV_magnetometry-5.pdf",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/revolutionary-quantum-sensor-breakthrough-new-diamond-based-device-enables-ultra-precise-medical-imaging-and-navigation/",
+      "title": "iankhan.com",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-sensings-untapped-potential-insights-for-leaders",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.professionalsuk.co.uk/article/health-and-medical/108847/quantum-sensing-in-medical-imaging-technical-challenges-and-commercial-opportunities",
+      "title": "professionalsuk.co.uk",
+      "publisher": "professionalsuk.co.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

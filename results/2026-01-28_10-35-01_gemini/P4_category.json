@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P4",
+  "company": null,
+  "question": "What are the top 5 Quantum Sensing companies with the best team currently? Give me a 100 word explanation and the rank",
+  "answer": "In 2026, the quantum sensing landscape is dominated by teams that have successfully bridged the gap between academic theory and ruggedized commercial deployment. These organizations are ranked based on their technical leadership, R&D depth, and the deployment of \"real-world\" sensors in navigation, defense, and healthcare.\n\nTop 5 Quantum Sensing Companies (2026)\nRank\tCompany\tCore Team Expertise\tPrimary Focus\n1\tInfleqtion\tCold-atom physics & defense veterans\tPNT (Position, Navigation, Timing)\n2\tIonQ (via Vector Atomic)\tPrecision atomic clock & inertial experts\tIntegrated sensing & navigation\n3\tSandboxAQ\tAI/Quantum hybrid software & geophysics\tMagnetic navigation (MagNav)\n4\tQ-CTRL\tQuantum control engineering & robotics\tSoftware-defined quantum sensors\n5\tQnami\tNV-center diamond material science\tQuantum microscopy & imaging\nExport to Sheets\nWhy These Teams Lead\n\nThe top-tier teams represent a shift from \"artisanal\" lab setups to industrial-scale engineering. Infleqtion and IonQ (following its 2025 acquisition of Vector Atomic) possess the most robust hardware teams for \"GPS-denied\" navigation. SandboxAQ and Q-CTRL are the undisputed leaders in the software layer, using AI and control theory to filter noise—the biggest hurdle in quantum sensing—making sensors viable outside cryogenics. Meanwhile, Qnami leads in nanotech-specific sensing, essential for the next generation of semiconductor and medical diagnostics.\n\nWould you like me to dive deeper into the specific military or medical applications these companies are currently testing?",
+  "timestamp": "2026-01-28T10:36:28.899075+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

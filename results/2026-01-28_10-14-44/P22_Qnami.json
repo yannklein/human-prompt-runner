@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P22",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Qnami's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Score (1–10): 7/10\n\nExplanation (≈200 words):\nQnami’s core technology — quantum sensing based on nitrogen‑vacancy (NV) centers in diamond, embodied most prominently in its ProteusQ™ scanning NV magnetometer — is technically unique and defensible in the niche of quantum metrology instrumentation. It integrates a patented Quantilever™ diamond probe with scanning probe microscopy to achieve nanoscale magnetic imaging that was previously confined to labs and not broadly commercialized. By commercializing the first scanning NV magnetometer and securing early adoption at top research institutions, Qnami has a first‑mover advantage and early market credibility in quantum metrology. \nQnami\n+1\n\nHowever, several factors temper a higher score:\n\nCompetition is emerging. Other startups and research groups are working on NV‑center quantum sensors and related metrology tools, and alternative sensing modalities (e.g., atomic vapor, Rydberg atom sensors) are drawing significant investment, especially from larger ecosystems (US, EU) with strong funding and defense backing. \nfuturemarketsinc.com\n+1\n\nMarket breadth is narrow. The primary use case remains advanced materials research and nanotechnology — valuable but not yet broad industrial deployment.\n\nIP defensibility hinges on deep tech (NV fabrication, integration, software) rather than wide moat barriers like network effects or large scale commercial lock‑ins.\n\nIn sum, Qnami is a credible leader in NV‑based quantum sensing instruments with defensible IP in a deep‑tech niche, but the competitive landscape and scale‑up challenges mean its leadership is significant but not unassailable.",
+  "timestamp": "2026-01-28T10:22:42.947903+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.futuremarketsinc.com/the-global-quantum-sensors-market-2026-2046/",
+      "title": "futuremarketsinc.com\n+1",
+      "publisher": "futuremarketsinc.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

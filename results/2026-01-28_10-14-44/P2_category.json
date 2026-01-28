@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P2",
+  "company": null,
+  "question": "Which are top 10 countries in Quantum Sensing innovation currently? and why? Give me 200 word explanation and the rank",
+  "answer": "Here’s a current ranking of the top 10 countries in quantum sensing innovation (2025/2026) — based on patent activity, research output, national programs, and market deployment in quantum sensing and broader quantum technologies (including sensing where specific data exists):\n\n1. United States — Strongest overall quantum patents, research institutions, industry, and funding; leads in quantum sensing publications and applications. \nMcKinsey & Company\n+1\n\n2. China — Largest global patent filer in quantum tech with major investment and prototype deployments, including sensing systems. \nMcKinsey & Company\n+1\n\n3. Japan — High level of national research, significant quantum tech patents, and active sensing labs and deployment. \ncdn.asp.events\n\n4. Germany — European leader with strong quantum sensor research, manufacturing, and integration into industrial pilots. \n360researchreports.com\n\n5. United Kingdom — Deep national quantum initiatives, strong industrial partnerships, and research in sensing tech. \nIndustry Research\n\n6. France — Vibrant R&D, substantial EU collaborative projects, and quantum sensing applied in imaging and medical fields. \nIndustry Research\n\n7. South Korea — Ranked high in quantum patents and increasingly active in sensing research and technology development. \nSeoul Economic Daily\n\n8. Netherlands — Key European quantum hub with solid research clusters and commercialization of quantum sensors. \nIndustry Research\n\n9. Switzerland — Strong precision instrumentation and metrology ecosystem feeding quantum sensor innovation. \nIndustry Research\n\n10. Canada — High research quality, strong start-up ecosystem, and allied sensor projects in defense and infrastructure. \nReddit\n\nWhy these countries rank at the top (200 words)\n\nInnovation in quantum sensing hinges on robust patent activity, research output, national strategies, and commercial or prototype deployments. The United States and China dominate patent filings and public/private funding, translating into rapid advances in sensor design and commercialization. \nMcKinsey & Company\n Japan and South Korea leverage strong technical ecosystems and heavy investment in quantum technologies, positioning them high in patents and applied research. \ncdn.asp.events\n+1\n European nations such as Germany, the United Kingdom, France, the Netherlands, and Switzerland benefit from deep academic traditions in physics and engineering, national and EU quantum initiatives, and emerging industrial deployments of quantum metrology, gravimetry, and atomic clocks. \n360researchreports.com\n+1\n Canada’s thriving start-up ecosystem, allied research with the U.S. and NATO partners, and targeted investments support its placement. \nReddit\n Together, these factors drive innovation in quantum sensing, helping these countries lead in precision measurement, navigation, environmental monitoring, and defense technologies where quantum sensors can far outperform classical technologies.",
+  "timestamp": "2026-01-28T10:15:13.995428+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "McKinsey & Company\n+1",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://cdn.asp.events/CLIENT_CloserSt_D86EA381_5056_B739_5482D50A1A831DDD/sites/tech-show-paris-2025/media/rapports-industrie-2025/the-year-of-quantum-from-concept-to-reality-in-2025-1-.pdf",
+      "title": "cdn.asp.events",
+      "publisher": "cdn.asp.events",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.360researchreports.com/market-reports/quantum-sensors-market-206707",
+      "title": "360researchreports.com",
+      "publisher": "360researchreports.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.industryresearch.biz/market-reports/quantum-sensors-market-110174",
+      "title": "Industry Research",
+      "publisher": "industryresearch.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.sedaily.com/technology/2025/12/19/korea-ranks-5th-in-quantum-technology-patents-lg-places-2nd",
+      "title": "Seoul Economic Daily",
+      "publisher": "en.sedaily.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.reddit.com//r/NIOCORP_MINE/comments/1oeu0b4",
+      "title": "Reddit",
+      "publisher": "reddit.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

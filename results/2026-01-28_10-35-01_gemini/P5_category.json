@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P5",
+  "company": null,
+  "question": "What are the top 5 leading labs or Universities on Quantum Sensing research currently? Give me a 100 word explanation and the rank",
+  "answer": "Quantum sensing is the most mature \"second quantum revolution\" technology, moving rapidly from academic theory to real-world deployment in 2026. Leading institutions focus on using quantum states (like Nitrogen-Vacancy centers in diamonds or Rydberg atoms) to achieve unprecedented precision in measuring gravity, magnetic fields, and time. These labs are currently bridging the gap between fundamental physics and commercial applications in medical imaging, GPS-free navigation, and mineral exploration.\n\nTop 5 Leading Institutions for Quantum Sensing (2026)\nRank\tInstitution\tKey Lab / Initiative\tPrimary Research Focus\n1\tMIT\tCenter for Quantum Engineering (CQE)\tSuperconducting sensors and biological imaging.\n2\tHarvard University\tHarvard Quantum Initiative (HQI)\tNV-center magnetometry and nanoscale sensing.\n3\tUC Berkeley\tBerkeley Quantum Information & Computation\tAtomic clocks and dark matter detection sensors.\n4\tUni. of Chicago\tChicago Quantum Exchange (CQE)\tQuantum networks and subterranean sensing.\n5\tUSTC (China)\tHefei National Laboratory\tSatellite-based sensing and long-range metrology.\nExport to Sheets\n\nWould you like me to dive deeper into a specific application, such as quantum sensors for medical diagnostics or autonomous navigation?",
+  "timestamp": "2026-01-28T10:36:53.052619+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

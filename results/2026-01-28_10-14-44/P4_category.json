@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P4",
+  "company": null,
+  "question": "What are the top 5 Quantum Sensing companies with the best team currently? Give me a 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of the top 5 quantum sensing companies with the strongest teams and leadership in the world today — focusing on market influence, technical depth, and team expertise (2025-2026):\n\n1. ID Quantique (IDQ) – A Swiss pioneer in quantum detection, QKD, and photon counting, led by experienced founders with deep physics and industry backgrounds. It’s widely recognized for its robust global team and long-standing innovation heritage. \nID Quantique\n+1\n\n2. AOSense, Inc. – US-based leader in atom-interferometry sensing (navigation, gravimetry, timing) with a strong R&D team rooted in Stanford research and defense contracts. \nGlobal Market Insights Inc.\n+1\n\n3. Muquans (μQuans) – French quantum sensor specialist known for atomic clocks and gravimeters, backed by scientists advancing precision measurement tech used in labs and industry. \nGlobal Market Insights Inc.\n\n4. Qnami – Swiss company commercializing diamond-based quantum sensing with a multicultural team combining physics and engineering expertise, gaining traction in nano-imaging and semiconductor markets. \nqnami.ch\n+1\n\n5. M Squared Lasers Ltd. – UK-based firm providing advanced laser systems essential to quantum sensing platforms; its leadership team drives innovation through strong global research collaborations. \nGlobal Market Insights Inc.\n\nThese firms lead the quantum sensing sector through a mix of deep scientific talent, commercial traction, and partnerships in defense, industry, and academia. \nGlobal Market Insights Inc.",
+  "timestamp": "2026-01-28T10:16:00.272896+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.idquantique.com/about-idq/management-team/",
+      "title": "ID Quantique\n+1",
+      "publisher": "idquantique.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "Global Market Insights Inc.\n+1",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "qnami.ch\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

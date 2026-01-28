@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Qnami is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "VC Analyst Rating: Qnami (Quantum Sensing)\n\nCurrent Score: 8.5/10\n\nThe Brutal Reality\n\nQnami is a rare \"commercial-first\" winner in a quantum landscape often plagued by \"vaporware\" and infinite R&D loops. While competitors are still debating qubit modalities, Qnami has successfully productized Nitrogen-Vacancy (NV) magnetometry into a plug-and-play reality. Their ProteusQ system is no longer a prototype; it is an industrial-grade tool being distributed globally through a strategic partnership with HORIBA, effectively solving the \"scale-up\" hurdle that kills most Series A deep-tech firms.\n\nTheir competitive edge lies in the Quantilever MX+ probes—the \"shaving blades\" to their \"razor\" model. By owning the IP for the diamond sensors and the parabolic photon-collection geometry, they’ve achieved signal-to-noise ratios that outclass academic-grade setups from rivals like Attocube/QZabre.\n\nHowever, the 1.5-point deduction reflects two looming risks:\n\nNiche Trap: Their dominance is currently tethered to the R&D and failure-analysis markets for spintronics and semiconductors.\n\nResource Gap: With roughly $7M in total funding compared to the massive war chests of \"full-stack\" quantum players, they are susceptible to a \"feature-war\" if a conglomerate like Bosch or Hamamatsu decides to fully enter the NV-microscopy space.\n\nStrategic Outlook\n\nQnami has successfully crossed the \"Valley of Death.\" They aren't just selling a vision; they are selling data to semiconductor giants. To hit a 10/10, they must transition from a \"scientific instrument company\" to an \"integrated inspection platform\" for the 2026+ generative-AI chip manufacturing boom.\n\nWould you like me to perform a deep-dive comparison of Qnami’s technical specs against its primary rival, QZabre?",
+  "timestamp": "2026-01-28T10:44:32.408961+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

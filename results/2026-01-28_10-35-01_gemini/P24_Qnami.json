@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P24",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Qnami? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "VC Analysis: Qnami (Q1 2026)\n\nBrutal Score: 6.5/10\n\nThe Assessment\n\nQnami is a classic \"deep-tech darling\" that has successfully transitioned from a spin-off to a legitimate hardware player, but it is currently hitting the \"scaling ceiling\" common in high-end scientific instrumentation.\n\nThe Wins:\n\nCommercial Validation: Unlike many quantum startups stuck in R&D, Qnami has a real, revenue-generating product. The ProteusQ is the first of its kind, and achieving over CHF 1M in early sales (post-Series A) proved market fit.\n\nStrategic Distribution: Their partnership strategy is elite. By leveraging Horiba Scientific and Quantum Design, they’ve outsourced the most expensive part of a hardware startup: the global sales force. Expanding into Japan and South Korea in 2024/2025 shows they are effectively milking the academic and R&D segments.\n\nThe Reality Check:\n\nNiche Market Cap: They are currently a \"microscopy company,\" not a \"mass-market sensor company.\" Their total addressable market (TAM) in academia is finite. To justify a Series B/C valuation, they must jump from $500k lab tools to integrated industrial components for the semiconductor or HDD industry—a leap they haven't fully cleared yet.\n\nFunding Lag: Having last raised a major round in 2021 (Series A), Qnami is likely navigating a \"capital efficient\" but slow growth phase. In the VC world, if you aren't showing exponential revenue scaling or a massive industrial pivot, your \"score\" stays in the mid-range.\n\nWould you like me to draft a competitive landscape analysis comparing Qnami to its top diamond-based sensing rivals like QuantumDiamonds or NVision?",
+  "timestamp": "2026-01-28T10:44:58.433545+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

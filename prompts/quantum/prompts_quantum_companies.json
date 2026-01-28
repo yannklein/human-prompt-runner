@@ -8,7 +8,7 @@
 
     { "id": "P4", "template": "What are the top 5 {{Category}} companies with the best team currently? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
 
-    { "id": "P5", "template": "What are the top 5 leading labs or Universities on {{Cateogry}} research currently? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
+    { "id": "P5", "template": "What are the top 5 leading labs or Universities on {{Category}} research currently? Give me a 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
 
     { "id": "P6", "template": "Who are the top 10 key figures or founders in {{Category}} currently? Give me 100 word explanation and the rank", "required_vars": ["Category"], "expects_score": false },
 

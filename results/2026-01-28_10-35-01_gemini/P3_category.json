@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P3",
+  "company": null,
+  "question": "What are the top 5 most promising companies in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "As of 2026, the quantum sensing market has transitioned from laboratory experiments to critical industrial applications in navigation, healthcare, and defense. Unlike quantum computing, which seeks \"advantage,\" quantum sensing is already delivering superior precision in GPS-denied environments and molecular imaging.\n\nThe following ranking reflects current market leadership, commercial maturity, and strategic partnerships:\n\nTop 5 Quantum Sensing Companies (2026)\nRank\tCompany\tFocus Area\tKey Strength\n1\tInfleqtion\tAtomic Clocks & PNT\tDominates the \"Quantum Positioning, Navigation, and Timing\" (PNT) space; providing ruggedized clocks for defense and aerospace.\n2\tExail (Muquans)\tGravimetry & Navigation\tThe industry leader in commercial quantum gravimeters and accelerometers used for subsurface mapping and maritime navigation.\n3\tSandboxAQ\tMagnetic Sensing & AI\tLeverages AI-driven quantum magnetometry for GPS-denied navigation and non-invasive medical imaging (MCG/MEG).\n4\tQnami\tNanoscale Magnetometry\tLeads in diamond nitrogen-vacancy (NV) center technology, enabling high-resolution magnetic imaging for semiconductor and life science R&D.\n5\tQ-CTRL\tQuantum Infrastructure\tProvides the \"operating system\" for sensors, using advanced error-suppression software to make hardware drastically more stable in the field.\nExport to Sheets\nAnalysis\n\nThe \"Big Three\" drivers—Infleqtion, Exail, and SandboxAQ—are currently securing the largest government and defense contracts for PNT systems that function without satellites. Meanwhile, Qnami remains the gold standard for material science applications. Q-CTRL occupies a unique niche; they don't just build hardware but make everyone else’s sensors 10–100x more effective through software-defined performance, making them indispensable to the entire ecosystem.\n\nWould you like me to dive deeper into the specific technology (like NV-centers or Cold Atoms) that powers one of these companies?",
+  "timestamp": "2026-01-28T10:36:02.459228+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

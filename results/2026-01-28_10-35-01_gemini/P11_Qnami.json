@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P11",
+  "company": "Qnami",
+  "question": "How does Qnami differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Qnami differentiates itself through its commercial-first approach to Nitrogen-Vacancy (NV) diamond magnetometry. While competitors like QuantumDiamonds or SBQuantum often focus on raw sensing components or defense-specific vectorial sensors, Qnami’s edge lies in providing a turnkey, industrial-grade ecosystem for material science and semiconductor failure analysis.\n\nKey Differentiators\n\nIntegrated Platform (ProteusQ): Unlike competitors who may sell standalone sensors or specialized lab setups, Qnami offers the ProteusQ, the first complete \"Quantum Microscope.\" It integrates the scanning probe, control electronics (MicrowaveQ), and software (LabQ) into a single desktop unit, significantly lowering the barrier for non-quantum experts.\n\nProprietary Probes (Quantilever): A major moat is their Quantilever technology—all-diamond probes engineered with a single NV center at the apex. While others produce bulk diamond sensors, Qnami’s fabrication process ensures these probes are \"plug-and-play\" and non-perturbative, allowing for atomic-scale magnetic imaging without damaging delicate samples.\n\nStrategic Industrial Partnerships: Qnami has bridged the gap between a \"physics startup\" and a \"metrology leader\" through its partnership with HORIBA Scientific. This gives them a global distribution and service network that smaller competitors lack, positioning them as the standard for industrial R&D.\n\nMarket Focus: While competitors like AOSense target navigation and gravity sensing, Qnami specifically dominates the nanoscale magnetic imaging niche, focusing on spintronics, 2D materials, and magnetic memory (MRAM) where spatial resolution is the primary bottleneck.\n\nIn short, Qnami wins by transforming a complex quantum experiment into a standardized, repeatable metrology tool for the semiconductor and materials industries.\n\nWould you like me to compare Qnami’s technical specs, like spatial resolution, against traditional SQUID-based magnetometers?",
+  "timestamp": "2026-01-28T10:39:21.388810+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P7",
+  "company": null,
+  "question": "What are the top 3 challenges to commercializing Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Commercializing quantum sensing is a race to move \"lab-grade\" precision into \"field-ready\" hardware. While technologically more mature than quantum computing, it faces three primary hurdles:\n\nSWaP-C Optimization: Current sensors are often bulky, power-hungry, and expensive. Transitioning from refrigerator-sized setups to \"chip-scale\" packages is critical for integration into drones or handheld medical devices.\n\nEnvironmental Decoherence: Quantum states are hyper-sensitive. Moving sensors from stable labs to vibrating, thermally fluctuating real-world environments without losing the \"quantum advantage\" remains a massive engineering challenge.\n\nClassical Displacement: For many industries, existing classical sensors are \"good enough.\" Quantum must demonstrate a 10x value leap to justify the high switching costs and specialized workforce requirements.\n\nThe Rank (by Commercial Urgency)\nRank\tChallenge\tPrimary Impact\n1\tSWaP-C (Size, Weight, Power, and Cost)\tLimits mass-market adoption and portability.\n2\tReal-World Robustness (Noise/Vibration)\tPrevents deployment on mobile platforms (planes, subs).\n3\tMarket Adoption & Cost-Benefit Gap\tHinders displacement of reliable classical alternatives.\nExport to Sheets\n\nWould you like me to identify which specific sensor types (e.g., gravimeters vs. magnetometers) are closest to overcoming these hurdles?",
+  "timestamp": "2026-01-28T10:37:43.095625+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

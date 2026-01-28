@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Qnami is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Score: 6/10\n\nBrutally Honest Assessment (≈200 words):\nQnami is technologically credible and has real commercial products, most notably the ProteusQ scanning NV magnetometer — a quantum sensing microscope leveraging nitrogen‑vacancy (NV) diamond centers, already installed in research labs across Europe and North America and distributed in East Asia via partners. \nQnami\n+1\n This firmly beats many early‑stage startups which are still in prototype or late‑R&D phases, and shows Qnami isn’t just a paper technology.\n\nHowever, market share data indicate Qnami remains a modest player in the broader quantum sensors market (≈7–8% share in 2025), significantly behind larger, better‑capitalized competitors like ID Quantique, AOSense, Muquans, and major industrial players in aerospace/defense and commercial sensing. \nGlobal Market Insights Inc.\n Those competitors often have wider product portfolios, deeper pockets, and stronger sales channels into high‑volume industrial customers. Additionally, heavyweights like Bosch, Honeywell, Lockheed Martin, and diversified technology firms are expanding quantum sensing efforts across multiple modalities, often with integrated systems beyond just magnetic imaging. \nGrowth Market Reports\n+1\n\nQnami’s niche — high‑resolution nanoscale magnetic imaging — is valuable but narrow relative to the broad swath of sensing applications (gravimetry, inertial navigation, timing, environmental sensing) that competitors target. They also still need to scale beyond academic/early industrial adopters into larger commercial markets. For these reasons, I would rate Qnami 6/10 on product development maturity relative to competitors: solid and credible, but not yet a dominant, diversified market leader.",
+  "timestamp": "2026-01-28T10:23:06.881839+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "Global Market Insights Inc.",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://growthmarketreports.com/report/quantum-sensors-market",
+      "title": "Growth Market Reports\n+1",
+      "publisher": "growthmarketreports.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

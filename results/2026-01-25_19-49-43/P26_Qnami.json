@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P26",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that Qnami can go up by 10x?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s my brutally honest assessment as a senior VC analyst:\n\nScore: 3 out of 10\n\nExplanation (approx. 200 words):\n\nQnami is a deep‑tech, quantum‑sensing startup founded in 2017 in Switzerland, with a Series A of CHF 4 million (~USD 4.4 million) closed in May 2021, led by Runa Capital and SIT Capital, building on a CHF 2.6 million seed round in 2019 ([thequantuminsider.com](https://thequantuminsider.com/2021/05/12/swiss-based-qnami-closes-4-million-chf-4-4-million-u-s-series-a-funding-round/?utm_source=openai)). Their flagship product, the ProteusQ scanning NV magnetometer, is indeed the first commercial quantum microscope and has gained traction in research settings ([thequantuminsider.com](https://thequantuminsider.com/2021/05/12/swiss-based-qnami-closes-4-million-chf-4-4-million-u-s-series-a-funding-round/?utm_source=openai)). They’ve expanded distribution into Japan and South Korea, signaling international interest ([thequantuminsider.com](https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/?utm_source=openai)).\n\nHowever, the quantum sensing market remains highly niche, with long commercialization cycles and limited scale so far. There’s no evidence of significant revenue growth, large industrial adoption, or follow‑on funding beyond Series A. The total capital raised (~USD 7 million) is modest for a deep‑tech hardware company, and there’s no public indication of a path to 10× valuation in the near term. While the technology is promising, the market is small, execution risk is high, and scaling will require substantial additional capital and time.\n\nThus, while I respect the technical innovation and early traction, the probability of a 10× return remains low under current conditions—hence a score of 3/10.",
+  "timestamp": "2026-01-25T19:51:59.440693+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "response_id": "resp_0fae80f78b384ace006976745fb3c481908d22b95a4de7d6aa"
+}

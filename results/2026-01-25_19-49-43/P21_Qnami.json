@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a brutally honest assessment of Qnami’s patent portfolio in the quantum sensing sector:\n\nScore: 4 out of 10\n\nExplanation (approx. 200 words):\n\nQnami currently holds a modest portfolio—around 13 global patent filings across four families, with only three granted and nine still active ([insights.greyb.com](https://insights.greyb.com/qnami-patents/?utm_source=openai)). This is a relatively low count for a deep-tech company operating in a highly competitive and rapidly evolving field like quantum sensing. While the patents cover relevant technologies—such as nanoscale thermometry and magnetization detection using NV diamond probes—they remain limited in both breadth and depth ([insights.greyb.com](https://insights.greyb.com/qnami-patents/?utm_source=openai)).\n\nOn the positive side, Qnami’s patents are strategically focused on core innovations like Quantilever™ diamond scanning probes and the ProteusQ™ system, which underpin its commercial offerings ([eetimes.eu](https://www.eetimes.eu/swiss-quantum-sensing-startup-raises-e3-6m/?utm_source=openai)). These patents are well-aligned with market needs and support defensibility in niche applications. However, the portfolio lacks scale and diversity—there are few filings in major jurisdictions (only a couple in the U.S.) and limited coverage across adjacent technologies or potential future use cases ([insights.greyb.com](https://insights.greyb.com/qnami-patents/?utm_source=openai)).\n\nIn summary, Qnami’s patent quality is respectable given its early-stage status, but the quantity and geographic scope are insufficient to provide robust competitive protection or to deter larger players.",
+  "timestamp": "2026-01-25T19:51:32.970545+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "response_id": "resp_0377c8353c36a4cf006976744536e081908c8e16f2f46fdc4c"
+}

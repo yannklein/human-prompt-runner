@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Here are 5 predicted breakthroughs in quantum sensing over the next ~5 years, ranked with a brief 100-word explanation:\n\n1. Room-Temperature Quantum Sensors — Quantum sensors using materials like nitrogen-vacancy (NV) diamond defects will become practical for real-world use, enabling ultra-sensitive magnetic/electric field detection without cryogenics. These could transform medical diagnostics, navigation, and industry monitoring. \nFinancial Times\n\n2. Quantum Biosensing for Early Diagnosis — Scalable quantum biosensors will detect diseases at molecular/viral levels far earlier than current tech, moving toward pre-symptom healthcare. \nidstch.com\n\n3. Portable Quantum Navigation & Inertial Systems — Quantum inertial sensors will enable GPS-denied navigation in drones, submarines, and autonomous vehicles. \nmarketbusinessinsights.com\n\n4. Integrated Hybrid Quantum Sensor Platforms — Combining quantum with classical sensors plus AI will produce robust, multi-parameter sensing systems with real-time analytics. \nindustryresearch.biz\n\n5. Quantum Imaging for Industrial Inspection — Devices like quantum diamond microscopes will deliver high-resolution, non-invasive industrial imaging (e.g., chip inspection), lowering costs. \ntomshardware.com",
+  "timestamp": "2026-01-28T10:17:52.886057+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.ft.com/content/0b309cd2-aa74-428e-b37b-067665ef17ea",
+      "title": "Financial Times",
+      "publisher": "ft.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://idstch.com/critical-emerging-technologies/biotech-synthetic-biology/quantum-biosensing-2025-the-invisible-revolution-transforming-healthcare-diagnostics/",
+      "title": "idstch.com",
+      "publisher": "idstch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.marketbusinessinsights.com/quantum-sensors-market",
+      "title": "marketbusinessinsights.com",
+      "publisher": "marketbusinessinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.industryresearch.biz/market-reports/quantum-sensors-market-110174",
+      "title": "industryresearch.biz",
+      "publisher": "industryresearch.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/quantum-diamond-scanner-delivers-non-invasive-3d-imaging-of-semiconductors-euqlid-qu-mri-could-save-chip-foundries-billions-of-dollars",
+      "title": "tomshardware.com",
+      "publisher": "tomshardware.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

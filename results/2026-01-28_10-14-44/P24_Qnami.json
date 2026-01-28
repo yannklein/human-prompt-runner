@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P24",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Qnami? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here is a brutally honest, senior‑VC‑analyst style assessment of Qnami’s sales performance, commercial traction, and overall go‑to‑market success:\n\n🔢 Score (1–10): 4/10\n\n200‑word explanation:\nQnami is a scientifically impressive deep tech company that has successfully commercialized one of the first quantum sensing instruments (ProteusQ) and secured meaningful R&D and distribution partnerships, but its sales performance remains modest and highly concentrated in academic/research markets rather than broad revenue‑driven commercial adoption. The company has historic strategic collaboration and distribution agreements — notably a global distribution arrangement with HORIBA to commercialize the ProteusQ microscope, and more recent exclusive regional distribution deals in Japan and South Korea via Quantum Design affiliates — which indicate solid go‑to‑market channels outside of Europe. \nThe Quantum Insider\n+1\n\nHowever, there’s limited public evidence of significant revenue scale beyond early adopters and research labs. According to a VC investor interview, Qnami had crossed CHF 1 million in sales some years back, driven by only a few systems sold, and more orders on backlog, but that’s still small relative to industrial instrumentation benchmarks. \nverve.vc\n Crunchbase metrics also suggest relatively low growth/traction signals. \nCrunchbase\n\nIn short: technology and partnerships exist — but broad commercial sales growth and diversified revenue streams are still nascent. Qnami’s path to significant enterprise traction and scaling beyond niche research environments remains early and unproven.",
+  "timestamp": "2026-01-28T10:23:26.847405+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/",
+      "title": "verve.vc",
+      "publisher": "verve.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/qnami",
+      "title": "Crunchbase",
+      "publisher": "crunchbase.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

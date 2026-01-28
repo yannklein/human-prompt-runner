@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P27",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that the other investors of Qnami will reinvest in the following rounds and bridges, and/or that the company will find a lead investor for the following round?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior VC analyst covering the DeepTech and Quantum sectors, I’ve been tracking Qnami since their Series A in 2021. In the current 2026 landscape, the \"Quantum Winter\" of 2023 has thawed into a \"Quantum Realism\" phase where revenue-generating hardware is king.\n\nThe Rating: 8.5/10\nThe Brutally Honest Rationalization\n\nMy high conviction is driven by commercial maturity and strategic alignment, balanced against the inherent \"DeepTech CapEx trap.\"\n\nInternal Support (Reinvestment): Qnami’s existing cap table—Runa Capital, Quantonation, and HTGF—are \"true believers\" in the quantum ecosystem. Unlike generalist VCs who fled during the 2023 downturn, these funds have doubled down on companies with a Product-Market Fit (PMF). Qnami isn’t selling a 10-year roadmap; they are selling the ProteusQ and Quantilever probes today. Their ability to generate seven-figure revenue in the research market provides the \"downside protection\" these investors need to justify a follow-on or bridge.\n\nFinding a Lead: The 2026 market is hungry for \"Quantum Sensing\" over \"Quantum Computing\" because sensing has immediate industrial applications (semiconductors, spintronics, and medical imaging). Qnami is a prime target for a Corporate Venture Capital (CVC) lead—think ASML, Applied Materials, or Bosch. Their tech solves a massive bottleneck in semiconductor failure analysis.\n\nThe Risk: The \"brutal\" reality is that while they are leaders in NV-center microscopy, the total addressable market (TAM) for high-end research microscopes is capped. To secure a massive Series B lead, they must prove their Quantum Foundry can scale beyond lab tools into high-volume industrial inspection.\n\nWould you like me to draft a mock Term Sheet or a \"Red Flag\" analysis for a potential Series B lead investor in this space?",
+  "timestamp": "2026-01-28T10:46:16.425847+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P14",
+  "company": "Qnami",
+  "question": "What are Qnami's current main strengths? Give short bullet points",
+  "answer": "As of 2026, Qnami has solidified its position as a leader in the quantum sensing market, primarily through its specialized use of diamond-based technology. Their strengths center on moving quantum mechanics from the laboratory into practical, industrial-grade tools.\n\nCore Strengths & Market Advantages\n\nAtomic-Scale Precision: Their Nitrogen-Vacancy (NV) center technology allows for magnetic field imaging at the nanometer scale, providing a 10x to 100x resolution advantage over classical sensors.\n\nNon-Perturbative Sensing: The Quantilever MX probes use a single-spin sensor that can measure magnetic properties without altering the sample’s state, which is critical for delicate 2D materials and superconductors.\n\nRoom-Temperature Operation: Unlike many quantum technologies that require extreme cooling, Qnami’s sensors operate at room temperature, making them significantly more accessible and easier to integrate into existing semiconductor workflows.\n\nCommercial Maturity: With the ProteusQ (the first commercial scanning NV microscope), they have moved past the \"prototype\" phase into a production-ready system used by both academia and industry (e.g., for MRAM and HDD head testing).\n\nStrategic Ecosystem Partnerships: Their collaboration with HORIBA Scientific provides them with a global distribution and service network, allowing a specialized startup to support customers on a global scale.\n\nApplication Versatility: Their technology is no longer \"just for physics\"; it is actively used in microelectronics (detecting current leakage), spintronics, and life sciences (imaging single-molecule signals).\n\nWould you like me to compare Qnami’s NV-center technology against other quantum sensing methods like SQUIDs or OPMs?",
+  "timestamp": "2026-01-28T10:40:38.791598+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

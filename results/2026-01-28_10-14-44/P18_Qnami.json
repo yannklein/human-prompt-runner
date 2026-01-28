@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P18",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Qnami have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Academic Strength Score for Qnami’s Team: 6/10\n\nExplanation (≈200 words):\nQnami’s core scientific credibility is anchored in a few strong individual academic profiles, but the breadth and depth across the broader team are uneven—hence a 6/10 rating. The flagship scientific founder, Prof. Patrick Maletinsky, has an established academic reputation, with a high h‑index (~39–49) and a significant body of influential publications in quantum sensing and NV center physics from top labs (ETH Zurich, Harvard, University of Basel) that appear in journals like Nature Nanotechnology and Nature Physics—indicative of high scientific impact and foundational expertise. \nGoogle Scholar\n+1\n\nHowever, besides Maletinsky, the public academic footprint of other senior scientific leaders such as Mathieu Munsch (CEO), Felipe Favaro (CTO), and Alexander Stark (CIO) in terms of h‑index or citation impact is not well documented or clearly high‑impact in the open scholarly record—which suggests they are competent researchers but not (from available data) with equally strong citation metrics. Their PhDs and relevant field experience (quantum optics/sensing) are solid but not clearly at the superstar researcher level you might see in larger academic spin‑outs. \nRuna Capital\n+1\n\nMoreover, the team beyond the founders appears smaller with a mix of engineers and early‑career scientists; broad high‑impact academic output across the full team isn’t visible publicly. This limits the strength of the h‑index argument as a proxy for attracting top talent, funding, and breakthroughs at scale—despite deep tech roots and strong partnerships. \nqnami.ch",
+  "timestamp": "2026-01-28T10:21:12.580099+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://scholar.google.com/citations?hl=en&user=Vfmk0xIAAAAJ",
+      "title": "Google Scholar\n+1",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://runacap.com/companies/qnami/",
+      "title": "Runa Capital\n+1",
+      "publisher": "runacap.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/about-us/team/",
+      "title": "qnami.ch",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

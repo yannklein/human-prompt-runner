@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P26",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that Qnami can go up by 10x?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior VC analyst evaluating deep-tech spin-offs, I am looking for the \"Tipping Point\"—the moment a laboratory curiosity becomes an industrial necessity. Qnami, with its Nitrogen-Vacancy (NV) center diamond technology, is sitting on a potential goldmine, but the path to a 10x return is paved with significant execution risks.\n\nVC Score: 7.5/10\nThe Thesis for 10x\n\nQnami is the rare quantum company that is revenue-generating today. While most \"quantum\" firms are selling promises of 2030, Qnami’s ProteusQ and Quantilever probes are already being used by researchers to map magnetic fields at the nanoscale.\n\nThe 10x path lies in industrial scaling, specifically in two massive tailwinds:\n\nSemiconductor Failure Analysis: As chips shrink to the 2nm node and beyond, classical tools can't \"see\" the currents. Qnami’s non-invasive magnetic imaging is becoming the only way to debug the next generation of processors.\n\nSpintronics & MRAM: The shift toward energy-efficient memory (MRAM) requires precise control of magnetic states. Qnami owns the \"pick and shovel\" for this multibillion-dollar industry.\n\nThe \"Brutally Honest\" Friction\n\nThe \"7.5\" reflects the TAM (Total Addressable Market) ceiling. Qnami currently operates in a high-margin but low-volume scientific instrument niche. To hit a 10x exit (likely via acquisition by a giant like ASML, KLA, or Applied Materials), they must transition from selling $200k microscopes to researchers to selling integrated inspection modules for fab lines. This requires a massive shift in manufacturing reliability and a decrease in \"Scan-NV\" time-to-result, which is currently too slow for high-throughput industrial use.\n\nWould you like me to run a comparative \"exit multiple\" analysis against their closest competitors like Q-CTRL or SBQuantum?",
+  "timestamp": "2026-01-28T10:45:50.472317+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P20",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "If I were to brutally and honestly score Qnami’s execution capabilities right now as a senior VC analyst familiar with deep tech bets, I would give them:\n\n⭐ Score: 6.5 out of 10\n\nHere’s the candid assessment:\n\nQnami demonstrates strong technical execution in a highly challenging domain—quantum sensing based on NV centers in diamond. They were early movers in commercializing a scanning NV magnetometer (ProteusQ), which is already deployed in multiple leading research labs, and have established strategic distribution partnerships (e.g., in Japan and Korea). There’s credible evidence of market traction at least in academia and specialized industrial research environments—and endorsements from high‑profile researchers suggest the product is technically solid and impactful. \nQnami\n+1\n\nHowever, the execution gaps are equally clear:\n\nNiche market focus with limited expansion: Adoption seems concentrated in research labs and edge industrial use cases; broad commercial scaling beyond the quantum/metrology community is still nascent.\n\nSlow go‑to‑market and commercialization: Despite being founded in 2017 and launching ProteusQ around 2019‑2020, the company hasn’t yet demonstrated a breakout in high‑volume industrial sectors (e.g., semiconductors, life sciences).\n\nTeam execution maturity: The core team is academically strong and deeply technical, but there’s limited evidence of experienced go‑to‑market, scaling operations, or clear product‑market refinement beyond early deployments—common friction points for deep technical startups.\n\nFunding scale: Their capital raises (Series A ~$4M CHF) are modest by deep‑tech hardware standards, which can constrain development velocity and talent acquisition. \nRuna Capital\n\nIn short: technically excellent but execution constrained by commercialization, market focus, and scaling challenges. Score reflects strong potential, tempered by real go‑to‑market execution risks.",
+  "timestamp": "2026-01-28T10:22:00.853305+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://runacap.com/companies/qnami/",
+      "title": "Runa Capital",
+      "publisher": "runacap.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

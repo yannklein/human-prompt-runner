@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P22",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Qnami's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior VC analyst covering deep tech, here is my \"brutally honest\" assessment of Qnami as of 2026.\n\nVC Rating: 8.5/10\nThe Analyst’s Breakdown\n\nQnami is a textbook \"moat\" play in the quantum sensing space. While many quantum startups are chasing the \"holy grail\" of general-purpose computing, Qnami has dominated a high-value, near-term niche: Scanning NV (Nitrogen-Vacancy) Magnetometry.\n\nIP Uniqueness (9/10): Their IP isn't just about a \"better microscope\"; it’s about the vertical integration of the Quantum Foundry. By controlling the synthesis of \"Quantilever\" diamond probes, they’ve solved the hardest problem in the industry—reproducible, high-sensitivity quantum sensors on a tip. Their patent portfolio (approx. 13+ families) covers critical areas like nanoscale thermometry and deep-neural-network-based image reconstruction, which protects them from competitors simply buying off-the-shelf diamonds and trying to replicate their results.\n\nLeadership & Execution (8/10): They are the undisputed first-movers. The Horiba distribution deal was a masterstroke, offloading the \"death valley\" of global sales logistics to an industry giant while they focused on R&D. However, the score isn't a 10 because the \"widefield\" NV market (competitors like CIQTEK and QuantumDiamonds) is maturing. Qnami’s leadership depends on shifting from a purely scientific \"lab tool\" to an \"inline metrology\" tool for the semiconductor industry. If they can’t fully automate for the fab floor, they risk being pigeonholed as a niche academic provider.\n\nNext Step: Would you like me to perform a comparative \"Cap Table\" and funding analysis between Qnami and its primary German rival, QuantumDiamonds?",
+  "timestamp": "2026-01-28T10:44:06.485699+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

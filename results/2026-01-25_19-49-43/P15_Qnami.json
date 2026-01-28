@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P15",
+  "company": "Qnami",
+  "question": "What are Qnami's current main weaknesses? Give short bullet points",
+  "answer": "Here are some of Qnami’s current main weaknesses, based on available information:\n\n• Limited dynamic adaptability — Qnami’s quantum imaging systems (e.g., ProteusQ) rely on static metasurfaces and fixed optical setups, which lack real-time tunability and adaptability to environmental fluctuations or varying imaging tasks ([mdpi.com](https://www.mdpi.com/2304-6732/13/1/69?utm_source=openai)).\n\n• Environmental sensitivity — These systems remain vulnerable to external disturbances such as thermal drift, mechanical vibrations, and optical aberrations, which can degrade imaging fidelity and resolution ([mdpi.com](https://www.mdpi.com/2304-6732/13/1/69?utm_source=openai)).\n\n• Fabrication precision constraints — The performance of Qnami’s nanoscale imaging probes depends heavily on nanometer-scale fabrication accuracy. Even slight deviations (e.g., ±10 nm) can introduce phase noise, reduce entanglement fidelity, and impair imaging quality ([mdpi.com](https://www.mdpi.com/2304-6732/13/1/69?utm_source=openai)).\n\n• Narrow operational bandwidth — Many current designs are optimized for specific wavelengths or modes, limiting their versatility across broader spectral ranges or multi-modal imaging applications ([mdpi.com](https://www.mdpi.com/2304-6732/13/1/69?utm_source=openai)).\n\n• Low photon flux and slow imaging speed — Quantum imaging techniques often suffer from low-intensity photon sources and slow coincidence detection rates, which constrain field-of-view, signal-to-noise ratio, and overall imaging throughput ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12133316/?utm_source=openai)).\n\nLet me know if you'd like a deeper dive into any of these points.",
+  "timestamp": "2026-01-25T19:51:00.962557+00:00",
+  "model": "gpt-4.1",
+  "test_mode": false,
+  "sources": [],
+  "response_id": "resp_011429663f2ad89e00697674253948819399a6dd6495abab92"
+}

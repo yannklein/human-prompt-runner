@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P11",
+  "company": "Qnami",
+  "question": "How does Qnami differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Here’s a concise summary of how Qnami differs from its direct competitors in the quantum sensing/magnetometer space (≤ 300 words):\n\nCore Differentiator: Diamond‑Based Quantum Sensing\nQnami specializes in quantum sensing using nitrogen‑vacancy (NV) centers in diamond, leveraging atomic‑scale defects in ultra‑pure diamond to measure magnetic fields with extremely high spatial resolution and sensitivity at room temperature. Its flagship product, ProteusQ, is the first commercial scanning NV magnetometer and quantum microscope that integrates NV magnetometry with scanning probe microscopy for simultaneous topographic and magnetic imaging at the nanoscale — enabling direct, non‑perturbative analysis of magnetic materials at atomic scales that many classical and alternative quantum sensors cannot match. \nThe Quantum Insider\n+1\n\nComparison With Competitors\n\nClassical Magnetometers & Classical Quantum Sensors: Traditional SQUIDs, optically pumped magnetometers (OPMs) or fluxgate sensors either require cryogenic cooling, large shielding, or lack nanoscale resolution. NV diamond sensors like Qnami’s operate at ambient conditions and combine high sensitivity with nanoscale spatial mapping, which is a distinct advantage for materials science and nanotechnology applications. \nResearch\n\nOther Quantum Sensing Startups: Companies such as QZabre, QuantumDiamonds, and AdamantQ also work in the quantum sensing/magnetometry field (often with NV or diamond‑based technologies), but Qnami’s ProteusQ is notable for being a fully integrated commercial platform with proprietary diamond probes (Quantilevers) and robust software for research workflows. \nCB Insights\n\nBroader Market Players: Large industrial players (e.g., Honeywell, Lockheed Martin) and specialist firms (e.g., QuSpin) compete in quantum sensor markets, but many focus on different sensor modalities (atomic vapor, optically pumped, or cryogenic systems) rather than the atomic‑scale scanning NV approach that Qnami commercializes. \nStrategic Revenue Insights\n\nStrategic Positioning\nQnami’s strength lies in commercializing a cutting‑edge quantum microscope platform that bridges fundamental quantum sensing and practical research tools with real‑world distribution partnerships (e.g., with HORIBA/Quantum Design), setting it apart from competitors who may still be in earlier stages or focus on alternative technologies. \nThe Quantum Insider\n+1",
+  "timestamp": "2026-01-28T10:18:33.106296+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://research.unimelb.edu.au/strengths/updates/news/quantum-diamond-magnetic-field-sensors-for-improved-situational-awareness",
+      "title": "Research",
+      "publisher": "research.unimelb.edu.au",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/qnami",
+      "title": "CB Insights",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.strategicrevenueinsights.com/industry/quantum-based-magnetic-field-sensor-market",
+      "title": "Strategic Revenue Insights",
+      "publisher": "strategicrevenueinsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

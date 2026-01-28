@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior VC analyst covering the DeepTech and Quantum sectors, I have evaluated Qnami's intellectual property (IP) position as of early 2026.\n\nAnalyst Score: 7.5 / 10\nBrutally Honest Evaluation\n\nQnami’s IP strategy is the definition of \"quality over quantity.\" With approximately 13 global patents across 4 unique families (as of late 2025/2026), their \"raw numbers\" are objectively low compared to the patent-stuffing seen in quantum computing giants like IBM or Google. However, for a Series A/B specialized instrumentation player, Qnami has successfully cornered the NV (Nitrogen-Vacancy) center microscopy niche.\n\nThe Good: They own the \"pickaxe\" in the quantum gold mine. Their patents on the Quantilever MX—specifically the integration of a single NV spin at the apex of a diamond tip—create a high barrier to entry for scanning probe microscopy. They aren't just patenting abstract concepts; they are protecting the physical manufacturing and signal reconstruction (e.g., deep learning-based image reconstruction) required to make quantum sensing commercially viable.\n\nThe Bad: The portfolio is geographically thin and overly concentrated on the university-spinout core. While they dominate the \"NV center on a tip\" space, the broader \"quantum sensing\" landscape is diversifying into vapor cells and cold atoms where Qnami has zero footprint.\n\nThe Verdict: They are a prime acquisition target for a Tier-1 scientific instrument maker (like Horiba or Bruker). Their IP provides a \"moat\" around a specific, high-value tool, but they lack the broad \"landscape-level\" protection needed to be a 9/10 category king.\n\nWould you like me to perform a deep-dive competitive analysis against their closest funded rivals like SBQuantum or NVision?",
+  "timestamp": "2026-01-28T10:43:40.499778+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

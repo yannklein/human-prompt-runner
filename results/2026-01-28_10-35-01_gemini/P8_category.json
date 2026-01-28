@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P8",
+  "company": null,
+  "question": "What are the top 5 latest breakthroughs in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Quantum sensing has transitioned from lab curiosity to a critical industrial tool in 2026. Here are the top 5 breakthroughs currently redefining the field:\n\nTop 5 Quantum Sensing Breakthroughs (2026)\nRank\tBreakthrough\tImpact\n1\tGPS-Free Quantum Navigation\tDeployment of portable \"quantum compasses\" using atom interferometry for navigation in GPS-denied environments (underwater/underground).\n2\tOptical-Free Nanocapacitor Sensing\tTU Wien’s development of electrical-readout sensors that reach quantum limits without bulky lasers, enabling miniaturized, robust devices.\n3\tQuantum-Enhanced Exoplanet Detection\tNew hybrid processors that filter starlight before measurement, reducing the photon count needed to identify planets by several orders of magnitude.\n4\tMolecular-Scale \"Quantum MRI\"\tThe use of NV-center diamonds to image the 3D atomic structure of single molecules, revolutionizing drug discovery and protein mapping.\n5\tReal-Time OPM-MEG Brain Imaging\tWearable arrays of Optically Pumped Magnetometers (OPMs) allowing for non-invasive, motion-tolerant, real-time mapping of neural activity.\nExport to Sheets\nOverview\n\nThese advancements mark a shift toward scalability and integration. By eliminating bulky optical components and extreme cooling requirements, quantum sensors are now entering defense, aerospace, and clinical medicine. Innovations like TU Wien’s electrical readout and space-based entanglement swapping are bridging the gap between \"exotic physics\" and practical infrastructure, providing high-fidelity data that classical sensors physically cannot capture.\n\nWould you like me to dive deeper into the technical mechanics of one of these breakthroughs, such as the NV-center \"Quantum MRI\"?",
+  "timestamp": "2026-01-28T10:38:07.009457+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P19",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a Senior VC Analyst, **I’d rate the Qnami ecosystem a 6.5 / 10 (honest, context‑aware). Here’s why:\n\nEcosystem Strengths (Positive):\n• Niche leadership in quantum sensing: Qnami is recognized as a pioneer in commercial quantum sensing — particularly NV‑center based magnetometry — with products like ProteusQ adopted in research labs across Europe and North America. It has real commercial traction and respected academic partnerships, which is rare in deep tech quantum startups. \nQnami\n+1\n\n• Strategic global partnerships: Distribution deals and partnerships (e.g., with Quantum Design affiliates in Japan/Korea and HORIBA) expand reach without overbuilding internal infrastructure. \nQnami\n+1\n\n• Located in a strong regional hub: Switzerland — especially Basel — benefits from solid academic institutions (e.g., University of Basel), collaborative initiatives (e.g., QuantumBasel), and growing quantum‑focused VC and accelerator support. \nswisstech\n+1\n\nEcosystem Weaknesses (Constraining):\n• Small, developing market: The quantum sensing ecosystem is notably smaller and less liquid than quantum computing, with fewer startups, less funding, and a limited overall talent pool relative to adjacent segments. \nBusiness Wire\n\n• Talent competition: While Switzerland’s ecosystem is strong academically, global competition for quantum talent (U.S., UK, Germany, Singapore) can make recruitment and scaling challenging — especially for deep‑tech roles. The ecosystem isn’t yet at the scale that naturally attracts a flood of commercial talent versus pure research talent.\n• Market depth and value chain gaps: The broader quantum ecosystem still lacks a fully mature value chain (from components to end markets), meaning startups like Qnami must invest time and capital in education, standards, and customer development. \nBusiness Wire\n\nSummary: Mid‑to‑strong ecosystem for deep science & research‑oriented startups, but not yet a top‑tier, high‑velocity talent magnet compared to larger, better‑funded quantum hubs. Hence, 6.5 / 10 — a solid foundation with clear upside but notable ecosystem challenges.",
+  "timestamp": "2026-01-28T10:21:38.738154+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.swiss.tech/news/switzerland-maintains-world-class-quantum-ecosystem",
+      "title": "swisstech\n+1",
+      "publisher": "swiss.tech",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20241007302725/en/Global-Quantum-Sensors-Market-Report-2025-2035-Company-Profiles-of-Airbus-Atomionics-Chipiron-ColdQuanta-EuQlid-Infleqtion-Mesa-Quantum-MuQuans-NVision-Q-CTRL-Qnami-Quantum-Systems-More---ResearchAndMarkets.com",
+      "title": "Business Wire",
+      "publisher": "businesswire.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

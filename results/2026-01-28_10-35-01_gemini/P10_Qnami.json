@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P10",
+  "company": "Qnami",
+  "question": "What does Qnami do currently? Summarise it in 200 words",
+  "answer": "Based in Basel, Switzerland, Qnami is a pioneer in the field of quantum sensing. Currently, the company specializes in developing and commercializing high-precision magnetic microscopes that leverage Nitrogen-Vacancy (NV) centers in synthetic diamonds to image magnetic fields at the atomic scale.\n\nTheir core business revolves around two flagship products:\n\nProteusQ™: The first commercial scanning NV microscope, designed for room-temperature analysis of magnetic materials.\n\nProteusQ™-LT: A cryogenic version of the platform capable of operating at temperatures as low as 2.5K, specifically for studying superconductors and quantum computing components.\n\nQnami also operates the Quantum Foundry, where they manufacture and sell their proprietary Quantilever™ diamond probes—the \"needles\" for their microscopes. These sensors allow researchers and semiconductor engineers to visualize weak magnetic signals and electrical currents without disturbing the sample.\n\nBy partnering with global distributors like Horiba Scientific and Quantum Design, Qnami has transitioned from a university spin-off into a global leader providing critical diagnostic tools for the development of spintronics, energy-efficient electronics, and next-generation quantum hardware.\n\nWould you like me to compare Qnami’s NV magnetometry technology with traditional magnetic force microscopy?",
+  "timestamp": "2026-01-28T10:38:57.383392+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

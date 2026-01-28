@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P25",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the quality of the VC funds on the cap table of Qnami?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior VC analyst evaluating the quantum tech landscape in 2026, I would rate Qnami’s cap table a 7.5/10.\n\nThe Score: 7.5/10\nThe Honest Breakdown\n\nQnami has assembled what I call a \"Domain-Dominant\" cap table. For a Swiss-based deep-tech play, they have checked the most critical box: vertical expertise.\n\nThe Powerhouses: Leading with Quantonation and Runa Capital is a sophisticated move. Quantonation is arguably the world’s premier dedicated quantum VC; their presence provides a \"seal of quality\" that de-risks the technical complexity for future generalist investors. Runa brings the necessary international scaling muscle and a strong track record in deep-tech software and hardware.\n\nThe Safety Net: Including High-Tech Gründerfonds (HTGF) and Zürcher Kantonalbank (ZKB) provides a rock-solid European foundation. These are reliable, patient-capital \"steady hands\" that help navigate the long R&D cycles inherent in quantum sensing.\n\nThe Missing Link: Why isn't it a 9 or 10? The cap table lacks a \"Tier 1 Global Generalist\" (think Sequoia, Index, or Accel) or a major US-based corporate strategic (like Intel Capital or M12). While the current roster is elite in the quantum world, it lacks the aggressive \"blitzscaling\" DNA and massive follow-on dry powder that a Silicon Valley heavyweight provides.\n\nThe Verdict\n\nIt is a highly respectable, \"smart money\" cap table that signals technical excellence. However, to reach a terminal exit or a massive Series C, they will eventually need to bridge the gap from European specialized funds to global growth-stage giants.\n\nWould you like me to run a comparative analysis on how this cap table stacks up against their main competitors like QuantumDiamonds or NVision?",
+  "timestamp": "2026-01-28T10:45:24.453185+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

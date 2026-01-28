@@ -1,0 +1,18 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior Venture Capital analyst evaluating Qnami’s patented IP position in quantum sensing and imaging, I would score their current number and quality of patents:\n\n👉 Score: 4 out of 10\n\nHere’s the brutally honest breakdown:\n\nPatent Count Is Very Small: Public analytics show roughly 13 global patent filings, with only ~3 granted and 9 active—spread across a few patent families. That’s tiny compared to even mid‑tier players in adjacent quantum or precision sensing fields where portfolios routinely include dozens to hundreds of IP assets. \nInsights;Gate\n\nCommercial vs Defensive IP: The patents appear tied closely to Qnami’s core scanning NV‑magnetometer and diamond probe technologies (e.g., Quantilever probes). These are important for their products, but the portfolio lacks broad defensive breadth (e.g., encompassing system integration, alternative quantum sensing modalities, error mitigation, manufacturing techniques, etc.). \nInsights;Gate\n\nEarly Stage Focused IP: Most filings seem concentrated in Europe and the US, which is good, but they are still early, niche, and not yet pushing into broader jurisdictions or covering different application layers (software, calibration, data processing). \nInsights;Gate\n\nCompetitive Context: In a market where larger incumbents and well‑funded deep tech firms are accumulating substantive quantum tech IP, Qnami’s current portfolio is functional but shallow—good for initial commercial entry, but not yet a moat that deters well‑resourced competitors.\n\nSummary: Qnami’s patents are strategically relevant to their first products, but the quantity, breadth, and defensive quality are too limited at this stage to rate highly for long‑term competitive advantage.",
+  "timestamp": "2026-01-28T10:22:22.920340+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "Insights;Gate",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}
