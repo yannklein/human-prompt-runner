@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P10",
+  "company": "Qnami",
+  "question": "What does Qnami do currently? Summarise it in 200 words",
+  "answer": "Qnami is a Swiss deep‑tech company specializing in quantum sensing technologies, focused on building scientific instruments that exploit quantum physics to measure physical phenomena with unprecedented precision. At its core, Qnami develops and commercializes quantum sensors and imaging systems that use defect centers in diamond—specifically nitrogen‑vacancy (NV) centers—as atomic‑scale probes to detect magnetic fields, electrical currents, temperature, and other quantities at the nanoscale. \nQnami\n+1\n\nThe company’s flagship product is the ProteusQ™ microscope, the first scanning NV magnetometer commercially available. This instrument integrates NV‑based quantum sensors with scanning probe microscopy to simultaneously map a sample’s surface topography and its magnetic properties with atomic‑level resolution, enabling advanced research in nanotechnology, materials science, spintronics, and life sciences. \nQnami\n+1\n\nQnami also develops the underlying diamond quantum chips and Quantilever™ probes, system integration, and software for data analytics. It collaborates with global research institutions and distributors to expand its presence—recently partnering to distribute ProteusQ in East Asia. \nQnami\n+1\n\nOverall, Qnami serves researchers and industries needing ultra‑high‑precision measurement tools, pushing quantum sensing from the lab into practical scientific and technological applications. \nQuantum",
+  "timestamp": "2026-01-28T12:35:11.181231+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/company/qnami",
+      "title": "Quantum",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

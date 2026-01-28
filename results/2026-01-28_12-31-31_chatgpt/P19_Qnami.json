@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P19",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior Venture Capital analyst, I’d rate Qnami’s ecosystem — the environment in which it operates — at 6/10. \n\nWhy 6?\nQnami sits within the quantum technology ecosystem, a niche but rapidly growing subset of deep tech. Switzerland — especially Basel — hosts a credible quantum cluster with research hubs, accelerators (e.g., QAI Ventures), and industry‑academic linkages that benefit early stage companies. This gives Qnami access to strong foundational talent, research partnerships and early adopter customers in academia and industry. \nInvest in Basel\n+1\n\nStrengths:\n• Specialised niche positioning: Qnami is a recognised leader in quantum sensing, a distinct quadrant of the broader quantum market with early commercial value relative to quantum computing. \nQnami\n\n• Academic and industry integration: It stems from the University of Basel and collaborates globally, embedding it into strong research networks that attract PhDs/postdocs. \nQnami\n\n• Strategic partnerships: Distribution and tech alliances (e.g., HORIBA) provide access to industrial channels. \nHoriba\n\nWeaknesses:\n• Ecosystem scale: The quantum sensing segment is small relative to computing/cryptography; capital and talent flow more slowly here than in high‑visibility segments.\n• Talent competition: Global hubs (US, UK, EU) attract more engineers, and Switzerland’s ecosystem — while solid — is less mature than major tech clusters.\n• Market depth: End markets outside academic and industrial labs are still nascent, limiting scale and retention of broader multidisciplinary talent.\n\nFor talent attraction and scaling beyond sensor specialists, the ecosystem must deepen with additional industrial use cases, funding pools, and cross‑disciplinary hubs.",
+  "timestamp": "2026-01-28T12:38:55.022111+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://invest.baselarea.swiss/wp-content/uploads/sites/3/2022/03/2024-Ecosystem-series-Quantum-technology-in-the-Basel-Area.pdf",
+      "title": "Invest in Basel\n+1",
+      "publisher": "invest.baselarea.swiss",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/about-us/company/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "Horiba",
+      "publisher": "horiba.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

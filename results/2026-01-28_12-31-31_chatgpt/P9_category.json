@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Here are 5 predicted breakthroughs in quantum sensing over the next ~5 years, ranked by anticipated impact:\n\nUltrahigh‑Precision Space Quantum Sensors — Deployment of ultracold atom and interferometry sensors in space for gravity and navigation with sensitivity far beyond classical tools. \nMcKinsey & Company\n+1\n\nQuantum Navigation Without GPS — Portable quantum magnetometers/gyroscopes enabling real‑time dead‑reckoning in GPS‑denied environments. \nMcKinsey & Company\n\nQuantum Diamond Microscopy for Industry — Scalable NV‑center diamond imaging to non‑destructively inspect chips/batteries with nano‑scale detail. \nTom's Hardware\n+1\n\nBiological Quantum Sensors — Fluorescent biological qubits that measure magnetic/electric fields inside living cells for medical diagnostics. \nLive Science\n\nEntangled Quantum Sensor Networks — Networks of entangled sensors boosting collective precision for environmental, security, and geophysical monitoring. \nThe Tech Vortex\n\nTogether these advances could unlock new precision measurement capabilities across science, industry, and defense. \nmckinsey.com.br",
+  "timestamp": "2026-01-28T12:34:48.919997+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "McKinsey & Company\n+1",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/quantum-diamond-scanner-delivers-non-invasive-3d-imaging-of-semiconductors-euqlid-qu-mri-could-save-chip-foundries-billions-of-dollars",
+      "title": "Tom's Hardware\n+1",
+      "publisher": "tomshardware.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.livescience.com/technology/scientific-breakthrough-leads-to-fluorescent-biological-qubit-it-could-mean-turning-your-cells-into-quantum-sensors",
+      "title": "Live Science",
+      "publisher": "livescience.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://the-tech-vortex.com/2025/02/01/10-revolutionary-quantum-sensors/",
+      "title": "The Tech Vortex",
+      "publisher": "the-tech-vortex.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com.br/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "mckinsey.com.br",
+      "publisher": "mckinsey.com.br",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

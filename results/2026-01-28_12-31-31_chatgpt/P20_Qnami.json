@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P20",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As of early 2026, I’d rate Qnami’s execution capability a 5.5 out of 10 — a brutally honest score that reflects both its scientific achievements and commercial execution challenges.\n\nHere’s the rationale:\n\nTechnical strength (8/10) — Qnami is a legitimate deep‑tech player that has transitioned quantum sensing from lab research into a commercial product (ProteusQ, the first scanning NV magnetometer) with real academic users and partnerships in Europe, North America and Asia. The tech isn’t vaporware; leading researchers praise the product’s stability and unique capabilities in nanoscale magnetic imaging. \nQnami\n+1\n\nProduct‑market traction (moderate, ~6/10) — ProteusQ is deployed in “10+” research institutions, which is meaningful for a deep‑tech instrument, but that footprint is still narrow and predominantly research‑centric rather than industrial or scaled commercial use. Expansion into Japan and Korea via local distribution partners shows strategic outreach but is still early. \nThe Quantum Insider\n\nExecution & commercialization (low‑mid, ~4/10) — Qnami’s trajectory suggests strong scientific execution, but less evidence of scaling execution — the ability to grow revenue, build a broader commercial pipeline, or diversify product lines beyond premium research tools. Funding rounds have been modest (Series A of ~CHF 4M), and there’s limited public proof of broader industrial adoption or scalable go‑to‑market capabilities. \nRuna Capital\n\nTeam & strategic orientation (6/10) — Founders are credible scientists, and collaborations (e.g., with HORIBA and Quantum Design) validate their engineering chops. But small team size, deep‑tech complexity and slow commercialization cadence temper confidence in rapid execution. \nQnami\n+1\n\nSummary: technically strong and scientifically respected, but execution beyond early niche customers into broader commercial success is still unproven — hence a 5.5/10.",
+  "timestamp": "2026-01-28T12:39:17.048292+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://runacap.com/companies/qnami/",
+      "title": "Runa Capital",
+      "publisher": "runacap.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/about-us/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

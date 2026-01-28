@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P27",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that the other investors of Qnami will reinvest in the following rounds and bridges, and/or that the company will find a lead investor for the following round?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a brutally honest, current VC‑analyst view on the likelihood that existing investors will follow on + that a lead investor will show up for the next round at Qnami, based strictly on publicly available funding history and typical deep‑tech patterns:\n\n📊 Score: 6.5 / 10\nWhy ~6.5 (Moderate–Positive)?\n\nInvestor Cohesion Across Rounds\nQnami’s existing cap table shows continuity: seed investors such as Quantonation, High‑Tech Gründerfonds, Verve Ventures and Zürcher Kantonalbank all participated again in the Series A alongside new lead VCs Runa Capital and SIT Capital. That indicates a willingness by core backers to double down at least once. \nNordic 9\n\nLead Investor Participation Established\nThe Series A was led by experienced lead investors (Runa Capital + SIT Capital), not just passive check‑writers. That reduces next‑round risk because you’ve shown you can attract a named “anchor.” \nNordic 9\n\nTime Since Last Raise\nQnami’s last disclosed round was in 2021. That’s a long gap without a disclosed extension or Series B fundraising. In deep tech (quantum), that can be normal—but also suggests they may be approaching another raise now or soon. \nSeedtable\n\nPath to Milestones Matters Most\nFollow‑on investment almost always hinges on meaningful traction (revenue growth, partnerships, angels committing more, or strategic commercial milestones). Public sources don’t clearly show Series B traction yet—so conviction shouldn’t be high until there’s visible metrics. (This is where the score is intentionally not a 7–8.)\n\nCapital Intensity & Market\nQuantum sensing and deep hardware are capital‑intensive and longer horizon. VCs sometimes pause between rounds as tech de‑risking occurs—meaning they may prefer grants, bridges, or dilution management before a full priced round.\n\nBottom Line\n\nInvestors who have already bet are reasonably likely to participate again because they’ve done so twice, but without fresh, public traction indicators, it’s not a slam dunk that they or a new lead will step up at a high valuation. Follow‑on probability is above average but not strong conviction without recent performance data.",
+  "timestamp": "2026-01-28T12:42:03.209264+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://nordic9.com/news/qnami-to-raise-chf-4-million-series-a-financing-round-led-by-venture-capital-funds-runa-capital-and-sit-capital/",
+      "title": "Nordic 9",
+      "publisher": "nordic9.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.seedtable.com/startups/Qnami-39P3AD3",
+      "title": "Seedtable",
+      "publisher": "seedtable.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

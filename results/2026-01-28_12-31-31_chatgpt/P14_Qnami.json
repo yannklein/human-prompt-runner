@@ -1,0 +1,60 @@
+{
+  "prompt_id": "P14",
+  "company": "Qnami",
+  "question": "What are Qnami's current main strengths? Give short bullet points",
+  "answer": "Here are Qnami’s current main strengths in short bullet points:\n\n🔹 Cutting‑edge Quantum Sensing Technology\n\nPioneer and leader in quantum sensing using nitrogen‑vacancy (NV) centers in diamond, enabling ultra‑precise measurement of magnetic and electric fields at the nanoscale. \nQnami\n\nOffers commercial quantum microscopes (e.g., ProteusQ) that deliver atomic‑scale magnetic field imaging previously unattainable with classical tools. \nQuantonation\n\n🔹 High Precision and Resolution\n\nDiamond based quantum sensors achieve extremely high spatial resolution and sensitivity, allowing non‑invasive imaging of fragile and nanoscale phenomena. \nCORDIS\n\nCapable of detailed mapping of magnetic textures, current flow, and other quantum signals at ~10 nm scales. \nCORDIS\n\n🔹 Strong Scientific Foundation\n\nRooted in academic research from the University of Basel with deep expertise in quantum physics and microfabrication. \nQnami\n\nProducts and methods build on extensive published research and real use in university labs worldwide. \nQnami\n\n🔹 Commercial Traction & Ecosystem Integration\n\nProteusQ and other products are deployed in top research institutions and expanding globally through distribution partnerships (e.g., in Japan and Korea). \nQnami\n+1\n\nCollaborates with global technology partners to broaden adoption and integrate into advanced R&D workflows. \nQnami\n\n🔹 Versatile Application Potential\n\nApplicable across materials science, nanotechnology, spintronics, semiconductors, life sciences, and more. \nQnami\n\nPositioned to support emerging fields like quantum materials characterization and next‑generation computing technologies. \nventurelab.swiss\n\n🔹 Strong Funding and Recognition\n\nBacked by venture capital and awards (e.g., Top 100 Swiss Startups), highlighting investor confidence and innovation reputation. \nQnami\n\nWould you like a one‑sentence summary or a comparison with competitors?",
+  "timestamp": "2026-01-28T12:36:56.303106+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantonation.com/portfolio/",
+      "title": "Quantonation",
+      "publisher": "quantonation.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://cordis.europa.eu/article/id/411678-tiny-magnetic-sensors-promise-huge-revelations-and-insight",
+      "title": "CORDIS",
+      "publisher": "cordis.europa.eu",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-gets-the-prestigious-eic-accelerator-grant/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/applications/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/about-us/company/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology",
+      "title": "venturelab.swiss",
+      "publisher": "venturelab.swiss",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

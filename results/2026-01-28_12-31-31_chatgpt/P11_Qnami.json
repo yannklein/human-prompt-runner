@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P11",
+  "company": "Qnami",
+  "question": "How does Qnami differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Qnami distinguishes itself from direct competitors mainly through its specialised quantum sensing technology and niche product focus:\n\n1. True Quantum Sensing Leadership\nQnami develops quantum sensing instruments based on nitrogen‑vacancy (NV) centers in diamond, which harness the quantum state of single electrons for measurement at previously unattainable precision. Its flagship product, the ProteusQ™ scanning NV magnetometer, is among the first commercial tools of this class for nanoscale magnetic and electric field imaging. This contrasts with many competitors that either build more conventional quantum sensors or are earlier‑stage startups without a similarly mature instrument on the market. \nspintronics-info.com\n+1\n\n2. Integrated Hardware‑Software Platform\nUnlike several other players who supply components (e.g., probes, magnetic sensors) or specific academic tools, Qnami offers a vertically integrated solution combining proprietary Quantilever™ diamond probes, high‑precision microscopy hardware, and data analytics software — enabling complete workflows for materials science and nanotechnology. This integration simplifies use and differentiates it from competitors focusing solely on individual components. \nspintronics-info.com\n+1\n\n3. Strategic Collaborations & Distribution\nQnami has strategic distribution partnerships — notably with HORIBA for global outreach and with Quantum Design in East Asia — expanding commercial availability of its instruments beyond pure R&D labs to a broader research and industrial audience. This contrasts with many competitors that remain smaller, regional, or less commercially distributed. \nQnami\n+1\n\n4. Market Position & Focus\nWhile big players like Honeywell, Lockheed Martin, Bosch, or Thales operate across broader quantum sensing markets (including defense, navigation, and industrial systems), Qnami’s focus is high‑resolution nanoscale microscopy — a more specialised segment targeting materials science, spintronics, semiconductors, and advanced research applications. Its relatively narrow, deep technical niche sets it apart from broad‑spectrum competitors. \nstrategicrevenueinsights.com\n+1\n\nIn summary, Qnami’s differentiation lies in its commercially ready quantum‑microscopy platform, end‑to‑end technology stack, and strategic partnerships, compared with competitors who often offer broader but less specialised quantum sensing products.",
+  "timestamp": "2026-01-28T12:35:35.281963+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.spintronics-info.com/qnami",
+      "title": "spintronics-info.com\n+1",
+      "publisher": "spintronics-info.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-announces-strategic-collaboration-and-global-distribution-agreement-with-horiba-to-commercialize-the-qnami-proteusqtm/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.strategicrevenueinsights.com/industry/quantum-based-magnetic-field-sensor-market",
+      "title": "strategicrevenueinsights.com\n+1",
+      "publisher": "strategicrevenueinsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

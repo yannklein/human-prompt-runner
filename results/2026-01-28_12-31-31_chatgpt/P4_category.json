@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P4",
+  "company": null,
+  "question": "What are the top 5 Quantum Sensing companies with the best team currently? Give me a 100 word explanation and the rank",
+  "answer": "Here are the top 5 quantum sensing companies with the strongest teams and most promising impact right now — ranked and described in about 100 words total:\n\n1. Qnami – Pioneer in nanoscale quantum sensing using diamond‑based NV technologies; strong scientific leadership and collaborations with major research institutions. \nQnami\n\n2. AOSense, Inc. – Veteran in atom‑optic precision sensing (inertial measurement, clocks, gravimetry) with deep foundational R&D and government partnerships. \nAOSense\n\n3. Nomad Atomics – Builds deployable quantum gravimeters with full in‑house development and multidisciplinary teams pushing practical field systems. \nNomad Atomics\n\n4. Q‑CTRL – World‑leading quantum control and sensing software and hardware team tackling core stability and error challenges. \nQ-CTRL\n\n5. Vector Atomic (IonQ) – Now part of IonQ, this cold‑atom sensing spin‑off brings strong physics talent to GPS‑free navigation and timing solutions. \nquantum.org.uk\n\nThese selections balance scientific excellence, commercial traction, and strong technical teams in quantum sensing.",
+  "timestamp": "2026-01-28T12:32:52.200586+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/",
+      "title": "AOSense",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/",
+      "title": "Nomad Atomics",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/",
+      "title": "Q-CTRL",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/categories/sensing/",
+      "title": "quantum.org.uk",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P18",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Qnami have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Academic Strength Assessment of Qnami’s Team\nScore: 7/10\n\nFrom a venture‑capital perspective, Qnami’s team shows solid scientific credibility but with notable limitations in broad, high‑visibility academic impact.\n\nSupporting Points:\n\nFoundational Academic Credibility:\n\nQnami is a spin‑out from the University of Basel’s quantum physics research environment, particularly rooted in work on nitrogen‑vacancy (NV) center quantum sensing — an academically solid and technically challenging field. \nUniversity of Basel\n\nCSO and co‑founder Prof. Patrick Maletinsky is an established academic with a strong publication record in quantum nanoscale magnetometry. Independent profiles indicate he has authored 100+ publications with ~2 k citations and an h‑index in the 30s‑40s range — a respectable metric for a senior researcher in experimental physics. \nGoogle Scholar\n+1\n\nCEO’s Research Background:\n\nCEO Mathieu Munsch holds a PhD and has published in high‑impact journals (e.g., Nature, Phys. Rev.), and has >15 papers in top venues, indicating credible domain expertise. \nInside Quantum Technology\n\nHowever, Munsch’s overall scholarly footprint (in terms of h‑index/h‑count) is modest relative to leading academic figures in quantum science — which is not unusual when transitioning from pure research into industry leadership.\n\nTeam Composition:\n\nThe broader team consists largely of PhD‑level engineers and scientists with relevant technical skills, but no additional widely cited academic stars with extremely high h‑indexes are highlighted in publicly available information. \nQnami\n\nThis reflects a pragmatic deep‑tech product‑focused team rather than an assembly of elite academic superstars.\n\nBrutally Honest Interpretation:\n\nScore 7/10 reflects above‑average academic strength, anchored by world‑class research origin and core publications from the CSO and co‑founders.\n\nThe company’s leadership combines genuine research excellence with entrepreneurial execution — which is often more relevant for commercialization than sheer citation metrics.\n\nHowever, the academic profile doesn’t match the superstar academic leadership seen in some deep‑tech quantum ventures where multiple team members each possess very high h‑indexes (50+).\n\nThe team’s real value lies in domain‑specific research depth and product focus rather than broad citation dominance across physics.",
+  "timestamp": "2026-01-28T12:38:28.934853+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html",
+      "title": "University of Basel",
+      "publisher": "unibas.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://scholar.google.com/citations%3Fuser%3DVfmk0xIAAAAJ%26hl%3Den",
+      "title": "Google Scholar\n+1",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.insidequantumtechnology.com/news-archive/mathieu-munsch-ceo-co-founder-qnami-will-speak-at-iqt-nyc/",
+      "title": "Inside Quantum Technology",
+      "publisher": "insidequantumtechnology.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/about-us/team/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

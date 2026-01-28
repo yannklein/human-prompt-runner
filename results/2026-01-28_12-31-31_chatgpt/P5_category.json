@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P5",
+  "company": null,
+  "question": "What are the top 5 leading labs or Universities on Quantum Sensing research currently? Give me a 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of the top 5 leading labs or universities currently advancing quantum sensing research (precision measurement with quantum phenomena), with a 100‑word explanation:\n\nStanford University (USA) – A major center for quantum sensing, metrology, and imaging research embedded within its broader quantum science and engineering programs (e.g., Q‑FARM). \nQFARM\n\nMassachusetts Institute of Technology (USA) – Pioneering quantum sensing alongside computing and information science, with partnerships spanning industry and government. \nnews.mit.edu\n\nUniversity of Science and Technology of China (USTC, China) – Leading global quantum physics output, including sensors and atomic precision measurement. \nNature\n\nUniversity of Chicago (USA) – Hosts strong quantum sensing research within its quantum science initiatives. \nChicago Quantum Institute\n\nCentre for Quantum Technologies, National University of Singapore (Singapore) – World‑class interdisciplinary research in quantum technologies including sensing. \nWikipedia\n\nThese institutions are recognized for publishing high‑impact research and developing devices that measure physical quantities far beyond classical limits.",
+  "timestamp": "2026-01-28T12:33:16.304302+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qfarm.stanford.edu/people/faculty-and-researchers/quantum-sensing-metrology-imaging",
+      "title": "QFARM",
+      "publisher": "qfarm.stanford.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://news.mit.edu/2025/leading-quantum-inflection-point-1110",
+      "title": "news.mit.edu",
+      "publisher": "news.mit.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nature.com/nature-index/news/ten-best-countries-for-quantum-physics-research",
+      "title": "Nature",
+      "publisher": "nature.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.uchicago.edu/research-areas/quantum-sensing",
+      "title": "Chicago Quantum Institute",
+      "publisher": "quantum.uchicago.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Centre_for_Quantum_Technologies",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

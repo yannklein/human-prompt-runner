@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P3",
+  "company": null,
+  "question": "What are the top 5 most promising companies in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Here are the top 5 most promising companies in Quantum Sensing today, mixing market leaders and deep‑tech innovators, each with a brief explanation: \nSkyQuest Technology Consulting\n+1\n\n1. AOSense, Inc. – A pioneer in atom‑optic quantum sensors (atomic clocks, gravimeters, inertial units) with real products used in aerospace, defense, and high‑precision navigation. \naosense.com\n\n2. Qnami – Swiss firm commercializing diamond NV‑center quantum sensing and imaging systems for nanotechnology, materials science, and research applications. \nqnami.ch\n\n3. Nomad Atomics – Specializes in portable quantum gravimeters and field‑ready sensors with unique deployable systems that push quantum sensing out of the lab. \nnomadatomics.com\n\n4. QuSpin – Known for advanced optically pumped magnetometers used in medical diagnostics, geophysics, and fundamental research, leading niche quantum sensing markets. \nDataintelo\n\n5. EuQlid Inc. – Startup with breakthrough diamond‑based quantum imaging (Qu‑MRI) for semiconductor and battery inspection, promising huge industrial impact. \nTom's Hardware\n\nThese companies span core sensor tech (AOSense, QuSpin), quantum material approaches (Qnami, EuQlid), and field‑usable systems (Nomad) — all key to near‑term commercial adoption.",
+  "timestamp": "2026-01-28T12:32:25.974243+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.skyquestt.com/report/quantum-sensors-market",
+      "title": "SkyQuest Technology Consulting\n+1",
+      "publisher": "skyquestt.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "qnami.ch",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://dataintelo.com/report/quantum-sensor-market",
+      "title": "Dataintelo",
+      "publisher": "dataintelo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/quantum-diamond-scanner-delivers-non-invasive-3d-imaging-of-semiconductors-euqlid-qu-mri-could-save-chip-foundries-billions-of-dollars",
+      "title": "Tom's Hardware",
+      "publisher": "tomshardware.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

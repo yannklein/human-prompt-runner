@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P6",
+  "company": null,
+  "question": "Who are the top 10 key figures or founders in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Here’s a list of 10 top‑ranked figures currently shaping the field of quantum sensing—from foundational research to emerging commercial impact—with a brief explanation of their roles: \niankhan.com\n+1\n\n1. Ronald Walsworth – Pioneer in precision quantum measurement and Director at UMD’s Quantum Technology Center; his work on diamond NV sensors drives real‑world applications. \nqtc.umd.edu\n\n2. Mikhail Lukin – Harvard physicist whose contributions to atomic and solid‑state quantum systems inform next‑gen sensing techniques. \nQuantum\n\n3. Kai Bongs – Head of UK Quantum Hub for Sensors & Metrology, a key leader in deploying quantum sensors for navigation and measurement. \niankhan.com\n\n4. Ania Bleszynski Jayich – Experimentalist advancing quantum imaging and nanoscale sensing with solid‑state spin systems. \nWikipedia\n\n5. Paola Cappellaro – MIT researcher designing quantum systems optimized for precision measurements and sensing. \niankhan.com\n\n6. Vladan Vuletić – Works on quantum optics and many‑body quantum phenomena that improve sensor performance limits. \niankhan.com\n\n7. Robert Schoelkopf – Yale physicist whose superconducting quantum circuits research supports ultra‑sensitive detector technologies. \niankhan.com\n\n8. Darrick Chang – Leader in quantum nanophotonics at ICFO, exploring new platforms for quantum sensing. \niankhan.com\n\n9. Daniel Esteve – French researcher whose superconducting circuit work underpins high‑precision sensor technologies. \niankhan.com\n\n10. John Martinis – Influential in superconducting qubit development with important overlaps into quantum sensing foundations. \niankhan.com\n\nThese scientists are recognized for driving quantum sensing research, building foundational technologies (like NV‑center magnetometers), and leading initiatives that bridge lab breakthroughs to real‑world devices and markets. \nMcKinsey & Company",
+  "timestamp": "2026-01-28T12:33:40.434439+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "iankhan.com\n+1",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qtc.umd.edu/clark/faculty/1205/Ronald-Walsworth",
+      "title": "qtc.umd.edu",
+      "publisher": "qtc.umd.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/categories/quantum-sensing/",
+      "title": "Quantum",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ania_Bleszynski_Jayich",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/quantum-sensing-poised-to-realize-immense-potential-in-many-sectors",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

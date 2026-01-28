@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P2",
+  "company": null,
+  "question": "Which are top 10 countries in Quantum Sensing innovation currently? and why? Give me 200 word explanation and the rank",
+  "answer": "Here is a **ranked list of the top 10 countries leading quantum sensing innovation today (2025–2026), based on patents, research output, company activity, and strategic initiatives — followed by a short explanation of why these nations are at the forefront:\n\n🧠 Top 10 Countries in Quantum Sensing Innovation\n\nUnited States\n\nChina\n\nGermany\n\nUnited Kingdom\n\nJapan\n\nFrance\n\nCanada\n\nNetherlands\n\nSouth Korea\n\nSwitzerland\n\n📊 Why These Countries Lead\n\nThese countries dominate quantum sensing innovation due to heavy government funding, strong patent activity, robust research institutions, and vibrant startup ecosystems.\n\nUnited States leads in both quantum technology patents and company concentration, supported by a strong ecosystem of universities, private labs, and federal investment that accelerates sensing research and commercialization. \nquantum.org.uk\n+1\n\nChina rapidly grows its quantum sensor deployments and patent filings, driven by state-backed programs and strategic technology priorities. \nIndustry Research\n\nGermany and UK have large clusters of quantum companies and are central in European research collaborations and industrial innovation. \nquantum.org.uk\n+1\n\nJapan, France, Canada, and Netherlands show strong publication and patent contributions, with integrated academic and industry partnerships. \nquantum.org.uk\n+1\n\nSouth Korea ranks high in global quantum patents and is increasing R&D across sensing and related quantum fields. \nen.sedaily.com\n\nSwitzerland benefits from concentrated funding initiatives and top research institutions working on precise quantum metrology and sensors. \nqureca.com\n\nTogether, this group accounts for most of the global innovation output, patents, and commercial activity in quantum sensing technologies.",
+  "timestamp": "2026-01-28T12:32:03.860190+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://quantum.org.uk/insights/",
+      "title": "quantum.org.uk\n+1",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.industryresearch.biz/market-reports/quantum-sensors-market-110174",
+      "title": "Industry Research",
+      "publisher": "industryresearch.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.sedaily.com/technology/2025/12/19/korea-ranks-5th-in-quantum-technology-patents-lg-places-2nd",
+      "title": "en.sedaily.com",
+      "publisher": "en.sedaily.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.qureca.com/fr/quantum-initiatives-worldwide/",
+      "title": "qureca.com",
+      "publisher": "qureca.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

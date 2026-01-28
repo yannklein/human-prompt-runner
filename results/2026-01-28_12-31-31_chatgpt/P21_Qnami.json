@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Patent Portfolio — Brutally Honest Score: 3 / 10\n\nScore Justification (200 words)\nQnami’s patent portfolio is very small for a technology‑intensive quantum sensing startup—only about 10–13 global patent applications/patents, with only a few actually granted and enforceable so far. \nInsights;Gate\n+1\n In a sector where major players (e.g., large instrument makers, defense contractors, and long‑established research labs) hold dozens to hundreds of patents covering broad quantum sensing platforms and methods, Qnami’s portfolio is narrow and shallow. For instance, companies like Bosch/Thales in quantum sensing and giants like IBM/Google in quantum broadly hold significant patent estates, often used defensively and to establish standards positions; by contrast, Qnami has a handful of filings focused on specific NV‑diamond probe designs and niche applications. \nQBN\n+1\n\nQuality‑wise, Qnami’s patents appear to target specific product‑level innovations (e.g., scanning NV magnetometer probes and measurement techniques), which is positive for protecting a particular instrument line but does little to create a broad moat across the wider quantum sensing landscape. Many filings are still pending and their enforceability in key markets (US, EU, Asia) is uncertain. \nInsights;Gate\n\nIn short: strategically narrow, technically real but limited in breadth, and low in overall portfolio strength compared with established or deep‑tech competitors. More filings, broader claims, and active grants are needed to move this score above 5/10.",
+  "timestamp": "2026-01-28T12:39:39.004066+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "Insights;Gate\n+1",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qbn.world/wp-content/uploads/2023/03/Standardization-Roadmap-on-Quantum-Technologies.pdf",
+      "title": "QBN\n+1",
+      "publisher": "qbn.world",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

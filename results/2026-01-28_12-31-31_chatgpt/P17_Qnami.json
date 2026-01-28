@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P17",
+  "company": "Qnami",
+  "question": "What are Qnami's current main threats? Give short bullet points",
+  "answer": "Here are Qnami’s likely current main threats (short bullet points):\n\nCompetitive pressure from larger tech and research players — rival quantum sensing or microscopy firms with greater resources could erode Qnami’s market position and attract customers away. (Industry context on quantum tech competition) \nMcKinsey & Company\n\nSlow commercial adoption outside research labs — quantum sensing is still early‑stage for broader commercial markets, and converting scientific interest into large enterprise sales can be challenging. (Ecosystem maturity commentary) \nMcKinsey & Company\n\nTechnology risk / integration challenges — scaling complex quantum hardware (diamond NV centers, ProteusQ systems) for industrial use can encounter engineering, cost, or reliability hurdles. (Quantum sensing development context) \nMcKinsey & Company\n\nFunding limitations typical for deep‑tech startups — capital needs for advanced R&D and scale‑up may exceed current funding rounds, creating financial pressure versus better‑funded rivals. (General startup risk) \nMcKinsey & Company\n\nGeopolitical supply chain and regulation factors — as quantum tech becomes strategically important globally, export controls, tech sovereignty policies, or fragmented standards could complicate global business. (Quantum tech policy risk) \nJRC Publications\n\nMarket education and adoption barriers — potential customers may lack understanding or readiness to invest in quantum sensing versus conventional tools, slowing sales cycles. (Commercial adoption challenge) \nMcKinsey & Company\n\nIf you want, I can expand each threat with more detail or tailor them specifically to Qnami’s product lines (like ProteusQ).",
+  "timestamp": "2026-01-28T12:38:04.754630+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/quantum-sensings-untapped-potential-insights-for-leaders",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC141050/JRC141050_01.pdf",
+      "title": "JRC Publications",
+      "publisher": "publications.jrc.ec.europa.eu",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

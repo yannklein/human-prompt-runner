@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P25",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the quality of the VC funds on the cap table of Qnami?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a brutally honest, senior‑VC‑analyst take on the quality of the VC funds on Qnami’s cap table, scored 1–10:\n\nScore: 5.5 / 10\n\nExplanation (≈200 words):\n\nThe investor roster on Qnami’s cap table is solid but not elite by global Deep Tech VC standards. The lead investors on its Series A include Runa Capital and SIT Capital, alongside seed backers like Quantonation, Verve Ventures, High‑Tech Gründerfonds, and Zürcher Kantonalbank. \nQnami\n+1\n\nRuna Capital is the strongest name here — a global early‑stage VC with a long track record investing in software and deep tech, and a portfolio spanning recognized outcomes (e.g., Brainly, Nginx, Mambu). Its funds have scaled multiple generations and supported meaningful exits, including in tech categories tangential to Qnami’s realm. \nWikipedia\n\nQuantonation brings domain relevance — it’s one of the few specialized quantum tech VC firms globally. However, its portfolio and exits remain modest relative to broader VC heavyweights, typical for a niche fund investing early in physics‑based startups. \nQuantonation\n\nThe other investors — Verve Ventures and High‑Tech Gründerfonds — are respectable European deep‑tech supporters but are not top‑tier global investors that can open major institutional or strategic doors. SIT Capital is less recognizable outside its regional network. Overall, the mix provides good early‑stage support and deep‑tech credibility but lacks heavyweight lead VCs that signal widespread institutional conviction or provide strategic scale capabilities.",
+  "timestamp": "2026-01-28T12:41:16.894887+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Runa_Capital",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantonation.com/",
+      "title": "Quantonation",
+      "publisher": "quantonation.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

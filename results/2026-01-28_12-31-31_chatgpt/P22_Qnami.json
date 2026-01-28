@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P22",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Qnami's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Uniqueness & Leadership Score (Brutally Honest, VC Analyst Perspective): 6.5 / 10\n\nQnami’s core technology—NV (nitrogen‑vacancy) center based quantum sensing in diamonds and its commercialization into a scanning NV magnetometer like the ProteusQ™ microscope—is technically novel and scientifically deep, but not wholly unique in the broader quantum sensing field. \nUniversity of Basel\n+1\n\nWhy not higher?\n\nFundamental IP Scope: Qnami’s IP around NV center fabrication, diamond probe design (“Quantilever™”) and system integration into commercialized scanning microscopes is defensible and meaningful in niche markets (materials science, spintronics, advanced research). However, the core physical mechanism (using NV centers in diamond for sensing) isn’t exclusive to Qnami—academic labs and other companies globally are pursuing similar approaches. That limits true proprietary breadth. \nUniversity of Basel\n\nMarket & Competitive Position: Being first to market with a commercial scanning NV magnetometer is significant (ProteusQ was launched and is being distributed globally), but the overall quantum sensing market is becoming more crowded as fundamental quantum technologies mature. Scientific instruments attract competition from legacy players and new entrants alike. \nThe Quantum Insider\n\nCommercial Traction vs Hype: Qnami shows early adoption in research settings and strategic distribution deals. That’s strong for a deep‑tech spinout but still far from broad industry dominance. \nThe Quantum Insider\n\nSummary:\nQnami’s IP and technology are important and differentiated within a defined niche, especially for high‑precision magnetic sensing. However, the underlying quantum mechanism isn’t solely theirs, commercial traction is moderate, and broader competitive threats are growing. So from a VC lens, 6.5/10 reflects real capabilities but tempered leadership risk.",
+  "timestamp": "2026-01-28T12:40:02.972193+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html",
+      "title": "University of Basel\n+1",
+      "publisher": "unibas.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

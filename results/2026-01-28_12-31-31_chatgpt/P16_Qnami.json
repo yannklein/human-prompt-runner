@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P16",
+  "company": "Qnami",
+  "question": "What are Qnami's current main opportunities? Give short bullet points",
+  "answer": "Here are Qnami’s current main opportunities (short bullets) based on recent company positioning, expansion moves, funding, and product strategy:\n\n🌍 Market & Commercial Expansion\n\nGrow global distribution of its quantum microscope (ProteusQ) via strategic partners, including expansion into Japan, South Korea, and broader East Asia. \nThe Quantum Insider\n+1\n\nLeverage HORIBA partnership for global sales & support, reaching research and industrial users across Europe, Asia, and the Americas. \nHoriba\n\n🧪 Product Development & New Tech\n\nExtend ProteusQ into new configurations and environments, including cryogenic (low‑temperature) versions for advanced research. \nQnami\n+1\n\nAdvance quantum sensing hardware like diamond NV probes and sensors, supporting broader precision measurement applications. \nQnami\n\n🎓 Research & Industry Applications\n\nEnable nanoscale imaging and magnetic field sensing for materials science, spintronics, and quantum computing research. \nQnami\n\nSupport adoption in life sciences, earth science, and nanotechnology labs, where high‑precision, non‑perturbative measurements are critical. \nQnami\n\n💼 Business & Funding Opportunities\n\nUse Series A capital to scale technology commercialization and market reach (CHF 4M funding round led by VCs). \nnordic9.com\n\nCollaborate with academic and industrial partners worldwide to expand customer base and drive platform adoption. \nQnami\n\nLet me know if you want these framed for investors, customers, or tech partners!",
+  "timestamp": "2026-01-28T12:37:44.679437+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "Horiba",
+      "publisher": "horiba.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/products/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://nordic9.com/news/qnami-to-raise-chf-4-million-series-a-financing-round-led-by-venture-capital-funds-runa-capital-and-sit-capital/",
+      "title": "nordic9.com",
+      "publisher": "nordic9.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

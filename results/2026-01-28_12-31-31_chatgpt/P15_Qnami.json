@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P15",
+  "company": "Qnami",
+  "question": "What are Qnami's current main weaknesses? Give short bullet points",
+  "answer": "Here are some of Qnami’s current main weaknesses (short bullet points) — based on industry context and known limitations of the technology they commercialize:\n\nNiche and early‑stage market adoption — quantum sensing tools like Qnami’s are primarily used in research settings; broad industrial penetration is still limited. \nThe Quantum Insider\n\nHigh complexity & cost — advanced diamond quantum microscopes are expensive and require specialized expertise to operate compared with conventional metrology tools. \nQnami\n\nTechnical limits of NV sensors — achieving ultra‑high performance requires precise control of fragile quantum states, which remains technically challenging at scale. \nQnami\n\nScaling production of quantum diamonds — manufacturing uniform, high‑quality diamond NV sensors at volume with consistent performance is difficult and resource‑intensive. \nOSTI.gov\n\nResolution vs. throughput tradeoffs — single‑NV scanning provides excellent spatial detail but is slow and less suited for high‑throughput industrial inspection. \nQuantum Zeitgeist\n\nCompetition from other quantum & classical tech — other quantum sensor approaches and established classical measurement systems can offer easier integration or cost advantages in some applications. \nFinancial Times\n\nIf you want, I can also summarize weaknesses specifically for Qnami’s ProteusQ product or for broader commercialization strategy.",
+  "timestamp": "2026-01-28T12:37:18.351698+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/applications/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/wp-content/uploads/2020/07/Qnami_WhitePaper1_NV_magnetometry-5.pdf",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.osti.gov/servlets/purl/1870750",
+      "title": "OSTI.gov",
+      "publisher": "osti.gov",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/100-quantum-enhance-diamond-sensing-sensors-parallel/",
+      "title": "Quantum Zeitgeist",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ft.com/content/0b309cd2-aa74-428e-b37b-067665ef17ea",
+      "title": "Financial Times",
+      "publisher": "ft.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

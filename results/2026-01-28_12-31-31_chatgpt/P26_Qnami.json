@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P26",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate your belief that Qnami can go up by 10x?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "If I were putting on my senior Venture Capital analyst hat and giving a brutally honest score on whether Qnami (the Swiss quantum‑sensing startup) can go up 10× in value, my honest belief score is:\n\nScore: 3 / 10\n\nHere’s why — straight, unvarnished, and grounded in VC perspective:\n\n1) Deep tech, real innovation — but narrow early market (positive):\nQnami has built a genuine quantum‑sensing technology based on NV (nitrogen vacancy) centers in diamond, with a first commercial product (ProteusQ, a scanning NV magnetometer) already deployed in research settings. The tech is scientifically impressive and serves unmet needs in nanomagnetics, materials science, and potentially semiconductor/metrology applications. \nThe Quantum Insider\n+1\n\n2) Very limited commercial traction so far (negative):\nDespite some distribution deals and strategic partnerships, the current customer base is largely academic and lab‑oriented. That’s fine for proof of concept and credibility, but it’s a small, low‑volume market compared to large industrial segments needed to drive a 10× valuation uplift.\n\n3) Low funding levels and runway risk (negative):\nTo date, total disclosed funding is modest (~$10–14M). For deep tech hardware, that’s a small war chest — meaning growth is likely slow and dilution high if they need future capital. \nSeedtable\n\n4) Market timing and adoption risk (negative):\nReal industrial adoption usually takes years (often 5–10+) in advanced instrumentation hardware, especially in quantum technologies. The broader commercial demand beyond research labs — particularly in semiconductors or quantum computing production lines — remains early and unproven.\n\nBottom Line: It’s possible Qnami becomes a meaningful player in niche quantum sensing, but a 10× exit — especially in the near term — requires exponential commercial scale, diversified revenue streams, and breakthrough use cases outside research. None of those drivers are clearly in motion yet. So the honest VC score is around 3/10 — acknowledging real tech value but tempered by market and execution realities.",
+  "timestamp": "2026-01-28T12:41:41.104744+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.seedtable.com/startups/Qnami-39P3AD3",
+      "title": "Seedtable",
+      "publisher": "seedtable.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

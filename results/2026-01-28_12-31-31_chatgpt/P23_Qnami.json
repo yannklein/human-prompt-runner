@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Qnami is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Score (1–10): 5/10\n\nExplanation (≈200 words)\nQnami has unquestionably delivered one of the first commercially available scanning NV‑based quantum magnetometry platforms — the ProteusQ™ — and secured strategic partnerships (e.g., HORIBA for global distribution) that validate its technology and market role. The company’s product is deployed in research environments and expanding internationally via distribution agreements, demonstrating real traction beyond pure R&D prototypes. Their roots in University of Basel research and VC backing lend credibility to their IP and scientific direction. \nThe Quantum Insider\n+2\nHoriba\n+2\n\nHowever, on a technology maturity and competitive landscape basis, Qnami is still relatively early stage. Their product lineup remains narrow (focused around ProteusQ and derivatives such as low‑temperature variants), and adoption appears concentrated in academic and specialized research labs rather than broad industrial deployment. Meanwhile, competitors and adjacent players — such as QZabre, others in the scanning NV magnetometer space, and a broader set of quantum sensor developers — offer overlapping technologies and are similarly advancing their platforms. Some competitors may push faster on miniaturization, integration, or alternative sensor architectures that could challenge Qnami’s positioning in certain applications. \nqzabre.com\n+1\n\nIn sum, Qnami leads in a niche and high‑precision segment of quantum sensing, but relative to the wider spectrum of quantum sensor development (both in NV and alternative technologies), its roadmap and commercial momentum put it squarely at a mid‑tier level of maturity rather than dominance — hence a 5/10.",
+  "timestamp": "2026-01-28T12:40:24.998844+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+2\nHoriba\n+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.qzabre.com/",
+      "title": "qzabre.com\n+1",
+      "publisher": "qzabre.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}
