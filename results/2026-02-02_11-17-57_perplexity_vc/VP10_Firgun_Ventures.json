@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 3/10 for ability and willingness to follow on through Series C and D in deep-tech, particularly quantum startups, without diluting ownership or capital scrambles.\nventurecapitalarchive+2\n\nInvestment Focus\n\nFirgun specializes in seed-to-Series B quantum tech, launching a $250M fund (first close $70M, backed by Qatar Investment Authority) targeting early growth like Series A/B scale-ups in computing, sensing, and communications. No public evidence shows C/D follow-ons; they explicitly aim to \"bridge the Series A/B gap\" post-lab, not late-stage. Their thesis prioritizes founders crossing \"lab to market,\" but skips proven late-stage reserves.\npostquantum+4\n\nCapital Capacity\n\nA $250M target fund lacks dry powder for multi-round C/D bets in capital-intensive deep-tech (often $100M+ rounds). Anchor LP stability helps A/B, but scaling to D without syndication risks ownership erosion or fundraising scrambles—common for small quantum specialists without corporate/national-lab ties. Founders' track record (e.g., early Cambridge Quantum investors) is seed-strong, not C/D proven.\nthequantuminsider+2\n\nRisks for Founders\n\nDeep-tech like quantum demands 7-10 year horizons; Firgun's newness (2025 launch) and narrow focus signal exit pressure before D viability. They'd likely co-invest late-stage with giants (e.g., QIA follow-ons), diluting control. Brutally, they're A/B enablers, not C/D anchors—better for quick flips than ownership-preserving marathons. (198 words)\nthequantuminsider+2",
+  "sources": [
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive+2",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+4",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/23/tqi-exclusive-a-new-quantum-fund-takes-aim-at-the-industrys-series-a-bottleneck/",
+      "title": "thequantuminsider+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive\nFirgun Ventures\nFirgun Ventures specializes in seed-stage investments in deep-tech startups with a focus on quantum computing, AI, and robotics. The firm seeks out founders with a technical background and a vision for scalable, game-changing products. By focusing on breakthrough technologies, Firgun supports founders with global expansion potential and strong engineering talent, enabling disruptive solutions for tomorrow’s challenges.",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive\nFirgun Ventures\nFirgun Ventures specializes in seed-stage investments in deep-tech startups with a focus on quantum computing, AI, and robotics. The firm seeks out founders with a technical background and a vision for scalable, game-changing products. By focusing on breakthrough technologies, Firgun supports founders with global expansion potential and strong engineering talent, enabling disruptive solutions for tomorrow’s challenges.",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/23/tqi-exclusive-a-new-quantum-fund-takes-aim-at-the-industrys-series-a-bottleneck/",
+      "title": "thequantuminsider\nTQI Exclusive: A New Quantum Fund Takes Aim at The ...\nA new venture fund launched by Dr. Kris Naudts and Zeynep Korutürk, operating as Firgun Ventures, aims to lead Series A and B rounds.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:22:53.415072+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

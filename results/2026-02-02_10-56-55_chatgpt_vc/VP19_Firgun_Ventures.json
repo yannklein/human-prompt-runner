@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP19",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally honest score: 7/10\n\nFirgun Ventures appears constructively founder‑friendly with respect to scientific rigor — but there’s limited evidence that it embraces deep strategic pivots (e.g., hardware ⇒ control ⇒ software) as a core investment tolerance beyond its primary growth mission.\n\nWhy a 7 and not higher: Firgun’s public positioning is very clear about its focus on quantum ventures that have already crossed from research into early commercial traction — specifically targeted at Series A/B, not pre‑seed or speculative research stage work. That suggests the firm intends to back companies that are ready to commercialize real progress rather than chase pure science indefinitely — and that may limit tolerance for fundamental re‑direction that defers commercialization for years. \nIT Brief UK\n+1\n\nAt the same time, Firgun’s ethos emphasizes scientific expertise and deep technical due diligence, and its advisory council includes prominent academics and industry experts. This composition should help ensure that deep technology insights are respected — potentially supporting sensible shifts in strategy where physics demands it. \nIT Brief UK\n+1\n\nWhat’s lacking: There’s no public evidence that Firgun actively encourages hard pivots back toward foundational work once it has committed capital. The fund’s thesis is about bridging science to market, not enabling startups to pivot back into R&D when commercialization stalls. That makes its tolerance for heavy, science‑driven redirection moderate but not exceptional.\n\nIn short: a 7/10 reflects a balanced investor with respect for science but a clear preference for trajectory toward commercial milestones rather than open‑ended scientific exploration.",
+  "timestamp": "2026-02-02T11:04:23.372610+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://itbrief.co.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "IT Brief UK\n+1",
+      "publisher": "itbrief.co.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

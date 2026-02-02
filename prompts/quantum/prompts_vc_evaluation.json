@@ -1,0 +1,43 @@
+{
+  "prompts": [
+    { "id": "VP1", "template": "Who are the top 10 VCs investing in {{Category}} currently? Give a 100-word explanation per VC and the rank.", "required_vars": ["Category"], "expects_score": false },
+
+    { "id": "VP2", "template": "What is {{VCName}}'s investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.", "required_vars": ["VCName"], "expects_score": false },
+
+    { "id": "VP3", "template": "What quantum computing and deep-tech companies has {{VCName}} invested in? List all known investments with a brief explanation of each.", "required_vars": ["VCName"], "expects_score": false },
+
+    { "id": "VP4", "template": "Who are the key partners and advisors at {{VCName}}? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.", "required_vars": ["VCName"], "expects_score": false },
+
+    { "id": "VP5", "template": "What is {{VCName}}'s reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.", "required_vars": ["VCName"], "expects_score": false },
+
+    { "id": "VP6", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP7", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of {{VCName}}'s partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP8", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP9", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP10", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP11", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP12", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP13", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP14", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP15", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP16", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP17", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP18", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP19", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true },
+
+    { "id": "VP20", "template": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate {{VCName}}'s track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.", "required_vars": ["VCName"], "expects_score": true }
+  ]
+}

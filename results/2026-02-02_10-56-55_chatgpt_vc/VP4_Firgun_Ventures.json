@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP4",
+  "vc": "Firgun Ventures",
+  "question": "Who are the key partners and advisors at Firgun Ventures? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Firgun Ventures’ leadership and advisors bring a mix of scientific, entrepreneurial, financial and deep-tech experience, especially in quantum technology. The Founding Partners are:\n\nDr. Kris Naudts, MD, PhD – A former academic psychiatrist and neuroscientist at King’s College London with a PhD in neuroscience. He founded Culture Trip, raising significant capital and scaling global technology, and has been an early angel investor in quantum companies including Cambridge Quantum Computing (now Quantinuum). \nfirgun.vc\n\nZeynep Korutürk – Previously an Executive Director at Goldman Sachs where she co-founded the bank’s Tech Initiative, meeting and advising numerous tech founders. She also invested early in quantum ventures like Cambridge Quantum Computing and has policy and leadership credentials from Harvard Kennedy School. \nfirgun.vc\n\nThe Investment Team includes:\n\nProf. Mete Atatüre – Academic Advisor and Head of the Cavendish Laboratory at Cambridge University, with deep physics and quantum research expertise. \nfirgun.vc\n\nAlexandre Perrin – Principal with financial and venture experience as ex-Head of Ventures at XTX Markets. \nfirgun.vc\n\nCedric De Schaut – Head of Gen AI & Data, with engineering, data science and analytics experience. \nfirgun.vc\n\nThe Advisory Council spans deep tech, quantum and global strategy:\n\nIlyas Khan, KSG – Founder of Cambridge Quantum Computing and current Quantinuum leader. \nfirgun.vc\n\nKris Peeters – Former Vice-President of the European Investment Bank and Belgium’s Minister of Economy. \nfirgun.vc\n\nDr. Martin Murphy – Co-founder and ex-chair of Syncona, with experience funding science-driven companies. \nfirgun.vc\n\nYariv Adan – Ex-Google senior director in AI and infrastructure and VC partner. \nfirgun.vc\n\nEddie Alleyn – Veteran UK government defence and security advisor. \nfirgun.vc\n\nAugustine Syn – Deep tech/quantum investor and senior government advisor. \nfirgun.vc",
+  "timestamp": "2026-02-02T10:58:18.082082+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

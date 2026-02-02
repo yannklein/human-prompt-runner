@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "As a quantum founder, I’d give Firgun Ventures a 4/10 for following through to Series C and D. While they are a top-tier partner for your early-stage journey, they are not architected for late-stage heavy lifting.\n\nThe Breakdown\n\nFund Size vs. Capital Requirements: Firgun’s target fund size is $250 million (with an initial $70 million close). In the deep-tech and quantum world, a single Series C or D round can easily exceed $100M–$200M. With a portfolio goal of roughly 20 companies, their \"pro-rata\" muscle will likely be exhausted by Series B.\n\nStructural Mandate: Their stated mission is to fill the \"Series A/B gap.\" They are built to bridge the \"valley of death\" between laboratory research and commercial scale. Expecting them to lead or anchor a Series D is asking a middleweight to box in the heavyweight division; they simply aren't designed for it.\n\nThe \"Ownership Scramble\" Risk: Because they lack the massive AUM (Assets Under Management) of a multi-billion dollar growth fund, they will likely be diluted in later rounds. While their Qatar Investment Authority (QIA) backing provides immense \"sovereign\" credibility, the capital for your $150M Series D will almost certainly have to come from new, external lead investors.\n\nVerdict\n\nFirgun is your best ally for getting to market, but they are a \"launchpad,\" not a \"forever home.\" Use them for their deep quantum expertise and QIA connections, but build your Series C/D syndicate early, because Firgun won't be able to carry that bag alone.\n\nWould you like me to identify late-stage growth funds that specifically partner with early-stage specialist VCs like Firgun?",
+  "timestamp": "2026-02-02T11:12:59.796428+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

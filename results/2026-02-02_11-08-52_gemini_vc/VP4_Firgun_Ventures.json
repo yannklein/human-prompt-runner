@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP4",
+  "vc": "Firgun Ventures",
+  "question": "Who are the key partners and advisors at Firgun Ventures? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Firgun Ventures is led by a team of academics, entrepreneurs, and finance veterans focused on bridging the \"Series A/B gap\" in the quantum sector.\n\nFounding Partners\n\nDr. Kris Naudts (MD, PhD): An academic psychiatrist and neuroscientist (King’s College London) and founder of the travel platform Culture Trip. His interest in quantum is partly driven by its potential to revolutionize medical diagnostics.\n\nZeynep Korutürk: A former Executive Director at Goldman Sachs who co-founded the firm’s Tech Initiative. She was an early angel investor in Cambridge Quantum Computing (now Quantinuum) in 2016.\n\nInvestment Team & Technical Experts\n\nProf. Mete Atatüre (PhD): An Academic Advisor and world-renowned physicist. He is the Head of the Cavendish Laboratory at the University of Cambridge, providing deep-tech due diligence.\n\nAlexandre Perrin: Principal and former Head of Ventures at XTX Markets, with a background in financial mathematics from Imperial College.\n\nCedric De Schaut: Head of Gen AI & Data, formerly of Deloitte, specializing in data science and engineering.\n\nAdvisory Council\n\nThe firm leverages high-level expertise from:\n\nIlyas Khan (KSG): Founder of Quantinuum and a pioneer in the quantum industry.\n\nKris Peeters: Former VP of the European Investment Bank and Deputy PM of Belgium.\n\nYariv Adan: Former Senior Director at Google with 20+ years of experience in AI and infrastructure.\n\nDr. Martin Murphy: Co-founder of Syncona, bringing extensive life sciences and scale-up experience.\n\nWould you like me to look into the specific quantum hardware modalities or geographic regions Firgun Ventures is currently prioritizing for investment?",
+  "timestamp": "2026-02-02T11:10:28.159881+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP17",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Here’s a brutally honest assessment of Firgun Ventures’ ability to help portfolio companies avoid premature announcements, misleading benchmarks, and hype‑driven demos — a key credibility risk in quantum startups:\n\n📊 Score: 4/10\n\nExplanation (200 words):\n\nFirgun Ventures is a newly launched, London‑based venture capital firm focused on Series A/B quantum technology companies, backed by institutional capital including the Qatar Investment Authority and prominent angel investors with deep ties to the quantum ecosystem. Its stated mission is to support companies transitioning from research to commercial traction, and it touts scientific and financial expertise through its founders and advisory council. \nFirgun Ventures\n+1\n\nHowever, there’s no publicly available evidence that Firgun has cultivated a credible track record — yet — on managing communications discipline in portfolio companies. Avoiding premature announcements and hype requires experienced investors who have repeatedly navigated deep‑tech commercialization cycles, enforced disciplined milestones, and coached founders through external scrutiny and benchmarking regimes. Firgun’s team brings scientific and commercial experience, but as a first‑time institutional fund it has no history of steering companies away from overclaims or hype‑driven demos in the quantum space. There’s no public portfolio, no documented cases of intervening on messaging, and no visible emphasis on media or benchmark governance in its materials. \nFirgun Ventures\n\nIn quantum — where exaggerated claims have historically hurt credibility — the ability to press pause on overhyped narratives typically comes from seasoned investors with multiple cycles of deep‑tech exits and failures, which Firgun does not yet demonstrably possess. That absence drives the lower score.",
+  "timestamp": "2026-02-02T11:03:33.056949+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/about",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

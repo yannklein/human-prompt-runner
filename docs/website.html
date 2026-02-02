@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perception Intelligence for Quantum Startups</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; scroll-behavior: smooth; }
+    body {
+      font-family: "EB Garamond", Georgia, serif;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: inherit; text-decoration: none; border-bottom: 1px solid #d8d8d8; }
+    a:hover { border-bottom-color: #9b9b9b; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 88px 24px 140px;
+    }
+
+    /* Header */
+    .kicker {
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 2.55rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 22px;
+    }
+    .subhead {
+      font-size: 1.15rem;
+      color: #333;
+      max-width: 42em;
+      margin-bottom: 30px;
+    }
+
+    .meta {
+      font-family: "Inter", sans-serif;
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.8;
+      padding-top: 24px;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 28px;
+    }
+    .meta strong { font-weight: 600; color: #1a1a1a; }
+    .meta span { display: block; }
+
+    /* Sections */
+    section { margin-top: 56px; }
+    h2 {
+      font-size: 1.55rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 18px;
+    }
+    p { margin-bottom: 18px; color: #333; }
+    ul { list-style: none; margin: 18px 0 6px; padding-left: 0; }
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 4px;
+      height: 4px;
+      background: #999;
+      border-radius: 50%;
+    }
+
+    /* Callouts */
+    .callout {
+      background: #f5f5f5;
+      border: 1px solid #e7e7e7;
+      border-radius: 6px;
+      padding: 22px 22px;
+      margin-top: 18px;
+    }
+    .callout p { margin-bottom: 0; }
+    .callout .label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    /* Product preview */
+    .preview {
+      margin-top: 18px;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .preview-top {
+      font-family: "Inter", sans-serif;
+      font-size: 0.75rem;
+      color: #666;
+      background: #f7f7f7;
+      padding: 12px 16px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .preview-body { padding: 18px 18px 14px; }
+    .preview-title {
+      font-family: "Inter", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .preview-snippet {
+      font-size: 1.02rem;
+      color: #333;
+    }
+    .preview-bullets {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid #efefef;
+      font-family: "Inter", sans-serif;
+      font-size: 0.85rem;
+      color: #444;
+      line-height: 1.6;
+    }
+    .pillrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .pill {
+      font-family: "Inter", sans-serif;
+      font-size: 0.76rem;
+      color: #444;
+      background: #f4f4f4;
+      border: 1px solid #e6e6e6;
+      padding: 8px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 28px;
+      display: inline-block;
+      font-family: "Inter", sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #dcdcdc;
+      background: #ffffff;
+    }
+    .cta:hover { border-color: #bfbfbf; }
+    .cta small {
+      display: block;
+      margin-top: 6px;
+      font-weight: 400;
+      color: #666;
+      font-size: 0.78rem;
+    }
+
+    /* FAQ */
+    details {
+      border-top: 1px solid #e3e3e3;
+      padding: 18px 0;
+    }
+    details:last-of-type { border-bottom: 1px solid #e3e3e3; }
+    summary {
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details p {
+      margin-top: 12px;
+      margin-bottom: 0;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 90px;
+      padding-top: 26px;
+      border-top: 1px solid #e0e0e0;
+      font-family: "Inter", sans-serif;
+      font-size: 0.76rem;
+      color: #888;
+      line-height: 1.7;
+    }
+    .fineprint { margin-top: 10px; color: #9a9a9a; }
+
+    @media (max-width: 600px) {
+      html { font-size: 16px; }
+      .container { padding: 60px 20px 110px; }
+      h1 { font-size: 2.05rem; }
+      .subhead { font-size: 1.06rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <p class="kicker">AI Perception Intelligence</p>
+      <h1>Perception intelligence for quantum startups.</h1>
+      <p class="subhead">
+        Investors increasingly rely on AI to research, filter, and summarize companies before meetings ever happen.
+        This platform shows how credible and investable your company <em>appears</em> to advanced AI systems — and where
+        real strength is being missed because it is not legible in public signals.
+      </p>
+
+      <div class="callout">
+        <div class="label">One-line definition</div>
+        <p>
+          We generate an AI perception memo that mirrors how an AI-assisted investor would interpret your company across
+          team strength, IP leadership, technology maturity, and investor conviction — using public information only.
+        </p>
+      </div>
+
+      <a class="cta" href="#request">
+        Request a sample assessment
+        <small>No decks, no dashboards — you receive a memo-style report.</small>
+      </a>
+
+      <div class="meta">
+        <span><strong>For:</strong> Deep-tech & quantum founders preparing for fundraising, hiring, or strategic partnerships</span>
+        <span><strong>Output:</strong> Web memo + optional PDF snapshot</span>
+        <span><strong>Scope:</strong> Public signals only (private data optional in higher tiers)</span>
+      </div>
+    </header>
+
+    <section id="what">
+      <h2>What you get</h2>
+      <p>
+        A written memo, not a dashboard. It is designed to feel like an internal diligence note — uncomfortable if needed,
+        but legible and actionable at the strategic level.
+      </p>
+      <ul>
+        <li>Composite AI perception score and 4-axis breakdown</li>
+        <li>Team & talent signal (incl. academic strength legibility)</li>
+        <li>IP & uniqueness signal (patents, defensibility, differentiation)</li>
+        <li>Technology readiness & traction signal (TRL legibility, milestones)</li>
+        <li>Investor perception & conviction signal (cap table signaling, follow-on belief)</li>
+        <li>“Missing signals” and prioritization for the next 6–12 months</li>
+      </ul>
+
+      <div class="preview" aria-label="Memo preview">
+        <div class="preview-top">Preview — AI Perception & Investability Memo (excerpt)</div>
+        <div class="preview-body">
+          <div class="preview-title">Executive summary (excerpt)</div>
+          <p class="preview-snippet">
+            “The company appears technically credible but under-signaled. The largest perception gaps are in execution
+            leadership beyond the founding academics, translation of IP into defensible category leadership, and visible
+            investor conviction. These gaps are signal gaps, not necessarily substance gaps.”
+          </p>
+
+          <div class="preview-bullets">
+            <div><strong>What matters most next (example):</strong></div>
+            <div>1) Execution leadership legibility  2) Clear IP leadership claim  3) Investor conviction visibility</div>
+
+            <div class="pillrow" aria-label="Axes">
+              <span class="pill">Team & Talent</span>
+              <span class="pill">IP & Uniqueness</span>
+              <span class="pill">TRL & Traction</span>
+              <span class="pill">Investor Perception</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="not">
+      <h2>What this is not</h2>
+      <p>
+        This is not SEO, and it is not a marketing analytics tool. It does not attempt to “optimize” your company. It
+        reveals how your public signals are interpreted and where interpretation breaks.
+      </p>
+      <ul>
+        <li>Not a traffic or keyword tool</li>
+        <li>Not a generic AI copilot</li>
+        <li>Not prescriptive “growth hacks”</li>
+        <li>Not a judgment of internal quality</li>
+      </ul>
+    </section>
+
+    <section id="how">
+      <h2>How it works (at the right level)</h2>
+      <p>
+        We synthesize publicly available signals — publications, patents, team profiles, press, and investor disclosures —
+        through a structured evaluation framework designed to mirror investor reasoning. The platform is intentionally
+        constrained: if a signal is not visible publicly, it is not assumed.
+      </p>
+      <div class="callout">
+        <div class="label">Important distinction</div>
+        <p>
+          We do not score your company’s true quality. We score the signals your company emits and how they are interpreted
+          by AI systems upstream of investor decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section id="request">
+      <h2>Request a sample assessment</h2>
+      <p>
+        If you are fundraising, hiring senior technical talent, or preparing for strategic partnerships, a perception memo
+        can reveal where credibility is being lost due to missing or unclear public signals.
+      </p>
+      <p style="font-family: Inter, sans-serif; font-size: 0.9rem; color:#555;">
+        Email: <a href="mailto:team@firgun.vc">team@firgun.vc</a><br>
+        LinkedIn: <a href="#" aria-label="LinkedIn profile link">Your LinkedIn</a>
+      </p>
+      <div class="callout">
+        <div class="label">What to include</div>
+        <p>
+          Company name, sector/sub-sector (e.g., photonics, error correction, sensing), stage, and 2–5 competitors if relevant.
+          We can run a baseline using public signals within the quantum category.
+        </p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQs</h2>
+
+      <details>
+        <summary>Is this just another way to say SEO?</summary>
+        <p>
+          No. SEO optimizes for ranking and traffic. This evaluates credibility signals and how AI systems interpret them.
+          If SEO asks “Are you visible?”, we ask “Are you believed?”.
+        </p>
+      </details>
+
+      <details>
+        <summary>Are you telling us how investable we actually are?</summary>
+        <p>
+          No. We do not assess internal quality. We assess how public signals are interpreted. Many strong companies score
+          lower because their strengths are not legible in public information.
+        </p>
+      </details>
+
+      <details>
+        <summary>What sources do you use?</summary>
+        <p>
+          Public information only by default: websites, team profiles, publications/citations, patents, press, and investor disclosures.
+          We do not require pitch decks or internal documents for a baseline assessment.
+        </p>
+      </details>
+
+      <details>
+        <summary>What happens when we ask “what can we do about this”?</summary>
+        <p>
+          We prioritize the small number of missing signals that matter most for your next milestone (e.g., fundraising,
+          senior hiring, partnerships). We intentionally avoid tactical checklists. The product is designed to deliver
+          interpretation and prioritization.
+        </p>
+      </details>
+
+      <details>
+        <summary>How often should we reassess?</summary>
+        <p>
+          Most companies reassess quarterly during active narrative shifts or before/after major announcements. Perception changes
+          slowly — and that stability is useful.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is this affiliated with Firgun Ventures?</summary>
+        <p>
+          The work is built and delivered independently. Any affiliation is limited to personal background and does not imply
+          investment evaluation or use of your data for investment decisions without explicit consent.
+        </p>
+      </details>
+    </section>
+
+    <footer>
+      Built by an AI & venture practitioner focused on deep-tech credibility and AI-mediated perception.<br>
+      <div class="fineprint">
+        This page describes an independent product concept and is not an investment solicitation or part of any fund’s diligence process.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

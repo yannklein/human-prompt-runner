@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP12",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Talent Pipeline Access Rating: 8.5/10\n\nFirgun Ventures is a specialized powerhouse when it comes to \"brain-drain\" potential from the world’s elite quantum hubs. While many generalist deep-tech funds claim academic ties, Firgun’s leadership and advisory board are essentially a \"who's who\" of the Oxford-Cambridge-London triangle—arguably the densest concentration of quantum talent globally.\n\nWhy They Score High:\n\nThe Academic Heavyweights: Having Prof. Mete Atatüre (Head of the Cavendish Lab at Cambridge) as an advisor is a massive competitive advantage. It provides a direct, \"pre-publication\" line to one of the world’s premier physics departments.\n\nThe Industry \"Godfather\" Effect: Co-investor and advisor Ilyas Khan (Founder of Quantinuum) offers unparalleled access to senior industry engineers. If you need to hire people who have actually built a $10B quantum company, Firgun is the most direct bridge.\n\nStrategic Advisory Depth: Their council includes veterans from MIT, Google, and the Wellcome Trust. This covers the full spectrum: from foundational hardware PhDs to senior AI/Cloud engineers and life-science specialists for vertical applications.\n\nThe Caveat:\n\nThe only reason they aren't a 10 is their freshness as a fund. Having launched their $250M vehicle late in 2025, their institutionalized \"recruitment engine\"—the kind of formal talent-matching internal platform seen at Tier-1 Silicon Valley firms—is likely still in development compared to their informal, high-level networking.\n\nWould you like me to map out the specific talent clusters within the Oxford-Cambridge-London triangle that Firgun's advisors currently oversee?",
+  "timestamp": "2026-02-02T11:13:52.013033+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

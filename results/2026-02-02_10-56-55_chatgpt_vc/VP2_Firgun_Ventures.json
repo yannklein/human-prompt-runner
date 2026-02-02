@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP2",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Firgun Ventures is a London-based venture capital firm with a specialized investment thesis centered on early growth-stage quantum technology companies. Its flagship fund—launched with a $70 million first close and targeting a $250 million total fund size—is backed by major institutional capital including the Qatar Investment Authority alongside family offices and experienced quantum investors. \nstartupresearcher.com\n+1\n\nThe firm’s core focus is on Series A and Series B rounds, deliberately bridging the funding gap between foundational research and scalable commercialisation. It targets startups that have moved beyond proof-of-concept and are ready to expand in the market, providing both capital and sector-specific support. \nfirgun.vc\n+1\n\nFirgun’s sector preferences are deliberately narrow and deep: primarily quantum computing, quantum sensing, quantum communications and related cryptography, while also considering downstream applications of quantum technologies that address real-world problems in healthcare, climate science, finance, and cybersecurity. \nfirgun.vc\n+1\n\nTheir approach combines technical rigour (supported by an advisory council from leading academic and tech institutions) with practical experience in entrepreneurial scaling. The firm aims to be a “first call” for founders in the quantum ecosystem ready to move into industry impact, emphasising sustainable growth and commercial execution. \nfirgun.vc\n+1",
+  "timestamp": "2026-02-02T10:57:31.925935+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher.com\n+1",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

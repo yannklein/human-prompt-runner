@@ -1,0 +1,89 @@
+{
+  "prompt_id": "VP7",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of Firgun Ventures's partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures has one standout technical expert but is mostly light on deep quantum credentials. I'd rate their partners and advisors' technical expertise a 4/10—decent advisory depth undermined by finance-heavy leadership.\nthequantuminsider+1\n\nCore Partners\n\nFounders Dr. Kris Naudts (MD, PhD in psychiatry-neuroscience from King’s College London) and Zeynep Koruturk (ex-Goldman Sachs executive) bring scientific and financial chops, but neither has quantum physics research, PhDs in relevant fields, or hands-on deep-tech experience. Naudts is an academic entrepreneur (Culture Trip founder), not a physicist; Koruturk offers investment ops, not lab work.\nfirgun+1\n\nKey Advisors\n\nProf. Mete Atatüre (PhD, Head of Cambridge’s Cavendish Lab) provides genuine quantum credentials—physics professor with research leadership. Others like Alexandre Perrin (ex-XTX Ventures) and Cedric De Schaut (ex-Deloitte data scientist) lean finance/ops.\nquantumcomputingreport+1\n\nAdvisory Council\n\nMostly generalists: Kris Peeters (ex-EIB VP, economist/politician), Ilyas Khan (Quantinuum founder, entrepreneur not researcher), Yariv Adan (ex-Google AI director, product/VC), Eddie Alleyn (UK gov defense), Augustine Syn (gov/deep-tech investor). No broad PhD-level quantum research; it's policy, business, and high-level investing.\nfirgun+1\n\nBrutally, founders hype \"scientific expertise\" via one prof and affiliations (Cambridge/Oxford/MIT mentions), but core team lacks genuine quantum hands-on (e.g., no publications, lab leadership beyond Atatüre). Fine for commercialization guidance, weak for rigorous tech diligence in a field needing physicist scrutiny. As a quantum founder, I'd seek purer deep-tech VCs like Quantonation. (198 words)\npostquantum+1",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+1",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport\nQatar-Backed Firgun Ventures Closes $70 Million First ...\nFirgun Ventures, a new London-based venture capital firm, has announced the successful first close of its inaugural fund at $70 million. The financing round was backed by several investors, including the Qatar Investment",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:21:29.508455+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

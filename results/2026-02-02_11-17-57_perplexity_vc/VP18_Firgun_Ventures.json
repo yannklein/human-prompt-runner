@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP18",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 4/10 for patience and constructive behavior during portfolio setbacks.\n\nThis London-based quantum VC, launched in late 2025 with a $70M first close targeting $250M, focuses on Series A/B scale-ups in quantum computing, sensing, and communications. Their stated values—iteration, excellence, execution, and integrity—suggest openness to technical hurdles common in quantum tech, where lab-to-market transitions often slip milestones. They position themselves as patient bridgers of the post-seed funding gap, backed by Qatar Investment Authority and advisors from Cambridge, Oxford, and Quantinuum, implying a tolerance for long-horizon bets over quick SaaS-like exits.\nfirgun+3\n\nHowever, as a brand-new firm with no disclosed portfolio yet (no public investments or founder testimonials by February 2026), there's zero evidence of real-world behavior during crises like qubit instability or prototype delays. Founders like Dr. Kris Naudts and Zeynep Koruturk tout \"conviction with values,\" but without track records of supporting setbacks—unlike seasoned quantum VCs like Quantonation—they risk hype over substance. Quantum demands extreme patience, yet their emphasis on \"scaling to category leaders\" hints at pressure for rapid traction, potentially leading to board meddling or early churn if milestones slip. Brutally, they're unproven; I'd wait for exits or blowups before trusting them with my startup's tough moments. (198 words)\nfirgun+3",
+  "sources": [
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun+3",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+3",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun\nQuantum-First VC Backing Series A/B Scale-Ups\nFirgun Ventures is the first VC firm focused exclusively on Series A/B quantum companies. With deep expertise, values-driven conviction, and global networks, we help quantum entrepreneurs scale to category leadership.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:26:40.371748+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

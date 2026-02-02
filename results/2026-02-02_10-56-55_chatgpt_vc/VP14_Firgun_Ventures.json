@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP14",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 2/10\n\nBrutally honest assessment (200 words):\nBased on all publicly accessible information as of early 2026, Firgun Ventures (a newly launched, London‑based quantum VC firm) has no publicly reported track record of helping portfolio companies secure non‑dilutive capital from government innovation programs such as DARPA, EU Horizon, NSF, Innovate UK or similar. Firgun itself was only launched in late 2025 with its inaugural fund’s first close ($70 m anchored by Qatar Investment Authority) and is positioning itself as a quantum‑focused Series A/B investor that provides capital and sector expertise to scaleups. Its public messaging emphasizes its fund strategy and advisory network but does not cite any examples of Firgun portfolio companies accessing government grants or contracts. Portfolio details are not yet published (“Coming soon”), and there are no documented cases in press or firm materials showing specific non‑dilutive funding outcomes attributable to Firgun’s intervention. \nFirgun Ventures\n+1\n\nFounders’ past angel activity (e.g., early backing of a major quantum company) suggests some ecosystem experience, but this is prior to Firgun as an entity and not demonstrably linked to winning government grants. There’s also no public evidence that the firm actively helps startups apply for DARPA, NSF, Horizon, Innovate UK, or equivalent programs. \ntechsparx.co.uk\n\nIn sum, Firgun’s support in securing non‑dilutive grants appears undefined or unproven in the public domain, justifying a very low score on this specific criterion.",
+  "timestamp": "2026-02-02T11:02:18.622258+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/about",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.techsparx.co.uk/south/investment/londons-firgun-ventures-launches-with-circa-53-4m-for-growth-stage-quantum-tech-investments/",
+      "title": "techsparx.co.uk",
+      "publisher": "techsparx.co.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

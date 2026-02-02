@@ -1,0 +1,66 @@
+{
+  "prompt_id": "VP1",
+  "vc": null,
+  "question": "Who are the top 10 VCs investing in Quantum Sensing currently? Give a 100-word explanation per VC and the rank.",
+  "answer": "Here are 10 leading venture capital firms actively investing in quantum sensing and broader quantum technology today — including pure-play quantum investors and major VCs known for backing quantum sensing, measurement, or adjacent technologies (e.g., navigation, precision measurement, materials). Each entry is ~100 words with its rank.\n\n1. Quantonation\n\nQuantonation is widely regarded as the first VC fund dedicated solely to quantum technologies, including quantum sensing, computing, and networking. Based in Paris with a presence in Boston, Quantonation focuses on early-stage science-driven ventures that advance deep physics into real-world applications such as precision measurement, sensors, and quantum hardware. It co-creates companies when needed, reads complex research papers, and works closely with academic and industrial partners to deploy capital effectively. The firm’s portfolio includes foundational investments in companies tackling core quantum problems across the stack, giving it deep domain expertise in quantum sensing technologies. \nQuantonation\n\n2. 55 North Ventures\n\n55 North operates one of the largest dedicated quantum technology funds in Europe, with a €300M+ capital pool deployed into startups covering quantum computing, communications, and sensing. Headquartered in Copenhagen, the fund aims to make Europe a global hub for quantum innovation, investing into companies like IQM and Kiutra while emphasizing commercial readiness and ecosystem growth. By supporting sensing and measurement pioneers alongside computing ventures, 55 North bridges early-stage deep tech and scaling companies at Seed through Series B stages, harnessing a European and global outreach that strengthens reliability and industrial relevance. \nQuantum Navigator\n+1\n\n3. Firgun Ventures\n\nLaunched with a $250M target fund anchored by the Qatar Investment Authority, Firgun Ventures is a London-based quantum-focused VC targeting early growth (Series A/B) opportunities across quantum computing, sensing, communications, and allied technologies. Its team blends scientific and financial expertise to support startups transitioning from prototypes to commercial deployment, with deep involvement in life sciences, climate science, and industry-scale applications. Because quantum sensing technologies are often tightly coupled with computing and communication stacks, Firgun places investments where high-precision measurement becomes a differentiator for commercial adoption, making it a strategic backer for the next generation of quantum sensor companies. \nfirgun.vc\n+1\n\n4. QAI Ventures\n\nBased in Switzerland with a growing global footprint (including an Asia-Pacific hub in Singapore), QAI Ventures specializes in quantum technologies and advanced computing, actively investing from early stage through growth. Its thesis integrates pure quantum tech — encompassing sensing, communications, and computing — with AI-enabled innovation to accelerate commercialization. QAI Ventures runs accelerator programs and ecosystem-building initiatives designed to shepherd research breakthroughs into viable startups. Its cross-continental strategy helps address quantum sensing’s multi-disciplinary nature (physics, materials, optics) while offering deep domain insight, mentoring, and technical due diligence for complex founders. \nQAI Ventures\n+1\n\n5. Playground Global\n\nAlthough not exclusively quantum-focused, Playground Global is a technical founder-led VC that backs high-complexity hardware and deep tech ventures — including quantum computing and associated sensing technologies. Founded by engineers and technologists, Playground invests in companies like PsiQuantum and emphasizes engineered systems where measurement precision and quantum effects matter. Its hands-on approach pairs capital with engineering resources and expertise, making it attractive for quantum sensor startups that require deep hardware know-how and access to advanced compute and fabrication channels. \nWikipedia\n+1\n\n6. Lux Capital\n\nLux Capital is a well-established deep tech VC that consistently allocates capital to frontier technologies, including quantum computing, sensing, and advanced materials. Its portfolio spans disruptive hardware, next-generation computing paradigms, and sensing platforms critical to aerospace, defense, and industrial automation. By investing across technologies underlying precision measurement and quantum-enhanced instruments, Lux helps bridge the gap between laboratory breakthroughs and commercial systems. The firm’s deep commitment to capital-intensive science ventures supports long-term technology cycles that characterize quantum sensing commercialization. \nEllty\n\n7. Andreessen Horowitz (a16z)\n\nAndreessen Horowitz is a major US VC that participates in funding rounds across cutting-edge technology domains — including quantum computing research and applied physics startups related to sensing and control systems. With a broad mandate covering infrastructure, next-gen compute, and deep technology, a16z brings substantial capital, network access, and operational support to founders. While not focused solely on quantum tech, its willingness to back companies at early and growth stages allows quantum sensing ventures with compelling roadmaps to access deep pockets and strategic guidance. \nQuantum Powerhouse\n\n8. In-Q-Tel (IQT)\n\nIn-Q-Tel is the nonprofit VC backed by the U.S. intelligence community, investing strategically into advanced technologies that include quantum precision timing, navigation, and sensing. Its portfolio participation in companies like Infleqtion signals a strategic national agenda to accelerate quantum sensing capabilities for defense and critical infrastructure. By blending public-interest mandates with venture strategies, IQT provides capital plus unique market access to government channels, which is vital for sensor technologies with security and navigation applications. \nReddit\n\n9. Amadeus Capital Partners\n\nEurope’s Amadeus Capital is a deep tech investor with a strong track record in quantum portfolio companies spanning hardware and software. While broadly focused on deep technical themes, its quantum investments include superconducting processors and networking technologies that converge with precision measurement techniques essential to quantum sensors. Amadeus’s European presence and network serve founders navigating cross-border R&D environments, making it a valuable backer for sensing startups in early to later funding rounds. \nEllty\n\n10. Pitango VC\n\nPitango VC is Israel’s largest VC fund with diverse tech investments and selective participation in quantum ecosystem startups, especially in areas overlapping sensing, control electronics, and instrumentation. With a broad portfolio and institutional backing, Pitango provides capital and growth expertise to deep tech founders across quantum-adjacent domains. Its involvement highlights how major generalist VCs with strategic ties to advanced science sectors can catalyze sensor innovation alongside computing and communications technologies. \nWikipedia\n\nIf you want a ranked list tailored to a specific region or stage (seed vs. growth) within quantum sensing, let me know!",
+  "timestamp": "2026-02-02T10:57:03.883101+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.quantonation.com/",
+      "title": "Quantonation",
+      "publisher": "quantonation.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://entangledfuture.com/investors/",
+      "title": "Quantum Navigator\n+1",
+      "publisher": "entangledfuture.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/quantum-fund",
+      "title": "QAI Ventures\n+1",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Playground_Global",
+      "title": "Wikipedia\n+1",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ellty.com/blog/quantum-computing-investors",
+      "title": "Ellty",
+      "publisher": "ellty.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantumpowerhouse.com/2025/04/quantum-startups-vc-trends-whos.html",
+      "title": "Quantum Powerhouse",
+      "publisher": "quantumpowerhouse.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.reddit.com//r/CCCX/comments/1ojpo50",
+      "title": "Reddit",
+      "publisher": "reddit.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pitango",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

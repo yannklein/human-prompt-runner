@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP4",
+  "vc": "Firgun Ventures",
+  "question": "Who are the key partners and advisors at Firgun Ventures? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Firgun Ventures, a quantum-focused VC firm, features founding partners Dr. Kris Naudts and Zeynep Koruturk, backed by a strong advisory council.\nfirgun+1\n\nFounding Partners\n\nDr. Kris Naudts, MD/PhD in neuroscience from King's College London, founded Culture Trip, raising $100M+ and scaling to 20M monthly users; he's an early angel in quantum startups like Cambridge Quantum Computing (now $10B Quantinuum). Zeynep Koruturk, ex-Goldman Sachs executive and co-founder of its Tech Initiative, holds a Master's from Harvard Kennedy School and invests in quantum via policy and finance networks.\ndatacentrenews+1\n\nInvestment Team\n\nYariv Adan, ex-Google Senior Director (20+ years in Cloud AI, security, infrastructure), co-leads Zurich site and co-founded Ellipsis Ventures. Eddie Alleyn offers 35+ years UK gov defense/security expertise, advising Oxford deeptech. Augustine Syn advises UK Dept of Business & Trade, invests in quantum/deeptech for Atlantic Bridge/Temasek, ex-Singapore Defence Counsellor.\nfirgun\n​\n\nKey Advisors\n\nMete Atatüre, Cambridge Cavendish Lab Head/Physics Professor, leads technical due diligence. Ilyas Khan founded Quantinuum; Kris Peeters, ex-EIB VP/Belgian Deputy PM; Martin Murphy, Syncona co-founder; Alexandre Perrin, ex-XTX Ventures Head. Their blend scales quantum from lab to market in healthcare, climate, finance. (198 words)\nteknovation+3",
+  "sources": [
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews+1",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.teknovation.biz/vc-news-11/",
+      "title": "teknovation+3",
+      "publisher": "teknovation.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun\nGlobal Experts in Quantum Investment & Scale-Ups\nMeet the Firgun Ventures team: seasoned investors, operators, and advisors with deep quantum and AI expertise. Our founding partners and advisory board unite global experience to scale Series A/B quantum companies.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:20:04.752180+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

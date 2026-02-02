@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP14",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "As a quantum startup founder, the \"brutal honesty\" here is that you aren't looking at a seasoned grant-writing machine, but rather a high-potential newcomer.\n\nScore: 4/10\nExplanation\n\nFirgun Ventures is currently more \"promise\" than \"track record.\" Launched only in late 2025 with a first close of $70 million, the fund is exceptionally new. While their leadership—Dr. Kris Naudts and Zeynep Koruturk—possess significant credibility as early backers of Quantinuum, the fund itself has not yet established a public history of securing non-dilutive milestones like DARPA or Horizon Europe grants for a diverse portfolio.\n\nHowever, the score isn't a 1 for three strategic reasons:\n\nThe Advisory Council: They have recruited heavy hitters from Cambridge, Oxford, and MIT, as well as representatives from the European Investment Bank (EIB). This network is specifically designed to navigate the bureaucratic labyrinths of government innovation programs.\n\nGeographic Advantage: Being based in the \"Golden Triangle\" (London-Oxford-Cambridge) puts them at the epicenter of Innovate UK and Horizon Europe activity.\n\nSeries A/B Focus: Unlike seed funds that focus on survival, Firgun targets the \"commercialization gap,\" where startups typically need to leverage major government contracts to scale hardware.\n\nThe Verdict: If you need an investor who has already successfully navigated ten DARPA cycles, Firgun isn't there yet. If you want a partner whose brand and advisory board are engineered to open those doors in the 2026 landscape, they are a high-conviction bet.\n\nWould you like me to analyze the grant-success track record of their specific advisory board members to see which government programs they influence most?",
+  "timestamp": "2026-02-02T11:14:42.083333+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP9",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures offers moderate compatibility with quantum's 10–15 year timelines. Score: 5/10.\n\nFund Size\n\nFirgun's Fund I targets $250 million, with a $70 million first close anchored by Qatar Investment Authority (QIA), family offices, and Ilyas Khan of Quantinuum. This mid-sized VC fund suits 15–20 Series A/B deals at $10–15 million each, but lacks the multi-billion scale of quantum-dedicated giants like Quantonation or government-backed pools needed for endless R&D burn.\nthequantuminsider+3\n\nVintage Year\n\nLaunched late 2025 (Fund I vintage), it's brand new as of February 2026. Standard VC 10-year lifecycles (plus 2–3 year extensions) mean exits by ~2037, overlapping quantum's horizon but with pressure for 5–7 year liquidity events via IPOs or acquisitions.\nquantumcomputingreport+1\n\nInvestment Horizon\n\nThey target \"early growth-stage\" (Series A/B) quantum scale-ups past lab/prototype, emphasizing market traction, IP, and revenue ramps in computing, sensing, and comms. Backers like QIA signal long-term conviction, and founders' 9-year quantum angel history (e.g., Quantinuum since 2016) suggests patience. Yet, as profit-driven VC—not evergreen family office or sovereign fund—they prioritize scaling to exits over pure 15-year bets, risking follow-on mismatches if LPs demand distributions amid quantum delays.\nfirgun+3\n\nBrutally, it's quantum-savvy but VC-constrained: great for your Series A bridge, weak for decade-long holds without reflows. Seek co-investors with infinite horizons. (198 words)",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+3",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport\nQatar-Backed Firgun Ventures Closes $70 Million First ...\nFirgun Ventures, a new London-based venture capital firm, has announced the successful first close of its inaugural fund at $70 million. The financing round was backed by several investors, including the Qatar Investment",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:22:26.856672+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures has a nascent track record in deep-tech investing, particularly quantum computing, scoring a 2/10.\n\nPortfolio Status\n\nNo publicly available evidence shows any completed investments in quantum computing, semiconductors, photonics, or advanced materials as of February 2026. The firm launched in late 2025 with a $70 million first close on a $250 million fund targeting Series A/B quantum startups in computing, sensing, communications, and enabling tech like photonics or materials. Backed by Qatar Investment Authority and Ilyas Khan (Quantinuum founder), it positions as a quantum specialist with advisors from Cambridge, MIT, and Google.\nthequantuminsider+6\n\nRelevance Lacking Depth\n\nWhile the focus aligns perfectly—quantum stack including hardware enablers—the absence of a built portfolio undermines credibility. Founders boast prior Quantinuum exposure since 2016, blending science and finance, but this is pre-Firgun activity. No exits, follow-ons, or scaled winners are documented; it's all prospective hype.\nfirgun+2\n\nInvestor Risks\n\nAs a quantum startup founder, I'd avoid them now—hype exceeds proof. Wait for 1-2 strong deploys proving diligence and returns. Deep-tech needs battle-tested VCs, not newcomers, despite solid LP anchors. (198 words)\nstartupresearcher\n​",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+6",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+2",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:21:02.653062+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP19",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 4/10 for tolerance of strategic pivots driven by underlying quantum science needs, rather than premature commercialization pushes.\n\nInvestment Focus\n\nFirgun targets early growth-stage (Series A/B) quantum startups that have already \"crossed from lab to market,\" with prototypes or pilots ready for scaling into deployable products. Their explicit thesis backs founders bridging foundational science to commercial execution in computing, sensing, and communications, prioritizing real-world impact in healthcare, finance, and cybersecurity. This suggests a bias toward momentum toward revenue, not open-ended R&D iteration.\nthequantuminsider+2\n\nPivot Signals\n\nNo public portfolio exists yet, as the $250M fund (with $70M first close in late 2025) is newly launched. Founders like Zeynep Koruturk emphasize investors who \"understand both worlds\" (science and scaling), backed by quantum veteran Ilyas Khan (Quantinuum investor since 2016). Their advisory board (Cambridge, MIT, Google) adds technical diligence, but the focus on \"post-seed, pre-expansion\" firms filling commercialization gaps signals impatience with pre-revenue pivots. Long timelines in quantum hardware-to-software shifts (e.g., control stacks) may clash with this.\nfuture-of-computing+2\n\nHonest Risks\n\nBrutally, Firgun mirrors many quantum VCs: Qatar Investment Authority anchoring implies sovereign expectations for deployable tech, not science-led detours. They'd likely support science-justified tweaks for high-conviction bets but push hard against pivots delaying market entry, risking board pressure for premature scaling. A patient seed fund fits better for pivot-heavy quantum paths; Firgun wants proven traction first. (198 words)\nquantumcomputingreport\n​",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.future-of-computing.com/firgun-ventures-scaling-quantum-beyond-the-early-stages/",
+      "title": "future-of-computing+2",
+      "publisher": "future-of-computing.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/amp/",
+      "title": "quantumcomputingreport",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest in ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.future-of-computing.com/firgun-ventures-scaling-quantum-beyond-the-early-stages/",
+      "title": "future-of-computing\nFirgun Ventures: Scaling Quantum Beyond the Early Stages",
+      "publisher": "future-of-computing.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.future-of-computing.com/firgun-ventures-scaling-quantum-beyond-the-early-stages/",
+      "title": "future-of-computing\nFirgun Ventures: Scaling Quantum Beyond the Early Stages",
+      "publisher": "future-of-computing.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/amp/",
+      "title": "quantumcomputingreport\nQatar-Backed Firgun Ventures Closes $70 Million First Round to ...\nFirgun Ventures, a new London-based venture capital firm, has announced the successful first close of its inaugural fund at $70 million. The financing round was backed by several investors, including the Qatar Investment Authority (QIA), Ilyas Khan (Founder of Quantinuum), and several unnamed family offices. The firm is targeting a total fund size of $250 million. Firgun Ventures specializes in early growth-stage quantum technology investments (Series A/B), aiming to bridge the funding gap...",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:27:05.802266+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

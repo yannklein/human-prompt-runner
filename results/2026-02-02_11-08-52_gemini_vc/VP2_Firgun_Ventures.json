@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP2",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "London-based Firgun Ventures is a specialized venture capital firm that focuses on bridging the \"funding gap\" for quantum technology companies as they transition from foundational research to commercial scalability.\n\nInvestment Thesis & Approach\n\nFirgun’s core thesis is that quantum technology has reached an inflection point, moving from laboratory experiments to real-world industrial impact. They employ a \"quantum-first\" strategy, blending scientific rigor with commercial expertise (led by co-founders Dr. Kris Naudts and Zeynep Koruturk). Their approach is characterized by the ethos \"First, do no harm,\" prioritizing sustainable growth and patient capital over aggressive, short-term scaling.\n\nFund Details (2025/2026)\n\nFund Size: Targeted at $250 million (£195 million), with a significant first close of $70 million reached in late 2025.\n\nStage Focus: Exclusively early growth-stage, specifically targeting Series A and Series B rounds. They focus on startups that have moved beyond proof-of-concept and are ready for industrial integration.\n\nSector Preferences: * Core Tech: Quantum computing (hardware/software), quantum sensing, and quantum communications/cryptography.\n\nApplied Verticals: Healthcare (drug discovery), climate science, finance, and cybersecurity.\n\nGeography: Global mandate, with a primary focus on the UK (specifically the Oxford-Cambridge-London triangle), Europe, and North America.\n\nWould you like me to look into their specific portfolio companies or their advisory board members?",
+  "timestamp": "2026-02-02T11:09:37.845350+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

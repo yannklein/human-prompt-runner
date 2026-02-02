@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VC Evaluation Memo &mdash; Firgun Ventures</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; scroll-behavior: smooth; }
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      background: #fafafa; color: #1a1a1a;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+      max-width: 680px; margin: 0 auto;
+      padding: 80px 24px 160px;
+    }
+    .memo-header {
+      margin-bottom: 64px; padding-bottom: 48px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .memo-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #888; margin-bottom: 24px;
+    }
+    .memo-title {
+      font-size: 2.4rem; font-weight: 500;
+      line-height: 1.2; margin-bottom: 32px;
+      letter-spacing: -0.02em;
+    }
+    .memo-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem; color: #666; line-height: 1.9;
+    }
+    .memo-meta span { display: block; }
+    .memo-meta strong { font-weight: 500; color: #1a1a1a; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 1.5rem; font-weight: 500;
+      margin-bottom: 24px; letter-spacing: -0.01em;
+    }
+    p { margin-bottom: 20px; color: #333; }
+    .composite-score {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem; font-weight: 600; margin-bottom: 8px;
+    }
+    .score-context {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem; color: #666; margin-bottom: 24px;
+    }
+    .score {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; font-weight: 600;
+      padding: 12px 0;
+      border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 20px;
+    }
+    .weight-badge {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem; font-weight: 500;
+      color: #888; vertical-align: middle;
+      margin-left: 8px;
+    }
+    ul {
+      list-style: none; margin: 24px 0; padding-left: 0;
+    }
+    li {
+      position: relative; padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li::before {
+      content: ""; position: absolute;
+      left: 0; top: 11px;
+      width: 4px; height: 4px;
+      background: #999; border-radius: 50%;
+    }
+    .perception-risk {
+      font-style: italic; color: #555;
+      margin-top: 24px; padding-left: 20px;
+      border-left: 2px solid #ddd;
+    }
+    .divider {
+      height: 1px; background: #e0e0e0; margin: 56px 0;
+    }
+    .knockout-warning {
+      background: #fff3f3; border: 1px solid #e8c0c0;
+      padding: 24px 32px; margin: 32px 0;
+      border-radius: 4px;
+    }
+    .knockout-warning h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; font-weight: 600;
+      color: #a33; margin-bottom: 12px;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .knockout-warning p {
+      color: #555; margin-bottom: 0;
+    }
+    .strategic-implication {
+      background: #f5f5f5; padding: 32px;
+      margin-top: 48px; border-radius: 4px;
+    }
+    .scorecard-table {
+      width: 100%; border-collapse: collapse;
+      margin: 24px 0; font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+    }
+    .scorecard-table th, .scorecard-table td {
+      text-align: left; padding: 10px 12px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .scorecard-table th {
+      font-weight: 600; color: #666;
+      text-transform: uppercase; font-size: 0.7rem;
+      letter-spacing: 0.05em;
+    }
+    .scorecard-table td:last-child {
+      text-align: right; font-weight: 600;
+    }
+    .memo-footer {
+      margin-top: 80px; padding-top: 32px;
+      border-top: 1px solid #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem; color: #999;
+      text-align: center; line-height: 1.6;
+    }
+    @media (max-width: 600px) {
+      html { font-size: 16px; }
+      .memo-title { font-size: 1.9rem; }
+      .container { padding: 48px 20px 120px; }
+    }
+  </style>
+</head>
+
+<body>
+  <article class="container">
+
+    <header class="memo-header">
+      <p class="memo-label">VC Evaluation Memo &mdash; Quantum Investor Scorecard</p>
+      <h1 class="memo-title">Firgun Ventures</h1>
+      <div class="memo-meta">
+        <span><strong>Date:</strong> February 2026</span>
+        <span><strong>Scope:</strong> Public information only</span>
+        <span><strong>Framework:</strong> 5-dimension VC scorecard for quantum companies</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Executive Summary</h2>
+      <p class="composite-score">Weighted Composite Score: 4.2 / 10</p>
+      <p class="score-context">
+        This score reflects how AI systems perceive this VC&rsquo;s suitability as an investor for quantum deep-tech companies, based on publicly available information. Dimensions are weighted: Technical Credibility (25%), Time Horizon (25%), Platform Value (20%), Signaling (15%), Governance (15%).
+      </p>
+
+    <div class="knockout-warning">
+      <h3>Knockout Warning</h3>
+      <p>
+        This VC scores below the minimum threshold (4.0 / 10)
+        in: <strong>Technical &amp; Domain Credibility</strong>.
+        Per the VC scorecard framework, any investor below threshold in
+        Technical Credibility or Time Horizon is disqualified regardless of
+        strength in other areas.
+      </p>
+    </div>
+
+      <p>
+        Based on publicly available information, Firgun Ventures is perceived as a potentially misaligned investor for quantum with relative strength in Risk Tolerance &amp; Governance Style. The areas requiring closest scrutiny are:
+      </p>
+      <ul>
+        <li>Technical &amp; Domain Credibility (3.5 / 10)</li>
+        <li>Platform Value Beyond Capital (3.7 / 10)</li>
+        <li>Time Horizon &amp; Fund Construction Fit (4.0 / 10)</li>
+      </ul>
+
+      <table class="scorecard-table">
+        <thead>
+          <tr><th>Dimension</th><th>Weight</th><th>Score</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Technical &amp; Domain Credibility</td>
+            <td>25%</td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td>Time Horizon &amp; Fund Construction Fit</td>
+            <td>25%</td>
+            <td>4.0</td>
+          </tr>
+          <tr>
+            <td>Platform Value Beyond Capital</td>
+            <td>20%</td>
+            <td>3.7</td>
+          </tr>
+          <tr>
+            <td>Signaling &amp; Narrative Discipline</td>
+            <td>15%</td>
+            <td>5.0</td>
+          </tr>
+          <tr>
+            <td>Risk Tolerance &amp; Governance Style</td>
+            <td>15%</td>
+            <td>5.3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>1. Technical &amp; Domain Credibility <span class="weight-badge">25%</span></h2>
+      <p class="score">Score: 3.5 / 10</p>
+
+      <ul>
+        <li>Deep-tech investment track record (weak signal)</li>
+        <li>Technical expertise of partners (moderate signal)</li>
+        <li>Understanding of real bottlenecks (weak signal)</li>
+      </ul>
+
+      <p class="perception-risk">
+        <strong>Perception risk:</strong> The VC may appear generalist rather than deep-tech native, lacking the domain fluency needed for quantum due diligence.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>2. Time Horizon &amp; Fund Construction Fit <span class="weight-badge">25%</span></h2>
+      <p class="score">Score: 4.0 / 10</p>
+
+      <ul>
+        <li>Fund structure &amp; timeline compatibility (weak signal)</li>
+        <li>Follow-on capacity through later rounds (weak signal)</li>
+        <li>LP base patience &amp; capital type (moderate signal)</li>
+      </ul>
+
+      <p class="perception-risk">
+        <strong>Perception risk:</strong> The fund structure may not support the extended timelines quantum companies require, creating misaligned expectations.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>3. Platform Value Beyond Capital <span class="weight-badge">20%</span></h2>
+      <p class="score">Score: 3.7 / 10</p>
+
+      <ul>
+        <li>Talent pipeline access (moderate signal)</li>
+        <li>Strategic partner relationships (weak signal)</li>
+        <li>Non-dilutive capital track record (weak signal)</li>
+      </ul>
+
+      <p class="perception-risk">
+        <strong>Perception risk:</strong> The VC may offer financial support but lack the strategic network needed to accelerate a quantum company.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>4. Signaling &amp; Narrative Discipline <span class="weight-badge">15%</span></h2>
+      <p class="score">Score: 5.0 / 10</p>
+
+      <ul>
+        <li>Narrative credibility &amp; restraint (moderate signal)</li>
+        <li>Trust by later-stage investors &amp; strategics (moderate signal)</li>
+        <li>Resistance to hype &amp; premature claims (weak signal)</li>
+      </ul>
+
+      <p class="perception-risk">
+        <strong>Perception risk:</strong> The VC&#x27;s signaling may attract attention but not the right kind — overhype erodes credibility with serious buyers.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>5. Risk Tolerance &amp; Governance Style <span class="weight-badge">15%</span></h2>
+      <p class="score">Score: 5.3 / 10</p>
+
+      <ul>
+        <li>Patience with technical setbacks (moderate signal)</li>
+        <li>Support for strategic pivots (moderate signal)</li>
+        <li>Constructive behavior in down rounds (weak signal)</li>
+      </ul>
+
+      <p class="perception-risk">
+        <strong>Perception risk:</strong> The VC may push for premature commercialization when patience and technical pivots are what the company needs.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>What the AI Is Likely Missing</h2>
+      <ul>
+        <li>Deep-tech investment track record</li>
+        <li>Understanding of real bottlenecks</li>
+        <li>Fund structure &amp; timeline compatibility</li>
+        <li>Follow-on capacity through later rounds</li>
+        <li>Strategic partner relationships</li>
+      </ul>
+      <p>
+        AI models assess VCs based on public signals: press coverage, portfolio announcements, partner bios, and fund filings. Private dynamics &mdash; LP relationships, board behavior, founder references &mdash; are largely invisible and must be verified through direct diligence.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Questions to Ask This VC</h2>
+      <ul>
+        <li>&ldquo;What is the longest time to liquidity you have supported?&rdquo;</li>
+        <li>&ldquo;How do you think about markups when milestones are scientific, not revenue-based?&rdquo;</li>
+        <li>&ldquo;Who would you introduce us to in the first 30 days?&rdquo;</li>
+        <li>&ldquo;Have you shut down a company too early before &mdash; and why?&rdquo;</li>
+        <li>&ldquo;Were you constructive during down rounds or extensions?&rdquo;</li>
+      </ul>
+      <p>
+        These questions surface information that AI cannot assess from public data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Priority Areas for Further Diligence</h2>
+      <p>
+        Improving confidence in a small number of areas would have an outsized impact on whether this VC is the right partner for a quantum company.
+      </p>
+      <ul>
+        <li>Technical &amp; Domain Credibility</li>
+        <li>Time Horizon &amp; Fund Construction Fit</li>
+        <li>Platform Value Beyond Capital</li>
+        <li>Signaling &amp; Narrative Discipline</li>
+      </ul>
+      <p>
+        These are prioritization signals, not recommendations.
+      </p>
+    </section>
+
+    <div class="strategic-implication">
+      <h2>Strategic Implication</h2>
+      <p>
+        If Firgun Ventures scores below threshold in Technical Credibility or Time Horizon, they should be excluded regardless of brand strength. Based on public signals, Firgun Ventures presents significant alignment risks for a quantum company. Direct founder references and LP diligence are essential to validate these AI-derived signals.
+      </p>
+    </div>
+
+    <footer class="memo-footer">
+      This memo reflects AI-based perception as of February 2026, derived solely from public information.<br>
+      It is intended to support VC selection strategy, not to replace direct investor diligence.
+    </footer>
+
+  </article>
+</body>
+</html>

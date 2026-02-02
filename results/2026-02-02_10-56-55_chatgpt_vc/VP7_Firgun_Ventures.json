@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP7",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of Firgun Ventures's partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "**Brutally honest technical-expertise score for Firgun Ventures’s partners/advisors: ** 6.5/10\n\nFirgun Ventures does include some genuine scientific credibility — but it’s mixed with generalist business and finance experience, meaning the team’s average deep-tech expertise is moderate rather than exceptional.\n\nWhat’s strong (technical/scientific):\n• Prof. Mete Atatüre (Adviser) — Head of Physics at Cambridge’s Cavendish Laboratory with a PhD in physics and a clear academic research pedigree in quantum science. That’s real deep-tech credibility on the advisory side. \nFirgun Ventures\n\n• Ilyas Khan (Advisory Council) — Founder of Cambridge Quantum Computing (Quantinuum), a leading quantum company; founder-level experience in quantum tech is a meaningful credential. \nFirgun Ventures\n\nWhat’s less technical:\n• Kris Naudts (Co-founder) has a PhD and academic background in neuroscience/psychiatry, not in physics, quantum engineering, or computational science — and his primary career impact has been entrepreneurship rather than hands-on quantum R&D. \nFirgun Ventures\n\n• Zeynep Korutürk (Co-founder) is finance/strategy focused (Goldman Sachs), with no deep-tech research profile; valuable for business but not for scientific evaluation. \nFirgun Ventures\n\n• Other investment team members (finance, data engineering) show solid analytical backgrounds but not core quantum research or engineering. \nFirgun Ventures\n\nAdvisory council mix: includes experienced industry and policy figures (defense, AI product leadership, economics) with valuable networks but most are not hands-on quantum scientists. \nFirgun Ventures\n\nConclusion:\nFirgun does have some heavyweight scientific advisors and ecosystem credibility, but its core decision-makers are primarily business/finance leaders with limited direct technical R&D depth in quantum. That yields a ~6–7/10 on a scale where 10 means top-tier scientific expertise embedded across leadership.",
+  "timestamp": "2026-02-02T10:59:28.111593+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

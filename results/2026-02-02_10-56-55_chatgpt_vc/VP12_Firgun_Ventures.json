@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP12",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally honest score: 5/10\n\nFirgun Ventures is a very new and niche VC focused on Series A/B quantum and deep‑tech companies, backed by heavyweight institutional capital (e.g., Qatar Investment Authority anchor investment) and anchored by founders with credible scientific and finance backgrounds — including an academic with PhD experience and a former Goldman Sachs executive — plus an advisory council linked to elite institutions like Cambridge, Oxford, MIT, Google, the European Investment Bank and the Wellcome Trust. \nFirgun Ventures\n+1\n\nWhat they do well:\n\nThe advisory council includes recognized figures tied to top research environments (e.g., Professor Mete Atatüre of Cambridge’s Cavendish Lab) and founders who have been early angel investors in major quantum companies like Cambridge Quantum Computing / Quantinuum. \nFirgun Ventures\n+1\n\nTheir strategic positioning in London gives them proximity to the “Golden Triangle” of UK quantum research (Oxford‑Cambridge‑London), arguably one of the densest pools of academic talent and labs in quantum. \nQUANTUM BUSINESS MAGAZINE\n\nLimitations:\n\nThere’s no explicit evidence they actively run or sponsor structured talent‑pipeline programs — e.g., fellowships, internships, formal lab partnerships, or direct recruitment networks with top postdocs and senior engineers. The publicly available material focuses on capital deployment and advisory guidance, not systematic talent access. \nFirgun Ventures\n\nTheir network seems largely advisory and investment‑oriented, which can open doors indirectly but doesn’t equate to a formalized pipeline into research labs or engineered recruiting funnels.\n\nSummary: They punch above their weight for a brand‑new fund in terms of high‑level academic and industry contacts, but without demonstrable structured talent pipelines or formal recruitment mechanisms, their ability to deliver engineers, postdocs, or deep‑tech researchers directly to portfolio companies is modest at best.",
+  "timestamp": "2026-02-02T11:01:28.327190+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumbusinessmagazine.com/2025/11/24/%E3%82%AB%E3%82%BF%E3%83%BC%E3%83%AB%E3%81%8C%E5%87%BA%E8%B3%87%E3%81%99%E3%82%8Bfirgun-ventures%E3%81%8C%E3%80%81%E5%88%9D%E6%9C%9F%E6%88%90%E9%95%B7%E6%AE%B5%E9%9A%8E%E3%81%AE%E9%87%8F%E5%AD%90/",
+      "title": "QUANTUM BUSINESS MAGAZINE",
+      "publisher": "quantumbusinessmagazine.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

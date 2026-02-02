@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP2",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Firgun Ventures is a London-based, quantum-first VC firm focused on early growth-stage quantum technology companies at Series A and B.\nstartupresearcher+2\n\nInvestment thesis and approach\n\nFirgun’s thesis is to back teams that have moved beyond proof of concept and already demonstrated working pilots, then help them turn these into deployable, industrial-scale products. The firm positions itself as a specialist partner filling the “post‑seed, pre‑expansion” funding gap for quantum startups needing capital and expertise to scale. It combines capital with quantum-specific operational and commercial support, leveraging a team with both scientific and financial backgrounds.\nthequantuminsider+3\n\nFund size, stage, and sectors\n\nThe flagship quantum fund targets a total size of about $250 million (around £195 million), with an initial close of roughly $70 million/£53 million anchored by the Qatar Investment Authority and other institutional/family office LPs. Stage-wise, Firgun concentrates on early growth (Series A and B) rather than seed, investing globally from a London base. Sectorally, it focuses on quantum computing (hardware and software), quantum sensing, and quantum communications/cryptography, particularly where these enable applications in healthcare, climate science, finance, and cybersecurity.\npostquantum+3",
+  "sources": [
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher+2",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+3",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:18:58.528130+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

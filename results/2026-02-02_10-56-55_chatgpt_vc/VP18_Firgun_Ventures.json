@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP18",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Here’s an honest assessment of Firgun Ventures’s patience and constructive behavior toward portfolio companies facing technical setbacks or milestone slippage, based solely on publicly available information (there’s no direct founder/portfolio feedback, deal‑by‑deal reviews, or documented dispute history in the public domain as of early 2026):\n\n🔢 Brutally Honest Score: 5/10\n\n📌 Why this score?\n\nNew and largely unproven as an institutional investor: Firgun Ventures only recently launched its first dedicated quantum fund with a $70 M first close toward a targeted $250 M and plans to back Series A/B quantum companies globally. Public coverage focuses on launch, thesis, team credentials, and mission rather than any track record of portfolio support during adversity — because it literally hasn’t had much time to accumulate such history yet. \nFirgun Ventures\n+1\n\nFounder‑friendly ethos is stated, not demonstrated: Firgun’s materials describe values like “First, do no harm,” conviction, integrity, and support for founders. But that’s positioning and brand language, not evidence of tested patience in hard moments. Many first‑time or newly launched funds will emphasize a “values‑driven” approach — this is attractive in marketing but isn’t the same as documented case studies of supportive behavior during real setbacks. \nEverything Startups\n\nNo public data on milestone slippage handling: There are no independent reports, founder testimonies, or portfolio case studies discussing how Firgun specifically behaved when companies hit technical roadblocks — for instance, renegotiating milestones, extending timelines, or providing operational help under strain. In contrast, established deep‑tech investors that score highly on patience usually have a history of multiple follow‑on rounds and public founder praise that reflect that behavior — Firgun doesn’t yet. (absence of evidence, not evidence of absence)\n\nTeam pedigree suggests potential for empathy and support: The firm’s leadership includes a scientific founder and experienced operators, and they’ve been involved in quantum investing since before launching Firgun — traits that could correlate with patience and constructive partnership, especially in a domain with inherently long technical cycles. \nFirgun Ventures\n\n🔍 Bottom Line\n\nYour score reflects promise without proof: Firgun’s stated philosophy and people suggest it could behave constructively and patiently, but the lack of public track record — especially during periods of technical missteps or slow milestones — means you shouldn’t count on that yet. If you’re evaluating them as an investor specifically for their reaction when things go wrong, you’d want to talk directly with founders in their early portfolio before assuming high marks.",
+  "timestamp": "2026-02-02T11:03:59.327093+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "Everything Startups",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP17",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "As a quantum startup founder, you aren't just looking for capital; you are looking for a partner who won't force you to sacrifice your \"Physics Nobel\" aspirations for a \"Series B\" press release. Based on Firgun Ventures’ recent launch and strategic positioning, here is the breakdown:\n\nScore: 8.5/10\nThe Honest Breakdown\n\nFirgun Ventures is practically built as an antidote to the \"quantum winter\" fears driven by overhyped vaporware. Their leadership—Dr. Kris Naudts (a former neuroscientist) and Zeynep Koruturk (ex-Goldman Sachs)—combined with an advisory board featuring Ilyas Khan (Quantinuum) and Prof. Mete Atatüre (Cambridge), suggests a firm that can distinguish between a hardware breakthrough and a statistical fluke.\n\nThe \"brutally honest\" part? They are a new fund (launched late 2025). While their ethos is \"First, do no harm\"—a direct nod to avoiding the destructive pressure for premature demos—they haven't yet had to defend a portfolio company through a major public benchmarking controversy. However, their explicit focus on Series A/B \"early growth\" means they target companies that have already survived the \"lab-to-market\" crossing. By anchoring their thesis in technical milestones and \"credible roadmaps\" rather than just revenue multiples, they offer a rare safe harbor for founders who need the \"patient capital\" required for genuine quantum advantage.\n\nWould you like me to draft a list of specific technical \"due diligence\" questions Firgun is likely to ask during your Series A/B pitch?",
+  "timestamp": "2026-02-02T11:16:00.076304+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

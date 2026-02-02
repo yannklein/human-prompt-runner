@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP15",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures earns a brutally honest score of 3/10 for credible, conservative narrative discipline.\ndatacentrenews+1\n\nNew Fund, Limited Track Record\n\nLaunched in late 2025 with a $70 million first close toward a $250 million target, Firgun positions itself as a quantum specialist for Series A/B startups bridging lab to market. Backed by Qatar Investment Authority and figures like Ilyas Khan, it emphasizes \"First, do no harm\" for sustainable growth and rigorous due diligence via advisors from Cambridge, Oxford, and MIT. This signals intent for discipline, but with no disclosed portfolio, exits, or performance history as of early 2026, claims remain unproven.\nstartupresearcher+2\n\nHype Signals in Messaging\n\nCo-founders Dr. Kris Naudts and Zeynep Korutürk frame quantum as an \"industrial revolution\" reshaping computing, disease cures, and more—bold language that risks overhyping amid quantum's long commercialization timelines. They critique other founders' poor \"equity stories\" while building their own around filling a \"funding gap,\" which feels promotional for a brand-new player. No evidence of under-promising exists; instead, aggressive targets (global deployments, category leaders) suggest standard VC optimism over conservatism.\nthequantuminsider+1\n\nInvestor Fit Risks\n\nAs a quantum startup founder, I'd view Firgun's expertise positively but dock points for hype vulnerability in a hype-prone sector. True under-promise/over-deliver VCs (rare in VC overall) show it via multi-year returns, not launch PR. Score reflects potential minus zero track record—proceed cautiously. (198 words)\npostquantum+1",
+  "sources": [
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews+1",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher+2",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+1",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews\nFirgun Ventures launches with $70m for quantum tech ...\nFirgun Ventures launches with $70m fund to back early-stage quantum tech firms, aiming to scale innovations in computing, sensing and cryptography globally.",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews\nFirgun Ventures launches with $70m for quantum tech ...\nFirgun Ventures launches with $70m fund to back early-stage quantum tech firms, aiming to scale innovations in computing, sensing and cryptography globally.",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest in ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:25:13.480093+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

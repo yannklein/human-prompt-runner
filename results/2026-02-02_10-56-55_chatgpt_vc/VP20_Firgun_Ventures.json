@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP20",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "*Score for Firgun Ventures on prioritizing company survival over mark-to-market optics when it comes to down rounds, bridge rounds, or extensions: 4/10\n\nBrutally Honest Explanation (200 words):\n\nFirgun Ventures is extremely new — it only launched its first institutional fund in late 2025 with a first close of about $70 million on a targeted $250 million fund dedicated to Series A/B‑stage quantum startups. \nThe Quantum Insider\n Because of that, there’s no public evidence of any historical behavior in real‑world down rounds, bridge rounds, or extension dynamics. They haven’t yet built a portfolio that’s gone through substantial market corrections, value resets, or extended funding challenges — which are the scenarios where investor conduct in tough financing moments becomes observable.\n\nWhat is visible is their marketing and stated values: they emphasize “patient, values‑driven capital” and “first, do no harm,” language that sounds founder‑friendly on the surface. \nFirgun Ventures\n+1\n But values statements are not the same as demonstrated action when valuations fall or companies struggle. Without track record data — no public disclosures of actual financing outcomes — any positive interpretation is aspirational rather than empirical. Compared to established VCs with multiple downturn financing cycles under their belt, Firgun’s signal here is weak.\n\nGiven this lack of observable behavior and real portfolio history in distressed rounds, a low score like 4/10 reflects potential goodwill but zero proven execution on founder‑supportive down/bridge/extension discipline.",
+  "timestamp": "2026-02-02T11:04:45.437361+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "Firgun Ventures\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

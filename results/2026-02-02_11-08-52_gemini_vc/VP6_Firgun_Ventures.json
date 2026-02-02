@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Rating: 3.5 / 10\n\nFirgun Ventures is currently a high-potential shell rather than a proven powerhouse. While they talk a big game, their \"track record\" as an institutional firm is virtually non-existent because they only officially launched in late 2025.\n\nThe Reality Check\n\nZero Institutional Portfolio: As of early 2026, Firgun has not yet announced its first formal fund investments. They are a first-time fund (targeting $250M) that just reached a $70M first close. For a founder, this means they have \"dry powder\" but no history of how they behave in a boardroom when a cryostat breaks or a Series B lead vanishes.\n\nThe \"Quantinuum\" Halo: Their credibility rests almost entirely on the founders (Dr. Kris Naudts and Zeynep Koruturk) being early angel investors in Cambridge Quantum Computing (now Quantinuum) back in 2016. That’s an elite \"hit,\" but it’s a single data point from a decade ago, not a systemic track record of scaling deep-tech.\n\nSector Depth: They claim a focus on the \"Quantum Stack\"—including photonics and materials—but their expertise is more \"finance-meets-academic-advisory\" than \"hardcore engineering.\"\n\nVerdict: They are excellent for credibility-by-association (thanks to backing from Ilyas Khan and QIA), but if you want an investor who has survived the \"Valley of Death\" with ten different hardware companies, you won't find that evidence here yet.\n\nWould you like me to compare Firgun’s specific term sheet appetite against more established \"Quantum-First\" peers like Quantonation or Runa Capital?",
+  "timestamp": "2026-02-02T11:11:18.374838+00:00",
+  "model": "gemini-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

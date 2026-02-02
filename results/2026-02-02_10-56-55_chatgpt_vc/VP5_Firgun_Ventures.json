@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP5",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.",
+  "answer": "Firgun Ventures has quickly carved out a positive and respected reputation in the deep-tech and quantum investment ecosystem by positioning itself as a specialist VC addressing a clear market need — the funding gap at Series A/B for quantum startups. The firm’s inaugural fund secured a $70 million first close, anchored by institutional capital from the Qatar Investment Authority, family offices, and figures like Ilyas Khan, founder of Quantinuum, signaling confidence from both sovereign and strategic backers in its mission and leadership. \nThe Quantum Insider\n+1\n\nFounders and co-investors often highlight Firgun’s founding team credentials — Dr. Kris Naudts (scientist and entrepreneur) and Zeynep Korutürk (former Goldman Sachs executive) — as a key differentiator. Their blend of scientific depth, entrepreneurial experience, and finance expertise is frequently cited as valuable for founders trying to scale complex quantum technologies from lab to market. \nfirgun.vc\n\nMarket perception frames Firgun not simply as a capital provider but as a strategic partner that brings domain insight, rigorous due diligence through its advisory council, and a “founder-first” ethos aimed at sustainable growth. This has resonated in the broader ecosystem, positioning Firgun as a credible and catalytic player — particularly for founders seeking guidance and credibility during the critical Series A/B transition in quantum. \nteknovation.biz",
+  "timestamp": "2026-02-02T10:58:40.149679+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.teknovation.biz/vc-news-11/",
+      "title": "teknovation.biz",
+      "publisher": "teknovation.biz",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

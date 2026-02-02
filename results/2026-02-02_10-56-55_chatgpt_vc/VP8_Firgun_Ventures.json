@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP8",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "⭐ Score (1–10): 6/10 — Moderately Informed but Not Technically Deep by Default\n\nBrutally honest evaluation: From the publicly available information, Firgun Ventures appears well-positioned as a specialized quantum investor with strategic insight into the ecosystem and commercial pathways, but there’s limited evidence that the firm itself has a deep, foundational grasp of the core physics and engineering bottlenecks (like error correction architectures, cryogenics engineering, control electronics, compiler science, or qubit quality metrics) beyond what’s typical for a growth-stage VC focused on commercialization.\n\nHere’s why:\n\nFirgun’s mandate centers on Series A/B quantum companies and helping founders scale, not on conducting physics or engineering due diligence itself. Its materials emphasize commercialization maturity, market traction, and industrial adoption rather than low-level technical innovation. \nFirgun Ventures\n\nThey do consider enabling technologies — including cryogenics, control systems, and integrated hardware — in their due diligence or investment thesis, which suggests at least a broad awareness of stack components. \nFirgun Ventures\n\nThe team’s leadership combines scientific entrepreneurial experience and finance, and the advisory board includes physicists — which improves their ability to identify strong technical teams — but public messaging focuses more on opportunity, ecosystem mapping, and commercialization trends than on articulating nuanced bottleneck strategies. \nFirgun Ventures\n\nUnlike some hardware-focused investors, there’s no strong public emphasis on error correction roadmaps, control electronics architectures, cryogenic scaling costs, or compiler optimization challenges — suggesting they rely substantially on portfolio founders’ expertise rather than internal technical leadership.\n\nSummary: Firgun scores above average for strategic, market-aware investment judgment in quantum tech, but below top tier for deep, hands-on technical mastery of the hardest computing bottlenecks themselves.",
+  "timestamp": "2026-02-02T10:59:52.147043+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

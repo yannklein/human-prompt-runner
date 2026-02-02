@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 4/10\n\nBrutally Honest Explanation:\nFrom publicly available information, Firgun Ventures is a very new and niche venture capital firm with a clearly articulated focus on Series A and B quantum technology companies — the stage where deep-tech startups begin scaling beyond initial research and early traction but before large commercial revenue becomes visible. Its first institutional fund has a first close of about $70 M out of a target ~$250 M, anchored by the Qatar Investment Authority and a few family offices, which gives the firm some initial firepower and legitimacy in a capital-intensive deep-tech space. \nThe Quantum Insider\n+1\n\nHowever, there’s no public track record of Firgun actually following on into later stages like Series C or D — simply because it hasn’t yet deployed meaningful capital or built a portfolio that’s matured to those rounds. Its investment mandate is explicitly Series A/B, and not Series C/D, suggesting that follow-on funding into late stages by the firm itself is not its current strategic position. \nFirgun Ventures\n\nThe founders have some history investing in quantum (e.g., early backing of Cambridge Quantum Computing, now Quantinuum), but that was as angels — not as a firm executing follow-on strategies into later stages. \nFirgun Ventures\n\nGiven this early stage, Firgun’s ability/willingness to support companies into C/D without diluting excessively or scrambling for capital remains unproven — hence a cautious score. If tracked over time, this could rise sharply once a body of portfolio outcomes exists, but today the evidence leans closer to potential than demonstrated capability.",
+  "timestamp": "2026-02-02T11:00:40.335044+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

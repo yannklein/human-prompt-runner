@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP13",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally honest strategic‑partner score for Firgun Ventures: 4/10\n\nFirgun Ventures is very early stage as a dedicated quantum‑focused VC and, based on publicly available information, there’s little to no evidence that it currently maintains deep, formal strategic partnerships with hyperscalers (AWS, Microsoft, Google Cloud), national laboratories, large aerospace firms, semiconductor fabs, or major pharmaceutical companies:\n\nThe firm has just launched its first $250 M quantum fund (with a $70 M first close) anchored by the Qatar Investment Authority, plus support from family offices and angel investors like Ilyas Khan (Quantinuum) — which signals credibility in the quantum ecosystem itself, but not broader industrial partnerships. \nThe Quantum Insider\n+1\n\nIts advisory board includes respected individuals from academia (Cambridge, Oxford, MIT), finance, and a former Google senior director — which helps with due diligence and network reach — but doesn’t equate to formal hyperscaler, national lab, aerospace, or pharma strategic alliances. \nFirgun Ventures\n\nFirgun’s public materials do not list partnerships with hyperscalers, national research labs (e.g., DOE labs or European facilities), aerospace primes (e.g., Airbus, Boeing), semiconductor manufacturers, or pharma giants. There’s also no portfolio disclosed yet showing co‑investments with strategic corporates. \nFirgun Ventures\n\nContext: As a new, niche fund mainly staffed by investors and advisors, Firgun clearly brings quantum domain credibility, but that is not the same as industrial strategic integrations that directly benefit portfolio startups with customer pipelines, infrastructure access, or co‑development channels. For quantum founders looking for hyperscaler credits, national lab collaboration paths, aerospace testbeds, pharma trial customers, or semiconductor fabs as customers/sponsors, the current Firgun model appears largely network‑centric rather than strategic‑partner‑leveraging.\n\nIf you need a VC with established hyperscaler alliances or deep national lab and corporate integration in quantum/application sectors, Firgun is not there yet — hence the conservative score.",
+  "timestamp": "2026-02-02T11:01:54.350785+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

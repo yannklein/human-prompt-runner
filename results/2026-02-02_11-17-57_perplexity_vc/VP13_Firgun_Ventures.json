@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP13",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures has limited publicly documented relationships with the strategic partners most critical for quantum startups. Score: 3/10.\n\nKey Relationships\n\nFirgun's advisory council includes experts from academia (Cambridge, Oxford, MIT) and select institutions like Google, the European Investment Bank (EIB), and Wellcome Trust, offering indirect access to research ecosystems. Their anchor investor, Qatar Investment Authority (QIA), signals sovereign wealth support but lacks ties to hyperscalers (e.g., AWS, Azure, Google Cloud), national labs (e.g., Oak Ridge, CERN), or semiconductor fabs (e.g., TSMC, Intel). No partnerships appear with aerospace (e.g., Lockheed, Boeing) or pharma giants (e.g., Pfizer, Roche).\nteknovation+4\n\nStrengths and Gaps\n\nStrengths lie in quantum-specific expertise via advisors like Prof. Mete Atatüre (Cambridge Cavendish Lab), aiding due diligence for sensing/comms applications. However, as a new 2025 fund (London-based, $70M first close toward $250M), Firgun emphasizes \"close ties with leading quantum research institutions and global technology partners\" without naming operational deals or co-investments that deliver tangible intros to enterprise buyers. This is brutally underwhelming for scaling—quantum firms need hyperscaler cloud credits, fab access for hardware, or pharma pilots for drug discovery validation, none evidenced here.\neverythingstartups+3\n\nImplications for Quantum\n\nFor a startup, this means solid academic validation but weak commercial leverage. You'd lean on their network for intros (e.g., Google rep), yet compete without proven fab/aerospace/pharma bridges. Prioritize VCs like QAI Ventures or Quantonation with deeper industry embeds. (198 words)",
+  "sources": [
+    {
+      "url": "https://www.teknovation.biz/vc-news-11/",
+      "title": "teknovation+4",
+      "publisher": "teknovation.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups+3",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.teknovation.biz/vc-news-11/",
+      "title": "teknovation\nVC News | Firgun Ventures focused on quantum ...\nHolly Ventures has announced a solo-led cybersecurity vehicle built around a simple idea: for early-stage cyber start-ups, access and value matter more than capital.",
+      "publisher": "teknovation.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:24:17.289384+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

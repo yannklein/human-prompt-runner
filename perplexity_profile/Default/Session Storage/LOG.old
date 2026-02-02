@@ -1,3 +1,6 @@
-2026/01/28-16:04:33.565 8f14f4 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Session Storage/MANIFEST-000001
-2026/01/28-16:04:33.567 8f14f4 Recovering log #4
-2026/01/28-16:04:33.569 8f14f4 Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Session Storage/000004.log 
+2026/01/28-16:07:46.286 8f335e Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Session Storage/MANIFEST-000001
+2026/01/28-16:07:46.287 8f335e Recovering log #4
+2026/01/28-16:07:46.288 8f335e Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Session Storage/000004.log 
+2026/01/28-16:20:37.171 8f335e Level-0 table #8: started
+2026/01/28-16:20:37.177 8f335e Level-0 table #8: 22893 bytes OK
+2026/01/28-16:20:37.184 8f335e Delete type=0 #4

@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP20",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures lacks a verifiable track record in down rounds, bridge rounds, or extensions, as it's a newly launched fund (first close in late 2025) focused on fresh Series A/B quantum investments.\nfirgun+2\n\nScore: 3/10\n\nThis low rating reflects the absence of public evidence on their behavior in distressed scenarios, which is critical for a quantum startup founder like me evaluating partners for survival over optics. Firgun positions itself as \"founder-first\" with a \"do no harm\" ethos, emphasizing patient capital for quantum's long timelines and bridging Series A/B gaps. Founders Dr. Kris Naudts and Zeynep Korutürk have prior ties to early Quantinuum backing (2016), hinting at tolerance for extended horizons, but no down-round participation is documented. In a tough VC climate with rising bridges (20% of rounds) and down rounds, their newness means zero proof of prioritizing survival—e.g., waiving pro-rata, accepting haircuts, or leading restructurings without punitive terms. General deep-tech insights stress trust in such moments, but Firgun's materials tout scaling winners, not rescues. As a quantum founder, I'd need battle-tested examples; speculation on their \"high-conviction\" style doesn't cut it. They might evolve positively given quantum's capital bottlenecks, but betting on unproven intent risks extinction. (198 words)\nlinkedin+4",
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+2",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-quantum-insider_tqi-exclusive-firgun-ventures-takes-aim-activity-7409200108208082944-0Tr6",
+      "title": "linkedin+4",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-quantum-insider_tqi-exclusive-firgun-ventures-takes-aim-activity-7409200108208082944-0Tr6",
+      "title": "linkedin\nThe Quantum Insider's Post - LinkedIn\nTQI Exclusive: Firgun Ventures Takes Aim at Quantum’s Series A and B Bottleneck The quantum sector is entering a critical scaling phase, where the primary risk has shifted from scientific feasibility to a shortage of later-stage capital needed to move companies from laboratory research into commercial growth. Firgun Ventures, a new fund launched by pioneering quantum investors Dr. Kris Naudts and Zeynep Korutürk, is positioning itself squarely at this inflection point by leading Series A and B...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:27:32.270309+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

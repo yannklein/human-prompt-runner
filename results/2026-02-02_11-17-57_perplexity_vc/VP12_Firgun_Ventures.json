@@ -1,0 +1,41 @@
+{
+  "prompt_id": "VP12",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 9/10 for providing talent pipeline access in quantum and deep-tech.\n\nTheir quantum industry knowledge graph explicitly tracks talent flows alongside companies, founders, patents, and funding, positioning them to connect startups with relevant experts. The firm's advisors include elite figures like Mete Atatüre, Professor of Physics and Head of Cambridge University’s Cavendish Lab, offering direct access to top research labs and postdocs. Backing from Ilyas Khan (Cambridge Quantum Computing founder, now Quantinuum) and an advisory council from Cambridge, Oxford, MIT, Google, and Wellcome Trust further bridges to senior industry engineers and translational deep-tech talent.\nfirgun+5\n\nFirgun emphasizes commercialization over pure research, targeting Series A/B scale-ups needing commercial leaders (COOs, sales execs) beyond PhD physicists—a noted industry gap they address via network-driven recruitment. No public evidence of executed talent placements or named postdoc pipelines slightly tempers perfection, but their structure screams high-caliber intros. As a quantum startup founder, I'd prioritize them for lab-to-industry jumps—far above generic VCs. (198 words)\nthequantuminsider\n​",
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+5",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/23/tqi-exclusive-a-new-quantum-fund-takes-aim-at-the-industrys-series-a-bottleneck/",
+      "title": "thequantuminsider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/23/tqi-exclusive-a-new-quantum-fund-takes-aim-at-the-industrys-series-a-bottleneck/",
+      "title": "thequantuminsider\nTQI Exclusive: A New Quantum Fund Takes Aim at The ...\nA new venture fund launched by Dr. Kris Naudts and Zeynep Korutürk, operating as Firgun Ventures, aims to lead Series A and B rounds.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-02T11:23:51.785342+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

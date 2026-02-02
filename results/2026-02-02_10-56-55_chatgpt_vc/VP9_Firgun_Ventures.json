@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP9",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally Honest Score for Firgun Ventures’ Quantum-Friendly Fund Structure (1–10): 6/10\n\nScore Rationale (200 words)\nFirgun Ventures has launched a fund explicitly targeting quantum technology startups at the Series A/B stage, which is a good start for companies that have moved beyond seed and early research. It has announced an initial $70 million first close anchored by the Qatar Investment Authority and family offices, with a long-term target of ~$250 million for its inaugural fund. \nThe Quantum Insider\n+1\n\nHowever, for quantum companies with 10–15-year timelines, this structure has both strengths and limitations:\n\nFund Size: A $250M target is respectable for early growth rounds in deep tech but modest compared with the capital quantum hardware requires over a decade (often meaning follow-on funds, corporate or sovereign support, or public markets). Many hardware players need significantly more capital — often in the hundreds of millions per company — to reach commercialization. \nThe Quantum Insider\n\nVintage & Stage: Firgun’s first fund is young (2025 vintage) and focused on Series A/B. It’s not a multi-stage, patient capital vehicle that will carry companies through all phases toward IPO/exit. The limited vintage history makes it harder to gauge long-term patience or ability to recycle gains into deep tech follow-on financing. \nFirgun Ventures\n\nInvestment Horizon: While the thesis is aligned with quantum scaling, there’s no evidence of extended reserve allocation or multi-fund commitment geared to 10+-year horizons — it’s still typical VC.\n\nIn sum, Firgun is well-positioned to help bridge mid-stage funding gaps but is not yet structured as the ultra-patient, deep-pocketed backer quantum hardware often needs.",
+  "timestamp": "2026-02-02T11:00:16.293380+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

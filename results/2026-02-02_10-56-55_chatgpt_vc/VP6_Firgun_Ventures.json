@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 3/10\n\nFirgun Ventures currently has a very limited track record of deep-tech investing in areas like quantum computing, semiconductors, photonics, or advanced materials — because it hasn’t actually deployed meaningful capital into any disclosed portfolio companies yet. The firm only recently launched its first dedicated quantum technology fund (targeting around $250 million, with a first close of roughly $70 million) and has not published an actual portfolio list, which implies investments are either not yet made or not publicly disclosed. \nFirgun Ventures\n\nMost of what’s publicly visible about Firgun is strategic intention and positioning rather than execution: the firm’s founders and advisors bring relevant scientific, entrepreneurial, and financial experience, and they’ve been individual angel backers in successful quantum ventures like Cambridge Quantum Computing (now Quantinuum) prior to founding Firgun. \nEverything Startups\n However, this personal history doesn’t translate into a Firgun portfolio yet, and without transparency on realized investments, it’s impossible to judge depth or relevance in the sub-sectors you care about. The FAQ and official pages emphasize future investments into quantum computing, sensing, communications, and enabling technologies like photonics/materials, but again no named commitments are public. \nFirgun Ventures\n\nIn a landscape with specialized investors that already have real quantum/semiconductor/advanced optoelectronics portfolios, Firgun’s present track record is nascent. If you’re evaluating them strictly on actual deployed deep-tech bets, they are still very early in building that track record.",
+  "timestamp": "2026-02-02T10:59:04.104957+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "Everything Startups",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

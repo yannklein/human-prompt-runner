@@ -1,0 +1,42 @@
+{
+  "prompt_id": "VP15",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally Honest Reputation Score for Firgun Ventures: 6/10\n\nFirgun Ventures is a very new entrant to the venture capital scene — effectively launched in late 2025 with its first close of about $70 million on a targeted ~$250 million quantum technology fund backed by institutional LPs like the Qatar Investment Authority and prominent family offices. \nThe Quantum Insider\n\nHere’s the honest take, especially on narrative discipline and hype vs. delivery:\n\nWhat leans conservative/credible:\n\nThe firm’s founders and leadership bring substantive scientific and financial backgrounds (King’s College London, Goldman Sachs) and early angel investing experience in quantum, which indexes toward depth over buzz. \nFirgun Ventures\n\nTheir stated values emphasize “first, do no harm,” long-term support, and responsible company-building — language that suggests a deliberate, founder‑aligned ethos rather than hype. \nTech Funding News\n\nThe investment focus is explicitly on Series A/Series B growth with technical due diligence, which is generally where disciplined capital deployment matters most in deep tech. \nIT Brief UK\n\nWhere they currently fall short on my criteria:\n\nAs a brand new fund with no publicly reported portfolio exits or performance history yet, there’s limited evidence that Firgun has actually delivered against promises rather than simply articulated high‑level intention. No track record equals little proof of conservative execution.\n\nThe public messaging on their own site and press (including use of inflection‑point rhetoric about quantum’s massive potential) does lean on optimistic framing typical of early‑stage deep‑tech VCs — not overtly crazy hype, but still forward‑looking messaging rather than grounded results. \nFirgun Ventures\n\nIndependent third‑party evaluations (e.g., media or founder commentary) on narrative discipline or delivery consistency aren’t yet available because the fund hasn’t yet deployed capital at scale.\n\nSummary (6/10):\nFirgun’s intent and stated values point toward credibility and measured support of founders, but current public information is based on thesis and launch announcements rather than demonstrable outcomes. Until they show real portfolio traction with disciplined, realistic positioning — especially in a hype‑prone quantum ecosystem — their reputation for under‑promising and over‑delivering remains promising but unproven.",
+  "timestamp": "2026-02-02T11:02:42.597973+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "Tech Funding News",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://itbrief.co.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "IT Brief UK",
+      "publisher": "itbrief.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "VP11",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 7/10\n\nBased on publicly available information, Firgun Ventures’s LP base shows encouraging signs of long-horizon, deep‑tech comfort, but still lacks the breadth and explicit profile of classic “patient capital” anchors that long‑horizon deep tech often demands. \nThe Quantum Insider\n+1\n\nWhat’s solid:\n\nThe anchor LP for Firgun’s first $70M close is the Qatar Investment Authority (QIA) — a major sovereign wealth fund with a long investment horizon and strategic technology interests, which strongly signals patient capital willing to back long‑cycle innovation like quantum. \nThe Quantum Insider\n\nEarly participation from family offices and a prominent industry founder (Ilyas Khan of Quantinuum) adds stability and a bias toward deep technology rather than fast‑flip returns. \nDataCentreNews UK\n\nThe firm’s advisory network includes leaders from major research institutions (Cambridge, Oxford, MIT, European Investment Bank, Wellcome Trust), which implies strategic, ecosystem‑oriented backing beyond just financial returns. \nTeknovation.biz\n\nWhere comfort is weaker / unknown:\n\nPublic disclosures don’t yet show a diversified LP base with multiple evergreen funds, university endowments, pension funds, or large corporate strategic LPs — the types investors most associated with patient, long‑term deep tech capital. There are mainly high‑net‑worth sources, QIA, and unnamed family offices. \nThe Quantum Insider\n\nThe target $250M fund is still nascent with first close only; the ultimate LP composition at final close remains opaque. \nEverything Startups\n\nBottom line: Firgun has very credible patient capital signals (sovereign + founder capital + deep‑tech advisory), but until a broader base of enduring institutional or strategic LPs is confirmed, its LP comfort with ultra‑long horizons is good but not elite. \nThe Quantum Insider",
+  "timestamp": "2026-02-02T11:01:06.377682+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "DataCentreNews UK",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.teknovation.biz/vc-news-11/",
+      "title": "Teknovation.biz",
+      "publisher": "teknovation.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "Everything Startups",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

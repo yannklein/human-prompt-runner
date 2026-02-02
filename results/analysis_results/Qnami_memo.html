@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Perception &amp; Investability Memo &mdash; Qnami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; scroll-behavior: smooth; }
+    body { font-family: 'EB Garamond', Georgia, serif; background: #fafafa; color: #1a1a1a; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 680px; margin: 0 auto; padding: 80px 24px 160px; }
+    .memo-header { margin-bottom: 64px; padding-bottom: 48px; border-bottom: 1px solid #e0e0e0; }
+    .memo-label { font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 24px; }
+    .memo-title { font-size: 2.4rem; font-weight: 500; line-height: 1.2; margin-bottom: 32px; letter-spacing: -0.02em; }
+    .memo-meta { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: #666; line-height: 1.9; }
+    .memo-meta span { display: block; }
+    .memo-meta strong { font-weight: 500; color: #1a1a1a; }
+    section { margin-bottom: 56px; }
+    h2 { font-size: 1.5rem; font-weight: 500; margin-bottom: 24px; letter-spacing: -0.01em; }
+    p { margin-bottom: 20px; color: #333; }
+    .composite-score { font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+    .score-context { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #666; margin-bottom: 24px; }
+    .score { font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600; padding: 12px 0; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; margin-bottom: 20px; }
+    ul { list-style: none; margin: 24px 0; padding-left: 0; }
+    li { position: relative; padding-left: 20px; margin-bottom: 12px; }
+    li::before { content: ""; position: absolute; left: 0; top: 11px; width: 4px; height: 4px; background: #999; border-radius: 50%; }
+    .divider { height: 1px; background: #e0e0e0; margin: 56px 0; }
+    .score-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Inter', sans-serif; font-size: 0.78rem; }
+    .score-table th, .score-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; }
+    .score-table th { font-weight: 600; color: #666; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .prompt-label { color: #555; }
+    .sources { margin-top: 24px; padding: 20px; background: #f8f8f8; border-radius: 4px; }
+    .sources-label { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .sources ul { margin: 0; }
+    .sources li, .global-sources li { font-family: 'Inter', sans-serif; font-size: 0.78rem; margin-bottom: 8px; }
+    .sources li::before, .global-sources li::before { top: 9px; }
+    .sources a, .global-sources a { color: #2563eb; text-decoration: none; }
+    .sources a:hover, .global-sources a:hover { text-decoration: underline; }
+    .source-ai { font-size: 0.7rem; color: #999; }
+    .memo-footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid #e0e0e0; font-family: 'Inter', sans-serif; font-size: 0.72rem; color: #999; text-align: center; line-height: 1.6; }
+    @media (max-width: 600px) { html { font-size: 16px; } .memo-title { font-size: 1.9rem; } .container { padding: 48px 20px 120px; } .score-table { font-size: 0.72rem; } }
+  </style>
+</head>
+<body>
+  <article class="container">
+    <header class="memo-header">
+      <p class="memo-label">AI Perception &amp; Investability Memo</p>
+      <h1 class="memo-title">Qnami</h1>
+      <div class="memo-meta">
+        <span><strong>Date:</strong> January 2026</span>
+        <span><strong>Scope:</strong> Public information only</span>
+        <span><strong>AI Sources:</strong> ChatGPT (50%), Gemini (30%), Perplexity (20%)</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Executive Summary</h2>
+      <p class="composite-score">Composite AI Perception Score: 6.0 / 10</p>
+      <p class="score-context">Weighted average across four dimensions. Individual AI platform weights: ChatGPT 50%%, Gemini 30%%, Perplexity 20%%.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>1. Team &amp; Talent Signal</h2>
+      <p class="score">Weighted Score: 9.6 / 10</p>
+      <table class="score-table">
+        <thead>
+          <tr><th>Dimension</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th></tr>
+        </thead>
+        <tbody>
+        <tr><td class="prompt-label">Academic strength &amp; h-index</td><td>7.0</td><td>9.0</td><td>4.0</td></tr>
+        <tr><td class="prompt-label">Ecosystem quality</td><td>6.0</td><td>8.2</td><td>5.0</td></tr>
+        <tr><td class="prompt-label">Execution capability</td><td>5.5</td><td>7.5</td><td>2.0</td></tr>
+        </tbody>
+      </table>
+      <div class="sources">
+        <p class="sources-label">Sources cited by AI platforms:</p>
+        <ul>
+          <li><a href="https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html" target="_blank">University of Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://scholar.google.com/citations%3Fuser%3DVfmk0xIAAAAJ%26hl%3Den" target="_blank">Google Scholar</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.insidequantumtechnology.com/news-archive/mathieu-munsch-ceo-co-founder-qnami-will-speak-at-iqt-nyc/" target="_blank">Inside Quantum Technology</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qnami.ch/about-us/team/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.pnas.org/doi/10.1073/pnas.0507655102" target="_blank">pnas+3</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.samwell.ai/blog/what-is-a-good-h-index" target="_blank">samwell+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.pnas.org/doi/10.1073/pnas.0507655102" target="_blank">pnas</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.samwell.ai/blog/what-is-a-good-h-index" target="_blank">samwell</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://invest.baselarea.swiss/wp-content/uploads/sites/3/2022/03/2024-Ecosystem-series-Quantum-technology-in-the-Basel-Area.pdf" target="_blank">Invest in Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qnami.ch/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qnami.ch/about-us/company/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/" target="_blank">Horiba</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/" target="_blank">quantumzeitgeist+4</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/" target="_blank">quantumzeitgeist</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://runacap.com/companies/qnami/" target="_blank">Runa Capital</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qnami.ch/about-us/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch" target="_blank">qnami+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>2. Intellectual Property &amp; Uniqueness</h2>
+      <p class="score">Weighted Score: 6.2 / 10</p>
+      <table class="score-table">
+        <thead>
+          <tr><th>Dimension</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th></tr>
+        </thead>
+        <tbody>
+        <tr><td class="prompt-label">Patent quality &amp; quantity</td><td>3.0</td><td>7.5</td><td>6.5</td></tr>
+        <tr><td class="prompt-label">IP uniqueness &amp; leadership</td><td>6.5</td><td>8.5</td><td>8.0</td></tr>
+        </tbody>
+      </table>
+      <div class="sources">
+        <p class="sources-label">Sources cited by AI platforms:</p>
+        <ul>
+          <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">Insights;Gate</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qbn.world/wp-content/uploads/2023/03/Standardization-Roadmap-on-Quantum-Technologies.pdf" target="_blank">QBN</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb+8</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology" target="_blank">venturelab+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology" target="_blank">venturelab</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html" target="_blank">University of Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami+4</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf" target="_blank">cosylab+4</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf" target="_blank">cosylab</a> <span class="source-ai">(Perplexity)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>3. Technology Readiness &amp; Traction</h2>
+      <p class="score">Weighted Score: 2.9 / 10</p>
+      <table class="score-table">
+        <thead>
+          <tr><th>Dimension</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th></tr>
+        </thead>
+        <tbody>
+        <tr><td class="prompt-label">Product readiness vs. competitors</td><td>1.0</td><td>8.5</td><td>7.0</td></tr>
+        <tr><td class="prompt-label">Sales &amp; partnerships</td><td>1.0</td><td>1.0</td><td>3.0</td></tr>
+        </tbody>
+      </table>
+      <div class="sources">
+        <p class="sources-label">Sources cited by AI platforms:</p>
+        <ul>
+          <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.qzabre.com/" target="_blank">qzabre.com</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+3</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.seedtable.com/best-quantum-sensor-startups" target="_blank">seedtable+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.seedtable.com/best-quantum-sensor-startups" target="_blank">seedtable</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve.vc</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+3</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6" target="_blank">linkedin+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.gminsights.com/industry-analysis/quantum-sensors-market" target="_blank">gminsights</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6" target="_blank">linkedin</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.gminsights.com/industry-analysis/quantum-sensors-market" target="_blank">gminsights</a> <span class="source-ai">(Perplexity)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    <section>
+      <h2>4. Investor Perception &amp; Conviction</h2>
+      <p class="score">Weighted Score: 5.3 / 10</p>
+      <table class="score-table">
+        <thead>
+          <tr><th>Dimension</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th></tr>
+        </thead>
+        <tbody>
+        <tr><td class="prompt-label">Quality of VCs on cap table</td><td>1.0</td><td>7.5</td><td>1.5</td></tr>
+        <tr><td class="prompt-label">10x potential</td><td>10.0</td><td>10.0</td><td>3.0</td></tr>
+        <tr><td class="prompt-label">Investor reinvestment likelihood</td><td>6.5</td><td>8.5</td><td>3.0</td></tr>
+        </tbody>
+      </table>
+      <div class="sources">
+        <p class="sources-label">Sources cited by AI platforms:</p>
+        <ul>
+          <li><a href="https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://en.wikipedia.org/wiki/Runa_Capital" target="_blank">Wikipedia</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.quantonation.com/" target="_blank">Quantonation</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+1</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.seedtable.com/startups/Qnami-39P3AD3" target="_blank">Seedtable</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+6</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://crustdata.com/profiles/company/qnami" target="_blank">crustdata</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://crustdata.com/profiles/company/qnami" target="_blank">crustdata</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://nordic9.com/news/qnami-to-raise-chf-4-million-series-a-financing-round-led-by-venture-capital-funds-runa-capital-and-sit-capital/" target="_blank">Nordic 9</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://www.seedtable.com/startups/Qnami-39P3AD3" target="_blank">Seedtable</a> <span class="source-ai">(ChatGPT)</span></li>
+          <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin" target="_blank">linkedin+2</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect</a> <span class="source-ai">(Perplexity)</span></li>
+          <li><a href="https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin" target="_blank">linkedin</a> <span class="source-ai">(Perplexity)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>All Sources Referenced</h2>
+      <p>Sources cited by AI platforms when evaluating Qnami. Sources appearing multiple times were referenced across different prompts or platforms.</p>
+      <ul class="global-sources">
+        <li><a href="https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html" target="_blank">University of Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://scholar.google.com/citations%3Fuser%3DVfmk0xIAAAAJ%26hl%3Den" target="_blank">Google Scholar</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.insidequantumtechnology.com/news-archive/mathieu-munsch-ceo-co-founder-qnami-will-speak-at-iqt-nyc/" target="_blank">Inside Quantum Technology</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qnami.ch/about-us/team/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.pnas.org/doi/10.1073/pnas.0507655102" target="_blank">pnas+3</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.samwell.ai/blog/what-is-a-good-h-index" target="_blank">samwell+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.pnas.org/doi/10.1073/pnas.0507655102" target="_blank">pnas</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.samwell.ai/blog/what-is-a-good-h-index" target="_blank">samwell</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://invest.baselarea.swiss/wp-content/uploads/sites/3/2022/03/2024-Ecosystem-series-Quantum-technology-in-the-Basel-Area.pdf" target="_blank">Invest in Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qnami.ch/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qnami.ch/about-us/company/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/" target="_blank">Horiba</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/" target="_blank">quantumzeitgeist+4</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://quantumzeitgeist.com/qnami-partners-with-quantum-design-to-expand-quantum-sensing-technology-to-east-asia/" target="_blank">quantumzeitgeist</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://runacap.com/companies/qnami/" target="_blank">Runa Capital</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qnami.ch/about-us/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch" target="_blank">qnami+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://defencefinancemonitor.substack.com/p/qnami-strategic-technological-company" target="_blank">defencefinancemonitor.substack</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">Insights;Gate</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qbn.world/wp-content/uploads/2023/03/Standardization-Roadmap-on-Quantum-Technologies.pdf" target="_blank">QBN</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb+8</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology" target="_blank">venturelab+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://insights.greyb.com/qnami-patents/" target="_blank">insights.greyb</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.venturelab.swiss/Qnami-raises-CHF-4-million-to-advance-its-patented-quantum-microscope-technology" target="_blank">venturelab</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html" target="_blank">University of Basel</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami+4</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf" target="_blank">cosylab+4</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch/quantilever-revolution/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://cosylab.com/wp-content/uploads/2023/08/QNAMI_Case-study.pdf" target="_blank">cosylab</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.qzabre.com/" target="_blank">qzabre.com</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+3</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.seedtable.com/best-quantum-sensor-startups" target="_blank">seedtable+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.seedtable.com/best-quantum-sensor-startups" target="_blank">seedtable</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/" target="_blank">verve.vc</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve+3</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6" target="_blank">linkedin+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.gminsights.com/industry-analysis/quantum-sensors-market" target="_blank">gminsights</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.linkedin.com/posts/qnami_quantum-sensing-activity-7199786235869941760-g7x6" target="_blank">linkedin</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.gminsights.com/industry-analysis/quantum-sensors-market" target="_blank">gminsights</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/" target="_blank">Qnami</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://en.wikipedia.org/wiki/Runa_Capital" target="_blank">Wikipedia</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.quantonation.com/" target="_blank">Quantonation</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+1</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/" target="_blank">qnami</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.verve.vc/blog/qnami-series-a/" target="_blank">verve</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/" target="_blank">The Quantum Insider</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.seedtable.com/startups/Qnami-39P3AD3" target="_blank">Seedtable</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf+6</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://crustdata.com/profiles/company/qnami" target="_blank">crustdata</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.htgf.de/en/qnami-closes-chf-2-6m-seed-financing-round/" target="_blank">htgf</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://crustdata.com/profiles/company/qnami" target="_blank">crustdata</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://nordic9.com/news/qnami-to-raise-chf-4-million-series-a-financing-round-led-by-venture-capital-funds-runa-capital-and-sit-capital/" target="_blank">Nordic 9</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://www.seedtable.com/startups/Qnami-39P3AD3" target="_blank">Seedtable</a> <span class="source-ai">(ChatGPT)</span></li>
+        <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin" target="_blank">linkedin+2</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://i3connect.com/company/qnami" target="_blank">i3connect</a> <span class="source-ai">(Perplexity)</span></li>
+        <li><a href="https://www.linkedin.com/pulse/why-matters-who-your-lead-investor-jason-m-lemkin" target="_blank">linkedin</a> <span class="source-ai">(Perplexity)</span></li>
+      </ul>
+    </section>
+
+    <footer class="memo-footer">
+      This memo reflects AI-based perception as of January 2026, derived solely from public information.<br>
+      It is intended to support strategic discussion, not to assess internal quality.
+    </footer>
+  </article>
+</body>
+</html>

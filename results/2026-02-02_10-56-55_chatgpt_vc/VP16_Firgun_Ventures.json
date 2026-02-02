@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP16",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Here’s a brutally honest assessment of Firgun Ventures’s signaling power in the quantum ecosystem as of early 2026 — based on publicly available information:\n\n📊 Signaling Score: 5 out of 10\n\nExplanation (200 words):\n\nFirgun Ventures is a brand‑new London‑based VC firm launched in 2025 with a dedicated fund targeting Series A/B quantum technology companies — a real niche between early seed grants and later institutional rounds that many quantum startups struggle to access. It completed a first close at about $70 million toward a $250 million target, anchored by the Qatar Investment Authority (QIA) and supported by family offices and Ilyas Khan (founder of Quantinuum) — a strong institutional endorsement that boosts credibility among sophisticated investors. \nMenlo Times\n+1\n\nHowever, Firgun is still pre‑portfolio (its public site lists no published investments yet), meaning it hasn’t yet generated track record signals like notable exits, follow‑on syndicates with blue‑chip VCs, or major enterprise/government customer wins. That limits both ecosystem proof and enterprise purchasing confidence — many governments and large corporate buyers still lean on well‑established investors to validate deep‑tech startups. Additionally, industry recognition currently stems largely from media and advisory board positioning rather than observable outcomes. \nFirgun Ventures\n\nIn short: strong founders and institutional backing give it early credibility, but actual signaling power is unproven in practice — this places it in the middle of the trust spectrum today.",
+  "timestamp": "2026-02-02T11:03:08.985923+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.menlotimes.com/post/firgun-ventures-launches-250-million-quantum-fund-closes-first-70-million-backed-by-qatar-investm",
+      "title": "Menlo Times\n+1",
+      "publisher": "menlotimes.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "Firgun Ventures",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}
