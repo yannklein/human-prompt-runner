@@ -2,6 +2,7 @@ import os
 import json
 import re
 from html import escape
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -393,7 +394,12 @@ def create_vc_spider_chart_from_analysis_csv(analysis_csv_path):
     ax.yaxis.grid(True)
 
     plt.tight_layout()
-    plt.show()
+
+    chart_path = analysis_csv_path.replace(".csv", "_spider.png")
+    fig.savefig(chart_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Spider chart saved to {chart_path}")
+    return chart_path
 
 
 def generate_vc_memo_html(
@@ -817,11 +823,31 @@ not to replace direct investor diligence.
     return output_file
 
 
+def find_latest_vc_folder(platform_suffix, results_dir="results"):
+    """Find the most recent results folder for a given VC platform suffix.
+
+    Looks for folders ending with e.g. '_chatgpt_vc', '_gemini_vc', '_perplexity_vc'
+    and returns the one with the latest timestamp.
+    """
+    results_path = Path(results_dir)
+    if not results_path.exists():
+        return None
+    matching = sorted(
+        [d for d in results_path.iterdir() if d.is_dir() and d.name.endswith(f"_{platform_suffix}")],
+        key=lambda d: d.name,
+        reverse=True,
+    )
+    return str(matching[0]) if matching else None
+
+
 if __name__ == "__main__":
-    # Example usage — update folder paths to match your VC evaluation runs
-    gemini_folder = "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/results/2026-02-02_10-56-55_gemini_vc"      # e.g. "results/2026-02-01_10-00-00_gemini_vc"
-    perplexity_folder = "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/results/2026-02-02_10-56-55_perplexity_vc"  # e.g. "results/2026-02-01_11-00-00_perplexity_vc"
-    chatgpt_folder = "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/results/2026-02-02_10-56-55_chatgpt_vc"     # e.g. "results/2026-02-01_12-00-00_chatgpt_vc"
+    gemini_folder = find_latest_vc_folder("gemini_vc")
+    perplexity_folder = find_latest_vc_folder("perplexity_vc")
+    chatgpt_folder = find_latest_vc_folder("chatgpt_vc")
+
+    print(f"Gemini folder:    {gemini_folder}")
+    print(f"Perplexity folder: {perplexity_folder}")
+    print(f"ChatGPT folder:   {chatgpt_folder}")
 
     # 1. Combine results from all platforms
     combined_df, combined_file = extract_vc_results_from_multiple_folders(
