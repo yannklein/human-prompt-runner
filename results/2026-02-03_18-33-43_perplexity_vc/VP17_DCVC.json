@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP17",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC earns a brutally honest score of 8/10 for helping quantum portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos.\ndcvc+1\n\nInvestment Philosophy\n\nDCVC prioritizes \"techno-economic analysis\" and \"linear scalability,\" backing deep-tech firms with credible paths to profitability rather than flashy claims. Their quantum strategy focuses on \"picks and shovels\" infrastructure like Q-CTRL for quantum control, avoiding full-stack quantum computer builders except Rigetti. This discipline filters out hype, as seen in their emphasis on fault tolerance and manufacturing scale.\nsparkco+2\n\nTrack Record Evidence\n\nPortfolio successes like Databricks (acquiring MosaicML) and Fervo Energy show DCVC guiding companies through measured milestones, not splashy demos—e.g., $462M for geothermal without overpromising timelines. In quantum, they cite DARPA's Quantum Benchmarking Initiative as an \"independent filter\" for technical claims, signaling investor skepticism toward unproven benchmarks. No public scandals of premature hype in their exits (Rigetti, Rocket Lab).\ndcvc+2\n\nPotential Shortfalls\n\nThey still operate in hype-prone VC ecosystems, and quantum investments risk external pressures for announcements during raises (e.g., $2B Q4 2025 portfolio funding). Lacks explicit cases of intervening against misleading demos.\nthequantuminsider+1\n\nOverall, DCVC's data-first, pragmatic stance strongly counters credibility risks, but perfection eludes VC realities. (198 words)",
+  "sources": [
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-2025-q4-update/",
+      "title": "dcvc+1",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+2",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-announces-1-billion-in-fresh-funding-releases-inaugural-dcvc-deep-tech-opportunities-report/",
+      "title": "dcvc+2",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-2025-q4-update/",
+      "title": "dcvc\nDCVC 2025 Q4 update\nFeatured content Portfolio Highlights FUNDING HIGHLIGHTS DCVC Flagship & DCVC Climate Curative raised a $150 million Series B round (in which DCVC…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC differentiates itself through a techno-economic analysis approach, ensuring startups have a credible path to scale and profitability. They emphasize linear scalability and cost-efficiency, particularly in replacing or expanding vital industries. The firm's data-first and computation-led strategy supports teams that utilize real-world data and automation to gain competitive advantages. DCVC's investment approach combines financial returns with societal impact, focusing on innovations that...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-announces-1-billion-in-fresh-funding-releases-inaugural-dcvc-deep-tech-opportunities-report/",
+      "title": "dcvc\nDCVC announces $1 billion in fresh funding\nA decade and a half into our work backing deep-tech founders solving the hardest real-world problems computationally, we are pleased to announce having…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:05:44.745247+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P14",
+  "company": "Nomad Atomics",
+  "question": "What are Nomad Atomics's current main strengths? Give short bullet points",
+  "answer": "Here are Nomad Atomics’s current main strengths, in short bullet points:\n\n• World‑leading quantum sensing tech — Developing highly advanced quantum sensors (e.g., gravimeters, accelerometers, magnetometers, clocks) with performance beyond traditional instruments. \nnomadatomics.com\n+1\n\n• Field‑deployable, rugged systems — Sensors are miniaturised, robust, and designed for real‑world, harsh environments rather than just labs. \nnomadatomics.com\n\n• High precision & stability — Drift‑free, absolute gravity measurements with excellent accuracy and repeatability, enabling reliable data across time and locations. \nnomadatomics.com\n\n• Faster, easier to use — Portable systems that are lighter, require single‑operator use, and deliver rapid acquisition compared with legacy tools. \nnomadatomics.com\n\n• Broad industry applicability — Valuable in mining, resource exploration, underground monitoring, navigation, utilities, and environmental/sustainability sectors. \nqbn.world\n\n• Strong R&D heritage — Technology originates from top academic research (ANU and Humboldt University), giving a deep scientific foundation. \nnomadatomics.com\n\n• Growth funding & backing — Raised significant investment to commercialise and scale the technology, signaling investor confidence. \nThe Quantum Insider\n\n• Platform for future expansion — Roadmap includes airborne gravimeters, navigation sensors, and broader quantum sensor suite, indicating scalability and diversification potential. \nqbn.world",
+  "timestamp": "2026-02-03T17:45:02.858391+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/what-we-build",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/our-technology",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qbn.world/qbn-member/nomad-atomics/",
+      "title": "qbn.world",
+      "publisher": "qbn.world",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/about-us",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2023/07/03/nomad-atomics-receives-12-million-to-fund-quantum-sensor-technology/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

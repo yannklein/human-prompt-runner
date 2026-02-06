@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP12",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures rates a 7/10 for providing talent pipeline access in quantum and deep-tech.\nqai-ventures+1\n\nNetwork Strengths\n\nQAI Ventures leverages global hubs in Basel, Calgary, Tokyo, and Singapore to connect startups with top research institutions, national labs, and early industrial adopters. Their accelerator programs explicitly offer mentorship from quantum engineers, AI product leads, researchers, and deep-tech investors, plus access to quantum hardware, testbeds, and prototyping support. Partnerships like the Calgary accelerator (backed by CA$675K from OCIF) and Singapore's EnterpriseSG initiative focus on building talent pipelines through training 54+ individuals, pre-accelerator prototypes, and global expert check-ins.\nkeysfortomorrow+3\n\nEvidence of Impact\n\nPrograms match founders with hands-on mentors who've published patents and scaled companies, aiding recruitment in a \"shallow\" quantum talent pool limited to ~20-25 elite universities (e.g., Oxford, MIT, Delft). They've launched North America's first quantum accelerator in Calgary (March 2025), fostering local-to-global networks for postdocs and engineers. Upcoming Europe (Jan 2026) and North America (April 2026) cohorts emphasize commercialization, IP advice, and industry challenges.\nthequantuminsider+3\n\nHonest Limitations\n\nPublic info shows strong ecosystem-building but lacks specifics on direct placements to labs (e.g., no named postdoc hires or engineer intros from portfolio firms). It's accelerator-heavy, not a dedicated headhunter network like some US VCs with Ivy League benches. Scale feels nascent—focused on early-stage (pre-seed to $2M)—so senior industry access may rely more on Demo Days than proprietary pipelines. Brutally, it's promising regionally but unproven at elite global volumes versus giants like Quantonation.\nqai-ventures+2\n\n(198 words)",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures+1",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://keysfortomorrow.com/en/qai-ventures-quantum-ai-ecosystem/",
+      "title": "keysfortomorrow+3",
+      "publisher": "keysfortomorrow.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/03/24/calgary-invests-up-to-ca675k-to-grow-quantum-talent-and-startups-through-qai-ventures/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://keysfortomorrow.com/en/qai-ventures-quantum-ai-ecosystem/",
+      "title": "keysfortomorrow\nDiscover QAI Ventures - Your Partner in Quantum AI ...\nLearn how QAI Ventures supports startups in the Quantum AI ecosystem with funding, mentorship, and global connections to accelerate growth.",
+      "publisher": "keysfortomorrow.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/03/24/calgary-invests-up-to-ca675k-to-grow-quantum-talent-and-startups-through-qai-ventures/",
+      "title": "thequantuminsider\nCalgary Invests Up To CA$675K To Grow Quantum Talent ...\nOCIF is investing up to CA$675,000 over three years into QAI Ventures to accelerate quantum talent development and support startups.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/03/24/calgary-invests-up-to-ca675k-to-grow-quantum-talent-and-startups-through-qai-ventures/",
+      "title": "thequantuminsider\nCalgary Invests Up To CA$675K To Grow Quantum Talent ...\nOCIF is investing up to CA$675,000 over three years into QAI Ventures to accelerate quantum talent development and support startups.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures\nStartup Funding from Early Stage to Scale - QAI Ventures\nQAI Ventures invests in Quantum Tech and Advanced Computing startups from pre-seed to Series C. Apply for early-stage funding via our accelerator or secure growth capital up to $12M.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:53:29.191662+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

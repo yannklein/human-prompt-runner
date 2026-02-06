@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P15",
+  "company": "Nomad Atomics",
+  "question": "What are Nomad Atomics's current main weaknesses? Give short bullet points",
+  "answer": "Here are Nomad Atomics’s current main weaknesses (short, high‑level bullet points based on typical issues for deep‑tech quantum startups and what’s known about the company:):\n\nLong and costly commercialisation path — quantum sensing technologies (like gravimeters) require extensive R&D and capital before widespread revenue can be realised, slowing scalability and return on investment. \nResearchGate\n\nTechnical complexity and deployment challenges — converting laboratory quantum experiments into rugged, field‑ready hardware is technically difficult and time‑intensive. \n# qt_berlin\n\nHigh capital intensity — deep‑tech hardware startups need significant ongoing funding for development, production, and market expansion. \nResearchGate\n\nSpecialized talent and supply constraints — requires niche quantum physicists and precision engineering skills, which are scarce and expensive. \nResearchGate\n\nMarket adoption uncertainty — end users (mining, geoscience, navigation) may be slow to integrate new quantum hardware, potentially limiting early revenue. \nResearchGate\n\nWould you like a brief comparison to competitors in the quantum sensing space?",
+  "timestamp": "2026-02-03T17:47:00.139166+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.researchgate.net/publication/390107705_Quantum_Startups_Challenges_in_Deep-Tech_Commercialization",
+      "title": "ResearchGate",
+      "publisher": "researchgate.net",
+      "snippet": ""
+    },
+    {
+      "url": "https://berlinquantum.de/en/blog/article/interview-with-dr-christian-freier-nomad-atomics",
+      "title": "# qt_berlin",
+      "publisher": "berlinquantum.de",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

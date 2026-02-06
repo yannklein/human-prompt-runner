@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P4",
+  "company": null,
+  "question": "What are the top 5 Quantum Sensing companies with the best team currently? Give me a 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of the top 5 quantum sensing companies — chosen for strong teams, innovation potential, and industry recognition as of early 2026: \nTracxn\n+1\n\n1️⃣ Qnami – Swiss leader in diamond‑NV based quantum sensors, combining deep physics expertise with commercial products for nanoscale precision imaging and sensing. \nQnami\n\n2️⃣ Q‑CTRL – Australian deep tech company known for strategic quantum control software and field‑ready sensor systems, backed by strong academic founders and engineering teams. \nq-ctrl.com\n\n3️⃣ SBQuantum – Canadian startup with breakthrough diamond quantum magnetometers; recognized for winning innovation competitions and strong research talent. \nQuantum World Congress\n\n4️⃣ ColdQuanta – U.S. quantum tech company with solid team in cold atom sensors and systems with cross‑industry applications. \nMetatech Insights\n\n5️⃣ Nomad Atomics – High‑potential Australian sensing startup focused on novel quantum sensor platforms, attracting growing research interest. \nTracxn\n\nThese companies stand out for team expertise, published innovations, partnerships, and market momentum in quantum sensing technology. \nTracxn",
+  "timestamp": "2026-02-03T17:33:09.714420+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://tracxn.com/d/trending-business-models/startups-in-quantum-sensing/__JNOlEaQN5_FHz3-QLEibtR5__lpnXwcoGpfg7pniz4w/companies",
+      "title": "Tracxn\n+1",
+      "publisher": "tracxn.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/our-work/quantum-sensing",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantumworldcongress.com/news-and-updates/quantum-startup-pitch-competition-2024-euqlids-quantum-sensing-triumphs-in-a-battle-of-groundbreaking-startups",
+      "title": "Quantum World Congress",
+      "publisher": "quantumworldcongress.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.metatechinsights.com/industry-insights/quantum-sensors-market-2439",
+      "title": "Metatech Insights",
+      "publisher": "metatechinsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

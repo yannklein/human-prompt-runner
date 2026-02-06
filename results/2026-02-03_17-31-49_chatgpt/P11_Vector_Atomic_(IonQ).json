@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P11",
+  "company": "Vector Atomic (IonQ)",
+  "question": "How does Vector Atomic (IonQ) differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "How Vector Atomic + IonQ differs from direct competitors (in ≤ 300 words)\n\nVector Atomic is a quantum sensing pioneer that IonQ recently acquired, expanding IonQ’s focus beyond pure quantum computing into precision sensing and timing hardware––including optical atomic clocks, gravimeters, inertial sensors, and ultra‑precise positioning/navigation/timing (PNT) systems. These technologies are field‑validated in demanding defense and space applications and add more than $200 M in U.S. government contracts and dozens of patents to IonQ’s portfolio. \nIonQ\n+1\n\nWhat makes IonQ (with Vector Atomic) unique\n\nFull‑stack quantum platform: IonQ now combines quantum computing (trapped‑ion processors), quantum networking, cryptography/sensing, and precision quantum hardware in one integrated stack. This breadth contrasts with most competitors that focus narrowly on a single segment. \nIonQ\n\nTrapped‑ion computing advantage: IonQ’s quantum computers use trapped ions, noted for high gate fidelity and coherence times relative to superconducting qubit rivals (e.g., Rigetti, IBM), potentially enabling more accurate and reliable computation at lower error rates. \nThe Motley Fool\n+1\n\nGovernment & defense focus: The added sensing suite aligns IonQ with government, aerospace, and national security applications, a vector most competitors don’t serve at this scale. \nLinkedIn\n\nCompared to key competitors\n\nRigetti Computing: Focuses on superconducting qubits and cloud services but lacks an integrated sensing or networking stack; IonQ’s ion‑trap approach claims better coherence/fidelity. \nThe Motley Fool\n\nD‑Wave Quantum: Uses quantum annealing, suitable for specific optimization problems but not general‑purpose computation. IonQ targets general‑purpose quantum algorithms. \nWikipedia\n\nBig‑tech players (IBM/Google): Invest heavily in quantum R&D and cloud access but still largely centered on computing vs IonQ’s multi‑domain quantum ecosystem. \nThe Motley Fool\n\nPsiQuantum & photonic players: Pursue photonic qubits and large‑scale architectures but are earlier stage and not yet commercialized at IonQ’s scale. \nWikipedia\n\nIn summary: IonQ’s integration of Vector Atomic makes it stand out by blending computing, networking, and real‑world quantum sensing into a single commercial platform—broadening use cases and differentiating it from competitors who remain more siloed.",
+  "timestamp": "2026-02-03T17:39:16.681033+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.ionq.com/news/ionq-completes-acquisition-of-vector-atomic-the-global-leader-in-advanced",
+      "title": "IonQ\n+1",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.fool.com/investing/2025/12/18/better-quantum-stock-ionq-vs-rigetti-computing/",
+      "title": "The Motley Fool\n+1",
+      "publisher": "fool.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/michael-baczyk_gqi-focus-report-ionq-consolidates-quantum-activity-7343944872711639040-kv6z",
+      "title": "LinkedIn",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/D-Wave_Systems",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/PsiQuantum",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

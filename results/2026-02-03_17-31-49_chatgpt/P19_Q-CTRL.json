@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P19",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Q-CTRL's ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Ecosystem Score for Q‑CTRL: 7/10\n\nHonest Assessment (200 words):\nQ‑CTRL occupies a critical niche in the broader quantum technology ecosystem as a leading provider of quantum infrastructure software and workforce development tools. Its core value lies in bridging the gap between early quantum hardware and practical utility — a role that is essential but often overlooked compared to headline quantum computing players. Q‑CTRL’s performance‑management, error‑suppression software and autonomous calibration tools are integrated with major hardware platforms, and it participates in partnerships with companies like QuantWare and TreQ to advance system deployment. \nquantware.com\n+1\n\nAdditionally, Q‑CTRL has actively invested in talent and education via Black Opal, which is gaining traction globally (with tens of thousands of users, institutional deployments, and awards), and strategic collaborations with universities and training initiatives worldwide. \nQuantum Zeitgeist\n+1\n This positions the company as infrastructure and skills‑pipeline anchor within the quantum ecosystem rather than a pure hardware or cloud provider. Its global footprint and academic linkages help attract diverse talent.\n\nHowever, the ecosystem itself is still young and fragmented, with intense competition for engineers and researchers. Q‑CTRL’s focus on software and education — while strategically sensible — means it’s down the stack relative to big hardware/cloud players that attract disproportionate talent and capital. The ecosystem’s ability to draw large pools of top‑tier quantum talent is still developing, and Q‑CTRL’s role, though important, doesn’t by itself shift that dynamic. Hence a 7/10: strong foundational position but constrained by broader ecosystem maturity.",
+  "timestamp": "2026-02-03T17:55:38.614971+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://quantware.com/press/quantware-q-ctrl-and-qblox-launch-the-quantum-utility-block----the-fastest-path-to-quantum-utility-for-enterprise-and-research-institutions",
+      "title": "quantware.com\n+1",
+      "publisher": "quantware.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/quantum-computing-education-platform-wins-edtech-award-for-workforce-development/",
+      "title": "Quantum Zeitgeist\n+1",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

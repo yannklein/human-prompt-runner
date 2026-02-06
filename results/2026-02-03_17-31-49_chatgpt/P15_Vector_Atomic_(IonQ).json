@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P15",
+  "company": "Vector Atomic (IonQ)",
+  "question": "What are Vector Atomic (IonQ)'s current main weaknesses? Give short bullet points",
+  "answer": "Here are Vector Atomic (now part of IonQ)’s current main weaknesses (short, high‑level bullet points):\n\nTechnical & product challenges\n\nComplex, sensitive hardware: Quantum sensors (atomic clocks, inertial sensors) rely on delicate components (lasers, vacuum systems) that are hard to miniaturize and maintain outside specialized environments. \nVector Atomic\n\nIntegration complexity: Combining Vector Atomic’s sensing tech with IonQ’s existing quantum stack (computing, networking) requires significant engineering work and carries execution risk. \nQuantum Zeitgeist\n\nDeployment constraints: Quantum sensors often need careful calibration and controlled conditions, making real‑world, rugged field deployment slower and more costly than classical alternatives. \nVector Atomic\n\nMarket & adoption headwinds\n\nHigh cost & niche use cases: Extreme precision systems tend to be expensive, limiting early adoption to government, defense, and specialized industrial users before broader commercial scale. \nVector Atomic\n\nCompetition from classical tech: Many advanced classical navigation and timing systems (GPS, classical INS) are already established; quantum improvements must justify replacing them. \ncgsr.llnl.gov\n\nIndustry‑wide limitations (not specific to Vector Atomic but relevant)\n\nLatency & scaling challenges: Precision quantum sensors can still face practical limitations with size, weight, power, and cost (SWaP‑C) compared with mature classical alternatives. \ncgsr.llnl.gov\n\nR&D and timeline risk: Full commercial impact depends on ongoing R&D and integration progress—timelines can slip as with other quantum technologies. \nQuantum Zeitgeist\n\nThese points reflect known constraints for atomic quantum sensing tech and the broader integration into IonQ’s quantum platform.",
+  "timestamp": "2026-02-03T17:47:45.028496+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://vectoratomic.com/",
+      "title": "Vector Atomic",
+      "publisher": "vectoratomic.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/ionq-completes-acquisition-of-vector-atomic-the-global-leader-in/",
+      "title": "Quantum Zeitgeist",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://cgsr.llnl.gov/sites/cgsr/files/2025-06/Burkey_QS_final.pdf",
+      "title": "cgsr.llnl.gov",
+      "publisher": "cgsr.llnl.gov",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

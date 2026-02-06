@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP16",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC boasts strong signaling power in deep tech, particularly quantum and AI. I'd rate it an 8/10 as a quantum startup founder—solid but not flawless.\n\nLater-Stage Investors\n\nDCVC's track record with exits like Planet Labs and investments in Rigetti signals reliability to VCs like Bessemer or Andreessen, who co-invest in their funds (e.g., DCVC V at $725M). Their data-driven approach and repeat backing of fault-tolerant quantum plays (Atom Computing, IonQ) build trust, treating DARPA validations as key filters. LPs view them as a quality stamp for scaling deep tech.\nthequantuminsider+3\n\nGovernment Buyers\n\nDARPA's Quantum Benchmarking Initiative (advancing 11 firms) aligns with DCVC's skepticism-first lens, positioning them as credible for DoD scrutiny. They focus on \"picks and shovels\" quantum infrastructure over hype, appealing to risk-averse agencies, though direct procurement wins are sparse in public data. No major red flags, but less overt gov't deal flow than In-Q-Tel.\nquantum+2\n\nEnterprise Customers\n\nPortfolio firms praise DCVC's CTO/CIO networks for intros to Fortune 500 buyers, elevating credibility in AI/compute stacks (e.g., AWS precursors). Their equity partner model delivers enterprise-ready tech expertise, but enterprise adoption lags in regulated sectors like water due to slow buyers. Strong for hyperscalers, weaker for conservative corps.\nscores.securityscorecard+2\n\nBrutally, they're elite for tech-savvy followers but lack unicorn-quantity exits to universally de-risk; an 8 reflects proven alpha without universal \"golden ticket\" status. (198 words)\nopen-contracting+1",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/company/dcvc",
+      "title": "quantum+2",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://scores.securityscorecard.io/security-rating/dcvc.com",
+      "title": "scores.securityscorecard+2",
+      "publisher": "scores.securityscorecard.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.open-contracting.org/news/governments-risk-expensive-failures-without-smarter-ai-procurement-new-report/",
+      "title": "open-contracting+1",
+      "publisher": "open-contracting.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/company/dcvc",
+      "title": "quantum\nDCVC - Quantum Computing Company Profile\nLearn about DCVC, a United States-based quantum computing company founded in 2011. DCVC (Data Collective) is a venture capital and private equity firm founded in 2011 and based in San Francisco/Palo Alto, California, led by founders and m...",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://scores.securityscorecard.io/security-rating/dcvc.com",
+      "title": "scores.securityscorecard\nDcvc Cyber Security Rating & Vendor Risk Report | SecurityScorecard\nView Dcvc's cyber security risk rating against other vendors' scores. Explore cyber risks, data breaches, and cybersecurity incidents involving Dcvc",
+      "publisher": "scores.securityscorecard.io",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:03:48.109402+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

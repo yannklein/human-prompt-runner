@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP8",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Think of DCVC’s stance as shifting from “how many bricks” to “how strong is the mortar.” They acknowledge the criticality of mortar (error correction, control, cryogenics) but can improve consistency in publicly linking investments to measurable, multi-factor milestones beyond qubit counts alone.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:46:29.735573+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

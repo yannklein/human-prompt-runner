@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P23",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Q-CTRL is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally honest score: 7.5 / 10\n\nQ‑CTRL is genuinely ahead of most of its software‑only peers in the quantum stack — particularly in quantum control, error suppression, and performance management. Its products (like Fire Opal, Boulder Opal, Ironstone Opal) are being deployed across multiple cloud and hardware providers, and it has demonstrated commercial‑grade quantum advantage, especially in GPS‑denied navigation, which is rare in the industry and even highlighted by TIME Magazine. \nQ-CTRL\n+1\n\nIn the quantum middleware niche, very few companies match its blend of AI‑driven control automation, error mitigation, and real‑world deployments — so relative to many early‑stage startups it rates around a 7.5. Products are integrated with platforms like IBM and Rigetti and partnerships (QuantWare, Keysight) solidify its presence in practical use cases rather than pure research proofs‑of‑concept. \nThe Quantum Insider\n+1\n\nHowever, placing Q‑CTRL at the pinnacle across the whole quantum ecosystem would be premature:\n\nIt doesn’t build hardware, and hardware performance (IonQ, Quantinuum, Infleqtion, etc.) often fundamentally limits what control software can achieve. \nbqpsim.com\n\nBroader competitors in quantum control or software include companies like Riverlane or Quantum Machines (true hardware‑adjacent control stacks) and open‑source toolsets (e.g., Qiskit with built‑in error mitigation) that have larger user bases and ecosystem momentum. \nReddit\n\nQ‑CTRL’s products are strong for specific tasks (error mitigation, calibrated performance), but they don’t yet represent a full-stack quantum solution — others are pushing toward more integrated developer environments and hybrid orchestration. \nbqpsim.com\n\nBottom line: Q‑CTRL is a leader in its slice of the quantum software stack with real commercial traction, but still behind broader platform players and integrated hardware‑software competitors.",
+  "timestamp": "2026-02-03T18:03:44.318973+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://q-ctrl.com/",
+      "title": "Q-CTRL\n+1",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/06/26/q-ctrl-performance-management-is-now-available-on-rigettis-ankaa-3-quantum-computer/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.bqpsim.com/blogs/quantum-computing-companies",
+      "title": "bqpsim.com",
+      "publisher": "bqpsim.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.reddit.com/r/QuantumComputing/comments/1qfu7v5/quantum_software/",
+      "title": "Reddit",
+      "publisher": "reddit.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.bqpsim.com/blogs/quantum-software-platforms",
+      "title": "bqpsim.com",
+      "publisher": "bqpsim.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP15",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures has a solid reputation for rigorous evaluation in quantum tech investing. They emphasize a disciplined, data-driven approach over flashy hype.\n\nReputation Score\n\n7/10\nkruncher+1\n\nEvaluation Process\n\nQAI Ventures employs a meticulous seven-step investment process, sifting through 100+ applicants per accelerator cohort with inputs from founder interviews, technical assessments, customer validations, and due diligence reports. This generates structured investment memos that evolve with new data, enabling informed decisions backed by organized insights rather than promises. Their use of tools like Kruncher to consolidate siloed data underscores a commitment to thoroughness, recently adding six quantum firms to their portfolio through this method.\nkruncher\n​\n\nNarrative Style\n\nPublic profiles highlight long-term commitment to quantum's extended timelines, focusing on patient capital, ecosystem partnerships, and authentic support rather than transformative moonshots. They champion \"honesty, integrity, and transparency\" explicitly, pushing founders on execution to de-risk foundations without overhyping potential. No evidence of portfolio puffery or aggressive PR emerges; instead, they stress realistic commercialization challenges in deep tech.\nraisebetter+2\n\nPotential Drawbacks\n\nLimited public track record (founded ~2020) means fewer exit examples to prove over-delivery, and quantum's nascent stage inherently involves optimism. Still, their founder-centric scrutiny and global accelerators (Europe, NA, APAC) suggest conservative discipline over hype.\nkeysfortomorrow+1\n\n(198 words)",
+  "sources": [
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher+1",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter+2",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://keysfortomorrow.com/en/qai-ventures-quantum-ai-ecosystem/",
+      "title": "keysfortomorrow+1",
+      "publisher": "keysfortomorrow.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study: QAI Ventures - Kruncher Ai\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study: QAI Ventures - Kruncher Ai\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter\nQAI Ventures - 2025 Investor Profile | Raise Better\nLooking to get funded by QAI Ventures in 2025? Create your profile and get matched to active professional investors. Get started for free!",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://keysfortomorrow.com/en/qai-ventures-quantum-ai-ecosystem/",
+      "title": "keysfortomorrow\nDiscover QAI Ventures - Your Partner in Quantum AI ...\nLearn how QAI Ventures supports startups in the Quantum AI ecosystem with funding, mentorship, and global connections to accelerate growth.",
+      "publisher": "keysfortomorrow.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:00:50.110304+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

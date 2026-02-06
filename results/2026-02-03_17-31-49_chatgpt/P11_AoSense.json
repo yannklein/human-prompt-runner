@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P11",
+  "company": "AoSense",
+  "question": "How does AoSense differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Here’s a concise summary of how AOSense currently differs from its direct competitors in the quantum sensing and precision measurement space (max ~300 words):\n\nCore technology focus:\nAOSense specializes in cold‑atom and atom‑optic based quantum sensors—including inertial navigation units, gravimeters, atomic clocks, and related gyroscopes and accelerometers—leveraging quantum interferometry for extremely high precision and stability unattainable with classical sensors. Its systems are designed for precision navigation without GPS, gravity measurement, and time‑frequency standards for defense and scientific applications. \nshopaosense.com\n+1\n\nTechnology differentiators:\n\nAtom‑optics & cold‑atom techniques: AOSense uses atom interferometry where atoms, manipulated by lasers in vacuum, serve as ultra‑stable references for sensing motion, gravity, and time. This offers potential orders of magnitude better long‑term drift and accuracy than conventional MEMS or optical sensors. \naosense.com\n+1\n\nPerformance in demanding environments: Their sensors target GPS‑denied navigation and defense environments where robustness and precision are critical (e.g., submarines, aerospace), unlike many competitors focused on lighter or less demanding applications. \naosense.com\n\nCompetitor landscape:\n\nQnami and diamond‑NV‑based sensors focus on nanoscale magnetic field sensing and imaging rather than inertial navigation. These excel at magnetic resolution and material characterization but serve different use cases. \nMedium\n\nVescent and Coherent Laser are stronger in precision laser and photonic components but often as broader photonics suppliers rather than full quantum sensor systems. \nCraft.co\n\nHENSOLDT and large defense contractors offer classical and hybrid sensor suites with broader defense integration but may lack AOSense’s specific cold‑atom specialization. \nCraft.co\n\nOther niche players (Apogee Instruments, Campbell Scientific) concentrate on environmental or classical sensing rather than quantum inertial systems. \nrootsanalysis.com\n\nPositioning:\nAOSense is differentiated by its quantum first, physics‑driven approach that bridges advanced research and commercial/defense products—making it a specialist in high‑precision quantum inertial and timing systems versus competitors with broader or different technical focuses. \nshopaosense.com\n+1",
+  "timestamp": "2026-02-03T17:37:51.303890+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://shopaosense.com/i/about-us",
+      "title": "shopaosense.com\n+1",
+      "publisher": "shopaosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com\n+1",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://medium.com/%40bradleysusser/the-future-of-quantum-sensing-emerging-companies-and-why-they-may-go-public-30288afa9222",
+      "title": "Medium",
+      "publisher": "medium.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://craft.co/aosense/competitors",
+      "title": "Craft.co",
+      "publisher": "craft.co",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.rootsanalysis.com/quantum-sensors-market",
+      "title": "rootsanalysis.com",
+      "publisher": "rootsanalysis.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

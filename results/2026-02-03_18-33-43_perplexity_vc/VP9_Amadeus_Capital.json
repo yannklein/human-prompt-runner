@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP9",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital's fund structure shows moderate compatibility with quantum's 10–15-year timelines, but it's far from ideal for a founder like me betting on breakthroughs that could take decades.\n\nScore: 5/10\n\nAmadeus Capital Partners manages deeptech-focused funds around $150M, like their 2021 Amadeus V Technology Fund, which explicitly targets quantum technologies alongside AI and materials. Their standard 10-year VC lifecycle aligns with deeptech norms cited in industry reports (10-15 years for patient capital), but this forces pressure to exit via IPOs or acquisitions before quantum hardware/software fully matures—often by year 7-8 to return LP capital. They've invested in quantum plays like Riverlane (quantum software) and Nu Quantum (communications tech), proving sector interest and follow-on willingness, with over $1B deployed across 22 funds and 90 exits.\nglobalventuring+4\n\nSmaller fund sizes limit reserve allocation for marathon rounds, unlike mega-VC or sovereign funds ($500M+) better suited for quantum's capital intensity. Vintage years (e.g., 2021-2023) mean current funds are mid-cycle by 2026, risking rushed timelines if LPs demand distributions amid market volatility. Positively, their seed/Series A focus and technical due diligence support early quantum derisking, but as a founder, I'd worry about follow-on droughts—brutally, they're opportunistic deeptech players, not quantum evangelists with extended horizons. Seek them for early validation, but line up patient co-investors like BPC or family offices for the long haul. (198 words)\ncbinsights+1",
+  "sources": [
+    {
+      "url": "https://globalventuring.com/university/amadeus-closes-153m-fund/",
+      "title": "globalventuring+4",
+      "publisher": "globalventuring.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/amadeus-capital-partners",
+      "title": "cbinsights+1",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://globalventuring.com/university/amadeus-closes-153m-fund/",
+      "title": "globalventuring\nAmadeus closes $153m fund -\nAmadeus V Technology Fund has closed with $153m in funding, having already backed multiple spinouts.",
+      "publisher": "globalventuring.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/amadeus-capital-partners",
+      "title": "cbinsights\nGame Changers 2018\nAmadeus Capital Partners operates as a technology investor focused on the venture capital sector. Use the CB Insights Platform to explore Amadeus Capital Partners's full profile.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:47:22.424716+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

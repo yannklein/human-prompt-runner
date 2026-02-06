@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P14",
+  "company": "Vector Atomic (IonQ)",
+  "question": "What are Vector Atomic (IonQ)'s current main strengths? Give short bullet points",
+  "answer": "Here are Vector Atomic (now part of IonQ) current main strengths in short bullet points:\n\nCore Technology & Product Strengths\n\nSpecializes in advanced quantum sensing, especially precision atomic clocks and inertial sensors. \nIonQ\n\nUltra‑precise timing with picosecond‑level accuracy — up to ~1,000× improvement over traditional GPS. \nIonQ\n\nDeployable field‑validated systems (gravimeters, gyros, airborne & space clocks) proven in real‑world environments. \nThe Quantum Insider\n\nStrong positioning, navigation, and timing (PNT) solutions with resistance to signal jamming and cyber threats. \nYahoo Finance\n\nIntegration & Strategic Value\n\nNow integrated into IonQ’s broader full‑stack quantum platform (computing + networking + sensing). \nMarket Chameleon\n\nAdds to IonQ’s existing 1,000+ patent portfolio with 29 new patents, strengthening IP leadership. \nIonQ\n\nPart of enhanced capabilities for defense, aerospace, and government applications (e.g., Dept. of Defense programs). \nMarket Chameleon\n\nTalent & Market Position\n\nBrings over 75 experienced scientists and engineers specialized in quantum technologies. \nIonQ\n\nProven track record with significant U.S. government contracts and national security relevance. \nIonQ\n\nIf you want, I can also summarize how these strengths compare with other quantum sensing companies.",
+  "timestamp": "2026-02-03T17:45:49.896122+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.ionq.com/news/ionq-completes-acquisition-of-vector-atomic-the-global-leader-in-advanced",
+      "title": "IonQ",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ionq.com/news/ionq-completes-acquisition-of-vector-atomic-the-global-leader-in-advanced",
+      "title": "IonQ",
+      "publisher": "ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/10/08/ionq-completes-acquisition-of-vector-atomic",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://finance.yahoo.com/news/ionq-announces-intent-acquire-vector-110500046.html",
+      "title": "Yahoo Finance",
+      "publisher": "finance.yahoo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://marketchameleon.com/articles/b/2025/10/7/ionq-expands-quantum-leadership-with-vector-atomic-acquisition-new-capabilities-set-for-defense-space-and-beyond",
+      "title": "Market Chameleon",
+      "publisher": "marketchameleon.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

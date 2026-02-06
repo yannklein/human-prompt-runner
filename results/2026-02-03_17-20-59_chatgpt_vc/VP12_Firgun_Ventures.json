@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP12",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score (1–10): 6/10\n\nHonest Evaluation:\nFirgun Ventures appears to be a specialist early‑growth investor focused on quantum technology with a narrative built around bridging the gap between research and commercialization — which is valuable in deep tech — but its actual demonstrated ability to deliver a robust talent pipeline of top research labs, postdocs, and senior industry engineers is still largely aspirational rather than proven. Firgun’s team does include academic and scientific credibility — for example, Prof. Mete Atatüre, Head of Cambridge University’s Cavendish Lab is listed as an academic advisor — and a broader advisory council referencing connections to Cambridge, Oxford, MIT, Google, and the European Investment Bank/Wellcome Trust ecosystem. \nfirgun.vc\n\nHowever, compared to established deep‑tech investors with long histories of placing talent (e.g., VC funds embedded in Silicon Valley or longstanding UK deep‑tech syndicates), Firgun is brand new (founded in 2025) with a team of relatively few core partners and advisors. \nLinkedIn\n This means its network depth at this point likely relies on personal reputation and advisory council prestige, not on a track record of moving people between top labs, postdocs, and industry roles. While co‑founder Zeynep Korutürk’s extensive connections from Goldman Sachs and prior angel investing (including backing Quantinuum) signal useful breadth, the firm still must prove that it can consistently funnel exceptional talent into portfolio companies. \nfirgun.vc\n\nIn short: strong potential, respectable academic links, but limited demonstrated pipeline execution to date, hence a mid‑range score.",
+  "timestamp": "2026-02-03T17:26:24.176496+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://uk.linkedin.com/company/firgun-ventures",
+      "title": "LinkedIn",
+      "publisher": "uk.linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

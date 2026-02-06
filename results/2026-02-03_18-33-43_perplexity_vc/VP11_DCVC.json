@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP11",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC's LP base shows strong comfort with long-horizon, deep-tech investments, demonstrated by their repeated ability to close large funds dedicated to patient capital plays in AI, climate tech, quantum, and biotech.\nsparkco+1\n\nScore: 9/10\n\nDCVC has raised over $4B across 13 funds, including the $725M DCVC V in 2024 explicitly for early-stage deep tech tackling $20T+ GDP opportunities—nearly double prior vintages—signaling LP confidence in multi-year bets despite deep tech's capex intensity and 5+ year unicorn timelines. Their sector-specific vehicles like DCVC Bio ($350M in 2020) and DCVC Climate further prove LP alignment with high-risk, long-horizon themes, as they back capex-light early models scaling to steel-in-ground realities in nuclear, robotics, and computational biology. While public LP details are scarce (typical for VC opacity), their fundraising success amid 2022-2023 deep tech funding droughts—when many LPs fled to lower-risk software—implies patient capital from institutions tolerant of quantum/space/biotech timelines. No explicit mentions of evergreen funds (e.g., endowments), sovereign wealth, or corporates emerge, but their scale and focus suggest such backers over jittery family offices. Brutal caveat: Without transparent LP lists, this infers from actions; a true 10/10 needs named sovereigns like Temasek. Still, their track record crushes most deep-tech peers. (198 words)\ntechcrunch+3\nYouTube\n​",
+  "sources": [
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+1",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://techcrunch.com/2023/01/24/a-vcs-perspective-on-deep-tech-fundraising-in-q1-2023/",
+      "title": "techcrunch+3",
+      "publisher": "techcrunch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency … Analyze the composition of DCVC's portfolio,...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency … Analyze the composition of DCVC's portfolio,...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://techcrunch.com/2023/01/24/a-vcs-perspective-on-deep-tech-fundraising-in-q1-2023/",
+      "title": "techcrunch\nA VC's perspective on deep tech fundraising in Q1 2023\nAs realizing big exits becomes difficult, deep tech startups transforming entire industries offer some of the only paths to \"10x exits.\"",
+      "publisher": "techcrunch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://techcrunch.com/2023/01/24/a-vcs-perspective-on-deep-tech-fundraising-in-q1-2023/",
+      "title": "techcrunch\nA VC's perspective on deep tech fundraising in Q1 2023\nAs realizing big exits becomes difficult, deep tech startups transforming entire industries offer some of the only paths to \"10x exits.\"",
+      "publisher": "techcrunch.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:52:03.206531+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

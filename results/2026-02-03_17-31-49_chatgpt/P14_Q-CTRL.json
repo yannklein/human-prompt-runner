@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P14",
+  "company": "Q-CTRL",
+  "question": "What are Q-CTRL's current main strengths? Give short bullet points",
+  "answer": "Here are Q-CTRL’s current main strengths — concise and to‑the‑point:\n\nWorld‑leading quantum control expertise — pioneering quantum infrastructure software that dramatically reduces errors and stabilizes quantum systems. \nq-ctrl.com\n\nAI‑powered performance management — uses physics‑informed AI to boost real hardware performance in computing and sensing beyond what competitors deliver. \nq-ctrl.com\n+1\n\nDelivered real quantum advantage — demonstrated commercial quantum advantage (e.g., GPS‑free navigation and enhanced computing tasks) in real environments. \nq-ctrl.com\n+1\n\nStrong product ecosystem — enterprise products (Fire Opal, Boulder Opal, Ironstone Opal, Black Opal) for error suppression, autonomous calibration, sensing, and education. \nq-ctrl.com\n\nBroad applicability across sectors — impact in defense, autonomous navigation, optimization, scientific research and industry partnerships. \nq-ctrl.com\n+1\n\nStrategic partnerships and recognition — collaborations with major industry players and recognition in awards and media. \nprnewswire.com\n\nBridging science to real‑world tech — emphasis on software that makes quantum tech useful and deployable now, not just in theory. \nq-ctrl.com",
+  "timestamp": "2026-02-03T17:45:25.754294+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://q-ctrl.com/",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/products",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.prnewswire.com/in/news-releases/quantum-ai-global-and-q-ctrl-enter-into-strategic-partnership-to-advance-quantum-technology-in-india-302220695.html",
+      "title": "prnewswire.com",
+      "publisher": "prnewswire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/about",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

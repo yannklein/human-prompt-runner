@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P23",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Qnami is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally honest VC‑style score for Qnami vs competitors (1–10): 6/10\n\nExplanation (≈200 words):\nQnami is genuinely among the early movers in quantum sensing instrumentation — it commercialized the first scanning NV magnetometer (ProteusQ™), a diamond‑NV‑based quantum microscope delivering atomic‑scale magnetic imaging that has been adopted by ~10+ research institutions globally. \nThe Quantum Insider\n+1\n The technology itself — exploiting single‑spin NV centers in diamond for nanoscale sensing — is real, validated, and academically respected, not just a paper claim. \nEE Times\n Partnerships and distribution deals (e.g., HORIBA global distribution, Quantum Design in Asia) demonstrate early commercial traction and ecosystem integration. \nIBO\n\nHowever, as a VC analyst you’re scoring execution, product maturity, and competitive position — and on that front Qnami still trails. It’s niche, expensive, and early market: ProteusQ’s use cases are largely confined to advanced research and R&D labs, not broad commercial or industrial adoption yet. \nMobility Foresights\n Other players in the quantum sensing/magnetometer space (e.g., Bruker, Omicron, other NV‑tool manufacturers, plus broader quantum sensor startups) are active, and some offer alternative instruments or approaches that compete technically or on price/performance. \nMobility Foresights\n Moreover, scaling beyond specialized instruments into industrial, semiconductor, or defense markets will require additional product diversification, miniaturization, and volume manufacturing — areas where Qnami is still early. Given that, a 6/10 reflects strong tech foundation but limited commercial scale and growing competition.",
+  "timestamp": "2026-02-03T18:02:27.225950+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.eetimes.com/quantum-sensing-unlocking-new-opportunities/",
+      "title": "EE Times",
+      "publisher": "eetimes.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://instrumentbusinessoutlook.com/press-release/horiba-signs-strategic-cooperation-agreement-qnami-accelerate-scanning-nv-magnetometry-developments-start-global-distribution-first-quantum-microscope-qnami-proteusq/",
+      "title": "IBO",
+      "publisher": "instrumentbusinessoutlook.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://mobilityforesights.com/product/scanning-nv-magnetometry-market",
+      "title": "Mobility Foresights",
+      "publisher": "mobilityforesights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

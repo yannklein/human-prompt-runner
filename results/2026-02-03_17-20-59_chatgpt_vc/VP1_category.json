@@ -1,0 +1,72 @@
+{
+  "prompt_id": "VP1",
+  "vc": null,
+  "question": "Who are the top 10 VCs investing in Quantum Sensing currently? Give a 100-word explanation per VC and the rank.",
+  "answer": "Here’s a ranked list of the top 10 venture capital investors currently active in investing in quantum sensing (and broader quantum technologies where sensing plays a material role) — with a 100-word explanation per VC and rank. The ranking reflects focus on quantum tech (especially sensing), deal activity, dedicated funds, and industry ecosystem influence (including multi-stage backing and global footprint).\n\n1. Quantonation\n\nQuantonation is the first VC fund dedicated exclusively to quantum technologies, including quantum sensing, computing, networks, and deep physics. Founded in France with a global investment scope, it backs early through Series A companies shaping disruptive physics-based innovations. Quantonation’s thesis emphasizes ultra-precise sensing and breakthrough technologies born in academic labs, making it a signal investor for ventures leveraging entanglement, atomic precision, or quantum measurement principles. Its portfolio includes companies across hardware and applied physics domains. Quantonation’s deep scientific expertise (partners with PhDs in physics) and ecosystem activities (e.g., quantum studios) differentiate it from generalist firms. \nQuantonation\n+1\n\n2. 55 North\n\n55 North is the world’s largest venture capital fund focused entirely on the quantum stack, spanning quantum computing, communication, and sensing. With a €300 M ($320 M+) fund and stage-agnostic strategy, it invests globally in technologies reshaping industry through quantum advantage. The firm has already backed major rounds, including IQM’s Series B and Kiutra’s Series A-2. Its founding partners are experienced deep-tech investors, and the fund anchors strategic innovation by linking startups with corporate labs and governments. 55 North’s pure-play quantum focus and substantial capital make it a cornerstone investor for quantum sensing startups embedded in broader quantum ecosystems. \n55n.vc\n+1\n\n3. QAI Ventures\n\nQuantumAI Ventures (“QAI Ventures”) is a specialized VC and ecosystem builder targeting pure quantum tech, including quantum sensing, computing, communications, and AI-integrated quantum innovations. With both early-stage funds and growth-stage capital, QAI backs startups from lab to commercial scale and supports ecosystem infrastructure. Operating across Europe, North America, and Asia-Pacific, QAI sources global deal flow and fosters co-investment relationships. Its thesis combines technical due diligence with mentoring and capital structures tied to milestones, helping deep-tech founders de-risk complex hardware and sensing platforms. QAI’s portfolio includes companies tackling core quantum measurement and computation challenges. \nQAI Ventures\n+1\n\n4. Ten Eleven Ventures\n\nTen Eleven Ventures is a U.S. growth-stage VC known for strategic investments in deep and frontier technologies — notably backing IQM Quantum Computers’ significant Series B financing. Its focus spans cybersecurity, core computing platforms, and frontier science, including quantum hardware and sensing components embedded in broader systems. By leading major rounds for hardware innovators, Ten Eleven provides not just capital but strategic board engagement and scaling support critical for high-capital quantum ventures transitioning from research to commercial deployment. Its backing signals confidence in technologies that can underpin precise measurement and timing systems. \nTen Eleven\n\n5. Andreessen Horowitz (a16z)\n\nAndreessen Horowitz is a major U.S. technology VC with active investments in quantum startups spanning computing, software, and sensing-adjacent technologies. a16z’s Deep Tech and Bio + Health funds have backed companies leveraging quantum-enabled measurement techniques and fundamental physics breakthroughs. Though not solely quantum-focused, its size, network and willingness to lead or co-lead large rounds — especially in early and growth stages — make it a top investor choice in quantum sensing opportunities. Its breadth helps portfolio companies scale go-to-market, which is critical for quantum sensing applications in life sciences and industrial automation. \nquantumpowerhouse.com\n\n6. Playground Global\n\nPlayground Global is an early-stage VC that invests in deep technologies including next-gen compute and quantum tech. It has backed PsiQuantum, a high-profile photonic quantum computing venture with potential spin-off impacts for photonic sensing platforms. Playground focuses on technical founders and high-risk, high-impact innovations where precision measurement and novel physics underpin transformative products. Its early support of quantum computing efforts positions it to also influence sensing-oriented spin-outs and adjacent opportunities that emerge from core research. \nWikipedia\n\n7. Earlybird Venture Capital\n\nEarlybird is a prominent European VC that participates in deep-tech rounds including quantum startups like QuantumDiamonds (quantum sensing). While more generalist than pure-play quantum funds, Earlybird’s track record in backing frontier hardware and science-driven companies in Europe gives it strong influence in the quantum sensing niche. Its involvement often unlocks follow-on capital and corporate partnerships, accelerating commercialization paths for measurement-centric quantum tech addressing semiconductors, health, and materials. \niqcapital.vc\n+1\n\n8. Lux Capital\n\nLux Capital is a U.S. VC known for investing in physical sciences and frontier technologies, including quantum computing and advanced sensing technologies. While not exclusively focused on sensing, its portfolio spans physics-driven companies with novel measurement capabilities and instrumentation. Lux’s emphasis on deep tech and its ability to support capital-intensive startups through multiple rounds makes it a valuable backer for quantum sensing ventures pushing into commercial markets. It often co-invests with specialized partners, balancing technical risk with commercial potential. \nEllty\n\n9. Amadeus Capital Partners\n\nAmadeus Capital is a European deep-tech VC with a strong record in quantum investments — particularly hardware and infrastructure where sensing technologies often accompany computing capabilities (e.g., Oxford Quantum Circuits, IQM). Its focus on early- to mid-stage science-driven companies and deep domain expertise helps nascent quantum sensing teams navigate tech and business challenges. Amadeus’s investment history situates it as a reliable partner in the quantum tech ecosystem, especially in Europe. \nEllty\n\n10. 2Xn (2xN)\n\n2Xn is a London-based VC emerging as a quantum-focused investor (often co-investing with other funds) with a portfolio including companies like Quantinuum and other quantum-tech ventures where sensing plays a role. While smaller than some pure-play funds, 2Xn’s deep specialization and co-investment network with broader VCs boost its impact on quantum sensing and related technologies. By focusing on early funding rounds with physics-based founders, it strengthens the nascent sensing ecosystem. \nDanish Quantum Community\n\nSummary\n\nThese VCs are ranked based on quantum focus, deal volume, strategic impact on sensing technologies, and ecosystem influence. Pure-play funds (Quantonation, 55 North, QAI Ventures) lead due to dedicated mandates; strategic and general deep-tech funds follow for breadth and capital power. Keep in mind that quantum sensing investment often overlaps quantum computing and networking funding, so many investors participate across the stack rather than exclusively in sensing. \nQuantum Navigator\n\nIf you’d like, I can provide specific recent portfolio examples (companies in sensing each VC has backed) with funding amounts and technologies.",
+  "timestamp": "2026-02-03T17:21:26.521169+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.quantonation.com/",
+      "title": "Quantonation\n+1",
+      "publisher": "quantonation.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.55n.vc/",
+      "title": "55n.vc\n+1",
+      "publisher": "55n.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/quantum-fund",
+      "title": "QAI Ventures\n+1",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.1011vc.com/news/iqm-quantum-computers-raises-over-300-million-in-series-b-funding-round-led-by-u-s-investor-ten-eleven-ventures-with-strong-support-from-tesi/",
+      "title": "Ten Eleven",
+      "publisher": "1011vc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantumpowerhouse.com/2025/04/quantum-startups-vc-trends-whos.html",
+      "title": "quantumpowerhouse.com",
+      "publisher": "quantumpowerhouse.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Playground_Global",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iqcapital.vc/news/quantumdiamonds-raises-eu7m-seed-funding-for-quantum-sensing-technology",
+      "title": "iqcapital.vc\n+1",
+      "publisher": "iqcapital.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ellty.com/blog/quantum-computing-investors",
+      "title": "Ellty",
+      "publisher": "ellty.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://dqc.dk/new-quantum-focused-venture-capital-firm-in-town/",
+      "title": "Danish Quantum Community",
+      "publisher": "dqc.dk",
+      "snippet": ""
+    },
+    {
+      "url": "https://entangledfuture.com/investors/",
+      "title": "Quantum Navigator",
+      "publisher": "entangledfuture.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

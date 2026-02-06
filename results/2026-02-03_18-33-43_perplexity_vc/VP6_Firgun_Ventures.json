@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Consistency and scale: The fund’s announced target size ($250M) and first close of $70M with QIA backing are credible signals of institutional scale and ambition, which matter for deep-tech due diligence and follow-on rounds. The absence of a long, transparent track record of multiple successful exits or a diversified portfolio across the exact domains you asked about reduces the reliability of a higher score.\nYouTube\n​\npostquantum\n​",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc",
+      "title": "firgun\nFirgun Ventures | Quantum-First VC Firm Investing in Series A ...\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc",
+      "title": "firgun\nFirgun Ventures | Quantum-First VC Firm Investing in Series A ...\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:41:30.711206+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P18",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Nomad Atomics have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Academic Strength Rating for Nomad Atomics — 4/10\n\nScore: 4/10\n\nExplanation (≈200 words):\nNomad Atomics is a deep‑tech startup spun out of research at the Australian National University (ANU) by physicists with PhDs in atomic physics and quantum sensing, and the team has real scientific chops in precision measurement and cold atom technology — a non‑trivial foundation for quantum gravimetry and accelerometry work. \nblackbird.vc\n+1\n\nHowever, the academic strength of the team — specifically as measured by traditional scholarly output like *h‑indices, citation impact, publication frequency in top venues, or a record of high‑impact papers — appears limited or opaque. There’s indication that team members like Kyle Hardman have a Google Scholar profile with citations and some visibility, but available data does not show high citation counts or h‑indices in the elite range typical of standout academic founders. \nGoogle Scholar\n\nNomad Atomics itself as an entity shows minimal indexed research output (e.g., a scant presence in the Nature Index with very few formal journal papers tracked over a 12‑month window). \nNature\n This suggests most work has been development and engineering rather than academic publications, or that publications aren’t yet in high‑impact, widely cited journals.\n\nFrom a VC perspective, this impacts signals for benchmarked academic excellence: while the founders clearly understand the physics and technology, their publication credentials and h‑index evidence aren’t standout compared with elite academic founders, and thus the academic pedigree, while solid, isn’t top‑tier globally.",
+  "timestamp": "2026-02-03T17:53:02.495231+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://blackbird.vc/blog/investment-notes-nomad-atomics",
+      "title": "blackbird.vc\n+1",
+      "publisher": "blackbird.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://scholar.google.com/citations?hl=en&user=WWzKReoAAAAJ",
+      "title": "Google Scholar",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nature.com/nature-index/institution-outputs/Australia/Nomad%20Atomics/67ae1cf49fb3a6001808f1c4",
+      "title": "Nature",
+      "publisher": "nature.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

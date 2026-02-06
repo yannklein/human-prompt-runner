@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP9",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 9/10\n\nFirgun Ventures’ fund structure looks highly compatible with 10–15 year quantum timelines, and frankly better aligned than most generalist VC funds. Public information indicates a dedicated quantum fund targeting about 250 million dollars, with a first close of 70 million dollars and a focus on Series A/B “early growth” quantum companies, which typically implies larger checks and room for significant follow‑ons as companies scale over long cycles. The fund launched in late 2025, so if you assume a standard 10‑year term plus typical extension options, this maps reasonably well to commercial quantum outcomes maturing in the late 2030s.\nthequantuminsider+2\n\nImportantly, their entire thesis is that quantum requires patient, specialist capital at the “post‑seed, pre‑expansion” bottleneck, which suggests LPs were explicitly sold on longer, riskier timelines and non‑linear value inflection rather than quick flips. As a founder, I would still ask hard questions about: (1) actual legal fund term and extension rights, (2) reserves strategy for late, dilutive rounds, and (3) whether they can lead or follow on in C/D rounds once quantum markets consolidate. Absent those unknowns, on paper this is about as structurally aligned with deep‑tech quantum timing as you can realistically expect today.\npostquantum+2",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+2",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:46:54.411494+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

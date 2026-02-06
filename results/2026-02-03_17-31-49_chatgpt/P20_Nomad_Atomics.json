@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P20",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Nomad Atomics's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior Venture Capital analyst evaluating Nomad Atomics’ execution capabilities today — brutally honest and grounded in publicly available traction, team background, and commercial execution realities — I’d rate them:\n\nExecution Score: 5.5 / 10\n\nHere’s why:\n\n1. World‑class technical founders but early stage execution –\nNomad Atomics was founded by experienced atomic physicists from strong research environments (Australian National University) with PhDs and deep experience in cold‑atom sensors. That technical pedigree is rare and valuable in deep tech, and it directly underpins their core IP and early prototype development. \nblackbird.vc\n\n2. Strong early capital validation –\nThey secured meaningful deep‑tech venture funding (~A$12M) from reputable investors like Blackbird and Right Click Capital, which signals investor confidence in both the team and technology potential. \nThe Quantum Insider\n\n3. Technology de‑risking is underway but not yet proven at scale –\nNomad Atomics has built and is commercializing complex quantum gravimeters and accelerometers designed for real‑world environments, a technically challenging transition from lab to field. Early evidence of prototypes and initial deployments exists, but no clear evidence of large customer rollouts, demonstrable revenue traction, or repeatable commercial deployments — the key execution milestones for commercial maturity — is publicly visible. \nnomadatomics.com\n\n4. Execution capacity limitations typical of deep tech startups –\nQuantum sensors require heavy integration, ruggedization, supply chain coordination, and service deployment cycles that historically slow execution. The team’s research roots bode well technically but are a mixed signal for hardened product execution, operations, and scaling. Execution to large markets (mining, defence, navigation) remains unproven publicly.\n\n5. Lack of visible commercial milestones –\nThere’s limited public evidence of signed meaningful contracts, recurring revenue, or strategic customer validation at scale. This keeps the score moderate — the vision and tech are promising, but execution and go‑to‑market proof points are modest so far. \ndirectory.vdsn.org\n\nBottom Line:\nTechnically elite founders and strong early funding earns them credibility (score ~6.5), but measurable commercial execution and scaling — the ultimate VC execution signal — is still nascent (~4), averaging to ~5.5/10.",
+  "timestamp": "2026-02-03T17:57:06.983251+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://blackbird.vc/blog/investment-notes-nomad-atomics",
+      "title": "blackbird.vc",
+      "publisher": "blackbird.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2023/07/03/nomad-atomics-receives-12-million-to-fund-quantum-sensor-technology/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/our-technology",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://directory.vdsn.org/wp-content/uploads/2024/08/71373986.pdf",
+      "title": "directory.vdsn.org",
+      "publisher": "directory.vdsn.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP13",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "FAILED",
+  "sources": [],
+  "timestamp": "2026-02-03T18:54:27.357122+00:00",
+  "model": "perplexity-web",
+  "test_mode": false,
+  "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.perplexity.ai/\", waiting until \"domcontentloaded\"\n"
+}

@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P19",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's ecosystem in which the company operates? Leading ecosystems will be able to attract better talent? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Ecosystem Score for Qnami: 6.5 out of 10\n\nExplanation (≈200 words)\nQnami sits in a niche but rapidly emerging segment of the broader quantum tech ecosystem: quantum sensing—distinct from the more capital‑dense quantum computing and communication arenas. The global quantum sensing market is still relatively small compared to other quantum sub‑fields, valued at a few hundred million USD today and projected to grow steadily over the next decade (e.g., $414M+ in 2025 with strong CAGR potential) but still orders of magnitude below broader quantum markets.\nGlobal Market Insights Inc.\n\nWithin that market, Qnami has a leading technology position with its ProteusQ scanning NV magnetometry platform, academic pedigree, and tangible commercial products deployed in research labs internationally, alongside partnerships for East Asia distribution.\nQnami\n+1\n That places it ahead of many early‑stage quantum sensing startups. However, the ecosystem it operates in remains constrained by limited private investment and talent concentration, especially in Switzerland/Europe compared with heavyweights like North America or China where funding and workforce scale are larger. European quantum ecosystems have significant academic strength but lag in private capital beyond early stage, which can slow scaling and talent acquisition.\nEUobserver\n\nTalent pools for quantum sensing remain concentrated in academia and research institutions, and broader industrial adoption is only just beginning—meaning competition for multidisciplinary quantum engineers is fierce and ecosystems not yet mature enough to effortlessly attract large engineering teams without premium incentives. This all makes the ecosystem strong in depth of expertise but weaker in breadth, capital, and commercial infrastructure than the ecosystems supporting dominant quantum computing players.",
+  "timestamp": "2026-02-03T17:54:19.046855+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "Global Market Insights Inc.",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://euobserver.com/4818/europes-strong-base-in-quantum-needs-scale-up-investment-study-finds/",
+      "title": "EUobserver",
+      "publisher": "euobserver.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P22",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Nomad Atomics's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Score: 6.5/10\n\nExplanation (≈200 words)\nNomad Atomics is operating in the deep‑tech quantum sensing space — a genuinely frontier area where few players have transitioned lab physics into rugged commercial hardware. They build miniaturised cold‑atom quantum sensors (gravimeters, accelerometers, magnetometers, etc.) designed for real‑world applications such as mineral exploration, GNSS‑denied navigation, and subsurface monitoring — not just academic instruments confined to labs. \nnomadatomics.com\n+1\n\nFrom an IP uniqueness perspective, the underlying physics of cold‑atom interferometry and quantum gravimetry itself is cutting‑edge, but it’s not unique to Nomad; other players (e.g., AOSense and other quantum sensing spin‑outs) are also commercialising similar platforms. Nomad does appear to have proprietary miniaturisation and integration work that yields field‑deployable systems (claimed “first survey‑style absolute gravimeter” in a compact form), which does differentiate them somewhat. \nBusiness News Australia\n However, based on available data, the patent portfolio is modest (only a couple of filings/publicly listed patents), which suggests they’re early in accumulating defensible IP compared to incumbents or larger quantum tech companies. \nCB Insights\n\nThey get credit for translating high‑value quantum tech toward tangible commercial use cases and securing notable deep‑tech VC interest. \nThe Quantum Insider\n Yet the field itself is competitive, and leadership isn’t assured until they build a stronger IP moat and sustainable deployment scale.",
+  "timestamp": "2026-02-03T18:01:18.132681+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/what-we-do",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.businessnewsaustralia.com/articles/quantum-sensor-startup-nomad-atomics-raises--12m.html",
+      "title": "Business News Australia",
+      "publisher": "businessnewsaustralia.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/nomad-atomics/",
+      "title": "CB Insights",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2023/07/03/nomad-atomics-receives-12-million-to-fund-quantum-sensor-technology/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

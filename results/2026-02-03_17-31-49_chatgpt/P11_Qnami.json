@@ -1,0 +1,54 @@
+{
+  "prompt_id": "P11",
+  "company": "Qnami",
+  "question": "How does Qnami differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Here’s a concise comparison of Qnami with its direct competitors in quantum sensing (focus on NV‑center magnetic imaging and related technologies):\n\n1. Core technology & focus\n• Qnami specializes in nitrogen‑vacancy (NV) center quantum sensing using diamond. Its flagship product — the ProteusQ™ scanning NV magnetometer — is one of the first commercial quantum microscopes designed to image magnetic fields and electrical currents at the nanoscale with high spatial resolution under ambient conditions. It integrates bespoke quantum probes, advanced electronics, and analytics software in a tabletop instrument targeting materials science, nanotechnology, spintronics and related research domains. \nQnami\n+1\n\n• Many competitors either use different underlying quantum technologies or target different form factors/applications:\n– NV‑based rivals like QZabre also build diamond NV sensors but typically emphasize modular sensor platforms and customizable magnetometry rather than a full integrated quantum microscope system. \nqzabre.com\n\n– Others such as QuSpin focus on compact quantum vector magnetometers optimized for specific industrial or grid monitoring uses (not full microscopy). \nMarket Intel\n\n– Major aerospace/defense players (e.g., Honeywell, Lockheed Martin) and startups like ColdQuanta or Muquans pursue quantum accelerometers, clocks, atomic IMUs, or cold atom‑based sensors with different physical principles and applications, from navigation to geophysics. \nStrategic Revenue Insights\n+1\n\n2. Differentiators vs. direct competitors\n• Commercial first‑mover in NV microscopy: Qnami’s ProteusQ was one of the first fielded scanning NV microscopes for scientific use, giving it an adoption edge in academia and advanced research labs. \nThe Quantum Insider\n\n• Integrated platform: Rather than selling just probes or standalone sensors, Qnami bundles hardware, custom diamond NV probes, control electronics, and analytics software into a cohesive imaging platform tailored for nanoscale magnetic and electrical characterization. \nQnami\n\n• Partnership ecosystem: Strategic collaborations (e.g., with Quantum Design and HORIBA) expand manufacturing, distribution, and support globally — strengthening reach beyond typical startup competitors. \nhoriba.com\n\n3. Market positioning & limitations\n• Qnami’s niche is high‑precision research tools, while some rivals address industrial, navigation, or broad commercial sensing needs using alternative quantum approaches. \nStrategic Revenue Insights\n\n• The company’s focus on NV‑center magnetometry sets it apart from competitors developing cold‑atom sensors or quantum clocks, which target different use cases and physics. \nKen Research\n\nIn summary, Qnami differentiates itself by delivering one of the first integrated, commercial quantum microscopes based on NV diamond sensing, combining tailored hardware and software for nanoscale magnetic imaging — whereas many competitors either offer other types of quantum sensors or more modular systems with different application targets. \nQnami",
+  "timestamp": "2026-02-03T17:37:24.846373+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.qzabre.com/",
+      "title": "qzabre.com",
+      "publisher": "qzabre.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://marketintelo.com/report/quantum-sensor-for-grid-monitoring-market",
+      "title": "Market Intel",
+      "publisher": "marketintelo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.strategicrevenueinsights.com/industry/quantum-based-magnetic-field-sensor-market",
+      "title": "Strategic Revenue Insights\n+1",
+      "publisher": "strategicrevenueinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "horiba.com",
+      "publisher": "horiba.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kenresearch.com/global-quantum-sensors-market",
+      "title": "Ken Research",
+      "publisher": "kenresearch.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

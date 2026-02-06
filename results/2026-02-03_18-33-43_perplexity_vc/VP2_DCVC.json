@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP2",
+  "vc": "DCVC",
+  "question": "What is DCVC's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Sector preferences: deep tech across energy, climate, life sciences, agriculture, materials, space, robotics, and industrial tech; sectors where a defensible technology advantage and large addressable markets sit at the core of the opportunity.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:35:36.515341+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

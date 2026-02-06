@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P24",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Q-CTRL? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "As a senior venture capital analyst assessing Q‑CTRL’s commercial traction today, I’d give its sales performance and partnership execution a 6.5/10.\n\nHere’s the honest breakdown:\n\n✔️ Partnerships & Customers (Strong Points)\n• Q‑CTRL has established multiple meaningful partnerships with reputable players across the quantum ecosystem — including collaborations with hardware vendors like QuantWare and integrators in quantum computing infrastructure solutions. \nQuantWare\n+1\n\n• They’ve also worked with enterprise and research entities (e.g., Capgemini, Xerox PARC, Transport for NSW, Network Rail in the UK) on applied use cases such as logistics optimization and error suppression in quantum workflows. \nQ-CTRL\n+1\n\n• Their technology isn’t purely theoretical — there are reported deployments of performance‑management software into major cloud quantum platforms and sensor demonstrations (e.g., GPS‑denied navigation trials), indicating some real-world application. \nQ-CTRL\n\n⚠️ Commercialization & Revenue (Weaker Points)\n• While Q‑CTRL publicly cites bookings figures (e.g., ~$15M in 2022) and claimed customer traction, detailed, independently verified revenue growth is limited and heavily concentrated in early adopter government and research segments rather than broad enterprise adoption. \nQ-CTRL\n\n• Many partnerships, while credible, are collaborations or integrations, which don’t always translate into large, repeatable enterprise sales pipelines or sticky revenue streams at scale.\n• Reports of commercialization outcomes (e.g., meaningful deal values beyond initial government/adopter contracts) are anecdotal or privately cited, not widely transparent. \nQuantum Zeitgeist\n\nSummary (6.5/10): Q‑CTRL has built a solid foundational network, marquee tech partnerships, and early commercial wins. But from a pure VC lens focused on repeatable revenue growth and broad market adoption, their sales maturity is still nascent, with a need for more scalable enterprise contracts and clearer revenue‑generation momentum.",
+  "timestamp": "2026-02-03T18:06:20.960876+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.quantware.com/press/quantware-and-q-ctrl-partner-to-simplify-the-deployment-of-large-scale-quantum-computers-with-quantware-qpus-thanks-to-autonomous-calibration",
+      "title": "QuantWare\n+1",
+      "publisher": "quantware.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/blog/q-ctrl-announces-expansion-of-industry-leading-series-b-for-quantum-infrastructure-software",
+      "title": "Q-CTRL\n+1",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/blog/q-ctrl-sets-global-quantum-technology-fundraising-record-increasing-series-b-to-usd-113m-led-by-gp-bullhound",
+      "title": "Q-CTRL",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumzeitgeist.com/q-ctrl-quantum-quantum-advantage/",
+      "title": "Quantum Zeitgeist",
+      "publisher": "quantumzeitgeist.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

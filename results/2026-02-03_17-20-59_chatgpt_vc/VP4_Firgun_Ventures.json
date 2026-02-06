@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP4",
+  "vc": "Firgun Ventures",
+  "question": "Who are the key partners and advisors at Firgun Ventures? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Here’s a concise overview of the key partners and advisors at Firgun Ventures, focusing on their backgrounds, technical expertise, and deep-tech/quantum experience (≈200 words):\n\nFounding Partners\nDr. Kris Naudts, MD, PhD – Co-founder of Firgun with a rare blend of scientific, entrepreneurial, and investment experience. He trained as an academic psychiatrist and neuroscientist at King’s College London and founded Culture Trip, raising >$100 M and scaling it globally. Naudts has also been an early angel investor in quantum firms, including Cambridge Quantum Computing (now Quantinuum), demonstrating both deep-tech interest and market foresight. \nfirgun.vc\n+1\n\nZeynep Korutürk – Co-founder with a finance and technology leadership background from Goldman Sachs, where she served as Executive Director and co-founded the bank’s Tech Initiative. She brings strategic investment expertise and has also been an early investor in quantum technology ventures. \nfirgun.vc\n+1\n\nAdvisory Council & Technical Experts\nProf. Mete Atatüre – Head of the Cavendish Laboratory and Professor of Physics at Cambridge University, offering deep academic and technical expertise in quantum science. \nfirgun.vc\n\nIlyas Khan, KSG – Founder of Cambridge Quantum Computing/Quantinuum and an influential figure in quantum industry leadership. \nfirgun.vc\n\nDr. Martin Murphy – Veteran life sciences and deep-tech investor, co-founder of Syncona with significant capital deployment experience. \nfirgun.vc\n\nYariv Adan – Longtime Google senior director with expertise in AI, cloud, and infrastructure. \nfirgun.vc\n\nEddie Alleyn – 35+ years in UK government defence and security, advising on deep-tech strategy. \nfirgun.vc\n\nAugustine Syn – Senior tech and government advisor with deep-tech investment and policy experience. \nfirgun.vc\n\nTogether, this team combines scientific leadership, venture finance, and practical commercialization experience critical for scaling deep-tech and quantum companies. \nfirgun.vc",
+  "timestamp": "2026-02-03T17:22:59.143211+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

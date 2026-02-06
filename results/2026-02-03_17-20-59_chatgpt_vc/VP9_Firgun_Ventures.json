@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP9",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 4/10\n\nFirgun Ventures’ fund structure struggles to align with the 10–15-year timelines typical of quantum deep-tech commercialization — and not because it lacks insight or ambition, but because of the economic mechanics of the vehicle as it currently stands. Publicly available information shows:\n\nFirgun has launched a quantum-focused VC fund with a first close of ~$70 M and a target size of ~$250 M, anchored by the Qatar Investment Authority and other backers. \nDataCentreNews UK\n+1\n\nThe strategy is explicitly Series A/B growth stage, aiming to bridge the gap between lab proof-of-concept and early commercialization. \nfirgun.vc\n\nThese are positive indicators — but from a founder’s perspective needing 10–15 year runway, this matters:\n\nFund size & stage focus: A ~$250 M fund can support a handful of quantum scale-ups, but in quantum hardware and software commercialization, capital needs are enormous and drawn out (often requiring multiple follow-ons far beyond Series B). A traditional VC fund with this size typically aims to recycle capital within ~8–12 years, pressuring exits before quantum markets fully emerge.\n\nVintage & horizon: As a newly minted standout fund, Firgun has no track record of multiple vintages, which makes it hard to assess real holding periods or LP tolerance for long quantum cycles.\n\nInvestment horizon mismatch risk: Typical VC structures target liquidity events within ~10 years; in contrast, many quantum companies only begin product-market fit and meaningful revenue after year 7–10, pushing exits into year 12–15 or beyond. Firgun’s structure as a single fund with early growth focus and traditional time pressure doesn’t inherently solve that mismatch.\n\nIn summary: great thematic alignment and credible investors, but fund size & structure are closer to conventional VC timelines than true deep-tech patient capital — hence a low fit score.",
+  "timestamp": "2026-02-03T17:25:08.872686+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "DataCentreNews UK\n+1",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

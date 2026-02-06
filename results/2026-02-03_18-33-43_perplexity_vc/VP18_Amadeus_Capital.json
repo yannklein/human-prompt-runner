@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP18",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners earns a brutally honest score of 7/10 for patience and constructive behavior during legitimate technical setbacks or milestone slippage in portfolio companies.\namadeuscapital+1\n\nInvestment Approach\n\nAmadeus specializes in deep tech like quantum and AI, where technical hurdles are routine. They've backed over 200 startups since 1997, raising $1.3 billion, often providing follow-on funding from seed to growth. Their thesis emphasizes long-term partnerships with rigorous technical due diligence, suggesting tolerance for R&D delays if IP and teams show promise.\nadeline+2\n\nEvidence from Track Record\n\nPortfolio successes like Oxford Nanopore (DNA sequencing) and Graphcore (AI chips) navigated years of lab-to-market challenges before unicorn status or exits (e.g., VocalIQ to Apple). Quantum investments in planqc and Riverlane imply patience for error-prone scaling, as these fields routinely slip milestones. They offer strategic mentorship and networks beyond cash, aiding pivots during setbacks.\nventurecapitalarchive+4\n\nPotential Shortcomings\n\nNo public scandals or founder complaints surface, but deep tech VCs like Amadeus prioritize \"winners,\" potentially pressuring underperformers via board seats. Exits like Transmode show support through to acquisition, yet early-stage scrutiny could feel less forgiving if traction lags. Overall, solid for quantum founders, but not infinitely patient. (198 words)\namadeuscapital+1",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline+2",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/amadeus-capital-partners-amadeuscapital-com",
+      "title": "venturecapitalarchive+4",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com/investors/",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners | Adeline\nFrom their bases in London, Cambridge, and Oxford, Amadeus’s team searches for startups with a clear technological advantage, often derived from groundbreaking intellectual property. They're especially known for nurturing innovations in AI, quantum computing, cybersecurity, and digital health. For early-stage founders, this means Amadeus can offer not only financial backing but crucial guidance in moving innovations from laboratory to market—often the toughest leap for tech-led startups. Their...",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/amadeus-capital-partners-amadeuscapital-com",
+      "title": "venturecapitalarchive\nAmadeus Capital Partners\nAmadeus Capital Partners is a venture Capital firm specializing in investments in Technologydriven startups. The firm targets early to growth stage companies that are pioneering innovative solutions and have significant market potential. Amadeus Capital Partners provides its portfolio companies with not only financial backing but also strategic mentorship, industry connections, and operational support. The firm's mission is to drive innovation and foster the growth of high potential startups...",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com/investors/",
+      "title": "amadeuscapital\nInvestors - Amadeus Capital\nIntelligence Intelligence Planet Altana AI created the world’s first value chain management system to help governments and enterprises build safer, more transparent, and resilient global supply networks. Planet ATMOS Space Cargo uses inflatable atmospheric decelerators to provide safe, scalable, and cost-efficient re-entry for payloads of all sizes—backed by the Amadeus APEX Technology Fund. … Intelligence Transmode delivered optical networking solutions using CWDM and DWDM technologies to...",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:06:42.924634+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

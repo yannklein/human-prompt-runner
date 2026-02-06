@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP17",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 6/10\n\nExplanation:\nFirgun Ventures is a newly‑formed, London‑based specialist VC targeting early growth‑stage quantum companies, with a first close of ~$70 M and a target of $250 M backed by institutional players like the Qatar Investment Authority and early quantum founders (e.g., Ilyas Khan of Quantinuum). \nQuantum Computing Report\n+1\n\nThere’s very limited public evidence regarding how Firgun actively guides founders around communication discipline (e.g., avoiding premature announcements, resisting hype, or preventing misleading benchmarks). The firm’s public materials emphasize its scientific and commercial due diligence capability — leveraging academic advisors from Cambridge, Oxford, MIT, Google, and other institutions — which suggests a vetting process that could help temper over‑claiming at the investment stage. \nThe Quantum Insider\n+1\n\nHowever, that’s process‑oriented credibility, not demonstrated behavioural cultural leadership in reigning in portfolio companies’ external messaging or hype. There’s no public track record yet of Firgun pushing companies to delay announcements until validated milestones or coaching CEOs on disciplined narrative framing. Unlike established deep‑tech VCs with longer histories and reputations for discipline, Firgun is too early stage for analogous evidence. Its founders (one from science/entrepreneurship, one from finance) articulate a values‑driven philosophy (“first, do no harm”), but this is a stated ethos, not proven practice in avoiding hype cycles. \nTech Funding News\n\nIn summary, the firm has structural advantages (technical depth, thoughtful due diligence) that could help counter hype, but the absence of measurable reputation or track record in this specific area leads to a moderately cautious rating.",
+  "timestamp": "2026-02-03T17:28:53.761735+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "Quantum Computing Report\n+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "Tech Funding News",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

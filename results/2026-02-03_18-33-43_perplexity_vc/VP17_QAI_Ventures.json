@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP17",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Public communications about demos, events, and growth initiatives indicating momentum and potential hype cycles.\nlinkedin+3",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/qaiventures_q2b-tokyo-proud-activity-7222175681600716800-MCmB",
+      "title": "linkedin+3",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures\nStartup Funding from Early Stage to Scale - QAI Ventures\nQAI Ventures invests in Quantum Tech and Advanced Computing startups from pre-seed to Series C. Apply for early-stage funding via our accelerator or secure growth capital up to $12M.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:05:16.127234+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

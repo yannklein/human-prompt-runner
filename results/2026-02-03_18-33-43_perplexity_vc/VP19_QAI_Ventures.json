@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP19",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures shows moderate tolerance for science-driven strategic pivots in quantum startups, scoring a 6/10. They prioritize \"patient capital\" and de-risking through technical validation, milestone-driven funding, and ecosystem support, which suggests flexibility for adjustments like shifting from hardware to control stack or software when science demands it.\nqai-ventures+1\n\nStrengths in Pivot Support\n\nTheir model integrates accelerators with mentorship, infrastructure access, and commercialization guidance, explicitly aiding founders navigating lab-to-market transitions without rushing products. Partnerships (e.g., Phoenix Technologies for AI-quantum platforms) demonstrate willingness to back hybrid evolutions from pure hardware toward software-integrated stacks. Emphasis on early-stage pure quantum tech (computing, sensing) to advanced computing implies openness to stack pivots if milestones validate scientific progress.\nqai-ventures+3\n\nLimitations Exposed\n\nHowever, heavy focus on \"rapidly maturing teams,\" customer connections, and \"fundraising readiness\" hints at underlying pressure toward commercialization paths, potentially clashing with prolonged science-led delays. No explicit portfolio examples of major pivots (hardware-to-software) surface; instead, they target \"product-market fit\" and industry partnerships early, risking premature scaling over pure R&D shifts. Industry context warns of \"siren lure of rapid commercialization\" in quantum, where even patient VCs like QAI may starve early research for market hype.\nquantumcompupremo+4\n\nFounder Verdict\n\nAs a quantum founder, I'd approach cautiously—strong for validated pivots with clear milestones, but pivot too far into unproven science without revenue traction, and their ecosystem push might constrain you. Seek term sheets stressing scientific autonomy over speed-to-market. (198 words)",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/investment-fund-early-stage",
+      "title": "qai-ventures+1",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/news/tqi-untapped-potential-ai-quantumcomputing",
+      "title": "qai-ventures+3",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcompupremo.org/2023/11/25/from-labs-to-markets-navigating-the-business-and-ethical-landscape-for-quantum-startups/",
+      "title": "quantumcompupremo+4",
+      "publisher": "quantumcompupremo.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/investment-fund-early-stage",
+      "title": "qai-ventures\nEarly-Stage QuantumAI Venture Funding & Accelerator\nQAI Ventures invests in early-stage Quantum Tech, QuantumAI, and Advanced Computing startups. Apply for funding and access our global accelerator in Europe, North America, or Asia.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/news/tqi-untapped-potential-ai-quantumcomputing",
+      "title": "qai-ventures\nThe Untapped Potential of AI in Quantum Computing\nQuantum technologies have had a meteoric rise and become a key area of prioritization for governments, academics, and businesses. Government funding commitments total almost $40 billion, while private investments since 2021 total nearly $8 billion. The US agency, National Institute of Standards and",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcompupremo.org/2023/11/25/from-labs-to-markets-navigating-the-business-and-ethical-landscape-for-quantum-startups/",
+      "title": "quantumcompupremo\nQuantum Innovation | From Labs to Markets: Navigating the Business and Ethical Landscape for Quantum Startups\nIn the quantum industry, discoveries and innovations emerge daily, and startups are engulfed in a whirlwind of go-to-market challenges, looking for ways to stand out within an ever-expanding ecosystem. It isn’t just about standing out but navigating a new school of problems when transitioning from lab to market. QAI Ventures is a global quantum ecosystem builder with offices in Basel, Switzerland, and Calgary, Canada, that harnesses quantum industry expertise and a deep network of experts. The...",
+      "publisher": "quantumcompupremo.org",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:09:21.735272+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

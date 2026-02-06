@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP15",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "A network error occurred. Please check your connection and try again. If this issue persists please contact us through our help center at help.openai.com.",
+  "timestamp": "2026-02-03T17:27:39.793229+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://help.openai.com/",
+      "title": "help.openai.com",
+      "publisher": "help.openai.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

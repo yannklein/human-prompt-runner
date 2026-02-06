@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P24",
+  "company": "AoSense",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of AoSense? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Sales/Partnership Score for AOSense (1–10): 3/10\n\nAOSense is an early‑to‑mid stage deep‑tech quantum sensing hardware company that has not yet demonstrated strong commercial sales traction or major mainstream partnerships typical of a venture‑backed growth success story. It has won government contracts and R&D awards (DARPA prime contract since 2006, ongoing SBIR & Navy/DOD awards), and participates in defense research collaborations — which validate technology usefulness and provide some revenue — but these are mostly funded development agreements, not clear volume product sales or strategic commercial partnerships. \naosense.com\n+1\n\nThe Lockheed Martin / Q‑CTRL / AOSense collaboration for a quantum navigation system under a U.S. Department of Defense Innovation Unit contract is probably the highest profile recent partnership tying AOSense tech into a broader defense ecosystem. This signals recognition of their sensor capability in a real‑world context, but it’s still R&D/prototyping rather than scalable sales. \nThe Quantum Insider\n\nThere is no public evidence of major commercial customers or revenue scale (e.g., multi‑department enterprise deployments, automotive OEMs, or global industrial partners), and third‑party business score metrics (e.g., Crunchbase growth score) are very low. \nCrunchbase\n Some informal revenue estimates vary widely and aren’t independently verified, indicating limited transparent sales performance. \nGrowjo\n\nSummary: AOSense has solid technology validation and government/project partnerships, but lacks clear evidence of scalable commercial sales or marquee industry partners. Score: 3/10 — technology proven, customer adoption early and narrow, revenue unclear, commercial expansion not yet materialized.",
+  "timestamp": "2026-02-03T18:05:01.047682+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com\n+1",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/03/13/lockheed-martin-q-ctrl-and-aosense-partner-to-develop-quantum-enabled-navigation-system-for-gps-denied-environments/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/aosense-inc",
+      "title": "Crunchbase",
+      "publisher": "crunchbase.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://growjo.com/company/AOSense",
+      "title": "Growjo",
+      "publisher": "growjo.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

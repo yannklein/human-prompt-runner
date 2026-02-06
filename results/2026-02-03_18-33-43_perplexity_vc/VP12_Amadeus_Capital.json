@@ -1,0 +1,83 @@
+{
+  "prompt_id": "VP12",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners scores a 7/10 for providing talent pipeline access in quantum and deep-tech.\namadeuscapital+1\n\nInvestment Focus\n\nLondon- and Cambridge-based Amadeus specializes in deep-tech, explicitly targeting AI, advanced computing, quantum, and related fields since 1997. Their portfolio boasts quantum leaders like Nu Quantum (Cambridge spinout for quantum networking), Riverlane (quantum error correction), Photonic (silicon spin-photon quantum computers), and planqc (neutral-atom qubits)—all tied to elite UK research hubs. This demonstrates strong sourcing from labs like Cambridge and Oxford, where they've backed over 200 firms with $1.3B raised.\nadeline+4\n\nNetwork Strengths\n\nPartners like Manjari Chandran-Ramesh (PhD) and Hermann Hauser (co-founder, Photonic board) bring scientific pedigrees and direct lab ties, enabling intros to postdocs and researchers. Bases in Cambridge/Oxford position them near quantum clusters (e.g., Cambridge's quantum ecosystem), aiding talent poaching amid \"talent wars\" with tech giants. Founders praise their \"industry connections\" for lab-to-market transitions.\nentrepreneurloop+4\n\nLimitations\n\nNo explicit public evidence of structured pipelines (e.g., dedicated recruiting arms or postdoc fellowships) like US VCs (e.g., Bessemer) offer. Europe's talent constraints and high costs for quantum engineers limit scale; they emphasize \"deep technical expertise\" in diligence but not outbound intros. Success relies on portfolio proximity, not global reach. Portfolio exits (e.g., VocalIQ to Apple) imply solid networks, but quantum-specific hiring intros remain anecdotal.\nhopohopo+3\n\nBrutally, they're elite for UK/Europe quantum access (8/10 locally) but lack US-style breadth, docking points for no named postdoc/engineer programs. (198 words)",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline+4",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://entrepreneurloop.com/european-deep-tech-unicorns-2025-analysis/",
+      "title": "entrepreneurloop+4",
+      "publisher": "entrepreneurloop.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.hopohopo.io/investors/amadeus-capital-partners",
+      "title": "hopohopo+3",
+      "publisher": "hopohopo.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners - VC for Early Stage Startups | Adeline.co ...\nLooking for VCs? Check out Amadeus Capital Partners on Adeline.co.uk and browse our database of investors, accelerators and startup programmes.",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners - VC for Early Stage Startups | Adeline.co ...\nLooking for VCs? Check out Amadeus Capital Partners on Adeline.co.uk and browse our database of investors, accelerators and startup programmes.",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://entrepreneurloop.com/european-deep-tech-unicorns-2025-analysis/",
+      "title": "entrepreneurloop\n76 European Deep Tech Spinouts Hit $1B+ in 2025\nKey Takeaways: 76 European deep tech spinouts achieved either unicorn status ($1B+ valuation) OR centaur status ($100M+ annual revenue) in 2025 UK leads",
+      "publisher": "entrepreneurloop.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://entrepreneurloop.com/european-deep-tech-unicorns-2025-analysis/",
+      "title": "entrepreneurloop\n76 European Deep Tech Spinouts Hit $1B+ in 2025\nKey Takeaways: 76 European deep tech spinouts achieved either unicorn status ($1B+ valuation) OR centaur status ($100M+ annual revenue) in 2025 UK leads",
+      "publisher": "entrepreneurloop.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://entrepreneurloop.com/european-deep-tech-unicorns-2025-analysis/",
+      "title": "entrepreneurloop\n76 European Deep Tech Spinouts Hit $1B+ in 2025\nKey Takeaways: 76 European deep tech spinouts achieved either unicorn status ($1B+ valuation) OR centaur status ($100M+ annual revenue) in 2025 UK leads",
+      "publisher": "entrepreneurloop.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.hopohopo.io/investors/amadeus-capital-partners",
+      "title": "hopohopo\nAmadeus Capital Partners - Startup Match Score & Focus ...\nIs Amadeus Capital Partners the right VC for you? See how their thesis aligns with your startup and discover more active investors focusing on AI and deep tech.",
+      "publisher": "hopohopo.io",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:52:59.274005+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

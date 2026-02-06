@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P25",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the quality of the VC funds on the cap table of Qnami?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a candid, senior‑VC‑analyst view of the quality of the investors on Qnami’s cap table, based on publicly available information about who has backed the company to date (Seed + Series A), and the known profiles of those funds:\n\nBrutally Honest Score: 6.5 / 10\n\nQuick Cap Table Context\n\nQnami’s investors include:\n• Runa Capital – lead on Series A\nQnami\n\n• SIT Capital – co‑lead on Series A\nQnami\n\n• Quantonation – led Seed and participated in Series A\nQnami\n+1\n\n• Verve Ventures – participated in both rounds\nQnami\n\n• High‑Tech Gründerfonds (HTGF) – participated in both rounds\nQnami\n\n• Zürcher Kantonalbank/ZKB Start‑up Finance – participated as institutional co‑investor\nQnami\n\nHow I’d Score the VC Quality\n\nRuna Capital — 7/10\nA credible early‑stage deep tech and software investor with global reach, a modest track record of solid exits (e.g., Nginx sold to F5, Mambu thriving) and experience investing in quantum‑related startups like Pasqal in its portfolio. Not a top‑tier Silicon‑Valley mega‑VC, but strategic and steady for Series A.\nWikipedia\n\nQuantonation — 7/10\nA very specialized fund focused on quantum and deep physics. Its expertise is highly relevant for Qnami’s technology, and it’s gaining traction (EIF backing into its second fund). But it’s niche and early stage — meaning strong domain conviction but not as proven on a broad VC performance basis.\nQuantonation\n\nSIT Capital — 5.5/10\nSmaller, specialist/entrepreneurial network investors associated with academic tech ecosystems. Useful domain credibility, but lacks the brand and performance signals of top venture firms; limited evidence of breakout exits.\nQnami\n\nVerve Ventures — 5/10\nEuropean deep tech seed investor with solid regional reputation but not widely known for market‑defining exits; supportive at early stages but not a marquee VC brand.\nverve.vc\n\nHigh‑Tech Gründerfonds — 6/10\nA well‑established German seed VC with a long history of backing early deep tech and hardware startups. Good for credibility and follow‑on financing, but often too early to signal outsized returns on its own.\nQnami\n\nZKB Startup Finance — 4/10\nMore of a regional institutional seed co‑investor than a value‑add VC partner; limited track record in scaling globally at venture scale.\nQnami\n\nSummary Rationale\n\nThe investor mix tilts heavily toward niche deep tech and regional backers, not top‑tier global VC brands or large late‑stage funds. That’s fine for a deep science company in a nascent quantum market, but it also means the cap table lacks the kind of scaled venture muscle (network, pricing power, fundraising gravity) that signals top‑tier VC quality at later growth stages. There are good technical domain investors; what’s missing are blue‑chip global VCs with repeat breakout exits. Given that profile — solid but not spectacular — a 6.5/10 feels honest relative to venture investor quality benchmarks.",
+  "timestamp": "2026-02-03T18:07:11.245064+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/qnami-closes-4-0m-chf-series-a-round/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-closes-2-6m-chf-seed-round/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Runa_Capital",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantonation.com/2025/06/24/eif-invests-30-million-in-quantonation-ii/",
+      "title": "Quantonation",
+      "publisher": "quantonation.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/",
+      "title": "verve.vc",
+      "publisher": "verve.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

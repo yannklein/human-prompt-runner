@@ -1,0 +1,29 @@
+{
+  "prompt_id": "VP10",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Portfolio risk management: Look for evidence of proactive follow-ons across the portfolio, not just selective cases, and confirm how they handle non-performing assets without scrambling capital.",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/investment-fund-growth-stage",
+      "title": "qai-ventures\nGrowth Stage VC for QuantumAI & Advanced Computing\nQAI Ventures' Growth Stage Fund backs revenue-generating startups in QuantumAI and Advanced Computing. We invest up to $12M in Series A–C companies scaling toward high-demand exit markets.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/investment-fund-growth-stage",
+      "title": "qai-ventures\nGrowth Stage VC for QuantumAI & Advanced Computing\nQAI Ventures' Growth Stage Fund backs revenue-generating startups in QuantumAI and Advanced Computing. We invest up to $12M in Series A–C companies scaling toward high-demand exit markets.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI - QAI Ventures\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:49:45.297298+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

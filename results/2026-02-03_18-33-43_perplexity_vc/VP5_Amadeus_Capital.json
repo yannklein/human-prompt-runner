@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP5",
+  "vc": "Amadeus Capital",
+  "question": "What is Amadeus Capital's reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.",
+  "answer": "Amadeus Capital is generally viewed as a leading specialist in UK and European deep-tech investing, with a notable track record in AI, quantum, and other hard-tech areas. Founders and co-investors tend to cite their long-standing focus on deep tech, hands-on support, and connections to Cambridge/London innovation clusters as core strengths, though they may note the fund’s preference for technically ambitious ventures can mean a longer path to exit. The ecosystem often highlights Amadeus for early-stage to growth-stage backing, their alignment with public capital backers, and their enduring prominence in quantum and AI portfolios. In market commentary, they’re frequently positioned as a credible, mission-driven partner capable of helping science-based startups scale, while competition from other deep-tech specialists remains robust. Overall sentiment across founders and peers is positive, anchored by their founders’ pedigree and sustained fund-raising ability, with ongoing emphasis on execution and portfolio outcomes.\namadeuscapital+4",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+4",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:40:16.276495+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

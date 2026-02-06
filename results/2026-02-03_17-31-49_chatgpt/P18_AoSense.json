@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P18",
+  "company": "AoSense",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of AoSense have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "**Academic strength rating for AoSense’s team (1–10): ** 6/10\n\nBrutally honest analysis (≈200 words):\nAoSense’s leadership and core technical staff clearly come from strong academic and research pedigrees in atomic physics and precision measurement. Founders and senior scientists hold Ph.D.s from top programs (Stanford, UCLA, Colorado) and have deep expertise in atom interferometry, atomic clocks, and quantum optics — fields that require significant theoretical and experimental chops. Co‑founder Brenton Young did doctoral research under a Nobel‑level mentor (Steven Chu) and CTO Igor Teper has postdoctoral experience from another elite group. Other senior members similarly have Ph.D.s and research backgrounds from leading labs. \naosense.com\n\nHowever, when judged quantitatively by scholarly output metrics like h‑index — a proxy for academic impact — there’s little publicly available evidence that the AoSense leadership individually ranks at the high end of academic citation impact. Unlike major academic physicists (e.g., Mark Kasevich, whose broader research community has hundreds of publications with thousands of citations and likely a very high h‑index outside the company context) we lack clear h‑index figures for most AoSense leaders. Founders’ research contributions are significant within niche atom‑optics circles, but their bodies of work don’t appear in global citation rankings near elite academic figures. \nSemantic Scholar\n\nIn other words, the team’s academic strength is solid for applied quantum sensor R&D, but its citation impact and h‑index visibility are not at elite, high‑impact academic levels typical of major research university stars. That reduces signal for attracting global academic talent and establishing broad scientific reputation via citation metrics. So on an academic strength scale anchored on publication impact, AoSense scores a 6/10.",
+  "timestamp": "2026-02-03T17:52:34.309847+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://aosense.com/about/our-team/",
+      "title": "aosense.com",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.semanticscholar.org/author/M.-Kasevich/5739304",
+      "title": "Semantic Scholar",
+      "publisher": "semanticscholar.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

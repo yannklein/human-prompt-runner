@@ -1,0 +1,83 @@
+{
+  "prompt_id": "VP15",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners earns a brutally honest score of 7/10 for credible, conservative narrative discipline.\nscaleupinstitute+1\n\nInvestment Style\n\nThey focus on deep tech like quantum, AI, and cybersecurity, backing early-stage UK firms with strong IP and global potential, such as NuQuantum and Riverlane. Their language emphasizes \"trailblazers solving hard problems\" and \"innovation through persistence,\" which sounds measured rather than hype-driven, highlighting integrity and partnership over quick wins. With 25+ years, $1.3B raised, and 90 exits including 17 IPOs, they deliver substantiated results without flashy promises.\nquantum+3\n\nNarrative Evidence\n\nPublic profiles stress technical depth, scalability, and star teams addressing massive markets, advising founders to prove defensibility—not just vision. No red flags of overhyping emerge; instead, they tout consistent support via networks and operational guidance for scaleups. Yet, VC norms include some promotional flair (e.g., \"global champions\"), docking points from a perfect conservative score.\nscaleupinstitute+3\n\nQuantum Fit\n\nFor a quantum founder, their quantum portfolio and deep tech discipline signal reliability, under-promising on moonshots while over-delivering via exits. Solid but not purist-conservative. (198 words)\nquantum\n​",
+  "sources": [
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners-2/",
+      "title": "scaleupinstitute+1",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum+3",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners/",
+      "title": "scaleupinstitute+3",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners-2/",
+      "title": "scaleupinstitute\nAmadeus Capital Partners - ScaleUp Institute\nThe firm follows three investment strategies: providing seed, start-up and scaleup capital for early stage companies with exceptional IP based in, or growing from the UK; primary and secondary investments in high-growth technology companies; and growth capital investments in tech-enabled consumer and business services in emerging markets. It is focused on AI & machine learning, online consumer services, cyber security, digital health and medical technology, digital media, enterprise SaaS,...",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners-2/",
+      "title": "scaleupinstitute\nAmadeus Capital Partners - ScaleUp Institute\nThe firm follows three investment strategies: providing seed, start-up and scaleup capital for early stage companies with exceptional IP based in, or growing from the UK; primary and secondary investments in high-growth technology companies; and growth capital investments in tech-enabled consumer and business services in emerging markets. It is focused on AI & machine learning, online consumer services, cyber security, digital health and medical technology, digital media, enterprise SaaS,...",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners/",
+      "title": "scaleupinstitute\nAmadeus Capital Partners [2021] - ScaleUp Institute\nImpact for scaleups 47 UK companies backed 43% Follow-on investments 53% Investments outside of London 39 Growth-stage investments Amadeus Capital Partners is a global technology investor that invests in companies requiring early investment and growth capital with global potential. Alongside investment Amadeus supports scaling businesses with technical insight, operational experience and access to a global network. They connect portfolio companies to additional support for innovation and...",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:59:50.189100+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

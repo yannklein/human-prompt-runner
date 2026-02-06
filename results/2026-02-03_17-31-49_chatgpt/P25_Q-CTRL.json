@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P25",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the quality of the VC funds on the cap table of Q-CTRL?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "It seems like I can’t do more searching right now. Please try again later. I won’t be able to access the latest cap table details for Q-CTRL or verify the current VC investors directly at this moment.",
+  "timestamp": "2026-02-03T18:08:23.739730+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

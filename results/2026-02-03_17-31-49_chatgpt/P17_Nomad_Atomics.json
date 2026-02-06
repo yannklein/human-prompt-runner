@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P17",
+  "company": "Nomad Atomics",
+  "question": "What are Nomad Atomics's current main threats? Give short bullet points",
+  "answer": "Here are Nomad Atomics’s current main threats (short bullet points):\n\nCommercialization hurdles: Scaling quantum sensor tech from lab prototypes to reliable, cost‑effective field products remains technically challenging and expensive. \nfuturemarketsinc.com\n\nMarket adoption risk: Convincing traditional industries (mining, utilities, CO₂ monitoring) to switch to quantum gravimetry vs. established classical methods requires clear proof of value and ROI. \nfuturemarketsinc.com\n\nManufacturing & scaling: Miniaturization and mass production of advanced quantum systems (with low size, weight and power requirements) is difficult and capital‑intensive. \nfuturemarketsinc.com\n\nCompetition: Other emerging quantum sensor players and alternative high‑precision sensor technologies are advancing similar capabilities. \nnextmsc.com\n\nEnvironmental sensitivity: Quantum systems are inherently delicate and can be affected by noise, decoherence and environmental disturbances—requiring robust engineering to function in diverse field conditions. \nFasterCapital\n\nTalent & infrastructure: Recruiting and retaining specialized quantum engineering talent and building adequate production infrastructure is a strategic challenge for a deep‑tech startup. \nfuturemarketsinc.com\n\nMarket education & regulatory: Emerging use‑cases like CO₂ storage monitoring require customer education and may face evolving regulatory standards before wide adoption. \nSustainability Atlas\n\nLet me know if you want these expanded with context or tailored to a specific industry (e.g., defense, mining, climate tech).",
+  "timestamp": "2026-02-03T17:50:51.356430+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.futuremarketsinc.com/the-global-quantum-sensors-market-2026-2046/",
+      "title": "futuremarketsinc.com",
+      "publisher": "futuremarketsinc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nextmsc.com/report/advanced-quantum-sensing-market-ic3172",
+      "title": "nextmsc.com",
+      "publisher": "nextmsc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://fastercapital.com/topics/challenges-and-future-prospects-of-quantum-sensing.html/1",
+      "title": "FasterCapital",
+      "publisher": "fastercapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sustainableatlas.org/post/deep-dive-quantum-technologies-sensing-the-hidden-trade-offs-and-how-to-manage-them-1043",
+      "title": "Sustainability Atlas",
+      "publisher": "sustainableatlas.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

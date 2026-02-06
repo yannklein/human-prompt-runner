@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P9",
+  "company": null,
+  "question": "What 5 breakthroughs in Quantum Sensing are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of 5 predicted breakthroughs in Quantum Sensing over the next ~5 years — with ~100 words total explanation:\n\nUltra‑sensitive navigation systems – Quantum magnetometers/gravity sensors enabling GPS‑free precise navigation for defense and autonomous vehicles, deployed outside labs. \nMcKinsey & Company\n\nQuantum biosensing in healthcare – Clinical quantum sensors detecting disease biomarkers (e.g., viral RNA or cancer markers) far more sensitively than current methods. \nidstch.com\n\nMiniaturized portable sensors – Compact, robust quantum devices for field environmental monitoring, industrial diagnostics, and wearables. \nMarket Research Intellect\n\nDiamond NV‑center sensors mainstream – Scalable quantum diamond tech for real‑world magnetic, electric, and thermal sensing applications. \nFinancial Times\n\nAI‑enhanced quantum measurement – Integration of AI for real‑time data processing and calibration to boost accuracy and usability. \nDreamslab\n\nThese reflect trends from industry reports forecasting real‑world deployment and commercialization in multiple sectors. \nMcKinsey & Company",
+  "timestamp": "2026-02-03T17:35:12.318267+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-year-of-quantum-from-concept-to-reality-in-2025",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://idstch.com/critical-emerging-technologies/biotech-synthetic-biology/quantum-biosensing-2025-the-invisible-revolution-transforming-healthcare-diagnostics/",
+      "title": "idstch.com",
+      "publisher": "idstch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.marketresearchintellect.com/product/global-quantum-sensors-market-size-and-forecast/",
+      "title": "Market Research Intellect",
+      "publisher": "marketresearchintellect.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ft.com/content/0b309cd2-aa74-428e-b37b-067665ef17ea",
+      "title": "Financial Times",
+      "publisher": "ft.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://dreamslab.pk/blogs/the-growing-potential-of-quantum-sensors-in-2025/",
+      "title": "Dreamslab",
+      "publisher": "dreamslab.pk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-forward/quantum-sensing-poised-to-realize-immense-potential-in-many-sectors",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

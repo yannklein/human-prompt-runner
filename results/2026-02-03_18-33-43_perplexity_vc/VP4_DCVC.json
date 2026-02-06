@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP4",
+  "vc": "DCVC",
+  "question": "Who are the key partners and advisors at DCVC? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Key partners and advisors at DCVC include co-founders Matt Ocko and Zachary Bogue, plus senior partners and operating leaders who bring deep technical and scientific expertise to deep-tech and quantum investments. Ocko and Bogue drive the firm’s thesis, with Bogue drawing on entrepreneurship, law, and venture experience, and Ocko bringing computational and biotech focus, while senior partners like Dr. John Hamer and Dr. Kiersten Stead extend life-science, agriculture, and computational biology experience, often with industry-scale research backgrounds. The team also benefits from engineers, scientists, and professors from top research institutions who contribute domain expertise in AI, quantum computing, and advanced computing infrastructure, enabling DCVC to evaluate and scale early-stage deep-tech ventures. DCVC’s quantum investments emphasize infrastructure, control systems, and data-driven computing rather than building quantum hardware themselves, positioning advisors with breadth across software, hardware, and science to guide portfolio companies through technical and commercial risk. The firm’s approach combines hands-on technical guidance with strategic finance, leveraging a network of CTOs, chief scientists, and university-affiliated experts to accelerate growth in frontier technologies.\ndcvc+2",
+  "sources": [
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc+2",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc\nDCVC V\nWhen we started DCVC almost a decade ago, one of the pressing Deep Tech problems of the day was scale-out compute. DCVC V - $725 million focused on a $20+…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:39:30.910000+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

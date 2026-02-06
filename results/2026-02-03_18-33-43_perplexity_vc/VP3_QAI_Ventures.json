@@ -1,0 +1,11 @@
+{
+  "prompt_id": "VP3",
+  "vc": "QAI Ventures",
+  "question": "What quantum computing and deep-tech companies has QAI Ventures invested in? List all known investments with a brief explanation of each.",
+  "answer": "FAILED",
+  "sources": [],
+  "timestamp": "2026-02-03T18:37:06.431240+00:00",
+  "model": "perplexity-web",
+  "test_mode": false,
+  "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.perplexity.ai/\", waiting until \"domcontentloaded\"\n"
+}

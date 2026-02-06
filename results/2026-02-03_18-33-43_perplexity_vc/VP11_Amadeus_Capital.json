@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP11",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital's LP base shows moderate comfort with long-horizon, deep-tech investments. They attract patient capital like British Patient Capital, a government-backed entity providing cornerstone commitments for funds targeting quantum, AI, and other deep tech.\namadeuscapital+1\n\nLP Composition\n\nBritish Patient Capital, part of the UK's National Investment Strategy, acts as \"patient capital\" with a 10-year horizon to support high-risk VC like Amadeus's £110M Amadeus V Fund focused on quantum and novel materials. No explicit mentions of evergreen funds, sovereign wealth funds (beyond UK gov proxies), or corporate strategic LPs dominate; funding appears from traditional sources plus partnerships like Apex Ventures for a €80M deep-tech fund. Their track record—over $1.3B raised since 1997 for 200+ deep-tech firms including quantum startups like Riverlane—suggests LPs tolerate 10+ year timelines but likely demand returns amid VC liquidity pressures.\nleeds+4\n\nScore\n\n6/10. Solid patient capital backing via British Patient Capital enables long-horizon bets (e.g., quantum computing), but lack of evergreen/sovereign/corporate dominance implies reliance on standard LPs who may push for quicker exits, risking deep-tech portfolio strain in downturns. (148 words)\nvestbee+1",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com/amadeus-capital-partners-raises-110m-for-deep-tech-investment/",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://leeds.tech/news/amadeus-capital-and-apex-ventures-launch-70m-deep-tech-fund/",
+      "title": "leeds+4",
+      "publisher": "leeds.tech",
+      "snippet": ""
+    },
+    {
+      "url": "https://vestbee.com/insights/articles/top-deep-tech-vc-funds-investing-in-europe",
+      "title": "vestbee+1",
+      "publisher": "vestbee.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com/amadeus-capital-partners-raises-110m-for-deep-tech-investment/",
+      "title": "amadeuscapital\nAmadeus Capital Partners raises £110m for deep tech investment\n30 April 2021 – London and Cambridge, UK – Global technology investor Amadeus Capital Partners today announced the closing at £110 million of its latest early stage, deep tech investment platform, the Amadeus V Technology Fund, which includes a cornerstone commitment by British Patient Capital, the UK’s largest investor in venture and venture growth opportunities. […]",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://leeds.tech/news/amadeus-capital-and-apex-ventures-launch-70m-deep-tech-fund/",
+      "title": "leeds\nAmadeus Capital and Apex Ventures launch £70m deep tech fund - leeds.tech\nCambridge-based investment firm Amadeus Capital is partnering with Apex Ventures to launch a new €80m (£70.3m) deep tech fund. The joint fund will target early-stage companies with investments of around […]",
+      "publisher": "leeds.tech",
+      "snippet": ""
+    },
+    {
+      "url": "https://vestbee.com/insights/articles/top-deep-tech-vc-funds-investing-in-europe",
+      "title": "vestbee\nTop Deeptech VC Funds Investing In Europe 2025\nTop deeptech VC funds investing in Europe 2025 include Elaia, APEX Ventures, Vsquared Ventures, IQ Capital, Atomico, Seraphim Space, and UVC Partners. Check out the full list.",
+      "publisher": "vestbee.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:51:06.177458+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

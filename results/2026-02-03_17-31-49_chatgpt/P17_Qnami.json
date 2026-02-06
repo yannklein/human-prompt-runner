@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P17",
+  "company": "Qnami",
+  "question": "What are Qnami's current main threats? Give short bullet points",
+  "answer": "Here are current main threats to Qnami (a Swiss quantum‑sensing tech company) in short bullet points:\n\nCompetition from other quantum sensing and measurement players — The broader quantum sensor market is becoming crowded with startups and established tech firms advancing rival platforms and innovation. \nMarketResearch.com\n+1\n\nHigh cost and slow adoption hurdles — Quantum sensors are expensive compared to classical alternatives, limiting adoption in many industrial and commercial segments. \nMarketResearch.com\n\nTalent and expertise scarcity — There’s a severe shortage of specialized quantum engineers and interdisciplinary experts needed for R&D, integration, and scaling operations. \nSustainability Atlas\n\nRegulatory and certification barriers — Entering specialized sectors (e.g., defense, aerospace, medical) requires lengthy, costly compliance processes that delay market entry. \nPW Consulting\n\nIntegration complexity with existing systems — Quantum sensing solutions often need custom integration with classical data workflows, making deployments complex and resource‑intensive. \nSustainability Atlas\n\nMarket awareness and understanding gaps — Potential customers may not fully grasp quantum sensor advantages, reducing demand and slowing sales cycles. \nMarketResearch.com\n\nSupply chain and specialized material risks — Sourcing high‑quality diamond and rare materials for quantum sensors can be costly and subject to supply disruptions and ethical sourcing constraints. \nPW Consulting\n\nLet me know if you want these ranked by impact or tailored to a specific market segment (e.g., academic, industrial, or defense).",
+  "timestamp": "2026-02-03T17:50:02.850371+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.marketresearch.com/Ken-Research-v3771/Quantum-Sensor-42981871/",
+      "title": "MarketResearch.com\n+1",
+      "publisher": "marketresearch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sustainableatlas.org/post/deep-dive-quantum-technologies-sensing-the-hidden-trade-offs-and-how-to-manage-them-1043",
+      "title": "Sustainability Atlas",
+      "publisher": "sustainableatlas.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://pmarketresearch.com/it/quantum-magnetic-field-sensing-technology-market/",
+      "title": "PW Consulting",
+      "publisher": "pmarketresearch.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

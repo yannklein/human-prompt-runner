@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P17",
+  "company": "Q-CTRL",
+  "question": "What are Q-CTRL's current main threats? Give short bullet points",
+  "answer": "Here are Q-CTRL’s current main threats (industry risks and competitive/market challenges) — short bullet points: \nBusiness Model Canvas Templates\n+2\nBusiness Model Canvas Templates\n+2\n\n🌐 Industry & Market Risks\n\nTechnological disruption: Rapid advances in quantum hardware/software could outpace Q‑CTRL’s current offerings. \nBusiness Model Canvas Templates\n\nIntense competition: Other quantum infrastructure and control solution providers (including hardware developers moving into control software) threaten market share. \nBusiness Model Canvas Templates\n\nTalent shortage: The broader quantum sector is facing a workforce gap, limiting growth and innovation capacity. \nBusiness Model Canvas Templates\n\nRegulatory & policy shifts: Evolving international standards and quantum tech regulations could impact product compliance and market access. \nBusiness Model Canvas Templates\n\n📈 Technology & Execution Challenges\n\nHigh R&D cost and complexity: Sustaining cutting‑edge quantum control software requires heavy investment and deep expertise. \nBusiness Model Canvas Templates\n\nStandardization pressures: Lack of widely adopted quantum standards increases integration and adoption challenges across platforms. \nBusiness Model Canvas Templates\n\n🚪 Competitive Threats\n\nNew entrants with specialized approaches: Startups with novel quantum control or hardware cross‑functional solutions could disrupt Q‑CTRL’s positioning. \nBusiness Model Canvas Templates\n\nIf you want, I can also list external threat trends Q‑CTRL aims to solve (e.g., GPS denial, quantum decryption risks).",
+  "timestamp": "2026-02-03T17:51:17.486665+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://canvasbusinessmodel.com/blogs/how-it-works/q-ctrl-how-it-works",
+      "title": "Business Model Canvas Templates\n+2\nBusiness Model Canvas Templates\n+2",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://canvasbusinessmodel.com/blogs/growth-strategy/q-ctrl-growth-strategy",
+      "title": "Business Model Canvas Templates",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://canvasbusinessmodel.com/products/q-ctrl-pestle-analysis",
+      "title": "Business Model Canvas Templates",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://canvasbusinessmodel.com/products/q-ctrl-porters-five-forces",
+      "title": "Business Model Canvas Templates",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

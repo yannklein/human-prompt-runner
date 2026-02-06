@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P20",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Here’s a brutally honest, VC‑analyst style assessment of Qnami’s execution capabilities (1–10 scale), based on publicly available evidence about the company’s traction, product execution, and broader team/market signals:\n\n⭐ Score: 6.5/10\n\nExplanation (≈200 words):\n\nQnami has demonstrated strong deep‑tech execution at the product‑technology interface, which is unusual for a hard‑science startup in quantum sensing. The company reliably delivered ProteusQ, the first commercial scanning NV magnetometer and is seeing adoption in academic and advanced industrial labs in Europe and North America, with credible performance and user endorsements from experts in nanomagnetism and materials research. \nQnami\n+1\n\nOn the technology execution front, bridging quantum physics into a usable microscopy tool reflects solid engineering integration — including diamond‑based NV sensors, control electronics, and software automation. Strategic partnerships with global instrument players such as HORIBA and regional distribution agreements (e.g., Japan/Korea with Quantum Design) indicate execution beyond the lab, which is often the biggest hurdle for quantum startups. \nhoriba.com\n+1\n\nHowever, challenges remain: market penetration is still concentrated in high‑end research segments rather than broad industrial deployment, and the jump from niche scientific tools to scalable commercial business models is not yet fully proven. The team has deep scientific credibility, but its operational and commercial maturity — in terms of scaling sales, global service/support, and expanding beyond premium research use cases — appears to trail product execution. This places them as better than most early deep tech ventures, but not yet a top‑tier execution engine across business functions.\n\nIn sum, Qnami has excellent engineering chops and credible delivery to date, but its commercial expansion and scale execution still need acceleration — hence a 6.5/10 execution score.",
+  "timestamp": "2026-02-03T17:56:22.835174+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "horiba.com\n+1",
+      "publisher": "horiba.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

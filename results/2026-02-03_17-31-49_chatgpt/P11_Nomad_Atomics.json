@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P11",
+  "company": "Nomad Atomics",
+  "question": "How does Nomad Atomics differ from direct competitors currently? Summarise it in max 300 words.",
+  "answer": "Nomad Atomics vs Direct Competitors (Summary, ≤300 words)\n\nNomad Atomics is an Australian deep‑tech company that develops field‑deployable quantum sensors—notably compact cold‑atom gravimeters, accelerometers, magnetometers, and atomic clocks—that bring quantum measurement out of the lab and into real‑world applications such as mineral exploration, subsurface monitoring, and inertial navigation. Their sensors are designed to be rugged, miniaturised, and user‑friendly for deployment in harsh field conditions, offering drift‑free, high‑precision absolute measurements without frequent recalibration. This contrasts with many traditional survey instruments that rely on mechanical parts with environmental sensitivities. \nnomadatomics.com\n+1\n\nKey Differentiators\n\nField‑readiness & robustness: Nomad Atomics emphasises compact, rugged quantum sensors engineered for real operational environments—surveys, caves, drones—unlike many lab‑bound prototype systems. \nnomadatomics.com\n\nAbsolute, drift‑free measurement: Their gravimeters directly measure absolute gravity, removing drift and base‑station calibration needs typical of relative gravimeters. \nnomadatomics.com\n\nBroad use cases: Designed for resource discovery, underground monitoring, inertial navigation (e.g., GNSS‑denied positioning), and environmental applications, blending high accuracy with practical use. \nnomadatomics.com\n\nCompetitors & Positioning\nNomad Atomics operates in a rapidly growing quantum sensing market alongside firms such as SBQuantum (diamond‑based high‑precision magnetometers), AdamantQ (diamond‑quantum timing/sensing components), Qnami and QZabre (nanoscale quantum measurement tools), and other ventures focused on photonic or atomic sensor modules. These competitors often innovate specific sensor types (e.g., NV‑diamond magnetometry or photonic metrology) and target research, industrial, or specialized navigation segments. \nCB Insights\n+1\n\nWhere Nomad Atomics stands out is its combination of cold‑atom technology, miniaturisation for field deployment, and a suite of sensor types with robust packaging for direct industry use, rather than purely scientific instruments or single‑technology niches. \nnomadatomics.com",
+  "timestamp": "2026-02-03T17:38:15.679014+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/what-we-build",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/mineral-exploration",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/what-we-do",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/nomad-atomics",
+      "title": "CB Insights\n+1",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

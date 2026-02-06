@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP19",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC demonstrates moderate tolerance for strategic pivots in quantum startups when science demands it, prioritizing long-term technical breakthroughs over rushed commercialization.\nquantum+2\n\nScore: 7/10\n\nDCVC's \"picks and shovels\" strategy—backing enabling tech like Q-CTRL's quantum control systems and Horizon Quantum's software—shows flexibility across hardware, control stacks, and software layers, rather than fixating on quantum computer builders (except Rigetti). Their patient, multi-decade horizon supports deep tech through R&D cycles, emphasizing techno-economic scalability and fault tolerance over premature revenue, as seen in investments awaiting utility-scale milestones by 2033. This aligns with science-driven pivots, bolstered by manufacturing expertise and DARPA validations they value for de-risking.\nfatfire+4\n\nHowever, their data-first rigor and focus on linear scalability could penalize pivots lacking clear commercial paths, potentially pressuring founders if metrics slip—evident in selective post-hype investing. Brutally, they're not pivot cheerleaders; they back vision with discipline, but demand credible progress, making them solid but not infinitely forgiving for quantum's chaos. (198 words)\nsparkco+1",
+  "sources": [
+    {
+      "url": "https://quantum.org.uk/company/dcvc",
+      "title": "quantum+2",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire+4",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+1",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/company/dcvc",
+      "title": "quantum\nDCVC - Quantum Computing Company Profile\nLearn about DCVC, a United States-based quantum computing company founded in 2011. DCVC (Data Collective) is a venture capital and private equity firm founded in 2011 and based in San Francisco/Palo Alto, California, led by founders and m...",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire\nDCVC: Pioneering Data-Driven Deep Tech Investments\nExplore DCVC's innovative approach to venture capital, focusing on data-driven investments in deep tech sectors and shaping the future of technology.",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire\nDCVC: Pioneering Data-Driven Deep Tech Investments\nExplore DCVC's innovative approach to venture capital, focusing on data-driven investments in deep tech sectors and shaping the future of technology.",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC differentiates itself through a techno-economic analysis approach, ensuring startups have a credible path to scale and profitability. They emphasize linear scalability and cost-efficiency, particularly in replacing or expanding vital industries. The firm's data-first and computation-led strategy supports teams that utilize real-world data and automation to gain competitive advantages. DCVC's investment approach combines financial returns with societal impact, focusing on innovations that...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:09:51.305016+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

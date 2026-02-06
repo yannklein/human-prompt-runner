@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP2",
+  "vc": "QAI Ventures",
+  "question": "What is QAI Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Here’s a concise, 200-word summary of QAI Ventures’ investment thesis based on available materials.\n\nQAI Ventures pursues the next tech revolution in quantum technologies, focusing on Pure Quantum Tech (computing, sensing, and communications), QuantumAI-leaning solutions, and Advanced Computing across the broader value chain. Their thesis centers on backing early-stage ventures that demonstrate strong technical potential and initial market traction, while also engaging in growth-stage investments for scalable, revenue-generating companies. They operate with a dual-fund approach: an Early Stage Fund (often paired with accelerator activities) to secure an early cap table position and de-risk investments through hands-on mentorship, validation, and structured milestones; and a Growth Stage Fund to back companies that have proven product-market fit and are ready to scale globally toward exit opportunities. Ticket sizes typically range from the low hundreds of thousands in early rounds to the multi-million dollar range for growth rounds, with a preference for staged financings linked to technical and commercial milestones. Sector preferences emphasize applications where quantum advantages drive real-world impact—finance, energy, life sciences, cybersecurity, and logistics—especially where AI-augmented quantum solutions can disrupt incumbents. The fund emphasizes patient, tech-focused capital, global reach (North America, Europe, Asia), and a governance model that blends accelerator-driven de-risking with growth-stage scaling for strategic exits. This combination aims to accelerate commercialization of quantum innovations while providing meaningful ROI for LPs.\n\nCitations: For a high-level description of focus areas and the dual-fund approach, see QAI Ventures’ investment materials and industry profiles.\nqai-ventures+2",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/investment-fund",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/investment-fund",
+      "title": "qai-ventures\nHow We Invest\nQAI Ventures backs startups in Pure Quantum Tech, QuantumAI, and Advanced Computing. We invest from pre-seed to Series C with global reach, deep expertise, and a dual-fund strategy.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:35:09.332289+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

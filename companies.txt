@@ -1,1 +1,5 @@
 Qnami
+AoSense
+Nomad Atomics
+Q-CTRL
+Vector Atomic (IonQ)

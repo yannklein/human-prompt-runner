@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP15",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures earns a brutally honest score of 4/10 for credible, conservative narrative discipline.\n\nNew Fund, Unproven Track Record\n\nFirgun Ventures, launched in 2025, positions itself as the first VC fund dedicated to Series A/B quantum startups, emphasizing scientific rigor, \"First, do no harm\" ethics, and backing founders who've bridged lab-to-market gaps. With founders like Dr. Kris Naudts and Zeynep Koruturk boasting prior angel investments (e.g., early Quantinuum backing since 2016), they highlight sustainable scaling over hype. Yet, as a brand-new firm with only a $70M first close toward a $250M target (anchored by Qatar Investment Authority), there's zero public evidence of portfolio outcomes or delivery.\neverythingstartups+3\n\nMarketing Flags Overhype Risks\n\nSelf-description as \"market’s first\" specialized quantum growth fund and claims of \"industrial revolution\" funding scream category pioneering, a classic VC hype tactic. Advisory council boasts (Cambridge, MIT, Google) add credibility but also amplify promotional flair without tested results. Sources note focus on \"execution over physics breakthroughs,\" yet they critique founders' \"storytelling weaknesses\" while crafting their own bold narratives around revenue paths and moats.\nthequantuminsider+4\n\nLimited Conservative Signals\n\nEmphasis on \"responsible innovation\" and \"high-conviction capital\" suggests restraint, but no exits, IRRs, or under-promise examples exist publicly. Quantum VC often inflates expectations; Firgun mirrors this without differentiation via proven over-delivery. As a quantum founder, I'd view them as credible newcomers (strong team, LP backing) but not yet disciplined conservatives—wait for portfolio proof. (198 words)\nventurecapitalarchive+1",
+  "sources": [
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups+3",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+4",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive+1",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive\nFirgun Ventures\nFirgun Ventures specializes in seed-stage investments in deep-tech startups with a focus on quantum computing, AI, and robotics. The firm seeks out founders with a technical background and a vision for scalable, game-changing products. By focusing on breakthrough technologies, Firgun supports founders with global expansion potential and strong engineering talent, enabling disruptive solutions for tomorrow’s challenges.",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:58:53.821954+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

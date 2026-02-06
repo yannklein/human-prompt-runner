@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP15",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's reputation for credible, conservative narrative discipline — are they known for under-promising and over-delivering rather than overhyping portfolio companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC earns a brutally honest score of 7/10 for credible, conservative narrative discipline.\nsparkco\n​\n\nThey emphasize rigorous techno-economic analysis, capital efficiency, and linear scalability in deep tech investments, focusing on startups with defensible paths to profitability rather than flashy moonshots. This approach—prioritizing data-driven, computation-led strategies in sectors like climate tech, AI, and quantum—signals under-promising by targeting \"trillion-dollar challenges\" with measurable impact over hype. Portfolio successes like Rocket Lab, Databricks, and Rigetti demonstrate over-delivery through exits and growth, bolstered by their scientist-heavy team that vets technical viability upfront.\ninvestorlist+3\n\nYet, as a prominent VC in hyped fields like quantum and climate (e.g., their $700M DCVC Climate fund), they occasionally amplify portfolio narratives in public discussions on industrial renewal and emissions tech, which can border on optimism without full conservatism. Testimonials praise their practical guidance and active support, but limited transparency on returns (no specific metrics disclosed) tempers full trust in pure under-promise ethos. For quantum founders, they're credible partners who deliver strategically, but not the most restrained voices in VC. Overall, strong on substance, solid reputation minus VC flair. (198 words)\nYouTube\n​\ninvestorlist+1",
+  "sources": [
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://investorlist.com/investor/dcvc",
+      "title": "investorlist+3",
+      "publisher": "investorlist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://investorlist.com/investor/dcvc",
+      "title": "investorlist+1",
+      "publisher": "investorlist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency DCVC prioritizes sectors traditionally underserved by...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://investorlist.com/investor/dcvc",
+      "title": "investorlist\nDCVC - Investorlist\nDCVC is a deep tech venture capital firm investing in early-stage and growth companies addressing complex global challenges.",
+      "publisher": "investorlist.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://investorlist.com/investor/dcvc",
+      "title": "investorlist\nDCVC - Investorlist\nDCVC is a deep tech venture capital firm investing in early-stage and growth companies addressing complex global challenges.",
+      "publisher": "investorlist.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:01:47.852580+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

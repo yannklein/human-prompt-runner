@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P22",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the uniqueness of the Qnami's current IP and the company being a leader in its approach?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "**Brutally Honest VC‑Style Score: ** 7.5 / 10\n\nExplanation (≈200 words):\nQnami’s intellectual property and technology position are genuinely distinctive within the quantum sensing niche, but there are important nuances that temper the “unicorn” or category‑leading claim.\n\nOn the positive side, Qnami has developed and commercialized what is widely cited as the first commercial Scanning NV (nitrogen‑vacancy) magnetometer — the ProteusQ™ — leveraging proprietary diamond‑based quantum sensors with NV centers to image magnetic fields at the nanoscale, a capability that classical tools cannot easily replicate. This product, underpinned by patented Quantilever™ diamond scanning probes, gives the company a real technical edge in high‑precision magnetic imaging and metrology — an area of increasing importance for materials science, spintronics, semiconductors and quantum device R&D. The tool has penetrated research labs across Europe and North America and is being distributed globally with strategic partners. \nThe Quantum Insider\n+1\n\nHowever, this space is very specialized and deep‑tech‑centric, and while Qnami’s IP is strong within its narrow domain, the broader quantum technology ecosystem has multiple competing approaches to quantum sensing and imaging (e.g., other NV‑center specialists, competing scanning probe techniques, alternative quantum sensor modalities). Also, the company remains small with limited commercial revenue and has yet to expand significantly beyond core research markets. The ProteusQ leadership today is notable, but market leadership in a broader commercial context is still emerging rather than established. \nQnami\n\nBottom line: unique and defensible tech at 7.5/10, but not yet a clear, dominant platform across all quantum sensing/measurement markets.",
+  "timestamp": "2026-02-03T18:00:32.709395+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/02/02/qnami-expands-into-japan-and-south-korea/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

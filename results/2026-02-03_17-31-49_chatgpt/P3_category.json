@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P3",
+  "company": null,
+  "question": "What are the top 5 most promising companies in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of the top 5 most promising companies in quantum sensing right now — combining market leadership, technological breakthroughs, funding momentum, and real-world applications. (Quantum sensing refers to devices that use quantum effects to measure physical quantities with extreme precision.) \nIndustry Research\n+2\nskyquestt.com\n+2\n\n1. EuQlid Inc. – A standout startup developing diamond‑based quantum imaging tech that can non‑invasively scan semiconductors and batteries at nanometer scale. Its Qu‑MRI platform is drawing early commercial investment and may disrupt chip inspection. \nQuantum World Congress\n+1\n\n2. Qnami – Swiss deep‑tech company building NV‑diamond quantum sensors with applications in materials science, nano‑imaging and industrial process control. \nDataintelo\n\n3. AOSense Inc. – Long‑established leader in atom‑optic sensors for precision navigation, gravity measurement and timing — widely used in defense and aerospace. \nV-MR\n\n4. Q‑CTRL – Australian firm creating quantum control software and ruggedized quantum sensor systems (e.g., for GPS‑denied navigation), helping transition lab tech to field use. \nskyquestt.com\n+1\n\n5. Infleqtion (formerly ColdQuanta / combining sensing & computing) – Developing edge‑ready quantum sensors and devices, leveraging neutral atom tech and quantum systems integration for diverse applications. \nskyquestt.com\n+1\n\nThese firms span leading startups to established innovators, each with distinct sensing tech that’s drawing funding, partnerships or real applications beyond research labs. \nIndustry Research",
+  "timestamp": "2026-02-03T17:32:45.284516+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.industryresearch.biz/market-reports/quantum-sensors-market-110174",
+      "title": "Industry Research\n+2\nskyquestt.com\n+2",
+      "publisher": "industryresearch.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quantumworldcongress.com/news-and-updates/quantum-startup-pitch-competition-2024-euqlids-quantum-sensing-triumphs-in-a-battle-of-groundbreaking-startups",
+      "title": "Quantum World Congress\n+1",
+      "publisher": "quantumworldcongress.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://dataintelo.com/report/quantum-sensor-market",
+      "title": "Dataintelo",
+      "publisher": "dataintelo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://v-mr.biz/quantum-sensors-market",
+      "title": "V-MR",
+      "publisher": "v-mr.biz",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.skyquestt.com/report/quantum-sensors-market/market-news",
+      "title": "skyquestt.com\n+1",
+      "publisher": "skyquestt.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

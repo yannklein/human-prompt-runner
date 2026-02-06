@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP2",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Firgun Ventures is a quantum-first venture capital firm based in London that targets the Series A and Series B stages, aiming to bridge the funding gap between seed research and commercial scaling for quantum technology companies. The firm’s thesis is centered on investing in startups that have moved beyond foundational research and are ready to expand into industrial adoption and scalable revenue pathways. It seeks to partner with founders developing transformative quantum solutions across areas such as quantum computing, quantum sensing, communications and cryptography, and related applications in healthcare, climate science, finance and cybersecurity. \nfirgun.vc\n+2\nfirgun.vc\n+2\n\nFirgun’s strategy emphasizes deep scientific expertise combined with practical commercial execution, leveraging the founders’ experience and an advisory network from leading institutions to provide both capital and sector-specific guidance. It positions itself as the first call for quantum entrepreneurs transitioning from early proof-of-concept to meaningful market impact, with a values-driven ethos that includes inclusion and responsible growth. \nfirgun.vc\n+1\n\nThe firm launched its first dedicated quantum technology fund in 2025, targeting a $250 million corpus with a $70 million first close anchored by the Qatar Investment Authority, with a global mandate but a strong foothold in key innovation hubs. \nstartupresearcher.com",
+  "timestamp": "2026-02-03T17:21:54.516265+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/",
+      "title": "firgun.vc\n+2\nfirgun.vc\n+2",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher.com",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

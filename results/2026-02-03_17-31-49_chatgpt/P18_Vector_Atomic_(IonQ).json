@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P18",
+  "company": "Vector Atomic (IonQ)",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Vector Atomic (IonQ) have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Academic Strength Score (1–10): IonQ + Vector Atomic team: ~6.5/10\n\nExplanation (≈200 words):\nThe combined academic strength of IonQ and the recently acquired Vector Atomic team is above average for a deep‑tech hardware company but not at the tier typically seen in pure academic research labs (e.g., leading physics departments). IonQ’s founders, Christopher Monroe and Jungsang Kim, have exceptionally strong academic backgrounds, with long histories in trapped‑ion quantum information science dating back decades, including high‑impact publications (e.g., Science review on ion trap processors) and leadership roles at major research universities. Both would likely have h‑indices in the high tens to possibly 100+ territory, typical of long‑career senior physicists, though exact numbers vary and should be checked on Google Scholar for precision. \nGoogle Scholar\n+1\n\nHowever, much of IonQ’s current operational team is engineering and systems‑oriented, reflecting commercialization rather than research‑centric output—so while IonQ regularly publishes (e.g., presenting research at major conferences), the average h‑index across the company’s scientists is likely moderate, not uniformly high. Meanwhile, Vector Atomic’s leadership (e.g., CEO Jamil Abo‑Shaeer and other co‑founders) bring strong applied expertise in quantum sensing but do not currently have widely visible, high‑impact academic profiles or easily findable citation metrics. \nVector Atomic\n\nAs a result, the overall academic influence of the combined team is solid and credible, especially in applied quantum tech, but not dominated by leading academic super‑stars across the board—hence a mid‑to‑upper score around 6.5/10.",
+  "timestamp": "2026-02-03T17:53:50.983314+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://scholar.google.com/citations?hl=en&user=9rrnu-0AAAAJ",
+      "title": "Google Scholar\n+1",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://vectoratomic.com/",
+      "title": "Vector Atomic",
+      "publisher": "vectoratomic.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

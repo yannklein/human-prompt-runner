@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P2",
+  "company": null,
+  "question": "Which are top 10 countries in Quantum Sensing innovation currently? and why? Give me 200 word explanation and the rank",
+  "answer": "Here’s a ranked list of the top 10 countries leading in quantum sensing innovation today (2025/2026) — based on research output, patents, institutional strength, ecosystem size, and strategic government support. Quantum sensing is a subset of quantum technologies that includes ultra‑precise measurement, clocks, imaging, and navigation systems: \necipe.org\n+1\n\n🔢 Top 10 Countries in Quantum Sensing Innovation (Ranked)\n1. China – Massive research output & high publication share; leads in quantum sensing publications. \necipe.org\n\n2. United States – Strong research quality and global patent influence. \necipe.org\n\n3. Germany – Europe’s key contributor with strong industrial and research bases. \nquantum.org.uk\n\n4. United Kingdom – Large quantum ecosystem with many companies and research efforts. \nquantum.org.uk\n\n5. Japan – Strong science infrastructure, funding and patent activity support sensing. \nquantum.org.uk\n\n6. South Korea – Top 5 in quantum patenting and strong corporate research. \nSeoul Economic Daily\n\n7. Canada – Significant quantum company base and strong university research. \nquantum.org.uk\n\n8. France – Growing citations and industrial involvement in quantum sensing. \nquantum.org.uk\n\n9. Netherlands – Dense quantum startup ecosystem and metrology research. \nquantum.org.uk\n\n10. Switzerland – High per‑capita research impact and precision labs. \nquantum.org.uk\n\n💡 Why These Countries Lead (200‑word explanation)\n\nInnovation in quantum sensing is driven by a mix of scientific research output, patents, industrial ecosystem size, and targeted national strategies. China currently dominates global quantum publication volume in sensing, giving it broad scientific leadership and scale. \necipe.org\n The United States excels in high‑impact research and patent influence, backed by major federal initiatives and strong university‑industry ties. \necipe.org\n European nations like Germany, the UK, France, and the Netherlands benefit from coordinated EU and national funding programs and a dense cluster of startups and institutions that specialize in both fundamental science and applied metrology. \nquantum.org.uk\n Japan’s long‑standing investment in precision measurement and quantum technologies elevates its profile, while South Korea’s high patent rankings show strong innovation incentives. \nSeoul Economic Daily\n Canada and Switzerland punch above their size with concentrated academic strength and specialized labs. \nquantum.org.uk\n Across this group, public investment, strategic national plans, and deep collaborations between universities, government labs, and industry underpin continued advancement in quantum sensing innovation — a field essential for next‑generation navigation, medical imaging, communication security, and defense applications. \necipe.org",
+  "timestamp": "2026-02-03T17:32:18.782304+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://ecipe.org/publications/benchmarking-quantum-technology-performance/",
+      "title": "ecipe.org\n+1",
+      "publisher": "ecipe.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/insights/",
+      "title": "quantum.org.uk",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.sedaily.com/technology/2025/12/19/korea-ranks-5th-in-quantum-technology-patents-lg-places-2nd",
+      "title": "Seoul Economic Daily",
+      "publisher": "en.sedaily.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P12",
+  "company": "Nomad Atomics",
+  "question": "In your perception as AI Engine, is Nomad Atomics's current ICP aligned with what the company claims: 1. Company Firmographics\n\nIndustry:\nSemiconductor manufacturing, advanced materials, nanotechnology, quantum technology, and applied physics R&D\n\nSub-sectors:\n\nSemiconductor process development (logic, memory, power electronics)\n\nSpintronics and magnetic materials\n\nQuantum computing hardware\n\nAdvanced sensor development\n\nResearch instrumentation manufacturers\n\nCompany Size:\n\n200–5,000 employees\n\nAnnual revenue: USD 50M–2B\n\nGeography:\n\nPrimary: Europe (DACH, France, Nordics), United States\n\nSecondary: Japan, South Korea, Taiwan\n\nOrganizational Maturity:\n\nEstablished R&D organization with in-house physics or materials science teams\n\nActively transitioning discoveries from lab-scale research to industrial-scale validation? Give a brutally honest score from 1–10 and explain in 200 words",
+  "answer": "Based on publicly available data, Nomad Atomics’s actual Ideal Customer Profile (ICP) today does not fully align with the company firmographics you outlined. I’d give it a honest score of around 3.5/10. Here’s why:\n\nWhere the company actually sits (based on verifiable sources):\n• Industry focus: Nomad Atomics is clearly deep‑tech in quantum sensing — building compact cold‑atom gravimeters, magnetometers, accelerometers and related sensors intended for field deployment. It does not appear to be broadly in semiconductor manufacturing, advanced materials, standard nanotechnology instruments, spintronics, quantum computing hardware, or applied physics R&D at scale as you describe. Its products are quantum sensors, not semiconductor process platforms. \nnomadatomics.com\n+1\n\n• Sub‑sector specifics: Their focus is on gravimetry, navigation, and sensing solutions for mining, resource exploration, and navigation, not on logic or memory semiconductor process development, spintronics, or quantum computing hardware generically. \nnomadatomics.com\n\n• Company size & maturity: Public sources list ~11–50 employees — far below your 200–5,000 range. \nLinkedIn\n\n• Revenue & funding: There’s no public evidence of USD 50 M+ revenue; one directory even suggests revenue ~$1‑5M, and total capital raised is modest (~AUD 12M around Series A). \nContactOut\n+1\n\n• Geography: Headquarters and primary operations are in Australia, with activity in Europe via projects, but no strong public presence in DACH, France, Nordics, Japan, South Korea, Taiwan as core markets. \nnomadatomics.com\n\n• Organizational stage: They are an early‑stage commercial venture aiming to validate and scale product prototypes into real‑world use — not a large established R&D organization with broad industrial scale‑up. \nBusiness News Australia\n\nSummary:\nNomad Atomics does align with deep tech and quantum sensor ambitions, but its actual ICP today is much narrower (quantum field sensors for mining, geophysics, navigation) and substantially smaller in size, revenue, and breadth than your stated firmographics. They’re early‑stage deep tech, not a broad semiconductor/nanotech player at industrial scale. I’d adjust your ICP expectations considerably if you’re thinking of them for partnerships, enterprise sales, or ecosystem fits.",
+  "timestamp": "2026-02-03T17:40:34.778789+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/what-we-build",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/what-we-do",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://au.linkedin.com/company/nomadatomics",
+      "title": "LinkedIn",
+      "publisher": "au.linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://contactout.com/company/Nomad-Atomics-91278",
+      "title": "ContactOut\n+1",
+      "publisher": "contactout.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/about-us",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.businessnewsaustralia.com/articles/quantum-sensor-startup-nomad-atomics-raises--12m.html",
+      "title": "Business News Australia",
+      "publisher": "businessnewsaustralia.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

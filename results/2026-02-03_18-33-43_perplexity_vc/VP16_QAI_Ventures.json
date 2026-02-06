@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP16",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures has moderate signaling power in the quantum VC space, earning a brutally honest score of 5/10.\nraisebetter+1\n\nLater-Stage Investor Trust\n\nQAI Ventures, a Switzerland-based early-stage quantum tech VC and accelerator founded around 2020, lacks clear evidence of strong co-investment or follow-on backing from top-tier later-stage VCs like Sequoia, a16z, or quantum-focused funds such as Quantonation or Creative Destruction Lab beyond their programs. Their portfolio includes quantum computing, sensing, and AI startups, but public data shows no high-profile exits or Series B+ rounds signaling quality to big players. This positions them as a specialist but not a \"stamp of approval\" for downstream funding.\nqai-ventures+2\n\nGovernment Buyer Credibility\n\nThey boast partnerships and government ties, especially in Asia-Pacific—backed by Enterprise Singapore grants, collaborations with Singapore's Infocomm Development Authority, and offices in Singapore as a quantum hub. Expansions to North America (Calgary accelerator with University of Calgary) and plans for IP-based ventures show ecosystem goodwill, but these are more promotional than deep procurement deals. No U.S. DoD or EU Horizon contracts evident, limiting global buyer trust.\nqaiglobalservices+2\n\nEnterprise Customer Signal\n\nStrategic ties to research institutions and corporates aid portfolio access to facilities and mentors, but no standout enterprise adoptions (e.g., IBM, Google Quantum AI, or pharma pilots) tied directly to QAI backing. Their rigorous evaluation process added 6 quantum firms recently, yet customer validation remains nascent in a field needing proven scalability.\nkruncher+2\n\nOverall, QAI signals niche expertise for quantum startups but falls short on proven quality markers for elite follow-ons or buyers—solid for acceleration, weak for de-risking. (198 words)",
+  "sources": [
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter+1",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/portfolio",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "http://qaiglobalservices.com/government-public-sector/",
+      "title": "qaiglobalservices+2",
+      "publisher": "qaiglobalservices.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher+2",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter\nQAI Ventures - 2025 Investor Profile | Raise Better\nLooking to get funded by QAI Ventures in 2025? Create your profile and get matched to active professional investors. Get started for free!",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter\nQAI Ventures - 2025 Investor Profile | Raise Better\nLooking to get funded by QAI Ventures in 2025? Create your profile and get matched to active professional investors. Get started for free!",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/portfolio",
+      "title": "qai-ventures\nPortfolio Companies\nBuilding quantum interconnects to link quantum processors and enable scalable quantum computing Combining quantum and AI to develop the next generation of imaging and sensing technologies. Pioneering industrial quantum computing with its Super Quantum Station, an accessible HPC Quantum Computing Lab-as-a-Service. Advancing diagnostics so every patient gets the answers they need by turning unstructured patient data into precision diagnostics.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "http://qaiglobalservices.com/government-public-sector/",
+      "title": "qaiglobalservices\nGovernment/Public Sector\nQAI is the only SPI organization in the world to have partnerships with government organizations and industry associations throughout Asia, where it brings its knowledge and experience to bear on national-level programs for software process improvement and to start the Process Improvement journeys of their software industries. For example, In South-East Asia especially, governments have recognized",
+      "publisher": "qaiglobalservices.com",
+      "snippet": ""
+    },
+    {
+      "url": "http://qaiglobalservices.com/government-public-sector/",
+      "title": "qaiglobalservices\nGovernment/Public Sector\nQAI is the only SPI organization in the world to have partnerships with government organizations and industry associations throughout Asia, where it brings its knowledge and experience to bear on national-level programs for software process improvement and to start the Process Improvement journeys of their software industries. For example, In South-East Asia especially, governments have recognized",
+      "publisher": "qaiglobalservices.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study:: QAI Ventures\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:03:18.646143+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

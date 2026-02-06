@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP13",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Nu Quantum’s funding rounds and continued support imply a track record of collaboration and follow-on support, which is encouraging for a startup seeking investor-led introductions to hardware and ecosystem partners.\nlinkedin+1",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_tech-spin-out-at-forefront-of-quantum-computing-activity-7125828910264569858-tmUD",
+      "title": "linkedin+1",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_tech-spin-out-at-forefront-of-quantum-computing-activity-7125828910264569858-tmUD",
+      "title": "linkedin\nTech spin-out at forefront of quantum computing revolution raises £7m | Amadeus Capital Partners\n🎉 Exciting News from Nu Quantum ! We’re proud to announce our participation in a £7M pre-series A round in Nu Quantum, alongside Expeditions Fund and other investors. Nu Quantum, interviewed for The Times by James Hurley, is a quantum photonics spin-out from the Cavendish Labs at the University of Cambridge - was founded in 2018 with the aim of advancing quantum photonics technology for communications, sensing, and computing. Nu Quantum’s approach, which combines quantum optics, novel...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_tech-spin-out-at-forefront-of-quantum-computing-activity-7125828910264569858-tmUD",
+      "title": "linkedin\nTech spin-out at forefront of quantum computing revolution raises £7m | Amadeus Capital Partners\n🎉 Exciting News from Nu Quantum ! We’re proud to announce our participation in a £7M pre-series A round in Nu Quantum, alongside Expeditions Fund and other investors. Nu Quantum, interviewed for The Times by James Hurley, is a quantum photonics spin-out from the Cavendish Labs at the University of Cambridge - was founded in 2018 with the aim of advancing quantum photonics technology for communications, sensing, and computing. Nu Quantum’s approach, which combines quantum optics, novel...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_scaling-up-quantum-computing-by-interconnecting-activity-7024688659689795584-JP2A",
+      "title": "linkedin\nScaling Up Quantum Computing by Interconnecting Quantum Processors | Amadeus Capital Partners\nAmadeus is proud of its track record of investing in start-ups at the frontline of developing commercial applications of quantum computing, such as Nu Quantum and Riverlane. It is worth following Anne-Françoise PELE at EE Times Electronic Engineering Times for ongoing coverage of this space, including this story about a French start-up working on increasing the computational capabilities of quantum processors by finding a new way of interconnecting them. Click here to find out more....",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_%F0%9D%97%A1%F0%9D%98%82-%F0%9D%97%A4%F0%9D%98%82%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%81%F0%9D%98%82%F0%9D%97%BA-%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B2%F0%9D%98%80-%F0%9D%9F%B2%F0%9D%9F%AC%F0%9D%97%BA-activity-7404444823006429185-5PBk",
+      "title": "linkedin\nAmadeus Capital Partners' Post - LinkedIn\n𝗡𝘂 𝗤𝘂𝗮𝗻𝘁𝘂𝗺 𝗿𝗮𝗶𝘀𝗲𝘀 $𝟲𝟬𝗺 𝗦𝗲𝗿𝗶𝗲𝘀 𝗔 Proud to back Nu Quantum as they close an oversubscribed $60m Series A to scale quantum computer networking. Why it matters: • Focus is distributed quantum computing: linking processors via an Entanglement Fabric to reach fault tolerance. • Largest financing for a pure-play quantum networking company and the largest UK quantum Series A to date. • Fuel for the roadmap, team growth and international expansion. Led by National Grid Partners, with Gresham House...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_tech-spin-out-at-forefront-of-quantum-computing-activity-7125828910264569858-tmUD",
+      "title": "linkedin\nTech spin-out at forefront of quantum computing revolution raises £7m | Amadeus Capital Partners\n🎉 Exciting News from Nu Quantum ! We’re proud to announce our participation in a £7M pre-series A round in Nu Quantum, alongside Expeditions Fund and other investors. Nu Quantum, interviewed for The Times by James Hurley, is a quantum photonics spin-out from the Cavendish Labs at the University of Cambridge - was founded in 2018 with the aim of advancing quantum photonics technology for communications, sensing, and computing. Nu Quantum’s approach, which combines quantum optics, novel...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:55:02.389453+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

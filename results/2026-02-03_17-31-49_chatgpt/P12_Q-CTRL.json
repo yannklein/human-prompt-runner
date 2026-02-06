@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P12",
+  "company": "Q-CTRL",
+  "question": "In your perception as AI Engine, is Q-CTRL's current ICP aligned with what the company claims: 1. Company Firmographics\n\nIndustry:\nSemiconductor manufacturing, advanced materials, nanotechnology, quantum technology, and applied physics R&D\n\nSub-sectors:\n\nSemiconductor process development (logic, memory, power electronics)\n\nSpintronics and magnetic materials\n\nQuantum computing hardware\n\nAdvanced sensor development\n\nResearch instrumentation manufacturers\n\nCompany Size:\n\n200–5,000 employees\n\nAnnual revenue: USD 50M–2B\n\nGeography:\n\nPrimary: Europe (DACH, France, Nordics), United States\n\nSecondary: Japan, South Korea, Taiwan\n\nOrganizational Maturity:\n\nEstablished R&D organization with in-house physics or materials science teams\n\nActively transitioning discoveries from lab-scale research to industrial-scale validation? Give a brutally honest score from 1–10 and explain in 200 words",
+  "answer": "Brutally honest alignment score: 4/10\n\nHere’s a clear and honest breakdown of how well Q‑CTRL’s actual current profile matches your claimed Ideal Customer Profile (ICP):\n\nMisalignments\n\n1. Industry & Focus\n\nQ‑CTRL does operate in the quantum technology space, but its core product is infrastructure software for quantum control and sensing — not semiconductor manufacturing, nanotechnology materials, spintronics, or broad semiconductor process development as you defined. Its focus is on software performance/configuration for quantum hardware, not materials or fabrication. \nq-ctrl.com\n\nIt doesn’t have direct activity in advanced semiconductor logic/memory/power electronics or specialized sensor fabrication outside of quantum-specific sensors; its offerings are primarily software enabling quantum computing and sensing systems, not broad sensor hardware markets.\n\n2. Company Size & Revenue\n\nThe company’s actual size is ~100–200 employees, far below your 200–5,000 range. \nLinkedIn\n+1\n\nAnnual revenue is estimated closer to $10M–$50M (perhaps ~$16–33M), not USD $50M–2B. \nLatka\n+1\n\n3. Geography\n\nQ‑CTRL is global, with offices in Australia (Sydney), US (Los Angeles, San Francisco), and Europe (Berlin, Oxford), which partially overlaps your US/Europe geography; however, no specific footprint in Japan, South Korea, or Taiwan is clear yet (though they’re expanding partnerships). \nq-ctrl.com\n+1\n\n4. Organizational Maturity\n\nIt does have R&D strength and works with academia, national labs, and enterprise partners in quantum computing and sensing. \nq-ctrl.com\n\nHowever, the transition from lab research to industrial-scale validation is narrowly focused on quantum infrastructure software and specific sensing demos, not broad industrial-scale production pipelines.\n\nAlignments\n\n1. R&D expertise\n\nQ‑CTRL does have deep in‑house physics/controls expertise and is transitioning quantum control from research to commercial platforms. \nquantum.org.uk\n\n2. Segment relevance\n\nIt fits the quantum technology hardware enabling segment, though not your broader semiconductor/advanced materials ICP.\n\nSummary\n\nQ‑CTRL is a strong quantum infrastructure software and sensing company, but it is much smaller, narrower in scope, and differently focused than your stated ICP that includes semiconductor process development, spintronics, and broad industrial‑scale validation. Their business fits deep tech software & quantum control R&D, not the wide industrial/electronics verticals outlined in your firmographics.",
+  "timestamp": "2026-02-03T17:40:57.208506+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://q-ctrl.com/",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/company/q-ctrl",
+      "title": "LinkedIn\n+1",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://getlatka.com/companies/q-ctrl",
+      "title": "Latka\n+1",
+      "publisher": "getlatka.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/blog/q-ctrl-sets-global-quantum-technology-fundraising-record-increasing-series-b-to-usd-113m-led-by-gp-bullhound",
+      "title": "q-ctrl.com\n+1",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/company/q-ctrl",
+      "title": "quantum.org.uk",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP18",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 4/10 for patience and constructive behavior during legitimate technical setbacks or milestone slippage in portfolio quantum startups.\n\nNewly launched in late 2025 with a $70M first close toward a $250M fund, Firgun lacks any publicly documented track record of managing such crises in actual portfolio companies. Their materials emphasize a \"founder-first ethos\" with \"high-trust collaboration,\" a \"First, do no harm\" principle, and advisory support from quantum experts at Cambridge, Oxford, MIT, and Google to aid scaling from lab to market. This suggests potential for constructive guidance, given founders' prior angel investments in quantum (e.g., Quantinuum) since 2016.\neverythingstartups+2\n\nHowever, as a Series A/B specialist targeting only startups with \"validated technology,\" \"early customer pilots,\" and \"credible commercialization paths,\" they appear to prioritize de-risked bets over resilient support through inevitable quantum setbacks like hardware failures or algorithm delays. No founder testimonials, case studies, or reports detail their response to slippage—common in quantum's long R&D cycles—indicating unproven patience. In a brutally honest assessment, their hype around \"technical excellence\" and \"sustainable scaling\" feels performative without evidence of sticking through tough times, risking pressure to pivot or cut losses quickly. Quantum founders should probe for references directly. (198 words)\ndatacentrenews+2",
+  "sources": [
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups+2",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews+2",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews\nFirgun Ventures launches with $70m for quantum tech ...\nFirgun Ventures launches with $70m fund to back early-stage quantum tech firms, aiming to scale innovations in computing, sensing and cryptography globally.",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:06:14.889834+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

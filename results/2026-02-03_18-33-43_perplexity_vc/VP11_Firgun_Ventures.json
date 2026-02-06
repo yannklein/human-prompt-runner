@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP11",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Direct answer: I’d rate Firgun Ventures’ LP base comfort with long-horizon, deep-tech investments around 7/10, with upside potential if their anchor is a sovereign wealth fund and if they maintain patient, strategic capital.\n\n200-word rationale:\nFirgun’s public disclosures describe an anchor investment from the Qatar Investment Authority (QIA), a sovereign wealth fund, which typically signals comfort with longer-horizon, capital-intensive bets that require patience and strategic alignment. This kind of anchor often improves credibility with other patient capital and helps validate a deep-tech thesis that can take many years to commercialize, moving Firgun toward a more patient investment stance than typical seed-focused funds. However, the public narrative also emphasizes a focus on early-growth, Series A/B quantum companies, which sits squarely in a stage where true profits are still uncertain and capital needs are sizable. This suggests a pragmatic approach to risk with a blend of strategic and financial LPs rather than an exclusively evergreen, endowment, or industrial corporate backbone. While sovereign and strategic LPs commonly bring longer horizons, some structures (e.g., fund-of-funds, corporate venture arms) could inject tighter strategic objectives or shorter return horizons. The combination observed—anchor sovereign support plus a mission-driven, technology-forward slate—indicates solid long-horizon support, but not an unconditional guarantee of evergreen or ultra-patient capital across the entire LP base. Overall, Firgun appears reasonably committed to long-term value creation, hence the 7 out of 10. The cited anchor by QIA supports this assessment.\npostquantum\n​",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:50:39.869286+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

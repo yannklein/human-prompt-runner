@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP4",
+  "vc": "Firgun Ventures",
+  "question": "Who are the key partners and advisors at Firgun Ventures? Describe their backgrounds, technical expertise, and relevant deep-tech or quantum experience in 200 words.",
+  "answer": "Firgun Ventures’ key partners and advisors include Dr. Kris Naudts and Zeynep Koruturk (founding partners), plus a seasoned advisory network with deep quantum and AI expertise from academia and industry. Naudts has a background in neuroscience and medicine, later founding Culture Trip, while Koruturk has fintech leadership experience at Goldman Sachs and angel investing in quantum startups. Their advisory council reportedly features academics from Cambridge, Oxford, and MIT, along with industry connections at Google, the Wellcome Trust, and the European Investment Bank, providing quantum-specific technical due diligence and strategic guidance. The team’s combined track record spans startup-building, academic research in quantum-related fields, and early-stage investing in deep tech, including prior backing of Cambridge Quantum Computing (now Quantinuum). This mix aims to bridge core science with commercial execution, particularly for Series A/B rounds in quantum computing, sensing, and communications. Their approach emphasizes hands-on support for manufacturing, go-to-market strategy, and governance, leveraging global networks to scale quantum technologies toward enterprise-ready products.\ndatacentrenews+2",
+  "sources": [
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews+2",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "datacentrenews\nFirgun Ventures launches with $70m for quantum tech ...\nFirgun Ventures launches with $70m fund to back early-stage quantum tech firms, aiming to scale innovations in computing, sensing and cryptography globally.",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:38:13.456180+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

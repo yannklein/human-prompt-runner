@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP13",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures has solid ties to quantum ecosystem players like QuEra Computing and QuantumBasel, which provide hardware access and expertise beneficial for quantum startups. Their accelerator grants startups entry to networks including IBM Quantum, IonQ, D-Wave, and Strangeworks—key for benchmarking and scaling.\nquera+2\n\nScore\n\n6/10\n\nExplanation\n\nQAI Ventures excels as an ecosystem connector in the quantum startup world, with strong partnerships to hardware providers like QuEra (offering 256-qubit access and consulting) and QuantumBasel, plus ties to cloud quantum platforms from IBM, IonQ, and D-Wave via accelerators. This indirectly benefits quantum companies through shared resources, mentorship, and pilot opportunities, as seen in collaborations with Quantum City in Canada and Enterprise Singapore. Portfolio firms like Moonlight AI (quantum sensing for pharma) gain from these networks, hinting at downstream pharma relevance.\nasiatechdaily+4\n\nHowever, brutally honest: Direct, publicly documented relationships with hyperscalers (AWS, Google, Azure), national labs (e.g., Sandia, ORNL), semiconductor fabs (TSMC, Intel), or aerospace giants (Boeing, Lockheed) are absent or unproven in available data. Mentions of \"national labs\" and \"industrial adopters\" are vague ecosystem boasts without specifics. Partnerships skew toward fellow quantum startups and regional hubs (Basel, Calgary, Singapore), not the heavy-hitting strategics that unlock massive contracts, supply chains, or R&D funding for a quantum firm. As a founder, I'd value this for early validation (e.g., QuEra qubits), but it's niche—not a gateway to Fortune 500 pilots or fab access. Score reflects solid quantum insider access (boosting to 6) but zero evidence of broader strategic firepower needed for hyperscale commercialization. (198 words)\nqai-ventures+3",
+  "sources": [
+    {
+      "url": "https://www.quera.com/press-releases/quera-and-qai-ventures-partner-to-accelerate-quantum-powered-businesses-and-innovation",
+      "title": "quera+2",
+      "publisher": "quera.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://asiatechdaily.com/qai-ventures-partners-with-enterprisesg-to-boost-quantumai-startups-in-asia/",
+      "title": "asiatechdaily+4",
+      "publisher": "asiatechdaily.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures+3",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quera.com/press-releases/quera-and-qai-ventures-partner-to-accelerate-quantum-powered-businesses-and-innovation",
+      "title": "quera\nQuEra and QAI Ventures Partner\nQuEra and QAI Ventures Partner to Accelerate Quantum-Powered Businesses and Innovation. Read more here.",
+      "publisher": "quera.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.quera.com/press-releases/quera-and-qai-ventures-partner-to-accelerate-quantum-powered-businesses-and-innovation",
+      "title": "quera\nQuEra and QAI Ventures Partner\nQuEra and QAI Ventures Partner to Accelerate Quantum-Powered Businesses and Innovation. Read more here.",
+      "publisher": "quera.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://asiatechdaily.com/qai-ventures-partners-with-enterprisesg-to-boost-quantumai-startups-in-asia/",
+      "title": "asiatechdaily\nQAI Ventures Partners with EnterpriseSG to Boost ...\nQAI Ventures, a global investor focused on advanced computing and quantum technology, has opened its Asia-Pacific headquarters in Singapore. It marks the firm’s entry into the region as it seeks to support early-stage innovation and expand its footprint in emerging deep-tech markets.",
+      "publisher": "asiatechdaily.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:55:35.523191+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

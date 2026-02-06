@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 4/10\n\nFirgun Ventures is extremely niche-deep in its stated focus — a London-based VC that explicitly positions itself as a “quantum-first” investor targeting Series A/B scale-ups in quantum computing, sensing, and communications technologies. Its founders and advisory council include people with scientific and investment credentials, including founders who were early angels in major quantum companies like Cambridge Quantum Computing (Quantinuum) and advisors from Cambridge, Oxford, MIT, Google, and the European Investment Bank. The firm closed a $70 M first close toward a targeted $250 M fund, anchored by the Qatar Investment Authority, and is designed to bridge the financing gap for quantum startups moving from research to commercialization. \nfirgun.vc\n+2\nstartupresearcher.com\n+2\n\nHowever, and here’s the brutally honest part: there’s essentially no visible, realized portfolio yet. Their public portfolio page says “coming soon,” and there are no detailed company investments publicly listed. We know the founders have historical angel investments (e.g., earlier backing of Quantinuum) but Firgun itself hasn’t deployed capital into a breadth of deep-tech startups that can be evaluated. That means no track record to assess returns, exits, or strategic impact. It’s a newly launched fund with promise — but without data to substantiate a strong track record in quantum computing, semiconductors, photonics, or advanced materials beyond stated intent and founder background. \nfirgun.vc\n\nBottom line: great thesis and network, but too early and minimal tangible outcomes — hence a modest score.",
+  "timestamp": "2026-02-03T17:23:47.514805+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun.vc\n+2\nstartupresearcher.com\n+2",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

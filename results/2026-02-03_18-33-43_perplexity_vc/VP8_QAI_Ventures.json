@@ -1,0 +1,41 @@
+{
+  "prompt_id": "VP8",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Some commentary suggests a heavy emphasis on non-qubit-count bottlenecks (e.g., cryogenic plumbing, control/readout chains, software-stack maturity), which is positive, but the absence of transparent, public technical milestones keeps the rating modest.\nlinkedin+1",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/pulse/how-qai-bent-rules-quantum-computing-why-matters-steve-vaile-spxie",
+      "title": "linkedin+1",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/beyond-qubit-count-practical-map-investing-across-quantum-amit-hayuth-oseie",
+      "title": "linkedin\nBeyond the Qubit Count: A Practical Map for Investing Across the ...\nThe quantum computing sector has transitioned from speculative science fiction to an investable deep-tech domain characterized by meaningful scientific traction, intensifying enterprise engagement, and crystallizing commercial pathways. Yet, as capital flows accelerate, investment decisions often hi",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scribd.com/document/941076411/Quantum-Computing-and-Error-Correction-in-2025",
+      "title": "scribd\nQuantum Computing and Error Correction in 2025 | PDF\nIn 2025, quantum computing is advancing with significant developments in quantum error correction (QEC) and fault-tolerant architectures, despite challenges related to error rates and hardware limitations. Major companies like IBM, Google, and IonQ are making strides towards achieving practical quantum advantage through innovative qubit technologies. The future of quantum computing relies on overcoming theoretical and practical challenges, with a focus on cross-disciplinary collaboration and...",
+      "publisher": "scribd.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scribd.com/document/941076411/Quantum-Computing-and-Error-Correction-in-2025",
+      "title": "scribd\nQuantum Computing and Error Correction in 2025 | PDF\nIn 2025, quantum computing is advancing with significant developments in quantum error correction (QEC) and fault-tolerant architectures, despite challenges related to error rates and hardware limitations. Major companies like IBM, Google, and IonQ are making strides towards achieving practical quantum advantage through innovative qubit technologies. The future of quantum computing relies on overcoming theoretical and practical challenges, with a focus on cross-disciplinary collaboration and...",
+      "publisher": "scribd.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/how-qai-bent-rules-quantum-computing-why-matters-steve-vaile-spxie",
+      "title": "linkedin\nHow QAI Bent the Rules of Quantum Computing and Why It Matters.\nFor business leaders, innovators, and strategists: if you want a glimpse into what could reshape industries before 2030, this is worth your next 5 minutes. If you're highly technical, you should also dive into the original research paper on the QAI site.",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:46:02.068759+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

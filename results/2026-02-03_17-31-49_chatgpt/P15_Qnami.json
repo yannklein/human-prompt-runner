@@ -1,0 +1,42 @@
+{
+  "prompt_id": "P15",
+  "company": "Qnami",
+  "question": "What are Qnami's current main weaknesses? Give short bullet points",
+  "answer": "Here are Qnami’s current main weaknesses / limitations — short bullet points based on available industry & tech context (including general limits of NV‑diamond quantum sensing technology that underpins Qnami’s products):\n\nHigh cost and market adoption barriers — quantum sensor systems like those Qnami builds remain expensive, limiting uptake especially outside well‑funded research and specialist industrial labs. \nMarketResearch.com\n\nComplexity of technology & integration — using NV‑based quantum sensors requires precise optical, microwave and control systems, making them harder to integrate into broader industrial workflows compared with conventional tools. \nResearchGate\n\nFragile quantum coherence constraints — achieving optimal sensitivity depends on maintaining NV center coherence, which is sensitive to fabrication imperfections and environmental noise. \nhoriba.com\n\nSensitivity & resolution practical limits — reaching theoretical sensitivity/resolution limits is technically challenging in real systems, due to noise, readout efficiency and material constraints. \nResearchGate\n\nProximity requirement — nanoscale magnetic mapping often needs very close spacing between probe and sample, limiting usability on rough or complex surfaces. \nqd-europe.com\n\nMarket education & awareness — potential customers may lack understanding of quantum sensing benefits versus traditional measurement tools, delaying adoption. \nMarketResearch.com\n\nLimited standardization & ecosystem maturity — as an emerging tech area, industry standards and interoperability are still developing, making broader scaling harder. \nFuture Market Report\n\nIf you want, I can break these into product-specific limitations for the ProteusQ instruments versus general NV‑center tech constraints.",
+  "timestamp": "2026-02-03T17:46:12.045738+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.marketresearch.com/Ken-Research-v3771/Quantum-Sensor-42981871/",
+      "title": "MarketResearch.com",
+      "publisher": "marketresearch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.researchgate.net/publication/344780125_Diamond_Nitrogen-Vacancy_Center_Magnetometry_Advances_and_Challenges",
+      "title": "ResearchGate",
+      "publisher": "researchgate.net",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.horiba.com/uploads/media/e-Readout_English_06.16.2021_NV_magnetometry_-_A_White_Paper_by_Qnami_01.pdf",
+      "title": "horiba.com",
+      "publisher": "horiba.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qd-europe.com/it/en/product/scanning-nv-microscope/",
+      "title": "qd-europe.com",
+      "publisher": "qd-europe.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.futuremarketreport.com/industry-report/quantum-magnetometry-market/",
+      "title": "Future Market Report",
+      "publisher": "futuremarketreport.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

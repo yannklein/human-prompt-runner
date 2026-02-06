@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP8",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Expect Firgun to push for concrete go-to-market plans, manufacturing roadmaps, and customer pilots, not just physics milestones. If you can show scalable yield, robust error-correction pathways, and a clear path to high-volume cryogenic production alongside enterprise sales, Firgun’s alignment could be strong.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:44:57.035107+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

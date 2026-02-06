@@ -1,0 +1,83 @@
+{
+  "prompt_id": "VP10",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC scores an 8/10 for ability and willingness to follow on through Series C and D for deep-tech companies without diluting founder ownership or scrambling for capital.\nsparkco+1\n\nInvestment Strategy\n\nDCVC specializes in deep tech, including quantum and AI, with a seed-to-growth approach via sector-specific funds like DCVC Bio and Climate. They typically reserve 30-50% of fund capital for follow-ons, enabling sustained support into later rounds without forced syndication. This patient, data-driven model prioritizes linear scalability and avoids short-term exit pressure, as seen in their $4B+ AUM backing long-horizon bets.\nfatfire+2\n\nTrack Record\n\nWith 469+ investments and 135 exits, DCVC has proven follow-on prowess in firms like Rocket Lab and Planet Labs, scaling from early to public markets. Quantum plays like Rigetti show their infrastructure focus, providing capital and ops support to bridge lab-to-market without ownership grabs. No major red flags on dilution; they emphasize founder alignment via hands-on guidance.\nuspec+2\n\nPotential Risks\n\nBrutal caveat: Deep-tech timelines (7-10+ years) test even DCVC's reserves amid LP demands for returns, and quantum's hype cycles could tighten purses if milestones slip. Still, their US-centric ecosystem and network minimize scrambling.\nthequantuminsider+1\n\n(198 words)",
+  "sources": [
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+1",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire+2",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.uspec.org/blog/strategic-insights-from-top-deep-tech-venture-capital-firms",
+      "title": "uspec+2",
+      "publisher": "uspec.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency … DCVC differentiates itself through a techno-economic...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency … DCVC differentiates itself through a techno-economic...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire\nDCVC: Pioneering Data-Driven Deep Tech Investments\nExplore DCVC's innovative approach to venture capital, focusing on data-driven investments in deep tech sectors and shaping the future of technology.",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire\nDCVC: Pioneering Data-Driven Deep Tech Investments\nExplore DCVC's innovative approach to venture capital, focusing on data-driven investments in deep tech sectors and shaping the future of technology.",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.uspec.org/blog/strategic-insights-from-top-deep-tech-venture-capital-firms",
+      "title": "uspec\nStrategic Insights from Top Deep Tech Venture Capital Firms | USPEC\nDeep tech venture capital is reshaping innovation, with leading investors driving breakthroughs and shaping the future of deep tech investing globally.",
+      "publisher": "uspec.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.uspec.org/blog/strategic-insights-from-top-deep-tech-venture-capital-firms",
+      "title": "uspec\nStrategic Insights from Top Deep Tech Venture Capital Firms | USPEC\nDeep tech venture capital is reshaping innovation, with leading investors driving breakthroughs and shaping the future of deep tech investing globally.",
+      "publisher": "uspec.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.uspec.org/blog/strategic-insights-from-top-deep-tech-venture-capital-firms",
+      "title": "uspec\nStrategic Insights from Top Deep Tech Venture Capital Firms | USPEC\nDeep tech venture capital is reshaping innovation, with leading investors driving breakthroughs and shaping the future of deep tech investing globally.",
+      "publisher": "uspec.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:50:12.095554+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

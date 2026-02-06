@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP18",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally honest score (1–10): 3/10\n\nExplanation (≈200 words):\nBased on publicly available information about Firgun Ventures, there is no verifiable track record (as of early 2026) demonstrating how the firm behaves when portfolio companies hit legitimate technical setbacks or miss milestones. Most public sources focus on the firm’s launch, capital raise, mission, and team credentials, not on real founder‑VC interactions during adversity. The main narrative emphasizes Firgun positioning itself as a patient, value‑driven investor — they even frame their ethos around the idea of “first, do no harm” and supporting founders with conviction and values rather than short‑term pressure, which sounds like patience in setbacks. \nTech Funding News\n+1\n\nHowever, there’s zero documented evidence (press, founder testimonials, case studies, or portfolio outcomes) showing how Firgun actually navigated pain points like delayed technology delivery, missed milestones, or deep technical pivots — because they are a brand‑new fund with no public portfolio disclosures yet. There’s no record of them publicly defending or constructively working with struggling companies. Given this lack of empirical data and relying only on marketing language rather than hard examples, the only honest score based on observable behaviour — not intentions — is low. Until there are concrete founder accounts or documented instances of supportive, patient responses during real setbacks, any higher score would be speculative.",
+  "timestamp": "2026-02-03T17:29:20.160085+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "Tech Funding News\n+1",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

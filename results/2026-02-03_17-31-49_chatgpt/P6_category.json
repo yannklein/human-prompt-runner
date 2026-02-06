@@ -1,0 +1,60 @@
+{
+  "prompt_id": "P6",
+  "company": null,
+  "question": "Who are the top 10 key figures or founders in Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Here’s a ranked list of 10 key figures (founders, pioneers, or major contributors) in quantum sensing today — focused on researchers whose work drives quantum sensors, metrology, and measurement technologies. Each explanation is ~100 words and shows why they’re influential:\n\nMikhail Lukin – Harvard physicist whose breakthroughs in quantum optics and atomic physics underpin advanced quantum sensors (e.g., magnetometers and interferometers) using entanglement and ultracold atoms. \nIan Khan\n\nJörg Wrachtrup – Pioneer in solid‑state quantum spin physics and nitrogen‑vacancy (NV)‑center based quantum sensing, enabling nanoscale magnetic and electric field measurements. \nWikipedia\n\nPaola Cappellaro – MIT researcher leading efforts in solid‑state spins and precision measurement for scalable quantum sensors and gyroscopes. \nIan Khan\n+1\n\nAnia Bleszynski Jayich – Experimental physicist advancing nanoscale quantum sensing and imaging of spin and charge systems with broad metrology applications. \nWikipedia\n\nVladan Vuletić – Top quantum optics and many‑body physics expert whose foundational contributions impact high‑precision sensing near quantum limits. \nIan Khan\n\nRonald Walsworth – Harvard metrology specialist whose work in precision quantum measurement underlies sensors for imaging and field detection. \nIan Khan\n\nKai Bongs – UK National Quantum Technology Hub leader overseeing major quantum sensing and metrology programs driving commercialization. \nIan Khan\n\nShimon Kolkowitz – Physicist known for precision measurement and nanoscale sensing protocols combining atomic physics with quantum techniques. \nVC Research\n\nYanhong Xiao – Fudan University atomic physicist advancing spin‑squeezing and quantum metrology methods for surpassing classical measurement limits. \nWikipedia\n\nHidetoshi Katori – Inventor of techniques (e.g., optical lattice clocks) critical for ultra‑precise time and gravimetric quantum sensors. \nWikipedia\n\nRanking notes: The list emphasizes influence on quantum sensing/metrology itself (not general quantum computing) and includes founders of major research directions, labs, or commercial hubs. Researchers are ranked by global impact in sensor technologies, foundational measurement breakthroughs, and leadership in translating quantum phenomena into practical precision measurement tools.",
+  "timestamp": "2026-02-03T17:33:59.528488+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://iankhan.com/top-10-quantum-sensors-experts-to-follow-a-future-ready-guide-for-2026/",
+      "title": "Ian Khan",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/J%C3%B6rg_Wrachtrup",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow/",
+      "title": "Ian Khan\n+1",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ania_Bleszynski_Jayich",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.iankhan.com/top-10-quantum-sensors-experts-to-follow-3/",
+      "title": "Ian Khan",
+      "publisher": "iankhan.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://vcresearch.berkeley.edu/faculty-expertise?kw=quantum+sensing",
+      "title": "VC Research",
+      "publisher": "vcresearch.berkeley.edu",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Yanhong_Xiao",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hidetoshi_Katori",
+      "title": "Wikipedia",
+      "publisher": "en.wikipedia.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P17",
+  "company": "Vector Atomic (IonQ)",
+  "question": "What are Vector Atomic (IonQ)'s current main threats? Give short bullet points",
+  "answer": "Here are current main threats facing Vector Atomic (now part of IonQ) — focusing on business, technology, market, and competitive risks:\n\n🔑 Main Threats\n\nIntense competition in quantum tech\n\nMajor tech players like IBM, Google, Microsoft and other startups are investing heavily in alternative quantum approaches — risking IonQ/Vector Atomic losing market share. \nBusiness Model Canvas Templates\n+1\n\nRapid technological change\n\nBreakthroughs by rivals (e.g., superconducting or photonic qubits, hybrid systems) could outpace Vector Atomic/IonQ’s sensing and quantum computing tech. \nBusiness Model Canvas Templates\n+1\n\nScaling and commercialization hurdles\n\nQuantum sensing and computing are still nascent; slow adoption or scaling issues could limit revenue growth and delay market penetration. \nBusiness Model Canvas Templates\n\nHigh R&D and integration costs\n\nOngoing heavy R&D spending and recent acquisitions (e.g., Vector Atomic, Oxford Ionics, SkyWater) raise integration complexity and cash burn risk. \nsimplywall.st\n+1\n\nDependence on government contracts\n\nA significant portion of revenue and validation comes from federal / defense contracts; changes in budgets or priorities could hurt demand. \nsimplywall.st\n\nRegulatory & geopolitical risk\n\nEvolving export controls and international tech policies might complicate global expansion and supply chains. \nBusiness Model Canvas Templates\n\nSubstitution by classical and hybrid technologies\n\nImprovements in classical HPC or hybrid classical‑quantum solutions may reduce the need for pure quantum solutions in some applications. \nBusiness Model Canvas Templates\n\nIf you want, I can also break these threats down specifically for quantum sensing vs. quantum computing parts of the business.",
+  "timestamp": "2026-02-03T17:51:39.951372+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://canvasbusinessmodel.com/products/ionq-swot-analysis",
+      "title": "Business Model Canvas Templates\n+1",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://simplywall.st/community/narratives/us/tech/nyse-ionq/ionq/ds3dkhak-update-for-ionq",
+      "title": "simplywall.st\n+1",
+      "publisher": "simplywall.st",
+      "snippet": ""
+    },
+    {
+      "url": "https://canvasbusinessmodel.com/products/ionq-porters-five-forces",
+      "title": "Business Model Canvas Templates",
+      "publisher": "canvasbusinessmodel.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

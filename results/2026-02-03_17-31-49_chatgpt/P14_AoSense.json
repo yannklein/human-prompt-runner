@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P14",
+  "company": "AoSense",
+  "question": "What are AoSense's current main strengths? Give short bullet points",
+  "answer": "Here are AOSense’s current main strengths — short & to the point: \naosense.com\n+2\nshopaosense.com\n+2\n\n🌟 Core Technical Strengths\n\nLeader in quantum sensing and atom‑optic technologies with advanced precision measurement capabilities. \naosense.com\n\nExpertise in cold‑atom sensors (gyroscopes, accelerometers, gravimeters) that can outperform conventional sensors. \naosense.com\n\nStrong atomic time & frequency standards solutions with high stability and accuracy. \naosense.com\n\n🧠 Scientific & Engineering Capabilities\n\nMultidisciplinary team combining physics and engineering expertise (optical, vacuum, embedded systems, etc.). \naosense.com\n\nProven ability to transition research to real‑world devices for defense, research, and industrial markets. \naosense.com\n\n🔧 Product & Customization Strengths\n\nDesigns compact, high‑performance sensors and subsystems tailored to specific requirements. \naosense.com\n\nBuilds key components (lasers, controllers, atom sources) essential for quantum and precision measurement systems. \nshopaosense.com\n\n🤝 Reputation & Market Position\n\nOriginated from Stanford research spin‑off with long‑term government program support (DARPA, NASA, military). \nshopaosense.com\n\nRecognized in quantum technology communities for cutting‑edge innovation and collaboration. \nLinkedIn\n\nIf you want, I can add one or two quantitative examples of their latest products and performance specs.",
+  "timestamp": "2026-02-03T17:44:40.769884+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com\n+2\nshopaosense.com\n+2",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://shopaosense.com/i/about-us",
+      "title": "shopaosense.com",
+      "publisher": "shopaosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/company/aosense",
+      "title": "LinkedIn",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,65 @@
+{
+  "prompt_id": "VP16",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners scores a solid 8/10 for signaling power in quantum and deep tech startups. (199 words)\n\nLater-Stage Investor Trust\n\nAmadeus has a strong track record with 200+ investments since 1997, including successful exits like Solexa (acquired by Illumina), ForeScout (acquired by Advent), and recent ones such as Ravelin by Worldpay in 2025 and Cryptosense by SandboxAQ in 2022. Their portfolio features quantum leaders like Riverlane, NuQuantum, and planqc, often co-investing with top VCs, signaling reliability for Series A+ rounds—follow-ons from firms like Norwest and IQ Capital are common. Limited public data on LPs (e.g., institutions backing their $1.3B funds) tempers perfection, but exits prove they deliver returns.\namadeuscapital+3\n\nGovernment Buyer Credibility\n\nUK/EU focus shines: investments in quantum (NuQuantum, planqc via APEX Fund) align with government priorities like UK National Quantum Strategy; BT validates their portfolio tech (Sitehop). No overt US DARPA ties, but space/sustainability plays (ATMOS) suggest procurement potential.\nquantum.org+2\n\nEnterprise Customer Signal\n\nPortfolio traction is elite: PolyAI serves global enterprises; Pimloc aids compliance for orgs handling footage; Unlikely AI targets regulated workflows. Healthcare (Charco Neurotech), cyber (ForeScout), and AI exits show enterprise adoption, boosting credibility vs. hype-driven VCs.\nhopohopo+3\n\nBrutally, they're Cambridge royalty—not Sequoia global, but elite for quantum Europe.\namadeuscapital+1",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+3",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum.org+2",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.hopohopo.io/investors/amadeus-capital-partners",
+      "title": "hopohopo+3",
+      "publisher": "hopohopo.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum.org\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.hopohopo.io/investors/amadeus-capital-partners",
+      "title": "hopohopo\nAmadeus Capital Partners - Startup Match Score & Focus ...\nIs Amadeus Capital Partners the right VC for you? See how their thesis aligns with your startup and discover more active investors focusing on AI and deep tech.",
+      "publisher": "hopohopo.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.hopohopo.io/investors/amadeus-capital-partners",
+      "title": "hopohopo\nAmadeus Capital Partners - Startup Match Score & Focus ...\nIs Amadeus Capital Partners the right VC for you? See how their thesis aligns with your startup and discover more active investors focusing on AI and deep tech.",
+      "publisher": "hopohopo.io",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:02:48.984140+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

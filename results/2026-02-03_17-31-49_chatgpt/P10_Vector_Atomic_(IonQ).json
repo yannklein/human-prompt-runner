@@ -1,0 +1,18 @@
+{
+  "prompt_id": "P10",
+  "company": "Vector Atomic (IonQ)",
+  "question": "What does Vector Atomic (IonQ) do currently? Summarise it in 200 words",
+  "answer": "Vector Atomic — now part of IonQ following its completed acquisition in October 2025 — is a U.S. quantum technology company focused on advanced quantum sensing, precise timing, and positioning systems. The firm specializes in hardware that uses quantum physics (like atomic states) to achieve measurement capabilities far beyond conventional technologies, particularly for positioning, navigation, and timing (PNT) applications. \nIonQ\n+1\n\nBefore and through the acquisition, Vector Atomic’s products include precision atomic clocks, inertial sensors, gravimeters, and synchronization hardware designed to operate in harsh real‑world environments — from undersea and airborne systems to space‑ready platforms. These systems are capable of delivering picosecond‑level timing and navigation accuracy, which can provide up to 1,000× improvements over GPS accuracy and enable navigation even when GPS signals are unavailable or jammed. \nIonQ\n\nVector Atomic’s technology has been deployed in demanding national security, defense, and space programs — including contracts with the U.S. Department of Defense — and its hardware supports tasks such as navigation, detection of geophysical features, and reliable timing for critical systems. \nIonQ\n\nUnder IonQ, these quantum sensing and timing capabilities are being integrated into a broader full‑stack quantum technology platform that combines quantum computing, networking, and sensing for commercial, government, and defense customers. \nIonQ",
+  "timestamp": "2026-02-03T17:37:02.774762+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.ionq.com/news/ionq-completes-acquisition-of-vector-atomic-the-global-leader-in-advanced",
+      "title": "IonQ\n+1",
+      "publisher": "ionq.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

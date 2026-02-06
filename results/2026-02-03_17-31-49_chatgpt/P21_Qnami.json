@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P21",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Qnami's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "If I had to brutally and candidly score Qnami’s current patent position in its quantum sensing sector, I’d give it a:\n\n**📊 3.5 / 10\n\nHere’s why:\n\nVery Small Portfolio: Qnami only has about a dozen patents globally (~13 total, ~9 active) with only a handful actually granted so far — and only a few across major jurisdictions like the EPO and USPTO. That’s extremely light compared with leaders in quantum technology whose IP portfolios often number in the hundreds or thousands of publications/patents across multiple families and technology classes. \nInsights;Gate\n\nLimited Patent Breadth: The patents appear focused on a narrow slice of quantum sensing (e.g., aspects of NV‑diamond magnetometry and specific probe methods), which reflects the company’s specialized niche but also means limited breadth of coverage across adjacent technologies or potential future pivot areas. \nInsights;Gate\n\nEarly Stage & Sector Expectations: In quantum sensing — a segment of quantum tech where IP activity is accelerating rapidly — even small players in imaging and sensing (e.g., competing startups or academic spin‑outs) tend to push for 20–50+ families within a few years to support commercialization, ecosystem leverage, and defensive moats. Qnami’s count is well below that emerging expectation. \nMcKinsey & Company\n\nQuality vs. Quantity: The quality of the patents matters — and Qnami’s focus on diamond NV center sensing is technically solid — but limited enforcement, few jurisdictions, and minimal family depth make it weak as a standalone fortification against larger incumbents or as a licensing foundation.\n\nBottom line: Qnami has legitimate core IP in its niche, but in the context of the broader quantum tech IP landscape, it’s lightweight and early stage, not yet a robust portfolio that would impress sophisticated investors or partners.",
+  "timestamp": "2026-02-03T17:58:23.972048+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://insights.greyb.com/qnami-patents/",
+      "title": "Insights;Gate",
+      "publisher": "insights.greyb.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20year%20of%20quantum%20from%20concept%20to%20reality%20in%202025/quantum-monitor-2025.pdf",
+      "title": "McKinsey & Company",
+      "publisher": "mckinsey.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

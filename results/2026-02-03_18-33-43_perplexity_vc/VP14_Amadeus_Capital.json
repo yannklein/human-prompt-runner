@@ -1,0 +1,65 @@
+{
+  "prompt_id": "VP14",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners scores a 3/10 for helping portfolio companies access non-dilutive capital like DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or similar government innovation programs.\namadeuscapital+1\n\nLimited Evidence\n\nPublic information shows no explicit examples of Amadeus facilitating such grants for its deep tech portfolio, including quantum firms like NuQuantum, Riverlane, or planqc. Their site highlights investments in AI, quantum, and sustainability startups but omits government grant successes, focusing instead on VC exits like OrganOx's $1.5B acquisition.\nquantum.org+1\n\nUK-Centric Ties\n\nAs a Cambridge-based firm with UK government-backed funds (e.g., £6.5M in their seed fund, partnerships with British Business Bank and British Patient Capital), they likely aid Innovate UK access indirectly through networks. However, no specifics on DARPA (US-focused), Horizon Europe, or NSF wins appear in portfolio stories.\nscaleupinstitute.org+2\n\nQuantum Gaps\n\nQuantum investments (e.g., Riverlane, NuQuantum) could qualify for these programs, yet no mentions of grant pipelines surface—unlike peers boasting SBIR/STTR or ARPA-E wins. This suggests weak track record in grant-hunting support.\nquantum.org\n​\n\nBrutally, they're solid deep tech VCs with exits, but non-dilutive expertise seems absent or unpublicized; quantum founders should probe for case studies before committing. (198 words)\namadeuscapital+2",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum.org+1",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners-2/",
+      "title": "scaleupinstitute.org+2",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum.org",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+2",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scaleupinstitute.org.uk/programmes/amadeus-capital-partners-2/",
+      "title": "scaleupinstitute.org\nAmadeus Capital Partners - ScaleUp Institute\nImpact for scaleups 51 UK companies backed 48% Follow-on investments 59% Investments outside of London 41 Growth-stage investments Amadeus Capital Partners is a global technology investor that invests in companies requiring early investment and growth capital with global potential. Founded by Anne Glover and Herman Hauser in 1997, Amadeus now has a team of over 40. One-third of the firm’s early stage investment team are women. The firm follows three investment strategies: providing seed,...",
+      "publisher": "scaleupinstitute.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum.org\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:57:07.524640+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

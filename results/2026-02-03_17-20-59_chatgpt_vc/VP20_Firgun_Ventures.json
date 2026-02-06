@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP20",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Here’s a brutally honest investor‑founder‑oriented assessment of Firgun Ventures’ track record on constructive behavior in down rounds, bridge rounds, or extensions — specifically whether they prioritize company survival over mark‑to‑market optics:\n\nScore: 3/10\n\nExplanation (200 words):\nAs of early 2026, there is virtually no public evidence about how Firgun Ventures behaves in actual down rounds, bridge rounds, or extensions with portfolio companies — because the firm is brand‑new and has not yet publicly disclosed any investments or capital deployment history. Its portfolio page is still “coming soon,” and there are no documented financings, restructurings, or recapitalizations that we can analyze. \nfirgun.vc\n\nFirgun positions itself primarily as a Series A/B quantum specialist, with a mission to “bridge the frequent funding gap” in deep tech and an ethos inspired by “First, do no harm,” signaling intent toward supportive, founder‑friendly behavior. \nfirgun.vc\n+1\n However, this is marketing language and values positioning, not verifiable behavior in stressed financings. The firm’s first close (~$70M) backed by the Qatar Investment Authority and other LPs demonstrates investor confidence in strategy, but again no actual exits, down rounds, or rescue financings have been reported for Firgun’s investments to date. \nTech Funding News\n\nUntil Firgun actually deploys capital and navigates one or more stressed situations (e.g., a portfolio needing a bridge, repricing, or extension), there’s no track record to judge. Based purely on lack of evidence rather than negative signals, the practical score remains very low.",
+  "timestamp": "2026-02-03T17:30:24.682262+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "Tech Funding News",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP16",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's signaling power — are they trusted by later-stage investors, government buyers, and enterprise customers as a mark of quality and credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 6/10\n\nFirgun Ventures currently signals emerging credibility rather than established market‑leading validation from later‑stage VCs, government buyers, or enterprise customers.\n\nHere’s the honest breakdown:\n\n✅ Institutional backing – Securing a significant anchor commitment from the Qatar Investment Authority and early support from prominent family investors and industry figures like Ilyas Khan (founder of Quantinuum) is a strong early signal that sophisticated LPs see promise in the team and thesis. \nQuantum Computing Report\n\n✅ Leadership pedigree – The founders bring genuine operational and investment experience (e.g., early angel investments in Quantinuum, senior roles at Goldman Sachs) and have assembled an advisory council with names linked to Cambridge, Oxford, MIT, Google, and European finance. \nfirgun.vc\n\n❓ Early stage of the fund – Firgun only recently closed its first $70M tranche of a targeted $250M fund (late 2025) and hasn’t yet disclosed marquee portfolio companies or major follow‑on syndication with top tier later‑stage VCs. That means broader market validation (e.g., co‑leads from Sequoia/Lightspeed/Kleiner on Series B, or enterprise/government procurement deals by portfolio companies) isn’t yet public. \nTech Funding News\n\n❓ Enterprise/government credibility – As of now there’s no clear evidence Firgun’s portfolio companies have won significant enterprise contracts or government procurement wins; its influence is still largely prospective and built on advisory relationships and thesis strength.\n\nBottom line: Firgun’s foundational credibility and network are solid, but its signaling power to later‑stage investors and enterprise/government buyers is still early, earning ~6/10 rather than a higher score that comes with demonstrable exits, follow‑on syndicates, and customer validation.",
+  "timestamp": "2026-02-03T17:28:27.238410+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "Quantum Computing Report",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "Tech Funding News",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

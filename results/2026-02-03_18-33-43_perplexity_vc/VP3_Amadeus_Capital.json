@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP3",
+  "vc": "Amadeus Capital",
+  "question": "What quantum computing and deep-tech companies has Amadeus Capital invested in? List all known investments with a brief explanation of each.",
+  "answer": "The firm’s quantum investments often appear alongside broader deep-tech bets (AI, autonomous systems, materials, etc.), illustrating a strategy of backing early-stage companies with potential for practical quantum advantage.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:36:32.364399+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

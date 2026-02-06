@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP8",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Relative to investor peers: Some specialized quantum VCs publish more detailed technical theses or public white papers about error correction thresholds, hardware overheads, and cryogenic design. Amadeus seems to balance strategic value creation with technical curiosity, but doesn’t consistently publish in-depth technical theses, keeping the score modest.\nbiforesight\n​",
+  "sources": [
+    {
+      "url": "https://biforesight.com/quantum/quantum-after-the-hype-reality-checks-in/",
+      "title": "biforesight",
+      "publisher": "biforesight.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-quantumnetworking-activity-7294701647971184641-SpaC",
+      "title": "linkedin\n#quantumcomputing #quantumnetworking | Amadeus Capital Partners\n2025 is shaping up to be the year for significant steps towards scalable quantum computing. Nu Quantum has recently released a landmark research paper on…",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-quantumnetworking-activity-7294701647971184641-SpaC",
+      "title": "linkedin\n#quantumcomputing #quantumnetworking | Amadeus Capital Partners\n2025 is shaping up to be the year for significant steps towards scalable quantum computing. Nu Quantum has recently released a landmark research paper on…",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/amadeus-capital-partners",
+      "title": "quantum\nAmadeus Capital Partners - Quantum Computing Investor\nBritish venture capital firm with portfolio containing two British quantum startups",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://biforesight.com/quantum/quantum-after-the-hype-reality-checks-in/",
+      "title": "biforesight\nQuantum after the hype. Reality checks in - BI Foresight\nA look back at quantum in 2025, and what to expect in 2026.",
+      "publisher": "biforesight.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-quantumnetworking-activity-7294701647971184641-SpaC",
+      "title": "linkedin\n#quantumcomputing #quantumnetworking | Amadeus Capital Partners\n2025 is shaping up to be the year for significant steps towards scalable quantum computing. Nu Quantum has recently released a landmark research paper on…",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:45:31.239117+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

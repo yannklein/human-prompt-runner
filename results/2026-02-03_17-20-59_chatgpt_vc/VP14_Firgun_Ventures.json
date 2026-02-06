@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP14",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 2/10\n\nFrom the publicly available information on Firgun Ventures, there is no clear evidence that the firm has a demonstrable track record of helping portfolio companies access non‑dilutive government capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK grants, or similar innovation programs. Firgun is a very new London‑based quantum technology venture fund that launched in late 2025 with a first close of roughly $70 million targeting a $250 million fund focused on Series A/B quantum scale‑ups, backed by the Qatar Investment Authority and some family offices. \nstartupresearcher.com\n\nThe firm’s public materials and reporting emphasize venture capital funding and strategic advisory support for founders transitioning from research into commercial stages, but they do not mention structured support for accessing non‑dilutive government R&D grants or innovation programs such as DARPA, NSF, Horizon Europe, Innovate UK, or equivalent. Neither its website nor industry coverage highlights examples of portfolio firms winning such awards with Firgun’s facilitation, nor are there references to dedicated grant support teams or successful cases. \nfirgun.vc\n+1\n\nGiven this lack of documented experience or outcomes in securing government innovation grants, I’d rate Firgun’s track record in this specific area quite low. That said, the firm is very new, and such capabilities may develop over time; but as of now, there’s no public signal of strength in non‑dilutive capital support. If you need to prioritize investor partners with proven grant access expertise, consider firms with a history of backing companies in DARPA/NSF/Horizon programs.",
+  "timestamp": "2026-02-03T17:27:15.875299+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher.com",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

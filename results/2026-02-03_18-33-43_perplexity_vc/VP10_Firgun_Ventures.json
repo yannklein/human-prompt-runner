@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures scores a 3/10 for ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital.\nfirgun+2\n\nFund Focus Limits Reach\n\nFirgun explicitly targets Series A and B quantum scale-ups, bridging the post-seed gap with conviction investing and operational support. Their $250M fund (first close $70M, backed by Qatar Investment Authority) is tailored for early growth, not later-stage rounds like C/D where massive capital needs arise in deep-tech. No public evidence shows follow-on commitments beyond B.\nfirgun+3\n\nNew Fund, No Track Record\n\nLaunched in late 2025 by Kris Naudts and Zeynep Korutürk, Firgun lacks portfolio exits, Series C+ participations, or proven syndication for deep-tech at scale. Past angel bets (e.g., Quantinuum) are pre-fund history, not institutional follow-ons. One source oddly lists \"seed-stage\" focus, contradicting their A/B claims, signaling possible inconsistency.\nventurecapitalarchive+2\n\nCapital and Ownership Risks\n\nA $250M fund is undersized for C/D deep-tech rounds (often $100M+), risking dilution or LP pressure to exit rather than reserve for pro-rata. No mentions of co-GP structures, sovereign wealth follow-ons, or \"dry powder\" for later stages. They'd likely syndicate or step back, scrambling via LPs like QIA, but without historical proof, it's speculative.\nmenlotimes+1\n\nBrutally, they're quantum specialists for A/B, not Series C/D marathon runners—great for momentum, poor for sustained ownership protection. (198 words)",
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun+2",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun+3",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive+2",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.menlotimes.com/post/firgun-ventures-launches-250-million-quantum-fund-closes-first-70-million-backed-by-qatar-investm",
+      "title": "menlotimes+1",
+      "publisher": "menlotimes.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun\nQuantum-First VC Firm Investing in Series A/B Scale-Ups\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun\nQuantum-First VC Backing Series A/B Scale-Ups\nFirgun Ventures is the first VC firm focused exclusively on Series A/B quantum companies. With deep expertise, values-driven conviction, and global networks, we help quantum entrepreneurs scale to category leadership.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun\nQuantum-First VC Backing Series A/B Scale-Ups\nFirgun Ventures is the first VC firm focused exclusively on Series A/B quantum companies. With deep expertise, values-driven conviction, and global networks, we help quantum entrepreneurs scale to category leadership.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://venturecapitalarchive.com/venture-funds/firgun-ventures-firgun-vc",
+      "title": "venturecapitalarchive\nFirgun Ventures\nFirgun Ventures specializes in seed-stage investments in deep-tech startups with a focus on quantum computing, AI, and robotics. The firm seeks out founders with a technical background and a vision for scalable, game-changing products. By focusing on breakthrough technologies, Firgun supports founders with global expansion potential and strong engineering talent, enabling disruptive solutions for tomorrow’s challenges.",
+      "publisher": "venturecapitalarchive.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.menlotimes.com/post/firgun-ventures-launches-250-million-quantum-fund-closes-first-70-million-backed-by-qatar-investm",
+      "title": "menlotimes\nFirgun Ventures Launches $250 Million Quantum Fund ...\nFirgun Ventures, the first VC firm focusing on Series A/B quantum companies, led by Kris Naudts, MD, PhD and Zeynep Korutürk, has launched a $250 million venture capital fund dedicated entirely to early-growth-stage quantum companies and announced its first close at $70 million. Backed by the Qatar Investment Authority, the fund is structured to support quantum companies in advancing from early pilot phases to deployable products positioned for use across sectors and regions in the real economy.",
+      "publisher": "menlotimes.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:48:44.581948+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

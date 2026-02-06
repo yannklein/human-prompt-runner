@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP3",
+  "vc": "Firgun Ventures",
+  "question": "What quantum computing and deep-tech companies has Firgun Ventures invested in? List all known investments with a brief explanation of each.",
+  "answer": "The most precise and exhaustive list of Firgun’s investments is not readily available in public disclosures; the firm’s own materials and media coverage emphasize fund-level strategy and notable industry connections rather than a complete, published portfolio list. If you want, I can search for recent portfolio announcements or regulatory filings to assemble a current, itemized list with brief explanations for each investment.",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc",
+      "title": "firgun\nFirgun Ventures | Quantum-First VC Firm Investing in Series A ...\nFirgun Ventures is a global quantum-first VC firm investing in Series A/B scale-ups. We combine capital with quantum-specific operational and commercial support, setting a new AI-aided standard for venture capital.",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher\nFirgun Ventures Launches $250M Quantum Technology ...\nFirgun Ventures launches a $250M quantum technology fund, securing a $70M first close backed by the Qatar Investment Authority (QIA).",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupmag.co.uk/funding/firgun-ventures-closes-53m-first-investment-round/",
+      "title": "startupmag\nFirgun first close £53m for startup investment\nBoom unknown founder 🤩 Firgun Ventures raised funding in their growth funding round.",
+      "publisher": "startupmag.co.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:36:02.975558+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

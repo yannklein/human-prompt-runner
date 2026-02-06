@@ -1,0 +1,36 @@
+{
+  "prompt_id": "VP3",
+  "vc": "Firgun Ventures",
+  "question": "What quantum computing and deep-tech companies has Firgun Ventures invested in? List all known investments with a brief explanation of each.",
+  "answer": "As of early 2026, Firgun Ventures has not publicly published a detailed portfolio list of the specific companies it has invested in—so there is no official, comprehensive list on its website or in press releases yet. \nfirgun.vc\n\nHowever, based on available public information and statements from Firgun’s founders about their investment history and orientation, we can identify known deep-tech and quantum-related investments connected to the firm’s founders and early activity:\n\n🧠 Known / Early Investments Connected to Firgun Ventures’ Founders\n\nQuantinuum (formerly Cambridge Quantum Computing)\n\nFirgun’s founders, Dr Kris Naudts and Zeynep Korutürk, were early angel investors in Cambridge Quantum Computing (the company that later merged to become Quantinuum) long before Firgun’s official establishment. \nfirgun.vc\n\nQuantinuum is one of the world’s most valuable private quantum computing companies, building quantum software and hardware solutions for quantum algorithms, cryptography, simulation, and more. \nfirgun.vc\n\nExplanation: While this investment predates the formal launch of Firgun Ventures, both founders’ involvement with Quantinuum reflects their deep experience in quantum tech investing—experience they bring into Firgun’s strategy. Quantinuum’s success and valuation highlights the type of scale-up Firgun aims to back.\n\n🔭 Expected / Strategic Investment Focus (Portfolio Themes)\n\nAlthough individual portfolio companies have not yet been publicly disclosed, Firgun Ventures has clearly stated the types of companies it intends to invest in. These include:\n\nQuantum Computing Scale-Ups (Targeted Future Investments)\n\nQuantum hardware companies — startups building scalable quantum processors or components.\n\nQuantum software and algorithms — companies developing tools, compilers, simulation platforms, or enterprise-grade quantum applications.\n\nQuantum communications and cryptography — firms working on quantum-secure networks, key distribution technologies, and related deep-tech security infrastructure.\n\nQuantum sensing and imaging — startups applying quantum effects to sensors with applications in healthcare, navigation, or materials science. \nfirgun.vc\n+1\n\nExplanation: The fund’s mandate focuses on Series A and B companies that have moved beyond basic research and are ready to commercialize products and scale globally. The emphasis covers the full quantum stack—from hardware to applications—across sectors like healthcare, finance, climate tech, and cybersecurity. \nThe Quantum Insider\n\n📌 Why There’s No Full Public Portfolio Yet\n\nAccording to Firgun’s own website, the portfolio page is still marked as “coming soon,” suggesting that public reporting of specific investments has not yet been finalized or disclosed. \nfirgun.vc\n\n🧩 Summary\n\nSo far, the only publicly confirmed deep-tech / quantum investment tied to Firgun’s leadership is their early backing of Quantinuum (formerly Cambridge Quantum Computing). Firgun Ventures itself has not yet disclosed specific companies from its Series A/B investment pipeline—though it is actively preparing to do so as its fund begins deploying capital into quantum computing, quantum communications, and quantum sensing scale-ups. \nfirgun.vc\n\nIf you’re interested, I can help find specific startups in the quantum space that Firgun is likely targeting based on the fund’s themes and network—just let me know!",
+  "timestamp": "2026-02-03T17:22:30.697675+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/portfolio",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

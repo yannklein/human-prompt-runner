@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP17",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital scores a 7/10 for helping quantum portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos.\n\nTheir deep tech focus, including quantum, emphasizes rigorous technical due diligence and long-term partnerships, which helps curb hype—partners like Anne Glover and Hermann Hauser prioritize IP strength and scalability over flashy demos. With 200+ investments yielding 17 IPOs and exits like OrganOx ($1.5B in 2025), they guide founders from lab to market, fostering persistence amid quantum's hype cycles. No public scandals or premature announcement failures appear in their record; instead, they back trailblazers like Graphcore and Oxford Nanopore, which scaled credibly without benchmark controversies.\namadeuscapital+3\n\nHowever, brutally, evidence is indirect—no explicit cases of them intervening against hype in quantum startups. Their UK-centric approach shines in early-stage selection (seed/Series A), but quantum's global funding gaps at Series B/C expose Series B/C risks, as noted at 2025 UK showcases where VCs like Amadeus lamented US dependency. They invest in quantum-relevant areas (AI hardware like Gemesys), but lack documented \"anti-hype\" playbooks or public founder testimonials on resisting pressure. In quantum's noisy ecosystem, this restraint earns solid marks, but not elite—firms with stricter governance might edge higher. For a founder, they're reliable for credibility-building, not revolutionary. (198 words)\nbiforesight\n​",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+3",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://biforesight.com/quantum/quantum-after-the-hype-reality-checks-in/",
+      "title": "biforesight",
+      "publisher": "biforesight.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://biforesight.com/quantum/quantum-after-the-hype-reality-checks-in/",
+      "title": "biforesight\nQuantum after the hype. Reality checks in - BI Foresight\nA look back at quantum in 2025, and what to expect in 2026.",
+      "publisher": "biforesight.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:04:47.625026+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

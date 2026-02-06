@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P23",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate how far the Nomad Atomics is, in developing their product compared to its competitors?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "If I brutally score Nomad Atomics’ product development relative to competitors in the quantum sensing space, I’d rate it:\n\n⭐ 5.5 / 10\n\nHere’s the honest VC‑minded breakdown (in roughly 200 words):\n\nNomad Atomics is far from a beaten competitor, but it’s also not a breakout leader yet. The company has successfully transitioned cold‑atom quantum sensing out of the lab and produced field‑deployable miniaturized quantum gravimeters, accelerometers and other sensors — a meaningful engineering accomplishment that many early‑stage quantum startups never reach. They’ve raised funding and have prototype products aimed at real world use cases like geophysical surveys, inertial navigation, resource mapping, and environmental monitoring, and they’re collaborating (e.g., EU ProFit project on compact gravimetry) — all positive markers for progress. \nThe Quantum Insider\n+1\n\nHowever, on the competitive landscape, true commercial leadership in quantum sensing is still dominated by a handful of better‑funded, more mature players (e.g., AOSense, Muquans, ID Quantique and others with larger market shares and broader product portfolios). These incumbents have deeper R&D pipelines, stronger industry partnerships, and, in some cases, commercially deployed systems. The global quantum sensors market remains early — but already shows concentration around those leaders. \nGlobal Market Insights Inc.\n\nNomad’s tech shows promise, but relative to peers with more demoed products, customer wins, and scale, they’re roughly mid‑pack: clearly beyond paper‑only research, but with significant commercialization risk ahead unless adoption accelerates. This justifies a 5.5/10.",
+  "timestamp": "2026-02-03T18:03:19.555739+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2023/07/03/nomad-atomics-receives-12-million-to-fund-quantum-sensor-technology/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "Global Market Insights Inc.",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

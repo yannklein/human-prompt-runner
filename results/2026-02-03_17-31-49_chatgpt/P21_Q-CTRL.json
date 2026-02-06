@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P21",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Q-CTRL's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "If I must give a brutally honest VC‑style score for Q‑CTRL’s current patent portfolio (number + quality) in the quantum tech space, it would be:\n\n👉 Score: 3.5 / 10\n\nHere’s why:\n\n1. Small Portfolio (Low Count)\nMost objective IP databases and profiling tools list Q‑CTRL as having roughly ~14 patents total (some lists show ~3 active or filed, others ~14 total), which is tiny compared with major players in the sector. For context, established quantum hardware/software companies often have dozens to hundreds of patents covering core technologies and defensive breadth. \ndiscovery.patsnap.com\n+1\n\n2. Domain‑Specific Depth but Narrow Scope\nThe patents I could verify (e.g., multi‑qubit control methods) are solid and technically relevant to Q‑CTRL’s core strength in quantum control and error suppression. That’s a real niche and not trivial — it’s central to making current quantum computers useful. \npatents.justia.com\n However, the portfolio mostly addresses a narrow slice (error suppression/control interfaces and algorithms), not a broad suite of IP around middleware, compiler innovation, or sensing hardware. This makes the portfolio shallow rather than strategically deep.\n\n3. Quality vs. Competitive Coverage\nOne or two quality patents can be valuable, but in quantum tech you need defensive breadth and global coverage — including hardware interfaces, system integration, and algorithmic compositions — to deter competitors and create licensing leverage. Q‑CTRL’s portfolio does not meaningfully achieve that today. \nCB Insights\n\n4. Implications for VC / M&A\nFrom a VC lens, Q‑CTRL’s IP doesn’t yet create a “moat”. It strengthens technical differentiation, but by itself it won’t protect against competitors quickly replicating similar control techniques or deploying alternative error mitigation strategies. You’d want to see more patents filed, especially covering integration methods, cross‑platform toolchains, and sensing breakthroughs tied to their commercial products.\n\nBottom line: The patents they do have are technically relevant but few, narrow in scope, and insufficient as a standalone barrier in a rapidly evolving quantum ecosystem — hence a below‑average score.",
+  "timestamp": "2026-02-03T17:59:43.237973+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://discovery.patsnap.com/company/q-ctrl/",
+      "title": "discovery.patsnap.com\n+1",
+      "publisher": "discovery.patsnap.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://patents.justia.com/assignee/q-ctrl-pty-ltd",
+      "title": "patents.justia.com",
+      "publisher": "patents.justia.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/company/q-ctrl",
+      "title": "CB Insights",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

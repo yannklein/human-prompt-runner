@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P18",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Q-CTRL have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Academic Strength Score for Q‑CTRL Team: 6/10\n\nExplanation (≈200 words):\nThe leadership at Q‑CTRL, especially Founder & CEO Michael J. Biercuk, brings genuine academic credibility rooted in quantum physics — Biercuk was a tenured professor and a funded PI in high‑level quantum control research at the University of Sydney before founding the company, with a substantial publication record and citations indicating an h‑index in the upper 30s (≈39) on Google Scholar. \nGoogle Scholar\n+1\n This places him solidly in the mid‑career to senior researcher category in physics, respectable but not at the very top of academic impact compared to world leaders in theoretical or experimental quantum information (who often have h‑indices well above 70–100).\n\nHowever, beyond Biercuk, the broader research leadership (e.g., Head of Quantum Computing Research Yuval Baum) does not appear to have widely publicized academic profiles with clear h‑indices on Google Scholar or similar platforms, which usually indicates a team tilted more toward applied engineering, product implementation, and internal R&D than toward high‑impact peer‑reviewed science. A scan of the company’s own “technical manuscripts” shows a lot of arXiv preprints and non‑journal posts, which are valuable but less prestigious than peer‑reviewed, indexed publications. \nq-ctrl.com\n\nStrategic partnerships with top institutes (e.g., PSI, IBM) reflect the team’s relevance, but academic influence per se — measured by traditional metrics like h‑index — is moderate, not elite. This is typical for commercialization‑oriented deep tech startups where product development often outweighs academic publishing.",
+  "timestamp": "2026-02-03T17:53:26.826337+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://scholar.google.com/citations?hl=en&user=Pf5u3hcAAAAJ",
+      "title": "Google Scholar\n+1",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/technical-manuscripts",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

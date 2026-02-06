@@ -1,0 +1,54 @@
+{
+  "prompt_id": "P16",
+  "company": "Nomad Atomics",
+  "question": "What are Nomad Atomics's current main opportunities? Give short bullet points",
+  "answer": "Here are Nomad Atomics’s current main opportunities (short bullet points based on latest available public info):\n\n🌍 Commercial & Industry Opportunities\n\nMineral exploration services – high‑precision gravity surveys for resource discovery and faster data‑driven decisions. \nnomadatomics.com\n\nCave and underground mine monitoring – timelapse gravity data to improve safety and operational performance. \nnomadatomics.com\n\nAbsolute gravity networks – building foundational gravity infrastructure for diverse geophysical applications. \nnomadatomics.com\n\nCarbon storage monitoring & verification – tracking CO₂ plumes in carbon capture and storage projects. \nnomadatomics.com\n\nWater utility leak detection – non‑invasive sensing to detect buried pipe leaks via subtle gravity changes. \nnomadatomics.com\n\n🚀 Emerging & Future Growth Areas\n\nDrone‑assisted gravity surveying – faster, cheaper, safer gravity data collection using UAVs. \nnomadatomics.com\n\nOff‑world resource exploration – adapting quantum gravimetry for space missions and planetary subsurface sensing. \nnomadatomics.com\n\nPartnerships for satellite‑enabled exploration (e.g., with Fleet Space for AI‑driven subsurface imaging). \nQuantum Computing Report\n\nExpanding markets – applications in energy, utilities, defense navigation (including GNSS‑denied environments), and broader geoscience. \ndirectory.vdsn.org\n\n🧠 Talent & Technology Development\n\nHiring in physics, engineering, machine learning to build and scale sensor hardware and analytics. \nnomadatomics.com\n\nCommercialising field‑ready quantum sensors to replace bulky lab systems with portable, robust devices. \nnomadatomics.com\n\nLet me know if you’d like this tailored to a specific sector (e.g., mining vs carbon capture) or formatted for a business presentation!",
+  "timestamp": "2026-02-03T17:48:53.953468+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/mineral-exploration",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/cave-mine-monitoring",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/emerging-services",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/fleet-space-advances-quantum-enhanced-mineral-exploration-with-new-partnerships/",
+      "title": "Quantum Computing Report",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://directory.vdsn.org/wp-content/uploads/2024/08/71373986.pdf",
+      "title": "directory.vdsn.org",
+      "publisher": "directory.vdsn.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/careers",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/our-technology",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

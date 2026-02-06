@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP20",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures shows a patient, long-term approach to quantum startups, but lacks public evidence of handling down rounds, bridge rounds, or extensions.\nraisebetter+2\n\nScore: 6/10\n\nTheir investment philosophy emphasizes \"long-term commitment\" and support \"throughout their entire development journey\" from lab to IPO, suggesting flexibility across stages (pre-seed to Series C). This aligns with prioritizing survival in deep tech, where timelines stretch due to technical hurdles—unlike mark-to-market obsessed funds chasing quick exits. They offer acceleration programs and growth capital up to $12M, implying willingness to extend runway for milestones.\nkruncher+2\n\nHowever, no specific examples surface of QAI leading or participating in down/bridge rounds amid market stress (e.g., 2023-2026 down rounds at 20% of deals). General VC trends highlight bridges as \"buy time\" tactics, but QAI's quantum focus (27 portfolio companies) shows rigorous diligence without distress financing anecdotes. As a specialized, smaller fund ($50M early-stage), they may avoid optics-driven haircuts by sticking to early bets, but unproven track record in public crises docks points—brutally, it's assumed competence, not battle-tested grit. (198 words)\necovg+3",
+  "sources": [
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter+2",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher+2",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecovg.com/decoding-the-rise-of-vc-led-bridge-rounds/",
+      "title": "ecovg+3",
+      "publisher": "ecovg.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter\nQAI Ventures - 2025 Investor Profile | Raise Better\nLooking to get funded by QAI Ventures in 2025? Create your profile and get matched to active professional investors. Get started for free!",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study: QAI Ventures - Kruncher Ai\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study: QAI Ventures - Kruncher Ai\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecovg.com/decoding-the-rise-of-vc-led-bridge-rounds/",
+      "title": "ecovg\nSurvival or Strategy? Decoding The Rise of VC-led Bridge Rounds\nPicture this: you’re a founder on the cusp of your next significant milestone, say your Series A or B, but you’re not quite there yet. Growth is real, traction is visible, but markets are tighter, valuations are scrutinized, and the next “big” round feels like it might arrive any time. In that limbo, you raise a bridge round, and guess what, you are not alone. … Why The Bump in Bridge Rounds? The bridge route taken by the VCs is a strategic move to make good bets at the right time. Here’s why:...",
+      "publisher": "ecovg.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:11:18.540757+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

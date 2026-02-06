@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP5",
+  "vc": "QAI Ventures",
+  "question": "What is QAI Ventures's reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.",
+  "answer": "Market perception: the narrative centers on building a recognizable Quantum AI ecosystem with regional hubs (Basel, Singapore, etc.), and leveraging partnerships with universities, national labs, and corporates to create deal flow and pilot opportunities. This positioning aligns with broader industry trends that favor integrated hardware-software-application strategies in quantum, rather than isolated bets.\ns-ge+1",
+  "sources": [
+    {
+      "url": "https://www.s-ge.com/en/article/success-stories/2025-e-ict-ct1-quantum-innovation-ecosystem",
+      "title": "s-ge+1",
+      "publisher": "s-ge.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI - QAI Ventures\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/qai-ventures",
+      "title": "cbinsights\nQAI Ventures Fund History\nQAI venture invests in quantum-tech startups. Use the CB Insights Platform to explore QAI Ventures's full profile.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.s-ge.com/en/article/success-stories/2025-e-ict-ct1-quantum-innovation-ecosystem",
+      "title": "s-ge\nAccelerating Quantum Frontiers: QAI Ventures in Asia–Pacific\nFor QAI Ventures, entering the Asia–Pacific region wasn’t just a strategic step – it was a natural evolution of their mission. As a Swiss investor and accelerator focused on early-stage quantum and AI startups, the company was already helping deep tech ventures scale across Europe and North America. In 2024, they set their sights on Singapore – and thanks to Switzerland Global Enterprise (S-GE) and the Swiss Business Hub SEAP, they landed with both impact and speed.",
+      "publisher": "s-ge.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:40:40.757362+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

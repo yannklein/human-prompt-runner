@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P17",
+  "company": "AoSense",
+  "question": "What are AoSense's current main threats? Give short bullet points",
+  "answer": "Here are current main threats facing AoSense (the U.S. company developing quantum atom‑optic sensors) — short and to the point:\n\nCybersecurity and data breach risk — publicly reported breaches and ransomware-related exposures suggest ongoing vulnerability to attacks that could disrupt systems or harm reputation. \nbreachsense.com\n+1\n\nReputation/website trust concerns — third‑party scans flag potential risks with the company domain (e.g., low trust scores, phishing/spam associations), which could undermine credibility and customer confidence. \nScam Detector\n\nIntense market competition — the quantum sensors industry features multiple established players and startups pushing innovation, heightening rivalry for technology leadership and contracts. \nCredence Research Inc.\n\nHigh technological complexity and R&D costs — quantum sensor development requires significant investment and specialized expertise, making projects costly and raising execution risk. \nLinkedIn\n\nSupply chain and component constraints — sourcing advanced materials and precision components can be difficult, increasing delays and cost overruns. \nLinkedIn\n\nAdoption bottlenecks from niche applications — some quantum technologies still need extensive validation before widespread commercial deployment, slowing revenue potential. \nLinkedIn\n\nIf you want, I can tailor this to a specific context (e.g., investor risk analysis vs. cybersecurity focus).",
+  "timestamp": "2026-02-03T17:50:27.053719+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.breachsense.com/breaches/aosense-data-breach/",
+      "title": "breachsense.com\n+1",
+      "publisher": "breachsense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.scam-detector.com/validator/aosense-com-review/",
+      "title": "Scam Detector",
+      "publisher": "scam-detector.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.credenceresearch.com/report/global-quantum-sensors-market/",
+      "title": "Credence Research Inc.",
+      "publisher": "credenceresearch.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/australia-quantum-sensors-market-pricing-analysis-stratusp-group-lr8qf/",
+      "title": "LinkedIn",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

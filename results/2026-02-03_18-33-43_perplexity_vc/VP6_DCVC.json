@@ -1,0 +1,41 @@
+{
+  "prompt_id": "VP6",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Industry commentary on DCVC’s broad deep-tech portfolio and stance on timing.\nexcedr+1",
+  "sources": [
+    {
+      "url": "https://www.excedr.com/blog/venture-capital-profile-dcvc",
+      "title": "excedr+1",
+      "publisher": "excedr.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.excedr.com/blog/venture-capital-profile-dcvc",
+      "title": "excedr\nDCVC: Investment Firm Applying Deep Tech - Excedr\nRead on to learn all about the DCVC venture capital firm, ranging from its expert team and portfolio companies to its deep tech investment interests.",
+      "publisher": "excedr.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:42:51.627470+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

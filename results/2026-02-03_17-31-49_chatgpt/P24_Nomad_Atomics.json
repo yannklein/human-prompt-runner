@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P24",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Nomad Atomics? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally honest VC‑style score for Nomad Atomics’ sales & commercial traction: 4/10\n\nDespite strong technology credentials and venture capital backing, Nomad Atomics remains at an early commercial stage with limited proven sales or marquee revenue‑generating partnerships. The company has raised significant early funding (~A$12 M from Blackbird Ventures and Right Click Capital) to commercialize its field‑deployable quantum gravimeters and accelerometers—a strong signal of investor confidence but not a sales metric per se. \nThe Quantum Insider\n\nThere are some notable collaborations emerging — for example a partnership with Fleet Space Technologies to integrate Nomad’s quantum sensors into an AI‑powered mineral exploration platform, showing movement towards ecosystem engagement rather than direct product revenue. \nmining-technology.com\n Publicly visible customer contracts or significant purchase orders with end‑users (mining majors, defence, utilities) are not yet widely reported in mainstream press or formal case studies, which suggests commercial traction is still nascent. VC writing on Blackbird’s site suggests early customer contracts during product optimization, but this is likely low‑volume or pilot in nature rather than scalable revenue. \nblackbird.vc\n\nIn deep tech, translating lab prototypes into consistent sales takes time; however, if we judge purely on realized commercial revenue and material partnerships that drive sales growth, the evidence is thin. Therefore, a score of 4 reflects strong technical promise and early alliances but minimal validated sales performance so far.",
+  "timestamp": "2026-02-03T18:05:26.180194+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2023/07/03/nomad-atomics-receives-12-million-to-fund-quantum-sensor-technology/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.mining-technology.com/news/fleet-space-partners-advance-quantum-sensors-ai-powered-mineral-exploration/",
+      "title": "mining-technology.com",
+      "publisher": "mining-technology.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://blackbird.vc/blog/investment-notes-nomad-atomics",
+      "title": "blackbird.vc",
+      "publisher": "blackbird.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

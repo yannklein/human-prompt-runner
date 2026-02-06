@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP14",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Practical takeaway for founders: If your startup targets government priority areas (defense, space, biotech, AI with dual-use potential) and can meet grant or program criteria, DCVC could be a strategic partner to explore such channels. Do not assume a guaranteed, repeatable outcome; you’ll still need to engage specific government programs directly and manage the application process with dedicated grant consultants or internal grants expertise. A cautious, evidence-based approach is warranted given the limited public, verifiable data on a proven, repeatable non-dilutive funding track record.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:58:22.264553+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

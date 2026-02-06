@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P20",
+  "company": "Q-CTRL",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Q-CTRL's execution's capabilities? As senior technologists with a track record have. a better chance of achieving engineering breakthroughs. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Execution Capability Score (1–10): 7.5 / 10\n\nBrutally Honest Analysis (≈200 words)\n\nQ‑CTRL has demonstrated real execution above typical deep‑tech startups, especially for a quantum technology company that isn’t driven by a single hardware breakthrough. The firm has raised significant capital (~US$113M in expanded Series B) and grown its team to over 130+ engineers and scientists, indicating strong investor confidence and runway to execute complex engineering work. \nThe Quantum Insider\n\nTechnically, Q‑CTRL isn’t just publishing research—it’s shipping commercial software products that materially improve quantum hardware performance, such as autonomous calibration, error suppression, and performance management tooling, and securing real partnerships with hardware integrators like QuantWare and TreQ. \nq-ctrl.com\n\nOn the sensing side, claims around true commercial quantum advantage in GPS‑denied navigation and award recognition in defense technology show they are translating research out of the lab into field‑relevant systems. \nInnovationAus.com\n+1\n\nHowever, the broader quantum industry remains extremely challenging, with many competitors and some contested claims (e.g., academic rebuttals on benchmarking methodologies). \narXiv\n Execution for quantum tech is inherently slower and riskier than typical SaaS or platform ventures, and while Q‑CTRL is ahead of many peers, scaling operations and consistently delivering at enterprise levels is still a work in progress.\n\nTheir team strength and strategic positioning merit a score above average, but the path to widespread adoption and enterprise revenue resilience is still early — hence 7.5/10.",
+  "timestamp": "2026-02-03T17:57:33.089584+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2024/10/08/q-ctrl-sets-global-quantum-technology-fundraising-record-increasing-series-b-to-usd-113m-led-by-gp-bullhound/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/blog/q-ctrl-delivers-autonomous-calibration-solutions-to-enable-rapid-integration-with-ecosystem-partners-quantware-treq",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.innovationaus.com/q-ctrl-takes-defence-dual-use-prize-for-quantum-navigation/",
+      "title": "InnovationAus.com\n+1",
+      "publisher": "innovationaus.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.19351",
+      "title": "arXiv",
+      "publisher": "arxiv.org",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

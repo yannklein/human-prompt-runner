@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP3",
+  "vc": "DCVC",
+  "question": "What quantum computing and deep-tech companies has DCVC invested in? List all known investments with a brief explanation of each.",
+  "answer": "The DCVC portfolio evolves over time, and some investments may be disclosed indirectly through portfolio lists, press releases, or interviews. If you want exhaustive, up-to-date, or granular itemized lists (including rounds, ownership stakes, and current status), I can compile a more detailed table and verify each entry against primary sources.",
+  "sources": [
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/companies/",
+      "title": "dcvc\nCompanies - DCVC\nData Collective backs companies using deep tech to solve the biggest problems that matter. Our investments address climate change, human health, the…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:37:41.452149+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

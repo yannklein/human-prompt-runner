@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP19",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 3/10 for tolerance of strategic pivots like shifting from hardware to control stack to software when science demands it, rather than forcing premature commercialization.\neverythingstartups+2\n\nInvestment Focus\n\nFirgun Ventures explicitly targets Series A and B quantum startups that have already bridged \"from lab breakthroughs to early commercial traction,\" emphasizing \"scaling manufacturing, commercial teams, and early enterprise sales.\" They back founders who've \"crossed the gap from research lab to early market adoption,\" with a thesis prioritizing \"execution: capital strategy, commercial leadership, and credible paths to revenue\" over further scientific iteration. This post-proof-of-concept filter signals low appetite for pre-revenue pivots, as they position themselves at the \"inflection point between scientific validation and commercial scale.\"\nlinkedin+4\n\nPivot Evidence\n\nNo public portfolio exists yet (fund launched late 2025 with $70M first close), but their early angel bets—like Quantinuum (Cambridge Quantum Computing)—involved a pivot from software-focused quantum algorithms to full-stack hardware-software integration, yet only after significant traction. Founders stress \"sustainable scaling\" and \"responsible innovation,\" but frame quantum's \"next winners\" as defined by commercialization, not R&D flexibility. They track \"application-aligned commercialization\" trends and evaluate pitches on \"commercial timelines,\" suggesting pressure for revenue paths.\nthequantuminsider+3\n\nHonest Risks\n\nAs a quantum specialist fund anchored by Qatar Investment Authority, Firgun likely demands de-risked bets to justify Series A/B valuations in a capital-constrained niche. Pivots mid-stack (hardware → controls → software) scream high scientific uncertainty, clashing with their \"high-conviction capital\" for teams \"entering market adoption.\" They'd probably push for premature scaling to hit enterprise pilots, risking science dilution—brutally, they're commercialization enforcers, not patient science partners. For pure-science pivots, seek pre-seed funds instead. (198 words)\npostquantum+3",
+  "sources": [
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups+2",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-quantum-insider_tqi-exclusive-firgun-ventures-takes-aim-activity-7409200108208082944-0Tr6",
+      "title": "linkedin+4",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+3",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/the-quantum-insider_tqi-exclusive-firgun-ventures-takes-aim-activity-7409200108208082944-0Tr6",
+      "title": "linkedin\nFirgun Ventures Targets Quantum Sector's Series A and B ...\nTQI Exclusive: Firgun Ventures Takes Aim at Quantum’s Series A and B Bottleneck The quantum sector is entering a critical scaling phase, where the primary risk has shifted from scientific feasibility to a shortage of later-stage capital needed to move companies from laboratory research into commercial growth. Firgun Ventures, a new fund launched by pioneering quantum investors Dr. Kris Naudts and Zeynep Korutürk, is positioning itself squarely at this inflection point by leading Series A and B...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "thequantuminsider\nFirgun Ventures Launches $250 Million VC Fund to Invest in ...\nFirgun Ventures announced a $70 million first close to launch a VC fund focused on early growth-stage quantum technology companies.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:08:11.519618+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

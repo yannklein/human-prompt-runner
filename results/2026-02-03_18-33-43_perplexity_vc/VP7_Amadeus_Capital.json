@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP7",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of Amadeus Capital's partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Short answer: likely a solid 7/10 for technical depth, with room to grow in hands-on deep-tech credentials across the portfolio.\n\n200-word assessment:\nAmadeus Capital Partners have a long track record in deep tech, with a portfolio that spans quantum, AI, photonics, and hardware-focused startups. Notable evidence includes ongoing and recent seed-to-growth investments in quantum hardware and software companies (for example, Nu Quantum and Riverlane), which signals explicit involvement in technically demanding ventures rather than generic software plays. The firm’s leadership and partners—including individuals who publicly discuss quantum computing strategy and have direct ties to research ecosystems—suggest genuine science-adjacent expertise, not just financial acumen. In addition, their public messaging emphasizes “deep tech” and “hands-on technical insight,” and they frequently highlight collaborations with university spinouts and research programs, which is a hallmark of a fund that values technical credibility. However, while several partners and venture leads have strong academic and research associations (e.g., PhDs, research backgrounds, and industry-facing tech roles), the portfolio also includes growth-stage and cross-domain investments where the day-to-day founder-facing technical engagement varies. This mix is common in leading deep-tech funds, but means not every partner has uniformly deep hands-on lab experience across all domains. Overall, Amadeus demonstrates credible technical credibility and a track record of backing technically ambitious ventures, earning a defensible 7 out of 10 on genuine technical credentials.\namadeuscapital+4",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+4",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:43:43.931537+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP8",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's understanding of real quantum computing bottlenecks — such as error correction, yield, cryogenics, control electronics, and compilation — versus surface-level fixation on qubit counts? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 4/10\n\nFirgun Ventures looks sophisticated at a conceptual level — it’s a London-based VC specifically targeting Series A/B quantum startups, and its founders have been early investors in notable players like Cambridge Quantum Computing (now Quantinuum) with backing from significant institutional limited partners such as the Qatar Investment Authority. They also have an advisory council including credible domain experts, e.g., from Cambridge and Oxford, which helps technical due diligence beyond generalist investing. \nfirgun.vc\n+1\n\nHowever, based on publicly available information, there’s no clear evidence that Firgun has articulated a deep, hands-on understanding of the core technical bottlenecks in quantum computing — such as quantum error correction thresholds, cryogenic control electronics integration, qubit fabrication yield challenges, scalable control stacks, or compiler/optimization complexities — beyond broadly stating they invest across the quantum stack and considering enabling technologies like photonics, cryogenics, and control systems. \nfirgun.vc\n\nTheir narrative centers on bridging funding gaps and scaling companies commercially, rather than publicly demonstrating domain expertise in the physics and engineering hurdles that will determine whether fault-tolerant, large-scale quantum systems are possible. The messaging is typical of deep-tech VCs: supportive of “full stack” without detailed articulation of bottlenecks that separate science hype from engineering reality. That’s not a critique of their intent, but it signals a lesser emphasis on technical leadership in quantum bottlenecks vs. commercial scaling.\n\nIn sum, Firgun has strategic positioning and ecosystem credibility, but based on what’s public, its technical depth on specific fundamental bottlenecks seems modest relative to specialized technical players or research-focused investors.",
+  "timestamp": "2026-02-03T17:24:40.431931+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

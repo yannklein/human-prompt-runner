@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP20",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC earns a brutally honest 6/10 for constructive behavior in down rounds, bridge rounds, or extensions—solid on survival support but not standout in prioritizing it over optics.\n\nTrack Record Overview\n\nPublic info shows DCVC as a deep-tech heavyweight with successes like Databricks and Rigetti exits, emphasizing long-term scaling over quick flips. They've backed firms through multiple rounds, including growth stages, suggesting tolerance for extensions when traction exists. No direct evidence of DCVC leading harsh down rounds; their techno-economic focus implies patience for data-proven paths, aligning with company runway needs.\nsparkco\n​\n\nStrengths in Survival\n\nDCVC provides active guidance, networks, and strategic advice beyond cash, aiding portfolio firms in tough markets. Testimonials highlight their role in multi-round nurturing, fitting bridge scenarios to hit milestones without premature dilution. In a 2025-2026 bridge surge (16-22% of VC cash), their deep-tech lens likely favors extensions for resilient bets over forced marks.\necovg+2\n\nKey Shortcomings\n\nLimited specifics on DCVC down-round participation—unlike general VCs flagged for optics-driven passes in tight markets. Their structured diligence prioritizes management strength and scalability, potentially sidelining weaker survival plays. No standout examples of DCVC championing punitive terms or rescues; this opacity docks points, as top firms (e.g., via bridge lists) publicize pro-founder moves. In quantum/deep tech, where down rounds hit 20-30% discounts, they'd likely hedge via caps but not fully ignore LPs' mark-to-market pressure.\nstartuplawyer+4\n\nAs a quantum founder, I'd pitch them for bridges if metrics align—their expertise adds value—but hedge with survival-first alternatives. (198 words)",
+  "sources": [
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecovg.com/decoding-the-rise-of-vc-led-bridge-rounds/",
+      "title": "ecovg+2",
+      "publisher": "ecovg.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://startuplawyer.com/venture-capital/venture-capital-bridge-extension-round-structures",
+      "title": "startuplawyer+4",
+      "publisher": "startuplawyer.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC differentiates itself through a techno-economic analysis approach, ensuring startups have a credible path to scale and profitability. They emphasize linear scalability and cost-efficiency, particularly in replacing or expanding vital industries. The firm's data-first and computation-led strategy supports teams that utilize real-world data and automation to gain competitive advantages. DCVC's investment approach combines financial returns with societal impact, focusing on innovations that...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecovg.com/decoding-the-rise-of-vc-led-bridge-rounds/",
+      "title": "ecovg\nSurvival or Strategy? Decoding The Rise of VC-led Bridge Rounds\nPicture this: you’re a founder on the cusp of your next significant milestone, say your Series A or B, but you’re not quite there yet. Growth is real, traction is visible, but markets are tighter, valuations are scrutinized, and the next “big” round feels like it might arrive any time. In that limbo, you raise a bridge round, and guess what, you are not alone. … Why The Bump in Bridge Rounds? The bridge route taken by the VCs is a strategic move to make good bets at the right time. Here’s why:...",
+      "publisher": "ecovg.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://ecovg.com/decoding-the-rise-of-vc-led-bridge-rounds/",
+      "title": "ecovg\nSurvival or Strategy? Decoding The Rise of VC-led Bridge Rounds\nPicture this: you’re a founder on the cusp of your next significant milestone, say your Series A or B, but you’re not quite there yet. Growth is real, traction is visible, but markets are tighter, valuations are scrutinized, and the next “big” round feels like it might arrive any time. In that limbo, you raise a bridge round, and guess what, you are not alone. … Why The Bump in Bridge Rounds? The bridge route taken by the VCs is a strategic move to make good bets at the right time. Here’s why:...",
+      "publisher": "ecovg.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://startuplawyer.com/venture-capital/venture-capital-bridge-extension-round-structures",
+      "title": "startuplawyer\nVenture Capital Bridge Extension Round Structures - Startup Lawyer\nThinking about all the potential bridge extension rounds that will need to be closed in late 2024 and 2025, and here are my thoughts on the structure: If you do equity, and assuming it’s the same valuation, you could do an ‘extension round’ which essentially builds off the prior preferred round. This would increase the",
+      "publisher": "startuplawyer.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:11:47.360370+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

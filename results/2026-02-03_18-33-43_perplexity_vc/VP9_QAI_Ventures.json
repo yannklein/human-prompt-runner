@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP9",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures shows poor compatibility with quantum startups needing 10–15 year timelines. Score: 3/10.\n\nFund Structure\n\nQAI Ventures operates a Growth Stage Fund targeting Series A–C quantum and QuantumAI companies with commercial traction, investing $10–12M per deal to drive scaling and exits in 3–4 years. Their Early Stage Fund pairs with an accelerator for pre-seed access, but emphasizes de-risking via quick revenue validation and follow-ons, not prolonged R&D. A planned 2026 Growth Stage Fund doubles down on scale-ups for \"immediate returns\".\nqai-ventures+2\n\nTimeline Mismatch\n\nQuantum breakthroughs often demand 10–15 years for fault-tolerant systems, far exceeding QAI's 3–4 year exit focus or typical deep-tech VC horizons of 8–12 years. Their strategy prioritizes \"shorter holding periods\" and M&A/IP exits in finance, energy, and life sciences, clashing with long-horizon bets.\narxiv+2\n\nSize and Vintage Risks\n\nQuantum Fund I (undisclosed size, founded 2023) manages a 25-company portfolio with two early exits, attracting 10x follow-on capital. Vintages align with short-cycle growth (Basel-based, active to 2025), not decade-long funds; small early tickets (~$200k) limit reserves for marathon timelines.\nqai-ventures+2\n\nBrutally, QAI excels at mid-stage acceleration but bails too early for true quantum moonshots—better for hybrid AI/quantum plays than pure hardware needing patient capital. (198 words)",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/investment-fund-growth-stage",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2311.17187v2.pdf",
+      "title": "arxiv+2",
+      "publisher": "arxiv.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/investment-fund-growth-stage",
+      "title": "qai-ventures\nGrowth Stage VC for QuantumAI & Advanced Computing\nQAI Ventures' Growth Stage Fund backs revenue-generating startups in QuantumAI and Advanced Computing. We invest up to $12M in Series A–C companies scaling toward high-demand exit markets.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/investment-fund-growth-stage",
+      "title": "qai-ventures\nGrowth Stage VC for QuantumAI & Advanced Computing\nQAI Ventures' Growth Stage Fund backs revenue-generating startups in QuantumAI and Advanced Computing. We invest up to $12M in Series A–C companies scaling toward high-demand exit markets.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://arxiv.org/pdf/2311.17187v2.pdf",
+      "title": "arxiv\nInvesting in the Quantum Future – State of Play and Way For ...\nof capital they need to raise and also develop as much as possible the technology and company concept before incorpo- rating. As soon as VC funding is allocated, typical Deep-Tech VCFs have a time horizon of 8-12 years depending on when they are investing in their own fundraising and deployment cycle, which might end up being too short for some",
+      "publisher": "arxiv.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures\nStartup Funding from Early Stage to Scale - QAI Ventures\nQAI Ventures invests in Quantum Tech and Advanced Computing startups from pre-seed to Series C. Apply for early-stage funding via our accelerator or secure growth capital up to $12M.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:47:51.070042+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

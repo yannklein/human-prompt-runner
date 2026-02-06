@@ -1,0 +1,11 @@
+{
+  "prompt_id": "P7",
+  "company": null,
+  "question": "What are the top 3 challenges to commercializing Quantum Sensing currently? Give me 100 word explanation and the rank",
+  "answer": "Here are the top 3 challenges to commercializing quantum sensing, ranked:\n\n1) Scalability & Manufacturing\nQuantum sensors rely on delicate quantum states that are extremely sensitive to external disturbances. Producing devices at commercial scales reliably and cost‑effectively remains difficult.\n\n2) Environmental Robustness\nQuantum systems often require cryogenic temperatures or isolation from noise and vibration. Making sensors that work reliably in real‑world, non‑lab environments is hard.\n\n3) Integration with Classical Systems\nEmbedding quantum sensors into existing industrial infrastructure and data systems requires new interfaces, standards, and classical‑quantum hybrid workflows that are still immature.\n\nThese barriers slow adoption despite promising performance advantages.",
+  "timestamp": "2026-02-03T17:34:27.279799+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [],
+  "response_id": ""
+}

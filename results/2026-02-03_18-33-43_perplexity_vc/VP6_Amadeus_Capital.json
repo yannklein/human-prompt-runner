@@ -1,0 +1,41 @@
+{
+  "prompt_id": "VP6",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's track record of investing in deep-tech — specifically quantum computing, semiconductors, photonics, or advanced materials? Consider the depth and relevance of their portfolio. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Compare Amadeus to peers with multiple exits in quantum hardware; Amadeus shows credible bets (Nu Quantum, Photonic, Riverlane) but fewer high-profile, widely documented exits than some pure-play quantum VCs, placing them solidly in “strong potential, emerging track record” territory.",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-investing-deeptech-activity-7176942301938601987-SnVQ",
+      "title": "linkedin\n#quantumcomputing #investing #deeptech | Amadeus Capital Partners\nOur latest episode of Amadeus and Friends is an insightful journey into the cutting-edge realm of quantum computing featuring Manjari Chandran-Ramesh, PhD, Partner on our Early Stage investing team, and industry pioneers Professor Stephanie Simmons from Photonic Inc. and Hermann Hauser, co-founder of Amadeus and Board Director of Photonic. The conversation delves into the challenges and opportunities posed by quantum computing, drawing intriguing parallels to the evolution of classical...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-investing-deeptech-activity-7176942301938601987-SnVQ",
+      "title": "linkedin\n#quantumcomputing #investing #deeptech | Amadeus Capital Partners\nOur latest episode of Amadeus and Friends is an insightful journey into the cutting-edge realm of quantum computing featuring Manjari Chandran-Ramesh, PhD, Partner on our Early Stage investing team, and industry pioneers Professor Stephanie Simmons from Photonic Inc. and Hermann Hauser, co-founder of Amadeus and Board Director of Photonic. The conversation delves into the challenges and opportunities posed by quantum computing, drawing intriguing parallels to the evolution of classical...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/amadeus-capital-partners_quantumcomputing-investing-deeptech-activity-7176942301938601987-SnVQ",
+      "title": "linkedin\n#quantumcomputing #investing #deeptech | Amadeus Capital Partners\nOur latest episode of Amadeus and Friends is an insightful journey into the cutting-edge realm of quantum computing featuring Manjari Chandran-Ramesh, PhD, Partner on our Early Stage investing team, and industry pioneers Professor Stephanie Simmons from Photonic Inc. and Hermann Hauser, co-founder of Amadeus and Board Director of Photonic. The conversation delves into the challenges and opportunities posed by quantum computing, drawing intriguing parallels to the evolution of classical...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:41:59.807521+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

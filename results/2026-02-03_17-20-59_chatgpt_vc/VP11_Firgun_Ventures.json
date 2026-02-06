@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP11",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Comfort with Long‑Horizon Deep‑Tech LP Capital for Firgun Ventures: 8/10\n\nBased on available public information, Firgun Ventures appears to have very solid backing from patient, long‑horizon capital sources, especially for a first‑time deep‑tech VC focused on quantum.\n\nHere’s why:\n\nSovereign & Strategic LP Support:\nFirgun’s inaugural $250 M quantum fund secured a major anchor investment from the Qatar Investment Authority (QIA) — a sovereign wealth fund known for long‑dated, strategic allocations into frontier technologies. This kind of backing typically signals significant comfort with multi‑year, high‑uncertainty bets that define quantum. \nThe Quantum Insider\n+1\n\nFamily Offices & Deep‑Tech Angels:\nAlongside the sovereign anchor, the first close includes commitments from family offices and high‑net‑worth strategic investors such as Ilyas Khan (founder of Quantinuum), whose interests span deep‑tech ecosystems. Such LPs are often more patient than traditional institutional VCs and comfortable with lengthy R&D cycles. \nQuantum Computing Report\n\nNo Evergreen or Corporate LPs Publicly Announced (Yet):\nThere’s no public evidence that corporate strategic investors or evergreen capital (e.g., endowments with open‑ended allocations) are formally LPs at this stage. The known commitments so far skew toward sovereign wealth and sophisticated individuals/family offices rather than broad corporate or public LP bases. \nThe Quantum Insider\n\nOverall Assessment:\nGiven sovereign anchor capital from QIA and dedicated deep‑tech supporters, Firgun’s LP base is substantially patient and aligned with long‑range growth, though broader evergreen or industry corporate LP support hasn’t yet been disclosed. That warrants a strong comfort score, but not a perfect one. \nThe Quantum Insider",
+  "timestamp": "2026-02-03T17:25:58.891185+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "Quantum Computing Report",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

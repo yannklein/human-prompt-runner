@@ -1,0 +1,54 @@
+{
+  "prompt_id": "P14",
+  "company": "Qnami",
+  "question": "What are Qnami's current main strengths? Give short bullet points",
+  "answer": "Here are Qnami’s current main strengths (short bullet points):\n\nPioneer and leader in quantum sensing technology, especially scanning NV (Nitrogen‑Vacancy) magnetometry. \nQnami\n\nFlagship ProteusQ quantum microscope offering atomic‑scale magnetic imaging and high precision measurement. \nQnami\n\nDiamond‑based quantum sensors (NV centers) provide unparalleled sensitivity and nanoscale resolution. \nQnami\n\nCommercial traction and global reach with installations at major research institutions and partnerships for distribution. \nQnami\n\nStrong academic and research foundation originating from the University of Basel with deep expertise in quantum physics. \nunibas.ch\n\nCustom manufacturing capability through its Quantum Foundry (tailored and scalable diamond sensor production). \nQnami\n\nBroad application potential across materials science, spintronics, nanoelectronics, and life sciences. \nQnami\n\nCollaborations with established instrument partners (e.g., HORIBA, Quantum Design) enhancing commercialisation and support. \nQnami",
+  "timestamp": "2026-02-03T17:44:10.912968+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/products/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/portfolio/quantum-foundry/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.unibas.ch/en/News-Events/Uni-Nova/Uni-Nova-146/Uni-Nova-146-a-diamond-as-a-quantum-sensor-Quantum-sensor-technology-Qnami-Quantum-technology-startup.html",
+      "title": "unibas.ch",
+      "publisher": "unibas.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/applications/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-announces-strategic-collaboration-and-global-distribution-agreement-with-horiba-to-commercialize-the-qnami-proteusqtm/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

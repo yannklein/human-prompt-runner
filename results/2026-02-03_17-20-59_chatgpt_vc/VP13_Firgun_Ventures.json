@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP13",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 5/10\n\nFirgun Ventures currently shows limited demonstrable strategic relationships with the kinds of hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or big pharma partners that would strongly benefit a quantum company’s go‑to‑market or R&D scaling — at least based on publicly available sources.\n\nHere’s the reality:\n\nFirgun has strong academic and ecosystem networks — including advisors from Cambridge, Oxford, MIT, Google, the European Investment Bank, and the Wellcome Trust — which provides credibility in scientific evaluation and access to top research talent. \nThe Quantum Insider\n+1\n\nIts major financial backer so far is the Qatar Investment Authority, which signals deep capital but not direct hyperscaler or industrial partner involvement. \nstartupresearcher.com\n\nFounders have a track record of angel investing in quantum (e.g., early backing of Cambridge Quantum Computing/Quantinuum), but that reflects personal investment experience rather than formal strategic alliances with hyperscalers or labs. \nThe Quantum Insider\n\nHowever:\n\nThere’s no clear, published evidence of formal partnerships with hyperscaler cloud providers (AWS, Microsoft Azure, Google Cloud) or national labs (e.g., US DOE labs, CERN), nor with major semiconductor fabs or aerospace / pharmaceutical industry giants — relationships that often materially accelerate customer validation, co‑development, or market access. Public sources don’t list such alliances. \nfirgun.vc\n\nThe advisory board’s links (e.g., a former Google director) are useful but fall short of binding strategic deals for portfolio companies.\n\nBottom line: Firgun’s strength is in networks and expertise, not yet in formal strategic industrial partnerships that matter most for scaling quantum tech commercially. Its score reflects potential rather than proven industrial leverage.",
+  "timestamp": "2026-02-03T17:26:47.886049+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupresearcher.com/news/firgun-ventures-launches-250-million-quantum-technology-fund",
+      "title": "startupresearcher.com",
+      "publisher": "startupresearcher.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

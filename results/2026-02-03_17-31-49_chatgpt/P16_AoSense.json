@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P16",
+  "company": "AoSense",
+  "question": "What are AoSense's current main opportunities? Give short bullet points",
+  "answer": "Here are AOSense’s current main opportunities (short bullet points):\n\nGrowth in quantum sensors market — The global quantum sensors segment is expanding rapidly, with increasing adoption across industries such as defense, aerospace, and scientific research, where AOSense holds a substantive market share. \nGlobal Market Insights Inc.\n\nDefense and aerospace applications — Rising demand for GPS‑denied navigation systems for military platforms (aircraft, submarines, and vehicles) presents a key opportunity for AOSense’s cold‑atom inertial sensors and IMUs. \nResearch and Markets\n\nCommercialization of rugged, field‑deployable systems — Moving technology from lab prototypes to rugged products usable in real‑world environments (e.g., autonomous vehicles, drones) offers market potential. \nResearch and Markets\n\nPrecision timing and frequency standards — Growth in markets requiring ultra‑precise timing (communications, radar, and navigation) supports demand for portable optical clocks and frequency combs. \naosense.com\n\nGeophysical and resource exploration — High‑performance gravimeters and gravity gradiometers are increasingly used for geophysical surveying, resource exploration, and environmental monitoring. \naosense.com\n\nCollaborations and partnerships — Strategic collaborations with major industry players (e.g., Lockheed Martin and others) help accelerate adoption and integration of quantum navigation technologies. \nResearch and Markets\n\nComponent and subsystem sales — Supplying advanced quantum components (lasers, vacuum hardware, and atom sources) to research labs and industrial customers as part of broader quantum ecosystem growth. \naosense.com\n\nLet me know if you’d like these tailored to a specific market (e.g., defense vs. commercial)!",
+  "timestamp": "2026-02-03T17:48:31.723935+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.gminsights.com/industry-analysis/quantum-sensors-market",
+      "title": "Global Market Insights Inc.",
+      "publisher": "gminsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.researchandmarkets.com/reports/6190521/quantum-sensor-navigation-market-report",
+      "title": "Research and Markets",
+      "publisher": "researchandmarkets.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/research-and-development/",
+      "title": "aosense.com",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com",
+      "publisher": "aosense.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

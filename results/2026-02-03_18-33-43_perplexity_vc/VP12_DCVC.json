@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP12",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's ability to provide talent pipeline access — connections to top research labs, postdocs, and senior industry engineers relevant to quantum and deep-tech? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Quantum talent access is often constrained by the maturity of a startup; DCVC’s strength is late- to mid-stage introductions and strategic hires rather than early-stage, bespoke recruiter pipelines.\ndcvc\n​",
+  "sources": [
+    {
+      "url": "https://www.dcvc.com/uploads/Reports/DTOR-23/DCVC-2023-Deep-Tech-Opportunities-Report.pdf",
+      "title": "dcvc",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/dcvc-data-collective",
+      "title": "quantum\nDCVC (Data Collective) - Quantum Computing Investor\nInvests in frontier technology companies, with strong focus on quantum computing and computational sciences",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantum.org.uk/investor/dcvc-data-collective",
+      "title": "quantum\nDCVC (Data Collective) - Quantum Computing Investor\nInvests in frontier technology companies, with strong focus on quantum computing and computational sciences",
+      "publisher": "quantum.org.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc\nDCVC V\nWhen we started DCVC almost a decade ago, one of the pressing Deep Tech problems of the day was scale-out compute. DCVC V - $725 million focused on a $20+…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/archive/p2/",
+      "title": "dcvc\nDCVC\nWe are deep tech venture capital.",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/archive/p2/",
+      "title": "dcvc\nDCVC\nWe are deep tech venture capital.",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/uploads/Reports/DTOR-23/DCVC-2023-Deep-Tech-Opportunities-Report.pdf",
+      "title": "dcvc\nDeep Tech\nOur investments span agricultural technology, applied AI, climate technology, computational biology and healthcare, finance and Web3, foundational technology, industrial transformation, security, and space. DCVC currently manages more than $3 billion in committed capital across 12 funds. DCVC backs entrepreneurs applying deep tech tools—AI, big data, computation, cloud infrastructure, and applications of molecular and biological science—to transform giant",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/posts/prineha_builders-innovators-quantum-activity-7407914525628235776-hEhY",
+      "title": "linkedin\nDCVC's Quantum Investments: From Lab to Commercial Reality\nQuantum’s super position – From lab to commercial reality Matt Ocko, James Hardiman and I write about our quantum investments at DCVC. As quantum moves from theoretical promise to demonstrated advantage, our conviction only grows stronger: this is the defining moment for quantum investment. After decades of promise (and investment) in quantum technology, we're seeing unprecedented breakthroughs: verifiable quantum advantage, remarkable qubit and gate fidelity, coherence times, and a path to...",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:53:58.891657+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

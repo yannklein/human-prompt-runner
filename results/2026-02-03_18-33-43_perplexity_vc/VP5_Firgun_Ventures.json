@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP5",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.",
+  "answer": "Firgun Ventures is increasingly perceived as a dedicated, early-growth-stage quantum specialist, with strong signaling from high-profile anchors and industry observers. Founders view them as patient, technically informed partners who understand both lab-to-market dynamics and the capital needs of scaling quantum companies. Co-investors describe Firgun as adding credibility and focus to a niche but rapidly growing sector, leveraging a thesis centered on bridging the Series A/B gap and providing more than just capital—operational and strategic support tailored to quantum startups. The broader market sees Firgun as a notable accelerator of the quantum ecosystem, helping to align funding with real-world deployment in computing, sensing, and secure communications, while attracting international backers and government-affiliated institutions. Overall, Firgun is perceived as a disciplined, mission-aligned entrant that could shape early-stage quantum financing norms, though as a relatively new player in a high-risk space, it is weighed against longer-term performance and portfolio outcomes. [Evidence appears in industry coverage and investor commentary surrounding Firgun’s announced fund and first close, including reports noting anchor funding from the Qatar Investment Authority and emphasis on post-seed to pre-expansion opportunities.]\npostquantum+2",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+2",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:39:53.452092+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

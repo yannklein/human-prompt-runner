@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP1",
+  "vc": null,
+  "question": "Who are the top 10 VCs investing in Quantum Sensing currently? Give a 100-word explanation per VC and the rank.",
+  "answer": "If you’d like, I can tailor the list to your region (e.g., Europe or North America), focus on seed-stage vs. later-stage bets, or include notable corporate investors with active sensing programs.",
+  "sources": [],
+  "timestamp": "2026-02-03T18:33:52.283365+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

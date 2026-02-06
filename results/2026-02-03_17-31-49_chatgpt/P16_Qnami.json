@@ -1,0 +1,48 @@
+{
+  "prompt_id": "P16",
+  "company": "Qnami",
+  "question": "What are Qnami's current main opportunities? Give short bullet points",
+  "answer": "Here are Qnami’s current main opportunities, summarized in short bullet points:\n\n🌍 Market & Commercial Opportunities\n\nExpand global distribution of ProteusQ quantum microscopes, especially via partnerships (e.g., with Quantum Design in Japan & Korea) to enter East Asian research markets. \nPlatodata\n\nLeverage strategic alliances for broader reach, such as distribution deals that extend sales channels and customer support worldwide. \nselectscience.net\n\nTap into growing demand in academia and industry for high‑precision nanoscale sensing tools in materials science and spintronics research. \nQnami\n\n🧪 Product & Technology Expansion\n\nDevelop next‑generation quantum sensing platforms, including low‑temperature (cryogenic) variants and enhanced measurement capabilities beyond ambient conditions. \nQnami\n+1\n\nBroaden applications of NV‑based quantum sensors into fields such as navigation, life sciences, and advanced semiconductor/metrology sectors. \nQnami\n\n🏭 Industrial & Manufacturing Focus\n\nMove beyond research labs into industrial process control, especially in semiconductor design, spintronics device fabrication, and manufacturing yield improvement. \nchemeurope.com\n\nCapitalize on quantum sensing needs in emerging tech sectors like quantum computing components and magnetic memory (MRAM) diagnostics. \nwiseguyreports.com\n\nThese opportunities highlight how Qnami is expanding both its geographic market reach and technological footprint in the quantum sensing landscape. \nQnami",
+  "timestamp": "2026-02-03T17:48:09.478437+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://platoblockchain.net/quantum-news-briefs-february-2-2024-qusecure-contributes-to-white-house-quantum-security-roundtable-pasqal-the-korea-advanced-institute-of-science-and-technology-kaist-and-daejeon-city-forge-a/",
+      "title": "Platodata",
+      "publisher": "platoblockchain.net",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.selectscience.net/article/horiba-collaborates-with-qnami-to-develop-scanning-nv-magnetometry-and-distribute-first-quantum-microscope",
+      "title": "selectscience.net",
+      "publisher": "selectscience.net",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.chemeurope.com/en/news/1171070/first-commercial-quantum-microscope.html",
+      "title": "chemeurope.com",
+      "publisher": "chemeurope.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.wiseguyreports.com/reports/quantum-sensor-market",
+      "title": "wiseguyreports.com",
+      "publisher": "wiseguyreports.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP18",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures earns a brutally honest score of 3/10 for patience and constructive behavior during portfolio companies' technical setbacks or milestone slippage.\nkruncher+1\n\nLimited Evidence\n\nPublic information portrays QAI Ventures as a specialized early-stage VC and accelerator in quantum tech, emphasizing rigorous evaluation, data-driven decisions, and seamless integrations like with Kruncher for deal flow. They highlight adding six quantum companies post-tool adoption, suggesting a focus on efficiency and quick wins rather than enduring delays. No direct accounts of handling setbacks appear in case studies or their site.\nqai-ventures+2\n\nHigh-Pressure Culture Signals\n\nTheir accelerator model pushes \"fast-track\" from lab to product-market fit, with bootcamps and structured stages implying tight timelines. Quotes stress \"everything moves faster now\" and \"support throughout the journey,\" but this reads as optimistic marketing, not proof of patience amid quantum's inherent delays—like hardware failures or algorithm stalls. Quantum startups routinely slip milestones by years; a fund this specialized likely demands pivots or cuts underperformers swiftly to protect LP capital.\nhkamarcom+2\n\nInference from Operations\n\nPortfolio lists active firms solving \"toughest challenges,\" yet alumni networks like QAIentangled hint at churn—accelerator grads may not all secure ongoing funding. Absent founder testimonials on crises (e.g., Reddit or podcasts), they seem constructive in onboarding but untested in adversity. As a quantum founder, I'd worry about Basel-based pressure for rapid proofs-of-concept over long-haul support. (198 words)\nqai-ventures+1",
+  "sources": [
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher+1",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/startup-funding",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://hkamarcom.com/podcast/accelerating-quantum-startups-worldwide/",
+      "title": "hkamarcom+2",
+      "publisher": "hkamarcom.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/portfolio",
+      "title": "qai-ventures+1",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.kruncher.ai/case-study/qai-ventures/",
+      "title": "kruncher\nCase Study: QAI Ventures - Kruncher Ai\nKruncher is the Intelligent Platform built for Private Market Investments that automates deal flow, due diligence, and portfolio monitoring — delivering faster decisions and deeper, higher-quality insights.",
+      "publisher": "kruncher.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://hkamarcom.com/podcast/accelerating-quantum-startups-worldwide/",
+      "title": "hkamarcom\nAccelerating Quantum Startups Worldwide\nQAI Ventures just celebrated its first anniversary as a $50 million, early-stage venture fund and startup accelerator. Anca Albu is the chief marketing officer at QAI Ventures and works with entrepreneurs to help them craft compelling stories about their work. She helped build the largest and most active angel investor network in Switzerland, so she knows what it takes to build a community of funders, mentors and supporters around a new industry. In this episode, she explains lessons learned...",
+      "publisher": "hkamarcom.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/portfolio",
+      "title": "qai-ventures\nPortfolio Companies\nPortfolio Companies QAI Ventures accelerates and invests in Advanced Computing, Quantum, and Advanced AI startups worldwide. Our fund brings together the focus and community of a dedicated VC fund with the resources, network, and reach of a multi-stage global firm. Our startups Solves the toughest computational challenges by leveraging the power of quantum and high-performance computing. Enabling rapid photonic integrated circuit development for any wavelength or platform. Phoenix Technologies...",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:07:12.708370+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

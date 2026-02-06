@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners scores a 7/10 for their ability and willingness to follow on through Series C and D for deep-tech companies without diluting ownership excessively or scrambling for capital.\namadeuscapital+1\n\nInvestment Track Record\n\nAmadeus has backed over 200 deep-tech firms since 1997, raising $1.3B across AI, quantum, biotech, and sustainability—sectors needing long capital runways. Examples include leading Inotec AMD's $33M Series C in 2024 and supporting Riverlane's $75M Series C quantum round. They actively follow on from seed/A via funds like APEX (€80M for early deep tech).\nlinkedin+2\n\nFollow-On Strength\n\nThe firm commits to later rounds, as stated: they \"frequently lead seed/Series A and actively participate in follow-ons\" for long-term partnerships. No public evidence of ownership grabs or capital crunches; their steady fundraising (e.g., £210M deployed since 2013) suggests stability. Quantum plays like planqc and GEMESYS got APEX boosts, implying C/D readiness.\nadeline+2\n\nLimitations and Risks\n\nBrutally, they're early-stage heavy (seed/A focus), with fewer visible pure Series C/D leads in quantum/deep tech versus general tech. Deep-tech timelines (5-10 years) test reserves; while patient, they syndicate (e.g., Healx, Secondmind), risking co-investor dynamics over ownership control. No dilution horror stories, but unproven at D-scale for bleeding-edge quantum without giants like Bpifrance. Solid, not elite.\norielipo+2\n\n(198 words)",
+  "sources": [
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+1",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/seasons-greetings-new-investments-office-amadeus-capital-partners-vizoc",
+      "title": "linkedin+2",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline+2",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://orielipo.com/fueling-innovation-amadeus-capital-partners-role-in-deep-tech-ventures/",
+      "title": "orielipo+2",
+      "publisher": "orielipo.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/seasons-greetings-new-investments-office-amadeus-capital-partners-vizoc",
+      "title": "linkedin\nSeason’s Greetings! New investments and a new office\nBefore everyone slips off into the warm embrace of the holiday season, I thought we’d share some recent updates from what is usually a quieter month for news in the world of venture capital. It’s been a busy December for our team, working on some new deals behind the scenes, which we’re excited to s",
+      "publisher": "linkedin.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners - VC for Early Stage Startups | Adeline.co ...\nLooking for VCs? Check out Amadeus Capital Partners on Adeline.co.uk and browse our database of investors, accelerators and startup programmes.",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners - VC for Early Stage Startups | Adeline.co ...\nLooking for VCs? Check out Amadeus Capital Partners on Adeline.co.uk and browse our database of investors, accelerators and startup programmes.",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://orielipo.com/fueling-innovation-amadeus-capital-partners-role-in-deep-tech-ventures/",
+      "title": "orielipo\nAmadeus Capital Partners' Role in Deep Tech Ventures | Oriel IPO\nDiscover how Amadeus Capital Partners invests in AI and sustainable technologies to support over 190 deep tech startups in the UK.",
+      "publisher": "orielipo.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:49:15.884574+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

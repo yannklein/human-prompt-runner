@@ -1,0 +1,1312 @@
+#!/usr/bin/env python3
+"""
+Company Evaluation Web App
+
+A local Flask web app that displays company evaluation results:
+- Interactive spider chart
+- Click on dimensions to drill into individual prompts
+- View AI answers and sources per prompt
+
+Usage:
+    python company_webapp.py
+    python company_webapp.py --port 5002
+"""
+
+import argparse
+import json
+import os
+import re
+from pathlib import Path
+
+from flask import Flask, render_template_string, jsonify, request
+
+from company_analysis import (
+    CATEGORIES,
+    AI_WEIGHTS,
+    _normalize_ai_name,
+)
+
+app = Flask(__name__)
+
+DIMENSION_WEIGHTS = {
+    "Team & Ability to Attract Talent": 0.25,
+    "Quality of Existing IP": 0.25,
+    "TRL / Traction": 0.25,
+    "Investor Perception": 0.25,
+}
+
+
+def find_latest_company_folder(platform_suffix, results_dir="results"):
+    """Find the most recent results folder for a given company platform suffix.
+
+    Looks for folders ending with e.g. '_chatgpt', '_gemini', '_perplexity'
+    but NOT '_chatgpt_vc', '_gemini_vc', '_perplexity_vc'.
+    """
+    results_path = Path(results_dir)
+    if not results_path.exists():
+        return None
+    matching = sorted(
+        [
+            d for d in results_path.iterdir()
+            if d.is_dir()
+            and d.name.endswith(f"_{platform_suffix}")
+            and not d.name.endswith(f"_{platform_suffix}_vc")
+        ],
+        key=lambda d: d.name,
+        reverse=True,
+    )
+    return str(matching[0]) if matching else None
+
+
+def _load_all_company_data():
+    """Load all company evaluation data from the latest run folders."""
+    folders = {
+        "chatgpt": find_latest_company_folder("chatgpt"),
+        "gemini": find_latest_company_folder("gemini"),
+        "perplexity": find_latest_company_folder("perplexity"),
+    }
+
+    raw_responses = {}
+    company_names = set()
+
+    for platform, folder in folders.items():
+        if not folder or not os.path.exists(folder):
+            continue
+        for fname in os.listdir(folder):
+            if not fname.endswith(".json"):
+                continue
+            fpath = os.path.join(folder, fname)
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            pid = data.get("prompt_id", "")
+            company = data.get("company")
+            if company:
+                company_names.add(company)
+            ai = _normalize_ai_name(data.get("model", ""))
+            raw_responses[(ai, pid, company)] = data
+
+    scored_prompts = {}
+    for cat in CATEGORIES:
+        for pid in cat["prompts"]:
+            for platform in ["chatgpt", "gemini", "perplexity"]:
+                for company in company_names:
+                    resp = raw_responses.get((platform, pid, company))
+                    if resp:
+                        answer = resp.get("answer", "")
+                        numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", answer)]
+                        score = next((n for n in numbers if n <= 10), None)
+                        if score is not None:
+                            scored_prompts.setdefault(company, {}).setdefault(pid, {})[platform] = score
+
+    company_results = {}
+    for company in company_names:
+        categories_data = []
+        for cat in CATEGORIES:
+            cat_key = cat["analysis_key"]
+            prompt_details = []
+            prompt_weighted_scores = []
+
+            for pid in cat["prompts"]:
+                platform_scores = scored_prompts.get(company, {}).get(pid, {})
+                w_sum = 0.0
+                w_total = 0.0
+                for ai, weight in AI_WEIGHTS.items():
+                    if ai in platform_scores:
+                        w_sum += platform_scores[ai] * weight
+                        w_total += weight
+                weighted = round(w_sum / w_total, 1) if w_total > 0 else None
+                if weighted is not None:
+                    prompt_weighted_scores.append(weighted)
+
+                platform_answers = []
+                for ai in ["chatgpt", "gemini", "perplexity"]:
+                    resp = raw_responses.get((ai, pid, company))
+                    if resp:
+                        platform_answers.append({
+                            "platform": ai,
+                            "score": platform_scores.get(ai),
+                            "answer": resp.get("answer", ""),
+                            "question": resp.get("question", ""),
+                            "sources": resp.get("sources", []),
+                        })
+
+                prompt_details.append({
+                    "prompt_id": pid,
+                    "label": cat["prompt_labels"][pid],
+                    "weighted_score": weighted,
+                    "platform_answers": platform_answers,
+                })
+
+            cat_score = (
+                round(sum(prompt_weighted_scores) / len(prompt_weighted_scores), 1)
+                if prompt_weighted_scores else None
+            )
+
+            categories_data.append({
+                "key": cat_key,
+                "weight": DIMENSION_WEIGHTS[cat_key],
+                "score": cat_score,
+                "prompts": prompt_details,
+            })
+
+        composite_sum = sum(
+            c["score"] * c["weight"]
+            for c in categories_data
+            if c["score"] is not None
+        )
+        composite = round(composite_sum, 1)
+
+        company_results[company] = {
+            "categories": categories_data,
+            "composite": composite,
+        }
+
+    return company_results
+
+
+HTML_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Evaluation — {{ company_name }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app { max-width: 1100px; margin: 0 auto; padding: 48px 32px 120px; }
+
+    .back-link {
+      display: inline-block; margin-bottom: 24px;
+      font-size: 0.78rem; color: #14b8a6;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #5eead4; text-decoration: underline; }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #14b8a6; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.6rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .composite-badge {
+      display: inline-block;
+      font-size: 0.8rem; font-weight: 600;
+      padding: 6px 18px; border-radius: 20px;
+      background: rgba(20,184,166,0.12);
+      color: #5eead4; margin-top: 8px;
+    }
+
+    /* Layout */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 480px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 960px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Spider chart */
+    .chart-container {
+      position: sticky; top: 32px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    .chart-container canvas { width: 100% !important; height: auto !important; }
+
+    /* Right panel */
+    .detail-panel { min-width: 0; }
+
+    /* Category cards */
+    .cat-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .cat-card:hover { border-color: rgba(20,184,166,0.3); }
+    .cat-card.active { border-color: rgba(20,184,166,0.5); }
+    .cat-card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; cursor: pointer;
+      user-select: none;
+    }
+    .cat-card-header:hover { background: rgba(255,255,255,0.02); }
+    .cat-name {
+      font-weight: 600; font-size: 0.88rem; color: #e0e0e8;
+      flex: 1;
+    }
+    .cat-meta {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.75rem; color: #888;
+    }
+    .cat-score-pill {
+      font-weight: 700; font-size: 0.82rem;
+      padding: 3px 10px; border-radius: 6px;
+    }
+    .score-strong { background: rgba(34,197,94,0.12); color: #4ade80; }
+    .score-moderate { background: rgba(250,204,21,0.12); color: #fde047; }
+    .score-weak { background: rgba(239,68,68,0.12); color: #f87171; }
+    .chevron {
+      transition: transform 0.2s;
+      color: #555; font-size: 0.8rem;
+    }
+    .cat-card.active .chevron { transform: rotate(180deg); }
+
+    /* Expanded prompt area */
+    .cat-body { display: none; padding: 0 22px 22px; }
+    .cat-card.active .cat-body { display: block; }
+
+    .prompt-card {
+      background: rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .prompt-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px; cursor: pointer;
+    }
+    .prompt-header:hover { background: rgba(255,255,255,0.02); }
+    .prompt-label {
+      font-size: 0.8rem; font-weight: 500; color: #c0c0cc;
+    }
+    .prompt-id {
+      font-size: 0.68rem; font-weight: 600; color: #14b8a6;
+      margin-right: 8px;
+    }
+    .prompt-score-sm {
+      font-size: 0.72rem; font-weight: 600; color: #888;
+    }
+
+    /* Answer panels */
+    .prompt-body { display: none; padding: 0 18px 18px; }
+    .prompt-card.open .prompt-body { display: block; }
+
+    .question-box {
+      background: rgba(20,184,166,0.06);
+      border-left: 3px solid #14b8a6;
+      padding: 12px 16px; margin-bottom: 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.78rem; color: #5eead4;
+      line-height: 1.5;
+    }
+
+    .ai-answer {
+      margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ai-answer-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .ai-platform {
+      font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .ai-platform.chatgpt { color: #10b981; }
+    .ai-platform.gemini { color: #3b82f6; }
+    .ai-platform.perplexity { color: #a78bfa; }
+    .ai-score {
+      font-size: 0.75rem; font-weight: 700;
+    }
+    .ai-answer-text {
+      padding: 14px 16px;
+      font-size: 0.78rem; color: #b0b0bc;
+      line-height: 1.65;
+      white-space: pre-wrap;
+    }
+    .sources-section {
+      padding: 10px 16px 14px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .sources-label {
+      font-size: 0.65rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: #666; margin-bottom: 6px;
+    }
+    .source-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.72rem; color: #2dd4bf;
+      text-decoration: none; margin-right: 14px;
+      margin-bottom: 4px;
+      transition: color 0.15s;
+    }
+    .source-link:hover { color: #5eead4; text-decoration: underline; }
+    .source-domain {
+      font-size: 0.65rem; color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="/">&larr; Back to all companies</a>
+
+    <div class="header">
+      <p class="header-label">Company Evaluation Scorecard</p>
+      <h1>{{ company_name }}</h1>
+      <div class="composite-badge">Weighted Composite: {{ composite }} / 10</div>
+    </div>
+
+    <div class="main-grid">
+      <div class="chart-container">
+        <canvas id="spiderChart"></canvas>
+      </div>
+
+      <div class="detail-panel">
+        {% for cat in categories %}
+        <div class="cat-card" data-cat-idx="{{ loop.index0 }}" id="cat-{{ loop.index0 }}">
+          <div class="cat-card-header" onclick="toggleCat({{ loop.index0 }})">
+            <span class="cat-name">{{ cat.key }}</span>
+            <div class="cat-meta">
+              <span>{{ (cat.weight * 100) | int }}%</span>
+              {% if cat.score is not none %}
+              <span class="cat-score-pill {{ 'score-strong' if cat.score >= 7.5 else ('score-moderate' if cat.score >= 5 else 'score-weak') }}">
+                {{ cat.score }}
+              </span>
+              {% endif %}
+              <span class="chevron">&#9662;</span>
+            </div>
+          </div>
+          <div class="cat-body">
+            {% for prompt in cat.prompts %}
+            <div class="prompt-card" id="prompt-{{ prompt.prompt_id }}">
+              <div class="prompt-header" onclick="togglePrompt(this)">
+                <div>
+                  <span class="prompt-id">{{ prompt.prompt_id }}</span>
+                  <span class="prompt-label">{{ prompt.label }}</span>
+                </div>
+                <span class="prompt-score-sm">
+                  {% if prompt.weighted_score is not none %}{{ prompt.weighted_score }}{% else %}—{% endif %}
+                </span>
+              </div>
+              <div class="prompt-body">
+                {% if prompt.platform_answers %}
+                <div class="question-box">{{ prompt.platform_answers[0].question }}</div>
+                {% endif %}
+                {% for pa in prompt.platform_answers %}
+                <div class="ai-answer">
+                  <div class="ai-answer-header">
+                    <span class="ai-platform {{ pa.platform }}">{{ pa.platform }}</span>
+                    <span class="ai-score {{ 'score-strong' if pa.score and pa.score >= 7.5 else ('score-moderate' if pa.score and pa.score >= 5 else 'score-weak') }}">
+                      {% if pa.score is not none %}{{ pa.score }} / 10{% else %}—{% endif %}
+                    </span>
+                  </div>
+                  <div class="ai-answer-text">{{ pa.answer }}</div>
+                  {% if pa.sources %}
+                  <div class="sources-section">
+                    <div class="sources-label">Sources</div>
+                    {% for s in pa.sources %}
+                    <a class="source-link" href="{{ s.url }}" target="_blank" rel="noopener">
+                      {{ s.title or s.publisher or s.url }}
+                      {% if s.publisher %}<span class="source-domain">({{ s.publisher }})</span>{% endif %}
+                    </a>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    const categories = {{ categories_json | safe }};
+    const labels = categories.map(c => c.key);
+    const scores = categories.map(c => c.score || 0);
+
+    const ctx = document.getElementById('spiderChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '{{ company_name }}',
+          data: scores,
+          backgroundColor: 'rgba(20, 184, 166, 0.12)',
+          borderColor: 'rgba(20, 184, 166, 0.7)',
+          borderWidth: 2,
+          pointBackgroundColor: 'rgba(20, 184, 166, 0.9)',
+          pointBorderColor: '#0a0a0f',
+          pointBorderWidth: 2,
+          pointRadius: 5,
+          pointHoverRadius: 8,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+        },
+        scales: {
+          r: {
+            min: 0,
+            max: 10,
+            ticks: {
+              stepSize: 2,
+              color: 'rgba(255,255,255,0.2)',
+              backdropColor: 'transparent',
+              font: { size: 10 },
+            },
+            grid: {
+              color: 'rgba(255,255,255,0.06)',
+            },
+            angleLines: {
+              color: 'rgba(255,255,255,0.06)',
+            },
+            pointLabels: {
+              color: 'rgba(255,255,255,0.6)',
+              font: { size: 11, weight: '500' },
+              padding: 16,
+            },
+          }
+        },
+        onClick: (event, elements) => {
+          if (elements.length > 0) {
+            const idx = elements[0].index;
+            scrollToCat(idx);
+          }
+        },
+        onHover: (event, elements) => {
+          event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+        },
+      }
+    });
+
+    document.getElementById('spiderChart').addEventListener('click', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const scale = chart.scales.r;
+      const cx = scale.xCenter;
+      const cy = scale.yCenter;
+
+      for (let i = 0; i < labels.length; i++) {
+        const angle = scale.getIndexAngle(i) - Math.PI / 2;
+        const outerRadius = scale.drawingArea + 40;
+        const lx = cx + Math.cos(angle) * outerRadius;
+        const ly = cy + Math.sin(angle) * outerRadius;
+        const dist = Math.sqrt((x - lx) ** 2 + (y - ly) ** 2);
+        if (dist < 50) {
+          scrollToCat(i);
+          return;
+        }
+      }
+    });
+
+    function scrollToCat(idx) {
+      document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
+      const target = document.getElementById('cat-' + idx);
+      if (target) {
+        target.classList.add('active');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function toggleCat(idx) {
+      const card = document.getElementById('cat-' + idx);
+      card.classList.toggle('active');
+    }
+
+    function togglePrompt(headerEl) {
+      headerEl.closest('.prompt-card').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>"""
+
+
+INDEX_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Evaluations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app { max-width: 800px; margin: 0 auto; padding: 48px 32px 120px; }
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #14b8a6; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.6rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+    }
+
+    /* Company List */
+    .section-title {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #888; margin-bottom: 16px;
+    }
+    .company-list { margin-bottom: 48px; }
+    .company-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #e0e0e8;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .company-item:hover {
+      border-color: rgba(20,184,166,0.4);
+      background: rgba(20,184,166,0.04);
+    }
+    .company-item-name {
+      font-weight: 600; font-size: 0.95rem;
+    }
+    .company-item-meta {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.78rem;
+    }
+    .composite-pill {
+      font-weight: 700; font-size: 0.78rem;
+      padding: 3px 10px; border-radius: 6px;
+      background: rgba(20,184,166,0.12); color: #5eead4;
+    }
+    .arrow { color: #555; font-size: 0.85rem; }
+
+    /* Compare section */
+    .compare-section {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .compare-row {
+      display: flex; align-items: flex-end; gap: 16px;
+      flex-wrap: wrap;
+    }
+    .compare-field { flex: 1; min-width: 200px; }
+    .compare-field label {
+      display: block;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #888; margin-bottom: 8px;
+    }
+    .compare-field select {
+      width: 100%;
+      padding: 10px 14px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      color: #e0e0e8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      appearance: none;
+      cursor: pointer;
+    }
+    .compare-field select:focus {
+      outline: none;
+      border-color: rgba(20,184,166,0.5);
+    }
+    .compare-btn {
+      padding: 10px 28px;
+      background: #14b8a6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .compare-btn:hover { background: #0d9488; }
+    .compare-btn:disabled {
+      opacity: 0.4; cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <p class="header-label">Company Evaluation Scorecard</p>
+      <h1>All Evaluated Companies</h1>
+    </div>
+
+    <div class="section-title">Individual Scorecards</div>
+    <div class="company-list">
+      {% for name, data in company_data.items() | sort %}
+      <a class="company-item" href="/company/{{ name }}">
+        <span class="company-item-name">{{ name }}</span>
+        <div class="company-item-meta">
+          <span class="composite-pill">{{ data.composite }} / 10</span>
+          <span class="arrow">&#8594;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="section-title">Compare Two Companies</div>
+    <div class="compare-section">
+      <form class="compare-row" action="/compare" method="get">
+        <div class="compare-field">
+          <label>First Company</label>
+          <select name="c1" id="c1">
+            <option value="">Select a company...</option>
+            {% for name in names_sorted %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="compare-field">
+          <label>Second Company</label>
+          <select name="c2" id="c2">
+            <option value="">Select a company...</option>
+            {% for name in names_sorted %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="compare-btn" id="compareBtn" disabled>Compare</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    const c1 = document.getElementById('c1');
+    const c2 = document.getElementById('c2');
+    const btn = document.getElementById('compareBtn');
+    function updateBtn() {
+      btn.disabled = !(c1.value && c2.value && c1.value !== c2.value);
+    }
+    c1.addEventListener('change', updateBtn);
+    c2.addEventListener('change', updateBtn);
+  </script>
+</body>
+</html>"""
+
+
+COMPARE_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare — {{ c1_name }} vs {{ c2_name }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app { max-width: 1200px; margin: 0 auto; padding: 48px 32px 120px; }
+
+    .back-link {
+      display: inline-block; margin-bottom: 24px;
+      font-size: 0.78rem; color: #14b8a6;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #5eead4; text-decoration: underline; }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #14b8a6; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.2rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .compare-composites {
+      display: flex; justify-content: center; gap: 24px;
+      margin-top: 12px; flex-wrap: wrap;
+    }
+    .composite-badge {
+      display: inline-block;
+      font-size: 0.8rem; font-weight: 600;
+      padding: 6px 18px; border-radius: 20px;
+    }
+    .composite-c1 {
+      background: rgba(20,184,166,0.12); color: #5eead4;
+    }
+    .composite-c2 {
+      background: rgba(244,114,182,0.12); color: #f9a8d4;
+    }
+
+    /* Chart */
+    .chart-section {
+      display: flex; justify-content: center;
+      margin-bottom: 48px;
+    }
+    .chart-container {
+      width: 560px; max-width: 100%;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 32px;
+    }
+    .chart-container canvas { width: 100% !important; height: auto !important; }
+
+    /* Category cards */
+    .cat-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .cat-card:hover { border-color: rgba(20,184,166,0.3); }
+    .cat-card.active { border-color: rgba(20,184,166,0.5); }
+    .cat-card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; cursor: pointer;
+      user-select: none;
+    }
+    .cat-card-header:hover { background: rgba(255,255,255,0.02); }
+    .cat-name {
+      font-weight: 600; font-size: 0.88rem; color: #e0e0e8;
+      flex: 1;
+    }
+    .cat-meta {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.75rem; color: #888;
+    }
+    .cat-weight { font-size: 0.72rem; color: #666; }
+    .cat-score-pill {
+      font-weight: 700; font-size: 0.78rem;
+      padding: 3px 10px; border-radius: 6px;
+    }
+    .pill-c1 { background: rgba(20,184,166,0.12); color: #5eead4; }
+    .pill-c2 { background: rgba(244,114,182,0.12); color: #f9a8d4; }
+    .score-strong { background: rgba(34,197,94,0.12); color: #4ade80; }
+    .score-moderate { background: rgba(250,204,21,0.12); color: #fde047; }
+    .score-weak { background: rgba(239,68,68,0.12); color: #f87171; }
+    .diff-indicator {
+      font-size: 0.68rem; font-weight: 600;
+      padding: 2px 6px; border-radius: 4px;
+    }
+    .diff-positive { background: rgba(34,197,94,0.1); color: #4ade80; }
+    .diff-negative { background: rgba(239,68,68,0.1); color: #f87171; }
+    .diff-neutral { background: rgba(255,255,255,0.05); color: #888; }
+    .chevron {
+      transition: transform 0.2s;
+      color: #555; font-size: 0.8rem;
+    }
+    .cat-card.active .chevron { transform: rotate(180deg); }
+
+    /* Expanded body */
+    .cat-body { display: none; padding: 0 22px 22px; }
+    .cat-card.active .cat-body { display: block; }
+
+    .prompt-card {
+      background: rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .prompt-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px; cursor: pointer;
+    }
+    .prompt-header:hover { background: rgba(255,255,255,0.02); }
+    .prompt-label {
+      font-size: 0.8rem; font-weight: 500; color: #c0c0cc;
+    }
+    .prompt-id {
+      font-size: 0.68rem; font-weight: 600; color: #14b8a6;
+      margin-right: 8px;
+    }
+    .prompt-scores {
+      display: flex; gap: 8px; align-items: center;
+      font-size: 0.72rem; font-weight: 600;
+    }
+    .prompt-score-c1 { color: #5eead4; }
+    .prompt-score-c2 { color: #f9a8d4; }
+    .prompt-score-sep { color: #555; }
+
+    /* Answer panels */
+    .prompt-body { display: none; padding: 0 18px 18px; }
+    .prompt-card.open .prompt-body { display: block; }
+
+    .question-box {
+      background: rgba(20,184,166,0.06);
+      border-left: 3px solid #14b8a6;
+      padding: 12px 16px; margin-bottom: 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.78rem; color: #5eead4;
+      line-height: 1.5;
+    }
+
+    .company-answers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 768px) {
+      .company-answers-grid { grid-template-columns: 1fr; }
+    }
+    .col-label {
+      font-size: 0.68rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 6px 0; margin-bottom: 8px;
+    }
+    .col-label.c1 { color: #5eead4; }
+    .col-label.c2 { color: #f9a8d4; }
+
+    .ai-answer {
+      margin-bottom: 12px;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ai-answer-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .ai-platform {
+      font-size: 0.68rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .ai-platform.chatgpt { color: #10b981; }
+    .ai-platform.gemini { color: #3b82f6; }
+    .ai-platform.perplexity { color: #a78bfa; }
+    .ai-score {
+      font-size: 0.72rem; font-weight: 700;
+    }
+    .ai-answer-text {
+      padding: 12px 14px;
+      font-size: 0.75rem; color: #b0b0bc;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .sources-section {
+      padding: 8px 14px 10px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .sources-label {
+      font-size: 0.62rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: #666; margin-bottom: 4px;
+    }
+    .source-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.68rem; color: #2dd4bf;
+      text-decoration: none; margin-right: 10px;
+      margin-bottom: 3px;
+    }
+    .source-link:hover { color: #5eead4; text-decoration: underline; }
+    .source-domain { font-size: 0.62rem; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="/">&larr; Back to all companies</a>
+
+    <div class="header">
+      <p class="header-label">Company Comparison</p>
+      <h1>{{ c1_name }} vs {{ c2_name }}</h1>
+      <div class="compare-composites">
+        <span class="composite-badge composite-c1">{{ c1_name }}: {{ c1_composite }} / 10</span>
+        <span class="composite-badge composite-c2">{{ c2_name }}: {{ c2_composite }} / 10</span>
+      </div>
+    </div>
+
+    <!-- Overlaid Spider Chart -->
+    <div class="chart-section">
+      <div class="chart-container">
+        <canvas id="spiderChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Side-by-side Category Cards -->
+    <div class="detail-panel">
+      {% for cat in merged_categories %}
+      <div class="cat-card" data-cat-idx="{{ loop.index0 }}" id="cat-{{ loop.index0 }}">
+        <div class="cat-card-header" onclick="toggleCat({{ loop.index0 }})">
+          <span class="cat-name">{{ cat.key }}</span>
+          <div class="cat-meta">
+            <span class="cat-weight">{{ (cat.weight * 100) | int }}%</span>
+            {% if cat.score1 is not none %}
+            <span class="cat-score-pill pill-c1">{{ cat.score1 }}</span>
+            {% endif %}
+            {% if cat.score2 is not none %}
+            <span class="cat-score-pill pill-c2">{{ cat.score2 }}</span>
+            {% endif %}
+            {% if cat.score1 is not none and cat.score2 is not none %}
+              {% set diff = (cat.score1 - cat.score2) | round(1) %}
+              {% if diff > 0 %}
+              <span class="diff-indicator diff-positive">+{{ diff }}</span>
+              {% elif diff < 0 %}
+              <span class="diff-indicator diff-negative">{{ diff }}</span>
+              {% else %}
+              <span class="diff-indicator diff-neutral">=</span>
+              {% endif %}
+            {% endif %}
+            <span class="chevron">&#9662;</span>
+          </div>
+        </div>
+        <div class="cat-body">
+          {% for prompt in cat.prompts %}
+          <div class="prompt-card" id="prompt-{{ prompt.prompt_id }}">
+            <div class="prompt-header" onclick="togglePrompt(this)">
+              <div>
+                <span class="prompt-id">{{ prompt.prompt_id }}</span>
+                <span class="prompt-label">{{ prompt.label }}</span>
+              </div>
+              <div class="prompt-scores">
+                <span class="prompt-score-c1">
+                  {% if prompt.weighted_score1 is not none %}{{ prompt.weighted_score1 }}{% else %}&mdash;{% endif %}
+                </span>
+                <span class="prompt-score-sep">|</span>
+                <span class="prompt-score-c2">
+                  {% if prompt.weighted_score2 is not none %}{{ prompt.weighted_score2 }}{% else %}&mdash;{% endif %}
+                </span>
+              </div>
+            </div>
+            <div class="prompt-body">
+              {% if prompt.platform_answers1 or prompt.platform_answers2 %}
+              {% set q = (prompt.platform_answers1[0].question if prompt.platform_answers1 else (prompt.platform_answers2[0].question if prompt.platform_answers2 else '')) %}
+              {% if q %}
+              <div class="question-box">{{ q }}</div>
+              {% endif %}
+              {% endif %}
+              <div class="company-answers-grid">
+                <div>
+                  <div class="col-label c1">{{ c1_name }}</div>
+                  {% for pa in prompt.platform_answers1 %}
+                  <div class="ai-answer">
+                    <div class="ai-answer-header">
+                      <span class="ai-platform {{ pa.platform }}">{{ pa.platform }}</span>
+                      <span class="ai-score {{ 'score-strong' if pa.score and pa.score >= 7.5 else ('score-moderate' if pa.score and pa.score >= 5 else 'score-weak') }}">
+                        {% if pa.score is not none %}{{ pa.score }} / 10{% else %}&mdash;{% endif %}
+                      </span>
+                    </div>
+                    <div class="ai-answer-text">{{ pa.answer }}</div>
+                    {% if pa.sources %}
+                    <div class="sources-section">
+                      <div class="sources-label">Sources</div>
+                      {% for s in pa.sources %}
+                      <a class="source-link" href="{{ s.url }}" target="_blank" rel="noopener">
+                        {{ s.title or s.publisher or s.url }}
+                        {% if s.publisher %}<span class="source-domain">({{ s.publisher }})</span>{% endif %}
+                      </a>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endfor %}
+                </div>
+                <div>
+                  <div class="col-label c2">{{ c2_name }}</div>
+                  {% for pa in prompt.platform_answers2 %}
+                  <div class="ai-answer">
+                    <div class="ai-answer-header">
+                      <span class="ai-platform {{ pa.platform }}">{{ pa.platform }}</span>
+                      <span class="ai-score {{ 'score-strong' if pa.score and pa.score >= 7.5 else ('score-moderate' if pa.score and pa.score >= 5 else 'score-weak') }}">
+                        {% if pa.score is not none %}{{ pa.score }} / 10{% else %}&mdash;{% endif %}
+                      </span>
+                    </div>
+                    <div class="ai-answer-text">{{ pa.answer }}</div>
+                    {% if pa.sources %}
+                    <div class="sources-section">
+                      <div class="sources-label">Sources</div>
+                      {% for s in pa.sources %}
+                      <a class="source-link" href="{{ s.url }}" target="_blank" rel="noopener">
+                        {{ s.title or s.publisher or s.url }}
+                        {% if s.publisher %}<span class="source-domain">({{ s.publisher }})</span>{% endif %}
+                      </a>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    const categories1 = {{ categories1_json | safe }};
+    const categories2 = {{ categories2_json | safe }};
+    const labels = categories1.map(c => c.key);
+    const scores1 = categories1.map(c => c.score || 0);
+    const scores2 = categories2.map(c => c.score || 0);
+
+    const ctx = document.getElementById('spiderChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: '{{ c1_name }}',
+            data: scores1,
+            backgroundColor: 'rgba(20, 184, 166, 0.1)',
+            borderColor: 'rgba(20, 184, 166, 0.7)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(20, 184, 166, 0.9)',
+            pointBorderColor: '#0a0a0f',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 8,
+          },
+          {
+            label: '{{ c2_name }}',
+            data: scores2,
+            backgroundColor: 'rgba(244, 114, 182, 0.1)',
+            borderColor: 'rgba(244, 114, 182, 0.7)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(244, 114, 182, 0.9)',
+            pointBorderColor: '#0a0a0f',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 8,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom',
+            labels: {
+              color: 'rgba(255,255,255,0.6)',
+              font: { size: 12, weight: '500' },
+              padding: 20,
+              usePointStyle: true,
+              pointStyle: 'circle',
+            }
+          },
+        },
+        scales: {
+          r: {
+            min: 0,
+            max: 10,
+            ticks: {
+              stepSize: 2,
+              color: 'rgba(255,255,255,0.2)',
+              backdropColor: 'transparent',
+              font: { size: 10 },
+            },
+            grid: {
+              color: 'rgba(255,255,255,0.06)',
+            },
+            angleLines: {
+              color: 'rgba(255,255,255,0.06)',
+            },
+            pointLabels: {
+              color: 'rgba(255,255,255,0.6)',
+              font: { size: 11, weight: '500' },
+              padding: 16,
+            },
+          }
+        },
+        onClick: (event, elements) => {
+          if (elements.length > 0) {
+            const idx = elements[0].index;
+            scrollToCat(idx);
+          }
+        },
+        onHover: (event, elements) => {
+          event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+        },
+      }
+    });
+
+    function scrollToCat(idx) {
+      document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
+      const target = document.getElementById('cat-' + idx);
+      if (target) {
+        target.classList.add('active');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function toggleCat(idx) {
+      document.getElementById('cat-' + idx).classList.toggle('active');
+    }
+
+    function togglePrompt(headerEl) {
+      headerEl.closest('.prompt-card').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>"""
+
+
+@app.route("/")
+def index():
+    company_data = _load_all_company_data()
+    if not company_data:
+        return "<h1>No company evaluation data found. Run the company evaluation runners first.</h1>"
+
+    names_sorted = sorted(company_data.keys())
+
+    return render_template_string(
+        INDEX_TEMPLATE,
+        company_data=company_data,
+        names_sorted=names_sorted,
+    )
+
+
+@app.route("/company/<company_name>")
+def company_detail(company_name):
+    company_data = _load_all_company_data()
+    if company_name not in company_data:
+        return f"<h1>Company '{company_name}' not found.</h1>", 404
+
+    data = company_data[company_name]
+    categories_json = json.dumps(data["categories"])
+
+    return render_template_string(
+        HTML_TEMPLATE,
+        company_name=company_name,
+        composite=data["composite"],
+        categories=data["categories"],
+        categories_json=categories_json,
+    )
+
+
+@app.route("/compare")
+def compare():
+    c1_name = request.args.get("c1", "")
+    c2_name = request.args.get("c2", "")
+
+    company_data = _load_all_company_data()
+
+    if c1_name not in company_data or c2_name not in company_data:
+        return "<h1>One or both companies not found. Please go back and try again.</h1>", 404
+
+    data1 = company_data[c1_name]
+    data2 = company_data[c2_name]
+
+    merged_categories = []
+    for c1, c2 in zip(data1["categories"], data2["categories"]):
+        merged_prompts = []
+        for p1, p2 in zip(c1["prompts"], c2["prompts"]):
+            merged_prompts.append({
+                "prompt_id": p1["prompt_id"],
+                "label": p1["label"],
+                "weighted_score1": p1["weighted_score"],
+                "weighted_score2": p2["weighted_score"],
+                "platform_answers1": p1["platform_answers"],
+                "platform_answers2": p2["platform_answers"],
+            })
+        merged_categories.append({
+            "key": c1["key"],
+            "weight": c1["weight"],
+            "score1": c1["score"],
+            "score2": c2["score"],
+            "prompts": merged_prompts,
+        })
+
+    return render_template_string(
+        COMPARE_TEMPLATE,
+        c1_name=c1_name,
+        c2_name=c2_name,
+        c1_composite=data1["composite"],
+        c2_composite=data2["composite"],
+        merged_categories=merged_categories,
+        categories1_json=json.dumps(data1["categories"]),
+        categories2_json=json.dumps(data2["categories"]),
+    )
+
+
+@app.route("/api/data")
+def api_data():
+    return jsonify(_load_all_company_data())
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Company Evaluation Web App")
+    parser.add_argument("--port", type=int, default=5002)
+    parser.add_argument("--debug", action="store_true")
+    args = parser.parse_args()
+
+    print(f"Starting Company Evaluation Web App on http://localhost:{args.port}")
+    app.run(host="127.0.0.1", port=args.port, debug=args.debug)

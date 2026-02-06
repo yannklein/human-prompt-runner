@@ -1,0 +1,59 @@
+{
+  "prompt_id": "VP14",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures has a limited track record in securing non-dilutive capital like DARPA grants, EU Horizon, NSF, or Innovate UK for its portfolio. Score: 2/10.\n\nFunding Focus\n\nQAI Ventures primarily provides its own early-stage VC funding—up to $200K convertible notes and follow-ons to $2M—through accelerators in Switzerland, Canada, Calgary, and Singapore. Partnerships like Enterprise Singapore and Opportunity Calgary Investment Fund ($675K) back their programs but represent government support for QAI itself, not portfolio wins.\nthequantuminsider+3\n\nNo Direct Evidence\n\nPublic sources show no specific examples of QAI helping startups land DARPA, NSF, Horizon Europe, or Innovate UK grants. Their model emphasizes proprietary VC, mentorship, IP strategy, and Demo Days for investor traction, with 27 portfolio companies incubated but zero named non-dilutive successes. One investment (Wave Photonics) co-involved UK Innovation & Science Seed Fund, but that's not QAI securing it.\ncbinsights+1\n\nPartnerships Hint\n\nRegional ties (e.g., Calgary's Quantum City, Singapore's SWITCH) offer ecosystem access that could indirectly aid grants, yet no outcomes are documented. Testimonials praise networking and fundraising advice, but focus on private capital. As a quantum specialist since 2020, they're accelerator-heavy, not grant-hunting pros—brutally, this gap risks dilutive dependency for founders needing public funds. (198 words)\ncalgaryeconomicdevelopment+2",
+  "sources": [
+    {
+      "url": "https://thequantuminsider.com/2025/10/29/qai-ventures-launches-quantumai-accelerator-in-singapore-backed-by-enterprise-singapore/",
+      "title": "thequantuminsider+3",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/qai-ventures",
+      "title": "cbinsights+1",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.calgaryeconomicdevelopment.com/newsroom/opportunity-calgary-investment-fund-invests-in-qai-ventures-to-develop-quantum-talent-and-startups/",
+      "title": "calgaryeconomicdevelopment+2",
+      "publisher": "calgaryeconomicdevelopment.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/10/29/qai-ventures-launches-quantumai-accelerator-in-singapore-backed-by-enterprise-singapore/",
+      "title": "thequantuminsider\nQAI Ventures Launches QuantumAI Accelerator in ...\nVC-funded accelerator and IP-driven venture builder targets the US$250 billion QuantumAI market, as AI begins its shift to quantum computing.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/qai-ventures",
+      "title": "cbinsights\nQAI Ventures Fund History\nQAI venture invests in quantum-tech startups. Use the CB Insights Platform to explore QAI Ventures's full profile.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/qai-ventures",
+      "title": "cbinsights\nQAI Ventures Fund History\nQAI venture invests in quantum-tech startups. Use the CB Insights Platform to explore QAI Ventures's full profile.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.cbinsights.com/investor/qai-ventures",
+      "title": "cbinsights\nQAI Ventures Fund History\nQAI venture invests in quantum-tech startups. Use the CB Insights Platform to explore QAI Ventures's full profile.",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.calgaryeconomicdevelopment.com/newsroom/opportunity-calgary-investment-fund-invests-in-qai-ventures-to-develop-quantum-talent-and-startups/",
+      "title": "calgaryeconomicdevelopment\nOpportunity Calgary Investment Fund invests in QAI ...\nThe Opportunity Calgary Investment Fund (OCIF) is investing up to $675,000 over the next three years into QAI Ventures to accelerate the development of quantum talent and local startups.",
+      "publisher": "calgaryeconomicdevelopment.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:57:36.662075+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

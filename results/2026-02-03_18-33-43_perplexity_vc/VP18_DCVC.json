@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP18",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's patience and constructive behavior when portfolio companies face legitimate technical setbacks or milestone slippage? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC rates an 8/10 for patience and constructive behavior during portfolio setbacks.\n\nPatience Strengths\n\nPublic sources highlight DCVC's long-term orientation in deep tech, where milestones often slip due to technical complexity. They explicitly embrace a \"disciplined, long-term approach,\" viewing engineering challenges as innovation opportunities rather than red flags, as stated by partners like Matt Ocko. This suits quantum startups facing qubit fidelity issues or scaling delays, with investments in firms like Atom Computing persisting through hype cycles.\nsparkco+3\n\nConstructive Support\n\nTestimonials praise hands-on aid: late-night coaching, operational guidance, and network intros for technical hurdles. Examples include strategic advice during growth phases for Databricks and Illumio, plus manufacturing access for quantum hardware. Their deep expertise in AI/compute enables problem-solving without blame.\nthequantuminsider+1\n\nPotential Drawbacks\n\nNo direct accounts of major quantum setbacks exist publicly, so ratings rely on general deep tech patterns; they may push for pivots if paths to utility falter. Still, their track record—backing through multi-year cycles—shows above-average resilience versus quick-exit VCs. Brutally, they're patient if you're mission-aligned, but expect data-driven rigor. (198 words)\nfatfire+1",
+  "sources": [
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+3",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire+1",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC's investment thesis centers on supporting deep tech entrepreneurs who leverage advanced science, engineering, and computational techniques, particularly applied AI, to address trillion-dollar, real-world challenges. The firm focuses on deep tech as a convergence of hands-on science and engineering with emerging computational methods like AI, machine learning, and big data. Deep Tech Focus Tackling Existential Risks Capital Efficiency … Analyze the composition of DCVC's portfolio,...",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://fatfire.com/dcvc-venture-capital/",
+      "title": "fatfire\nDCVC: Pioneering Data-Driven Deep Tech Investments\nExplore DCVC's innovative approach to venture capital, focusing on data-driven investments in deep tech sectors and shaping the future of technology.",
+      "publisher": "fatfire.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:07:42.682656+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

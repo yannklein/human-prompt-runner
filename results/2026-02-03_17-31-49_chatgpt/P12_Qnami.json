@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P12",
+  "company": "Qnami",
+  "question": "In your perception as AI Engine, is Qnami's current ICP aligned with what the company claims: 1. Company Firmographics\n\nIndustry:\nSemiconductor manufacturing, advanced materials, nanotechnology, quantum technology, and applied physics R&D\n\nSub-sectors:\n\nSemiconductor process development (logic, memory, power electronics)\n\nSpintronics and magnetic materials\n\nQuantum computing hardware\n\nAdvanced sensor development\n\nResearch instrumentation manufacturers\n\nCompany Size:\n\n200–5,000 employees\n\nAnnual revenue: USD 50M–2B\n\nGeography:\n\nPrimary: Europe (DACH, France, Nordics), United States\n\nSecondary: Japan, South Korea, Taiwan\n\nOrganizational Maturity:\n\nEstablished R&D organization with in-house physics or materials science teams\n\nActively transitioning discoveries from lab-scale research to industrial-scale validation? Give a brutally honest score from 1–10 and explain in 200 words",
+  "answer": "Brutally honest alignment score (1–10): 4/10\n\nExplanation (≈200 words): Based on public data, Qnami today is not meaningfully aligned with the claimed Ideal Customer Profile (ICP) you describe. Qnami is a quantum sensing instrumentation company — focused on diamond‑based nitrogen‑vacancy (NV) quantum sensors and scanning NV magnetometry tools — primarily for research labs and advanced materials/metrology applications rather than broad semiconductor process development or industrial scale production. Their flagship product, ProteusQ, is a quantum microscope used in academic and materials science contexts, and their team size is very small (~11‑50 employees) far below the 200–5,000 you specified. Annual revenue estimates are in the low single‑digit millions USD, not USD 50M–2B.\nnanotechnologyworld\n+2\nLinkedIn\n+2\n\nICP fit breakdown:\n\nIndustry/sub‑sectors: Partial fit for advanced materials and spintronics research use cases, but not broadly covering semiconductor manufacturing, quantum computing hardware, or industrial R&D at scale. Their products support research and characterization, not full semiconductor process flows or production‑grade hardware.\n\nCompany size & revenue: Not aligned — Qnami is a very small startup with limited revenue.\n\nGeography: They are based in Europe with expansion partnerships in the US, Japan, and Korea — fit for geographic reach but not yet reflecting a large global ICP.\nQnami\n\nIn short, the claimed ICP describes a much larger, more industrially entrenched company than Qnami’s current profile; they are still early‑stage deep‑tech tooling focused largely on research adoption.",
+  "timestamp": "2026-02-03T17:39:45.005210+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nanotechnologyworld.org/directory/qnami",
+      "title": "nanotechnologyworld\n+2\nLinkedIn\n+2",
+      "publisher": "nanotechnologyworld.org",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

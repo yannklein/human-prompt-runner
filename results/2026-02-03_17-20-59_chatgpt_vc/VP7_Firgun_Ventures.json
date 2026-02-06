@@ -1,0 +1,18 @@
+{
+  "prompt_id": "VP7",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of Firgun Ventures's partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Brutally Honest Expert Score for Firgun Ventures’ Technical Credibility: 6.5 / 10\n\nExplanation (≈200 words):\nOn paper, Firgun Ventures does include some genuinely strong scientific names — most notably Prof. Mete Atatüre, PhD, a real physicist and Head of the Cavendish Lab at Cambridge University, who serves as academic advisor and contributes technical due diligence. That’s an exceptional credential to have on a VC advisory roster in quantum. Additionally, Ilyas Khan, founder of Cambridge Quantum Computing / Quantinuum (now a ~$10 B company), brings deep quantum-tech leadership experience, albeit currently in an advisory rather than internal investment role. \nfirgun.vc\n+1\n\nHowever, the core investment team and founders are not themselves traditional deep-tech scientists in quantum physics or engineering. Co-founder Dr. Kris Naudts, MD, PhD has a neuroscience/psychiatry background — scientifically rigorous, but not directly in quantum information or hardware research — and his deep-tech grounding appears tied more to angel investing than hands-on physics research. Co-founder Zeynep Korutürk brings finance and tech initiative leadership experience, not scientific research credentials. The remaining team includes finance and data engineering expertise rather than quantum R&D. \nfirgun.vc\n\nTheir advisory council mixes respected institutional names (Cambridge, Oxford, MIT) with senior industry leaders and government figures, but only a minority are hands-on quantum researchers. This makes Firgun more strategic/sector-savvy with some academic legitimacy, rather than deep-tech-native investors immersed in quantum science every day.",
+  "timestamp": "2026-02-03T17:24:14.125510+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc\n+1",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

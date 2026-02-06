@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP13",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's relationships with strategic partners that would benefit a quantum company — such as hyperscalers, national laboratories, semiconductor fabs, aerospace firms, or pharmaceutical companies? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC has solid but indirect ties to quantum-relevant partners through its deep tech portfolio and network. I'd rate their strategic relationships a 7/10—strong in compute and pharma, weaker in quantum-specific labs or fabs.\n\nHyperscalers\n\nDCVC's early investments fueled scale-out compute giants like AWS, Azure, and Google Cloud, giving them enduring access to hyperscaler infrastructure critical for quantum simulation and hybrid workloads. Portfolio firms like SentinelOne execute alliances with these players, easing co-sell opportunities. No direct quantum pilot announcements, but their cloud legacy positions them well.\njobs.dcvc+2\n\nNational Labs & Fabs\n\nThey boast a \"deep roster of partners\" for manufacturing access, vital for quantum chip fab retooling. Investments in quantum \"picks and shovels\" like Q-CTRL (error suppression) and Horizon Quantum imply lab collaborations for validation, though specifics are scarce. No named ties to LANL or Sandia, limiting the score.\nthequantuminsider+2\n\nAerospace & Semiconductors\n\nQuantum-adjacent via Mesa Quantum's atomic clocks/sensors for aerospace navigation. Defense/aerospace sector focus aids dual-use tech, but lacks explicit partners like Lockheed or Intel fabs.\nsparkco+1\n\nPharmaceuticals\n\nRecursion Pharmaceuticals partnership with Takeda accelerates AI-driven drug discovery, extendable to quantum chemistry. Bio fund (DCVC Bio) strengthens pharma networks.\ndcvc+1\n\nBrutally, DCVC excels in commercial scaling over lab-to-fab pipelines; they'd help de-risk commercialization but not unlock exclusive DoE/TSMC access. For a quantum startup, this nets reliable intros, not game-changing consortia. (198 words)",
+  "sources": [
+    {
+      "url": "https://jobs.dcvc.com/companies/sentinelone/jobs/65956974-strategic-partnerships-success-director",
+      "title": "jobs.dcvc+2",
+      "publisher": "jobs.dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider+2",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco+1",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc+1",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://jobs.dcvc.com/companies/sentinelone/jobs/65956974-strategic-partnerships-success-director",
+      "title": "jobs.dcvc\nStrategic Partnerships Success Director @ SentinelOne\nOwn the post-signature execution and success of SentinelOne's most strategic technology alliances, including hyperscalers and key ISV partners.",
+      "publisher": "jobs.dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/12/22/vc-firm-offers-insight-into-how-investors-are-reassessing-quantum-computing/",
+      "title": "thequantuminsider\nVC Firm Offers Insight Into How Investors Are Reassessing ...\nVenture capital investors are becoming more selective in quantum computing, shifting from broad enthusiasm.",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC prioritizes sectors traditionally underserved by venture capital, such as energy, agriculture, pharmaceuticals, industrial efficiency, defense, aerospace, and climate. Their focus is on companies where technology provides a clear and defensible advantage. … DCVC focuses on deep tech startups solving complex problems, with investments ranging from seed to early growth stages in the U.S. Their strategy emphasizes significant technical innovation, commercial viability, and strong leadership....",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://sparkco.ai/blog/dcvc",
+      "title": "sparkco\nDCVC: A Comprehensive Investor Profile - Sparkco\nDCVC prioritizes sectors traditionally underserved by venture capital, such as energy, agriculture, pharmaceuticals, industrial efficiency, defense, aerospace, and climate. Their focus is on companies where technology provides a clear and defensible advantage. … DCVC focuses on deep tech startups solving complex problems, with investments ranging from seed to early growth stages in the U.S. Their strategy emphasizes significant technical innovation, commercial viability, and strong leadership....",
+      "publisher": "sparkco.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc\nDCVC V\nWhen we started DCVC almost a decade ago, one of the pressing Deep Tech problems of the day was scale-out compute. DCVC V - $725 million focused on a $20+…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:56:06.774124+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

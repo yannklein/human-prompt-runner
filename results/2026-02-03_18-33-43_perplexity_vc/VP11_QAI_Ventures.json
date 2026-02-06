@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP11",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate QAI Ventures's LP base comfort with long-horizon, deep-tech investments? Are they backed by evergreen funds, sovereign wealth, corporate strategic LPs, or other patient capital sources? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "QAI Ventures shows strong alignment with long-horizon, deep-tech investments in quantum AI and advanced computing, but lacks transparent details on their LP base.\nqai-ventures+2\n\nScore: 7/10\n\nTheir philosophy screams patient capital: they explicitly tout \"patient capital investments\" from lab to IPO, back early-stage quantum plays with long R&D cycles, and run accelerator-backed funds that de-risk for LPs while targeting growth scale-ups. Global hubs in Basel, Calgary, Tokyo, and Singapore plus partnerships with academia, corporates, and public-private institutions suggest sophisticated LPs comfortable with 7-10+ year horizons—think family offices, high-net-worth individuals in tech hubs, or niche deep-tech enthusiasts rather than jittery retail. They emphasize \"conviction\" investing across the quantum stack, mirroring evergreen-like patience seen in funds like DCVC or Bison Ventures.\nraisebetter+5\n\nNo public red flags on LP impatience; their 2025 Investor Day and playbook position them as ecosystem connectors for LPs seeking quantum exposure without solo risk. However, brutally honest: zero specifics on LP types—no named evergreen giants (e.g., PIF, Temasek), sovereigns, or corporates like Airbus Ventures. Fund size hints at CHF 100K accelerator shots, implying smaller, thematic LPs vs. billion-scale SWFs. As a quantum founder, I'd pitch them confidently for syndicate leads but diligence their LP stability privately—solid for deep tech, but not blue-chip bulletproof. (198 words)\nqai-ventures+4",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter+5",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/deep-tech-investment-playbook",
+      "title": "qai-ventures+4",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/insights/investing-in-deep-tech-and-quantum-ai",
+      "title": "qai-ventures\nInvesting in Deep Tech and QuantumAI\nDuring QAI Ventures’ Investor Day 2025 in Zurich, attendees gathered for a thought-provoking conversation between James Sanders, Investments Director at QAI Ventures, and Michael Jackson, one of the firm’s General Partners. Together, they explored the evolution of deep tech investing, the momentum b",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://raisebetter.capital/investor-profile/qai-ventures",
+      "title": "raisebetter\nQAI Ventures - 2025 Investor Profile | Raise Better\nLooking to get funded by QAI Ventures in 2025? Create your profile and get matched to active professional investors. Get started for free!",
+      "publisher": "raisebetter.capital",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/deep-tech-investment-playbook",
+      "title": "qai-ventures\nDeep Tech investment Playbook\nQAI Ventures' Deep Tech Investment Playbook: How to Invest in Quantum, AI, and the Future of Computing.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:51:33.812208+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

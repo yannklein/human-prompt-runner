@@ -1,0 +1,71 @@
+{
+  "prompt_id": "VP20",
+  "vc": "Amadeus Capital",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Amadeus Capital's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Amadeus Capital Partners earns a brutally honest score of 6/10 for constructive behavior in down rounds, bridge rounds, or extensions, showing moderate prioritization of company survival over mark-to-market optics.\nadeline+1\n\nTrack Record Overview\n\nPublic data reveals no explicit examples of Amadeus participating in down rounds or distressed bridges for their portfolio companies. They focus on early-stage deep tech (e.g., quantum, AI like Graphcore, Oxford Nanopore), leading seed/Series A and follow-ons with a \"long-term partnership\" ethos, taking board seats for hands-on support like recruitment and networks. Founders praise them as \"allies\" and \"best VCs,\" with exits like VocalIQ to Apple suggesting sustained backing through challenges. Their recent £110M fund and quantum investments (e.g., Nu Quantum $8.5M Series A) indicate ongoing commitment amid 2025-2026 market tightness.\nadeline+3\n\nStrengths in Survival Focus\n\nAmadeus emphasizes \"persistence\" and \"integrity,\" actively following on in tough sectors like quantum where down rounds are common due to long horizons. No red flags of blocking restructurings for LPs; their measured, founder-centric style implies flexibility in extensions, unlike predatory VCs forcing shutdowns.\namadeuscapital+2\n\nKey Limitations\n\nAbsence of evidence isn't proof—they're not listed among 2026 bridge specialists, and general VC trends show bridges often signal distress with poor outcomes (e.g., acquihires over up-rounds). In down markets, early-stage VCs like them prioritize optics for fundraising, potentially resisting deep concessions. No founder anecdotes on haircuts or cram-downs surface, leaving reliability unproven versus proven \"bridge-friendly\" firms.\nellty+2\n\nQuantum Context Fit\n\nFor a quantum startup, their domain expertise (e.g., Photonic Inc. $100M) boosts survival odds, but expect rigorous due diligence over blind loyalty in extensions—solid, not exceptional. (198 words)\nvcguru\n​",
+  "sources": [
+    {
+      "url": "https://www.adeline.co.uk/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline+1",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline+3",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital+2",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ellty.com/blog/bridge-round-investors",
+      "title": "ellty+2",
+      "publisher": "ellty.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.vcguru.ai/investor/66c18931584826e06861f9f2/",
+      "title": "vcguru",
+      "publisher": "vcguru.ai",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners | Adeline\nAmadeus’s investment thesis centers around exceptional founding teams with unique technological insights. Early-stage companies seeking investment must clearly demonstrate their IP strength, market potential, and scalability. While proof-of-concept is sufficient at seed stages, founders should be prepared for rigorous technical due diligence from Amadeus’s experienced partners, many of whom bring a deep scientific background themselves. The firm frequently leads seed and Series A rounds, and...",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners | Adeline\nAmadeus’s investment thesis centers around exceptional founding teams with unique technological insights. Early-stage companies seeking investment must clearly demonstrate their IP strength, market potential, and scalability. While proof-of-concept is sufficient at seed stages, founders should be prepared for rigorous technical due diligence from Amadeus’s experienced partners, many of whom bring a deep scientific background themselves. The firm frequently leads seed and Series A rounds, and...",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.adeline.co.uk/resources/investors-and-accelerators/amadeus-capital-partners",
+      "title": "adeline\nAmadeus Capital Partners - VC for Early Stage Startups | Adeline.co ...\nLooking for VCs? Check out Amadeus Capital Partners on Adeline.co.uk and browse our database of investors, accelerators and startup programmes.",
+      "publisher": "adeline.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.amadeuscapital.com",
+      "title": "amadeuscapital\nAmadeus Capital Partners: Deep Tech Venture Capital Firm\nSince 1997, Amadeus Capital Partners has backed more than 200 pioneering companies and raised over $1.3 billion to fuel their growth. Creating value by backing trailblazers.",
+      "publisher": "amadeuscapital.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.vcguru.ai/investor/66c18931584826e06861f9f2/",
+      "title": "vcguru\nAmadeus Capital Partners Profile\nAn AI-Powered VC Platform",
+      "publisher": "vcguru.ai",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:10:43.597617+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

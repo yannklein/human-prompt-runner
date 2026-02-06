@@ -1,0 +1,29 @@
+{
+  "prompt_id": "VP7",
+  "vc": "QAI Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate the technical expertise of QAI Ventures's partners and advisors? Do they have genuine scientific credentials (PhDs, research experience, hands-on deep-tech background) rather than just general tech or finance experience? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Ask for a sample mentor match and a concrete technical milestones checklist they’ve influenced in prior cohorts.\nqai-ventures+2",
+  "sources": [
+    {
+      "url": "https://qai-ventures.com/mentors",
+      "title": "qai-ventures+2",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/accelerator",
+      "title": "qai-ventures\nAccelerator Programs for QuantumAI and Advanced ...\nExplore QAI Ventures' Accelerator Programs in Switzerland, Canada, and Singapore. 5-month startup program with initial funding, deep tech mentorship, and access to a global network of industry leaders and VCs.",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qai-ventures.com/mentors",
+      "title": "qai-ventures\nOur Mentors\nPhysicist, Quantum Systems Engineer Founder CEO/CTO, QDeepTech Physicist & Mathematician Entrepreneur Co-founder & CEO, Quandela Advisor to the Board and Co-Founder, IQM Quantum Computers … Partner at Gowling WLG (Canada) LLP Co-Founder @ Thin Air Labs Partner at Gowling WLG (Canada) LLP, IP Lawyer Eighty Twenty CMO 321 Growth Academy Co-founder, Deep Tech Investor, Startup Coach Partner at Future Wave and Founder & Managing Partner at BioStratiq Transaction Advisors CFO & Strategic Advisor...",
+      "publisher": "qai-ventures.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:44:09.116333+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

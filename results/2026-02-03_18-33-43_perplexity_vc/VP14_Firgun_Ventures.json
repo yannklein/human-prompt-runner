@@ -1,0 +1,35 @@
+{
+  "prompt_id": "VP14",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of helping portfolio companies access non-dilutive capital such as DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or other government innovation programs? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures has no publicly documented track record of helping portfolio companies secure non-dilutive capital like DARPA grants, EU Horizon programs, NSF funding, Innovate UK, or similar government programs.\npostquantum+1\n\nScore: 1/10\n\nFirgun Ventures is a brand-new London-based VC firm, launched in late 2025 with a $70M first close (targeting $250M), focused exclusively on Series A/B quantum tech startups in computing, sensing, cryptography, and applications like healthcare or cybersecurity. All available info emphasizes their role in bridging the \"funding gap\" from lab prototypes to commercial scale via dilutive VC capital, backed by Qatar Investment Authority, family offices, and figures like Ilyas Khan of Quantinuum. Founders Dr. Kris Naudts and Zeynep Koruturk highlight scientific due diligence, advisory boards (e.g., Cambridge, Oxford, EIB ties), and \"patient capital\" for growth—but zero mentions of grant facilitation. No portfolio companies are named yet, as they're just starting deployments; pre-launch angel bets (e.g., Quantinuum since 2016) also lack grant evidence. As a quantum founder, I'd see them as pure equity players, not grant navigators—hype their expertise, but don't count on non-dilutive wins. Risk: overpromising in a nascent fund with unproven ops. (198 words)\nitbrief+6",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+1",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://itbrief.co.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "itbrief+6",
+      "publisher": "itbrief.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://itbrief.co.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "itbrief\nFirgun Ventures launches with $70m for quantum tech innovation\nFirgun Ventures launches with $70m fund to back early-stage quantum tech firms, aiming to scale innovations in computing, sensing and cryptography globally.",
+      "publisher": "itbrief.co.uk",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:56:41.144067+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

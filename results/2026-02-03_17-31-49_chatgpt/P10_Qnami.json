@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P10",
+  "company": "Qnami",
+  "question": "What does Qnami do currently? Summarise it in 200 words",
+  "answer": "Qnami is a Swiss deep‑tech company specializing in quantum sensing—applying quantum physics to measure physical quantities with unprecedented precision. Its core focus is developing and commercializing quantum sensors and imaging instruments that leverage the quantum properties of nitrogen‑vacancy (NV) centers in diamond to detect magnetic fields, electrical currents, temperature and other nanoscale phenomena that classical tools can’t resolve. \nQnami\n+1\n\nThe company’s flagship product is the ProteusQ—the first commercial scanning NV magnetometer / quantum microscope. This instrument integrates diamond‑based quantum probes into a high‑precision scanning platform that researchers use to map magnetic fields at the atomic and nanoscale, enabling insights in materials science, nanotechnology, spintronics, and life sciences. \nQnami\n+1\n\nQnami also develops and fabricates its own diamond quantum probes (“Quantilevers”), system integration, and accompanying software for data analysis. It partners with scientific institutions and industrial players worldwide to expand application of its technology, including collaborations to support semiconductor innovation and global distribution of its products in regions such as East Asia. \nQnami\n+1\n\nOverall, Qnami’s current mission is to bring quantum sensing out of the lab into practical scientific and industrial use, helping customers achieve measurement and imaging capabilities that were previously unattainable. \nQnami",
+  "timestamp": "2026-02-03T17:35:34.462893+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://qnami.ch/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-supports-verticalcompute-driving-european-semiconductor-innovation/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P10",
+  "company": "AoSense",
+  "question": "What does AoSense do currently? Summarise it in 200 words",
+  "answer": "AoSense (often styled AOSense, Inc.) is a U.S.‑based advanced technology company that develops and manufactures quantum‑enabled atom‑optic sensors and components for precision measurement and navigation. Its core work focuses on translating cutting‑edge quantum physics research—especially cold‑atom and atom‑interferometry techniques—into practical systems that outperform conventional sensors in sensitivity, accuracy, and stability. \naosense.com\n+1\n\nCurrently, AOSense’s products and R&D span several key areas:\n\nInertial sensors such as accelerometers, gyroscopes, and inertial measurement units (IMUs) designed for precision navigation, particularly in environments where GPS is unavailable (e.g., military or aerospace platforms). \naosense.com\n+1\n\nTime and frequency standards, including portable atomic clocks and frequency combs, which provide ultra‑precise timing for communications and navigation systems. \naosense.com\n+1\n\nGeodetic and geophysical sensors like gravimeters and gravity gradiometers for measuring gravity and its gradients—useful in geophysical surveying, resource exploration, and scientific research. \naosense.com\n\nAtom‑optic components including lasers, optical isolators, vacuum hardware, and electronics that serve as building blocks for quantum measurement systems. \naosense.com\n\nThese technologies leverage laser‑cooled atoms and sophisticated optics to achieve precision far beyond traditional mechanical or electronic sensors, targeting defense, industrial, and scientific applications. \naosense.com",
+  "timestamp": "2026-02-03T17:35:56.423411+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://aosense.com/",
+      "title": "aosense.com\n+1",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/research-and-development/",
+      "title": "aosense.com\n+1",
+      "publisher": "aosense.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://aosense.com/products/",
+      "title": "aosense.com",
+      "publisher": "aosense.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

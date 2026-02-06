@@ -1,0 +1,30 @@
+{
+  "prompt_id": "VP10",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability and willingness to follow on through Series C and D for deep-tech companies without losing ownership or scrambling for capital? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Score: 4/10\n\nFirgun Ventures is an impressively positioned new venture capital firm targeting quantum technology and early-growth deep-tech companies, but based solely on publicly available information as of early 2026, it currently lacks the demonstrated track record you care about — follow-through funding into Series C and D. Here’s the honest evaluation:\n\n• Early-stage focus only: Firgun’s stated mandate is specifically to invest in Series A and Series B quantum scale-ups that have crossed beyond lab research into early commercialization. That emphasis is deliberate and baked into their positioning — they say they “bridge the frequent funding gap at Series A/B” and focus on companies entering revenue pathways, not later stage expansion rounds. \nfirgun.vc\n\n• No public later-stage history: Firgun only recently completed its first fund close (about $70M of a target $250M) with an anchor from Qatar’s sovereign wealth fund and other early backers, and has not yet publicly disclosed any portfolio companies or follow-on activity. Given the fund’s infancy (first close late 2025), there’s no track record of supporting investments past Series B — let alone into Series C or D. \nThe Quantum Insider\n\n• Leadership credibility is a plus: The founders have meaningful deep-tech networks and personal angel experience in quantum (e.g., early backing of Quantinuum), which suggests they could shepherd companies toward later rounds, but that’s proxy evidence rather than realized outcomes. \nfirgun.vc\n\n• Patient capital thesis, but unproven: Their ethos (“First, do no harm” and values-driven support) hints at founder-friendly behavior, but without investment history, it’s speculative whether they’ll consistently participate in capital-intensive later rounds without diluting or scrambling for capital.\n\nIn short: promising concept and team, but no concrete evidence yet of Series C/D backing strength or track record.* Score reflects potential rather than proven execution.",
+  "timestamp": "2026-02-03T17:25:33.145119+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/team",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

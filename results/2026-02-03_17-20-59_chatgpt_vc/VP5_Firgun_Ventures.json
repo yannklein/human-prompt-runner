@@ -1,0 +1,42 @@
+{
+  "prompt_id": "VP5",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's reputation in the deep-tech and quantum investment ecosystem? Summarize how founders, co-investors, and the broader market perceive them in 200 words.",
+  "answer": "Firgun Ventures is increasingly recognized in the deep-tech and quantum investment ecosystem as a specialist, thesis-driven venture capital firm focused on early growth-stage (Series A/B) quantum technology companies — a niche many founders see as under-funded compared with seed or research-stage financing. \nfirgun.vc\n\nMarket perception highlights several strengths: its co-founders, Dr. Kris Naudts and Zeynep Korutürk, bring an unusual blend of scientific credibility, entrepreneurial experience, and financial expertise — which resonates with founders seeking both domain understanding and commercial guidance. Naudts has prior early angel investments in successful quantum ventures like Cambridge Quantum Computing (now Quantinuum), and Korutürk’s background at Goldman Sachs frames the fund’s credibility with institutional investors. \nThe Quantum Insider\n+1\n\nCo-investors such as the Qatar Investment Authority, family offices, and industry veterans like Ilyas Khan (Quantinuum founder) backing Firgun’s first close signal strong validation from established players. \nQuantum Computing Report\n+1\n The firm’s advisory network — drawing from Cambridge, Oxford, MIT, Google and major financial institutions — is cited as augmenting due diligence quality and strategic support for portfolio companies. \nDataCentreNews UK\n\nFounders and market commentators generally view Firgun as a values-driven partner aiming to bridge a critical scaling funding gap in deep tech quantum, with a thoughtful, long-term orientation toward building commercially viable ventures rather than short-term hype. \ntechfundingnews.com",
+  "timestamp": "2026-02-03T17:23:22.862983+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/11/24/firgun-ventures-launches-250-million-vc-fund-to-invest-in-quantum-announces-first-70-million-close/",
+      "title": "The Quantum Insider\n+1",
+      "publisher": "thequantuminsider.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "Quantum Computing Report\n+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://datacentrenews.uk/story/firgun-ventures-launches-with-70m-for-quantum-tech-innovation",
+      "title": "DataCentreNews UK",
+      "publisher": "datacentrenews.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://techfundingnews.com/firgun-ventures-250m-quantum-vc-fund-qatar-investment-authority/",
+      "title": "techfundingnews.com",
+      "publisher": "techfundingnews.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

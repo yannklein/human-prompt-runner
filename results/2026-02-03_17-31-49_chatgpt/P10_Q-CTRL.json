@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P10",
+  "company": "Q-CTRL",
+  "question": "What does Q-CTRL do currently? Summarise it in 200 words",
+  "answer": "Q‑CTRL is a quantum technology company that builds AI‑powered infrastructure software to make quantum systems useful in the real world, especially in quantum computing and quantum sensing. Their technology tackles the core challenge of quantum hardware—error, instability, and environmental noise—by using advanced AI and control engineering to stabilize and enhance performance far beyond what manual techniques can achieve. \nq-ctrl.com\n+1\n\nIn quantum computing, Q‑CTRL’s software (e.g., Fire Opal and Boulder Opal) automates calibration, suppresses errors, and optimizes performance on existing quantum processors, enabling faster, more reliable results and reducing the need for manual tuning. It’s aimed at researchers, enterprise users, and cloud quantum systems, and is integrated with leading quantum providers. \nq-ctrl.com\n+1\n\nIn quantum sensing and navigation, the company has developed Ironstone Opal and related solutions that deliver GPS‑free navigation and other sensing capabilities by using quantum sensors and software ruggedization to operate robustly in real‑world environments. This has produced commercial quantum advantage in GPS‑denied navigation, outperforming traditional methods by large margins and earning recognition such as TIME Magazine’s Best Inventions of 2025. \nq-ctrl.com\n+1\n\nQ‑CTRL also offers Black Opal, an educational platform to train people in quantum computing, and engages in partnerships to accelerate adoption and integrate quantum into practical systems. \nq-ctrl.com",
+  "timestamp": "2026-02-03T17:36:40.628773+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://q-ctrl.com/",
+      "title": "q-ctrl.com\n+1",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/blog/q-ctrl-delivers-autonomous-calibration-solutions-to-enable-rapid-integration-with-ecosystem-partners-quantware-treq",
+      "title": "q-ctrl.com\n+1",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://q-ctrl.com/products",
+      "title": "q-ctrl.com",
+      "publisher": "q-ctrl.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

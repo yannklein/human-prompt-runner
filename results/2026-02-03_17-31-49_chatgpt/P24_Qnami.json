@@ -1,0 +1,30 @@
+{
+  "prompt_id": "P24",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Qnami? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally honest score for Qnami’s current sales performance: 4/10\n\nExplanation (≈200 words):\nQnami has real technology and real early customers, but its commercial traction remains extremely limited relative to its ambition and age. The Swiss quantum‐sensing startup launched its first commercial product, the ProteusQ scanning NV magnetometer, in 2020 and secured a global distribution agreement with HORIBA, giving it access to established instrument channels worldwide. That’s a meaningful partnership and necessary for any hardware deep‐tech business, but it doesn’t in itself signal large sales volumes—it’s primarily a distribution channel rather than proof of broad market demand. \nhoriba.com\n+1\n\nBeyond HORIBA, Qnami has regional distribution partnerships in East Asia with Quantum Design Japan and Korea and reports installations at ~10+ academic and research institutions in Europe and North America. These are early adopters rather than industrial customers, and there’s no public evidence of significant repeat commercial sales or meaningful revenue scale in industrial segments. \nQnami\n+1\n\nHistorical seed‐stage commentary indicated roughly CHF 1 M+ in early sales years ago, but there’s no recent transparent revenue disclosure or flagship commercial wins in industry. The company continues to secure grants and VC funding but remains in a niche scientific instrument phase rather than broad commercial deployment. \nverve.vc\n\nSummary: real tech and initial partners, but shallow sales traction and limited market scale so far.",
+  "timestamp": "2026-02-03T18:04:38.257153+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.horiba.com/int/scientific/resources/news/detail/news/7/2020/horiba-signs-strategic-cooperation-agreement-with-qnami-to-accelerate-scanning-nv-magnetometry-deve/",
+      "title": "horiba.com\n+1",
+      "publisher": "horiba.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qnami.ch/qnami-expands-to-east-asia/",
+      "title": "Qnami\n+1",
+      "publisher": "qnami.ch",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.verve.vc/blog/quantum-ecosystem-interview-mathieu-munsch-qnami/",
+      "title": "verve.vc",
+      "publisher": "verve.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

@@ -1,0 +1,10 @@
+{
+  "prompt_id": "VP20",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's track record of constructive behavior during down rounds, bridge rounds, or extensions — do they prioritize company survival over mark-to-market optics? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Public disclosures about deal structures, valuation, anti-dilution, or governance rights during such rounds. Public filings, press coverage, or interviews can reveal preferences.",
+  "sources": [],
+  "timestamp": "2026-02-03T19:10:19.302783+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

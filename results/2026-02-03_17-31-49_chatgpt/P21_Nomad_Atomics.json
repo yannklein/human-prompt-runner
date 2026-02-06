@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P21",
+  "company": "Nomad Atomics",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the Nomad Atomics's current number and quality of patents for the sector in which it operates. Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Patent Score for Nomad Atomics: 3/10\n\nWhile Nomad Atomics is a compelling deep‑tech startup pioneering field‑ready quantum sensors (gravimeters, accelerometers, magnetometers, etc.) with real applications in mining, navigation, environmental monitoring, and defense, its patent footprint remains extremely limited for the industry it operates in. \nCB Insights\n+1\n\nHere’s the honest breakdown:\n\nVery Small Portfolio: Public patent databases show only a couple of issued patents assigned to Nomad Atomics, such as an atom interferometer and an optical system related to their sensor technologies. That’s far below what you’d expect for a startup betting on proprietary quantum physics hardware. \nCB Insights\n+1\n\nIndustry Context: Comparable players and leading universities in cold‑atom and quantum sensing fields often maintain dozens to hundreds of patents, spanning core physics methods, device architectures, control systems, calibration techniques, and integration approaches. Even mid‑stage quantum startups tend to be more aggressive in filing for defensive IP. \ndiscovery.patsnap.com\n\nCommercial Risk: With so few patents, Nomad Atomics is vulnerable to competitors replicating similar methods or engineering around its limited claims. It also means weaker leverage for licensing or strategic partnerships.\n\nEarly Stage Reminder: Credit to the team for getting key initial patents granted, but in a field where IP is often central to valuation, this footprint is minimal.\n\nScore: 3/10 — technically relevant but insufficient depth and breadth for a capital‑intensive quantum hardware sector.",
+  "timestamp": "2026-02-03T17:59:16.879978+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.cbinsights.com/company/nomad-atomics/",
+      "title": "CB Insights\n+1",
+      "publisher": "cbinsights.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://discovery.patsnap.com/company/topic-search/atom-optics/",
+      "title": "discovery.patsnap.com",
+      "publisher": "discovery.patsnap.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

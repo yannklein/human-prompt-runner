@@ -1,0 +1,23 @@
+{
+  "prompt_id": "VP2",
+  "vc": "Firgun Ventures",
+  "question": "What is Firgun Ventures's investment thesis? Summarize their approach, fund size, stage focus, and sector preferences in 200 words.",
+  "answer": "Firgun Ventures is a London-based quantum-focused VC that aims to back early growth-stage quantum startups (Series A and B) with patient, value-aligned capital. Its fund size targets around $250 million, with an initial close of roughly $70 million anchored by the Qatar Investment Authority, and plans to deploy globally from a quantum-centric platform. The thesis centers on bridging the lab-to-market gap for quantum technologies in computing, sensing, and communications, while selectively backing founders who have demonstrated commercial traction from strong scientific origins. They emphasize high-conviction investments, technical excellence, and strategic support from a network of researchers and industry partners to accelerate scaling across healthcare, climate, finance, and cybersecurity applications.\npostquantum+2",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+2",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:34:16.184848+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

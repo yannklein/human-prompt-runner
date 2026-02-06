@@ -1,0 +1,36 @@
+{
+  "prompt_id": "P10",
+  "company": "Nomad Atomics",
+  "question": "What does Nomad Atomics do currently? Summarise it in 200 words",
+  "answer": "Nomad Atomics is a deep‑tech company focused on developing and commercialising field‑deployable quantum sensing technologies that solve real‑world measurement challenges across industries such as mining, underground resource exploration, navigation, utilities and environmental monitoring. Their core products are compact, rugged quantum sensors—including quantum gravimeters, accelerometers, magnetometers and clocks—built to deliver high‑precision, drift‑free measurements outside the laboratory environment. These sensors exploit atomic physics principles (laser‑cooled atoms interacting with light) to achieve accuracy and stability far beyond traditional mechanical sensors. \nnomadatomics.com\n+1\n\nNomad Atomics’ quantum absolute gravimeter is designed to measure the true local gravity field with high precision, enabling new insights into subsurface mass distributions, improving mineral exploration, monitoring of groundwater or carbon sequestration, and safer underground mine operations. \nnomadatomics.com\n+1\n They also target inertial navigation applications, providing robust position and movement tracking without reliance on GPS/GNSS. \nqbn.world\n Beyond hardware, the company offers services that transform subsurface quantum data into actionable insights using advanced analytics for exploration and monitoring. \nnomadatomics.com\n Overall, Nomad Atomics bridges quantum science and practical industry needs by delivering next‑generation sensing tools that unlock previously inaccessible data and support smarter decision‑making. \nnomadatomics.com",
+  "timestamp": "2026-02-03T17:36:18.465250+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://www.nomadatomics.com/what-we-do",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/our-services",
+      "title": "nomadatomics.com\n+1",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://qbn.world/qbn-member/nomad-atomics/",
+      "title": "qbn.world",
+      "publisher": "qbn.world",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.nomadatomics.com/about-us",
+      "title": "nomadatomics.com",
+      "publisher": "nomadatomics.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

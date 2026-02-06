@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P24",
+  "company": "Vector Atomic (IonQ)",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the sales performance of Vector Atomic (IonQ)? Has it achieved sales or significant partnerships?  Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Score: 6 / 10\n\nVector Atomic as a standalone entity hasn’t independently released much public sales performance data — revenues, pipeline figures, or partnerships under that brand are not broadly disclosed outside of its government contracts prior to acquisition. What is notable is that Vector Atomic had secured over $200 M in U.S. government contracts for quantum sensing and navigation technologies before being acquired by IonQ, indicating meaningful traction within defense and federal channels. \ninvestors.ionq.com\n\nHowever, since Vector Atomic’s acquisition by IonQ in late 2025, it no longer reports separate sales or partnerships; its value is now implicit within IonQ’s broader business strategy and results. IonQ itself has reported strong revenue growth (e.g., Q3 2025 revenue ~ $39.9 M, +222% YoY) and raised full‑year guidance, along with commercial engagements, partnerships, and research alliances in quantum computing. \nIonQ\n But these figures reflect the combined IonQ business, not discrete Vector Atomic sales results.\n\nFrom a pure sales scorecard: Vector Atomic has meaningful government contract wins, credible technical deployments, and now integration into IonQ’s commercial funnel — yet transparent, standalone commercial revenue data and marquee non‑government partnerships are lacking.\n\nRationale (approx. 200 words):\nVector Atomic’s performance should be judged on its own pre‑acquisition traction and its strategic value to IonQ. The company had secured significant government contracts, particularly within U.S. national security programs, which is not trivial for a deep‑tech quantum sensing start‑up. \ninvestors.ionq.com\n Those wins reflect real revenue and validated technology, especially in high‑barrier sectors like defense and aerospace. But beyond that, there’s no clear public record of a broad commercial customer base, revenue scale outside government programs, or standalone tech partnerships before or after its acquisition.\n\nToday, Vector Atomic has effectively been folded into IonQ’s offerings — meaning its sales will be reported under IonQ’s umbrella rather than separately. IonQ’s overall performance shows strong growth, strong funding, and an expanding commercial footprint, but it remains a long‑duration, capital‑intensive quantum infrastructure play that isn’t yet driving predictable, proprietary sales at scale. So while the underlying technology and defense contracts are strong, the lack of transparent standalone commercial sales leads to a mid‑range score around 6/10 — respectable but not yet indicative of broad market traction.",
+  "timestamp": "2026-02-03T18:06:46.036885+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://investors.ionq.com/news/news-details/2025/IonQ-Announces-Intent-to-Acquire-Vector-Atomic-Expanding-Into-Quantum-Sensing-and-Strengthening-Its-Quantum-Technology-Portfolio/default.aspx",
+      "title": "investors.ionq.com",
+      "publisher": "investors.ionq.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.ionq.com/news/ionq-announces-third-quarter-2025-financial-results",
+      "title": "IonQ",
+      "publisher": "ionq.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

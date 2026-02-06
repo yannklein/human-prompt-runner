@@ -1,0 +1,24 @@
+{
+  "prompt_id": "P18",
+  "company": "Qnami",
+  "question": "You are a senior Venture Capital analyst. How would you currently rate the academic strength of the team? Does the team of Qnami have a high h-index, as a h-index should yield higher quality of papers and attract better scientific talent, more funidng and lead to more patents and breakthroughs? Give a brutally honest score from 1–10 and a 200 word explanation.",
+  "answer": "Brutally Honest Academic Strength Rating for Qnami Team: 6.5/10\n\nExplanation (≈200 words):\nFrom a venture capital analyst’s standpoint, the Qnami team’s academic strength is good but not elite in the context of global deep‑tech quantum startups. The scientific founders are clearly grounded in high‑caliber research: Prof. Patrick Maletinsky (CSO/co‑founder) is a tenured quantum physicist at the University of Basel with an established publication record in top journals and a Google Scholar h‑index around ~39 with over 100+ published papers in quantum sensing and NV center physics—all foundational to Qnami’s core technology. \nGoogle Scholar\n That is a very respectable academic profile indicative of deep domain expertise and scientific credibility. In VC terms, this is a strong asset (h‑index ~30–50 for field leaders is solid).\n\nHowever, the broader leadership team (e.g., CEO Mathieu Munsch) does not publicly list h‑indices or comparable traditional academic metrics. Munsch has ~15+ years of research experience and publications in high‑impact venues (Nature, PRL), but exact bibliometrics aren’t easily accessible. \nInside Quantum Technology\n Other co‑founders (Favaro, Stark) hold doctorates and domain experience, but their publication influence (h‑index) appears significantly lower or unreported in major citation databases.\n\nTherefore, while founder scientific pedigree is excellent, the team as a whole isn’t uniformly high‑h‑index heavy like pure academic spinouts (e.g., Ripkens/quantum computing groups or well‑funded physics labs). This yields a 6.5/10: strong domain know‑how and credibility, but not exceptional across all scientific founders, and no clear evidence that h‑index-driven academic reputation alone drives Qnami’s ecosystem leverage.",
+  "timestamp": "2026-02-03T17:52:08.252106+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://scholar.google.com/citations?hl=en&user=Vfmk0xIAAAAJ",
+      "title": "Google Scholar",
+      "publisher": "scholar.google.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.insidequantumtechnology.com/news-archive/mathieu-munsch-ceo-co-founder-qnami-will-speak-at-iqt-nyc/",
+      "title": "Inside Quantum Technology",
+      "publisher": "insidequantumtechnology.com",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

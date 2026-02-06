@@ -1,0 +1,47 @@
+{
+  "prompt_id": "VP9",
+  "vc": "DCVC",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate DCVC's fund structure compatibility with the long timelines (10–15 years) required for quantum companies? Consider fund size, vintage, and known investment horizons. Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "DCVC shows moderate compatibility with quantum's 10–15 year timelines. I rate it 6/10.\n\nFund Size\n\nDCVC's latest fund, DCVC V, closed at $725 million in 2024—roughly double prior vintages—and supports their $4B+ AUM across deep tech. This scale enables follow-on investments into later stages, vital for capital-intensive quantum hardware or enabling tech, unlike smaller funds that dilute early. Yet, it's not massive enough for solo-carrying the heaviest hardware plays (e.g., full-stack quantum systems), often requiring syndicates.\ndcvc+2\n\nVintage Analysis\n\nRecent vintages like DCVC V (2024) align with quantum's resurgence, building on prior successes in picks-and-shovels (Q-CTRL, Rigetti as exception). Their 13 closed funds show fundraising discipline, with DCVC V targeting a $20T GDP opportunity in deep tech. As a 2026 vintage would now be deploying, timing favors new quantum bets, but standard VC cycles (8-12 years typical for deep tech) pressure exits before full quantum commercialization.\ndcvc+4\n\nInvestment Horizons\n\nDCVC emphasizes \"long-term relationships\" with founders, explicitly backing quantum infrastructure over pure hardware gambles. They've signaled conviction in quantum's foundational shift, investing selectively amid 2025 investor reassessment. However, VC norms cap patience at 10 years max; quantum's fault-tolerant era likely hits 2035+, risking forced sales or down-rounds. Brutally, they're better for software/tooling (faster paths) than 15-year moonshots—solid but not ideal for patient capital seekers like BDC or sovereigns. (198 words)\ndcvc+3",
+  "sources": [
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc+2",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc+4",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/about/",
+      "title": "dcvc+3",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-v/",
+      "title": "dcvc\nDCVC V\nWhen we started DCVC almost a decade ago, one of the pressing Deep Tech problems of the day was scale-out compute. DCVC V - $725 million focused on a $20+…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/news-insights/dcvc-dtor-2024-with-quantum-computing-we-invest-in-the-picks-and-shovels/",
+      "title": "dcvc\nDCVC DTOR 2024: With quantum computing, we invest in the picks and…\nThe stubborn reality standing in the way of practical quantum computing is that qubits are exquisitely sensitive to quantum noise (random fluctuations…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.dcvc.com/about/",
+      "title": "dcvc\nAbout - DCVCwww.dcvc.com › about\nWith billions of dollars of assets under management, we build long-term relationships with the founders we back. We’ve been with many of our companies…",
+      "publisher": "dcvc.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T18:48:17.885875+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}

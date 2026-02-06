@@ -1,0 +1,24 @@
+{
+  "prompt_id": "VP19",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's tolerance for strategic pivots (e.g., from hardware to control stack to software) when the underlying science demands it, rather than pushing for premature commercialization? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Here’s a blunt, founder‑oriented assessment of Firgun Ventures’ tolerance for strategic pivots (e.g., from hardware → control software → higher‑level apps) based only on publicly available information:\n\n📊 Brutally Honest Rating\n\n6/10\n\n💬 Explanation (≈200 words)\n\nFirgun Ventures positions itself as a quantum‑focused, Series A/B specialist that bridges the gap between foundational research and early commercial traction — essentially taking companies past proof‑of‑concept into real applications. Its public messaging emphasizes backing teams that have “already moved beyond the research stage” toward scalable product‑market fit, and it focuses on quantum computing, sensing, and communications with the goal of real‑world deployment. \nfirgun.vc\n\nThe firm’s stated values (e.g., “First, do no harm,” curiosity, iteration, integrity) suggest a thoughtful investment ethos that, on paper, should be compatible with patience for scientific discovery and potentially strategic pivots when grounded in technical merit. \nfirgun.vc\n However, there is no direct public evidence that Firgun has explicitly endorsed or endured major strategic pivots in portfolio companies — especially those that fundamentally change business models (e.g., hardware → software) when commercialization timelines stretch. Their emphasis remains on companies with early commercial signals and clear paths to revenue, which by definition de‑prioritizes extremely long science‑first pivots without early monetization. \nfirgun.vc\n\nCoupled with a strong advisory board and anchor backing from a sovereign investor, Firgun seems patient relative to typical growth‑stage funds but not fully conviction capital in the mold of deep patience seen at pure science or mission‑driven investors. Thus, a mid‑range score reflects reasonable openness to adjustment, provided there are credible paths to commercialization, but not wholehearted endorsement of prolonged thesis pivots.",
+  "timestamp": "2026-02-03T17:29:44.422776+00:00",
+  "model": "chatgpt-web",
+  "test_mode": false,
+  "sources": [
+    {
+      "url": "https://firgun.vc/faq",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    },
+    {
+      "url": "https://firgun.vc/about",
+      "title": "firgun.vc",
+      "publisher": "firgun.vc",
+      "snippet": ""
+    }
+  ],
+  "response_id": ""
+}

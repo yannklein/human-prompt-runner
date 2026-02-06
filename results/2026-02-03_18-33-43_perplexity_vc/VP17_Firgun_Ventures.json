@@ -1,0 +1,53 @@
+{
+  "prompt_id": "VP17",
+  "vc": "Firgun Ventures",
+  "question": "You are a quantum startup founder evaluating potential investors. Based on publicly available information, how would you rate Firgun Ventures's ability to help portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos that could damage long-term credibility? Give a brutally honest score from 1–10 and a 200-word explanation.",
+  "answer": "Firgun Ventures rates a 3/10 for helping quantum portfolio companies resist premature announcements, misleading benchmarks, and hype-driven demos.\n\nBackground\n\nFirgun Ventures is a new London-based VC firm launched in late 2025, focusing exclusively on Series A/B quantum tech startups in computing, sensing, communications, and cryptography. Backed by Qatar Investment Authority with a $70M first close toward a $250M fund, it emphasizes \"responsible scaling\" and a \"do no harm\" ethos, led by Dr. Kris Naudts and Zeynep Korutürk, with advisors from Cambridge, Oxford, and MIT.\npostquantum+1\n\nKey Strengths\n\nThe firm's deep scientific expertise and focus on post-proof-of-concept companies suggest intent to prioritize technical rigor over hype. Their pitch criteria stress realistic commercial timelines and differentiation, while ties to Quantinuum founders imply experience with long-horizon quantum bets that avoid overpromising.\neverythingstartups+1\n\nCritical Weaknesses\n\nNo public portfolio exists yet—Firgun has announced no investments as of early 2026, making claims unproven. Quantum VC often fuels hype (e.g., exaggerated qubit counts), and Firgun's splashy fund launch amid sector euphoria risks similar pressures on portfolio firms to demo prematurely for LP optics. Their \"quantum knowledge graph\" tracks benchmarks but doesn't demonstrate enforcement against misleading ones. Without track record, it's speculative they'd restrain founders effectively.\nstartupmag+1\n\nOverall Assessment\n\nPromising rhetoric, but zero evidence of execution in a hype-prone field. Veteran quantum VCs like Bessemer or Quantonation have scarred from past bubbles; Firgun lacks that battle-testing. Score reflects potential minus unproven delivery (187 words).\nquantumcomputingreport+1",
+  "sources": [
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum+1",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups+1",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.startupmag.co.uk/funding/firgun-ventures-closes-53m-first-investment-round/",
+      "title": "startupmag+1",
+      "publisher": "startupmag.co.uk",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport+1",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://postquantum.com/industry-news/firgun-70m-quantum/",
+      "title": "postquantum\nFirgun Ventures' $70 M Quantum Tech VC Round\nInvestor confidence in quantum technology is reaching new heights, as evidenced by London-based Firgun Ventures announcing a $70 million...",
+      "publisher": "postquantum.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://www.everythingstartups.com/vc-funds/firgun-ventures",
+      "title": "everythingstartups\nFirgun Ventures - Everything Startup - New VC Funds\nFirgun Ventures is a London-based venture capital firm dedicated to backing the world’s most advanced quantum technology startups at the early growth stages. Founded by Dr Kris Naudts and Zeynep Koruturk, the firm blends deep scientific rigor with entrepreneurial and financial expertise. Firgun positions itself as the first VC fund specifically focused on Series A and Series B quantum companies, supporting founders who have successfully transitioned from lab breakthroughs to early commercial...",
+      "publisher": "everythingstartups.com",
+      "snippet": ""
+    },
+    {
+      "url": "https://quantumcomputingreport.com/firgun-ventures-closes-70-million-first-round-to-focus-on-early-growth-stage-quantum-investment/",
+      "title": "quantumcomputingreport\nQatar-Backed Firgun Ventures Closes $70 Million First ...\nFirgun Ventures, a new London-based venture capital firm, has announced the successful first close of its inaugural fund at $70 million. The financing round was backed by several investors, including the Qatar Investment",
+      "publisher": "quantumcomputingreport.com",
+      "snippet": ""
+    }
+  ],
+  "timestamp": "2026-02-03T19:04:17.646418+00:00",
+  "model": "perplexity-web",
+  "test_mode": false
+}
