@@ -1,7 +1,0 @@
-{
-  "prompt_id": "P23",
-  "company": "Tarsier Optics",
-  "answer": "I cannot give a real score yet — because I don’t know what {{CompanyICP}} actually is.\n\nYou asked how much Tarsier Optics’s ICP aligns with your {{${{CompanyICP}}} and to score it 1–10 with explanation — that is exactly a comparison task. But I don’t have your ICP criteria/description (e.g., target market, ideal customer profile, key characteristics, buying triggers, industries, budgets, geographies, etc.).\n\nHere’s what I can do next:\n\n✅ If you paste your actual ICP (your ideal customer profile criteria)\nI will then:\n\nanalyze Tarsier Optics’s ICP (based on public information),\n\ncompare it directly to your ICP,\n\ngive a brutally honest alignment score 1–10, and\n\nexplain the score in ~200 words.\n\n❓ To proceed, please provide:\n\nYour ICP text, bullet list, or criteria (e.g., company size, industry, tech stack, buyer role, location, budget, growth stage, etc.)\n\nWhether the score should emphasize market fit, buyer characteristics, go‑to‑market overlap, or value proposition alignment.\n\nExample input you could send:\n\nOur ICP: SaaS companies with $5M–$50M ARR, headquartered in US/UK, >50 employees, mid‑senior product leaders as buyers, budget $10–$50k.\n\nOnce you provide that, I’ll complete your requested honest score and explanation.",
-  "sources": [],
-  "timestamp": "2026-01-07T15:21:07.841724+00:00"
-}

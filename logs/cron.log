@@ -1,0 +1,120 @@
+Fri Feb  6 12:17:59 CET 2026: Starting scheduled run
+usage: run_all_scheduled.py [-h] [--type {company,vc,all}]
+                            [--platform {chatgpt,gemini,perplexity,all}]
+                            [--no-headless] [--delay DELAY]
+run_all_scheduled.py: error: unrecognized arguments: --headless
+Fri Feb  6 12:18:01 CET 2026: Completed scheduled run
+Fri Feb  6 12:18:32 CET 2026: Starting scheduled run
+2026-02-06 12:18:33,208 - INFO - ============================================================
+2026-02-06 12:18:33,209 - INFO - Starting scheduled run at 2026-02-06 12:18:33.209226
+2026-02-06 12:18:33,209 - INFO - Types: ['company', 'vc']
+2026-02-06 12:18:33,209 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:18:33,209 - INFO - Headless: True
+2026-02-06 12:18:33,209 - INFO - ============================================================
+2026-02-06 12:18:33,209 - INFO - Running: /usr/local/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py --headless
+2026-02-06 12:18:33,346 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+Traceback (most recent call last):
+  File "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py", line 13, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+
+2026-02-06 12:18:33,346 - INFO - Waiting 120s before next script...
+Fri Feb  6 12:20:05 CET 2026: Starting scheduled run
+Python: /usr/local/bin/python3
+Python 3.13.7
+2026-02-06 12:20:05,713 - INFO - ============================================================
+2026-02-06 12:20:05,714 - INFO - Starting scheduled run at 2026-02-06 12:20:05.714001
+2026-02-06 12:20:05,714 - INFO - Types: ['company', 'vc']
+2026-02-06 12:20:05,714 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:20:05,714 - INFO - Headless: True
+2026-02-06 12:20:05,714 - INFO - ============================================================
+2026-02-06 12:20:05,714 - INFO - Running: /usr/local/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py --headless
+2026-02-06 12:20:05,878 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+Traceback (most recent call last):
+  File "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py", line 13, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+
+2026-02-06 12:20:05,878 - INFO - Waiting 120s before next script...
+Fri Feb  6 12:21:52 CET 2026: Starting scheduled run
+Python: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3
+Python 3.12.9
+2026-02-06 12:21:52,269 - INFO - ============================================================
+2026-02-06 12:21:52,270 - INFO - Starting scheduled run at 2026-02-06 12:21:52.270045
+2026-02-06 12:21:52,270 - INFO - Types: ['company', 'vc']
+2026-02-06 12:21:52,270 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:21:52,270 - INFO - Headless: True
+2026-02-06 12:21:52,270 - INFO - ============================================================
+2026-02-06 12:21:52,270 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py --headless
+2026-02-06 12:24:36,272 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+Login timeout. Exiting.
+
+2026-02-06 12:24:36,283 - INFO - Waiting 120s before next script...
+2026-02-06 12:26:36,344 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_gemini.py --headless
+Fri Feb  6 12:30:14 CET 2026: Starting scheduled run
+Python: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3
+Python 3.12.9
+2026-02-06 12:30:15,161 - INFO - ============================================================
+2026-02-06 12:30:15,161 - INFO - Starting scheduled run at 2026-02-06 12:30:15.161524
+2026-02-06 12:30:15,161 - INFO - Types: ['company', 'vc']
+2026-02-06 12:30:15,161 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:30:15,161 - INFO - Headless: True
+2026-02-06 12:30:15,161 - INFO - ============================================================
+2026-02-06 12:30:15,161 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py --headless
+Fri Feb  6 12:32:45 CET 2026: Starting scheduled run
+Python: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3
+Python 3.12.9
+2026-02-06 12:32:45,543 - INFO - ============================================================
+2026-02-06 12:32:45,543 - INFO - Starting scheduled run at 2026-02-06 12:32:45.543407
+2026-02-06 12:32:45,543 - INFO - Types: ['company', 'vc']
+2026-02-06 12:32:45,543 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:32:45,543 - INFO - Headless: False
+2026-02-06 12:32:45,543 - INFO - ============================================================
+2026-02-06 12:32:45,543 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py
+Fri Feb  6 12:42:41 CET 2026: Starting scheduled run
+Python: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3
+Python 3.12.9
+2026-02-06 12:42:41,430 - INFO - ============================================================
+2026-02-06 12:42:41,430 - INFO - Starting scheduled run at 2026-02-06 12:42:41.430187
+2026-02-06 12:42:41,430 - INFO - Types: ['company', 'vc']
+2026-02-06 12:42:41,430 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:42:41,430 - INFO - Headless: False
+2026-02-06 12:42:41,430 - INFO - ============================================================
+2026-02-06 12:42:41,430 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py
+2026-02-06 13:36:23,392 - INFO - SUCCESS: vc_prompt_runner_chatgpt.py
+2026-02-06 13:36:23,416 - INFO - Waiting 120s before next script...
+2026-02-06 13:38:23,447 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_gemini.py
+2026-02-06 14:19:59,669 - INFO - SUCCESS: vc_prompt_runner_gemini.py
+2026-02-06 14:19:59,673 - INFO - Waiting 120s before next script...
+2026-02-06 14:21:59,844 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_perplexity.py
+2026-02-06 15:22:01,701 - ERROR - TIMEOUT: vc_prompt_runner_perplexity.py
+2026-02-06 15:22:01,815 - INFO - Waiting 120s before next script...
+2026-02-06 15:24:04,154 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_eval_runner_chatgpt.py
+2026-02-06 16:01:47,244 - INFO - SUCCESS: vc_eval_runner_chatgpt.py
+2026-02-06 16:01:47,509 - INFO - Waiting 120s before next script...
+2026-02-06 16:03:47,811 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_eval_runner_gemini.py
+2026-02-06 16:58:50,215 - INFO - SUCCESS: vc_eval_runner_gemini.py
+2026-02-06 16:58:50,371 - INFO - Waiting 120s before next script...
+2026-02-06 17:00:50,413 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_eval_runner_perplexity.py
+2026-02-06 17:44:20,378 - INFO - SUCCESS: vc_eval_runner_perplexity.py
+2026-02-06 17:44:20,451 - INFO - Waiting 120s before next script...
+2026-02-06 17:46:20,707 - INFO - ============================================================
+2026-02-06 17:46:21,098 - INFO - Run complete!
+2026-02-06 17:46:21,187 - INFO - Success: 5 - ['company/chatgpt', 'company/gemini', 'vc/chatgpt', 'vc/gemini', 'vc/perplexity']
+2026-02-06 17:46:21,187 - INFO - Failed: 1 - ['company/perplexity']
+2026-02-06 17:46:21,301 - INFO - ============================================================
+Fri Feb  6 17:46:24 CET 2026: Completed scheduled run
+Sat Feb  7 17:31:20 CET 2026: Starting scheduled run
+Python: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3
+Python 3.12.9
+2026-02-07 17:31:20,212 - INFO - ============================================================
+2026-02-07 17:31:20,212 - INFO - Starting scheduled run at 2026-02-07 17:31:20.212168
+2026-02-07 17:31:20,212 - INFO - Types: ['company', 'vc']
+2026-02-07 17:31:20,212 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-07 17:31:20,212 - INFO - Headless: False
+2026-02-07 17:31:20,212 - INFO - ============================================================
+2026-02-07 17:31:20,212 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py
+2026-02-07 17:42:40,349 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+
+2026-02-07 17:42:40,362 - INFO - Waiting 120s before next script...
+2026-02-07 17:44:40,396 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_gemini.py

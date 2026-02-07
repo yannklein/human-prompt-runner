@@ -1,9 +1,0 @@
-{
-  "prompt_id": "P22",
-  "company": "Qnami",
-  "answer": "Before I can give a brutally honest score, I need one thing from you: the actual content of {{CompanyProblems}}. Right now that’s a placeholder, so I cannot meaningfully judge how well Qnami’s work aligns with your company’s specific problems.\n\nHere’s why:\n\nWhat Qnami actually solves\nQnami develops and commercializes quantum sensing technology, especially scanning NV (nitrogen‑vacancy) quantum microscopes and diamond‑based quantum sensors that allow researchers and engineers to image magnetic fields, current density, spin textures and other nanoscale phenomena with extremely high precision. These tools address challenges in materials science, nanotechnology, spintronics, semiconductor research, and advanced metrology where conventional tools lack the required spatial resolution or sensitivity. They’re used to visualize properties at the atomic/nanoscale that were previously inaccessible or extremely costly to measure (e.g., synchrotron X‑ray methods) and can accelerate R&D in next‑generation electronics, memory, and quantum technology development. \nQnami\n+2\nQnami\n+2\n\nWhy I can’t score yet\nA meaningful score (1–10) depends entirely on how closely those solutions match the actual problems you care about — e.g., are your problems about materials characterization, ultra‑precise sensing, quantum device manufacturing, biomedical sensing, navigation, etc.? Without the specifics of {{CompanyProblems}}, any rating would be just a guess.\n\nPrompt for you to proceed\n\nPlease paste or describe the contents of {{CompanyProblems}} — even a short summary of the problems — and I’ll then provide the honest score + 200‑word explanation.",
-  "sources": [
-    "https://qnami.ch/applications-all/applications-current/?utm_source=chatgpt.com"
-  ],
-  "timestamp": "2026-01-04T12:05:13.423027+00:00"
-}

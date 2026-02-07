@@ -1,0 +1,13 @@
+✔ Measured Visibility Metrics:
+
+- Mention Rate (how often your entity appears)
+
+- Relative Share vs Competitors
+
+- Average Placement with Confidence Intervals
+
+- Trend Lines Over Time
+
+- Sentiment Distribution
+
+- Topic/Context Co-occurrence Patterns

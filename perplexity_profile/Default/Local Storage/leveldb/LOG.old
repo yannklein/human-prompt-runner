@@ -1,3 +1,6 @@
-2026/02/02-15:17:58.779 f9e8c1 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/02/02-15:17:58.782 f9e8c1 Recovering log #7
-2026/02/02-15:17:58.783 f9e8c1 Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Local Storage/leveldb/000007.log 
+2026/02/06-14:22:05.618 1cd6a06 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/06-14:22:05.623 1cd6a06 Recovering log #7
+2026/02/06-14:22:05.626 1cd6a06 Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/Local Storage/leveldb/000007.log 
+2026/02/06-14:47:12.054 1cd6a06 Level-0 table #11: started
+2026/02/06-14:47:12.062 1cd6a06 Level-0 table #11: 9051 bytes OK
+2026/02/06-14:47:12.067 1cd6a06 Delete type=0 #7

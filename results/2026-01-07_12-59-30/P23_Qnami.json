@@ -1,7 +1,0 @@
-{
-  "prompt_id": "P23",
-  "company": "Qnami",
-  "answer": "I can’t score Qnami’s ICP against {{CompanyICP}} yet because you’ve used a placeholder and haven’t told me what {{CompanyICP}} actually is.\n\nTo give a brutally honest 1–10 alignment score and a clear 200‑word explanation, I need the following details about {{CompanyICP}}:\n\nTarget Customer Profile\n• Industry(s)\n• Company size (revenue / employee count)\n• Geography\n• Buyer roles (e.g., CTO, Head of R&D, C‑Suite)\n\nBuying Triggers\n• Challenges or goals these customers have\n• What outcomes they’re trying to achieve\n\nBudget & Decision Criteria\n• Typical budget range for relevant solutions\n• Key purchase drivers (e.g., innovation, ROI timelines, compliance needs)\n\nTech Adoption Profile\n• Early adopters vs. conservative buyers\n• Requirements for integrations / sophistication\n\nOnce you provide that ICP description, I’ll compare it to Qnami’s actual positioning (e.g., quantum sensing solutions, target markets like semiconductor, defense & research labs, etc.) and give you:\n\n✔ A score from 1 (no fit) to 10 (near perfect fit)\n✔ A straight‑talking 200‑word explanation of where the alignment is strong, weak, and what would need to change.",
-  "sources": [],
-  "timestamp": "2026-01-07T15:17:54.693687+00:00"
-}

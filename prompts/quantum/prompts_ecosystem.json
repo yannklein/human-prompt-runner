@@ -1,0 +1,77 @@
+{
+  "prompts": [
+    {
+      "id": "P1",
+      "template": "What are the top 5 applications of {{Category}} currently? Give me only a title and a 50 word explanation per application and the rank. Choose from the following options: {{Applications}} ",
+      "required_vars": [
+        "Category",
+        "Applications"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P2",
+      "template": "Which are top 10 countries in {{Category}} innovation currently? and why? Give me 200 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P3",
+      "template": "What are the top 5 most promising companies in {{Category}} currently? Give me 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P4",
+      "template": "What are the top 5 {{Category}} companies with the best team currently? Give me a 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P5",
+      "template": "What are the top 5 leading labs or Universities on {{Category}} research currently? Give me a 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P6",
+      "template": "Who are the top 10 key figures or founders in {{Category}} currently? Give me 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P7",
+      "template": "What are the top 3 challenges to commercializing {{Category}} currently? Give me 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P8",
+      "template": "What are the top 5 latest breakthroughs in {{Category}} currently? Give me 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    },
+    {
+      "id": "P9",
+      "template": "What 5 breakthroughs in {{Category}} are predicted to happen over 5 years? Give me a 100 word explanation and the rank",
+      "required_vars": [
+        "Category"
+      ],
+      "expects_score": false
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "prompt_id": "P22",
-  "company": "Tarsier Optics",
-  "answer": "I can’t score the alignment yet because you referenced a variable ({{CompanyProblems}}) that hasn’t been defined — I don’t know what problems you’re talking about.\n\nPlease paste the actual list of company problems you want evaluated, and I’ll then give you a brutally honest 1–10 alignment score for how well Tarsier Optics solves them — with a 200‑word explanation.\n\nReply with the problems text and I’ll proceed.",
-  "sources": [],
-  "timestamp": "2026-01-07T15:11:29.127203+00:00"
-}

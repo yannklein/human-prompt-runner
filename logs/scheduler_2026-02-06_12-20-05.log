@@ -1,0 +1,14 @@
+2026-02-06 12:20:05,713 - INFO - ============================================================
+2026-02-06 12:20:05,714 - INFO - Starting scheduled run at 2026-02-06 12:20:05.714001
+2026-02-06 12:20:05,714 - INFO - Types: ['company', 'vc']
+2026-02-06 12:20:05,714 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-06 12:20:05,714 - INFO - Headless: True
+2026-02-06 12:20:05,714 - INFO - ============================================================
+2026-02-06 12:20:05,714 - INFO - Running: /usr/local/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py --headless
+2026-02-06 12:20:05,878 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+Traceback (most recent call last):
+  File "/Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py", line 13, in <module>
+    from playwright.async_api import async_playwright
+ModuleNotFoundError: No module named 'playwright'
+
+2026-02-06 12:20:05,878 - INFO - Waiting 120s before next script...

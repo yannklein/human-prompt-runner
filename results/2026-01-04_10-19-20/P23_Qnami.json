@@ -1,7 +1,0 @@
-{
-  "prompt_id": "P23",
-  "company": "Qnami",
-  "answer": "I can do that — but I need your {{CompanyICP}} definition first.\n\nRight now I only have Qnami’s ICP (Ideal Customer Profile) — a company focused on quantum sensing technology for industrial and scientific use cases (semiconductors, metrology, life sciences, defense, research labs, etc.).\n\nTo score how much Qnami’s ICP aligns with your company’s ICP, I need you to fill in:\n\n👉 What is your {{CompanyICP}}?\nFor example:\n\ntarget industries\n\ncompany size (revenue or employees)\n\ngeography\n\njob titles / buying roles\n\nuse cases / pain points\n\nbudget range\n\nExample answer you could provide:\n\nOur ICP is mid‑sized diagnostics labs (100–500 employees) in the EU, CTO/Head of R&D buyers, budget €200k+, need high‑precision magnetic imaging for medical device QA.\n\nOnce you give your Company ICP, I’ll provide a brutally honest alignment score (1–10) and a 200‑word explanation of how well Qnami’s ICP matches yours.",
-  "sources": [],
-  "timestamp": "2026-01-04T12:16:39.817615+00:00"
-}

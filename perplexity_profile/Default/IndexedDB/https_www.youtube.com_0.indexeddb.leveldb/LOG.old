@@ -1,6 +1,24 @@
-2026/01/28-15:54:13.766 8e7b7a Creating DB /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb since it was missing.
-2026/01/28-15:54:13.772 8e7b7a Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/01/28-15:55:03.590 8e7b7a Level-0 table #5: started
-2026/01/28-15:55:03.594 8e7b7a Level-0 table #5: 8630 bytes OK
-2026/01/28-15:55:03.595 8e7b7a Delete type=0 #3
-2026/01/28-15:55:03.596 8e7b7a Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/28-16:01:18.881 8ec6ac Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/28-16:01:18.882 8ec6ac Recovering log #4
+2026/01/28-16:01:18.882 8ec6ac Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/perplexity_profile/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2026/01/28-16:01:18.934 8ec6cb Level-0 table #8: started
+2026/01/28-16:01:18.936 8ec6cb Level-0 table #8: 17358 bytes OK
+2026/01/28-16:01:18.937 8ec6cb Delete type=0 #4
+2026/01/28-16:01:18.939 8ec6aa Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/28-16:01:18.954 8ec6aa Level-0 table #10: started
+2026/01/28-16:01:18.955 8ec6aa Level-0 table #10: 864 bytes OK
+2026/01/28-16:01:18.956 8ec6aa Delete type=0 #7
+2026/01/28-16:01:18.956 8ec6aa Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x03\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xa0\x0b`G\xc0yB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 537 : 0
+2026/01/28-16:01:18.956 8ec6aa Compacting 1@0 + 1@1 files
+2026/01/28-16:01:18.958 8ec6aa Generated table #11@0: 124 keys, 1749 bytes
+2026/01/28-16:01:18.958 8ec6aa Compacted 1@0 + 1@1 files => 1749 bytes
+2026/01/28-16:01:18.959 8ec6aa compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/28-16:01:18.959 8ec6aa Delete type=2 #10
+2026/01/28-16:01:18.959 8ec6aa Manual compaction at level-0 from '\x00\x03\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xa0\x0b`G\xc0yB\x00\x03\x00\x00\x00\x00\x00\x00\x10@' @ 537 : 0 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/01/28-16:01:18.959 8ec6aa Manual compaction at level-1 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 438 : 1
+2026/01/28-16:01:18.959 8ec6aa Compacting 1@1 + 1@2 files
+2026/01/28-16:01:18.960 8ec6aa Generated table #12@1: 40 keys, 1049 bytes
+2026/01/28-16:01:18.960 8ec6aa Compacted 1@1 + 1@2 files => 1049 bytes
+2026/01/28-16:01:18.961 8ec6aa compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/01/28-16:01:18.961 8ec6aa Delete type=2 #11
+2026/01/28-16:01:18.961 8ec6aa Manual compaction at level-1 from '\x00\x05\x00\x00\xc8\x11\x00L\x00o\x00g\x00s\x00R\x00e\x00q\x00u\x00e\x00s\x00t\x00s\x00S\x00t\x00o\x00r\x00e' @ 438 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

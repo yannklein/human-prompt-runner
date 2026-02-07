@@ -1,2 +1,3 @@
-2026/01/28-14:35:02.760 8b4a68 Creating DB /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/gemini_profile/Default/Local Storage/leveldb since it was missing.
-2026/01/28-14:35:02.765 8b4a68 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/gemini_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/06-16:03:53.663 1d68b89 Reusing MANIFEST /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/gemini_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/06-16:03:53.666 1d68b89 Recovering log #3
+2026/02/06-16:03:53.666 1d68b89 Reusing old log /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/gemini_profile/Default/Local Storage/leveldb/000003.log 

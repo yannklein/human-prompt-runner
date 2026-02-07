@@ -1,0 +1,11 @@
+2026-02-07 17:31:20,212 - INFO - ============================================================
+2026-02-07 17:31:20,212 - INFO - Starting scheduled run at 2026-02-07 17:31:20.212168
+2026-02-07 17:31:20,212 - INFO - Types: ['company', 'vc']
+2026-02-07 17:31:20,212 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-07 17:31:20,212 - INFO - Headless: False
+2026-02-07 17:31:20,212 - INFO - ============================================================
+2026-02-07 17:31:20,212 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_chatgpt.py
+2026-02-07 17:42:40,349 - ERROR - FAILED: vc_prompt_runner_chatgpt.py
+
+2026-02-07 17:42:40,362 - INFO - Waiting 120s before next script...
+2026-02-07 17:44:40,396 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/vc_prompt_runner_gemini.py
