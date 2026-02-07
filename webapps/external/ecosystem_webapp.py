@@ -15,6 +15,12 @@ Usage:
 
 import argparse
 import json
+import sys
+from pathlib import Path
+
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 from flask import Flask, render_template_string, jsonify, request
 
 from ecosystem_analysis import (
@@ -39,7 +45,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecosystem Intelligence</title>
+  <title>Ecosystem Intelligence (External)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -254,7 +260,7 @@ PROMPT_DETAIL_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ prompt_id }} — {{ prompt_label }}</title>
+  <title>{{ prompt_id }} — {{ prompt_label }} (External)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -834,7 +840,7 @@ RUN_DETAIL_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Run — {{ run.date_str }} ({{ run.platform }})</title>
+  <title>Run — {{ run.date_str }} ({{ run.platform }}) (External)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -967,8 +973,8 @@ RUN_DETAIL_TEMPLATE = r"""<!DOCTYPE html>
           <span class="chevron">▾</span>
         </div>
         <div class="prompt-card-body">
-          <div class="question-box">{{ pdata.question }}</div>
-          <div class="answer-box">{{ pdata.answer }}</div>
+          <div class="question-box" style="color: #666; font-style: italic;">Prompt content available in internal version only</div>
+          <div class="answer-box" style="color: #666; font-style: italic;">Response content available in internal version only</div>
         </div>
       </div>
       {% endfor %}
@@ -989,7 +995,7 @@ INTELLIGENCE_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ prompt_id }} Intelligence - {{ prompt_label }}</title>
+  <title>{{ prompt_id }} Intelligence - {{ prompt_label }} (External)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

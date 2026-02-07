@@ -45,14 +45,19 @@ PYTHON_EXEC = "/Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3"
 # Runner configurations
 RUNNERS = {
     "company": {
-        "chatgpt": "vc_prompt_runner_chatgpt.py",
-        "gemini": "vc_prompt_runner_gemini.py",
-        "perplexity": "vc_prompt_runner_perplexity.py",
+        "chatgpt": "runners/company/company_runner_chatgpt.py",
+        "gemini": "runners/company/company_runner_gemini.py",
+        "perplexity": "runners/company/company_runner_perplexity.py",
+    },
+    "ecosystem": {
+        "chatgpt": "runners/ecosystem/ecosystem_runner_chatgpt.py",
+        "gemini": "runners/ecosystem/ecosystem_runner_gemini.py",
+        "perplexity": "runners/ecosystem/ecosystem_runner_perplexity.py",
     },
     "vc": {
-        "chatgpt": "vc_eval_runner_chatgpt.py",
-        "gemini": "vc_eval_runner_gemini.py",
-        "perplexity": "vc_eval_runner_perplexity.py",
+        "chatgpt": "runners/vc/vc_eval_runner_chatgpt.py",
+        "gemini": "runners/vc/vc_eval_runner_gemini.py",
+        "perplexity": "runners/vc/vc_eval_runner_perplexity.py",
     },
 }
 
@@ -110,7 +115,7 @@ def run_all(
     """
     import time
 
-    run_types = run_types or ["company", "vc"]
+    run_types = run_types or ["company", "ecosystem", "vc"]
     platforms = platforms or ["chatgpt", "gemini", "perplexity"]
 
     results = {"success": [], "failed": []}
@@ -159,7 +164,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run all prompt runners on schedule")
     parser.add_argument(
         "--type",
-        choices=["company", "vc", "all"],
+        choices=["company", "ecosystem", "vc", "all"],
         default="all",
         help="Type of prompts to run",
     )
@@ -183,7 +188,7 @@ def main():
 
     args = parser.parse_args()
 
-    run_types = ["company", "vc"] if args.type == "all" else [args.type]
+    run_types = ["company", "ecosystem", "vc"] if args.type == "all" else [args.type]
     platforms = ["chatgpt", "gemini", "perplexity"] if args.platform == "all" else [args.platform]
 
     results = run_all(

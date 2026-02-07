@@ -16,7 +16,11 @@ import argparse
 import json
 import os
 import re
+import sys
 from pathlib import Path
+
+# Add project root to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from flask import Flask, render_template_string, jsonify, request
 
@@ -29,10 +33,10 @@ from company_analysis import (
 app = Flask(__name__)
 
 DIMENSION_WEIGHTS = {
-    "Team & Ability to Attract Talent": 0.25,
-    "Quality of Existing IP": 0.25,
-    "TRL / Traction": 0.25,
-    "Investor Perception": 0.25,
+    "Team & Ability to Attract Talent": 0.30,
+    "Quality of Existing IP": 0.30,
+    "TRL / Traction": 0.20,
+    "Investor Perception": 0.20,
 }
 
 
@@ -169,7 +173,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Evaluation — {{ company_name }}</title>
+  <title>Company Evaluation (External) — {{ company_name }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -415,7 +419,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
               </div>
               <div class="prompt-body">
                 {% if prompt.platform_answers %}
-                <div class="question-box">{{ prompt.platform_answers[0].question }}</div>
+                <div class="question-box" style="color: #666; font-style: italic;">Prompt content available in internal version only</div>
                 {% endif %}
                 {% for pa in prompt.platform_answers %}
                 <div class="ai-answer">
@@ -425,7 +429,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
                       {% if pa.score is not none %}{{ pa.score }} / 10{% else %}—{% endif %}
                     </span>
                   </div>
-                  <div class="ai-answer-text">{{ pa.answer }}</div>
+                  <div class="ai-answer-text" style="color: #666; font-style: italic;">Response content available in internal version only</div>
                   {% if pa.sources %}
                   <div class="sources-section">
                     <div class="sources-label">Sources</div>
@@ -561,7 +565,7 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Evaluations</title>
+  <title>Company Evaluations (External)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -746,7 +750,7 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compare — {{ c1_name }} vs {{ c2_name }}</title>
+  <title>Compare (External) — {{ c1_name }} vs {{ c2_name }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1042,10 +1046,7 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
             </div>
             <div class="prompt-body">
               {% if prompt.platform_answers1 or prompt.platform_answers2 %}
-              {% set q = (prompt.platform_answers1[0].question if prompt.platform_answers1 else (prompt.platform_answers2[0].question if prompt.platform_answers2 else '')) %}
-              {% if q %}
-              <div class="question-box">{{ q }}</div>
-              {% endif %}
+              <div class="question-box" style="color: #666; font-style: italic;">Prompt content available in internal version only</div>
               {% endif %}
               <div class="company-answers-grid">
                 <div>
@@ -1058,7 +1059,7 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
                         {% if pa.score is not none %}{{ pa.score }} / 10{% else %}&mdash;{% endif %}
                       </span>
                     </div>
-                    <div class="ai-answer-text">{{ pa.answer }}</div>
+                    <div class="ai-answer-text" style="color: #666; font-style: italic;">Response content available in internal version only</div>
                     {% if pa.sources %}
                     <div class="sources-section">
                       <div class="sources-label">Sources</div>
@@ -1083,7 +1084,7 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
                         {% if pa.score is not none %}{{ pa.score }} / 10{% else %}&mdash;{% endif %}
                       </span>
                     </div>
-                    <div class="ai-answer-text">{{ pa.answer }}</div>
+                    <div class="ai-answer-text" style="color: #666; font-style: italic;">Response content available in internal version only</div>
                     {% if pa.sources %}
                     <div class="sources-section">
                       <div class="sources-label">Sources</div>
