@@ -22,6 +22,8 @@ from pathlib import Path
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from urllib.parse import urlparse
+
 from flask import Flask, render_template_string, jsonify, request
 
 from company_analysis import (
@@ -31,6 +33,61 @@ from company_analysis import (
 )
 
 app = Flask(__name__)
+
+# Prompt keywords for external display (instead of full prompt text)
+PROMPT_KEYWORDS = {
+    "P10": "Company Overview",
+    "P11": "Technical Capabilities",
+    "P12": "Team & Leadership",
+    "P13": "Funding & Investment",
+    "P14": "Competitive Position",
+    "P15": "Market Traction",
+    "P16": "IP & Patents",
+    "P17": "Partnerships",
+    "P18": "Team Background",
+    "P19": "Talent Attraction",
+    "P20": "Technology Differentiation",
+    "P21": "Publication Record",
+    "P22": "Patent Portfolio",
+    "P23": "Customer Validation",
+    "P24": "Revenue Traction",
+    "P25": "Investor Interest",
+    "P26": "VC Backing",
+    "P27": "Market Perception",
+}
+
+# Source type patterns
+SOURCE_TYPE_PATTERNS = {
+    "Quantum Media": ["spinquanta", "quantum.org", "thequantuminsider"],
+    "Tech Media": ["techcrunch", "wired", "arstechnica", "theverge", "zdnet"],
+    "Financial Media": ["bloomberg", "reuters", "wsj", "ft.com", "cnbc", "forbes"],
+    "VC / Investment Firm": ["ventures", "capital", "vc", "crunchbase"],
+    "Academic / Research": ["arxiv", "nature.com", "science.org", "ieee"],
+    "Social / UGC": ["linkedin", "twitter", "x.com", "reddit", "medium.com"],
+}
+
+
+def _extract_domain(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc or ""
+        if domain.startswith("www."):
+            domain = domain[4:]
+        return domain.lower()
+    except Exception:
+        return ""
+
+
+def _categorize_source(domain: str) -> str:
+    domain_lower = domain.lower()
+    for category, patterns in SOURCE_TYPE_PATTERNS.items():
+        for pattern in patterns:
+            if pattern in domain_lower:
+                return category
+    return "Other"
+
 
 DIMENSION_WEIGHTS = {
     "Team & Ability to Attract Talent": 0.30,
@@ -1301,6 +1358,182 @@ def compare():
 @app.route("/api/data")
 def api_data():
     return jsonify(_load_all_company_data())
+
+
+@app.route("/source-analysis")
+def source_analysis():
+    """Show source/citation analysis with per-prompt and per-company filtering (keywords only)."""
+    company_data = _load_all_company_data()
+    selected_prompt = request.args.get("prompt", "all")
+    selected_company = request.args.get("company", "all")
+
+    # Collect all available companies
+    all_companies = sorted(company_data.keys())
+
+    # Collect all available prompts
+    all_prompts = set()
+    for company, data in company_data.items():
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                all_prompts.add(prompt["prompt_id"])
+    all_prompts = sorted(all_prompts, key=lambda x: (x[0], int(x[1:]) if x[1:].isdigit() else 0))
+
+    source_counts = {}
+    source_details = {}
+    prompt_run_count = 0
+
+    for company, data in company_data.items():
+        # Filter by selected company
+        if selected_company != "all" and company != selected_company:
+            continue
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                if selected_prompt != "all" and prompt["prompt_id"] != selected_prompt:
+                    continue
+                for pa in prompt["platform_answers"]:
+                    prompt_run_count += 1
+                    for source in pa.get("sources", []):
+                        url = source.get("url", "")
+                        if not url:
+                            continue
+                        domain = _extract_domain(url)
+                        if not domain:
+                            continue
+                        source_counts[domain] = source_counts.get(domain, 0) + 1
+                        if domain not in source_details:
+                            source_details[domain] = {"urls": set()}
+                        source_details[domain]["urls"].add(url)
+
+    total_citations = sum(source_counts.values())
+    avg_per_run = round(total_citations / prompt_run_count, 1) if prompt_run_count > 0 else 0
+
+    frequency_table = []
+    for domain, count in sorted(source_counts.items(), key=lambda x: -x[1]):
+        category = _categorize_source(domain)
+        avg_count = round(count / prompt_run_count, 2) if prompt_run_count > 0 else 0
+        frequency_table.append({
+            "domain": domain,
+            "frequency": count,
+            "avg_frequency": avg_count,
+            "type": category,
+        })
+
+    by_type = {}
+    for item in frequency_table:
+        t = item["type"]
+        if t not in by_type:
+            by_type[t] = {"count": 0}
+        by_type[t]["count"] += item["frequency"]
+    by_type = dict(sorted(by_type.items(), key=lambda x: -x[1]["count"]))
+
+    # Use keywords instead of full prompt text
+    selected_prompt_keywords = PROMPT_KEYWORDS.get(selected_prompt, "") if selected_prompt != "all" else ""
+
+    return render_template_string(
+        SOURCE_ANALYSIS_TEMPLATE,
+        frequency_table=frequency_table,
+        by_type=by_type,
+        total_citations=total_citations,
+        unique_sources=len(source_counts),
+        all_prompts=all_prompts,
+        selected_prompt=selected_prompt,
+        selected_prompt_keywords=selected_prompt_keywords,
+        prompt_run_count=prompt_run_count,
+        avg_per_run=avg_per_run,
+        prompt_keywords=PROMPT_KEYWORDS,
+        all_companies=all_companies,
+        selected_company=selected_company,
+    )
+
+
+SOURCE_ANALYSIS_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e0e0e8; min-height: 100vh; line-height: 1.5; }
+    .app { max-width: 1200px; margin: 0 auto; padding: 40px 32px 100px; }
+    a { color: #14b8a6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .back-link { font-size: 0.75rem; color: #888; margin-bottom: 12px; display: inline-block; }
+    .header h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; }
+    .header-subtitle { font-size: 0.9rem; color: #888; }
+    .filter-section { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
+    .filter-label { font-size: 0.75rem; font-weight: 600; color: #888; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .prompt-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .prompt-pill { padding: 6px 12px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: #888; text-decoration: none; transition: all 0.15s; }
+    .prompt-pill:hover { background: rgba(20,184,166,0.1); border-color: rgba(20,184,166,0.3); color: #14b8a6; text-decoration: none; }
+    .prompt-pill.active { background: rgba(20,184,166,0.15); border-color: #14b8a6; color: #14b8a6; }
+    .keyword-box { background: rgba(20,184,166,0.06); border: 1px solid rgba(20,184,166,0.15); border-radius: 10px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.85rem; color: #14b8a6; font-weight: 500; }
+    .summary-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+    .summary-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 16px 24px; text-align: center; flex: 1; min-width: 120px; }
+    .summary-value { font-size: 1.6rem; font-weight: 700; color: #14b8a6; }
+    .summary-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+    .section-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 16px; }
+    .source-bar-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .source-domain { width: 180px; font-size: 0.82rem; font-weight: 500; }
+    .source-bar-container { flex: 1; height: 18px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; }
+    .source-bar { height: 100%; background: linear-gradient(90deg, #14b8a6, #0d9488); border-radius: 4px; }
+    .source-count { width: 50px; text-align: right; font-weight: 600; font-size: 0.82rem; color: #14b8a6; }
+    .source-avg { width: 60px; text-align: right; font-size: 0.72rem; color: #888; }
+    .no-data { text-align: center; padding: 60px 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <a href="/" class="back-link">&larr; Back to Companies</a>
+      <h1>Source Analysis</h1>
+      <p class="header-subtitle">Citation frequency {% if selected_company != 'all' %}for {{ selected_company }}{% endif %}{% if selected_prompt != 'all' %} ({{ selected_prompt }}){% endif %}{% if selected_company == 'all' and selected_prompt == 'all' %}across all companies and prompts{% endif %}</p>
+    </div>
+    <div class="filter-section">
+      <span class="filter-label">Filter by Company:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_prompt != 'all' %}?prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_company == 'all' else '' }}">All</a>
+        {% for company in all_companies %}
+        <a href="/source-analysis?company={{ company }}{% if selected_prompt != 'all' %}&prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_company == company else '' }}">{{ company }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="filter-section">
+      <span class="filter-label">Filter by Prompt:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_company != 'all' %}?company={{ selected_company }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == 'all' else '' }}">All</a>
+        {% for pid in all_prompts %}
+        <a href="/source-analysis?prompt={{ pid }}{% if selected_company != 'all' %}&company={{ selected_company }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == pid else '' }}" title="{{ prompt_keywords.get(pid, '') }}">{{ pid }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% if selected_prompt != 'all' and selected_prompt_keywords %}
+    <div class="keyword-box">{{ selected_prompt }}: {{ selected_prompt_keywords }}</div>
+    {% endif %}
+    {% if frequency_table %}
+    <div class="summary-row">
+      <div class="summary-card"><div class="summary-value">{{ total_citations }}</div><div class="summary-label">Total Citations</div></div>
+      <div class="summary-card"><div class="summary-value">{{ avg_per_run }}</div><div class="summary-label">Avg per Run</div></div>
+      <div class="summary-card"><div class="summary-value">{{ unique_sources }}</div><div class="summary-label">Unique Sources</div></div>
+      <div class="summary-card"><div class="summary-value">{{ prompt_run_count }}</div><div class="summary-label">Prompt Runs</div></div>
+    </div>
+    <h3 class="section-title">Top Sources ({{ frequency_table | length }} domains)</h3>
+    {% for s in frequency_table[:30] %}
+    <div class="source-bar-row">
+      <div class="source-domain">{{ s.domain }}</div>
+      <div class="source-bar-container"><div class="source-bar" style="width: {{ (s.frequency / frequency_table[0].frequency * 100) | int }}%"></div></div>
+      <div class="source-count">{{ s.frequency }}</div>
+      <div class="source-avg">{{ s.avg_frequency }}/run</div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="no-data"><p>No sources found for this prompt.</p><p><a href="/source-analysis">View all sources</a></p></div>
+    {% endif %}
+  </div>
+</body>
+</html>"""
 
 
 if __name__ == "__main__":

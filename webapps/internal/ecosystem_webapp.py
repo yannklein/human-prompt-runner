@@ -30,6 +30,10 @@ from ecosystem_analysis import (
     compare_rankings_over_time,
     compare_two_snapshots,
     get_prompt_intelligence,
+    gather_prompt_results,
+    gather_prompt_sources,
+    _extract_domain,
+    _categorize_source,
 )
 
 app = Flask(__name__)
@@ -219,6 +223,11 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
         <div class="stat-value">{{ date_range }}</div>
         <div class="stat-label">Days of Data</div>
       </div>
+    </div>
+
+    <div class="section-title">Quick Links</div>
+    <div style="margin-bottom: 32px;">
+      <a href="/source-analysis" style="display: inline-block; padding: 12px 24px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); border-radius: 8px; color: #f59e0b; font-size: 0.85rem; font-weight: 500; margin-right: 12px;">Source Analysis →</a>
     </div>
 
     <div class="section-title">Ecosystem Dimensions</div>
@@ -581,6 +590,7 @@ PROMPT_DETAIL_TEMPLATE = r"""<!DOCTYPE html>
       <h1>{{ prompt_label }}</h1>
       <p class="header-subtitle">{{ data_points | length }} snapshots across {{ platforms | length }} platforms</p>
       <a href="/prompt/{{ prompt_id }}/intelligence" class="intel-button">View Source Intelligence →</a>
+      <a href="/prompt/{{ prompt_id }}/entities" class="intel-button" style="margin-left: 8px;">View Entity Table →</a>
     </div>
 
     <div class="compare-section">
@@ -1390,6 +1400,542 @@ INTELLIGENCE_TEMPLATE = r"""<!DOCTYPE html>
 </html>"""
 
 
+SOURCE_ANALYSIS_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Analysis - All Prompts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+      color: #e0e0e8;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .app { max-width: 1400px; margin: 0 auto; padding: 40px 32px 100px; }
+    a { color: #f59e0b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .back-link { font-size: 0.75rem; color: #888; margin-bottom: 12px; display: inline-block; }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2rem; font-weight: 500; margin-bottom: 8px;
+    }
+    .header-subtitle { font-size: 0.9rem; color: #888; }
+
+    .summary-row {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px;
+    }
+    .summary-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 16px 24px;
+      text-align: center;
+      flex: 1; min-width: 140px;
+    }
+    .summary-value { font-size: 1.8rem; font-weight: 700; color: #f59e0b; }
+    .summary-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+
+    .section { margin-bottom: 40px; }
+    .section-title {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #888; margin-bottom: 16px;
+    }
+
+    /* Chart Container */
+    .chart-container {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .chart-title { font-size: 0.85rem; font-weight: 600; margin-bottom: 16px; }
+    .chart-wrapper { height: 400px; }
+
+    /* Source Type Pills */
+    .type-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .type-pill {
+      padding: 6px 14px; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 500;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .type-pill .count { color: #f59e0b; font-weight: 700; margin-left: 6px; }
+
+    /* Source Frequency Bars */
+    .source-bar-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .source-domain { width: 200px; font-size: 0.82rem; font-weight: 500; }
+    .source-bar-container { flex: 1; height: 20px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; }
+    .source-bar {
+      height: 100%; background: linear-gradient(90deg, #f59e0b, #d97706);
+      border-radius: 4px;
+      transition: width 0.3s;
+    }
+    .source-count { width: 60px; text-align: right; font-weight: 600; font-size: 0.82rem; color: #f59e0b; }
+    .source-avg { width: 60px; text-align: right; font-size: 0.72rem; color: #888; }
+    .source-type { width: 140px; font-size: 0.72rem; color: #888; text-align: right; }
+
+    /* Filter section */
+    .filter-section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .filter-label { font-size: 0.75rem; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.08em; }
+    .prompt-pills { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+    .prompt-pill {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #888;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .prompt-pill:hover { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.3); color: #f59e0b; }
+    .prompt-pill.active { background: rgba(245,158,11,0.15); border-color: #f59e0b; color: #f59e0b; }
+    .prompt-text-box {
+      background: rgba(245,158,11,0.06);
+      border: 1px solid rgba(245,158,11,0.15);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #c0c0cc;
+    }
+    .prompt-text-label { font-size: 0.68rem; font-weight: 600; color: #f59e0b; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+
+    /* Detailed Table */
+    .data-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .data-table th {
+      text-align: left; padding: 10px 12px;
+      background: rgba(255,255,255,0.04);
+      font-weight: 600; font-size: 0.7rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #888; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .data-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .data-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    /* Tabs */
+    .tabs {
+      display: flex; gap: 8px; margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 8px;
+    }
+    .tab {
+      padding: 8px 20px; border-radius: 8px 8px 0 0;
+      background: transparent; border: none; color: #888;
+      font-size: 0.85rem; font-weight: 500; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab:hover { color: #ccc; }
+    .tab.active { background: rgba(245,158,11,0.12); color: #f59e0b; }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <a href="/" class="back-link">&larr; Back to Dashboard</a>
+      <h1>Source Analysis</h1>
+      <p class="header-subtitle">Citation frequency analysis {% if data.selected_prompt != 'all' %}for prompt {{ data.selected_prompt }}{% else %}across all prompts{% endif %}</p>
+    </div>
+
+    <div class="filter-section">
+      <span class="filter-label">Filter by Prompt:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis" class="prompt-pill {{ 'active' if data.selected_prompt == 'all' else '' }}">All</a>
+        {% for pid in data.all_prompts %}
+        <a href="/source-analysis?prompt={{ pid }}" class="prompt-pill {{ 'active' if data.selected_prompt == pid else '' }}">{{ pid }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if data.selected_prompt != 'all' and data.selected_prompt_text %}
+    <div class="prompt-text-box">
+      <div class="prompt-text-label">Prompt {{ data.selected_prompt }}</div>
+      {{ data.selected_prompt_text }}
+    </div>
+    {% endif %}
+
+    <div class="summary-row">
+      <div class="summary-card">
+        <div class="summary-value">{{ data.total_citations }}</div>
+        <div class="summary-label">Total Citations</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.avg_per_run }}</div>
+        <div class="summary-label">Avg per Run</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.unique_sources }}</div>
+        <div class="summary-label">Unique Sources</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.prompt_run_count }}</div>
+        <div class="summary-label">Prompt Runs</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.total_runs }}</div>
+        <div class="summary-label">Analysis Runs</div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="by-type">By Type</button>
+      <button class="tab" data-tab="detailed">Detailed Table</button>
+    </div>
+
+    <!-- OVERVIEW TAB -->
+    <div id="tab-overview" class="tab-content active">
+      <div class="section">
+        <h3 class="section-title">Source Type Distribution</h3>
+        <div class="type-pills">
+          {% for t, info in data.by_type.items() %}
+          <div class="type-pill">{{ t }}<span class="count">{{ info.count }}</span></div>
+          {% endfor %}
+        </div>
+
+        <div class="chart-container">
+          <div class="chart-title">Top 25 Sources by Citation Frequency</div>
+          <div class="chart-wrapper">
+            <canvas id="sourcesChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title">Top Sources ({{ data.frequency_table | length }} domains)</h3>
+        {% for s in data.frequency_table[:30] %}
+        <div class="source-bar-row">
+          <div class="source-domain">{{ s.domain }}</div>
+          <div class="source-bar-container">
+            <div class="source-bar" style="width: {{ (s.frequency / data.frequency_table[0].frequency * 100) | int }}%"></div>
+          </div>
+          <div class="source-count">{{ s.frequency }}</div>
+          <div class="source-avg">{{ s.avg_frequency }}/run</div>
+          <div class="source-type">{{ s.type }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- BY TYPE TAB -->
+    <div id="tab-by-type" class="tab-content">
+      <div class="section">
+        {% for type_name, info in data.by_type.items() %}
+        <div style="margin-bottom: 32px;">
+          <h3 class="section-title">{{ type_name }} ({{ info.count }} citations)</h3>
+          {% for domain in info.domains[:10] %}
+          <div class="source-bar-row">
+            <div class="source-domain">{{ domain }}</div>
+            <div class="source-count">-</div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- DETAILED TABLE TAB -->
+    <div id="tab-detailed" class="tab-content">
+      <div class="section">
+        <h3 class="section-title">All Cited Sources (Top 200)</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Frequency</th>
+              <th>Type</th>
+              <th>Sample URLs</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for s in data.frequency_table[:200] %}
+            <tr>
+              <td>{{ s.domain }}</td>
+              <td>{{ s.frequency }}</td>
+              <td>{{ s.type }}</td>
+              <td>
+                {% for url in s.sample_urls[:2] %}
+                <a href="{{ url }}" target="_blank">{{ url[:60] }}...</a><br>
+                {% endfor %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Sources chart
+    const topSources = {{ data.frequency_table | tojson }};
+    const chartData = topSources.slice(0, 25);
+
+    new Chart(document.getElementById('sourcesChart'), {
+      type: 'bar',
+      data: {
+        labels: chartData.map(s => s.domain),
+        datasets: [{
+          label: 'Citations',
+          data: chartData.map(s => s.frequency),
+          backgroundColor: 'rgba(245, 158, 11, 0.7)',
+          borderColor: 'rgba(245, 158, 11, 1)',
+          borderWidth: 1,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#888' }
+          },
+          y: {
+            grid: { display: false },
+            ticks: { color: '#e0e0e8', font: { size: 11 } }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>"""
+
+
+ENTITY_TABLE_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ prompt_id }} Entities - {{ prompt_label }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+      color: #e0e0e8;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .app { max-width: 1400px; margin: 0 auto; padding: 40px 32px 100px; }
+    a { color: #f59e0b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .back-link { font-size: 0.75rem; color: #888; margin-bottom: 12px; display: inline-block; }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2rem; font-weight: 500; margin-bottom: 8px;
+    }
+    .header-subtitle { font-size: 0.9rem; color: #888; }
+
+    .summary-row {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px;
+    }
+    .summary-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 16px 24px;
+      text-align: center;
+      flex: 1; min-width: 140px;
+    }
+    .summary-value { font-size: 1.8rem; font-weight: 700; color: #f59e0b; }
+    .summary-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+
+    /* Table Styles */
+    .data-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .data-table th {
+      text-align: left; padding: 12px 14px;
+      background: rgba(255,255,255,0.04);
+      font-weight: 600; font-size: 0.7rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #888; border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top: 0;
+    }
+    .data-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      vertical-align: top;
+    }
+    .data-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    .platform-badge {
+      font-size: 0.65rem; font-weight: 600;
+      padding: 2px 8px; border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .platform-badge.chatgpt { background: rgba(16,185,129,0.12); color: #10b981; }
+    .platform-badge.gemini { background: rgba(59,130,246,0.12); color: #3b82f6; }
+    .platform-badge.perplexity { background: rgba(167,139,250,0.12); color: #a78bfa; }
+
+    .rank-cell { font-weight: 700; color: #f59e0b; width: 60px; text-align: center; }
+    .entity-cell { font-weight: 500; }
+    .type-cell { color: #888; font-size: 0.75rem; }
+    .explanation-cell { color: #999; font-size: 0.78rem; max-width: 400px; }
+
+    /* Filter Row */
+    .filter-row {
+      display: flex; gap: 16px; margin-bottom: 20px; align-items: center; flex-wrap: wrap;
+    }
+    .filter-row label { font-size: 0.75rem; color: #888; }
+    .filter-row select {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 6px 12px;
+      color: #e0e0e8;
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <a href="/prompt/{{ prompt_id }}" class="back-link">&larr; Back to {{ prompt_id }}</a>
+      <h1>{{ prompt_id }}: {{ prompt_label }}</h1>
+      <p class="header-subtitle">Entity mentions across all snapshots</p>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-card">
+        <div class="summary-value">{{ data.total_responses }}</div>
+        <div class="summary-label">Responses</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.entities | length }}</div>
+        <div class="summary-label">Unique Entities</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ data.rows | length }}</div>
+        <div class="summary-label">Total Mentions</div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <label>Filter by platform:</label>
+      <select id="filterPlatform" onchange="filterTable()">
+        <option value="">All</option>
+        <option value="chatgpt">ChatGPT</option>
+        <option value="gemini">Gemini</option>
+        <option value="perplexity">Perplexity</option>
+      </select>
+      <label>Filter by date:</label>
+      <select id="filterDate" onchange="filterTable()">
+        <option value="">All</option>
+        {% for date in dates %}
+        <option value="{{ date }}">{{ date }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <table class="data-table" id="entityTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Source</th>
+          <th>Rank</th>
+          <th>Entity</th>
+          <th>Type</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data.rows %}
+        <tr data-platform="{{ row.source }}" data-date="{{ row.date }}">
+          <td>{{ row.date }}</td>
+          <td><span class="platform-badge {{ row.source }}">{{ row.source }}</span></td>
+          <td class="rank-cell">{{ row.rank }}</td>
+          <td class="entity-cell">{{ row.entity }}</td>
+          <td class="type-cell">{{ row.entity_type }}</td>
+          <td class="explanation-cell">{{ row.explanation[:200] }}{% if row.explanation|length > 200 %}...{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function filterTable() {
+      const platform = document.getElementById('filterPlatform').value;
+      const date = document.getElementById('filterDate').value;
+      document.querySelectorAll('#entityTable tbody tr').forEach(row => {
+        const matchPlatform = !platform || row.dataset.platform === platform;
+        const matchDate = !date || row.dataset.date === date;
+        row.style.display = matchPlatform && matchDate ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>"""
+
+
 @app.route("/")
 def index():
     data = _load_data()
@@ -1558,6 +2104,109 @@ def api_prompt_timeline(prompt_id):
 
     comparison = compare_rankings_over_time(data["by_prompt"][prompt_id])
     return jsonify(comparison)
+
+
+@app.route("/source-analysis")
+def source_analysis():
+    """Show source/citation analysis with per-prompt filtering."""
+    all_data = _load_data()
+    selected_prompt = request.args.get("prompt", "all")
+
+    # Collect all available prompts and their text
+    all_prompts = sorted(all_data["by_prompt"].keys(), key=lambda x: (x[0], int(x[1:]) if x[1:].isdigit() else 0))
+    prompt_texts = {}
+    for prompt_id, entries in all_data["by_prompt"].items():
+        if entries and prompt_id not in prompt_texts:
+            prompt_texts[prompt_id] = entries[0]["data"].get("question", "")
+
+    # Aggregate source data
+    source_counts = {}
+    source_details = {}
+    prompt_run_count = 0
+
+    for prompt_id, entries in all_data["by_prompt"].items():
+        if selected_prompt != "all" and prompt_id != selected_prompt:
+            continue
+        for entry in entries:
+            prompt_run_count += 1
+            sources = entry["data"].get("sources", [])
+            for source in sources:
+                url = source.get("url", "")
+                if not url:
+                    continue
+                domain = _extract_domain(url)
+                if not domain:
+                    continue
+                source_counts[domain] = source_counts.get(domain, 0) + 1
+                if domain not in source_details:
+                    source_details[domain] = {"urls": set()}
+                source_details[domain]["urls"].add(url)
+
+    # Calculate averages
+    total_citations = sum(source_counts.values())
+    avg_per_run = round(total_citations / prompt_run_count, 1) if prompt_run_count > 0 else 0
+
+    # Build frequency table with categorization
+    frequency_table = []
+    for domain, count in sorted(source_counts.items(), key=lambda x: -x[1]):
+        category = _categorize_source(domain)
+        avg_count = round(count / prompt_run_count, 2) if prompt_run_count > 0 else 0
+        frequency_table.append({
+            "domain": domain,
+            "frequency": count,
+            "avg_frequency": avg_count,
+            "type": category,
+            "sample_urls": list(source_details[domain]["urls"])[:3],
+        })
+
+    # Aggregate by type
+    by_type = {}
+    for item in frequency_table:
+        t = item["type"]
+        if t not in by_type:
+            by_type[t] = {"count": 0, "domains": []}
+        by_type[t]["count"] += item["frequency"]
+        by_type[t]["domains"].append(item["domain"])
+
+    by_type = dict(sorted(by_type.items(), key=lambda x: -x[1]["count"]))
+
+    # Get selected prompt text
+    selected_prompt_text = prompt_texts.get(selected_prompt, "") if selected_prompt != "all" else ""
+
+    data = {
+        "frequency_table": frequency_table,
+        "by_type": by_type,
+        "total_citations": total_citations,
+        "unique_sources": len(source_counts),
+        "total_runs": len(all_data["runs"]),
+        "all_prompts": all_prompts,
+        "selected_prompt": selected_prompt,
+        "selected_prompt_text": selected_prompt_text,
+        "prompt_run_count": prompt_run_count,
+        "avg_per_run": avg_per_run,
+    }
+
+    return render_template_string(SOURCE_ANALYSIS_TEMPLATE, data=data)
+
+
+@app.route("/prompt/<prompt_id>/entities")
+def prompt_entities(prompt_id):
+    """Show entity mentions table for a prompt (like Example P4.png)."""
+    data = gather_prompt_results(prompt_id)
+
+    if not data["rows"]:
+        return f"<h1>No entity data found for prompt '{prompt_id}'</h1>", 404
+
+    # Get unique dates for filter
+    dates = sorted(set(row["date"] for row in data["rows"]))
+
+    return render_template_string(
+        ENTITY_TABLE_TEMPLATE,
+        prompt_id=prompt_id,
+        prompt_label=data["prompt_label"],
+        data=data,
+        dates=dates,
+    )
 
 
 if __name__ == "__main__":

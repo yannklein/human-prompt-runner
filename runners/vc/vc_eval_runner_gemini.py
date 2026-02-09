@@ -25,7 +25,13 @@ from runners.company.company_runner_gemini import PromptRunner
 
 # BigQuery upload helper
 try:
-    from bq_helper import upload_result, ensure_tables_exist, get_completed_prompts
+    from bq_helper import (
+        upload_result,
+        ensure_tables_exist,
+        ensure_all_tables_exist,
+        get_completed_prompts,
+        upload_sources,
+    )
     BQ_AVAILABLE = True
 except ImportError:
     BQ_AVAILABLE = False
@@ -78,8 +84,8 @@ async def main():
     # Ensure BigQuery tables exist
     if BQ_AVAILABLE:
         try:
-            ensure_tables_exist()
-            print("BigQuery tables verified")
+            ensure_all_tables_exist()
+            print("BigQuery tables verified (including sources_analysis)")
         except Exception as e:
             print(f"Warning: Could not verify BigQuery tables: {e}")
 
@@ -142,6 +148,12 @@ async def main():
                 if BQ_AVAILABLE:
                     if upload_result(result, run_folder_name):
                         print(f"Uploaded to BigQuery: {p['id']}_{name}")
+
+                        # Upload sources
+                        if upload_sources(result, run_folder_name):
+                            sources_count = len(result.get("sources", []))
+                            if sources_count > 0:
+                                print(f"  Uploaded {sources_count} sources")
                     else:
                         print(f"BigQuery upload failed, saving locally: {output_path}")
                         with open(output_path, "w", encoding="utf-8") as f:

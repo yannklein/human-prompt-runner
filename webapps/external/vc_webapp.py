@@ -22,6 +22,9 @@ from pathlib import Path
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from collections import Counter
+from urllib.parse import urlparse
+
 from flask import Flask, render_template_string, jsonify, request
 
 from vc_analysis import (
@@ -35,6 +38,58 @@ from vc_analysis import (
 )
 
 app = Flask(__name__)
+
+# Prompt keywords for external display
+PROMPT_KEYWORDS = {
+    "VP1": "Quantum VC Landscape",
+    "VP2": "Investment Thesis",
+    "VP3": "Portfolio Companies",
+    "VP4": "Deal Flow",
+    "VP5": "Value Add",
+    "VP6": "Team Expertise",
+    "VP7": "Fund Size",
+    "VP8": "Investment Stage",
+    "VP9": "Geographic Focus",
+    "VP10": "Follow-on Capability",
+    "VP11": "Track Record",
+    "VP12": "Network Access",
+    "VP13": "Technical Support",
+    "VP14": "Market Position",
+    "VP15": "Reputation",
+    "VP16": "Exit Strategy",
+    "VP17": "Sector Depth",
+    "VP18": "LP Base",
+    "VP19": "Decision Speed",
+    "VP20": "Founder Support",
+}
+
+SOURCE_TYPE_PATTERNS = {
+    "Quantum Media": ["quantum", "spinquanta", "thequantuminsider"],
+    "Tech Media": ["techcrunch", "wired", "venturebeat"],
+    "VC / Investment Firm": ["ventures", "capital", "vc", "crunchbase"],
+    "Financial Media": ["bloomberg", "reuters", "forbes"],
+    "Social / UGC": ["linkedin", "twitter", "medium"],
+}
+
+
+def _extract_domain(url: str) -> str:
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        if domain.startswith("www."):
+            domain = domain[4:]
+        return domain
+    except Exception:
+        return url
+
+
+def _categorize_source(domain: str) -> str:
+    domain_lower = domain.lower()
+    for source_type, patterns in SOURCE_TYPE_PATTERNS.items():
+        for pattern in patterns:
+            if pattern in domain_lower:
+                return source_type
+    return "Other"
 
 
 def _load_all_vc_data():
@@ -1328,6 +1383,164 @@ def compare():
 @app.route("/api/data")
 def api_data():
     return jsonify(_load_all_vc_data())
+
+
+@app.route("/source-analysis")
+def source_analysis():
+    """Show source/citation analysis with per-prompt and per-VC filtering (keywords only)."""
+    vc_data = _load_all_vc_data()
+    selected_prompt = request.args.get("prompt", "all")
+    selected_vc = request.args.get("vc", "all")
+
+    # Collect all available VCs
+    all_vcs = sorted(vc_data.keys())
+
+    all_prompts = set()
+    for vc_name, data in vc_data.items():
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                all_prompts.add(prompt["prompt_id"])
+    all_prompts = sorted(all_prompts, key=lambda x: (x[:2], int(x[2:]) if x[2:].isdigit() else 0))
+
+    all_sources = []
+    prompt_run_count = 0
+    for vc_name, data in vc_data.items():
+        # Filter by selected VC
+        if selected_vc != "all" and vc_name != selected_vc:
+            continue
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                if selected_prompt != "all" and prompt["prompt_id"] != selected_prompt:
+                    continue
+                for pa in prompt["platform_answers"]:
+                    prompt_run_count += 1
+                    for source in pa.get("sources", []):
+                        url = source.get("url", "")
+                        if url:
+                            domain = _extract_domain(url)
+                            all_sources.append({"domain": domain, "type": _categorize_source(domain)})
+
+    domain_counts = Counter(s["domain"] for s in all_sources)
+    type_counts = Counter(s["type"] for s in all_sources)
+
+    total_citations = len(all_sources)
+    avg_per_run = round(total_citations / prompt_run_count, 1) if prompt_run_count > 0 else 0
+
+    frequency_table = []
+    for domain, count in domain_counts.most_common():
+        source_type = next((s["type"] for s in all_sources if s["domain"] == domain), "Other")
+        avg_count = round(count / prompt_run_count, 2) if prompt_run_count > 0 else 0
+        frequency_table.append({"domain": domain, "frequency": count, "avg_frequency": avg_count, "type": source_type})
+
+    max_frequency = frequency_table[0]["frequency"] if frequency_table else 1
+    selected_prompt_keywords = PROMPT_KEYWORDS.get(selected_prompt, "") if selected_prompt != "all" else ""
+
+    return render_template_string(
+        SOURCE_ANALYSIS_TEMPLATE,
+        total_citations=total_citations,
+        unique_sources=len(domain_counts),
+        source_types=dict(type_counts.most_common()),
+        frequency_table=frequency_table,
+        max_frequency=max_frequency,
+        all_prompts=all_prompts,
+        selected_prompt=selected_prompt,
+        selected_prompt_keywords=selected_prompt_keywords,
+        prompt_run_count=prompt_run_count,
+        avg_per_run=avg_per_run,
+        prompt_keywords=PROMPT_KEYWORDS,
+        all_vcs=all_vcs,
+        selected_vc=selected_vc,
+    )
+
+
+SOURCE_ANALYSIS_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Analysis - VC Evaluations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e0e0e8; min-height: 100vh; line-height: 1.5; }
+    .app { max-width: 1200px; margin: 0 auto; padding: 40px 32px 100px; }
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .back-link { font-size: 0.75rem; color: #888; margin-bottom: 12px; display: inline-block; }
+    .header h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; }
+    .header-subtitle { font-size: 0.9rem; color: #888; }
+    .filter-section { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
+    .filter-label { font-size: 0.75rem; font-weight: 600; color: #888; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .prompt-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .prompt-pill { padding: 6px 12px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: #888; text-decoration: none; transition: all 0.15s; }
+    .prompt-pill:hover { background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: #a5b4fc; text-decoration: none; }
+    .prompt-pill.active { background: rgba(99,102,241,0.15); border-color: #6366f1; color: #a5b4fc; }
+    .keyword-box { background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.15); border-radius: 10px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.85rem; color: #a5b4fc; font-weight: 500; }
+    .summary-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+    .summary-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 16px 24px; text-align: center; flex: 1; min-width: 120px; }
+    .summary-value { font-size: 1.6rem; font-weight: 700; color: #a5b4fc; }
+    .summary-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+    .section-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 16px; }
+    .source-bar-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .source-domain { width: 180px; font-size: 0.82rem; font-weight: 500; }
+    .source-bar-container { flex: 1; height: 18px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden; }
+    .source-bar { height: 100%; background: linear-gradient(90deg, #6366f1, #a5b4fc); border-radius: 4px; }
+    .source-count { width: 50px; text-align: right; font-weight: 600; font-size: 0.82rem; color: #a5b4fc; }
+    .source-avg { width: 60px; text-align: right; font-size: 0.72rem; color: #888; }
+    .no-data { text-align: center; padding: 60px 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <a href="/" class="back-link">&larr; Back to VCs</a>
+      <h1>Source Analysis</h1>
+      <p class="header-subtitle">Citation frequency {% if selected_vc != 'all' %}for {{ selected_vc }}{% endif %}{% if selected_prompt != 'all' %} ({{ selected_prompt }}){% endif %}{% if selected_vc == 'all' and selected_prompt == 'all' %}across all VCs and prompts{% endif %}</p>
+    </div>
+    <div class="filter-section">
+      <span class="filter-label">Filter by VC:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_prompt != 'all' %}?prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_vc == 'all' else '' }}">All</a>
+        {% for vc in all_vcs %}
+        <a href="/source-analysis?vc={{ vc }}{% if selected_prompt != 'all' %}&prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_vc == vc else '' }}">{{ vc }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="filter-section">
+      <span class="filter-label">Filter by Prompt:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_vc != 'all' %}?vc={{ selected_vc }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == 'all' else '' }}">All</a>
+        {% for pid in all_prompts %}
+        <a href="/source-analysis?prompt={{ pid }}{% if selected_vc != 'all' %}&vc={{ selected_vc }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == pid else '' }}" title="{{ prompt_keywords.get(pid, '') }}">{{ pid }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% if selected_prompt != 'all' and selected_prompt_keywords %}
+    <div class="keyword-box">{{ selected_prompt }}: {{ selected_prompt_keywords }}</div>
+    {% endif %}
+    {% if frequency_table %}
+    <div class="summary-row">
+      <div class="summary-card"><div class="summary-value">{{ total_citations }}</div><div class="summary-label">Total Citations</div></div>
+      <div class="summary-card"><div class="summary-value">{{ avg_per_run }}</div><div class="summary-label">Avg per Run</div></div>
+      <div class="summary-card"><div class="summary-value">{{ unique_sources }}</div><div class="summary-label">Unique Sources</div></div>
+      <div class="summary-card"><div class="summary-value">{{ prompt_run_count }}</div><div class="summary-label">Prompt Runs</div></div>
+    </div>
+    <h3 class="section-title">Top Sources ({{ frequency_table | length }} domains)</h3>
+    {% for s in frequency_table[:30] %}
+    <div class="source-bar-row">
+      <div class="source-domain">{{ s.domain }}</div>
+      <div class="source-bar-container"><div class="source-bar" style="width: {{ (s.frequency / max_frequency * 100) | int }}%"></div></div>
+      <div class="source-count">{{ s.frequency }}</div>
+      <div class="source-avg">{{ s.avg_frequency }}/run</div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="no-data"><p>No sources found for this prompt.</p><p><a href="/source-analysis">View all sources</a></p></div>
+    {% endif %}
+  </div>
+</body>
+</html>"""
 
 
 if __name__ == "__main__":

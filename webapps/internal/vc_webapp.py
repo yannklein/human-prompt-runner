@@ -22,6 +22,9 @@ from pathlib import Path
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
+from collections import Counter
+from urllib.parse import urlparse
+
 from flask import Flask, render_template_string, jsonify, request
 
 from vc_analysis import (
@@ -35,6 +38,44 @@ from vc_analysis import (
 )
 
 app = Flask(__name__)
+
+
+# Source type classification patterns (reused from ecosystem_analysis.py)
+SOURCE_TYPE_PATTERNS = {
+    "Quantum Media": ["quantum", "spinquanta", "thequantuminsider", "qureca"],
+    "Tech Media": ["techcrunch", "wired", "arstechnica", "theverge", "venturebeat", "zdnet", "cnet", "engadget"],
+    "Financial Media": ["bloomberg", "reuters", "cnbc", "fortune", "forbes", "wsj", "ft.com", "marketwatch"],
+    "VC / Investment Firm": ["ventures", "capital", "vc", "crunchbase", "pitchbook", "dealroom"],
+    "Academic / Research": ["arxiv", "nature", "science", "edu", "ieee", "acm.org", "researchgate", "scholar"],
+    "Startup Media": ["eu-startups", "sifted", "techfundingnews", "techeu", "tech.eu"],
+    "Press Release": ["prnewswire", "businesswire", "globenewswire", "prbuzz"],
+    "Corporate / Vendor": [],  # Fallback for company websites
+    "Social / UGC": ["linkedin", "twitter", "x.com", "medium", "reddit", "substack"],
+    "General Knowledge": ["wikipedia", "britannica"],
+    "Government / Policy": ["gov", "europa.eu", "nsf.gov"],
+}
+
+
+def _extract_domain(url: str) -> str:
+    """Extract domain from URL."""
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        if domain.startswith("www."):
+            domain = domain[4:]
+        return domain
+    except Exception:
+        return url
+
+
+def _categorize_source(domain: str) -> str:
+    """Categorize a source domain by type."""
+    domain_lower = domain.lower()
+    for source_type, patterns in SOURCE_TYPE_PATTERNS.items():
+        for pattern in patterns:
+            if pattern in domain_lower:
+                return source_type
+    return "Corporate / Vendor"
 
 
 def _load_all_vc_data():
@@ -361,10 +402,17 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
     .source-domain {
       font-size: 0.65rem; color: #555;
     }
+    .nav-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .nav-link { font-size: 0.78rem; color: #6366f1; text-decoration: none; }
+    .nav-link:hover { color: #a5b4fc; text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="app">
+    <div class="nav-row">
+      <a class="nav-link" href="/">&larr; Back to all VCs</a>
+      <a class="nav-link" href="/source-analysis">Source Analysis &rarr;</a>
+    </div>
     <div class="header">
       <p class="header-label">VC Evaluation Scorecard</p>
       <h1>{{ vc_name }}</h1>
@@ -687,6 +735,24 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
     .compare-btn:disabled {
       opacity: 0.4; cursor: not-allowed;
     }
+
+    /* Analysis link */
+    .analysis-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: rgba(99,102,241,0.08);
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 8px;
+      font-size: 0.8rem; font-weight: 500;
+      color: #a5b4fc;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .analysis-link:hover {
+      background: rgba(99,102,241,0.15);
+      border-color: rgba(99,102,241,0.4);
+    }
   </style>
 </head>
 <body>
@@ -694,6 +760,12 @@ INDEX_TEMPLATE = r"""<!DOCTYPE html>
     <div class="header">
       <p class="header-label">VC Evaluation Scorecard</p>
       <h1>All Evaluated VCs</h1>
+      <a class="analysis-link" href="/source-analysis">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20V10M18 20V4M6 20v-4"/>
+        </svg>
+        Source Analysis
+      </a>
     </div>
 
     <div class="section-title">Individual Scorecards</div>
@@ -1244,6 +1316,350 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
 </html>"""
 
 
+SOURCE_ANALYSIS_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Analysis — VC Evaluations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app { max-width: 1200px; margin: 0 auto; padding: 48px 32px 120px; }
+
+    .back-link {
+      display: inline-block; margin-bottom: 24px;
+      font-size: 0.78rem; color: #6366f1;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #a5b4fc; text-decoration: underline; }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #6366f1; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.6rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .header-subtitle {
+      font-size: 0.9rem; color: #888;
+    }
+
+    /* Summary cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .summary-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .summary-value {
+      font-size: 2rem; font-weight: 700;
+      color: #a5b4fc; margin-bottom: 4px;
+    }
+    .summary-label {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #666;
+    }
+
+    /* Type pills */
+    .type-pills {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+    .type-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px;
+      background: rgba(99,102,241,0.08);
+      border: 1px solid rgba(99,102,241,0.2);
+      border-radius: 20px;
+      font-size: 0.75rem; font-weight: 500;
+      color: #a5b4fc;
+    }
+    .type-pill-count {
+      background: rgba(99,102,241,0.2);
+      padding: 2px 8px; border-radius: 10px;
+      font-weight: 700;
+    }
+
+    /* Chart section */
+    .chart-section {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 40px;
+    }
+    .chart-title {
+      font-size: 0.85rem; font-weight: 600;
+      color: #e0e0e8; margin-bottom: 24px;
+      text-align: center;
+    }
+    .chart-wrapper {
+      position: relative;
+      height: 400px;
+      margin-bottom: 24px;
+    }
+
+    /* Frequency bars */
+    .freq-list { margin-top: 32px; }
+    .freq-item {
+      display: grid;
+      grid-template-columns: 200px 1fr 60px 140px;
+      align-items: center;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .freq-item:last-child { border-bottom: none; }
+    .freq-domain {
+      font-size: 0.8rem; font-weight: 500;
+      color: #c0c0cc;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .freq-bar-container {
+      height: 8px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .freq-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #6366f1, #a5b4fc);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    .freq-count {
+      font-size: 0.78rem; font-weight: 700;
+      color: #a5b4fc; text-align: right;
+    }
+    .freq-type {
+      font-size: 0.68rem; font-weight: 500;
+      color: #888;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Filter section */
+    .filter-section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .filter-label { font-size: 0.75rem; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.08em; }
+    .prompt-pills { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+    .prompt-pill {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #888;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .prompt-pill:hover { background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: #a5b4fc; }
+    .prompt-pill.active { background: rgba(99,102,241,0.15); border-color: #6366f1; color: #a5b4fc; }
+    .prompt-text-box {
+      background: rgba(99,102,241,0.06);
+      border: 1px solid rgba(99,102,241,0.15);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #c0c0cc;
+    }
+    .prompt-text-label { font-size: 0.68rem; font-weight: 600; color: #6366f1; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .freq-avg { font-size: 0.68rem; color: #888; width: 60px; text-align: right; }
+    .no-data { text-align: center; padding: 60px 20px; color: #666; font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .freq-item {
+        grid-template-columns: 1fr 60px;
+      }
+      .freq-bar-container, .freq-type { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="/">&larr; Back to VC Evaluations</a>
+
+    <div class="header">
+      <p class="header-label">VC Evaluation Analysis</p>
+      <h1>Source Analysis</h1>
+      <p class="header-subtitle">Citation frequency {% if selected_vc != 'all' %}for {{ selected_vc }}{% endif %}{% if selected_prompt != 'all' %} ({{ selected_prompt }}){% endif %}{% if selected_vc == 'all' and selected_prompt == 'all' %}across all VCs and prompts{% endif %}</p>
+    </div>
+
+    <div class="filter-section">
+      <span class="filter-label">Filter by VC:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_prompt != 'all' %}?prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_vc == 'all' else '' }}">All</a>
+        {% for vc in all_vcs %}
+        <a href="/source-analysis?vc={{ vc }}{% if selected_prompt != 'all' %}&prompt={{ selected_prompt }}{% endif %}" class="prompt-pill {{ 'active' if selected_vc == vc else '' }}">{{ vc }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <span class="filter-label">Filter by Prompt:</span>
+      <div class="prompt-pills">
+        <a href="/source-analysis{% if selected_vc != 'all' %}?vc={{ selected_vc }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == 'all' else '' }}">All</a>
+        {% for pid in all_prompts %}
+        <a href="/source-analysis?prompt={{ pid }}{% if selected_vc != 'all' %}&vc={{ selected_vc }}{% endif %}" class="prompt-pill {{ 'active' if selected_prompt == pid else '' }}">{{ pid }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if selected_prompt != 'all' and selected_prompt_text %}
+    <div class="prompt-text-box">
+      <div class="prompt-text-label">Prompt {{ selected_prompt }}</div>
+      {{ selected_prompt_text }}
+    </div>
+    {% endif %}
+
+    {% if frequency_table %}
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="summary-value">{{ total_citations }}</div>
+        <div class="summary-label">Total Citations</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ avg_per_run }}</div>
+        <div class="summary-label">Avg per Run</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ unique_sources }}</div>
+        <div class="summary-label">Unique Sources</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-value">{{ prompt_run_count }}</div>
+        <div class="summary-label">Prompt Runs</div>
+      </div>
+    </div>
+
+    <div class="type-pills">
+      {% for type_name, count in source_types.items() %}
+      <span class="type-pill">
+        {{ type_name }}
+        <span class="type-pill-count">{{ count }}</span>
+      </span>
+      {% endfor %}
+    </div>
+
+    <div class="chart-section">
+      <h3 class="chart-title">Top 25 Sources by Frequency</h3>
+      <div class="chart-wrapper">
+        <canvas id="sourceChart"></canvas>
+      </div>
+
+      <div class="freq-list">
+        {% for item in frequency_table[:50] %}
+        <div class="freq-item">
+          <span class="freq-domain">{{ item.domain }}</span>
+          <div class="freq-bar-container">
+            <div class="freq-bar" style="width: {{ (item.frequency / max_frequency * 100) | int }}%"></div>
+          </div>
+          <span class="freq-count">{{ item.frequency }}</span>
+          <span class="freq-avg">{{ item.avg_frequency }}/run</span>
+          <span class="freq-type">{{ item.type }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% else %}
+    <div class="no-data">
+      <p>No sources found for prompt {{ selected_prompt }}.</p>
+      <p style="margin-top: 8px;"><a href="/source-analysis" style="color: #6366f1;">View all sources</a></p>
+    </div>
+    {% endif %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    const chartData = {{ chart_data | safe }};
+    if (chartData.labels && chartData.labels.length > 0) {
+    const ctx = document.getElementById('sourceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: chartData.labels,
+        datasets: [{
+          label: 'Citations',
+          data: chartData.values,
+          backgroundColor: 'rgba(99, 102, 241, 0.6)',
+          borderColor: 'rgba(99, 102, 241, 0.8)',
+          borderWidth: 1,
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: 'rgba(255,255,255,0.5)', font: { size: 11 } },
+          },
+          y: {
+            grid: { display: false },
+            ticks: { color: 'rgba(255,255,255,0.7)', font: { size: 11 } },
+          }
+        }
+      }
+    });
+    }
+  </script>
+</body>
+</html>"""
+
+
 @app.route("/")
 def index():
     vc_data = _load_all_vc_data()
@@ -1325,6 +1741,113 @@ def compare():
         merged_categories=merged_categories,
         categories1_json=json.dumps(data1["categories"]),
         categories2_json=json.dumps(data2["categories"]),
+    )
+
+
+@app.route("/source-analysis")
+def source_analysis():
+    """Show source/citation analysis with per-prompt and per-VC filtering."""
+    vc_data = _load_all_vc_data()
+    selected_prompt = request.args.get("prompt", "all")
+    selected_vc = request.args.get("vc", "all")
+
+    # Collect all available VCs
+    all_vcs = sorted(vc_data.keys())
+
+    # Collect all available prompts
+    all_prompts = set()
+    for vc_name, data in vc_data.items():
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                all_prompts.add(prompt["prompt_id"])
+    all_prompts = sorted(all_prompts, key=lambda x: (x[:2], int(x[2:]) if x[2:].isdigit() else 0))
+
+    # Collect sources and prompt texts (filtered by prompt and/or VC if specified)
+    all_sources = []
+    prompt_run_count = 0
+    prompt_texts = {}
+    for vc_name, data in vc_data.items():
+        # Filter by selected VC
+        if selected_vc != "all" and vc_name != selected_vc:
+            continue
+        for cat in data["categories"]:
+            for prompt in cat["prompts"]:
+                pid = prompt["prompt_id"]
+                # Collect prompt text from the filtered VC
+                if pid not in prompt_texts and prompt["platform_answers"]:
+                    prompt_texts[pid] = prompt["platform_answers"][0].get("question", "")
+                # Filter by selected prompt
+                if selected_prompt != "all" and pid != selected_prompt:
+                    continue
+                for pa in prompt["platform_answers"]:
+                    prompt_run_count += 1
+                    for source in pa.get("sources", []):
+                        url = source.get("url", "")
+                        if url:
+                            domain = _extract_domain(url)
+                            all_sources.append({
+                                "url": url,
+                                "domain": domain,
+                                "type": _categorize_source(domain),
+                                "title": source.get("title", ""),
+                            })
+
+    # Count frequencies
+    domain_counts = Counter(s["domain"] for s in all_sources)
+    type_counts = Counter(s["type"] for s in all_sources)
+
+    # Calculate averages
+    total_citations = len(all_sources)
+    avg_per_run = round(total_citations / prompt_run_count, 1) if prompt_run_count > 0 else 0
+
+    # Build frequency table
+    frequency_table = []
+    for domain, count in domain_counts.most_common():
+        source_type = next((s["type"] for s in all_sources if s["domain"] == domain), "Unknown")
+        avg_count = round(count / prompt_run_count, 2) if prompt_run_count > 0 else 0
+        frequency_table.append({
+            "domain": domain,
+            "frequency": count,
+            "avg_frequency": avg_count,
+            "type": source_type,
+        })
+
+    max_frequency = frequency_table[0]["frequency"] if frequency_table else 1
+
+    # Chart data for top 25
+    top_25 = frequency_table[:25]
+    chart_data = {
+        "labels": [item["domain"] for item in top_25],
+        "values": [item["frequency"] for item in top_25],
+    }
+
+    # Get selected prompt text and replace VC names appropriately
+    selected_prompt_text = prompt_texts.get(selected_prompt, "") if selected_prompt != "all" else ""
+    if selected_prompt_text:
+        # Replace any VC name in the prompt text
+        for vc_name in all_vcs:
+            if vc_name in selected_prompt_text:
+                if selected_vc == "all":
+                    selected_prompt_text = selected_prompt_text.replace(vc_name, "{{VC}}")
+                else:
+                    selected_prompt_text = selected_prompt_text.replace(vc_name, selected_vc)
+                break
+
+    return render_template_string(
+        SOURCE_ANALYSIS_TEMPLATE,
+        total_citations=total_citations,
+        unique_sources=len(domain_counts),
+        source_types=dict(type_counts.most_common()),
+        frequency_table=frequency_table,
+        max_frequency=max_frequency,
+        chart_data=json.dumps(chart_data),
+        all_prompts=all_prompts,
+        selected_prompt=selected_prompt,
+        selected_prompt_text=selected_prompt_text,
+        prompt_run_count=prompt_run_count,
+        avg_per_run=avg_per_run,
+        all_vcs=all_vcs,
+        selected_vc=selected_vc,
     )
 
 
