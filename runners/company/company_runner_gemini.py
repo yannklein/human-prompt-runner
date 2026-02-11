@@ -452,6 +452,7 @@ async def main():
     parser.add_argument("--profile-dir", default="gemini_profile", help="Browser profile directory for login persistence")
     parser.add_argument("--delay", type=float, default=5.0, help="Seconds to wait between prompts")
     parser.add_argument("--test", action="store_true", help="Run only the first prompt (and first company)")
+    parser.add_argument("--companies-file", default="quantum_sensing_companies.txt", help="Path to companies list file")
     args = parser.parse_args()
 
     runner = PromptRunner(
@@ -464,7 +465,7 @@ async def main():
     )
 
     prompts = runner.load_prompts()
-    companies = runner.load_companies()
+    companies = runner.load_companies(args.companies_file)
 
     if args.test:
         prompts = prompts[:1]
@@ -485,7 +486,7 @@ async def main():
     if BQ_AVAILABLE:
         try:
             ensure_all_tables_exist()
-            print("BigQuery tables verified (including sources_analysis)")
+            print("BigQuery per-prompt tables verified")
         except Exception as e:
             print(f"Warning: Could not verify BigQuery tables: {e}")
 

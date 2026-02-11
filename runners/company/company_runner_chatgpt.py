@@ -375,6 +375,7 @@ async def main():
     parser.add_argument("--delay", type=float, default=5.0, help="Seconds to wait between prompts")
     parser.add_argument("--test", action="store_true", help="Run only the first prompt (and first company)")
     parser.add_argument("--resume", type=str, help="Resume from existing run folder (e.g., 2026-02-07_16-31-22_chatgpt)")
+    parser.add_argument("--companies-file", default="quantum_sensing_companies.txt", help="Path to companies list file")
     args = parser.parse_args()
 
     runner = PromptRunner(
@@ -387,7 +388,7 @@ async def main():
     )
 
     prompts = runner.load_prompts()
-    companies = runner.load_companies()
+    companies = runner.load_companies(args.companies_file)
 
     if args.test:
         prompts = prompts[:1]
@@ -418,7 +419,7 @@ async def main():
     if BQ_AVAILABLE:
         try:
             ensure_all_tables_exist()
-            print("BigQuery tables verified (including sources_analysis)")
+            print("BigQuery per-prompt tables verified")
             if args.resume:
                 completed_prompts = get_completed_prompts(run_folder_name)
                 print(f"Found {len(completed_prompts)} completed prompts in BigQuery")

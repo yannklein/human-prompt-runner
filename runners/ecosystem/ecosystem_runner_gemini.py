@@ -29,20 +29,12 @@ try:
         ensure_tables_exist,
         ensure_all_tables_exist,
         get_completed_prompts,
-        upload_entity_mention,
         upload_sources,
     )
     BQ_AVAILABLE = True
 except ImportError:
     BQ_AVAILABLE = False
     print("Warning: bq_helper not available, results will only be saved locally")
-
-# Import entity extraction for ecosystem prompts
-try:
-    from ecosystem_analysis import extract_rankings_from_answer
-    EXTRACTION_AVAILABLE = True
-except ImportError:
-    EXTRACTION_AVAILABLE = False
 
 
 async def main():
@@ -92,7 +84,7 @@ async def main():
     if BQ_AVAILABLE:
         try:
             ensure_all_tables_exist()
-            print("BigQuery tables verified (including entity_mentions and sources_analysis)")
+            print("BigQuery per-prompt tables verified")
             if args.resume:
                 completed_prompts = get_completed_prompts(run_folder_name)
                 print(f"Found {len(completed_prompts)} completed prompts in BigQuery")
@@ -159,26 +151,6 @@ async def main():
             if BQ_AVAILABLE:
                 if upload_result(result, run_folder_name):
                     print(f"Uploaded to BigQuery: {prompt_key}")
-
-                    # Upload entity mentions for ecosystem prompts (P1-P9)
-                    if EXTRACTION_AVAILABLE and result["answer"] != "FAILED":
-                        try:
-                            entities = extract_rankings_from_answer(result["answer"])
-                            for entity in entities:
-                                upload_entity_mention(
-                                    run_folder=run_folder_name,
-                                    prompt_id=p["id"],
-                                    platform="gemini",
-                                    entity_name=entity["entity"]["name"],
-                                    entity_normalized=entity["entity"]["normalized"],
-                                    entity_type=entity["entity"]["type"],
-                                    mention_rank=entity["rank"],
-                                    explanation=entity.get("explanation", "")[:500],
-                                )
-                            if entities:
-                                print(f"  Uploaded {len(entities)} entity mentions")
-                        except Exception as e:
-                            print(f"  Warning: Entity extraction failed: {e}")
 
                     # Upload sources
                     if upload_sources(result, run_folder_name):

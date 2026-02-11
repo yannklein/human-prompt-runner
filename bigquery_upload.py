@@ -3,6 +3,7 @@
 BigQuery Upload Script
 
 Uploads results data to BigQuery for long-term storage and analysis.
+Routes each result to its per-prompt table via bq_helper.
 Supports incremental uploads and full re-uploads.
 
 Usage:
@@ -12,7 +13,6 @@ Usage:
 
 import argparse
 import json
-import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,23 +21,13 @@ from typing import Optional
 from google.cloud import bigquery
 from google.cloud.exceptions import NotFound
 
+from bq_helper import (
+    ensure_all_tables_exist,
+    upload_result,
+    upload_sources,
+    PROMPT_TABLE_CONFIG,
+)
 
-# Schema definitions
-RESULTS_SCHEMA = [
-    bigquery.SchemaField("id", "STRING", mode="REQUIRED", description="Unique row ID"),
-    bigquery.SchemaField("prompt_id", "STRING", mode="REQUIRED", description="Prompt identifier (P1, VP6, etc.)"),
-    bigquery.SchemaField("entity_type", "STRING", mode="REQUIRED", description="company or vc"),
-    bigquery.SchemaField("entity_name", "STRING", mode="NULLABLE", description="Company or VC name"),
-    bigquery.SchemaField("question", "STRING", mode="NULLABLE", description="The full question asked"),
-    bigquery.SchemaField("answer", "STRING", mode="NULLABLE", description="AI response"),
-    bigquery.SchemaField("score", "FLOAT64", mode="NULLABLE", description="Extracted numeric score (1-10)"),
-    bigquery.SchemaField("model", "STRING", mode="NULLABLE", description="AI model used"),
-    bigquery.SchemaField("platform", "STRING", mode="NULLABLE", description="Normalized platform name"),
-    bigquery.SchemaField("run_timestamp", "TIMESTAMP", mode="NULLABLE", description="When the prompt was run"),
-    bigquery.SchemaField("run_folder", "STRING", mode="NULLABLE", description="Source folder name"),
-    bigquery.SchemaField("sources", "JSON", mode="NULLABLE", description="Cited sources as JSON"),
-    bigquery.SchemaField("uploaded_at", "TIMESTAMP", mode="REQUIRED", description="When uploaded to BQ"),
-]
 
 RUNS_SCHEMA = [
     bigquery.SchemaField("run_folder", "STRING", mode="REQUIRED", description="Folder name"),
@@ -59,12 +49,6 @@ def _normalize_ai_name(model_name: str) -> str:
     elif "perplexity" in model_lower:
         return "perplexity"
     return model_name
-
-
-def _extract_score(answer: str) -> Optional[float]:
-    """Extract first valid score (1-10) from answer text."""
-    numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", answer)]
-    return next((n for n in numbers if n <= 10), None)
 
 
 def _extract_date_from_folder(folder_name: str) -> Optional[str]:
@@ -103,7 +87,6 @@ def create_or_update_table(
     try:
         existing_table = client.get_table(table_ref)
         if force_recreate or not existing_table.schema:
-            # Drop and recreate if no schema or force_recreate
             print(f"Recreating table {table_id} (no schema or force_recreate)...")
             client.delete_table(table_ref)
             table = bigquery.Table(table_ref, schema=schema)
@@ -130,14 +113,21 @@ def get_uploaded_folders(client: bigquery.Client, dataset_id: str) -> set:
         return set()
 
 
-def load_results_from_folder(folder_path: str) -> list[dict]:
-    """Load all JSON results from a folder."""
+def upload_folder(
+    client: bigquery.Client,
+    project_id: str,
+    dataset_id: str,
+    folder_path: str,
+):
+    """Upload a single folder's results to per-prompt BigQuery tables."""
     folder = Path(folder_path)
     folder_name = folder.name
-    run_date = _extract_date_from_folder(folder_name)
-    upload_time = datetime.now(timezone.utc).isoformat()
 
-    results = []
+    print(f"Processing {folder_name}...")
+
+    uploaded_count = 0
+    sources_count = 0
+
     for json_file in folder.glob("*.json"):
         if json_file.name.startswith("."):
             continue
@@ -153,79 +143,51 @@ def load_results_from_folder(folder_path: str) -> list[dict]:
         if not prompt_id:
             continue
 
-        # Determine entity type
-        entity_name = data.get("company") or data.get("vc")
-        if prompt_id.startswith("VP"):
-            entity_type = "vc"
-        elif entity_name:
-            entity_type = "company"
-        else:
-            entity_type = "ecosystem"
+        # Skip unknown prompt IDs
+        if prompt_id not in PROMPT_TABLE_CONFIG:
+            print(f"  Warning: Unknown prompt_id '{prompt_id}' in {json_file.name}, skipping")
+            continue
 
-        answer = data.get("answer", "")
-        model = data.get("model", "")
+        # Upload result to per-prompt table
+        if upload_result(data, folder_name, project_id, dataset_id):
+            uploaded_count += 1
 
-        # Create unique ID
-        row_id = f"{folder_name}_{prompt_id}_{entity_name or 'category'}_{model}"
-        row_id = re.sub(r"[^a-zA-Z0-9_-]", "_", row_id)
+        # Upload sources to per-prompt sources table
+        if upload_sources(data, folder_name, project_id, dataset_id):
+            src_count = len(data.get("sources", []))
+            sources_count += src_count
 
-        results.append({
-            "id": row_id,
-            "prompt_id": prompt_id,
-            "entity_type": entity_type,
-            "entity_name": entity_name,
-            "question": data.get("question"),
-            "answer": answer,
-            "score": _extract_score(answer) if answer else None,
-            "model": model,
-            "platform": _normalize_ai_name(model),
-            "run_timestamp": data.get("timestamp"),
-            "run_folder": folder_name,
-            "sources": json.dumps(data.get("sources", [])),
-            "uploaded_at": upload_time,
-        })
-
-    return results
-
-
-def upload_folder(
-    client: bigquery.Client,
-    dataset_id: str,
-    folder_path: str,
-):
-    """Upload a single folder's results to BigQuery."""
-    folder = Path(folder_path)
-    folder_name = folder.name
-
-    print(f"Processing {folder_name}...")
-
-    # Load results
-    results = load_results_from_folder(folder_path)
-    if not results:
-        print(f"  No results found in {folder_name}")
+    if uploaded_count == 0:
+        print(f"  No results uploaded from {folder_name}")
         return
 
-    # Upload results
-    results_table = f"{client.project}.{dataset_id}.results"
-    errors = client.insert_rows_json(results_table, results)
-    if errors:
-        print(f"  Errors uploading results: {errors[:3]}")
-    else:
-        print(f"  Uploaded {len(results)} result rows")
+    print(f"  Uploaded {uploaded_count} results, {sources_count} sources to per-prompt tables")
 
     # Add run metadata
     run_date = _extract_date_from_folder(folder_name)
     run_type = _get_run_type(folder_name)
+
+    # Detect platform from first result file
     platform = None
-    if results:
-        platform = results[0].get("platform")
+    for json_file in folder.glob("*.json"):
+        if json_file.name.startswith("."):
+            continue
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            model = data.get("model", "")
+            if model:
+                platform = _normalize_ai_name(model)
+                break
+        except Exception:
+            continue
 
     run_row = {
         "run_folder": folder_name,
         "run_date": run_date,
         "platform": platform,
         "run_type": run_type,
-        "total_prompts": len(results),
+        "total_prompts": uploaded_count,
         "uploaded_at": datetime.now(timezone.utc).isoformat(),
     }
 
@@ -241,21 +203,27 @@ def upload_all(
     results_dir: str = "results",
     full_reload: bool = False,
 ):
-    """Upload all results to BigQuery."""
+    """Upload all results to BigQuery per-prompt tables."""
     client = bigquery.Client(project=project_id)
 
-    # Create dataset and tables
+    # Create dataset and all per-prompt tables
     create_dataset_if_not_exists(client, dataset_id)
-    create_or_update_table(client, dataset_id, "results", RESULTS_SCHEMA)
+    ensure_all_tables_exist(project_id, dataset_id)
     create_or_update_table(client, dataset_id, "runs", RUNS_SCHEMA)
 
     # Get already uploaded folders
     if full_reload:
         uploaded = set()
-        # Truncate tables for full reload
-        print("Full reload requested - truncating tables...")
-        client.query(f"TRUNCATE TABLE `{project_id}.{dataset_id}.results`").result()
+        print("Full reload requested - truncating runs table...")
         client.query(f"TRUNCATE TABLE `{project_id}.{dataset_id}.runs`").result()
+        # Truncate all per-prompt tables
+        for cfg in PROMPT_TABLE_CONFIG.values():
+            for suffix in ("", "_sources"):
+                tbl = f"{cfg['table']}{suffix}"
+                try:
+                    client.query(f"TRUNCATE TABLE `{project_id}.{dataset_id}.{tbl}`").result()
+                except Exception:
+                    pass  # Table may not exist yet
     else:
         uploaded = get_uploaded_folders(client, dataset_id)
         print(f"Found {len(uploaded)} already uploaded folders")
@@ -273,7 +241,7 @@ def upload_all(
         if folder.name in uploaded:
             continue
 
-        upload_folder(client, dataset_id, str(folder))
+        upload_folder(client, project_id, dataset_id, str(folder))
         new_count += 1
 
     print(f"\nDone! Uploaded {new_count} new folders")

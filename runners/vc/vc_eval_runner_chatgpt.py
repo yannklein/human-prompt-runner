@@ -85,7 +85,7 @@ async def main():
     if BQ_AVAILABLE:
         try:
             ensure_all_tables_exist()
-            print("BigQuery tables verified (including sources_analysis)")
+            print("BigQuery per-prompt tables verified")
         except Exception as e:
             print(f"Warning: Could not verify BigQuery tables: {e}")
 
