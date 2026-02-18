@@ -22,7 +22,7 @@ from pathlib import Path
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from flask import Flask, render_template_string, jsonify, request
+from flask import Flask, render_template_string, jsonify, request, redirect, url_for
 
 from company_analysis import (
     CATEGORIES,
@@ -70,6 +70,49 @@ def _categorize_source(domain: str) -> str:
 
 app = Flask(__name__)
 
+# ---------------------------------------------------------------------------
+# Company group registry — maps list files to display labels
+# ---------------------------------------------------------------------------
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+
+COMPANY_GROUPS = {
+    "quantum_computing_photonics_companies.txt": "Quantum Computing — Photonics",
+    "quantum_sensing_companies.txt": "Quantum Sensing",
+}
+
+
+def _load_company_groups():
+    """Read company list files and return grouped company data.
+
+    Returns:
+        (groups_by_company, all_companies_grouped) where:
+        - groups_by_company[company_name] = {
+            "group_label": str,
+            "peers": [other_companies_in_same_file]
+          }
+        - all_companies_grouped = [
+            {"label": group_label, "companies": [company_names]}
+          ]
+    """
+    groups_by_company = {}
+    all_companies_grouped = []
+
+    for filename, label in COMPANY_GROUPS.items():
+        filepath = PROJECT_ROOT / filename
+        if not filepath.exists():
+            continue
+        companies = [
+            line.strip() for line in filepath.read_text().splitlines()
+            if line.strip()
+        ]
+        all_companies_grouped.append({"label": label, "companies": companies})
+        for company in companies:
+            peers = [c for c in companies if c != company]
+            groups_by_company[company] = {"group_label": label, "peers": peers}
+
+    return groups_by_company, all_companies_grouped
+
+
 DIMENSION_WEIGHTS = {
     "Team & Ability to Attract Talent": 0.25,
     "Quality of Existing IP": 0.25,
@@ -100,17 +143,43 @@ def find_latest_company_folder(platform_suffix, results_dir="results"):
     return str(matching[0]) if matching else None
 
 
-def _load_all_company_data():
-    """Load all company evaluation data from the latest run folders."""
+def _load_all_company_data(company_filter=None):
+    """Load company evaluation data from BigQuery, with local file fallback.
+
+    Args:
+        company_filter: Optional set of company names. When provided, only load
+                        data for these companies (much faster).
+    """
+    raw_responses = {}
+    company_names = set()
+
+    # Try loading from monthly summary table first, fall back to raw BQ tables
+    try:
+        from bq_helper import load_company_data_from_monthly
+        raw_responses, company_names = load_company_data_from_monthly(
+            company_filter=company_filter,
+        )
+        if raw_responses:
+            print(f"Loaded {len(company_names)} companies from monthly summary table")
+        else:
+            raise ValueError("No data in monthly summary table")
+    except Exception as e:
+        print(f"Monthly summary load failed ({e}), trying raw BQ tables")
+        try:
+            from bq_helper import load_company_data_from_bq
+            raw_responses, company_names = load_company_data_from_bq(
+                company_filter=company_filter,
+            )
+            print(f"Loaded {len(company_names)} companies from BigQuery")
+        except Exception as e2:
+            print(f"BigQuery load failed ({e2}), falling back to local files")
+
+    # Fallback / supplement: also load from local result files
     folders = {
         "chatgpt": find_latest_company_folder("chatgpt"),
         "gemini": find_latest_company_folder("gemini"),
         "perplexity": find_latest_company_folder("perplexity"),
     }
-
-    raw_responses = {}
-    company_names = set()
-
     for platform, folder in folders.items():
         if not folder or not os.path.exists(folder):
             continue
@@ -122,9 +191,13 @@ def _load_all_company_data():
                 data = json.load(f)
             pid = data.get("prompt_id", "")
             company = data.get("company")
+            # Skip companies not in the filter
+            if company_filter and company and company not in company_filter:
+                continue
             if company:
                 company_names.add(company)
             ai = _normalize_ai_name(data.get("model", ""))
+            # Local files take precedence (overwrite BQ data if both exist)
             raw_responses[(ai, pid, company)] = data
 
     scored_prompts = {}
@@ -134,9 +207,12 @@ def _load_all_company_data():
                 for company in company_names:
                     resp = raw_responses.get((platform, pid, company))
                     if resp:
-                        answer = resp.get("answer", "")
-                        numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", answer)]
-                        score = next((n for n in numbers if n <= 10), None)
+                        # Prefer pre-computed score from monthly table
+                        score = resp.get("score")
+                        if score is None:
+                            answer = resp.get("answer", "")
+                            numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", answer)]
+                            score = next((n for n in numbers if n <= 10), None)
                         if score is not None:
                             scored_prompts.setdefault(company, {}).setdefault(pid, {})[platform] = score
 
@@ -204,6 +280,241 @@ def _load_all_company_data():
         }
 
     return company_results
+
+
+PICKER_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Evaluation — Select a Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app { max-width: 800px; margin: 0 auto; padding: 48px 32px 120px; }
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #14b8a6; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.6rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 0.85rem; color: #888;
+    }
+    .group-title {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #888; margin-bottom: 12px; margin-top: 32px;
+    }
+    .company-list { margin-bottom: 16px; }
+    .company-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #e0e0e8;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .company-item:hover {
+      border-color: rgba(20,184,166,0.4);
+      background: rgba(20,184,166,0.04);
+    }
+    .company-item-name {
+      font-weight: 600; font-size: 0.95rem;
+    }
+    .arrow { color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <p class="header-label">Company Evaluation Scorecard</p>
+      <h1>Select a Company</h1>
+      <p>Pick a company to evaluate. You'll then choose competitors to compare against.</p>
+    </div>
+
+    {% for group in groups %}
+    <div class="group-title">{{ group.label }}</div>
+    <div class="company-list">
+      {% for name in group.companies %}
+      <a class="company-item" href="/select/{{ name }}">
+        <span class="company-item-name">{{ name }}</span>
+        <span class="arrow">&#8594;</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>"""
+
+
+SELECT_TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Competitors — {{ company_name }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e8;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app { max-width: 700px; margin: 0 auto; padding: 48px 32px 120px; }
+    .back-link {
+      display: inline-block; margin-bottom: 24px;
+      font-size: 0.78rem; color: #14b8a6;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #5eead4; text-decoration: underline; }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-label {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #14b8a6; margin-bottom: 16px;
+    }
+    .header h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.2rem; font-weight: 500;
+      color: #f0f0f8; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 0.85rem; color: #888;
+    }
+    .group-badge {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 600;
+      padding: 4px 12px; border-radius: 12px;
+      background: rgba(20,184,166,0.1);
+      color: #5eead4; margin-top: 8px;
+    }
+    .section-title {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #888; margin-bottom: 16px;
+    }
+    .peer-list { margin-bottom: 32px; }
+    .peer-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 20px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .peer-item:hover { border-color: rgba(20,184,166,0.3); }
+    .peer-item input[type="checkbox"] {
+      width: 18px; height: 18px;
+      accent-color: #14b8a6;
+      cursor: pointer;
+    }
+    .peer-item label {
+      font-weight: 500; font-size: 0.9rem;
+      cursor: pointer; flex: 1;
+    }
+    .load-btn {
+      display: block; width: 100%;
+      padding: 14px 28px;
+      background: #14b8a6;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .load-btn:hover { background: #0d9488; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="/">&larr; Back to company picker</a>
+
+    <div class="header">
+      <p class="header-label">Competitor Selection</p>
+      <h1>{{ company_name }}</h1>
+      <p>Select which competitors to include in the evaluation.</p>
+      {% if group_label %}
+      <div class="group-badge">{{ group_label }}</div>
+      {% endif %}
+    </div>
+
+    <form id="selectForm" action="/dashboard" method="get">
+      <input type="hidden" name="companies" id="companiesField" value="">
+
+      <div class="section-title">Suggested Competitors (same group)</div>
+      <div class="peer-list">
+        {% for peer in peers %}
+        <div class="peer-item" onclick="this.querySelector('input').click()">
+          <input type="checkbox" class="peer-cb" value="{{ peer }}" checked id="peer-{{ loop.index0 }}">
+          <label for="peer-{{ loop.index0 }}">{{ peer }}</label>
+        </div>
+        {% endfor %}
+        {% if not peers %}
+        <p style="color: #666; font-size: 0.85rem;">No other companies in this group.</p>
+        {% endif %}
+      </div>
+
+      <button type="submit" class="load-btn">Load Data</button>
+    </form>
+  </div>
+  <script>
+    const form = document.getElementById('selectForm');
+    const field = document.getElementById('companiesField');
+    const mainCompany = '{{ company_name }}';
+
+    form.addEventListener('submit', function(e) {
+      const checked = Array.from(document.querySelectorAll('.peer-cb:checked'))
+        .map(cb => cb.value);
+      // Always include the main company
+      const all = [mainCompany, ...checked];
+      field.value = all.join(',');
+    });
+  </script>
+</body>
+</html>"""
 
 
 HTML_TEMPLATE = r"""<!DOCTYPE html>
@@ -1269,9 +1580,44 @@ COMPARE_TEMPLATE = r"""<!DOCTYPE html>
 
 @app.route("/")
 def index():
-    company_data = _load_all_company_data()
+    """Landing page — instant company picker (no BQ call)."""
+    _, all_companies_grouped = _load_company_groups()
+    if not all_companies_grouped:
+        return "<h1>No company list files found.</h1>"
+
+    return render_template_string(
+        PICKER_TEMPLATE,
+        groups=all_companies_grouped,
+    )
+
+
+@app.route("/select/<company_name>")
+def select_competitors(company_name):
+    """Show competitor suggestion page for a selected company."""
+    groups_by_company, _ = _load_company_groups()
+    info = groups_by_company.get(company_name, {})
+    peers = info.get("peers", [])
+    group_label = info.get("group_label", "")
+
+    return render_template_string(
+        SELECT_TEMPLATE,
+        company_name=company_name,
+        peers=peers,
+        group_label=group_label,
+    )
+
+
+@app.route("/dashboard")
+def dashboard():
+    """Results page — loads only the selected companies from BQ."""
+    companies_param = request.args.get("companies", "")
+    if not companies_param:
+        return redirect(url_for("index"))
+
+    company_filter = set(c.strip() for c in companies_param.split(",") if c.strip())
+    company_data = _load_all_company_data(company_filter=company_filter)
     if not company_data:
-        return "<h1>No company evaluation data found. Run the company evaluation runners first.</h1>"
+        return "<h1>No company evaluation data found for the selected companies.</h1>"
 
     names_sorted = sorted(company_data.keys())
 
@@ -1284,7 +1630,7 @@ def index():
 
 @app.route("/company/<company_name>")
 def company_detail(company_name):
-    company_data = _load_all_company_data()
+    company_data = _load_all_company_data(company_filter={company_name})
     if company_name not in company_data:
         return f"<h1>Company '{company_name}' not found.</h1>", 404
 
@@ -1305,7 +1651,7 @@ def compare():
     c1_name = request.args.get("c1", "")
     c2_name = request.args.get("c2", "")
 
-    company_data = _load_all_company_data()
+    company_data = _load_all_company_data(company_filter={c1_name, c2_name})
 
     if c1_name not in company_data or c2_name not in company_data:
         return "<h1>One or both companies not found. Please go back and try again.</h1>", 404
@@ -1347,15 +1693,20 @@ def compare():
 
 @app.route("/api/data")
 def api_data():
-    return jsonify(_load_all_company_data())
+    companies_param = request.args.get("companies", "")
+    company_filter = None
+    if companies_param:
+        company_filter = set(c.strip() for c in companies_param.split(",") if c.strip())
+    return jsonify(_load_all_company_data(company_filter=company_filter))
 
 
 @app.route("/source-analysis")
 def source_analysis():
     """Show source/citation analysis with per-prompt and per-company filtering."""
-    company_data = _load_all_company_data()
     selected_prompt = request.args.get("prompt", "all")
     selected_company = request.args.get("company", "all")
+    company_filter = {selected_company} if selected_company != "all" else None
+    company_data = _load_all_company_data(company_filter=company_filter)
 
     # Collect all available companies
     all_companies = sorted(company_data.keys())

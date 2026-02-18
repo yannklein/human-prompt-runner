@@ -376,10 +376,11 @@ async def main():
     parser.add_argument("--test", action="store_true", help="Run only the first prompt (and first company)")
     parser.add_argument("--resume", type=str, help="Resume from existing run folder (e.g., 2026-02-07_16-31-22_chatgpt)")
     parser.add_argument("--companies-file", default="quantum_sensing_companies.txt", help="Path to companies list file")
+    parser.add_argument("--prompts-file", default="prompts/quantum/prompts_company.json", help="Path to prompts JSON file")
     args = parser.parse_args()
 
     runner = PromptRunner(
-        prompts_file="prompts/quantum/prompts_company.json",
+        prompts_file=args.prompts_file,
         icp_file="data/qnami/icp_qnami.txt",
         buyer_persona_file="data/qnami/buyer_persona_qnami.txt",
         quantum_sensing_applications_file="data/quantum-generic/applications_quantum_sensing.txt",

@@ -153,6 +153,21 @@ _SOURCES_SCHEMA = [
     bigquery.SchemaField("uploaded_at", "TIMESTAMP", mode="REQUIRED"),
 ]
 
+_COMPANY_MONTHLY_SUMMARY_SCHEMA = [
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("month", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("prompt_id", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("company", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("platform", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("avg_score", "FLOAT64", mode="NULLABLE"),
+    bigquery.SchemaField("run_count", "INT64", mode="NULLABLE"),
+    bigquery.SchemaField("synthesis", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("is_final", "BOOL", mode="REQUIRED"),
+    bigquery.SchemaField("updated_at", "TIMESTAMP", mode="REQUIRED"),
+]
+
+COMPANY_MONTHLY_SUMMARY_TABLE = "company_monthly_summary"
+
 SCHEMA_TYPE_MAP = {
     "ecosystem_ranked": _ECOSYSTEM_RANKED_SCHEMA,
     "company_no_score": _COMPANY_NO_SCORE_SCHEMA,
@@ -377,6 +392,9 @@ def ensure_all_tables_exist(
         schema = SCHEMA_TYPE_MAP[cfg["schema_type"]]
         _ensure_table(client, dataset_id, cfg["table"], schema)
         _ensure_table(client, dataset_id, f"{cfg['table']}_sources", _SOURCES_SCHEMA)
+
+    # Monthly summary table
+    _ensure_table(client, dataset_id, COMPANY_MONTHLY_SUMMARY_TABLE, _COMPANY_MONTHLY_SUMMARY_SCHEMA)
 
     # Also keep legacy tables around for historical data
     ensure_tables_exist(project_id, dataset_id)
@@ -692,6 +710,470 @@ def get_completed_prompts(
             pass
 
     return completed
+
+
+# ---------------------------------------------------------------------------
+# Load company data for webapps
+# ---------------------------------------------------------------------------
+
+def load_company_data_from_bq(
+    project_id: str = DEFAULT_PROJECT,
+    dataset_id: str = DEFAULT_DATASET,
+    company_filter: Optional[set] = None,
+) -> tuple:
+    """
+    Load company evaluation data from BigQuery per-prompt tables.
+
+    Args:
+        project_id: GCP project ID
+        dataset_id: BigQuery dataset name
+        company_filter: If provided, only load data for these company names
+
+    Returns:
+        (raw_responses, company_names) where:
+        - raw_responses[(platform, prompt_id, company)] = {
+            "prompt_id", "company", "answer", "question", "model",
+            "sources": [{"url", "title", "publisher"}]
+          }
+        - company_names = set of all company names
+    """
+    client = get_client(project_id)
+    raw_responses = {}
+    company_names = set()
+
+    # Company prompt IDs only
+    company_prompts = {
+        pid: cfg for pid, cfg in PROMPT_TABLE_CONFIG.items()
+        if cfg["schema_type"] in ("company_no_score", "company_with_score")
+    }
+
+    for prompt_id, cfg in company_prompts.items():
+        table_name = cfg["table"]
+        full_table = f"`{project_id}.{dataset_id}.{table_name}`"
+        sources_table = f"`{project_id}.{dataset_id}.{table_name}_sources`"
+
+        # Build optional WHERE clause for company filtering
+        company_where = ""
+        if company_filter:
+            escaped = [c.replace("'", "\\'") for c in company_filter]
+            company_list = ", ".join(f"'{c}'" for c in escaped)
+            company_where = f"WHERE t.company IN ({company_list})"
+
+        # Query latest run per platform
+        query = f"""
+        WITH latest AS (
+            SELECT platform, MAX(run_folder) AS run_folder
+            FROM {full_table} GROUP BY platform
+        )
+        SELECT t.* FROM {full_table} t
+        JOIN latest l ON t.platform = l.platform AND t.run_folder = l.run_folder
+        {company_where}
+        """
+
+        try:
+            rows = list(client.query(query).result())
+        except Exception as e:
+            print(f"Warning: Failed to query {table_name}: {e}")
+            continue
+
+        # Build result entries and collect run_folders for sources query
+        run_folders_by_platform = {}
+        for row in rows:
+            platform = row.platform
+            company = row.company
+            company_names.add(company)
+            run_folders_by_platform[platform] = row.run_folder
+
+            entry = {
+                "prompt_id": prompt_id,
+                "company": company,
+                "answer": row.explanation or "",
+                "question": "",
+                "model": platform,
+                "sources": [],
+            }
+            raw_responses[(platform, prompt_id, company)] = entry
+
+        # Query sources for matching run_folders
+        if run_folders_by_platform:
+            conditions = " OR ".join(
+                f"(platform = '{p}' AND run_folder = '{rf}')"
+                for p, rf in run_folders_by_platform.items()
+            )
+            src_query = f"""
+            SELECT * FROM {sources_table}
+            WHERE {conditions}
+            """
+            try:
+                for srow in client.query(src_query).result():
+                    key = (srow.platform, prompt_id, srow.entity_name)
+                    if key in raw_responses:
+                        raw_responses[key]["sources"].append({
+                            "url": srow.url or "",
+                            "title": srow.title or "",
+                            "publisher": srow.domain or "",
+                        })
+            except Exception as e:
+                print(f"Warning: Failed to query sources for {table_name}: {e}")
+
+    return raw_responses, company_names
+
+
+# ---------------------------------------------------------------------------
+# Monthly summary: synthesis helper
+# ---------------------------------------------------------------------------
+
+def _synthesize_with_claude(explanations: list, prompt_id: str, company: str) -> str:
+    """Call Claude API to synthesize multiple monthly explanations into one."""
+    try:
+        import anthropic
+    except ImportError:
+        print("Warning: anthropic package not installed, skipping synthesis")
+        return explanations[-1] if explanations else ""
+
+    client = anthropic.Anthropic()  # uses ANTHROPIC_API_KEY env var
+    joined = "\n\n---\n\n".join(explanations)
+    prompt = (
+        f"You are synthesizing {len(explanations)} AI evaluations of the company "
+        f'"{company}" for evaluation prompt {prompt_id}.\n\n'
+        f"Here are the individual evaluations:\n\n{joined}\n\n"
+        "Please synthesize these into a single concise summary that captures "
+        "the key points, consensus findings, and any notable disagreements. "
+        "Keep the same tone and level of detail as the originals. "
+        "If scores are mentioned, note the range or average."
+    )
+    try:
+        response = client.messages.create(
+            model="claude-sonnet-4-5-20250929",
+            max_tokens=2000,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return response.content[0].text
+    except Exception as e:
+        print(f"Warning: Claude synthesis failed for {prompt_id}/{company}: {e}")
+        return explanations[-1] if explanations else ""
+
+
+# ---------------------------------------------------------------------------
+# Monthly summary: refresh
+# ---------------------------------------------------------------------------
+
+def refresh_monthly_summaries(
+    project_id: str = DEFAULT_PROJECT,
+    dataset_id: str = DEFAULT_DATASET,
+    company_filter: Optional[set] = None,
+    dry_run: bool = False,
+) -> dict:
+    """
+    Refresh the company_monthly_summary table from raw per-prompt tables.
+
+    For each (month, prompt_id, company, platform):
+      - Computes avg_score (for scored prompts) and run_count
+      - For current (incomplete) month: uses the last available explanation
+      - For past (completed) months not yet finalized: generates AI synthesis
+
+    Args:
+        project_id: GCP project ID
+        dataset_id: BigQuery dataset name
+        company_filter: If provided, only refresh for these companies
+        dry_run: If True, don't write to BQ, just return what would be written
+
+    Returns:
+        dict with stats: {"rows_processed": int, "rows_synthesized": int, "rows_written": int}
+    """
+    client = get_client(project_id)
+
+    current_month = datetime.now().strftime("%Y-%m")
+
+    # Collect all company prompts
+    company_prompts = {
+        pid: cfg for pid, cfg in PROMPT_TABLE_CONFIG.items()
+        if cfg["schema_type"] in ("company_no_score", "company_with_score")
+    }
+
+    # Load existing finalized rows so we never touch them
+    existing_final = set()
+    try:
+        query = f"""
+        SELECT id FROM `{project_id}.{dataset_id}.{COMPANY_MONTHLY_SUMMARY_TABLE}`
+        WHERE is_final = TRUE
+        """
+        for row in client.query(query).result():
+            existing_final.add(row.id)
+        print(f"Found {len(existing_final)} already-finalized rows (will not touch)")
+    except Exception:
+        pass  # Table might not exist yet
+
+    stats = {"rows_processed": 0, "rows_synthesized": 0, "rows_written": 0, "rows_skipped_final": 0}
+    rows_to_upsert = []
+
+    for prompt_id, cfg in company_prompts.items():
+        table_name = cfg["table"]
+        schema_type = cfg["schema_type"]
+        has_score = schema_type == "company_with_score"
+        full_table = f"`{project_id}.{dataset_id}.{table_name}`"
+
+        score_select = "AVG(score) as avg_score," if has_score else "CAST(NULL AS FLOAT64) as avg_score,"
+
+        company_where = ""
+        if company_filter:
+            escaped = [c.replace("'", "\\'") for c in company_filter]
+            company_list = ", ".join(f"'{c}'" for c in escaped)
+            company_where = f"AND company IN ({company_list})"
+
+        query = f"""
+        SELECT
+            FORMAT_DATE('%Y-%m', run_date) as month,
+            company,
+            platform,
+            {score_select}
+            COUNT(*) as run_count,
+            ARRAY_AGG(explanation ORDER BY run_folder DESC LIMIT 1)[OFFSET(0)] as last_explanation
+        FROM {full_table}
+        WHERE run_date IS NOT NULL
+        {company_where}
+        GROUP BY month, company, platform
+        """
+
+        try:
+            results = list(client.query(query).result())
+        except Exception as e:
+            print(f"Warning: Failed to query {table_name}: {e}")
+            continue
+
+        for row in results:
+            month = row.month
+            company = row.company
+            platform = row.platform
+            row_id = f"{month}_{prompt_id}_{company}_{platform}"
+            row_id = re.sub(r"[^a-zA-Z0-9_-]", "_", row_id)
+
+            stats["rows_processed"] += 1
+
+            # Never touch already-finalized rows (past months locked in)
+            if row_id in existing_final:
+                stats["rows_skipped_final"] += 1
+                continue
+
+            is_final = False
+            synthesis = row.last_explanation or ""
+
+            # For past months, generate AI synthesis
+            if month < current_month:
+                # Query all explanations for this month to synthesize
+                all_explanations_query = f"""
+                SELECT explanation
+                FROM {full_table}
+                WHERE FORMAT_DATE('%Y-%m', run_date) = @month
+                  AND company = @company
+                  AND platform = @platform
+                  AND explanation IS NOT NULL
+                ORDER BY run_folder
+                """
+                job_config = bigquery.QueryJobConfig(
+                    query_parameters=[
+                        bigquery.ScalarQueryParameter("month", "STRING", month),
+                        bigquery.ScalarQueryParameter("company", "STRING", company),
+                        bigquery.ScalarQueryParameter("platform", "STRING", platform),
+                    ]
+                )
+                try:
+                    explanations = [
+                        r.explanation for r in client.query(all_explanations_query, job_config=job_config).result()
+                        if r.explanation
+                    ]
+                except Exception:
+                    explanations = [synthesis] if synthesis else []
+
+                if len(explanations) > 1 and not dry_run:
+                    synthesis = _synthesize_with_claude(explanations, prompt_id, company)
+                    stats["rows_synthesized"] += 1
+                elif explanations:
+                    synthesis = explanations[-1]
+
+                is_final = True
+
+            now = datetime.now(timezone.utc).isoformat()
+            summary_row = {
+                "id": row_id,
+                "month": month,
+                "prompt_id": prompt_id,
+                "company": company,
+                "platform": platform,
+                "avg_score": row.avg_score,
+                "run_count": row.run_count,
+                "synthesis": synthesis,
+                "is_final": is_final,
+                "updated_at": now,
+            }
+            rows_to_upsert.append(summary_row)
+
+    if dry_run:
+        stats["rows_written"] = len(rows_to_upsert)
+        print(f"[DRY RUN] Would write {len(rows_to_upsert)} rows to {COMPANY_MONTHLY_SUMMARY_TABLE}")
+        print(f"[DRY RUN] Skipped {stats['rows_skipped_final']} finalized rows")
+        for r in rows_to_upsert[:10]:
+            print(f"  {r['id']} | score={r['avg_score']} | final={r['is_final']} | synthesis={r['synthesis'][:80] if r['synthesis'] else ''}...")
+        if len(rows_to_upsert) > 10:
+            print(f"  ... and {len(rows_to_upsert) - 10} more")
+        return stats
+
+    # Write strategy: use a temp table + MERGE DML.
+    # This handles upserts correctly and protects finalized rows.
+    # Steps:
+    #   1. Load rows into a temp table via streaming insert
+    #   2. MERGE from temp table into the real table
+    #   3. Drop the temp table
+    if rows_to_upsert:
+        table_ref = f"{project_id}.{dataset_id}.{COMPANY_MONTHLY_SUMMARY_TABLE}"
+        full_table = f"`{table_ref}`"
+        temp_table_name = f"{COMPANY_MONTHLY_SUMMARY_TABLE}_temp_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        temp_table_ref = f"{project_id}.{dataset_id}.{temp_table_name}"
+        temp_full = f"`{temp_table_ref}`"
+
+        # Step 1: Create temp table with same schema
+        print(f"Creating temp table {temp_table_name}...")
+        _ensure_table(client, dataset_id, temp_table_name, _COMPANY_MONTHLY_SUMMARY_SCHEMA)
+
+        # Step 2: Stream rows into temp table
+        print(f"Loading {len(rows_to_upsert)} rows into temp table...")
+        batch_size = 500
+        for i in range(0, len(rows_to_upsert), batch_size):
+            batch = rows_to_upsert[i:i + batch_size]
+            try:
+                errors = client.insert_rows_json(temp_table_ref, batch)
+                if errors:
+                    print(f"Temp table insert errors: {errors[:3]}")
+            except Exception as e:
+                print(f"Temp table insert failed: {e}")
+
+        # Step 3: Wait a moment for streaming buffer, then MERGE
+        import time
+        print("Waiting for streaming buffer to settle...")
+        time.sleep(10)
+
+        print("Running MERGE into target table...")
+        merge_sql = f"""
+        MERGE {full_table} AS target
+        USING {temp_full} AS source
+        ON target.id = source.id
+        WHEN MATCHED AND target.is_final = FALSE THEN
+            UPDATE SET
+                avg_score = source.avg_score,
+                run_count = source.run_count,
+                synthesis = source.synthesis,
+                is_final = source.is_final,
+                updated_at = source.updated_at
+        WHEN NOT MATCHED THEN
+            INSERT (id, month, prompt_id, company, platform, avg_score, run_count, synthesis, is_final, updated_at)
+            VALUES (source.id, source.month, source.prompt_id, source.company, source.platform,
+                    source.avg_score, source.run_count, source.synthesis, source.is_final, source.updated_at)
+        """
+        try:
+            job = client.query(merge_sql)
+            job.result()
+            stats["rows_written"] = len(rows_to_upsert)
+            print(f"  MERGE complete: {job.num_dml_affected_rows} rows affected")
+        except Exception as e:
+            print(f"MERGE failed: {e}")
+            print("Falling back to direct streaming insert (may create duplicates on re-run)...")
+            for i in range(0, len(rows_to_upsert), batch_size):
+                batch = rows_to_upsert[i:i + batch_size]
+                try:
+                    errors = client.insert_rows_json(table_ref, batch)
+                    if not errors:
+                        stats["rows_written"] += len(batch)
+                except Exception as e2:
+                    print(f"Fallback insert failed: {e2}")
+
+        # Step 4: Drop temp table
+        try:
+            client.delete_table(temp_table_ref, not_found_ok=True)
+            print(f"Dropped temp table {temp_table_name}")
+        except Exception:
+            print(f"Warning: Could not drop temp table {temp_table_name}")
+
+    print(f"Monthly refresh complete: {stats}")
+    return stats
+
+
+# ---------------------------------------------------------------------------
+# Monthly summary: load for webapps
+# ---------------------------------------------------------------------------
+
+def load_company_data_from_monthly(
+    project_id: str = DEFAULT_PROJECT,
+    dataset_id: str = DEFAULT_DATASET,
+    company_filter: Optional[set] = None,
+) -> tuple:
+    """
+    Load company evaluation data from the monthly summary table.
+
+    Returns the same (raw_responses, company_names) tuple as load_company_data_from_bq()
+    so the webapp processing code doesn't change.
+
+    Args:
+        project_id: GCP project ID
+        dataset_id: BigQuery dataset name
+        company_filter: If provided, only load data for these company names
+
+    Returns:
+        (raw_responses, company_names) where:
+        - raw_responses[(platform, prompt_id, company)] = {
+            "prompt_id", "company", "answer", "score", "question", "model",
+            "sources": []
+          }
+        - company_names = set of all company names
+    """
+    client = get_client(project_id)
+    raw_responses = {}
+    company_names = set()
+
+    full_table = f"`{project_id}.{dataset_id}.{COMPANY_MONTHLY_SUMMARY_TABLE}`"
+
+    company_where = ""
+    if company_filter:
+        escaped = [c.replace("'", "\\'") for c in company_filter]
+        company_list = ", ".join(f"'{c}'" for c in escaped)
+        company_where = f"AND company IN ({company_list})"
+
+    # Load the latest month's data for each (prompt_id, company, platform)
+    query = f"""
+    WITH latest_month AS (
+        SELECT MAX(month) as max_month
+        FROM {full_table}
+        WHERE 1=1 {company_where}
+    )
+    SELECT s.*
+    FROM {full_table} s, latest_month lm
+    WHERE s.month = lm.max_month
+    {company_where}
+    """
+
+    try:
+        rows = list(client.query(query).result())
+    except Exception as e:
+        print(f"Warning: Failed to query {COMPANY_MONTHLY_SUMMARY_TABLE}: {e}")
+        return raw_responses, company_names
+
+    for row in rows:
+        platform = row.platform
+        prompt_id = row.prompt_id
+        company = row.company
+        company_names.add(company)
+
+        entry = {
+            "prompt_id": prompt_id,
+            "company": company,
+            "answer": row.synthesis or "",
+            "score": row.avg_score,
+            "question": "",
+            "model": platform,
+            "sources": [],
+        }
+        raw_responses[(platform, prompt_id, company)] = entry
+
+    return raw_responses, company_names
 
 
 # ---------------------------------------------------------------------------

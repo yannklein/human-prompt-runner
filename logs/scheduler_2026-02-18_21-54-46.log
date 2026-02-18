@@ -1,0 +1,7 @@
+2026-02-18 21:54:46,897 - INFO - ============================================================
+2026-02-18 21:54:46,897 - INFO - Starting scheduled run at 2026-02-18 21:54:46.897632
+2026-02-18 21:54:46,897 - INFO - Types: ['company', 'ecosystem', 'vc']
+2026-02-18 21:54:46,897 - INFO - Platforms: ['chatgpt', 'gemini', 'perplexity']
+2026-02-18 21:54:46,897 - INFO - Headless: False
+2026-02-18 21:54:46,897 - INFO - ============================================================
+2026-02-18 21:54:46,898 - INFO - Running: /Users/cedricdeschaut/.pyenv/versions/human_prompt/bin/python3 /Users/cedricdeschaut/code/extract_sources/human-prompt-runner/runners/company/company_runner_chatgpt.py
